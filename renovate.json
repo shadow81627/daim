@@ -1,0 +1,8 @@
+{
+  "assignees": ["shadow81627"],
+  "automerge": true,
+  "bumpVersion": null,
+  "labels": ["dependencies"],
+  "lockFileMaintenance": { "enabled": true },
+  "extends": ["config:base", ":semanticCommits", ":pinSkipCi"]
+}
