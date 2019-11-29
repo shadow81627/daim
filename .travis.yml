@@ -1,0 +1,35 @@
+language: node_js
+#  latest stable Node.js release
+node_js: lts/*
+# Cache node packages between jobs
+cache: npm
+branches:
+  only:
+    # This is where pull requests from "bors r+" are built.
+    - staging
+    # This is where pull requests from "bors try" are built.
+    - trying
+    # enable building pull requests.
+    - master
+    - production
+
+script:
+  - npm run lint
+  - npm run test
+  - npm run generate:modern
+
+after_script:
+  - fossa init
+  - fossa analyze
+
+before_deploy:
+  - npx semantic-release
+
+deploy:
+  provider: surge
+  edge: true # opt in to dpl v2
+  on:
+    all_branches: true
+
+# after_success:
+#   - npm run lh -- $APP_URL
