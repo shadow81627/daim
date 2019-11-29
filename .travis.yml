@@ -15,12 +15,8 @@ branches:
 
 script:
   - npm run lint
-  - npm run test
+  # - npm run test
   - npm run generate:modern
-
-after_script:
-  - fossa init
-  - fossa analyze
 
 before_deploy:
   - npx semantic-release
