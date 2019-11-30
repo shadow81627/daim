@@ -10,6 +10,12 @@ module.exports = {
     COMMIT: process.env.npm_package_gitHead,
   },
 
+  generate: {
+    // use '404.html' instead default '200.html'
+    fallback: true,
+    // routes,
+  },
+
   server: {
     timing: {
       total: true,
