@@ -46,6 +46,7 @@ module.exports = {
         name: 'description',
         content: process.env.npm_package_description || '',
       },
+      { innerHTML: 'This website requires JavaScript.' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
