@@ -8,9 +8,9 @@
               <span>Version: {{ version }}</span>
               <span>|</span>
               <span>Commit: </span>
-              <!-- <nuxt-link :to="localePath({ name: 'releases' })"
-                ><span> {{ commit | shortHash }}</span></nuxt-link
-              > -->
+              <nuxt-link to="#">
+                <span> {{ commit | shortHash }}</span>
+              </nuxt-link>
             </v-card-text>
           </v-card>
         </v-col>
