@@ -1,5 +1,15 @@
 # Releases
 
+## [1.2.1](https://github.com/shadow81627/daim/compare/v1.2.0...v1.2.1) (2019-11-30)
+
+### Bug Fixes
+
+- **index:** add noopener to links ([8b1bb5e](https://github.com/shadow81627/daim/commit/8b1bb5ee66065ec11428a8f4dd11a29c6e31e055))
+
+### Performance Improvements
+
+- **css:** remove unused styles ([9da4cf9](https://github.com/shadow81627/daim/commit/9da4cf908cf9d6c0f70286cd6bdfb00c2aecc86d))
+
 ## [1.2.0](https://github.com/shadow81627/daim/compare/v1.1.1...v1.2.0) (2019-11-30)
 
 ### Features
