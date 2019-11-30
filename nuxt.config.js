@@ -1,7 +1,7 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
 
   env: {
     HOST: process.env.HOST,
@@ -72,6 +72,21 @@ module.exports = {
    */
   axios: {},
 
+  bootstrapVue: {
+    // bootstrapCSS: false, // or `css`
+    // bootstrapVueCSS: false, // or `bvCSS`
+    componentPlugins: [
+      'Image',
+      'FormSelect',
+      'Card',
+      'ButtonPlugin',
+      'FormTextareaPlugin',
+      'FormGroupPlugin',
+      'FormInputPlugin'
+    ],
+    directivePlugins: ['Tooltip']
+  },
+
   /*
    ** Build configuration
    */
@@ -79,6 +94,16 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      // Run ESLint on save
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    }
   }
 }
