@@ -87,6 +87,14 @@ module.exports = {
     directivePlugins: ['Tooltip'],
   },
 
+  vuetify: {
+    optionsPath: './vuetify.options.js',
+    // customVariables: ['~/assets/scss/vuetify.scss'],
+    treeShake: true,
+    theme: { disable: true },
+    defaultAssets: false,
+  },
+
   /*
    ** Build configuration
    */
