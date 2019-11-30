@@ -1,0 +1,21 @@
+{{> header}}
+
+{{#each commitGroups}}
+{{#if @first }}
+{{else}}
+
+{{/if}}
+{{#if title}}
+### {{title}}
+
+{{/if}}
+{{#each commits}}
+{{#if @first }}
+{{else}}
+
+{{/if}}
+{{> commit root=@root}}
+{{/each}}
+
+{{/each}}
+{{> footer}}

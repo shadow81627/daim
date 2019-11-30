@@ -1,0 +1,12 @@
+{{#if noteGroups}}
+{{#each noteGroups}}
+{{#if isPatch~}}
+  ####
+{{~else~}}
+  ###
+{{~/if}} {{title}}
+{{#each notes}}
+- {{#if commit.scope}}**{{commit.scope}}:** {{/if}}{{text}}
+{{/each}}
+{{/each}}
+{{/if}}
