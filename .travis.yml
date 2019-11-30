@@ -1,6 +1,8 @@
 language: node_js
 #  latest stable Node.js release
 node_js: lts/*
+addons:
+  chrome: stable # make Chrome available
 # Cache node packages between jobs
 cache: npm
 branches:
@@ -29,5 +31,6 @@ deploy:
   on:
     all_branches: true
 
-# after_success:
-#   - npm run lh -- $APP_URL
+after_success:
+  # - npm run lh -- $APP_URL
+  - npm run lhci:autorun
