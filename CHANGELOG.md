@@ -1,5 +1,11 @@
 # Releases
 
+## [1.2.2](https://github.com/shadow81627/daim/compare/v1.2.1...v1.2.2) (2019-11-30)
+
+### Bug Fixes
+
+- **meta:** add noscript ([44808e9](https://github.com/shadow81627/daim/commit/44808e93da79d84371d59edde9a5b01b4572a4b1))
+
 ## [1.2.1](https://github.com/shadow81627/daim/compare/v1.2.0...v1.2.1) (2019-11-30)
 
 ### Bug Fixes
