@@ -23,6 +23,7 @@ before_deploy:
 
 deploy:
   provider: surge
+  project: dist
   edge: true # opt in to dpl v2
   on:
     all_branches: true
