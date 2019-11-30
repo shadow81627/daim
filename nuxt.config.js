@@ -1,5 +1,15 @@
+const pkg = require('./package')
+
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
+
+  env: {
+    HOST: process.env.HOST,
+    PORT: process.env.PORT,
+    VERSION: pkg.version,
+    COMMIT: process.env.npm_package_gitHead
+  },
+
   /*
    ** Headers of the page
    */
@@ -16,18 +26,22 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+
   /*
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
+
   /*
    ** Global CSS
    */
   css: [],
+
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [],
+
   /*
    ** Nuxt.js dev-modules
    */
@@ -37,6 +51,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module'
   ],
+
   /*
    ** Nuxt.js modules
    */
@@ -47,13 +62,16 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/vuetify'
   ],
+
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+
   /*
    ** Build configuration
    */
