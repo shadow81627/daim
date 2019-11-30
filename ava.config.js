@@ -10,13 +10,13 @@ export default {
             root: ['.'],
             alias: {
               '@': '.',
-              '~': '.'
-            }
-          }
-        ]
-      ]
-    }
+              '~': '.',
+            },
+          },
+        ],
+      ],
+    },
   },
   tap: true,
-  verbose: true
-}
+  verbose: true,
+};

@@ -94,32 +94,32 @@
 </template>
 
 <script>
-import TheFooter from '@/components/layout/the-footer.vue'
+import TheFooter from '@/components/layout/the-footer.vue';
 export default {
   components: {
-    TheFooter
+    TheFooter,
   },
   data() {
     return {
       dialog: false,
-      drawer: false
-    }
+      drawer: false,
+    };
   },
   computed: {
     items() {
-      return []
+      return [];
     },
     isDark() {
-      return false
+      return false;
       // return this.$store.getters.getCurrentTheme().dark;
-    }
+    },
   },
   head() {
     return {
       // link: [this.$store.getters.getCurrentTheme()],
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style>

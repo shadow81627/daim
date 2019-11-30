@@ -47,18 +47,18 @@
 </template>
 
 <script>
-import lastModified from './last-modified'
+import lastModified from './last-modified';
 export default {
   components: {
-    lastModified
+    lastModified,
   },
   filters: {
-    shortHash: (value) => (value ? value.substring(0, 7) : null)
+    shortHash: (value) => (value ? value.substring(0, 7) : null),
   },
   data: () => ({
     version: process.env.VERSION,
     commit: process.env.COMMIT || process.env.TRAVIS_COMMIT,
-    utc: false
-  })
-}
+    utc: false,
+  }),
+};
 </script>

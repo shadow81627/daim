@@ -16,12 +16,12 @@
 <script>
 export default {
   props: {
-    utc: Boolean
+    utc: Boolean,
   },
   computed: {
-    lastModified: () => (process.client ? document.lastModified : null)
-  }
-}
+    lastModified: () => (process.client ? document.lastModified : null),
+  },
+};
 </script>
 
 <style></style>

@@ -1,4 +1,4 @@
-const pkg = require('./package')
+const pkg = require('./package');
 
 module.exports = {
   mode: 'universal',
@@ -7,7 +7,7 @@ module.exports = {
     HOST: process.env.HOST,
     PORT: process.env.PORT,
     VERSION: pkg.version,
-    COMMIT: process.env.npm_package_gitHead
+    COMMIT: process.env.npm_package_gitHead,
   },
 
   /*
@@ -21,10 +21,10 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   /*
@@ -49,7 +49,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
   ],
 
   /*
@@ -63,7 +63,7 @@ module.exports = {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
   ],
 
   /*
@@ -82,9 +82,9 @@ module.exports = {
       'ButtonPlugin',
       'FormTextareaPlugin',
       'FormGroupPlugin',
-      'FormInputPlugin'
+      'FormInputPlugin',
     ],
-    directivePlugins: ['Tooltip']
+    directivePlugins: ['Tooltip'],
   },
 
   /*
@@ -101,9 +101,9 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+          exclude: /(node_modules)/,
+        });
       }
-    }
-  }
-}
+    },
+  },
+};
