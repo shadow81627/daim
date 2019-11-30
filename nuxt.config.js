@@ -1,3 +1,4 @@
+const purgecss = require('@fullhuman/postcss-purgecss');
 const pkg = require('./package');
 
 module.exports = {
@@ -135,5 +136,18 @@ module.exports = {
         });
       }
     },
+  },
+
+  postcss: {
+    plugins: [
+      purgecss({
+        content: [
+          './pages/**/*.vue',
+          './layouts/**/*.vue',
+          './components/**/*.vue',
+        ],
+        whitelist: ['html', 'body'],
+      }),
+    ],
   },
 };
