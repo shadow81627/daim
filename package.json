@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
+    "build:analyze": "nuxt build --analyze",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
     "generate:modern": "nuxt generate --modern",
@@ -31,7 +32,7 @@
     "@nuxtjs/pwa": "3.0.0-beta.19",
     "bootstrap": "4.4.1",
     "bootstrap-vue": "2.1.0",
-    "cross-env": "5.2.1",
+    "cross-env": "6.0.3",
     "koa": "2.11.0",
     "nuxt": "2.10.2"
   },
