@@ -10,6 +10,22 @@ module.exports = {
     COMMIT: process.env.npm_package_gitHead,
   },
 
+  server: {
+    timing: {
+      total: true,
+    },
+  },
+
+  render: {
+    http2: {
+      push: true,
+      pushAssets: (req, res, publicPath, preloadFiles) =>
+        preloadFiles.map(
+          (f) => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`,
+        ),
+    },
+  },
+
   /*
    ** Headers of the page
    */
