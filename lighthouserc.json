@@ -4,7 +4,11 @@
       "numberOfRuns": 3
     },
     "assert": {
-      "preset": "lighthouse:recommended"
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "color-contrast": "off",
+        "unused-css-rules": "off"
+      }
     },
     "upload": {
       "target": "temporary-public-storage"
