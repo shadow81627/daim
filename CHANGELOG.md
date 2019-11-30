@@ -1,5 +1,11 @@
 # Releases
 
+## [1.2.0](https://github.com/shadow81627/daim/compare/v1.1.1...v1.2.0) (2019-11-30)
+
+### Features
+
+- **error:** add custom error pages ([b675b6c](https://github.com/shadow81627/daim/commit/b675b6c0c3879c2f29d0069dede04a138e216eee))
+
 ## [1.1.1](https://github.com/shadow81627/daim/compare/v1.1.0...v1.1.1) (2019-11-30)
 
 ### Bug Fixes
