@@ -1,5 +1,11 @@
 # Releases
 
+## [1.3.0](https://github.com/shadow81627/daim/compare/v1.2.2...v1.3.0) (2019-12-02)
+
+### Features
+
+- **index:** add header ([344621a](https://github.com/shadow81627/daim/commit/344621a04decac6c81504699df7de775945c9dff))
+
 ## [1.2.2](https://github.com/shadow81627/daim/compare/v1.2.1...v1.2.2) (2019-11-30)
 
 ### Bug Fixes
