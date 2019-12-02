@@ -15,7 +15,7 @@ module.exports = {
   generate: {
     // use '404.html' instead default '200.html'
     fallback: true,
-    dir: 'public',
+    // dir: 'public',
     // routes,
   },
 
