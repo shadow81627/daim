@@ -74,15 +74,15 @@
     >
       <v-toolbar-title style="width: 256px" class="ml-0 pl-3">
         <!-- <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" /> -->
-        <b-img-lazy
+        <!-- <b-img-lazy
           :src="$icon(32)"
           width="32"
           height="32"
           class="rounded"
           alt="PocketPasta"
           onerror="javascript:this.style.display = 'none'"
-        />
-        <span class="brand d-none d-sm-inline">Daim</span>
+        /> -->
+        <span class="brand xd-none d-sm-inline">Daim</span>
       </v-toolbar-title>
       <v-spacer />
     </v-app-bar>
