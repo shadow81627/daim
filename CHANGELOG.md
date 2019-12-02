@@ -1,5 +1,11 @@
 # Releases
 
+## [1.3.1](https://github.com/shadow81627/daim/compare/v1.3.0...v1.3.1) (2019-12-02)
+
+### Bug Fixes
+
+- **brand:** remove empty image ([6b7d76c](https://github.com/shadow81627/daim/commit/6b7d76c16e20895b2dea588774ebf27038215d76))
+
 ## [1.3.0](https://github.com/shadow81627/daim/compare/v1.2.2...v1.3.0) (2019-12-02)
 
 ### Features
