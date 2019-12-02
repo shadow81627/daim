@@ -3,7 +3,7 @@ const pkg = require('./package');
 
 module.exports = {
   mode: 'universal',
-  buildDir: 'public',
+  // buildDir: 'public',
 
   env: {
     HOST: process.env.HOST,

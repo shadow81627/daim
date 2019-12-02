@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt build --modern && nuxt generate --modern",
     "build:analyze": "nuxt build --analyze",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
