@@ -26,14 +26,12 @@ before_deploy:
 deploy:
   - provider: surge
     domain: daim.dev
-    project: ./dist
     edge: true # opt in to dpl v2
     on:
       branch: master
 
   - provider: surge
     domain: staging.daim.dev
-    project: ./dist
     edge: true # opt in to dpl v2
     on:
       all_branches: true

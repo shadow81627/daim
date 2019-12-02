@@ -19,6 +19,7 @@
   "files.exclude": {
     "**/node_modules/**": true,
     "**/dist/**": true,
+    "**/public/**": true,
     "**/coverage/**": true,
     "**/.nuxt/**": true,
     "**/.firebase/**": true
