@@ -131,7 +131,7 @@ module.exports = {
 
   i18n: {
     baseUrl: 'https://daim.dev',
-    seo: true,
+    seo: false,
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',

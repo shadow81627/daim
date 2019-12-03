@@ -115,8 +115,13 @@ export default {
     },
   },
   head() {
+    const i18nSeo = this.$nuxtI18nSeo();
     return {
-      // link: [this.$store.getters.getCurrentTheme()],
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [...i18nSeo.meta],
+      link: [...i18nSeo.link],
     };
   },
 };
