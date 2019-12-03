@@ -39,7 +39,10 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    titleTemplate: (titleChunk) => {
+      // If undefined or blank then we don't need the hyphen
+      return titleChunk ? `${titleChunk} - Daim` : 'Daim';
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -48,9 +51,21 @@ module.exports = {
         name: 'description',
         content: process.env.npm_package_description || '',
       },
-      { innerHTML: 'This website requires JavaScript.' },
+      {
+        property: 'og:title',
+        template: (titleChunk) => {
+          // If undefined or blank then we don't need the hyphen
+          return titleChunk ? `${titleChunk} - Daim` : 'Daim';
+        },
+        vmid: 'og:title',
+      },
+      {
+        name: 'version',
+        content: pkg.version,
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    noscript: [{ innerHTML: 'This website requires JavaScript.' }],
   },
 
   /*
