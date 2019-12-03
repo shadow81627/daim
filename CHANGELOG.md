@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.3](https://github.com/shadow81627/daim/compare/v1.4.2...v1.4.3) (2019-12-03)
+
+### Performance Improvements
+
+  - **404:** add image size ([6630c5b](https://github.com/shadow81627/daim/commit/6630c5b2cfabe80a6371d3a4779d139b4360636b))
+
 ## [1.4.2](https://github.com/shadow81627/daim/compare/v1.4.1...v1.4.2) (2019-12-03)
 
 ### Bug Fixes
