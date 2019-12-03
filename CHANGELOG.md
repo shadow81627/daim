@@ -1,5 +1,15 @@
 # Releases
 
+## [1.4.2](https://github.com/shadow81627/daim/compare/v1.4.1...v1.4.2) (2019-12-03)
+
+### Bug Fixes
+
+  - **meta:** move noscript and add title template ([7715a2a](https://github.com/shadow81627/daim/commit/7715a2a7259b54da0f06d4fc35f51a2bd58f901a))
+
+### Performance Improvements
+
+  - **404:** add cloudinary preconnect ([da56396](https://github.com/shadow81627/daim/commit/da56396fa7b3e5ac7e7f79c51bbbfc3a0e95f9e9))
+
 ## [1.4.1](https://github.com/shadow81627/daim/compare/v1.4.0...v1.4.1) (2019-12-03)
 
 ### Bug Fixes
