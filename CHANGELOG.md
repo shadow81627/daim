@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.4](https://github.com/shadow81627/daim/compare/v1.4.3...v1.4.4) (2019-12-03)
+
+### Performance Improvements
+
+  - **i18n:** merge seo head data in default layout ([8fe514d](https://github.com/shadow81627/daim/commit/8fe514da460ce85bfd400512d455fe2badc8e8eb))
+
 ## [1.4.3](https://github.com/shadow81627/daim/compare/v1.4.2...v1.4.3) (2019-12-03)
 
 ### Performance Improvements
