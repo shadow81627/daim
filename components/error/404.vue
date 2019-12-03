@@ -36,6 +36,14 @@ export default {
           content: this.$t('error.404.description'),
         },
       ],
+      link: [
+        {
+          hid: 'preconnect-cloudinary',
+          rel: 'preconnect',
+          href: 'https://res.cloudinary.com',
+          crossorigin: 'anonymous',
+        },
+      ],
     };
   },
 };
