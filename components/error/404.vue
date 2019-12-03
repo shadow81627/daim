@@ -1,13 +1,19 @@
 <template>
-  <div id="message" class="card bg-light card-body">
-    <h2>404</h2>
-    <!-- <h1>{{ $t('error.404.heading') }}</h1> -->
-    <p>
-      <!-- {{ $t('error.404.description') }} -->
-    </p>
-    <!-- <nuxt-link :to="localePath('index')" class="btn btn-primary">{{
-      $t('layout.navigation.home')
-    }}</nuxt-link> -->
+  <div>
+    <img
+      class="error__img img-fluid"
+      src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,dpr_auto,g_auto,w_auto,f_auto,q_auto:low/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg"
+    />
+    <div id="message" class="card bg-light card-body">
+      <h2>404</h2>
+      <h1>{{ $t('error.404.heading') }}</h1>
+      <p>
+        {{ $t('error.404.description') }}
+      </p>
+      <nuxt-link :to="localePath('index')" class="btn btn-primary">{{
+        $t('layout.navigation.home')
+      }}</nuxt-link>
+    </div>
   </div>
 </template>
 
@@ -21,13 +27,13 @@ export default {
   },
   head() {
     return {
-      // title: this.$t('error.404.heading'),
+      title: this.$t('error.404.heading'),
       meta: [
-        // {
-        //   hid: 'description',
-        //   name: 'description',
-        //   content: this.$t('error.404.description'),
-        // },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('error.404.description'),
+        },
       ],
     };
   },
@@ -35,6 +41,13 @@ export default {
 </script>
 
 <style media="screen" scoped>
+.error__img {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+
 #message {
   max-width: 360px;
   margin: 100px auto 16px;

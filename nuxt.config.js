@@ -90,6 +90,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/vuetify',
+    'nuxt-i18n',
   ],
 
   /*
@@ -111,6 +112,25 @@ module.exports = {
       'FormInputPlugin',
     ],
     directivePlugins: ['Tooltip'],
+  },
+
+  i18n: {
+    baseUrl: 'https://daim.dev',
+    seo: true,
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        iso: 'en-AU',
+        file: 'en-AU.js',
+      },
+    ],
+    lazy: true,
+    langDir: 'lang/',
   },
 
   vuetify: {
