@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.1](https://github.com/shadow81627/daim/compare/v1.4.0...v1.4.1) (2019-12-03)
+
+### Bug Fixes
+
+  - **404:** add alt to background image ([ddeba53](https://github.com/shadow81627/daim/commit/ddeba53d708c106ed37c1330cdf1495115f4aaed))
+
 ## [1.4.0](https://github.com/shadow81627/daim/compare/v1.3.2...v1.4.0) (2019-12-03)
 
 ### Features
