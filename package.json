@@ -64,6 +64,6 @@
     "require-extension-hooks-babel": "1.0.0",
     "require-extension-hooks-vue": "3.0.0",
     "semantic-release": "15.13.31",
-    "stylelint": "10.1.0"
+    "stylelint": "12.0.0"
   }
 }
