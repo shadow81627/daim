@@ -125,8 +125,8 @@ module.exports = {
       {
         code: 'en',
         name: 'English',
-        iso: 'en-AU',
-        file: 'en-AU.js',
+        iso: 'en',
+        file: 'en.js',
       },
     ],
     lazy: true,
