@@ -1,9 +1,10 @@
 <template>
   <div>
     <img
+      sizes="100vw"
       alt=""
       class="error__img img-fluid"
-      src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,dpr_auto,g_auto,w_auto,f_auto,q_auto:low/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg"
+      src="https://res.cloudinary.com/pocketpasta/image/upload/c_scale,dpr_auto,g_auto,w_auto,f_auto,q_auto:low/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg"
     />
     <div id="message" class="card bg-light card-body">
       <h2>404</h2>
