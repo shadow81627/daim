@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.0](https://github.com/shadow81627/daim/compare/v1.3.2...v1.4.0) (2019-12-03)
+
+### Features
+
+  - **404:** add translations ([6ca9afa](https://github.com/shadow81627/daim/commit/6ca9afa3304f154234440bf8bb8e3fdc27466dce))
+
 ## [1.3.2](https://github.com/shadow81627/daim/compare/v1.3.1...v1.3.2) (2019-12-03)
 
 ### Bug Fixes
