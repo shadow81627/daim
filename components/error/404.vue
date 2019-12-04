@@ -18,7 +18,8 @@
 </template>
 
 <script>
-/* global cloudinary */
+import cloudinary from 'cloudinary-core';
+
 export default {
   props: {
     error: {
@@ -27,9 +28,10 @@ export default {
     },
   },
   mounted() {
-    // Initialize
-    const cl = cloudinary.Cloudinary.new({ cloud_name: '<Cloud Name>' });
-    // Call
+    const cl = cloudinary.Cloudinary.new({
+      cloud_name: 'pocketpasta',
+      secure: true,
+    });
     cl.responsive();
   },
   head() {
@@ -54,12 +56,6 @@ export default {
           rel: 'preconnect',
           href: 'https://res.cloudinary.com',
           crossorigin: 'anonymous',
-        },
-      ],
-      script: [
-        {
-          src:
-            'https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js',
         },
       ],
     };

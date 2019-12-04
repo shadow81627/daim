@@ -1,5 +1,5 @@
 <template>
-  <div class="nuxt-error container">
+  <div class="nuxt-error container-fluid">
     <component :is="errorPage" :error="error" />
   </div>
 </template>
