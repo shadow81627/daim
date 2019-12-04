@@ -5,7 +5,7 @@
       <div class="intro-text">
         <h1 class="xintro-lead-in">Daim</h1>
         <h2 class="xintro-heading">
-          Innovative Marketing Technology Solutions
+          Innovative Marketing Technology Automation
         </h2>
         <!-- <a
           class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"

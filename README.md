@@ -16,7 +16,7 @@
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/shadow81627/daim.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/shadow81627/daim/alerts/)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/shadow81627/daim.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/shadow81627/daim/alerts/)
 
-> Innovative Marketing Technology Solutions
+> Innovative Marketing Technology Automation
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
