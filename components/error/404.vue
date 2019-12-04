@@ -2,30 +2,35 @@
   <div>
     <img
       sizes="100vw"
-      alt=""
-      class="error__img img-fluid"
-      src="https://res.cloudinary.com/pocketpasta/image/upload/c_scale,dpr_auto,g_auto,w_auto,f_auto,q_auto:low/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg"
+      alt
+      class="cld-responsive error__img img-fluid"
+      data-src="https://res.cloudinary.com/pocketpasta/image/upload/c_scale,dpr_auto,w_auto,f_auto,q_auto:low/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg"
     />
     <div id="message" class="card bg-light card-body">
       <h2>404</h2>
       <h1>{{ $t('error.404.heading') }}</h1>
-      <p>
-        {{ $t('error.404.description') }}
-      </p>
-      <nuxt-link :to="localePath('index')" class="btn btn-primary">{{
-        $t('layout.navigation.home')
-      }}</nuxt-link>
+      <p>{{ $t('error.404.description') }}</p>
+      <nuxt-link :to="localePath('index')" class="btn btn-primary">
+        {{ $t('layout.navigation.home') }}
+      </nuxt-link>
     </div>
   </div>
 </template>
 
 <script>
+/* global cloudinary */
 export default {
   props: {
     error: {
       type: Object,
       default: () => {},
     },
+  },
+  mounted() {
+    // Initialize
+    const cl = cloudinary.Cloudinary.new({ cloud_name: '<Cloud Name>' });
+    // Call
+    cl.responsive();
   },
   head() {
     return {
@@ -36,6 +41,12 @@ export default {
           name: 'description',
           content: this.$t('error.404.description'),
         },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'DPR, Width',
+          'http-equiv': 'Accept-CH',
+        },
       ],
       link: [
         {
@@ -43,6 +54,12 @@ export default {
           rel: 'preconnect',
           href: 'https://res.cloudinary.com',
           crossorigin: 'anonymous',
+        },
+      ],
+      script: [
+        {
+          src:
+            'https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js',
         },
       ],
     };
