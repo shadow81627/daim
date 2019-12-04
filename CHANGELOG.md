@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.6](https://github.com/shadow81627/daim/compare/v1.4.5...v1.4.6) (2019-12-04)
+
+### Bug Fixes
+
+  - **error:** use fluid layout ([d29a105](https://github.com/shadow81627/daim/commit/d29a10535b116d013d8669dd4f84a8a9b46a38f2))
+
 ## [1.4.5](https://github.com/shadow81627/daim/compare/v1.4.4...v1.4.5) (2019-12-04)
 
 ### Performance Improvements
