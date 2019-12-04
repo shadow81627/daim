@@ -32,6 +32,7 @@
     "@nuxtjs/pwa": "3.0.0-beta.19",
     "bootstrap": "4.4.1",
     "bootstrap-vue": "2.1.0",
+    "cloudinary-core": "2.8.0",
     "cross-env": "6.0.3",
     "koa": "2.11.0",
     "nuxt": "2.10.2",
