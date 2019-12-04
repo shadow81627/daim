@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.5](https://github.com/shadow81627/daim/compare/v1.4.4...v1.4.5) (2019-12-04)
+
+### Performance Improvements
+
+  - **404:** set image width with cloudinary ([fa37f3e](https://github.com/shadow81627/daim/commit/fa37f3e2ccf378b41feee6d49041891e4e746e18))
+
 ## [1.4.4](https://github.com/shadow81627/daim/compare/v1.4.3...v1.4.4) (2019-12-03)
 
 ### Performance Improvements
