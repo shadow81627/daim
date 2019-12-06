@@ -15,6 +15,7 @@
 [![Bors enabled](https://bors.tech/images/badge_small.svg)](https://app.bors.tech/repositories/3)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/shadow81627/daim.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/shadow81627/daim/alerts/)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/shadow81627/daim.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/shadow81627/daim/alerts/)
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/gatsby)
 
 > Innovative Marketing Technology Automation
 
