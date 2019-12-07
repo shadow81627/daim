@@ -1,5 +1,11 @@
 # Releases
 
+## [1.5.0](https://github.com/shadow81627/daim/compare/v1.4.6...v1.5.0) (2019-12-07)
+
+### Features
+
+  - **theme:** add lux bootstrap theme ([501d22b](https://github.com/shadow81627/daim/commit/501d22b0f6757c4e8c6e3eb805f83078ca87e784))
+
 ## [1.4.6](https://github.com/shadow81627/daim/compare/v1.4.5...v1.4.6) (2019-12-04)
 
 ### Bug Fixes
