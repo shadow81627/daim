@@ -3,8 +3,10 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <h1 class="xintro-lead-in">Daim</h1>
-        <h2 class="xintro-heading">
+        <h1 class="xintro-lead-in text-light text-capitalize text-shadow ">
+          Daim
+        </h1>
+        <h2 class="xintro-heading text-light text-capitalize text-shadow">
           Innovative Marketing Technology Automation
         </h2>
         <!-- <a

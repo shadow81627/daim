@@ -76,7 +76,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/scss/custom.scss'],
 
   /*
    ** Plugins to load before mounting the App
@@ -115,8 +115,8 @@ module.exports = {
   axios: {},
 
   bootstrapVue: {
-    // bootstrapCSS: false, // or `css`
-    // bootstrapVueCSS: false, // or `bvCSS`
+    bootstrapCSS: false, // or `css`
+    bootstrapVueCSS: false, // or `bvCSS`
     componentPlugins: [
       'Image',
       'FormSelect',
