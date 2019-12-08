@@ -8,7 +8,7 @@
               <span>Version: {{ version }}</span>
               <span>|</span>
               <span>Commit: </span>
-              <nuxt-link to="#">
+              <nuxt-link to="releases">
                 <span> {{ commit | shortHash }}</span>
               </nuxt-link>
             </v-card-text>

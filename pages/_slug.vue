@@ -45,7 +45,8 @@ export default {
     });
   },
   validate({ params, query, store }) {
-    return params.slug !== '404.html';
+    const routeBlacklist = ['404.html'];
+    return !(params.slug in routeBlacklist);
   },
 };
 </script>
