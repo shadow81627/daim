@@ -1,9 +1,9 @@
 <template>
   <div id="message" class="card bg-light card-body">
     <h2 v-if="error.statusCode">{{ error.statusCode }}</h2>
-    <!-- <h1>{{ $t('error.500.heading') }}</h1> -->
+    <h1>{{ $t('error.500.heading') }}</h1>
     <p>
-      <!-- {{ $t('error.500.description') }} -->
+      {{ $t('error.500.description') }}
     </p>
     <video
       autoplay
