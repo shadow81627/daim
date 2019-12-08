@@ -1,5 +1,11 @@
 # Releases
 
+## [1.7.0](https://github.com/shadow81627/daim/compare/v1.6.0...v1.7.0) (2019-12-08)
+
+### Features
+
+  - **500:** add heading ([1ff459b](https://github.com/shadow81627/daim/commit/1ff459b730dc05f952c4ab6dbc143188a0f024ea))
+
 ## [1.6.0](https://github.com/shadow81627/daim/compare/v1.5.0...v1.6.0) (2019-12-08)
 
 ### Bug Fixes
