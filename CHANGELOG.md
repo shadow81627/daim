@@ -1,5 +1,12 @@
 # Releases
 
+## [1.8.0](https://github.com/shadow81627/daim/compare/v1.7.1...v1.8.0) (2019-12-08)
+
+### Features
+
+  - **pages:** add releases page ([1ff0f51](https://github.com/shadow81627/daim/commit/1ff0f51009722f37a4f2dfe95c7763727168f97d))
+  - **pages:** add releases page ([38abac8](https://github.com/shadow81627/daim/commit/38abac8409118b48744097088a634f7671b01a6a))
+
 ## [1.7.1](https://github.com/shadow81627/daim/compare/v1.7.0...v1.7.1) (2019-12-08)
 
 ### Bug Fixes
