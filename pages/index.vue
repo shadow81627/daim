@@ -1,15 +1,20 @@
 <template>
   <div class="xcontainer">
-    <the-header></the-header>
+    <hero
+      :blok="{
+        headline: 'Daim',
+        desciption: 'Innovative Marketing Technology Automation',
+      }"
+    ></hero>
   </div>
 </template>
 
 <script>
-import TheHeader from '~/components/the-header.vue';
+import Hero from '~/components/hero.vue';
 
 export default {
   components: {
-    TheHeader,
+    Hero,
   },
 };
 </script>

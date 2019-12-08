@@ -1,10 +1,10 @@
 <template>
   <div v-editable="blok" class="page">
     <component
-      :is="blok.component"
-      v-for="content in blok.body"
-      :key="content._uid"
-      :blok="content"
+      :is="body.component"
+      v-for="body in blok.body"
+      :key="body._uid"
+      :blok="body"
     ></component>
   </div>
 </template>
