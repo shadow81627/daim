@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  props: { text: { type: String, default: null } },
+  props: { text: { type: Object, required: true } },
   computed: {
     richtext() {
       return this.text ? this.$storyapi.richTextResolver.render(this.text) : '';
