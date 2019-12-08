@@ -1,5 +1,18 @@
 # Releases
 
+## [1.6.0](https://github.com/shadow81627/daim/compare/v1.5.0...v1.6.0) (2019-12-08)
+
+### Bug Fixes
+
+  - **richtext:** change type to object ([bb2d20a](https://github.com/shadow81627/daim/commit/bb2d20abaa990a5560e372545b8d035bd3b84ec0))
+
+### Features
+
+  - **blog:** add a blog section ([d5184ef](https://github.com/shadow81627/daim/commit/d5184efcfdda58797900a39c46aaa7e351887576))
+  - **home:** add content from storyblok ([1096466](https://github.com/shadow81627/daim/commit/1096466d00cffe9571d020af157e126d5879f6b4))
+  - **storyblok:** add storyblok cms ([0fa5a67](https://github.com/shadow81627/daim/commit/0fa5a6787b54d09464b6db7f35bf8d704ac7fa48))
+  - **storyblok:** add storyblok cms ([bf0e3e9](https://github.com/shadow81627/daim/commit/bf0e3e9c5035e8dea33f3d1f552f00156a624936))
+
 ## [1.5.0](https://github.com/shadow81627/daim/compare/v1.4.6...v1.5.0) (2019-12-07)
 
 ### Features
