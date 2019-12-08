@@ -1,5 +1,11 @@
 # Releases
 
+## [1.7.1](https://github.com/shadow81627/daim/compare/v1.7.0...v1.7.1) (2019-12-08)
+
+### Bug Fixes
+
+  - **routes:** validate dynamic route to pass through 404 page ([b7de0e9](https://github.com/shadow81627/daim/commit/b7de0e9e619da717c76bfa78a12229dec9a44358))
+
 ## [1.7.0](https://github.com/shadow81627/daim/compare/v1.6.0...v1.7.0) (2019-12-08)
 
 ### Features
