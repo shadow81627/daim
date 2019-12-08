@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- eslint-disable-next-line -->
     <div v-html="richtext"></div>
   </div>
 </template>
