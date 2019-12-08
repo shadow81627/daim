@@ -4,10 +4,10 @@
     <div class="container">
       <div class="intro-text">
         <h1 class="xintro-lead-in text-light text-capitalize text-shadow ">
-          Daim
+          {{ blok.headline }}
         </h1>
         <h2 class="xintro-heading text-light text-capitalize text-shadow">
-          Innovative Marketing Technology Automation
+          {{ blok.desciption }}
         </h2>
         <!-- <a
           class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
@@ -18,6 +18,12 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  props: { blok: { type: Object, required: true } },
+};
+</script>
 
 <style scoped>
 header.masthead {

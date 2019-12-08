@@ -76,12 +76,12 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['~/assets/scss/custom.scss'],
+  css: ['~/assets/scss/custom.scss', '~/assets/css/storyblok.css'],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/components.js'],
 
   /*
    ** Nuxt.js dev-modules
@@ -106,6 +106,13 @@ module.exports = {
     '@nuxtjs/dotenv',
     '@nuxtjs/vuetify',
     'nuxt-i18n',
+    [
+      'storyblok-nuxt',
+      {
+        accessToken: 'kycw6YWwjgilZCDf6Xb6kAtt',
+        cacheProvider: 'memory',
+      },
+    ],
   ],
 
   /*
@@ -147,6 +154,8 @@ module.exports = {
     lazy: true,
     langDir: 'lang/',
   },
+
+  // storyblok: {},
 
   vuetify: {
     optionsPath: './vuetify.options.js',

@@ -20,7 +20,7 @@
       </v-toolbar-title>
       <v-spacer />
     </v-app-bar>
-    <v-content>
+    <v-content role="main">
       <nuxt style="min-height: 100vh;" />
       <the-footer />
     </v-content>

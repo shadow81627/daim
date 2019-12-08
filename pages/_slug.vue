@@ -1,5 +1,5 @@
 <template>
-  <section class="util__container">
+  <section>
     <component
       :is="story.content.component"
       v-if="story.content.component"
@@ -8,12 +8,8 @@
     ></component>
   </section>
 </template>
-
 <script>
-// import storyblokLivePreview from '@/mixins/storyblokLivePreview';
-
 export default {
-  // mixins: [storyblokLivePreview],
   asyncData(context) {
     // Check if we are in the editor mode
     const version =
@@ -21,7 +17,7 @@ export default {
 
     // Load the JSON from the API
     return context.app.$storyapi
-      .get('cdn/stories/home', {
+      .get(`cdn/stories/${context.params.slug}`, {
         version,
       })
       .then((res) => {
@@ -36,6 +32,17 @@ export default {
   },
   data() {
     return { story: { content: {} } };
+  },
+  mounted() {
+    this.$storybridge.on(['input', 'published', 'change'], (event) => {
+      if (event.action === 'input') {
+        if (event.story.id === this.story.id) {
+          this.story.content = event.story.content;
+        }
+      } else {
+        window.location.reload();
+      }
+    });
   },
 };
 </script>
