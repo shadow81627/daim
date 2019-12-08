@@ -44,5 +44,8 @@ export default {
       }
     });
   },
+  validate({ params, query, store }) {
+    return params.slug !== '404.html';
+  },
 };
 </script>
