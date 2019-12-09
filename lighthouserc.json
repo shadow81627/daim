@@ -1,13 +1,14 @@
 {
   "ci": {
     "collect": {
-      "numberOfRuns": 3
+      "numberOfRuns": 5
     },
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
         "color-contrast": "off",
-        "unused-css-rules": "off"
+        "unused-css-rules": "off",
+        "uses-http2": "off"
       }
     },
     "upload": {
