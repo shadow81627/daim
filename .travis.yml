@@ -19,7 +19,7 @@ script:
   - npm run lint
   # - npm run test
   - npm run generate:modern
-  - mv dist public
+  - cp -R dist public
 
 before_deploy:
   - npx semantic-release
