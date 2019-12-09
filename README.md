@@ -19,7 +19,7 @@
 
 > Innovative Marketing Technology Automation
 
-[📖 **Release Notes**](./CHANGELOG.md)
+[📖 **Release Notes**](https://github.com/shadow81627/daim/blob/master/CHANGELOG.md)
 
 ## Build Setup
 
