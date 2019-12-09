@@ -12,6 +12,7 @@ import {
   mdiMapMarker,
   mdiViewList,
   mdiViewComfy,
+  mdiHome,
 } from '@mdi/js';
 
 // vuetify.options.js
@@ -40,6 +41,7 @@ export default {
       place: mdiMapMarker,
       list: mdiViewList,
       view_comfy: mdiViewComfy,
+      home: mdiHome,
     },
   },
   // lang: {},

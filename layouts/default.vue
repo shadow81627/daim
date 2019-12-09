@@ -1,11 +1,40 @@
 <template>
   <v-app id="inspire" :dark="isDark" clipped-left>
+    <v-navigation-drawer
+      v-model="drawer"
+      :clipped="$vuetify.breakpoint.lgAndUp"
+      app
+      class="hidden-print-only"
+    >
+      <v-list dense>
+        <v-list-item
+          v-for="item in items"
+          :key="item.text"
+          :to="localePath(item.route ? item.route : {})"
+          active-class="btn-primary pointer-events-none active"
+          nuxt
+          class="text-decoration-none"
+        >
+          <v-list-item-action>
+            <v-icon>${{ item.icon }}</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>{{ item.text }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
     <v-app-bar
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
       fixed
       class="hidden-print-only navbar-dark bg-dark"
     >
+      <v-app-bar-nav-icon
+        aria-label="menu"
+        dark
+        @click.stop="drawer = !drawer"
+      />
       <v-toolbar-title style="width: 256px" class="ml-0 pl-3">
         <!-- <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" /> -->
         <!-- <b-img-lazy
@@ -35,14 +64,25 @@ export default {
   },
   data() {
     return {
-      dialog: false,
       drawer: false,
+      items: [
+        {
+          icon: 'home',
+          text: 'Home',
+          route: 'index',
+        },
+        {
+          icon: 'info',
+          text: 'Blog',
+          route: 'blog',
+        },
+      ],
     };
   },
   computed: {
-    items() {
-      return [];
-    },
+    // items() {
+    //   return [];
+    // },
     isDark() {
       return false;
       // return this.$store.getters.getCurrentTheme().dark;
