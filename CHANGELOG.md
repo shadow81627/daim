@@ -1,5 +1,11 @@
 # Releases
 
+## [1.9.0](https://github.com/shadow81627/daim/compare/v1.8.0...v1.9.0) (2019-12-09)
+
+### Features
+
+  - **layout:** add navigation draw ([da6506b](https://github.com/shadow81627/daim/commit/da6506be527037bdc4de1836bd380a592c0c1a99))
+
 ## [1.8.0](https://github.com/shadow81627/daim/compare/v1.7.1...v1.8.0) (2019-12-08)
 
 ### Features
