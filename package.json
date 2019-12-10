@@ -39,7 +39,7 @@
     "github-markdown-css": "3.0.1",
     "koa": "2.11.0",
     "nuxt": "2.10.2",
-    "nuxt-i18n": "6.4.1",
+    "nuxt-i18n": "6.4.0",
     "storyblok-nuxt": "1.0.2"
   },
   "devDependencies": {
