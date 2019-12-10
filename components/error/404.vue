@@ -4,7 +4,15 @@
       sizes="100vw"
       alt
       class="cld-responsive error__img img-fluid"
+      src="https://res.cloudinary.com/pocketpasta/image/upload/c_scale,dpr_auto,w_auto,f_auto,q_auto:low/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg"
       data-src="https://res.cloudinary.com/pocketpasta/image/upload/c_scale,dpr_auto,w_auto,f_auto,q_auto:low/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg"
+      srcset="
+        https://res.cloudinary.com/pocketpasta/image/upload/f_auto%2Cq_70%2Cw_256/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg   256w,
+        https://res.cloudinary.com/pocketpasta/image/upload/f_auto%2Cq_70%2Cw_512/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg   512w,
+        https://res.cloudinary.com/pocketpasta/image/upload/f_auto%2Cq_70%2Cw_768/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg   768w,
+        https://res.cloudinary.com/pocketpasta/image/upload/f_auto%2Cq_70%2Cw_1024/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg 1024w,
+        https://res.cloudinary.com/pocketpasta/image/upload/f_auto%2Cq_70%2Cw_1280/v1575402067/anna-pascale-GoqEgxAgQw0-unsplash_qq2jte.jpg 1280w
+      "
     />
     <div id="message" class="card bg-light card-body">
       <h2>404</h2>
