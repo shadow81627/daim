@@ -1,5 +1,11 @@
 # Releases
 
+## [1.9.1](https://github.com/shadow81627/daim/compare/v1.9.0...v1.9.1) (2019-12-10)
+
+### Performance Improvements
+
+  - **404:** add srcset ([a694bca](https://github.com/shadow81627/daim/commit/a694bcaa31209c9aef6539a8e79e54fc3b9cfbc0))
+
 ## [1.9.0](https://github.com/shadow81627/daim/compare/v1.8.0...v1.9.0) (2019-12-09)
 
 ### Features
