@@ -8,6 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build --modern && nuxt generate --modern && mv dist public",
     "build:analyze": "nuxt build --analyze",
+    "build:modern": "nuxt build --modern",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
     "generate:modern": "nuxt generate --modern",

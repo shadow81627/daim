@@ -70,6 +70,8 @@ module.exports = {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Rouge+Script&display=swap',
+        lazyload: true,
+        body: true,
       },
     ],
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
