@@ -1,5 +1,11 @@
 # Releases
 
+## [1.10.1](https://github.com/shadow81627/daim/compare/v1.10.0...v1.10.1) (2019-12-10)
+
+### Performance Improvements
+
+  - **brand:** lazyload font ([a27ac11](https://github.com/shadow81627/daim/commit/a27ac1196071a6bd6c75774519f0d7bc81226467))
+
 ## [1.10.0](https://github.com/shadow81627/daim/compare/v1.9.1...v1.10.0) (2019-12-10)
 
 ### Features
