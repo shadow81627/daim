@@ -1,5 +1,11 @@
 # Releases
 
+## [1.10.2](https://github.com/shadow81627/daim/compare/v1.10.1...v1.10.2) (2019-12-10)
+
+### Bug Fixes
+
+  - **icons:** rename logo to icon ([2ab5f70](https://github.com/shadow81627/daim/commit/2ab5f70464d5f8beebd5f73ffbeb2c49a505e0b5))
+
 ## [1.10.1](https://github.com/shadow81627/daim/compare/v1.10.0...v1.10.1) (2019-12-10)
 
 ### Performance Improvements
