@@ -36,15 +36,6 @@
         @click.stop="drawer = !drawer"
       />
       <v-toolbar-title style="width: 256px" class="ml-0 pl-3">
-        <!-- <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" /> -->
-        <!-- <b-img-lazy
-          :src="$icon(32)"
-          width="32"
-          height="32"
-          class="rounded"
-          alt="PocketPasta"
-          onerror="javascript:this.style.display = 'none'"
-        /> -->
         <span class="brand navbar-brand">Daim</span>
       </v-toolbar-title>
       <v-spacer />
@@ -103,8 +94,8 @@ export default {
 
 <style>
 .brand {
-  font-family: 'Comic Neue', sans-serif;
-  font-size: 1.5rem;
+  font-family: 'Rouge Script', cursive;
+  font-size: 2rem;
   font-weight: 400;
   vertical-align: middle;
 }
