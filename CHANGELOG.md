@@ -1,5 +1,11 @@
 # Releases
 
+## [1.10.0](https://github.com/shadow81627/daim/compare/v1.9.1...v1.10.0) (2019-12-10)
+
+### Features
+
+  - **brand:** add icons and brand font ([6557a25](https://github.com/shadow81627/daim/commit/6557a2522f1288139271c02e53bbf71e95026048))
+
 ## [1.9.1](https://github.com/shadow81627/daim/compare/v1.9.0...v1.9.1) (2019-12-10)
 
 ### Performance Improvements
