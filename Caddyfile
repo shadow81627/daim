@@ -1,0 +1,41 @@
+localhost
+proxy / localhost:3000 {
+    transparent
+}
+
+cache
+
+gzip {
+    level 4
+    min_length 1000
+}
+
+redir {
+  if {scheme} is http
+  / https://{host}{uri}
+}
+
+redir 301 {
+	if {>X-Forwarded-Proto} is http
+	/  https://{host}{uri}
+}
+
+log
+
+tls ./localhost.pem ./localhost-key.pem
+
+header / {
+    Caddy-Request-Id {request_id}
+	# Enable HTTP Strict Transport Security (HSTS) to force clients to always
+	# connect via HTTPS (do not use if only testing)
+	# Strict-Transport-Security "max-age=31536000;"
+	# Enable cross-site filter (XSS) and tell browser to block detected attacks
+	X-XSS-Protection "1; mode=block"
+	# Prevent some browsers from MIME-sniffing a response away from the declared Content-Type
+	X-Content-Type-Options "nosniff"
+	# Disallow the site to be rendered within a frame (clickjacking protection)
+	X-Frame-Options "DENY"
+  Content-Security-Policy "upgrade-insecure-requests"
+}
+
+header /_nuxt/ Cache-Control "max-age=31536000"
