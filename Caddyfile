@@ -5,6 +5,8 @@ proxy / localhost:3000 {
 
 cache
 
+websocket /
+
 gzip {
     level 4
     min_length 1000
