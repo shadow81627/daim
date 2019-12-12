@@ -3,7 +3,6 @@ const pkg = require('./package');
 
 module.exports = {
   mode: 'universal',
-  // buildDir: 'public',
 
   env: {
     HOST: process.env.HOST,
@@ -14,7 +13,7 @@ module.exports = {
 
   generate: {
     // use '404.html' instead default '200.html'
-    // fallback: true,
+    fallback: true,
     // dir: 'public',
     // routes,
   },
@@ -41,7 +40,7 @@ module.exports = {
   head: {
     titleTemplate: (titleChunk) => {
       // If undefined or blank then we don't need the hyphen
-      return titleChunk ? `${titleChunk} - Daim` : 'Daim';
+      return titleChunk ? `${titleChunk} - 𝒟𝒶𝒾𝓂` : '𝒟𝒶𝒾𝓂';
     },
     meta: [
       { charset: 'utf-8' },
@@ -55,7 +54,7 @@ module.exports = {
         property: 'og:title',
         template: (titleChunk) => {
           // If undefined or blank then we don't need the hyphen
-          return titleChunk ? `${titleChunk} - Daim` : 'Daim';
+          return titleChunk ? `${titleChunk} - 𝒟𝒶𝒾𝓂` : '𝒟𝒶𝒾𝓂';
         },
         vmid: 'og:title',
       },
