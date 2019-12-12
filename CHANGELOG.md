@@ -1,5 +1,11 @@
 # Releases
 
+## [1.11.0](https://github.com/shadow81627/daim/compare/v1.10.2...v1.11.0) (2019-12-12)
+
+### Features
+
+  - **title:** use fancy emoji page title ([a0fca4f](https://github.com/shadow81627/daim/commit/a0fca4f08ed55e063e3aeb35abf08f6fe0588878))
+
 ## [1.10.2](https://github.com/shadow81627/daim/compare/v1.10.1...v1.10.2) (2019-12-10)
 
 ### Bug Fixes
