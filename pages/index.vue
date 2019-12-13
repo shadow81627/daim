@@ -10,10 +10,10 @@
 </template>
 
 <script>
-// import storyblokLivePreview from '@/mixins/storyblokLivePreview';
+import storyblokLivePreview from '@/mixins/storyblokLivePreview';
 
 export default {
-  // mixins: [storyblokLivePreview],
+  mixins: [storyblokLivePreview],
   asyncData(context) {
     // Check if we are in the editor mode
     const version =
