@@ -99,6 +99,7 @@ module.exports = {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     // '@nuxtjs/stylelint-module',
+    '@nuxtjs/vuetify',
   ],
 
   /*
@@ -113,7 +114,6 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
-    '@nuxtjs/vuetify',
     'nuxt-i18n',
     [
       'storyblok-nuxt',
