@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header v-editable="blok">
     <v-parallax :src="require('~/assets/img/header-bg.jpg')">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
