@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  nuxt:
+    build: .
+    container_name: daim-website
+    restart: always
+    ports:
+      - "3000:3000"
+    command:
+      "npm run start"
+
+  nginx:
+    image: nginx:latest
+    container_name: daim-nginx
+    ports:
+      - "443:443"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - nuxt
