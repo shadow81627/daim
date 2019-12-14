@@ -1,5 +1,11 @@
 # Releases
 
+## [1.11.3](https://github.com/shadow81627/daim/compare/v1.11.2...v1.11.3) (2019-12-14)
+
+### Performance Improvements
+
+  - **images:** add webpack image loader ([44010bb](https://github.com/shadow81627/daim/commit/44010bb32c1796ede2dacb872d88073740e1ede2))
+
 ## [1.11.2](https://github.com/shadow81627/daim/compare/v1.11.1...v1.11.2) (2019-12-14)
 
 ### Performance Improvements
