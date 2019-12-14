@@ -81,6 +81,7 @@
     "responsive-loader": "1.2.0",
     "semantic-release": "15.13.31",
     "sqip-loader": "1.0.0",
+    "storyblok-migrate": "0.3.3",
     "stylelint": "12.0.0",
     "webp-loader": "0.6.0"
   }
