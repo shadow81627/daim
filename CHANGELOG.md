@@ -1,5 +1,11 @@
 # Releases
 
+## [1.11.1](https://github.com/shadow81627/daim/compare/v1.11.0...v1.11.1) (2019-12-14)
+
+### Performance Improvements
+
+  - **font:** self host brand font ([a1f47b0](https://github.com/shadow81627/daim/commit/a1f47b0a4f4c356e75647731599b4f1cf35beec3))
+
 ## [1.11.0](https://github.com/shadow81627/daim/compare/v1.10.2...v1.11.0) (2019-12-12)
 
 ### Features
