@@ -66,6 +66,11 @@
     "eslint-plugin-nuxt": "0.5.0",
     "eslint-plugin-prettier": "3.1.1",
     "husky": "3.1.0",
+    "imagemin-gifsicle": "6.0.1",
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-pngquant": "8.0.0",
+    "imagemin-svgo": "7.0.0",
+    "jimp": "0.9.3",
     "lint-staged": "9.5.0",
     "lqip-loader": "2.2.0",
     "nodemon": "2.0.1",
@@ -73,7 +78,10 @@
     "require-extension-hooks": "0.3.3",
     "require-extension-hooks-babel": "1.0.0",
     "require-extension-hooks-vue": "3.0.0",
+    "responsive-loader": "1.2.0",
     "semantic-release": "15.13.31",
-    "stylelint": "12.0.0"
+    "sqip-loader": "1.0.0",
+    "stylelint": "12.0.0",
+    "webp-loader": "0.6.0"
   }
 }
