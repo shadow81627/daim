@@ -49,7 +49,7 @@
     "@bazzite/nuxt-optimized-images": "0.2.2",
     "@fullhuman/postcss-purgecss": "1.3.0",
     "@lhci/cli": "0.3.7",
-    "@mdi/js": "4.6.95",
+    "@mdi/js": "4.7.95",
     "@nuxtjs/eslint-config": "2.0.0",
     "@nuxtjs/eslint-module": "1.1.0",
     "@nuxtjs/stylelint-module": "3.1.1",
