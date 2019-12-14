@@ -63,16 +63,7 @@ module.exports = {
         content: pkg.version,
       },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Rouge+Script&display=swap',
-        lazyload: true,
-        body: true,
-      },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
   },
 
@@ -84,7 +75,11 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['~/assets/scss/custom.scss', '~/assets/css/storyblok.css'],
+  css: [
+    '~/assets/scss/custom.scss',
+    '~/assets/css/storyblok.css',
+    '~/assets/css/fonts.css',
+  ],
 
   /*
    ** Plugins to load before mounting the App
@@ -115,6 +110,7 @@ module.exports = {
     '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
     'nuxt-i18n',
+    'nuxt-webfontloader',
     [
       'storyblok-nuxt',
       {
@@ -172,6 +168,22 @@ module.exports = {
     treeShake: true,
     theme: { disable: true },
     defaultAssets: false,
+  },
+
+  webfontloader: {
+    // google: {
+    //   families: ['Rouge Script', 'Nunito Sans:n4,n6'],
+    //   urls: [
+    //     // for each Google Fonts add url + options you want
+    //     // here add font-display option
+    //     'https://fonts.googleapis.com/css?family=Rouge+Script&display=swap',
+    //     'https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&display=swap',
+    //     // 'https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap'
+    //   ]
+    // },
+    custom: {
+      families: ['Rouge Script'],
+    },
   },
 
   /*
