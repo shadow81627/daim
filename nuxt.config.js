@@ -112,6 +112,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/stylelint-module
     // '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
+    '@bazzite/nuxt-optimized-images',
   ],
 
   /*

@@ -46,6 +46,7 @@
     "storyblok-nuxt": "1.0.2"
   },
   "devDependencies": {
+    "@bazzite/nuxt-optimized-images": "0.2.2",
     "@fullhuman/postcss-purgecss": "1.3.0",
     "@lhci/cli": "0.3.6",
     "@mdi/js": "4.6.95",
@@ -66,6 +67,7 @@
     "eslint-plugin-prettier": "3.1.1",
     "husky": "3.1.0",
     "lint-staged": "9.5.0",
+    "lqip-loader": "2.2.0",
     "nodemon": "2.0.1",
     "prettier": "1.19.1",
     "require-extension-hooks": "0.3.3",
