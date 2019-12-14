@@ -73,7 +73,7 @@
     "jimp": "0.9.3",
     "lint-staged": "9.5.0",
     "lqip-loader": "2.2.0",
-    "nodemon": "2.0.1",
+    "nodemon": "2.0.2",
     "prettier": "1.19.1",
     "require-extension-hooks": "0.3.3",
     "require-extension-hooks-babel": "1.0.0",
