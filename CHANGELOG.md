@@ -1,5 +1,12 @@
 # Releases
 
+## [1.11.2](https://github.com/shadow81627/daim/compare/v1.11.1...v1.11.2) (2019-12-14)
+
+### Performance Improvements
+
+  - **fonts:** add font-display: swap ([97be846](https://github.com/shadow81627/daim/commit/97be84653148b20ad7d7350c78d7c1ce4e526e3d))
+  - **preload:** add fonts and images to preload ([1d8d027](https://github.com/shadow81627/daim/commit/1d8d02774f0cf23ebcfe2d7448f1c01bdd20f2f1))
+
 ## [1.11.1](https://github.com/shadow81627/daim/compare/v1.11.0...v1.11.1) (2019-12-14)
 
 ### Performance Improvements
