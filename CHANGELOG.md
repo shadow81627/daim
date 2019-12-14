@@ -1,5 +1,11 @@
 # Releases
 
+## [1.11.4](https://github.com/shadow81627/daim/compare/v1.11.3...v1.11.4) (2019-12-14)
+
+### Performance Improvements
+
+  - **images:** add more image loaders ([e079ca4](https://github.com/shadow81627/daim/commit/e079ca40330ac5747dcbf3cff8c4cd2caf46d71f))
+
 ## [1.11.3](https://github.com/shadow81627/daim/compare/v1.11.2...v1.11.3) (2019-12-14)
 
 ### Performance Improvements
