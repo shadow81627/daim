@@ -183,6 +183,7 @@ module.exports = {
     // },
     custom: {
       families: ['Rouge Script'],
+      // urls: ['/fonts.css']
     },
   },
 
