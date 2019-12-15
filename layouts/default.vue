@@ -67,6 +67,11 @@ export default {
           text: 'Blog',
           route: 'blog',
         },
+        {
+          icon: 'account-tie',
+          text: 'Resume',
+          route: 'resume',
+        },
       ],
     };
   },

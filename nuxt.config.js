@@ -127,6 +127,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
+    '@nuxtjs/font-awesome',
     'nuxt-i18n',
     'nuxt-webfontloader',
     [
@@ -180,7 +181,7 @@ module.exports = {
 
   optimizedImages: {
     mozjpeg: {
-      quality: 75,
+      quality: 70,
     },
   },
 
