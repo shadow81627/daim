@@ -1,5 +1,15 @@
 # Releases
 
+## [1.12.0](https://github.com/shadow81627/daim/compare/v1.11.4...v1.12.0) (2019-12-15)
+
+### Features
+
+  - **resume:** add a resume page ([2026741](https://github.com/shadow81627/daim/commit/20267415c5409e33765350c2bc4448dc751c03a1))
+
+### Performance Improvements
+
+  - **images:** reduce quality to 75 ([5c1b95a](https://github.com/shadow81627/daim/commit/5c1b95aed7a4d50788e8d93f74200a49c8f69349))
+
 ## [1.11.4](https://github.com/shadow81627/daim/compare/v1.11.3...v1.11.4) (2019-12-14)
 
 ### Performance Improvements
