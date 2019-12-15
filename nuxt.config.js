@@ -178,6 +178,12 @@ module.exports = {
     langDir: 'lang/',
   },
 
+  optimizedImages: {
+    mozjpeg: {
+      quality: 75,
+    },
+  },
+
   // storyblok: {},
 
   vuetify: {
