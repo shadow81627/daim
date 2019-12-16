@@ -1,5 +1,11 @@
 # Releases
 
+## [1.12.3](https://github.com/shadow81627/daim/compare/v1.12.2...v1.12.3) (2019-12-16)
+
+### Bug Fixes
+
+  - **resume:** word break h1 ([f1a92e9](https://github.com/shadow81627/daim/commit/f1a92e989d92469b607cee39dd1950f86f5985b1))
+
 ## [1.12.2](https://github.com/shadow81627/daim/compare/v1.12.1...v1.12.2) (2019-12-16)
 
 ### Bug Fixes
