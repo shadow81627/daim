@@ -1,5 +1,12 @@
 # Releases
 
+## [1.12.2](https://github.com/shadow81627/daim/compare/v1.12.1...v1.12.2) (2019-12-16)
+
+### Bug Fixes
+
+  - **fonts:** add font family base to vuetify application style ([81431a5](https://github.com/shadow81627/daim/commit/81431a57ca5c0ffe8cbf5b173a8137a13cd9e438))
+  - **print:** force point sizes, fonts and colors ([9014742](https://github.com/shadow81627/daim/commit/90147424675b00bab95cd3448ab9984326c9c5df))
+
 ## [1.12.1](https://github.com/shadow81627/daim/compare/v1.12.0...v1.12.1) (2019-12-16)
 
 ### Bug Fixes
