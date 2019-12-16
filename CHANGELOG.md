@@ -1,5 +1,13 @@
 # Releases
 
+## [1.12.1](https://github.com/shadow81627/daim/compare/v1.12.0...v1.12.1) (2019-12-16)
+
+### Bug Fixes
+
+  - **deps:** pin dependencies ([546d1bf](https://github.com/shadow81627/daim/commit/546d1bfd052866512d3135cfa5717f08a3b65492))
+  - **deps:** pin dependencies ([3491de5](https://github.com/shadow81627/daim/commit/3491de53594b12fc5b018293f73b316971c5a016))
+  - **resume:** add font awesome svg icons ([6d20274](https://github.com/shadow81627/daim/commit/6d202748baee85eb019114111431b3cf3033bc5e))
+
 ## [1.12.0](https://github.com/shadow81627/daim/compare/v1.11.4...v1.12.0) (2019-12-15)
 
 ### Features
