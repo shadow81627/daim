@@ -1,0 +1,82 @@
+@media print {
+
+  /* https://www.matuzo.at/blog/i-totally-forgot-about-print-style-sheets/ */
+  *,
+  * *,
+  *:before,
+  *:after,
+  *::before,
+  *::after,
+  *:first-letter,
+  p:first-line,
+  div:first-line,
+  blockquote:first-line,
+  li:first-line {
+    background: transparent;
+    box-shadow: none;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body * {
+    visibility: hidden;
+    text-rendering: optimizeLegibility;
+    font-family: Georgia, "Times New Roman", Times, serif !important;
+    color: #1a1a1a !important;
+  }
+
+  body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 13pt !important;
+    line-height: 1.3;
+    background: none;
+  }
+
+  .container,
+  .container * {
+    visibility: visible;
+  }
+
+  .container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: none;
+    margin: 0; padding: 0;
+  }
+
+  main.v-content {
+    padding: 0;
+  }
+
+  section {
+    page-break-before: always;
+  }
+
+  h1 {
+    font-size: 24pt;
+  }
+
+  h2 {
+    page-break-after: always;
+    font-size: 42pt !important;
+  }
+
+  h3 {
+    font-size: 24pt !important;
+  }
+
+  ul {
+    page-break-inside: avoid;
+  }
+
+  p,
+  p.lead {
+    font-size: 13pt !important;
+    color: #1a1a1a !important;
+    widows: 4;
+    orphans: 3;
+  }
+}
