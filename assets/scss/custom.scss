@@ -9,3 +9,9 @@
 .text-shadow {
   text-shadow: black 0.1em 0.1em 0.2em;
 }
+
+.v-application {
+  font-family: $font-family-base !important;
+}
+
+@import '~/assets/css/print.css' print;
