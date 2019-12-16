@@ -79,17 +79,20 @@
             proposition.
           </p>
           <div class="social-icons">
-            <a href="#">
-              <i class="fab fa-linkedin-in"></i>
+            <a href="https://github.com/shadow81627">
+              <font-awesome-icon :icon="['fab', 'github']" />
             </a>
-            <a href="#">
-              <i class="fab fa-github"></i>
+            <a href="https://www.linkedin.com/in/damien-robinson-788925101">
+              <font-awesome-icon :icon="['fab', 'linkedin-in']" />
             </a>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
+            <a href="https://twitter.com/Shadow81627">
+              <font-awesome-icon :icon="['fab', 'twitter']" />
             </a>
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
+            <a href="https://www.youtube.com/user/shadow81627">
+              <font-awesome-icon :icon="['fab', 'youtube']" />
+            </a>
+            <a href="https://www.facebook.com/damien.robinson.5036">
+              <font-awesome-icon :icon="['fab', 'facebook-f']" />
             </a>
           </div>
         </div>
@@ -176,40 +179,40 @@
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item">
-              <i class="fab fa-html5"></i>
+              <font-awesome-icon :icon="['fab', 'html5']" title="html5" />
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-css3-alt"></i>
+              <font-awesome-icon :icon="['fab', 'css3-alt']" title="css3" />
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-js-square"></i>
+              <font-awesome-icon
+                :icon="['fab', 'js-square']"
+                title="javastipt"
+              />
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-angular"></i>
+              <font-awesome-icon :icon="['fab', 'vuejs']" title="vue" />
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-react"></i>
+              <font-awesome-icon :icon="['fab', 'node-js']" title="node" />
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-node-js"></i>
+              <font-awesome-icon :icon="['fab', 'sass']" title="sass" />
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-sass"></i>
+              <font-awesome-icon :icon="['fab', 'npm']" title="npm" />
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-less"></i>
+              <font-awesome-icon :icon="['fab', 'python']" title="python" />
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-wordpress"></i>
+              <font-awesome-icon :icon="['fab', 'laravel']" title="laravel" />
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-gulp"></i>
+              <font-awesome-icon :icon="['fab', 'docker']" title="docker" />
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-npm"></i>
+              <font-awesome-icon :icon="['fab', 'aws']" title="aws" />
             </li>
           </ul>
 

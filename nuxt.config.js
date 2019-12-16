@@ -127,7 +127,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
-    '@nuxtjs/font-awesome',
+    'nuxt-fontawesome',
     'nuxt-i18n',
     'nuxt-webfontloader',
     [
@@ -158,6 +158,19 @@ module.exports = {
       'FormInputPlugin',
     ],
     directivePlugins: ['Tooltip'],
+  },
+
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas'],
+      },
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab'],
+      },
+    ],
   },
 
   i18n: {
