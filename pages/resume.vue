@@ -62,11 +62,11 @@
         class="resume-section p-3 p-lg-5 d-flex align-items-center"
       >
         <div class="w-100">
-          <h1 class="mb-0">
+          <h1 class="mb-0 text-break">
             Damien
             <span class="text-primary">Robinson</span>
           </h1>
-          <div class="subheading mb-5">
+          <div class="subheading mb-5 text-break">
             <!-- 3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 · -->
             <a href="mailto:damien.robinson@pocketpasta.com"
               >damien.robinson@pocketpasta.com</a
