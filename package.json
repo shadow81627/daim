@@ -44,7 +44,7 @@
     "cross-env": "6.0.3",
     "github-markdown-css": "3.0.1",
     "koa": "2.11.0",
-    "nuxt": "2.10.2",
+    "nuxt": "2.11.0",
     "nuxt-fontawesome": "0.4.0",
     "nuxt-i18n": "6.4.1",
     "nuxt-webfontloader": "1.1.0",
