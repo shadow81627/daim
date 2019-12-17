@@ -80,19 +80,25 @@
           </p>
           <div class="social-icons">
             <a href="https://github.com/shadow81627">
-              <font-awesome-icon :icon="['fab', 'github']" />
+              <font-awesome-icon :icon="['fab', 'github']" title="github" />
             </a>
             <a href="https://www.linkedin.com/in/damien-robinson-788925101">
-              <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+              <font-awesome-icon
+                :icon="['fab', 'linkedin-in']"
+                title="linkedin"
+              />
             </a>
             <a href="https://twitter.com/Shadow81627">
-              <font-awesome-icon :icon="['fab', 'twitter']" />
+              <font-awesome-icon :icon="['fab', 'twitter']" title="twitter" />
             </a>
             <a href="https://www.youtube.com/user/shadow81627">
-              <font-awesome-icon :icon="['fab', 'youtube']" />
+              <font-awesome-icon :icon="['fab', 'youtube']" title="youtube" />
             </a>
             <a href="https://www.facebook.com/damien.robinson.5036">
-              <font-awesome-icon :icon="['fab', 'facebook-f']" />
+              <font-awesome-icon
+                :icon="['fab', 'facebook-f']"
+                title="facebook"
+              />
             </a>
           </div>
         </div>
