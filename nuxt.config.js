@@ -192,11 +192,11 @@ module.exports = {
     langDir: 'lang/',
   },
 
-  optimizedImages: {
-    mozjpeg: {
-      quality: 70,
-    },
-  },
+  // optimizedImages: {
+  //   mozjpeg: {
+  //     quality: 70,
+  //   },
+  // },
 
   // storyblok: {},
 
