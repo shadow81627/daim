@@ -1,5 +1,11 @@
 # Releases
 
+## [1.12.8](https://github.com/shadow81627/daim/compare/v1.12.7...v1.12.8) (2019-12-17)
+
+### Bug Fixes
+
+  - **css:** remove purge css ([d04dd62](https://github.com/shadow81627/daim/commit/d04dd6240bf1260abd9b6134b849ef1bafc2cbdf))
+
 ## [1.12.7](https://github.com/shadow81627/daim/compare/v1.12.6...v1.12.7) (2019-12-17)
 
 ### Performance Improvements
