@@ -1,5 +1,11 @@
 # Releases
 
+## [1.12.4](https://github.com/shadow81627/daim/compare/v1.12.3...v1.12.4) (2019-12-17)
+
+### Bug Fixes
+
+  - **resume:** add title attribute to social links ([f5cc3de](https://github.com/shadow81627/daim/commit/f5cc3dec95b558d72c8abecc7e3d079a57cbc023))
+
 ## [1.12.3](https://github.com/shadow81627/daim/compare/v1.12.2...v1.12.3) (2019-12-16)
 
 ### Bug Fixes
