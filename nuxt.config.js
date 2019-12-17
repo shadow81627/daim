@@ -1,3 +1,7 @@
+const path = require('path');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
+const glob = require('glob-all');
+
 const purgecss = require('@fullhuman/postcss-purgecss');
 const pkg = require('./package');
 
@@ -192,11 +196,11 @@ module.exports = {
     langDir: 'lang/',
   },
 
-  // optimizedImages: {
-  //   mozjpeg: {
-  //     quality: 70,
-  //   },
-  // },
+  optimizedImages: {
+    mozjpeg: {
+      quality: 50,
+    },
+  },
 
   // storyblok: {},
 
@@ -242,6 +246,21 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
         });
+      }
+
+      if (!ctx.isDev) {
+        // Remove unused CSS using PurgeCSS. See https://github.com/FullHuman/purgecss
+        // for more information about PurgeCSS.
+        config.plugins.push(
+          new PurgecssPlugin({
+            paths: glob.sync([
+              path.join(__dirname, './pages/**/*.vue'),
+              path.join(__dirname, './layouts/**/*.vue'),
+              path.join(__dirname, './components/**/*.vue'),
+            ]),
+            whitelist: ['html', 'body'],
+          }),
+        );
       }
     },
   },
