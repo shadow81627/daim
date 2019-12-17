@@ -1,5 +1,11 @@
 # Releases
 
+## [1.12.5](https://github.com/shadow81627/daim/compare/v1.12.4...v1.12.5) (2019-12-17)
+
+### Bug Fixes
+
+  - **deps:** update dependency @nuxtjs/axios to v5.9.0 ([fe99c5d](https://github.com/shadow81627/daim/commit/fe99c5dd48eec07bfd68736676b71e16d19f7421))
+
 ## [1.12.4](https://github.com/shadow81627/daim/compare/v1.12.3...v1.12.4) (2019-12-17)
 
 ### Bug Fixes
