@@ -1,8 +1,3 @@
-const path = require('path');
-const PurgecssPlugin = require('purgecss-webpack-plugin');
-const glob = require('glob-all');
-
-const purgecss = require('@fullhuman/postcss-purgecss');
 const pkg = require('./package');
 
 module.exports = {
@@ -134,6 +129,7 @@ module.exports = {
     'nuxt-fontawesome',
     'nuxt-i18n',
     'nuxt-webfontloader',
+    // 'nuxt-purgecss',
     [
       'storyblok-nuxt',
       {
@@ -202,6 +198,11 @@ module.exports = {
     },
   },
 
+  purgeCSS: {
+    // your settings here
+    mode: 'postcss',
+  },
+
   // storyblok: {},
 
   vuetify: {
@@ -233,7 +234,7 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    extractCSS: true,
+    // extractCSS: true,
     /*
      ** You can extend webpack config here
      */
@@ -247,34 +248,6 @@ module.exports = {
           exclude: /(node_modules)/,
         });
       }
-
-      if (!ctx.isDev) {
-        // Remove unused CSS using PurgeCSS. See https://github.com/FullHuman/purgecss
-        // for more information about PurgeCSS.
-        config.plugins.push(
-          new PurgecssPlugin({
-            paths: glob.sync([
-              path.join(__dirname, './pages/**/*.vue'),
-              path.join(__dirname, './layouts/**/*.vue'),
-              path.join(__dirname, './components/**/*.vue'),
-            ]),
-            whitelist: ['html', 'body'],
-          }),
-        );
-      }
     },
-  },
-
-  postcss: {
-    plugins: [
-      purgecss({
-        content: [
-          './pages/**/*.vue',
-          './layouts/**/*.vue',
-          './components/**/*.vue',
-        ],
-        whitelist: ['html', 'body'],
-      }),
-    ],
   },
 };
