@@ -1,5 +1,11 @@
 # Releases
 
+## [1.12.7](https://github.com/shadow81627/daim/compare/v1.12.6...v1.12.7) (2019-12-17)
+
+### Performance Improvements
+
+  - **css:** webpack purge css ([3f5ff8e](https://github.com/shadow81627/daim/commit/3f5ff8e83b9987352338018a7e4c36ab85e4b88f))
+
 ## [1.12.6](https://github.com/shadow81627/daim/compare/v1.12.5...v1.12.6) (2019-12-17)
 
 ### Bug Fixes
