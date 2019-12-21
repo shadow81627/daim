@@ -4,7 +4,7 @@ module.exports = {
   schema: {
     headline: {
       type: 'text',
-      required: true,
+      required: false,
     },
     desciption: {
       type: 'text',
