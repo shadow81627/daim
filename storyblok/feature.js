@@ -5,6 +5,9 @@ module.exports = {
     name: {
       type: 'text',
     },
+    icon: {
+      type: 'text',
+    },
   },
   image: null,
   preview_field: null,
