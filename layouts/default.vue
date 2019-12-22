@@ -5,6 +5,7 @@
       :clipped="$vuetify.breakpoint.lgAndUp"
       app
       class="hidden-print-only"
+      disable-resize-watcher
     >
       <v-list dense>
         <v-list-item
