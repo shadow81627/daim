@@ -1,5 +1,16 @@
 # Releases
 
+## [1.13.0](https://github.com/shadow81627/daim/compare/v1.12.8...v1.13.0) (2019-12-22)
+
+### Bug Fixes
+
+  - **navigation:** disable resize watcher ([370da2d](https://github.com/shadow81627/daim/commit/370da2d3ba1668e3b5e43088828c172e94b09e69))
+  - **text:** set body font size to 16 pixels ([1f71013](https://github.com/shadow81627/daim/commit/1f710138eaf58bac49f88110ccf34c90df3e9cb2))
+
+### Features
+
+  - **resume:** add responsive typography ([3ee966c](https://github.com/shadow81627/daim/commit/3ee966c75346f90d6df4139ad3a0e42f68337ebf))
+
 ## [1.12.8](https://github.com/shadow81627/daim/compare/v1.12.7...v1.12.8) (2019-12-17)
 
 ### Bug Fixes
