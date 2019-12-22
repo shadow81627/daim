@@ -1,5 +1,15 @@
 # Releases
 
+## [1.14.0](https://github.com/shadow81627/daim/compare/v1.13.0...v1.14.0) (2019-12-22)
+
+### Bug Fixes
+
+  - **footer:** left align ([1320d9b](https://github.com/shadow81627/daim/commit/1320d9ba310064c68313e708ce7314d8a0ba7142))
+
+### Features
+
+  - **feature:** add icon ([7d8e764](https://github.com/shadow81627/daim/commit/7d8e76435ccd922ab72db3f7d1aea9241851a06b))
+
 ## [1.13.0](https://github.com/shadow81627/daim/compare/v1.12.8...v1.13.0) (2019-12-22)
 
 ### Bug Fixes
