@@ -28,13 +28,12 @@
         </v-col>
       </v-row>
       <v-row no-gutters>
-        <v-col>
+        <v-col cols="auto">
           <v-card flat tile color="transparent">
-            <v-card-text class="py-2 text-left">
+            <v-card-text class="py-2">
               <span>Made with </span>
               <span>😡</span>
               <span> in Brisbane, Australia</span>
-              <br />
               <span>© 2019 | Daim</span>
             </v-card-text>
           </v-card>
