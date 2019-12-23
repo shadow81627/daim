@@ -1,5 +1,11 @@
 # Releases
 
+## [1.14.1](https://github.com/shadow81627/daim/compare/v1.14.0...v1.14.1) (2019-12-23)
+
+### Bug Fixes
+
+  - **hero:** use default styles for h1 ([fd8555a](https://github.com/shadow81627/daim/commit/fd8555a769ed7440c928cd7e740367d5e055d51d))
+
 ## [1.14.0](https://github.com/shadow81627/daim/compare/v1.13.0...v1.14.0) (2019-12-22)
 
 ### Bug Fixes
