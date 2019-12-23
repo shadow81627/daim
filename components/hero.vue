@@ -8,9 +8,7 @@
     >
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
-          <h1
-            class="display-1 font-weight-thin mb-4 text-light text-shadow text-capitalize brand"
-          >
+          <h1 class="mb-4 text-light text-shadow">
             {{ blok.headline }}
           </h1>
           <h2 class="subheading text-light text-shadow">
