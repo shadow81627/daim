@@ -1,5 +1,11 @@
 # Releases
 
+## [1.14.2](https://github.com/shadow81627/daim/compare/v1.14.1...v1.14.2) (2019-12-23)
+
+### Bug Fixes
+
+  - **hero:** make headings optional ([3e70ac3](https://github.com/shadow81627/daim/commit/3e70ac31a282df436d63729d4deb56410c3f7893))
+
 ## [1.14.1](https://github.com/shadow81627/daim/compare/v1.14.0...v1.14.1) (2019-12-23)
 
 ### Bug Fixes
