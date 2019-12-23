@@ -1,8 +1,18 @@
 <template>
-  <div v-editable="blok" class="column feature">
-    <font-awesome-icon v-if="blok.icon" :icon="blok.icon | split" title="" />
-    {{ blok.name }}
-  </div>
+  <b-col v-editable="blok" class="feature">
+    <v-card>
+      <v-card-text>
+        <h3 class="text-nowrap">
+          <font-awesome-icon
+            v-if="blok.icon"
+            :icon="blok.icon | split"
+            title=""
+          />
+          {{ blok.name }}
+        </h3>
+      </v-card-text>
+    </v-card>
+  </b-col>
 </template>
 
 <script>

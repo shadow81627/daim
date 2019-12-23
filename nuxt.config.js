@@ -148,16 +148,16 @@ module.exports = {
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: false, // or `bvCSS`
-    componentPlugins: [
-      'Image',
-      'FormSelect',
-      'Card',
-      'ButtonPlugin',
-      'FormTextareaPlugin',
-      'FormGroupPlugin',
-      'FormInputPlugin',
-    ],
-    directivePlugins: ['Tooltip'],
+    // componentPlugins: [
+    //   'Image',
+    //   'FormSelect',
+    //   'Card',
+    //   'ButtonPlugin',
+    //   'FormTextareaPlugin',
+    //   'FormGroupPlugin',
+    //   'FormInputPlugin',
+    // ],
+    // directivePlugins: ['Tooltip'],
   },
 
   fontawesome: {
