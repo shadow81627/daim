@@ -8,7 +8,7 @@ module.exports = {
     },
     desciption: {
       type: 'text',
-      required: true,
+      required: false,
     },
   },
   image: null,
