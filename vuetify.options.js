@@ -14,6 +14,7 @@ import {
   mdiViewComfy,
   mdiHome,
   mdiAccountTie,
+  mdiToolbox,
 } from '@mdi/js';
 
 // vuetify.options.js
@@ -44,6 +45,7 @@ export default {
       view_comfy: mdiViewComfy,
       home: mdiHome,
       'account-tie': mdiAccountTie,
+      toolbox: mdiToolbox,
     },
   },
   // lang: {},

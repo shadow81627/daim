@@ -12,7 +12,7 @@
 - [Nuxt PWA](https://pwa.nuxtjs.org/) Progressive Web App
 - [Bootstrap Vue](https://bootstrap-vue.js.org/) Responsive, mobile-first, and ARIA accessible projects on the web using Vue.js and the world's most popular front-end CSS library
 - [Vuetify](https://vuetifyjs.com/) UI Library with beautifully handcrafted Material Components.
-- [VeeValidate](https://vuelidate.js.org/) Template Based Form Validation Framework for Vue.js
+- [VeeValidate](https://logaretm.github.io/vee-validate/) Template Based Form Validation Framework for Vue.js
 - [Fontawesome](https://fontawesome.com/) vector icons and social logos
 - [Cloudflare](https://www.cloudflare.com/) secure DNS, proxy, CDN, with DDos protection
 - [Cloudinary](https://cloudinary.com/) optimization, moderation, transformation image CDN

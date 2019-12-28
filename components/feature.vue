@@ -1,15 +1,15 @@
 <template>
-  <b-col v-editable="blok" class="feature">
+  <b-col v-if="blok" v-editable="blok" class="feature">
     <v-card>
       <v-card-text>
-        <h3 class="text-nowrap">
+        <b-card-title class="text-nowrap">
           <font-awesome-icon
             v-if="blok.icon"
             :icon="blok.icon | split"
             title=""
           />
           {{ blok.name }}
-        </h3>
+        </b-card-title>
       </v-card-text>
     </v-card>
   </b-col>

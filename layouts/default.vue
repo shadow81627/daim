@@ -73,6 +73,11 @@ export default {
           text: 'Resume',
           route: 'resume',
         },
+        {
+          icon: 'toolbox',
+          text: 'Tools',
+          route: 'tools',
+        },
       ],
     };
   },
