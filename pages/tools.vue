@@ -144,7 +144,7 @@ export default {
           subheading: 'opinionated code formatter',
         },
         {
-          icon: 'fas file-code',
+          icon: 'fab docker',
           heading: 'Docker',
           href: 'https://www.docker.com/',
           subheading: 'Debug your app, not your environment',
