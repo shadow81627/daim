@@ -1,5 +1,15 @@
 # Releases
 
+## [1.15.0](https://github.com/shadow81627/daim/compare/v1.14.2...v1.15.0) (2019-12-28)
+
+### Bug Fixes
+
+  - **tools:** add docker icon ([b7fc6da](https://github.com/shadow81627/daim/commit/b7fc6daf8707f90d592e63fdc0afe1c3d3b7e8e8))
+
+### Features
+
+  - **tools:** add a card deck of tools I use ([4c0a79e](https://github.com/shadow81627/daim/commit/4c0a79ec7f750528c93b23b5e764975859a0884e))
+
 ## [1.14.2](https://github.com/shadow81627/daim/compare/v1.14.1...v1.14.2) (2019-12-23)
 
 ### Bug Fixes
