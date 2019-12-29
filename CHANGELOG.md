@@ -1,5 +1,11 @@
 # Releases
 
+## [1.15.1](https://github.com/shadow81627/daim/compare/v1.15.0...v1.15.1) (2019-12-29)
+
+### Bug Fixes
+
+  - **tool:** hide link if there is no href ([64c5113](https://github.com/shadow81627/daim/commit/64c5113b48958c1bd99737eb85277b0fdd8e2479))
+
 ## [1.15.0](https://github.com/shadow81627/daim/compare/v1.14.2...v1.15.0) (2019-12-28)
 
 ### Bug Fixes
