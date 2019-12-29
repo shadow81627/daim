@@ -13,6 +13,7 @@
       <b-card-sub-title class="mb-2">{{ blok.subheading }}</b-card-sub-title>
       <v-card-text v-if="blok.text">{{ blok.text }}</v-card-text>
       <b-button
+        v-if="blok.href"
         :href="blok.href"
         target="_blank"
         rel="noopener"
