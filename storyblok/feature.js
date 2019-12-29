@@ -1,11 +1,29 @@
 module.exports = {
+  migrations: [
+    // Replace `name` field with new `heading` field.
+    ({ content }) => {
+      if (!content.name) return;
+
+      content.heading = content.name;
+      delete content.name;
+    },
+  ],
   name: 'feature',
   display_name: null,
   schema: {
-    name: {
+    heading: {
       type: 'text',
     },
     icon: {
+      type: 'text',
+    },
+    href: {
+      type: 'text',
+    },
+    subheading: {
+      type: 'text',
+    },
+    text: {
       type: 'text',
     },
   },
