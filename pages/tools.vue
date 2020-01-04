@@ -154,7 +154,4 @@ export default {
     };
   },
 };
-
-// - [Nginx](https://www.nginx.com/) Reverse proxy for caching, gzip and ssl local development
-// - [mkcert](https://github.com/FiloSottile/mkcert) make locally-trusted development certificates
 </script>
