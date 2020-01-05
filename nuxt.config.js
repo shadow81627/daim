@@ -91,11 +91,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [
-    '~/assets/scss/custom.scss',
-    '~/assets/css/storyblok.css',
-    '~/assets/css/fonts.css',
-  ],
+  css: ['~/assets/css/storyblok.css', '~/assets/css/fonts.css'],
 
   /*
    ** Plugins to load before mounting the App

@@ -103,7 +103,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import '~/assets/scss/custom.scss';
+
 .brand {
   font-family: 'Rouge Script', cursive;
   font-size: 2rem;
