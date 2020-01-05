@@ -5,6 +5,12 @@
 @import "~bootstrap-vue/src/index.scss";
 @import "~bootswatch/dist/lux/bootswatch";
 
+.card-columns {
+  @include media-breakpoint-only(sm) {
+    column-count: 2;
+  }
+}
+
 body {
   font-size: 1rem;
 }
