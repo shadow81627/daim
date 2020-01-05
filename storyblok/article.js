@@ -1,32 +1,26 @@
-const metaImage = require('./meta_image');
-
 module.exports = {
-  display_name: 'Article',
-  is_nestable: false,
-  is_root: true,
-  migrations: [
-    // Replace `headline` field with new `title` field.
-    ({ content }) => {
-      // If the `headline` field was already delted
-      // earlier, don't run this migration again.
-      if (!content.headline) return;
-
-      content.title = content.headline;
-      delete content.headline;
-    },
-  ],
   name: 'article',
+  display_name: 'Article',
   schema: {
     title: {
       pos: 0,
       type: 'text',
     },
     image: {
-      component_whitelist: [metaImage.name],
+      component_whitelist: ['meta_image'],
       maximum: 1,
       pos: 10,
       restrict_components: true,
       type: 'bloks',
     },
   },
+  image: null,
+  preview_field: null,
+  is_root: true,
+  preview_tmpl: null,
+  is_nestable: false,
+  all_presets: [],
+  preset_id: null,
+  real_name: 'Article',
+  component_group_uuid: null,
 };

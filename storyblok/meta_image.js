@@ -1,17 +1,6 @@
 module.exports = {
-  display_name: 'Image',
-  is_nestable: true,
-  is_root: false,
-  migrations: [
-    // Replace `url` field with new `src` field.
-    ({ content }) => {
-      if (!content.url) return;
-
-      content.src = content.url;
-      delete content.url;
-    },
-  ],
   name: 'meta_image',
+  display_name: 'Image',
   schema: {
     src: {
       maximum: 1,
@@ -23,4 +12,13 @@ module.exports = {
       type: 'text',
     },
   },
+  image: null,
+  preview_field: null,
+  is_root: false,
+  preview_tmpl: null,
+  is_nestable: true,
+  all_presets: [],
+  preset_id: null,
+  real_name: 'Image',
+  component_group_uuid: null,
 };
