@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Feature from '~/components/tool';
+import Feature from '~/components/feature';
 export default {
   components: {
     Feature,
