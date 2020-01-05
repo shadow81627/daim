@@ -1,5 +1,11 @@
 # Releases
 
+## [1.15.3](https://github.com/shadow81627/daim/compare/v1.15.2...v1.15.3) (2020-01-05)
+
+### Bug Fixes
+
+  - **styles:** move bootstrap theme into layout ([9a7fb94](https://github.com/shadow81627/daim/commit/9a7fb94cb1aca1f5e9d6282e3e3e8d1345625614))
+
 ## [1.15.2](https://github.com/shadow81627/daim/compare/v1.15.1...v1.15.2) (2020-01-02)
 
 ### Bug Fixes
