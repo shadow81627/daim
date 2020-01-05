@@ -1,5 +1,12 @@
 # Releases
 
+## [1.16.0](https://github.com/shadow81627/daim/compare/v1.15.3...v1.16.0) (2020-01-05)
+
+### Features
+
+  - **component:** add card-group ([8eb27b0](https://github.com/shadow81627/daim/commit/8eb27b0ca3ff7d72bee9b0b3be2e4d3700e90034))
+  - **component:** add column ([39a2648](https://github.com/shadow81627/daim/commit/39a26487a357fdf1430a3346fb83446e3c16fd39))
+
 ## [1.15.3](https://github.com/shadow81627/daim/compare/v1.15.2...v1.15.3) (2020-01-05)
 
 ### Bug Fixes
