@@ -1,4 +1,8 @@
+const axios = require('axios');
 const pkg = require('./package');
+
+const STORYBLOK_TOKEN =
+  process.env.STORYBLOK_TOKEN || 'kycw6YWwjgilZCDf6Xb6kAtt';
 
 module.exports = {
   mode: 'universal',
@@ -8,13 +12,44 @@ module.exports = {
     PORT: process.env.PORT,
     VERSION: pkg.version,
     COMMIT: process.env.npm_package_gitHead,
+
+    STORYBLOK_TOKEN,
   },
 
   generate: {
     // use '404.html' instead default '200.html'
     fallback: true,
-    // dir: 'public',
-    // routes,
+    routes(callback) {
+      const token = STORYBLOK_TOKEN;
+      const version = 'published';
+      let cacheVersion = 0;
+
+      // other routes that are not in Storyblok with their slug.
+      const routes = ['/']; // adds / directly
+
+      // Load space and receive latest cache version key to improve performance
+      axios
+        .get(`https://api.storyblok.com/v1/cdn/spaces/me?token=${token}`)
+        .then((spaceRes) => {
+          // timestamp of latest publish
+          cacheVersion = spaceRes.data.space.version;
+
+          // Call for all Links using the Links API: https://www.storyblok.com/docs/Delivery-Api/Links
+          axios
+            .get(
+              `https://api.storyblok.com/v1/cdn/links?token=${token}&version=${version}&cv=${cacheVersion}`,
+            )
+            .then((res) => {
+              Object.keys(res.data.links).forEach((key) => {
+                if (res.data.links[key].slug !== 'home') {
+                  routes.push('/' + res.data.links[key].slug);
+                }
+              });
+
+              callback(null, routes);
+            });
+        });
+    },
   },
 
   server: {
@@ -126,13 +161,7 @@ module.exports = {
     'nuxt-i18n',
     'nuxt-webfontloader',
     // 'nuxt-purgecss',
-    [
-      'storyblok-nuxt',
-      {
-        accessToken: 'kycw6YWwjgilZCDf6Xb6kAtt',
-        cacheProvider: 'memory',
-      },
-    ],
+    'storyblok-nuxt',
   ],
 
   /*
@@ -199,7 +228,9 @@ module.exports = {
     mode: 'postcss',
   },
 
-  // storyblok: {},
+  storyblok: {
+    accessToken: STORYBLOK_TOKEN,
+  },
 
   vuetify: {
     optionsPath: './vuetify.options.js',
