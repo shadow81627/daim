@@ -6,6 +6,12 @@
 
   - add xml sitemap ([b2977b6](https://github.com/shadow81627/daim/commit/b2977b6e51136f216995eea102eb5112349abe9d))
 
+## [1.17.0](https://github.com/shadow81627/daim/compare/v1.16.2...v1.17.0) (2020-01-11)
+
+### Features
+
+  - add xml sitemap ([b2977b6](https://github.com/shadow81627/daim/commit/b2977b6e51136f216995eea102eb5112349abe9d))
+
 ## [1.16.2](https://github.com/shadow81627/daim/compare/v1.16.1...v1.16.2) (2020-01-11)
 
 ### Bug Fixes
