@@ -230,6 +230,10 @@ module.exports = {
     accessToken: STORYBLOK_TOKEN,
   },
 
+  sitemap: {
+    hostname: 'https://daim.dev',
+  },
+
   vuetify: {
     optionsPath: './vuetify.options.js',
     // customVariables: ['~/assets/scss/vuetify.scss'],
