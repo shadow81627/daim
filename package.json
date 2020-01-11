@@ -39,7 +39,7 @@
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/markdownit": "1.2.7",
     "@nuxtjs/pwa": "3.0.0-beta.19",
-    "@nuxtjs/sitemap": "^2.0.1",
+    "@nuxtjs/sitemap": "2.0.1",
     "bootstrap": "4.4.1",
     "bootstrap-vue": "2.2.0",
     "bootswatch": "4.4.1",
