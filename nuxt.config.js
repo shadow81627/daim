@@ -137,9 +137,7 @@ module.exports = {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/stylelint-module
     // '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
     '@bazzite/nuxt-optimized-images',
@@ -149,12 +147,9 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
     'nuxt-fontawesome',
@@ -162,6 +157,9 @@ module.exports = {
     'nuxt-webfontloader',
     // 'nuxt-purgecss',
     'storyblok-nuxt',
+
+    // always declare the sitemap module at end of array
+    '@nuxtjs/sitemap',
   ],
 
   /*
@@ -230,6 +228,10 @@ module.exports = {
 
   storyblok: {
     accessToken: STORYBLOK_TOKEN,
+  },
+
+  sitemap: {
+    hostname: 'https://daim.dev',
   },
 
   vuetify: {
