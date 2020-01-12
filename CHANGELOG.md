@@ -1,5 +1,11 @@
 # Releases
 
+## [1.17.3](https://github.com/shadow81627/daim/compare/v1.17.2...v1.17.3) (2020-01-12)
+
+### Bug Fixes
+
+  - **brand:** add alt attribute ([a41fd71](https://github.com/shadow81627/daim/commit/a41fd71c6e42a00f2b9069f8668b5bfbccef6f1c))
+
 ## [1.17.2](https://github.com/shadow81627/daim/compare/v1.17.1...v1.17.2) (2020-01-12)
 
 ### Performance Improvements
