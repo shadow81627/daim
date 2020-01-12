@@ -1,5 +1,11 @@
 # Releases
 
+## [1.17.2](https://github.com/shadow81627/daim/compare/v1.17.1...v1.17.2) (2020-01-12)
+
+### Performance Improvements
+
+  - **logo:** use svg ([fdf7c36](https://github.com/shadow81627/daim/commit/fdf7c36fb2eacb9e27f6d456d9e666711b5ddc1b))
+
 ## [1.17.1](https://github.com/shadow81627/daim/compare/v1.17.0...v1.17.1) (2020-01-12)
 
 ### Bug Fixes
