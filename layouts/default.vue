@@ -38,7 +38,12 @@
       />
       <v-toolbar-title class="ml-0 pl-3">
         <!-- <span class="brand navbar-brand">Daim</span> -->
-        <img src="~/assets/img/logo.svg" class="navbar-brand" height="32" />
+        <img
+          src="~/assets/img/logo.svg"
+          class="navbar-brand"
+          height="32"
+          alt="Daim"
+        />
       </v-toolbar-title>
       <v-spacer />
     </v-app-bar>
