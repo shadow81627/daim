@@ -20,8 +20,6 @@ script:
   # - npm run test
   - npm run generate:modern
   - cp -R dist public
-
-before_deploy:
   - npx semantic-release
 
 deploy:
