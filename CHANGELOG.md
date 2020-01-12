@@ -6,6 +6,12 @@
 
   - **deps:** pin dependency @nuxtjs/sitemap to 2.0.1 ([e5fc564](https://github.com/shadow81627/daim/commit/e5fc564f8c9e2158821c9a480304870af5bb2933))
 
+## [1.17.1](https://github.com/shadow81627/daim/compare/v1.17.0...v1.17.1) (2020-01-12)
+
+### Bug Fixes
+
+  - **deps:** pin dependency @nuxtjs/sitemap to 2.0.1 ([e5fc564](https://github.com/shadow81627/daim/commit/e5fc564f8c9e2158821c9a480304870af5bb2933))
+
 ## [1.17.0](https://github.com/shadow81627/daim/compare/v1.16.2...v1.17.0) (2020-01-11)
 
 ### Features
