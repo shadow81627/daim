@@ -36,8 +36,9 @@
         dark
         @click.stop="drawer = !drawer"
       />
-      <v-toolbar-title style="width: 256px" class="ml-0 pl-3">
-        <span class="brand navbar-brand">Daim</span>
+      <v-toolbar-title class="ml-0 pl-3">
+        <!-- <span class="brand navbar-brand">Daim</span> -->
+        <img src="~/assets/img/logo.svg" class="navbar-brand" height="32" />
       </v-toolbar-title>
       <v-spacer />
     </v-app-bar>

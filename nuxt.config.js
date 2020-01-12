@@ -154,7 +154,7 @@ module.exports = {
     '@nuxtjs/markdownit',
     'nuxt-fontawesome',
     'nuxt-i18n',
-    'nuxt-webfontloader',
+    // 'nuxt-webfontloader',
     // 'nuxt-purgecss',
     'storyblok-nuxt',
 
