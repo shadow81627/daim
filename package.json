@@ -59,7 +59,7 @@
     "@mdi/js": "4.7.95",
     "@nuxtjs/eslint-config": "2.0.0",
     "@nuxtjs/eslint-module": "1.1.0",
-    "@nuxtjs/stylelint-module": "3.2.0",
+    "@nuxtjs/stylelint-module": "3.2.1",
     "@nuxtjs/vuetify": "1.10.1",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "8.0.0",
