@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build --modern && nuxt generate --modern && mv dist public",
+    "build": "nuxt build",
     "build:analyze": "nuxt build --analyze",
     "build:modern": "nuxt build --modern",
+    "now-build": "nuxt generate --modern",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "serve:lhci": "npm run start",
     "storyblok:export": "storyblok-component-export",
