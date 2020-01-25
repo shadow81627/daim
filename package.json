@@ -45,7 +45,7 @@
     "bootstrap-vue": "2.3.0",
     "bootswatch": "4.4.1",
     "cloudinary-core": "2.8.0",
-    "cross-env": "6.0.3",
+    "cross-env": "7.0.0",
     "github-markdown-css": "3.0.1",
     "koa": "2.11.0",
     "nuxt": "2.11.0",
