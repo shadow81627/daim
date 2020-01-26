@@ -23,6 +23,9 @@
     "test:unit": "cross-env TEST=unit ava --config unit.config.js",
     "test:e2e": "cross-env TEST=e2e ava --config e2e.config.js"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "lint-staged": {
     "*.{js,vue}": "eslint"
   },
