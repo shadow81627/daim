@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.0](https://github.com/shadow81627/daim/compare/v1.17.8...v1.18.0) (2020-01-27)
+
+### Features
+
+  - **blog:** add breadcrumb ([#117](https://github.com/shadow81627/daim/issues/117)) ([7327142](https://github.com/shadow81627/daim/commit/7327142164d6769e07d69214d777794c3b03f2c3))
+
 ## [1.17.8](https://github.com/shadow81627/daim/compare/v1.17.7...v1.17.8) (2020-01-25)
 
 ### Bug Fixes
