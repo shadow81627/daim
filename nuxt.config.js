@@ -115,6 +115,15 @@ module.exports = {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        hid: 'hs-script-loader',
+        id: 'hs-script-loader',
+        async: true,
+        defer: true,
+        src: 'https://js.hs-scripts.com/7059242.js',
+      },
+    ],
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
   },
 
