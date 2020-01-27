@@ -242,22 +242,7 @@ module.exports = {
     defaultAssets: false,
   },
 
-  webfontloader: {
-    // google: {
-    //   families: ['Rouge Script', 'Nunito Sans:n4,n6'],
-    //   urls: [
-    //     // for each Google Fonts add url + options you want
-    //     // here add font-display option
-    //     'https://fonts.googleapis.com/css?family=Rouge+Script&display=swap',
-    //     'https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&display=swap',
-    //     // 'https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap'
-    //   ]
-    // },
-    custom: {
-      families: ['Rouge Script'],
-      // urls: ['/fonts.css']
-    },
-  },
+  webfontloader: {},
 
   /*
    ** Build configuration
