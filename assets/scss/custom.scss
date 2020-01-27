@@ -23,4 +23,9 @@ body {
   font-family: $font-family-base !important;
 }
 
+/* no pointer events */
+.pointer-events-none {
+  pointer-events: none;
+}
+
 @import '~/assets/css/print.css' print;

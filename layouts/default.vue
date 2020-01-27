@@ -111,21 +111,4 @@ export default {
 
 <style lang="scss">
 @import '~/assets/scss/custom.scss';
-
-.brand {
-  font-family: 'Rouge Script', cursive;
-  font-size: 2rem;
-  font-weight: 400;
-  vertical-align: middle;
-}
-
-/* no pointer events */
-.pointer-events-none {
-  pointer-events: none;
-}
-
-/* navbar links no underline, can't add class to a element since it is added in js */
-.text-decoration-none a {
-  text-decoration: none !important;
-}
 </style>
