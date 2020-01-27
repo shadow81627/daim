@@ -5,11 +5,11 @@
         <v-col cols="auto">
           <v-card flat color="transparent">
             <v-card-text>
-              <span>Version: {{ version }}</span>
-              <span>|</span>
-              <span>Commit: </span>
+              <span>{{ version }}</span>
+              <span v-if="commit">{{ commit | shortHash }}</span>
+              <span v-if="version && commit">|</span>
               <nuxt-link to="releases">
-                <span> {{ commit | shortHash }}</span>
+                <span>Changelog</span>
               </nuxt-link>
             </v-card-text>
           </v-card>
