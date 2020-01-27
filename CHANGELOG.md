@@ -1,5 +1,13 @@
 # Releases
 
+## [1.18.2](https://github.com/shadow81627/daim/compare/v1.18.1...v1.18.2) (2020-01-27)
+
+### Bug Fixes
+
+  - **footer:** add locale path to release link ([5b1b1c9](https://github.com/shadow81627/daim/commit/5b1b1c9c7e3ce2f34c8f640a7de46e9f0777d793))
+  - **footer:** add text for release page ([9fc9a27](https://github.com/shadow81627/daim/commit/9fc9a27c3108f8bfc3c72016b684f929fb972252))
+  - **footer:** remove version labels ([cda353f](https://github.com/shadow81627/daim/commit/cda353fe30031474a3a4de8e55a74b68464764c8))
+
 ## [1.18.1](https://github.com/shadow81627/daim/compare/v1.18.0...v1.18.1) (2020-01-27)
 
 ### Performance Improvements
