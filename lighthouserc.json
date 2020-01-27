@@ -1,6 +1,7 @@
 {
   "ci": {
     "collect": {
+      "staticDistDir": "./dist",
       "numberOfRuns": 5,
       "url": [
         "http://localhost:3000/",
