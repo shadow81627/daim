@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.1](https://github.com/shadow81627/daim/compare/v1.18.0...v1.18.1) (2020-01-27)
+
+### Performance Improvements
+
+  - **fonts:** remove unused fonts ([#118](https://github.com/shadow81627/daim/issues/118)) ([6ec6d6e](https://github.com/shadow81627/daim/commit/6ec6d6e446caa516945c16b0a54f25f16edfee50))
+
 ## [1.18.0](https://github.com/shadow81627/daim/compare/v1.17.8...v1.18.0) (2020-01-27)
 
 ### Features
