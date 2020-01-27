@@ -121,6 +121,7 @@ module.exports = {
         id: 'hs-script-loader',
         async: true,
         defer: true,
+        body: true,
         src: 'https://js.hs-scripts.com/7059242.js',
       },
     ],
