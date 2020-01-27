@@ -8,7 +8,7 @@
               <span>{{ version }}</span>
               <span v-if="commit">{{ commit | shortHash }}</span>
               <span v-if="version && commit">|</span>
-              <nuxt-link to="releases">
+              <nuxt-link :to="localePath('releases')">
                 <span>Changelog</span>
               </nuxt-link>
             </v-card-text>
