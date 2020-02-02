@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.6](https://github.com/shadow81627/daim/compare/v1.18.5...v1.18.6) (2020-02-02)
+
+### Bug Fixes
+
+  - **deps:** update dependency @nuxtjs/pwa to v3.0.0-beta.20 ([41228fa](https://github.com/shadow81627/daim/commit/41228fa3ae56985a53064f2b13942d7365ebac96))
+
 ## [1.18.5](https://github.com/shadow81627/daim/compare/v1.18.4...v1.18.5) (2020-02-02)
 
 ### Bug Fixes
