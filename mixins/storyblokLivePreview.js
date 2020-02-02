@@ -9,5 +9,11 @@ export default {
         window.location.reload();
       }
     });
+
+    this.$storybridge.pingEditor(function() {
+      if (this.$storybridge.inEditor) {
+        this.$storybridge.enterEditmode();
+      }
+    });
   },
 };
