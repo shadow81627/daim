@@ -46,7 +46,7 @@ export default {
           version: 'draft',
         })
         .then((res) => {
-          this.$set(this.story, res.data.story);
+          this.story = { ...this.story, ...res.data.story };
         })
         .catch((res) => {
           if (res.response) {
