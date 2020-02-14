@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.10](https://github.com/shadow81627/daim/compare/v1.18.9...v1.18.10) (2020-02-14)
+
+### Bug Fixes
+
+  - **storyblok:** set page data on mounted when in editor ([#177](https://github.com/shadow81627/daim/issues/177)) ([d6b934a](https://github.com/shadow81627/daim/commit/d6b934af9c1aefa495d54a182cc2de699a19e899))
+
 ## [1.18.9](https://github.com/shadow81627/daim/compare/v1.18.8...v1.18.9) (2020-02-13)
 
 ### Bug Fixes
