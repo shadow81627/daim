@@ -39,9 +39,9 @@ export default {
   },
   mounted() {
     // Check if we are in the editor mode
-    if (this.query._storyblok) {
+    if (this.$route.query._storyblok) {
       // Load the JSON from the API
-      this.data = this.app.$storyapi
+      this.data = this.$storyapi
         .get('cdn/stories/home', {
           version: 'draft',
         })
