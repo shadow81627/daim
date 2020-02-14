@@ -38,7 +38,6 @@ export default {
     return { story: { content: {} } };
   },
   mounted() {
-    const vm = this;
     // Check if we are in the editor mode
     if (this.$route.query._storyblok) {
       // Load the JSON from the API
@@ -47,13 +46,17 @@ export default {
           version: 'draft',
         })
         .then((res) => {
-          Object.assign(vm.data.story, res.data.story);
+          this.$set(this.story, res.data.story);
         })
         .catch((res) => {
-          this.error({
-            statusCode: res.response.status,
-            message: res.response.data,
-          });
+          if (res.response) {
+            this.error({
+              statusCode: res.response.status,
+              message: res.response.data,
+            });
+          } else {
+            console.error(res);
+          }
         });
     }
   },
