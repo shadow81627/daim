@@ -12,27 +12,61 @@
 <script>
 import storyblokLivePreview from '@/mixins/storyblokLivePreview';
 
-export default {
-  mixins: [storyblokLivePreview],
-  asyncData(context) {
-    // Check if we are in the editor mode
-    const version =
-      context.query._storyblok || context.isDev ? 'draft' : 'published';
-
-    // Load the JSON from the API
-    return context.app.$storyapi
-      .get('cdn/stories/home', {
-        version,
-      })
-      .then((res) => {
-        return res.data;
-      })
-      .catch((res) => {
-        context.error({
+const loadData = function({ api, cacheVersion, errorCallback, version, path }) {
+  return api
+    .get(`cdn/stories/${path}`, {
+      version,
+      cv: cacheVersion,
+    })
+    .then((res) => {
+      return res.data;
+    })
+    .catch((res) => {
+      if (!res.response) {
+        console.error(res);
+        errorCallback({
+          statusCode: 404,
+          message: 'Failed to receive content from the api.',
+        });
+      } else {
+        console.error(res.response.data);
+        errorCallback({
           statusCode: res.response.status,
           message: res.response.data,
         });
-      });
+      }
+    });
+};
+
+export default {
+  mixins: [storyblokLivePreview],
+  asyncData(context) {
+    // Check if we are in the editing mode
+    let editMode = false;
+    if (
+      context.query._storyblok ||
+      context.isDev ||
+      (typeof window !== 'undefined' &&
+        window.localStorage.getItem('_storyblok_draft_mode'))
+    ) {
+      if (typeof window !== 'undefined') {
+        window.localStorage.setItem('_storyblok_draft_mode', '1');
+        if (window.location === window.parent.location) {
+          window.localStorage.removeItem('_storyblok_draft_mode');
+        }
+      }
+      editMode = true;
+    }
+    const version = editMode ? 'draft' : 'published';
+    const path = context.route.path === '/' ? 'home' : context.route.path;
+    // Load the JSON from the API
+    return loadData({
+      version,
+      api: context.app.$storyapi,
+      cacheVersion: context.store.state.cacheVersion,
+      errorCallback: context.error,
+      path,
+    });
   },
   data() {
     return { story: { content: {} } };
@@ -41,23 +75,15 @@ export default {
     // Check if we are in the editor mode
     if (this.$route.query._storyblok) {
       // Load the JSON from the API
-      this.$storyapi
-        .get('cdn/stories/home', {
-          version: 'draft',
-        })
-        .then((res) => {
-          this.$set(this.story, res.data.story);
-        })
-        .catch((res) => {
-          if (res.response) {
-            this.error({
-              statusCode: res.response.status,
-              message: res.response.data,
-            });
-          } else {
-            console.error(res);
-          }
-        });
+      loadData({
+        version: 'draft',
+        api: this.$storyapi,
+        cacheVersion: this.$store.state.cacheVersion,
+        errorCallback: console.error,
+        path: this.story.full_slug,
+      }).then((data) => {
+        this.story = data.story;
+      });
     }
   },
 };
