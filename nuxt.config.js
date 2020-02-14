@@ -25,7 +25,7 @@ module.exports = {
     fallback: true,
     routes(callback) {
       const token = STORYBLOK_TOKEN;
-      const version = 'published';
+      const version = 'draft';
       let cacheVersion = 0;
 
       // other routes that are not in Storyblok with their slug.
