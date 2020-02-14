@@ -37,5 +37,28 @@ export default {
   data() {
     return { story: { content: {} } };
   },
+  mounted() {
+    // Check if we are in the editor mode
+    if (this.$route.query._storyblok) {
+      // Load the JSON from the API
+      this.$storyapi
+        .get('cdn/stories/home', {
+          version: 'draft',
+        })
+        .then((res) => {
+          this.story = { ...this.story, ...res.data.story };
+        })
+        .catch((res) => {
+          if (res.response) {
+            this.error({
+              statusCode: res.response.status,
+              message: res.response.data,
+            });
+          } else {
+            console.error(res);
+          }
+        });
+    }
+  },
 };
 </script>
