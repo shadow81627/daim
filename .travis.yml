@@ -5,15 +5,6 @@ addons:
   chrome: stable # make Chrome available
 # Cache node packages between jobs
 cache: npm
-branches:
-  only:
-    # This is where pull requests from "bors r+" are built.
-    - staging
-    # This is where pull requests from "bors try" are built.
-    - trying
-    # enable building pull requests.
-    - master
-    - production
 
 script:
   - npm run lint
@@ -38,5 +29,4 @@ deploy:
       all_branches: true
 
 after_success:
-  # - npm run lh -- $APP_URL
   - npm run lhci:autorun
