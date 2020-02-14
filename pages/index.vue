@@ -38,15 +38,16 @@ export default {
     return { story: { content: {} } };
   },
   mounted() {
+    const vm = this;
     // Check if we are in the editor mode
     if (this.$route.query._storyblok) {
       // Load the JSON from the API
-      this.data = this.$storyapi
+      this.$storyapi
         .get('cdn/stories/home', {
           version: 'draft',
         })
         .then((res) => {
-          return res.data;
+          Object.assign(vm.data.story, res.data.story);
         })
         .catch((res) => {
           this.error({
