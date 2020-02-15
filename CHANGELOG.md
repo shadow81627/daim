@@ -110,29 +110,11 @@
 
 - **logo:** use svg ([fdf7c36](https://github.com/shadow81627/daim/commit/fdf7c36fb2eacb9e27f6d456d9e666711b5ddc1b))
 
-## [1.17.2](https://github.com/shadow81627/daim/compare/v1.17.1...v1.17.2) (2020-01-12)
-
-### Performance Improvements
-
-- **logo:** use svg ([fdf7c36](https://github.com/shadow81627/daim/commit/fdf7c36fb2eacb9e27f6d456d9e666711b5ddc1b))
-
 ## [1.17.1](https://github.com/shadow81627/daim/compare/v1.17.0...v1.17.1) (2020-01-12)
 
 ### Bug Fixes
 
 - **deps:** pin dependency @nuxtjs/sitemap to 2.0.1 ([e5fc564](https://github.com/shadow81627/daim/commit/e5fc564f8c9e2158821c9a480304870af5bb2933))
-
-## [1.17.1](https://github.com/shadow81627/daim/compare/v1.17.0...v1.17.1) (2020-01-12)
-
-### Bug Fixes
-
-- **deps:** pin dependency @nuxtjs/sitemap to 2.0.1 ([e5fc564](https://github.com/shadow81627/daim/commit/e5fc564f8c9e2158821c9a480304870af5bb2933))
-
-## [1.17.0](https://github.com/shadow81627/daim/compare/v1.16.2...v1.17.0) (2020-01-11)
-
-### Features
-
-- add xml sitemap ([b2977b6](https://github.com/shadow81627/daim/commit/b2977b6e51136f216995eea102eb5112349abe9d))
 
 ## [1.17.0](https://github.com/shadow81627/daim/compare/v1.16.2...v1.17.0) (2020-01-11)
 
