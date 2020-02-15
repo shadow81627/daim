@@ -6,23 +6,18 @@
 export default {
   computed: {
     breadcrumbs() {
-      // console.log(this.$route);
+      const segments = this.$route.path.split('/').slice(1);
+      const breadcrumbs = [{ text: 'Home', to: '/' }];
 
-      const here = this.$route.path.split('/').slice(1);
-
-      const parts = [{ text: 'Home', to: '/' }];
-
-      for (let i = 0; i < here.length; i++) {
-        const part = here[i];
+      segments.forEach((segment, index) => {
         const text =
-          part.charAt(0).toUpperCase() + part.substr(1).toLowerCase();
-        const to = '/' + here.slice(0, i + 1).join('/');
-        parts.push({ text, to });
-      }
-      return parts;
+          segment.charAt(0).toUpperCase() + segment.substr(1).toLowerCase();
+        const to = '/' + segments.slice(0, index + 1).join('/');
+        breadcrumbs.push({ text, to });
+      });
+
+      return breadcrumbs;
     },
   },
 };
 </script>
-
-<style></style>
