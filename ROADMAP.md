@@ -41,5 +41,5 @@
 ### Wishlist
 
 - [Tailwind CSS](https://tailwindcss.com/) A utility-first CSS framework for
-rapidly building custom designs
+  rapidly building custom designs
 - [Now.sh](https://zeit.co/home), [Cloudflare Workers](https://workers.cloudflare.com/), [Netlify](https://www.netlify.com/) Server side rendering with serverless functions on a CDN
