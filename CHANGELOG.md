@@ -4,427 +4,427 @@
 
 ### Bug Fixes
 
-  - **storyblok:** set page data on mounted when in editor ([#177](https://github.com/shadow81627/daim/issues/177)) ([d6b934a](https://github.com/shadow81627/daim/commit/d6b934af9c1aefa495d54a182cc2de699a19e899))
+- **storyblok:** set page data on mounted when in editor ([#177](https://github.com/shadow81627/daim/issues/177)) ([d6b934a](https://github.com/shadow81627/daim/commit/d6b934af9c1aefa495d54a182cc2de699a19e899))
 
 ## [1.18.9](https://github.com/shadow81627/daim/compare/v1.18.8...v1.18.9) (2020-02-13)
 
 ### Bug Fixes
 
-  - **deps:** update dependency bootstrap-vue to v2.4.1 ([f6569a4](https://github.com/shadow81627/daim/commit/f6569a411aad9b21a408bba74ca1b8dd8db124f1))
+- **deps:** update dependency bootstrap-vue to v2.4.1 ([f6569a4](https://github.com/shadow81627/daim/commit/f6569a411aad9b21a408bba74ca1b8dd8db124f1))
 
 ## [1.18.8](https://github.com/shadow81627/daim/compare/v1.18.7...v1.18.8) (2020-02-05)
 
 ### Bug Fixes
 
-  - **deps:** update font awesome ([47d325d](https://github.com/shadow81627/daim/commit/47d325df806b085b4016dfe641b106a4b1be7323))
+- **deps:** update font awesome ([47d325d](https://github.com/shadow81627/daim/commit/47d325df806b085b4016dfe641b106a4b1be7323))
 
 ## [1.18.7](https://github.com/shadow81627/daim/compare/v1.18.6...v1.18.7) (2020-02-04)
 
 ### Bug Fixes
 
-  - **deps:** update dependency storyblok-nuxt to v1.1.0 ([9a58545](https://github.com/shadow81627/daim/commit/9a58545313f73d36cdceb4ce2890158634e9e057))
+- **deps:** update dependency storyblok-nuxt to v1.1.0 ([9a58545](https://github.com/shadow81627/daim/commit/9a58545313f73d36cdceb4ce2890158634e9e057))
 
 ## [1.18.6](https://github.com/shadow81627/daim/compare/v1.18.5...v1.18.6) (2020-02-02)
 
 ### Bug Fixes
 
-  - **deps:** update dependency @nuxtjs/pwa to v3.0.0-beta.20 ([41228fa](https://github.com/shadow81627/daim/commit/41228fa3ae56985a53064f2b13942d7365ebac96))
+- **deps:** update dependency @nuxtjs/pwa to v3.0.0-beta.20 ([41228fa](https://github.com/shadow81627/daim/commit/41228fa3ae56985a53064f2b13942d7365ebac96))
 
 ## [1.18.5](https://github.com/shadow81627/daim/compare/v1.18.4...v1.18.5) (2020-02-02)
 
 ### Bug Fixes
 
-  - **deps:** update dependency @nuxtjs/axios to v5.9.5 ([5614d74](https://github.com/shadow81627/daim/commit/5614d74784e3ac7c46c4d03027f12f599df8c6c8))
+- **deps:** update dependency @nuxtjs/axios to v5.9.5 ([5614d74](https://github.com/shadow81627/daim/commit/5614d74784e3ac7c46c4d03027f12f599df8c6c8))
 
 ## [1.18.4](https://github.com/shadow81627/daim/compare/v1.18.3...v1.18.4) (2020-02-01)
 
 ### Bug Fixes
 
-  - **deps:** update dependency bootstrap-vue to v2.4.0 ([b4fb007](https://github.com/shadow81627/daim/commit/b4fb0079c8c0a0958968800eb1ea17b5f3637136))
+- **deps:** update dependency bootstrap-vue to v2.4.0 ([b4fb007](https://github.com/shadow81627/daim/commit/b4fb0079c8c0a0958968800eb1ea17b5f3637136))
 
 ## [1.18.3](https://github.com/shadow81627/daim/compare/v1.18.2...v1.18.3) (2020-01-30)
 
 ### Bug Fixes
 
-  - **deps:** update dependency @nuxtjs/axios to v5.9.4 ([47782d8](https://github.com/shadow81627/daim/commit/47782d85107d9796b34aa66a32b9dbc07c9b229e))
+- **deps:** update dependency @nuxtjs/axios to v5.9.4 ([47782d8](https://github.com/shadow81627/daim/commit/47782d85107d9796b34aa66a32b9dbc07c9b229e))
 
 ## [1.18.2](https://github.com/shadow81627/daim/compare/v1.18.1...v1.18.2) (2020-01-27)
 
 ### Bug Fixes
 
-  - **footer:** add locale path to release link ([5b1b1c9](https://github.com/shadow81627/daim/commit/5b1b1c9c7e3ce2f34c8f640a7de46e9f0777d793))
-  - **footer:** add text for release page ([9fc9a27](https://github.com/shadow81627/daim/commit/9fc9a27c3108f8bfc3c72016b684f929fb972252))
-  - **footer:** remove version labels ([cda353f](https://github.com/shadow81627/daim/commit/cda353fe30031474a3a4de8e55a74b68464764c8))
+- **footer:** add locale path to release link ([5b1b1c9](https://github.com/shadow81627/daim/commit/5b1b1c9c7e3ce2f34c8f640a7de46e9f0777d793))
+- **footer:** add text for release page ([9fc9a27](https://github.com/shadow81627/daim/commit/9fc9a27c3108f8bfc3c72016b684f929fb972252))
+- **footer:** remove version labels ([cda353f](https://github.com/shadow81627/daim/commit/cda353fe30031474a3a4de8e55a74b68464764c8))
 
 ## [1.18.1](https://github.com/shadow81627/daim/compare/v1.18.0...v1.18.1) (2020-01-27)
 
 ### Performance Improvements
 
-  - **fonts:** remove unused fonts ([#118](https://github.com/shadow81627/daim/issues/118)) ([6ec6d6e](https://github.com/shadow81627/daim/commit/6ec6d6e446caa516945c16b0a54f25f16edfee50))
+- **fonts:** remove unused fonts ([#118](https://github.com/shadow81627/daim/issues/118)) ([6ec6d6e](https://github.com/shadow81627/daim/commit/6ec6d6e446caa516945c16b0a54f25f16edfee50))
 
 ## [1.18.0](https://github.com/shadow81627/daim/compare/v1.17.8...v1.18.0) (2020-01-27)
 
 ### Features
 
-  - **blog:** add breadcrumb ([#117](https://github.com/shadow81627/daim/issues/117)) ([7327142](https://github.com/shadow81627/daim/commit/7327142164d6769e07d69214d777794c3b03f2c3))
+- **blog:** add breadcrumb ([#117](https://github.com/shadow81627/daim/issues/117)) ([7327142](https://github.com/shadow81627/daim/commit/7327142164d6769e07d69214d777794c3b03f2c3))
 
 ## [1.17.8](https://github.com/shadow81627/daim/compare/v1.17.7...v1.17.8) (2020-01-25)
 
 ### Bug Fixes
 
-  - **deps:** update dependency cross-env to v7 ([252ef01](https://github.com/shadow81627/daim/commit/252ef01425860855ac54e8d661449953377c1ba6))
+- **deps:** update dependency cross-env to v7 ([252ef01](https://github.com/shadow81627/daim/commit/252ef01425860855ac54e8d661449953377c1ba6))
 
 ## [1.17.7](https://github.com/shadow81627/daim/compare/v1.17.6...v1.17.7) (2020-01-25)
 
 ### Bug Fixes
 
-  - **deps:** update dependency bootstrap-vue to v2.3.0 ([cb20ada](https://github.com/shadow81627/daim/commit/cb20adaf3cd348144269e1f0f3b1090ca5ef1f2d))
+- **deps:** update dependency bootstrap-vue to v2.3.0 ([cb20ada](https://github.com/shadow81627/daim/commit/cb20adaf3cd348144269e1f0f3b1090ca5ef1f2d))
 
 ## [1.17.6](https://github.com/shadow81627/daim/compare/v1.17.5...v1.17.6) (2020-01-24)
 
 ### Bug Fixes
 
-  - **deps:** update dependency nuxt-i18n to v6.5.0 ([48d3781](https://github.com/shadow81627/daim/commit/48d3781d14534b55395b2cd0310f219180a8f42f))
+- **deps:** update dependency nuxt-i18n to v6.5.0 ([48d3781](https://github.com/shadow81627/daim/commit/48d3781d14534b55395b2cd0310f219180a8f42f))
 
 ## [1.17.5](https://github.com/shadow81627/daim/compare/v1.17.4...v1.17.5) (2020-01-15)
 
 ### Bug Fixes
 
-  - **deps:** update dependency bootstrap-vue to v2.2.2 ([713b4e2](https://github.com/shadow81627/daim/commit/713b4e249e5ec45c7c6758461e06caed10d5ffde))
+- **deps:** update dependency bootstrap-vue to v2.2.2 ([713b4e2](https://github.com/shadow81627/daim/commit/713b4e249e5ec45c7c6758461e06caed10d5ffde))
 
 ## [1.17.4](https://github.com/shadow81627/daim/compare/v1.17.3...v1.17.4) (2020-01-14)
 
 ### Bug Fixes
 
-  - **deps:** update dependency bootstrap-vue to v2.2.1 ([5f069c6](https://github.com/shadow81627/daim/commit/5f069c6fcc8d39bd8f9a1e012b3b8b423223e92c))
+- **deps:** update dependency bootstrap-vue to v2.2.1 ([5f069c6](https://github.com/shadow81627/daim/commit/5f069c6fcc8d39bd8f9a1e012b3b8b423223e92c))
 
 ## [1.17.3](https://github.com/shadow81627/daim/compare/v1.17.2...v1.17.3) (2020-01-12)
 
 ### Bug Fixes
 
-  - **brand:** add alt attribute ([a41fd71](https://github.com/shadow81627/daim/commit/a41fd71c6e42a00f2b9069f8668b5bfbccef6f1c))
+- **brand:** add alt attribute ([a41fd71](https://github.com/shadow81627/daim/commit/a41fd71c6e42a00f2b9069f8668b5bfbccef6f1c))
 
 ## [1.17.2](https://github.com/shadow81627/daim/compare/v1.17.1...v1.17.2) (2020-01-12)
 
 ### Performance Improvements
 
-  - **logo:** use svg ([fdf7c36](https://github.com/shadow81627/daim/commit/fdf7c36fb2eacb9e27f6d456d9e666711b5ddc1b))
+- **logo:** use svg ([fdf7c36](https://github.com/shadow81627/daim/commit/fdf7c36fb2eacb9e27f6d456d9e666711b5ddc1b))
 
 ## [1.17.2](https://github.com/shadow81627/daim/compare/v1.17.1...v1.17.2) (2020-01-12)
 
 ### Performance Improvements
 
-  - **logo:** use svg ([fdf7c36](https://github.com/shadow81627/daim/commit/fdf7c36fb2eacb9e27f6d456d9e666711b5ddc1b))
+- **logo:** use svg ([fdf7c36](https://github.com/shadow81627/daim/commit/fdf7c36fb2eacb9e27f6d456d9e666711b5ddc1b))
 
 ## [1.17.1](https://github.com/shadow81627/daim/compare/v1.17.0...v1.17.1) (2020-01-12)
 
 ### Bug Fixes
 
-  - **deps:** pin dependency @nuxtjs/sitemap to 2.0.1 ([e5fc564](https://github.com/shadow81627/daim/commit/e5fc564f8c9e2158821c9a480304870af5bb2933))
+- **deps:** pin dependency @nuxtjs/sitemap to 2.0.1 ([e5fc564](https://github.com/shadow81627/daim/commit/e5fc564f8c9e2158821c9a480304870af5bb2933))
 
 ## [1.17.1](https://github.com/shadow81627/daim/compare/v1.17.0...v1.17.1) (2020-01-12)
 
 ### Bug Fixes
 
-  - **deps:** pin dependency @nuxtjs/sitemap to 2.0.1 ([e5fc564](https://github.com/shadow81627/daim/commit/e5fc564f8c9e2158821c9a480304870af5bb2933))
+- **deps:** pin dependency @nuxtjs/sitemap to 2.0.1 ([e5fc564](https://github.com/shadow81627/daim/commit/e5fc564f8c9e2158821c9a480304870af5bb2933))
 
 ## [1.17.0](https://github.com/shadow81627/daim/compare/v1.16.2...v1.17.0) (2020-01-11)
 
 ### Features
 
-  - add xml sitemap ([b2977b6](https://github.com/shadow81627/daim/commit/b2977b6e51136f216995eea102eb5112349abe9d))
+- add xml sitemap ([b2977b6](https://github.com/shadow81627/daim/commit/b2977b6e51136f216995eea102eb5112349abe9d))
 
 ## [1.17.0](https://github.com/shadow81627/daim/compare/v1.16.2...v1.17.0) (2020-01-11)
 
 ### Features
 
-  - add xml sitemap ([b2977b6](https://github.com/shadow81627/daim/commit/b2977b6e51136f216995eea102eb5112349abe9d))
+- add xml sitemap ([b2977b6](https://github.com/shadow81627/daim/commit/b2977b6e51136f216995eea102eb5112349abe9d))
 
 ## [1.16.2](https://github.com/shadow81627/daim/compare/v1.16.1...v1.16.2) (2020-01-11)
 
 ### Bug Fixes
 
-  - **deps:** update dependency @nuxtjs/axios to v5.9.3 ([519ffc4](https://github.com/shadow81627/daim/commit/519ffc40597732ab9f0ba6c9fc4efa168c7d9710))
+- **deps:** update dependency @nuxtjs/axios to v5.9.3 ([519ffc4](https://github.com/shadow81627/daim/commit/519ffc40597732ab9f0ba6c9fc4efa168c7d9710))
 
 ## [1.16.1](https://github.com/shadow81627/daim/compare/v1.16.0...v1.16.1) (2020-01-09)
 
 ### Bug Fixes
 
-  - **deps:** update dependency bootstrap-vue to v2.2.0 ([7af4175](https://github.com/shadow81627/daim/commit/7af417506f9e3594bcdfdcb9825f75f1212fe62f))
+- **deps:** update dependency bootstrap-vue to v2.2.0 ([7af4175](https://github.com/shadow81627/daim/commit/7af417506f9e3594bcdfdcb9825f75f1212fe62f))
 
 ## [1.16.0](https://github.com/shadow81627/daim/compare/v1.15.3...v1.16.0) (2020-01-05)
 
 ### Features
 
-  - **component:** add card-group ([8eb27b0](https://github.com/shadow81627/daim/commit/8eb27b0ca3ff7d72bee9b0b3be2e4d3700e90034))
-  - **component:** add column ([39a2648](https://github.com/shadow81627/daim/commit/39a26487a357fdf1430a3346fb83446e3c16fd39))
+- **component:** add card-group ([8eb27b0](https://github.com/shadow81627/daim/commit/8eb27b0ca3ff7d72bee9b0b3be2e4d3700e90034))
+- **component:** add column ([39a2648](https://github.com/shadow81627/daim/commit/39a26487a357fdf1430a3346fb83446e3c16fd39))
 
 ## [1.15.3](https://github.com/shadow81627/daim/compare/v1.15.2...v1.15.3) (2020-01-05)
 
 ### Bug Fixes
 
-  - **styles:** move bootstrap theme into layout ([9a7fb94](https://github.com/shadow81627/daim/commit/9a7fb94cb1aca1f5e9d6282e3e3e8d1345625614))
+- **styles:** move bootstrap theme into layout ([9a7fb94](https://github.com/shadow81627/daim/commit/9a7fb94cb1aca1f5e9d6282e3e3e8d1345625614))
 
 ## [1.15.2](https://github.com/shadow81627/daim/compare/v1.15.1...v1.15.2) (2020-01-02)
 
 ### Bug Fixes
 
-  - **deps:** update dependency @nuxtjs/axios to v5.9.2 ([9d542a4](https://github.com/shadow81627/daim/commit/9d542a4937582c97d037f080752a4701464839fa))
+- **deps:** update dependency @nuxtjs/axios to v5.9.2 ([9d542a4](https://github.com/shadow81627/daim/commit/9d542a4937582c97d037f080752a4701464839fa))
 
 ## [1.15.1](https://github.com/shadow81627/daim/compare/v1.15.0...v1.15.1) (2019-12-29)
 
 ### Bug Fixes
 
-  - **tool:** hide link if there is no href ([64c5113](https://github.com/shadow81627/daim/commit/64c5113b48958c1bd99737eb85277b0fdd8e2479))
+- **tool:** hide link if there is no href ([64c5113](https://github.com/shadow81627/daim/commit/64c5113b48958c1bd99737eb85277b0fdd8e2479))
 
 ## [1.15.0](https://github.com/shadow81627/daim/compare/v1.14.2...v1.15.0) (2019-12-28)
 
 ### Bug Fixes
 
-  - **tools:** add docker icon ([b7fc6da](https://github.com/shadow81627/daim/commit/b7fc6daf8707f90d592e63fdc0afe1c3d3b7e8e8))
+- **tools:** add docker icon ([b7fc6da](https://github.com/shadow81627/daim/commit/b7fc6daf8707f90d592e63fdc0afe1c3d3b7e8e8))
 
 ### Features
 
-  - **tools:** add a card deck of tools I use ([4c0a79e](https://github.com/shadow81627/daim/commit/4c0a79ec7f750528c93b23b5e764975859a0884e))
+- **tools:** add a card deck of tools I use ([4c0a79e](https://github.com/shadow81627/daim/commit/4c0a79ec7f750528c93b23b5e764975859a0884e))
 
 ## [1.14.2](https://github.com/shadow81627/daim/compare/v1.14.1...v1.14.2) (2019-12-23)
 
 ### Bug Fixes
 
-  - **hero:** make headings optional ([3e70ac3](https://github.com/shadow81627/daim/commit/3e70ac31a282df436d63729d4deb56410c3f7893))
+- **hero:** make headings optional ([3e70ac3](https://github.com/shadow81627/daim/commit/3e70ac31a282df436d63729d4deb56410c3f7893))
 
 ## [1.14.1](https://github.com/shadow81627/daim/compare/v1.14.0...v1.14.1) (2019-12-23)
 
 ### Bug Fixes
 
-  - **hero:** use default styles for h1 ([fd8555a](https://github.com/shadow81627/daim/commit/fd8555a769ed7440c928cd7e740367d5e055d51d))
+- **hero:** use default styles for h1 ([fd8555a](https://github.com/shadow81627/daim/commit/fd8555a769ed7440c928cd7e740367d5e055d51d))
 
 ## [1.14.0](https://github.com/shadow81627/daim/compare/v1.13.0...v1.14.0) (2019-12-22)
 
 ### Bug Fixes
 
-  - **footer:** left align ([1320d9b](https://github.com/shadow81627/daim/commit/1320d9ba310064c68313e708ce7314d8a0ba7142))
+- **footer:** left align ([1320d9b](https://github.com/shadow81627/daim/commit/1320d9ba310064c68313e708ce7314d8a0ba7142))
 
 ### Features
 
-  - **feature:** add icon ([7d8e764](https://github.com/shadow81627/daim/commit/7d8e76435ccd922ab72db3f7d1aea9241851a06b))
+- **feature:** add icon ([7d8e764](https://github.com/shadow81627/daim/commit/7d8e76435ccd922ab72db3f7d1aea9241851a06b))
 
 ## [1.13.0](https://github.com/shadow81627/daim/compare/v1.12.8...v1.13.0) (2019-12-22)
 
 ### Bug Fixes
 
-  - **navigation:** disable resize watcher ([370da2d](https://github.com/shadow81627/daim/commit/370da2d3ba1668e3b5e43088828c172e94b09e69))
-  - **text:** set body font size to 16 pixels ([1f71013](https://github.com/shadow81627/daim/commit/1f710138eaf58bac49f88110ccf34c90df3e9cb2))
+- **navigation:** disable resize watcher ([370da2d](https://github.com/shadow81627/daim/commit/370da2d3ba1668e3b5e43088828c172e94b09e69))
+- **text:** set body font size to 16 pixels ([1f71013](https://github.com/shadow81627/daim/commit/1f710138eaf58bac49f88110ccf34c90df3e9cb2))
 
 ### Features
 
-  - **resume:** add responsive typography ([3ee966c](https://github.com/shadow81627/daim/commit/3ee966c75346f90d6df4139ad3a0e42f68337ebf))
+- **resume:** add responsive typography ([3ee966c](https://github.com/shadow81627/daim/commit/3ee966c75346f90d6df4139ad3a0e42f68337ebf))
 
 ## [1.12.8](https://github.com/shadow81627/daim/compare/v1.12.7...v1.12.8) (2019-12-17)
 
 ### Bug Fixes
 
-  - **css:** remove purge css ([d04dd62](https://github.com/shadow81627/daim/commit/d04dd6240bf1260abd9b6134b849ef1bafc2cbdf))
+- **css:** remove purge css ([d04dd62](https://github.com/shadow81627/daim/commit/d04dd6240bf1260abd9b6134b849ef1bafc2cbdf))
 
 ## [1.12.7](https://github.com/shadow81627/daim/compare/v1.12.6...v1.12.7) (2019-12-17)
 
 ### Performance Improvements
 
-  - **css:** webpack purge css ([3f5ff8e](https://github.com/shadow81627/daim/commit/3f5ff8e83b9987352338018a7e4c36ab85e4b88f))
+- **css:** webpack purge css ([3f5ff8e](https://github.com/shadow81627/daim/commit/3f5ff8e83b9987352338018a7e4c36ab85e4b88f))
 
 ## [1.12.6](https://github.com/shadow81627/daim/compare/v1.12.5...v1.12.6) (2019-12-17)
 
 ### Bug Fixes
 
-  - **deps:** update dependency nuxt to v2.11.0 ([435f884](https://github.com/shadow81627/daim/commit/435f884a52a94cfd48196093d883e9b88dca1168))
+- **deps:** update dependency nuxt to v2.11.0 ([435f884](https://github.com/shadow81627/daim/commit/435f884a52a94cfd48196093d883e9b88dca1168))
 
 ## [1.12.5](https://github.com/shadow81627/daim/compare/v1.12.4...v1.12.5) (2019-12-17)
 
 ### Bug Fixes
 
-  - **deps:** update dependency @nuxtjs/axios to v5.9.0 ([fe99c5d](https://github.com/shadow81627/daim/commit/fe99c5dd48eec07bfd68736676b71e16d19f7421))
+- **deps:** update dependency @nuxtjs/axios to v5.9.0 ([fe99c5d](https://github.com/shadow81627/daim/commit/fe99c5dd48eec07bfd68736676b71e16d19f7421))
 
 ## [1.12.4](https://github.com/shadow81627/daim/compare/v1.12.3...v1.12.4) (2019-12-17)
 
 ### Bug Fixes
 
-  - **resume:** add title attribute to social links ([f5cc3de](https://github.com/shadow81627/daim/commit/f5cc3dec95b558d72c8abecc7e3d079a57cbc023))
+- **resume:** add title attribute to social links ([f5cc3de](https://github.com/shadow81627/daim/commit/f5cc3dec95b558d72c8abecc7e3d079a57cbc023))
 
 ## [1.12.3](https://github.com/shadow81627/daim/compare/v1.12.2...v1.12.3) (2019-12-16)
 
 ### Bug Fixes
 
-  - **resume:** word break h1 ([f1a92e9](https://github.com/shadow81627/daim/commit/f1a92e989d92469b607cee39dd1950f86f5985b1))
+- **resume:** word break h1 ([f1a92e9](https://github.com/shadow81627/daim/commit/f1a92e989d92469b607cee39dd1950f86f5985b1))
 
 ## [1.12.2](https://github.com/shadow81627/daim/compare/v1.12.1...v1.12.2) (2019-12-16)
 
 ### Bug Fixes
 
-  - **fonts:** add font family base to vuetify application style ([81431a5](https://github.com/shadow81627/daim/commit/81431a57ca5c0ffe8cbf5b173a8137a13cd9e438))
-  - **print:** force point sizes, fonts and colors ([9014742](https://github.com/shadow81627/daim/commit/90147424675b00bab95cd3448ab9984326c9c5df))
+- **fonts:** add font family base to vuetify application style ([81431a5](https://github.com/shadow81627/daim/commit/81431a57ca5c0ffe8cbf5b173a8137a13cd9e438))
+- **print:** force point sizes, fonts and colors ([9014742](https://github.com/shadow81627/daim/commit/90147424675b00bab95cd3448ab9984326c9c5df))
 
 ## [1.12.1](https://github.com/shadow81627/daim/compare/v1.12.0...v1.12.1) (2019-12-16)
 
 ### Bug Fixes
 
-  - **deps:** pin dependencies ([546d1bf](https://github.com/shadow81627/daim/commit/546d1bfd052866512d3135cfa5717f08a3b65492))
-  - **deps:** pin dependencies ([3491de5](https://github.com/shadow81627/daim/commit/3491de53594b12fc5b018293f73b316971c5a016))
-  - **resume:** add font awesome svg icons ([6d20274](https://github.com/shadow81627/daim/commit/6d202748baee85eb019114111431b3cf3033bc5e))
+- **deps:** pin dependencies ([546d1bf](https://github.com/shadow81627/daim/commit/546d1bfd052866512d3135cfa5717f08a3b65492))
+- **deps:** pin dependencies ([3491de5](https://github.com/shadow81627/daim/commit/3491de53594b12fc5b018293f73b316971c5a016))
+- **resume:** add font awesome svg icons ([6d20274](https://github.com/shadow81627/daim/commit/6d202748baee85eb019114111431b3cf3033bc5e))
 
 ## [1.12.0](https://github.com/shadow81627/daim/compare/v1.11.4...v1.12.0) (2019-12-15)
 
 ### Features
 
-  - **resume:** add a resume page ([2026741](https://github.com/shadow81627/daim/commit/20267415c5409e33765350c2bc4448dc751c03a1))
+- **resume:** add a resume page ([2026741](https://github.com/shadow81627/daim/commit/20267415c5409e33765350c2bc4448dc751c03a1))
 
 ### Performance Improvements
 
-  - **images:** reduce quality to 75 ([5c1b95a](https://github.com/shadow81627/daim/commit/5c1b95aed7a4d50788e8d93f74200a49c8f69349))
+- **images:** reduce quality to 75 ([5c1b95a](https://github.com/shadow81627/daim/commit/5c1b95aed7a4d50788e8d93f74200a49c8f69349))
 
 ## [1.11.4](https://github.com/shadow81627/daim/compare/v1.11.3...v1.11.4) (2019-12-14)
 
 ### Performance Improvements
 
-  - **images:** add more image loaders ([e079ca4](https://github.com/shadow81627/daim/commit/e079ca40330ac5747dcbf3cff8c4cd2caf46d71f))
+- **images:** add more image loaders ([e079ca4](https://github.com/shadow81627/daim/commit/e079ca40330ac5747dcbf3cff8c4cd2caf46d71f))
 
 ## [1.11.3](https://github.com/shadow81627/daim/compare/v1.11.2...v1.11.3) (2019-12-14)
 
 ### Performance Improvements
 
-  - **images:** add webpack image loader ([44010bb](https://github.com/shadow81627/daim/commit/44010bb32c1796ede2dacb872d88073740e1ede2))
+- **images:** add webpack image loader ([44010bb](https://github.com/shadow81627/daim/commit/44010bb32c1796ede2dacb872d88073740e1ede2))
 
 ## [1.11.2](https://github.com/shadow81627/daim/compare/v1.11.1...v1.11.2) (2019-12-14)
 
 ### Performance Improvements
 
-  - **fonts:** add font-display: swap ([97be846](https://github.com/shadow81627/daim/commit/97be84653148b20ad7d7350c78d7c1ce4e526e3d))
-  - **preload:** add fonts and images to preload ([1d8d027](https://github.com/shadow81627/daim/commit/1d8d02774f0cf23ebcfe2d7448f1c01bdd20f2f1))
+- **fonts:** add font-display: swap ([97be846](https://github.com/shadow81627/daim/commit/97be84653148b20ad7d7350c78d7c1ce4e526e3d))
+- **preload:** add fonts and images to preload ([1d8d027](https://github.com/shadow81627/daim/commit/1d8d02774f0cf23ebcfe2d7448f1c01bdd20f2f1))
 
 ## [1.11.1](https://github.com/shadow81627/daim/compare/v1.11.0...v1.11.1) (2019-12-14)
 
 ### Performance Improvements
 
-  - **font:** self host brand font ([a1f47b0](https://github.com/shadow81627/daim/commit/a1f47b0a4f4c356e75647731599b4f1cf35beec3))
+- **font:** self host brand font ([a1f47b0](https://github.com/shadow81627/daim/commit/a1f47b0a4f4c356e75647731599b4f1cf35beec3))
 
 ## [1.11.0](https://github.com/shadow81627/daim/compare/v1.10.2...v1.11.0) (2019-12-12)
 
 ### Features
 
-  - **title:** use fancy emoji page title ([a0fca4f](https://github.com/shadow81627/daim/commit/a0fca4f08ed55e063e3aeb35abf08f6fe0588878))
+- **title:** use fancy emoji page title ([a0fca4f](https://github.com/shadow81627/daim/commit/a0fca4f08ed55e063e3aeb35abf08f6fe0588878))
 
 ## [1.10.2](https://github.com/shadow81627/daim/compare/v1.10.1...v1.10.2) (2019-12-10)
 
 ### Bug Fixes
 
-  - **icons:** rename logo to icon ([2ab5f70](https://github.com/shadow81627/daim/commit/2ab5f70464d5f8beebd5f73ffbeb2c49a505e0b5))
+- **icons:** rename logo to icon ([2ab5f70](https://github.com/shadow81627/daim/commit/2ab5f70464d5f8beebd5f73ffbeb2c49a505e0b5))
 
 ## [1.10.1](https://github.com/shadow81627/daim/compare/v1.10.0...v1.10.1) (2019-12-10)
 
 ### Performance Improvements
 
-  - **brand:** lazyload font ([a27ac11](https://github.com/shadow81627/daim/commit/a27ac1196071a6bd6c75774519f0d7bc81226467))
+- **brand:** lazyload font ([a27ac11](https://github.com/shadow81627/daim/commit/a27ac1196071a6bd6c75774519f0d7bc81226467))
 
 ## [1.10.0](https://github.com/shadow81627/daim/compare/v1.9.1...v1.10.0) (2019-12-10)
 
 ### Features
 
-  - **brand:** add icons and brand font ([6557a25](https://github.com/shadow81627/daim/commit/6557a2522f1288139271c02e53bbf71e95026048))
+- **brand:** add icons and brand font ([6557a25](https://github.com/shadow81627/daim/commit/6557a2522f1288139271c02e53bbf71e95026048))
 
 ## [1.9.1](https://github.com/shadow81627/daim/compare/v1.9.0...v1.9.1) (2019-12-10)
 
 ### Performance Improvements
 
-  - **404:** add srcset ([a694bca](https://github.com/shadow81627/daim/commit/a694bcaa31209c9aef6539a8e79e54fc3b9cfbc0))
+- **404:** add srcset ([a694bca](https://github.com/shadow81627/daim/commit/a694bcaa31209c9aef6539a8e79e54fc3b9cfbc0))
 
 ## [1.9.0](https://github.com/shadow81627/daim/compare/v1.8.0...v1.9.0) (2019-12-09)
 
 ### Features
 
-  - **layout:** add navigation draw ([da6506b](https://github.com/shadow81627/daim/commit/da6506be527037bdc4de1836bd380a592c0c1a99))
+- **layout:** add navigation draw ([da6506b](https://github.com/shadow81627/daim/commit/da6506be527037bdc4de1836bd380a592c0c1a99))
 
 ## [1.8.0](https://github.com/shadow81627/daim/compare/v1.7.1...v1.8.0) (2019-12-08)
 
 ### Features
 
-  - **pages:** add releases page ([1ff0f51](https://github.com/shadow81627/daim/commit/1ff0f51009722f37a4f2dfe95c7763727168f97d))
-  - **pages:** add releases page ([38abac8](https://github.com/shadow81627/daim/commit/38abac8409118b48744097088a634f7671b01a6a))
+- **pages:** add releases page ([1ff0f51](https://github.com/shadow81627/daim/commit/1ff0f51009722f37a4f2dfe95c7763727168f97d))
+- **pages:** add releases page ([38abac8](https://github.com/shadow81627/daim/commit/38abac8409118b48744097088a634f7671b01a6a))
 
 ## [1.7.1](https://github.com/shadow81627/daim/compare/v1.7.0...v1.7.1) (2019-12-08)
 
 ### Bug Fixes
 
-  - **routes:** validate dynamic route to pass through 404 page ([b7de0e9](https://github.com/shadow81627/daim/commit/b7de0e9e619da717c76bfa78a12229dec9a44358))
+- **routes:** validate dynamic route to pass through 404 page ([b7de0e9](https://github.com/shadow81627/daim/commit/b7de0e9e619da717c76bfa78a12229dec9a44358))
 
 ## [1.7.0](https://github.com/shadow81627/daim/compare/v1.6.0...v1.7.0) (2019-12-08)
 
 ### Features
 
-  - **500:** add heading ([1ff459b](https://github.com/shadow81627/daim/commit/1ff459b730dc05f952c4ab6dbc143188a0f024ea))
+- **500:** add heading ([1ff459b](https://github.com/shadow81627/daim/commit/1ff459b730dc05f952c4ab6dbc143188a0f024ea))
 
 ## [1.6.0](https://github.com/shadow81627/daim/compare/v1.5.0...v1.6.0) (2019-12-08)
 
 ### Bug Fixes
 
-  - **richtext:** change type to object ([bb2d20a](https://github.com/shadow81627/daim/commit/bb2d20abaa990a5560e372545b8d035bd3b84ec0))
+- **richtext:** change type to object ([bb2d20a](https://github.com/shadow81627/daim/commit/bb2d20abaa990a5560e372545b8d035bd3b84ec0))
 
 ### Features
 
-  - **blog:** add a blog section ([d5184ef](https://github.com/shadow81627/daim/commit/d5184efcfdda58797900a39c46aaa7e351887576))
-  - **home:** add content from storyblok ([1096466](https://github.com/shadow81627/daim/commit/1096466d00cffe9571d020af157e126d5879f6b4))
-  - **storyblok:** add storyblok cms ([0fa5a67](https://github.com/shadow81627/daim/commit/0fa5a6787b54d09464b6db7f35bf8d704ac7fa48))
-  - **storyblok:** add storyblok cms ([bf0e3e9](https://github.com/shadow81627/daim/commit/bf0e3e9c5035e8dea33f3d1f552f00156a624936))
+- **blog:** add a blog section ([d5184ef](https://github.com/shadow81627/daim/commit/d5184efcfdda58797900a39c46aaa7e351887576))
+- **home:** add content from storyblok ([1096466](https://github.com/shadow81627/daim/commit/1096466d00cffe9571d020af157e126d5879f6b4))
+- **storyblok:** add storyblok cms ([0fa5a67](https://github.com/shadow81627/daim/commit/0fa5a6787b54d09464b6db7f35bf8d704ac7fa48))
+- **storyblok:** add storyblok cms ([bf0e3e9](https://github.com/shadow81627/daim/commit/bf0e3e9c5035e8dea33f3d1f552f00156a624936))
 
 ## [1.5.0](https://github.com/shadow81627/daim/compare/v1.4.6...v1.5.0) (2019-12-07)
 
 ### Features
 
-  - **theme:** add lux bootstrap theme ([501d22b](https://github.com/shadow81627/daim/commit/501d22b0f6757c4e8c6e3eb805f83078ca87e784))
+- **theme:** add lux bootstrap theme ([501d22b](https://github.com/shadow81627/daim/commit/501d22b0f6757c4e8c6e3eb805f83078ca87e784))
 
 ## [1.4.6](https://github.com/shadow81627/daim/compare/v1.4.5...v1.4.6) (2019-12-04)
 
 ### Bug Fixes
 
-  - **error:** use fluid layout ([d29a105](https://github.com/shadow81627/daim/commit/d29a10535b116d013d8669dd4f84a8a9b46a38f2))
+- **error:** use fluid layout ([d29a105](https://github.com/shadow81627/daim/commit/d29a10535b116d013d8669dd4f84a8a9b46a38f2))
 
 ## [1.4.5](https://github.com/shadow81627/daim/compare/v1.4.4...v1.4.5) (2019-12-04)
 
 ### Performance Improvements
 
-  - **404:** set image width with cloudinary ([fa37f3e](https://github.com/shadow81627/daim/commit/fa37f3e2ccf378b41feee6d49041891e4e746e18))
+- **404:** set image width with cloudinary ([fa37f3e](https://github.com/shadow81627/daim/commit/fa37f3e2ccf378b41feee6d49041891e4e746e18))
 
 ## [1.4.4](https://github.com/shadow81627/daim/compare/v1.4.3...v1.4.4) (2019-12-03)
 
 ### Performance Improvements
 
-  - **i18n:** merge seo head data in default layout ([8fe514d](https://github.com/shadow81627/daim/commit/8fe514da460ce85bfd400512d455fe2badc8e8eb))
+- **i18n:** merge seo head data in default layout ([8fe514d](https://github.com/shadow81627/daim/commit/8fe514da460ce85bfd400512d455fe2badc8e8eb))
 
 ## [1.4.3](https://github.com/shadow81627/daim/compare/v1.4.2...v1.4.3) (2019-12-03)
 
 ### Performance Improvements
 
-  - **404:** add image size ([6630c5b](https://github.com/shadow81627/daim/commit/6630c5b2cfabe80a6371d3a4779d139b4360636b))
+- **404:** add image size ([6630c5b](https://github.com/shadow81627/daim/commit/6630c5b2cfabe80a6371d3a4779d139b4360636b))
 
 ## [1.4.2](https://github.com/shadow81627/daim/compare/v1.4.1...v1.4.2) (2019-12-03)
 
 ### Bug Fixes
 
-  - **meta:** move noscript and add title template ([7715a2a](https://github.com/shadow81627/daim/commit/7715a2a7259b54da0f06d4fc35f51a2bd58f901a))
+- **meta:** move noscript and add title template ([7715a2a](https://github.com/shadow81627/daim/commit/7715a2a7259b54da0f06d4fc35f51a2bd58f901a))
 
 ### Performance Improvements
 
-  - **404:** add cloudinary preconnect ([da56396](https://github.com/shadow81627/daim/commit/da56396fa7b3e5ac7e7f79c51bbbfc3a0e95f9e9))
+- **404:** add cloudinary preconnect ([da56396](https://github.com/shadow81627/daim/commit/da56396fa7b3e5ac7e7f79c51bbbfc3a0e95f9e9))
 
 ## [1.4.1](https://github.com/shadow81627/daim/compare/v1.4.0...v1.4.1) (2019-12-03)
 
 ### Bug Fixes
 
-  - **404:** add alt to background image ([ddeba53](https://github.com/shadow81627/daim/commit/ddeba53d708c106ed37c1330cdf1495115f4aaed))
+- **404:** add alt to background image ([ddeba53](https://github.com/shadow81627/daim/commit/ddeba53d708c106ed37c1330cdf1495115f4aaed))
 
 ## [1.4.0](https://github.com/shadow81627/daim/compare/v1.3.2...v1.4.0) (2019-12-03)
 
 ### Features
 
-  - **404:** add translations ([6ca9afa](https://github.com/shadow81627/daim/commit/6ca9afa3304f154234440bf8bb8e3fdc27466dce))
+- **404:** add translations ([6ca9afa](https://github.com/shadow81627/daim/commit/6ca9afa3304f154234440bf8bb8e3fdc27466dce))
 
 ## [1.3.2](https://github.com/shadow81627/daim/compare/v1.3.1...v1.3.2) (2019-12-03)
 
