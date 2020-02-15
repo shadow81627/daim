@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.11](https://github.com/shadow81627/daim/compare/v1.18.10...v1.18.11) (2020-02-15)
+
+### Bug Fixes
+
+- **changelog:** remove duplicate releases ([06afd64](https://github.com/shadow81627/daim/commit/06afd64fc5665d77f65bc9583f4680350f7272ed))
+
 ## [1.18.10](https://github.com/shadow81627/daim/compare/v1.18.9...v1.18.10) (2020-02-14)
 
 ### Bug Fixes
