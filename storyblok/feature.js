@@ -16,7 +16,7 @@ module.exports = {
       type: 'text',
     },
     text: {
-      type: 'text',
+      type: 'textarea',
     },
   },
   image: null,

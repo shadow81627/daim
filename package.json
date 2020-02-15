@@ -12,7 +12,7 @@
     "now-build": "nuxt generate --modern",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "serve:lhci": "npm run start",
-    "storyblok:export": "storyblok-component-export",
+    "storyblok:export": "storyblok-component-export && npm run lint:fix",
     "storyblok:migrate": "storyblok-migrate --content-migrations --component-migrations",
     "generate": "nuxt generate",
     "generate:modern": "nuxt generate --modern",
