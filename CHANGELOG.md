@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.13](https://github.com/shadow81627/daim/compare/v1.18.12...v1.18.13) (2020-02-18)
+
+### Bug Fixes
+
+- **deps:** update dependency cloudinary-core to v2.8.1 ([963df87](https://github.com/shadow81627/daim/commit/963df875d17928cdada6858faa0e18b10b821fa0))
+
 ## [1.18.12](https://github.com/shadow81627/daim/compare/v1.18.11...v1.18.12) (2020-02-15)
 
 ### Bug Fixes
