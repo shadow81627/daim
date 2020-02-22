@@ -5,7 +5,7 @@ const STORYBLOK_TOKEN =
   process.env.STORYBLOK_TOKEN || 'kycw6YWwjgilZCDf6Xb6kAtt';
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
 
   env: {
     HOST: process.env.HOST,
