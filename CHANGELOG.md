@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.15](https://github.com/shadow81627/daim/compare/v1.18.14...v1.18.15) (2020-02-22)
+
+### Bug Fixes
+
+- **deps:** update dependency github-markdown-css to v4 ([ad2cb6c](https://github.com/shadow81627/daim/commit/ad2cb6ca02f00e440f42c50009063c927b5be215))
+
 ## [1.18.14](https://github.com/shadow81627/daim/compare/v1.18.13...v1.18.14) (2020-02-18)
 
 ### Bug Fixes
