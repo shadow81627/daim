@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.17](https://github.com/shadow81627/daim/compare/v1.18.16...v1.18.17) (2020-02-26)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/markdownit to v1.2.9 ([9bdba53](https://github.com/shadow81627/daim/commit/9bdba53686665b5a2fee9bda30a94455601116ed))
+
 ## [1.18.16](https://github.com/shadow81627/daim/compare/v1.18.15...v1.18.16) (2020-02-26)
 
 ### Bug Fixes
