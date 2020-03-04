@@ -82,7 +82,7 @@
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-pngquant": "8.0.0",
     "imagemin-svgo": "7.1.0",
-    "jimp": "0.9.3",
+    "jimp": "0.9.5",
     "lint-staged": "10.0.8",
     "lqip-loader": "2.2.0",
     "nodemon": "2.0.2",
