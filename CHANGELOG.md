@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.21](https://github.com/shadow81627/daim/compare/v1.18.20...v1.18.21) (2020-03-05)
+
+### Bug Fixes
+
+- **deps:** update dependency cross-env to v7.0.2 ([a8abe18](https://github.com/shadow81627/daim/commit/a8abe18d3061217de4085f9fd1246b20817d03c2))
+
 ## [1.18.20](https://github.com/shadow81627/daim/compare/v1.18.19...v1.18.20) (2020-03-05)
 
 ### Bug Fixes
