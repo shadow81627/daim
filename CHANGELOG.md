@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.22](https://github.com/shadow81627/daim/compare/v1.18.21...v1.18.22) (2020-03-07)
+
+### Bug Fixes
+
+- **deps:** update dependency bootstrap-vue to v2.6.1 ([0533b02](https://github.com/shadow81627/daim/commit/0533b02b8ee26198b67a7379649aacb38104ae43))
+
 ## [1.18.21](https://github.com/shadow81627/daim/compare/v1.18.20...v1.18.21) (2020-03-05)
 
 ### Bug Fixes
