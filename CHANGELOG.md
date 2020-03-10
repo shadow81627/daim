@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.23](https://github.com/shadow81627/daim/compare/v1.18.22...v1.18.23) (2020-03-10)
+
+### Bug Fixes
+
+- **deps:** update dependency storyblok-nuxt to v1.2.0 ([326770d](https://github.com/shadow81627/daim/commit/326770da248ebcf30c0c8c84eb308798953e669e))
+
 ## [1.18.22](https://github.com/shadow81627/daim/compare/v1.18.21...v1.18.22) (2020-03-07)
 
 ### Bug Fixes
