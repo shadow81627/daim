@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.34](https://github.com/shadow81627/daim/compare/v1.18.33...v1.18.34) (2020-03-27)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sitemap to v2.1.0 ([e9e9617](https://github.com/shadow81627/daim/commit/e9e96176fd025a83ebcc9f44b80a0c1099db26a2))
+
 ## [1.18.33](https://github.com/shadow81627/daim/compare/v1.18.32...v1.18.33) (2020-03-27)
 
 ### Bug Fixes
