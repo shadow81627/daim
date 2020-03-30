@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.36](https://github.com/shadow81627/daim/compare/v1.18.35...v1.18.36) (2020-03-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.9.7 ([8be63c5](https://github.com/shadow81627/daim/commit/8be63c5cd9665e5eec9a8a0cfd5a878ff390a08d))
+
 ## [1.18.35](https://github.com/shadow81627/daim/compare/v1.18.34...v1.18.35) (2020-03-30)
 
 ### Bug Fixes
