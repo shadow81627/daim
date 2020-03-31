@@ -54,7 +54,7 @@
     "koa": "2.11.0",
     "nuxt": "2.12.1",
     "nuxt-fontawesome": "0.4.0",
-    "nuxt-i18n": "6.7.1",
+    "nuxt-i18n": "6.7.2",
     "nuxt-webfontloader": "1.1.0",
     "storyblok-nuxt": "1.2.0"
   },
