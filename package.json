@@ -59,7 +59,7 @@
     "storyblok-nuxt": "1.2.0"
   },
   "devDependencies": {
-    "@bazzite/nuxt-optimized-images": "0.3.0",
+    "@bazzite/nuxt-optimized-images": "0.4.0",
     "@lhci/cli": "0.3.12",
     "@mdi/js": "5.0.45",
     "@nuxtjs/eslint-config": "2.0.2",
