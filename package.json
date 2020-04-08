@@ -85,7 +85,7 @@
     "jimp": "0.10.1",
     "lint-staged": "10.1.2",
     "lqip-loader": "2.2.0",
-    "nodemon": "2.0.2",
+    "nodemon": "2.0.3",
     "nuxt-purgecss": "0.2.1",
     "prettier": "1.19.1",
     "remark-cli": "8.0.0",
