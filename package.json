@@ -86,7 +86,7 @@
     "lint-staged": "10.1.7",
     "lqip-loader": "2.2.0",
     "nodemon": "2.0.3",
-    "nuxt-purgecss": "0.2.1",
+    "nuxt-purgecss": "1.0.0",
     "prettier": "1.19.1",
     "remark-cli": "8.0.0",
     "remark-lint": "7.0.0",
