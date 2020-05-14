@@ -47,7 +47,7 @@
     "@nuxtjs/sitemap": "2.3.0",
     "bootstrap": "4.5.0",
     "bootstrap-vue": "2.14.0",
-    "bootswatch": "4.4.1",
+    "bootswatch": "4.5.0",
     "cloudinary-core": "2.8.2",
     "cross-env": "7.0.2",
     "github-markdown-css": "4.0.0",
