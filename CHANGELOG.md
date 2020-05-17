@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.65](https://github.com/shadow81627/daim/compare/v1.18.64...v1.18.65) (2020-05-17)
+
+### Bug Fixes
+
+- **deps:** update dependency koa to v2.12.0 ([968a1bd](https://github.com/shadow81627/daim/commit/968a1bd230ae90ce35d62c7b1d77081875cf4806))
+
 ## [1.18.64](https://github.com/shadow81627/daim/compare/v1.18.63...v1.18.64) (2020-05-14)
 
 ### Bug Fixes
