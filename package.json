@@ -99,7 +99,7 @@
     "semantic-release": "17.0.6",
     "sqip-loader": "1.0.0",
     "storyblok-migrate": "0.3.3",
-    "stylelint": "13.3.3",
+    "stylelint": "13.4.0",
     "webp-loader": "0.6.0"
   }
 }
