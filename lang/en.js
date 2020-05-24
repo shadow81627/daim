@@ -1,5 +1,5 @@
 export default () => {
-  return new Promise(function(resolve) {
+  return new Promise(function (resolve) {
     resolve({
       error: {
         404: {
