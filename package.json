@@ -83,7 +83,7 @@
     "imagemin-pngquant": "9.0.0",
     "imagemin-svgo": "8.0.0",
     "jimp": "0.12.1",
-    "lint-staged": "10.2.7",
+    "lint-staged": "10.2.8",
     "lqip-loader": "2.2.0",
     "nodemon": "2.0.4",
     "nuxt-purgecss": "1.0.0",
