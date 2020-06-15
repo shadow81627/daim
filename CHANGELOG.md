@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.73](https://github.com/shadow81627/daim/compare/v1.18.72...v1.18.73) (2020-06-15)
+
+### Bug Fixes
+
+- **deps:** update dependency @fortawesome/vue-fontawesome to v0.1.10 ([791faf1](https://github.com/shadow81627/daim/commit/791faf174ee10182820be3441c97beb8b83b95b2))
+
 ## [1.18.72](https://github.com/shadow81627/daim/compare/v1.18.71...v1.18.72) (2020-06-15)
 
 ### Bug Fixes
