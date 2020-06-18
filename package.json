@@ -22,7 +22,9 @@
     "lhci:autorun": "lhci autorun",
     "test": "ava",
     "test:unit": "cross-env TEST=unit ava --config unit.config.js",
-    "test:e2e": "cross-env TEST=e2e ava --config e2e.config.js"
+    "test:e2e": "cross-env TEST=e2e ava --config e2e.config.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": "12.x"
@@ -56,7 +58,8 @@
     "nuxt-fontawesome": "0.4.0",
     "nuxt-i18n": "6.12.2",
     "nuxt-webfontloader": "1.1.0",
-    "storyblok-nuxt": "1.2.0"
+    "storyblok-nuxt": "1.2.0",
+    "snyk": "^1.345.1"
   },
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "0.4.0",
@@ -101,5 +104,6 @@
     "storyblok-migrate": "0.3.3",
     "stylelint": "13.6.1",
     "webp-loader": "0.6.0"
-  }
+  },
+  "snyk": true
 }
