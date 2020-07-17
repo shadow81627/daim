@@ -88,7 +88,7 @@
     "nodemon": "2.0.4",
     "nuxt-purgecss": "1.0.0",
     "prettier": "2.0.5",
-    "remark-cli": "8.0.0",
+    "remark-cli": "8.0.1",
     "remark-lint": "7.0.1",
     "remark-preset-lint-consistent": "3.0.1",
     "remark-preset-lint-recommended": "4.0.1",
