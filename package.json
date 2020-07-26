@@ -61,7 +61,7 @@
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "0.4.0",
     "@lhci/cli": "0.3.14",
-    "@mdi/js": "5.3.45",
+    "@mdi/js": "5.4.45",
     "@nuxtjs/eslint-config": "3.0.0",
     "@nuxtjs/eslint-module": "2.0.0",
     "@nuxtjs/stylelint-module": "4.0.0",
