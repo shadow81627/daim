@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.99](https://github.com/shadow81627/daim/compare/v1.18.98...v1.18.99) (2020-08-04)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.14.1 ([9528859](https://github.com/shadow81627/daim/commit/9528859baa171c28edff9a7e419d4df171ef9062))
+
 ## [1.18.98](https://github.com/shadow81627/daim/compare/v1.18.97...v1.18.98) (2020-08-04)
 
 ### Bug Fixes
