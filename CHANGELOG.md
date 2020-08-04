@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.100](https://github.com/shadow81627/daim/compare/v1.18.99...v1.18.100) (2020-08-04)
+
+### Bug Fixes
+
+- **deps:** update dependency bootswatch to v4.5.1 ([ebdbc55](https://github.com/shadow81627/daim/commit/ebdbc55525415b88e2309d6038a0b3d311a9105d))
+
 ## [1.18.99](https://github.com/shadow81627/daim/compare/v1.18.98...v1.18.99) (2020-08-04)
 
 ### Bug Fixes
