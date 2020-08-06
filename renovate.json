@@ -1,8 +1,16 @@
 {
-  "assignees": ["shadow81627"],
+  "dependencyDashboard": true,
+  "rollbackPrs": true,
   "automerge": true,
   "bumpVersion": null,
   "labels": ["dependencies"],
-  "lockFileMaintenance": { "enabled": true, "schedule": ["before 2am"] },
-  "extends": ["config:base", ":semanticCommits", ":pinSkipCi"]
+  "lockFileMaintenance": { "enabled": true },
+  "extends": [
+    "config:base",
+    ":semanticCommits",
+    ":pinSkipCi",
+    ":prNotPending",
+    ":maintainLockFilesWeekly",
+    ":enableVulnerabilityAlerts"
+  ]
 }
