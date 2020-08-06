@@ -1,5 +1,11 @@
 # Releases
 
+## [1.18.104](https://github.com/shadow81627/daim/compare/v1.18.103...v1.18.104) (2020-08-06)
+
+### Bug Fixes
+
+- **deps:** update dependency bootstrap to v4.5.2 ([7c39c2f](https://github.com/shadow81627/daim/commit/7c39c2f9f5daede5cab234b93cc610a1666f7b72))
+
 ## [1.18.103](https://github.com/shadow81627/daim/compare/v1.18.102...v1.18.103) (2020-08-05)
 
 ### Bug Fixes
