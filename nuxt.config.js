@@ -1,4 +1,3 @@
-const axios = require('axios');
 const pkg = require('./package');
 
 const STORYBLOK_TOKEN =
@@ -6,6 +5,7 @@ const STORYBLOK_TOKEN =
 
 module.exports = {
   mode: 'universal',
+  target: 'static',
 
   env: {
     HOST: process.env.HOST,
@@ -19,37 +19,6 @@ module.exports = {
   generate: {
     // use '404.html' instead default '200.html'
     fallback: true,
-    routes(callback) {
-      const token = STORYBLOK_TOKEN;
-      const version = 'published';
-      let cacheVersion = 0;
-
-      // other routes that are not in Storyblok with their slug.
-      const routes = ['/']; // adds / directly
-
-      // Load space and receive latest cache version key to improve performance
-      axios
-        .get(`https://api.storyblok.com/v1/cdn/spaces/me?token=${token}`)
-        .then((spaceRes) => {
-          // timestamp of latest publish
-          cacheVersion = spaceRes.data.space.version;
-
-          // Call for all Links using the Links API: https://www.storyblok.com/docs/Delivery-Api/Links
-          axios
-            .get(
-              `https://api.storyblok.com/v1/cdn/links?token=${token}&version=${version}&cv=${cacheVersion}`,
-            )
-            .then((res) => {
-              Object.keys(res.data.links).forEach((key) => {
-                if (res.data.links[key].slug !== 'home') {
-                  routes.push('/' + res.data.links[key].slug);
-                }
-              });
-
-              callback(null, routes);
-            });
-        });
-    },
   },
 
   server: {
@@ -231,6 +200,10 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    filenames: {
+      chunk: ({ isDev }) =>
+        isDev ? '[name].js' : 'chunks/[id].[contenthash].js',
+    },
     // extractCSS: true,
     /*
      ** You can extend webpack config here
