@@ -3,11 +3,11 @@ export default {
     this.$storybridge.on(['input', 'published', 'change'], (event) => {
       if (event.action === 'input') {
         if (event.story.id === this.story.id) {
-          this.story.content = event.story.content
+          this.story.content = event.story.content;
         }
       } else {
-        window.location.reload()
+        window.location.reload();
       }
-    })
+    });
   },
-}
+};

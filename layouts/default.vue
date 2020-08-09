@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import TheFooter from '@/components/layout/the-footer.vue'
+import TheFooter from '@/components/layout/the-footer.vue';
 export default {
   components: {
     TheFooter,
@@ -85,28 +85,28 @@ export default {
           route: 'tools',
         },
       ],
-    }
+    };
   },
   computed: {
     // items() {
     //   return [];
     // },
     isDark() {
-      return false
+      return false;
       // return this.$store.getters.getCurrentTheme().dark;
     },
   },
   head() {
-    const i18nSeo = this.$nuxtI18nSeo()
+    const i18nSeo = this.$nuxtI18nSeo();
     return {
       htmlAttrs: {
         ...i18nSeo.htmlAttrs,
       },
       meta: [...i18nSeo.meta],
       link: [...i18nSeo.link],
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss">

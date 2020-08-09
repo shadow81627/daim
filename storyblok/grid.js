@@ -33,4 +33,4 @@ module.exports = {
   preset_id: null,
   real_name: 'grid',
   component_group_uuid: null,
-}
+};

@@ -14,7 +14,7 @@ export default {
   props: { blok: { type: Object, required: true } },
 
   head() {
-    return {}
+    return {};
   },
-}
+};
 </script>

@@ -44,9 +44,9 @@ export default {
         //   content: this.$t('error.500.description'),
         // },
       ],
-    }
+    };
   },
-}
+};
 </script>
 
 <style media="screen" scoped>

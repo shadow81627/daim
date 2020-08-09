@@ -19,4 +19,4 @@ export default {
   },
   tap: true,
   verbose: true,
-}
+};

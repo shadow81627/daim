@@ -15,4 +15,4 @@ module.exports = {
   preset_id: null,
   real_name: 'teaser',
   component_group_uuid: null,
-}
+};

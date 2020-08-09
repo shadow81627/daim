@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Breadcrumb from '@/components/layout/breadcrumb'
-import Richtext from '@/components/richtext.vue'
-import storyblokLivePreview from '@/mixins/storyblokLivePreview'
+import Breadcrumb from '@/components/layout/breadcrumb';
+import Richtext from '@/components/richtext.vue';
+import storyblokLivePreview from '@/mixins/storyblokLivePreview';
 
 export default {
   components: {
@@ -23,8 +23,8 @@ export default {
   mixins: [storyblokLivePreview],
   asyncData(context) {
     const version =
-      context.query._storyblok || context.isDev ? 'draft' : 'published'
-    const endpoint = `cdn/stories/blog/${context.params.slug}`
+      context.query._storyblok || context.isDev ? 'draft' : 'published';
+    const endpoint = `cdn/stories/blog/${context.params.slug}`;
 
     return context.app.$storyapi
       .get(endpoint, {
@@ -32,19 +32,19 @@ export default {
         // cv: context.store.state.cacheVersion,
       })
       .then((res) => {
-        return res.data
+        return res.data;
       })
       .catch((res) => {
         context.error({
           statusCode: res.response.status,
           message: res.response.data,
-        })
-      })
+        });
+      });
   },
   data() {
-    return { story: { content: { body: '' } } }
+    return { story: { content: { body: '' } } };
   },
-}
+};
 </script>
 
 <style lang="scss">

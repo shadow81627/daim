@@ -6,17 +6,17 @@
 </template>
 
 <script>
-import 'github-markdown-css/github-markdown.css'
+import 'github-markdown-css/github-markdown.css';
 
-import content from '@/CHANGELOG.md'
+import content from '@/CHANGELOG.md';
 
 export default {
   methods: {
     content() {
-      return content
+      return content;
     },
   },
-}
+};
 </script>
 
 <style>

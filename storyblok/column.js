@@ -27,4 +27,4 @@ module.exports = {
   preset_id: null,
   real_name: 'column',
   component_group_uuid: null,
-}
+};

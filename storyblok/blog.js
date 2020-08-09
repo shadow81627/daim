@@ -24,4 +24,4 @@ module.exports = {
   preset_id: null,
   real_name: 'blog',
   component_group_uuid: null,
-}
+};
