@@ -28,4 +28,4 @@ module.exports = {
   preset_id: null,
   real_name: 'feature',
   component_group_uuid: null,
-};
+}

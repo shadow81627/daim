@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import lastModified from './last-modified';
+import lastModified from './last-modified'
 export default {
   components: {
     lastModified,
@@ -59,5 +59,5 @@ export default {
     commit: process.env.COMMIT || process.env.TRAVIS_COMMIT,
     utc: false,
   }),
-};
+}
 </script>

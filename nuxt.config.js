@@ -1,9 +1,9 @@
-const pkg = require('./package');
+import pkg from './package'
 
 const STORYBLOK_TOKEN =
-  process.env.STORYBLOK_TOKEN || 'kycw6YWwjgilZCDf6Xb6kAtt';
+  process.env.STORYBLOK_TOKEN || 'kycw6YWwjgilZCDf6Xb6kAtt'
 
-module.exports = {
+export default {
   mode: 'universal',
   target: 'static',
 
@@ -32,7 +32,7 @@ module.exports = {
       push: true,
       pushAssets: (req, res, publicPath, preloadFiles) =>
         preloadFiles.map(
-          (f) => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`,
+          (f) => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`
         ),
     },
   },
@@ -43,7 +43,7 @@ module.exports = {
   head: {
     titleTemplate: (titleChunk) => {
       // If undefined or blank then we don't need the hyphen
-      return titleChunk ? `${titleChunk} - 𝒟𝒶𝒾𝓂` : '𝒟𝒶𝒾𝓂';
+      return titleChunk ? `${titleChunk} - 𝒟𝒶𝒾𝓂` : '𝒟𝒶𝒾𝓂'
     },
     meta: [
       { charset: 'utf-8' },
@@ -57,7 +57,7 @@ module.exports = {
         property: 'og:title',
         template: (titleChunk) => {
           // If undefined or blank then we don't need the hyphen
-          return titleChunk ? `${titleChunk} - 𝒟𝒶𝒾𝓂` : '𝒟𝒶𝒾𝓂';
+          return titleChunk ? `${titleChunk} - 𝒟𝒶𝒾𝓂` : '𝒟𝒶𝒾𝓂'
         },
         vmid: 'og:title',
       },
@@ -216,8 +216,8 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
-        });
+        })
       }
     },
   },
-};
+}

@@ -36,11 +36,11 @@
 export default {
   filters: {
     split(value, sep = ' ') {
-      if (!value) return '';
-      value = value.toString();
-      return value.split(sep);
+      if (!value) return ''
+      value = value.toString()
+      return value.split(sep)
     },
   },
   props: { blok: { type: Object, required: true } },
-};
+}
 </script>

@@ -15,7 +15,7 @@ import {
   mdiHome,
   mdiAccountTie,
   mdiToolbox,
-} from '@mdi/js';
+} from '@mdi/js'
 
 // vuetify.options.js
 export default {
@@ -51,4 +51,4 @@ export default {
   // lang: {},
   // rtl: true,
   theme: { disable: true },
-};
+}

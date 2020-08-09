@@ -20,4 +20,4 @@ module.exports = {
   preset_id: null,
   real_name: 'hero',
   component_group_uuid: null,
-};
+}

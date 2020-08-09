@@ -20,4 +20,4 @@ module.exports = {
   preset_id: null,
   real_name: 'page',
   component_group_uuid: null,
-};
+}

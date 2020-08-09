@@ -24,4 +24,4 @@ module.exports = {
   preset_id: null,
   real_name: 'Card group',
   component_group_uuid: null,
-};
+}

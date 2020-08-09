@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Feature from '~/components/feature';
+import Feature from '~/components/feature'
 export default {
   components: {
     Feature,
@@ -151,7 +151,7 @@ export default {
           text: 'Securely build, share and run any application, anywhere',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>

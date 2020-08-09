@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import cloudinary from 'cloudinary-core';
+import cloudinary from 'cloudinary-core'
 
 export default {
   props: {
@@ -39,8 +39,8 @@ export default {
     const cl = cloudinary.Cloudinary.new({
       cloud_name: 'pocketpasta',
       secure: true,
-    });
-    cl.responsive();
+    })
+    cl.responsive()
   },
   head() {
     return {
@@ -66,9 +66,9 @@ export default {
           crossorigin: 'anonymous',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style media="screen" scoped>

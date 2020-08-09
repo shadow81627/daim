@@ -21,7 +21,7 @@ export default {
   computed: {
     lastModified: () => (process.client ? document.lastModified : null),
   },
-};
+}
 </script>
 
 <style></style>
