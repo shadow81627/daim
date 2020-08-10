@@ -1,28 +1,71 @@
 <template>
-  <div id="message" class="card bg-light card-body">
-    <h2 v-if="error.statusCode">{{ error.statusCode }}</h2>
-    <h1>{{ $t('error.500.heading') }}</h1>
-    <p>
-      {{ $t('error.500.description') }}
-    </p>
-    <video
-      autoplay
-      width="640"
-      data-alt="Baboon pounding on laptop keyboard"
-      src="https://media.gettyimages.com/videos/medium-shot-baboon-pounding-on-laptop-keyboard-video-id712-54"
-      muted
-      loop
-    />
+  <div>
+    <v-container class="fill-height" fluid>
+      <v-row class="align-self-center">
+        <v-col align="center">
+          <v-card id="message" max-width="360" class="text-left">
+            <v-card-subtitle class="text--primary pb-0">
+              <h2
+                class="font-weight-bold text-subtitle-1"
+                style="letter-spacing: 3px;"
+              >
+                500
+              </h2>
+            </v-card-subtitle>
+            <v-card-title class="pt-0">
+              <h1
+                class="text-h5 font-weight-light"
+                style="letter-spacing: 3px;"
+              >
+                {{ $t('error.500.heading') }}
+              </h1>
+            </v-card-title>
 
-    <a href="javascript:location.reload();" class="btn btn-primary btn-block"
-      >Try again</a
-    >
-    <!-- <nuxt-link
-      :to="localePath('index')"
-      class="btn btn-primary btn-block"
-      exact
-      >{{ $t('layout.navigation.home') }}</nuxt-link
-    > -->
+            <v-card-text
+              class="text--primary font-weight-light"
+              style="line-height: 140%; letter-spacing: 1px;"
+              >{{ $t('error.500.description') }}</v-card-text
+            >
+            <v-card-text>
+              <video
+                autoplay
+                width="640"
+                data-alt="Baboon pounding on laptop keyboard"
+                src="https://media.gettyimages.com/videos/medium-shot-baboon-pounding-on-laptop-keyboard-video-id712-54"
+                muted
+                loop
+                style="width: 100%; height: auto;"
+              />
+            </v-card-text>
+            <v-card-text>
+              <v-row no-gutters>
+                <v-col>
+                  <v-btn
+                    href="javascript:location.reload();"
+                    color="primary"
+                    block
+                    x-large
+                    >Try again</v-btn
+                  >
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col>
+                  <v-btn
+                    :to="localePath('index')"
+                    color="primary"
+                    block
+                    x-large
+                  >
+                    {{ $t('layout.navigation.home') }}
+                  </v-btn>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -48,55 +91,3 @@ export default {
   },
 };
 </script>
-
-<style media="screen" scoped>
-#message video {
-  width: 100%;
-  height: auto;
-  margin-bottom: 16px;
-}
-
-#message {
-  max-width: 360px;
-  margin: 100px auto 16px;
-  padding: 32px 24px 16px;
-  border-radius: 3px;
-}
-#message h3 {
-  font-weight: normal;
-  font-size: 16px;
-  margin: 16px 0 12px;
-}
-#message h2 {
-  font-weight: bold;
-  font-size: 16px;
-  margin: 0 0 8px;
-}
-#message h1 {
-  font-size: 22px;
-  font-weight: 300;
-  margin: 0 0 16px;
-}
-#message p {
-  line-height: 140%;
-  margin: 16px 0 24px;
-  font-size: 14px;
-}
-#message a {
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 16px;
-  border-radius: 4px;
-}
-#message,
-#message a {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-#load {
-  color: rgba(0, 0, 0, 0.4);
-  text-align: center;
-  font-size: 13px;
-}
-</style>

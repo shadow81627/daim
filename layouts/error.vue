@@ -1,7 +1,11 @@
 <template>
-  <div class="nuxt-error container-fluid">
-    <component :is="errorPage" :error="error" />
-  </div>
+  <v-container class="nuxt-error pa-0" fluid>
+    <v-row no-gutters class="pa-0">
+      <v-col class="pa-0">
+        <component :is="errorPage" :error="error" />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -9,6 +13,7 @@ import error404 from '@/components/error/404.vue';
 import error500 from '@/components/error/500.vue';
 
 export default {
+  // layout: 'empty',
   props: {
     error: {
       type: Object,
