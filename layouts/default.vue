@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire" :dark="isDark" clipped-left>
+  <v-app :dark="isDark" clipped-left>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -29,7 +29,10 @@
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
       fixed
-      class="hidden-print-only navbar-dark bg-dark"
+      color="#343a40"
+      dark
+      class="hidden-print-only"
+      height="64"
     >
       <v-app-bar-nav-icon
         aria-label="menu"
@@ -37,20 +40,20 @@
         @click.stop="drawer = !drawer"
       />
       <v-toolbar-title class="ml-0 pl-3">
-        <!-- <span class="brand navbar-brand">Daim</span> -->
         <img
-          src="~/assets/img/logo.svg"
+          :src="require('~/assets/img/logo.svg')"
           class="navbar-brand"
-          height="32"
+          height="24"
+          contain
           alt="Daim"
         />
       </v-toolbar-title>
       <v-spacer />
     </v-app-bar>
-    <v-content role="main">
+    <v-main role="main">
       <nuxt style="min-height: 100vh;" />
       <the-footer />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
@@ -110,5 +113,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~/assets/scss/custom.scss';
+// @import '~/assets/scss/custom.scss';
 </style>

@@ -1,6 +1,6 @@
 <template>
   <v-footer class="hidden-print-only" height="auto">
-    <div class="container-fluid">
+    <v-container>
       <v-row no-gutters>
         <v-col cols="auto">
           <v-card flat color="transparent">
@@ -41,7 +41,7 @@
         <v-spacer />
         <last-modified v-bind="{ utc }" />
       </v-row>
-    </div>
+    </v-container>
   </v-footer>
 </template>
 

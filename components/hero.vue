@@ -1,10 +1,18 @@
 <template>
   <header v-editable="blok">
     <v-parallax
-      :src="require('~/assets/img/header-bg.jpg')"
+      :lazy-src="require(`~/assets/img/header-bg.jpg?lqip`)"
+      :src="
+        require('~/assets/img/header-bg.jpg?resize&size=1785&placeholder').src
+      "
+      :src-set="
+        require(`~/assets/img/header-bg.jpg?resize&max=1785&min=320&steps=6`)
+          .srcSet
+      "
       :style="{
         backgroundColor: require('~/assets/img/header-bg.jpg?lqip-colors')[0],
       }"
+      size="100vw"
     >
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">

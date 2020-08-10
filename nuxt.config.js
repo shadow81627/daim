@@ -99,7 +99,7 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    'bootstrap-vue/nuxt',
+    // 'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
@@ -188,9 +188,8 @@ module.exports = {
 
   vuetify: {
     optionsPath: './vuetify.options.js',
-    // customVariables: ['~/assets/scss/vuetify.scss'],
+    customVariables: ['~/assets/scss/vuetify.scss'],
     treeShake: true,
-    theme: { disable: true },
     defaultAssets: false,
   },
 

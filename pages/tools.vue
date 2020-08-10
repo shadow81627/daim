@@ -1,11 +1,28 @@
 <template>
-  <b-card-group columns>
-    <Feature
-      v-for="feature in features"
-      :key="feature.name"
-      :blok="feature"
-    ></Feature>
-  </b-card-group>
+  <v-container>
+    <v-row>
+      <v-col>
+        <h1>
+          Tools
+        </h1>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col
+        v-for="feature in features"
+        :key="feature.name"
+        cols="12"
+        sm="6"
+        md="4"
+        class="d-flex flex-column"
+      >
+        <Feature
+          :blok="feature"
+          xclass="flex d-flex flex-column xjustify-between xjustify-space-between align-stretch"
+        ></Feature>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

@@ -61,10 +61,10 @@
         id="about"
         class="resume-section p-3 p-lg-5 d-flex align-items-center"
       >
-        <div class="w-100">
+        <div class="w-100" style="width: 100%;">
           <h1 class="mb-0 text-break">
             Damien
-            <span class="text-primary">Robinson</span>
+            <span class="text--primary">Robinson</span>
           </h1>
           <div class="subheading mb-5 text-break">
             <!-- 3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 · -->
@@ -108,13 +108,13 @@
 
       <section
         id="experience"
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        class="resume-section p-3 p-lg-5 d-flex align-center"
       >
-        <div class="w-100">
+        <div class="w-100" style="width: 100%;">
           <h2 class="mb-5">Experience</h2>
 
           <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+            class="resume-item d-flex flex-column flex-md-row justify-space-between mb-5"
           >
             <div class="resume-content">
               <h3 class="mb-0">Junior Web Designer</h3>
@@ -130,7 +130,7 @@
           </div>
 
           <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+            class="resume-item d-flex flex-column flex-md-row justify-space-between"
           >
             <div class="resume-content">
               <h3 class="mb-0">Web Designer</h3>
@@ -150,13 +150,13 @@
 
       <section
         id="education"
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        class="resume-section p-3 p-lg-5 d-flex align-center"
       >
-        <div class="w-100">
+        <div class="w-100" style="width: 100%;">
           <h2 class="mb-5">Education</h2>
 
           <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+            class="resume-item d-flex flex-column flex-md-row justify-space-between mb-5"
           >
             <div class="resume-content">
               <h3 class="mb-0">Griffith University</h3>
@@ -177,50 +177,50 @@
 
       <section
         id="skills"
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        class="resume-section p-3 p-lg-5 d-flex align-center"
       >
-        <div class="w-100">
+        <div class="w-100" style="width: 100%;">
           <h2 class="mb-5">Skills</h2>
 
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
+          <div class="list-inline dev-icons">
+            <span class="list-inline-item">
               <font-awesome-icon :icon="['fab', 'html5']" title="html5" />
-            </li>
-            <li class="list-inline-item">
+            </span>
+            <span class="list-inline-item">
               <font-awesome-icon :icon="['fab', 'css3-alt']" title="css3" />
-            </li>
-            <li class="list-inline-item">
+            </span>
+            <span class="list-inline-item">
               <font-awesome-icon
                 :icon="['fab', 'js-square']"
                 title="javastipt"
               />
-            </li>
-            <li class="list-inline-item">
+            </span>
+            <span class="list-inline-item">
               <font-awesome-icon :icon="['fab', 'vuejs']" title="vue" />
-            </li>
-            <li class="list-inline-item">
+            </span>
+            <span class="list-inline-item">
               <font-awesome-icon :icon="['fab', 'node-js']" title="node" />
-            </li>
-            <li class="list-inline-item">
+            </span>
+            <span class="list-inline-item">
               <font-awesome-icon :icon="['fab', 'sass']" title="sass" />
-            </li>
-            <li class="list-inline-item">
+            </span>
+            <span class="list-inline-item">
               <font-awesome-icon :icon="['fab', 'npm']" title="npm" />
-            </li>
-            <li class="list-inline-item">
+            </span>
+            <span class="list-inline-item">
               <font-awesome-icon :icon="['fab', 'python']" title="python" />
-            </li>
-            <li class="list-inline-item">
+            </span>
+            <span class="list-inline-item">
               <font-awesome-icon :icon="['fab', 'laravel']" title="laravel" />
-            </li>
-            <li class="list-inline-item">
+            </span>
+            <span class="list-inline-item">
               <font-awesome-icon :icon="['fab', 'docker']" title="docker" />
-            </li>
-            <li class="list-inline-item">
+            </span>
+            <span class="list-inline-item">
               <font-awesome-icon :icon="['fab', 'aws']" title="aws" />
-            </li>
-          </ul>
+            </span>
+          </div>
 
           <div class="subheading mb-3">Workflow</div>
           <ul class="fa-ul mb-0">
