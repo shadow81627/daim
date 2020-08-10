@@ -1,9 +1,9 @@
-const pkg = require('./package');
+import pkg from './package';
 
 const STORYBLOK_TOKEN =
   process.env.STORYBLOK_TOKEN || 'kycw6YWwjgilZCDf6Xb6kAtt';
 
-module.exports = {
+export default {
   mode: 'universal',
   target: 'static',
 
