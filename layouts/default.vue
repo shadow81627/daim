@@ -17,7 +17,7 @@
           class="text-decoration-none"
         >
           <v-list-item-action>
-            <v-icon>${{ item.icon }}</v-icon>
+            <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>{{ item.text }}</v-list-item-title>
@@ -58,6 +58,7 @@
 </template>
 
 <script>
+import { mdiHome, mdiAccountTie, mdiToolbox } from '@mdi/js';
 import TheFooter from '@/components/layout/the-footer.vue';
 export default {
   components: {
@@ -68,22 +69,22 @@ export default {
       drawer: false,
       items: [
         {
-          icon: 'home',
+          icon: mdiHome,
           text: 'Home',
           route: 'index',
         },
         {
-          icon: 'info',
+          icon: '$info',
           text: 'Blog',
           route: 'blog',
         },
         {
-          icon: 'account-tie',
+          icon: mdiAccountTie,
           text: 'Resume',
           route: 'resume',
         },
         {
-          icon: 'toolbox',
+          icon: mdiToolbox,
           text: 'Tools',
           route: 'tools',
         },
@@ -98,6 +99,30 @@ export default {
       return false;
       // return this.$store.getters.getCurrentTheme().dark;
     },
+  },
+  mounted() {
+    const vm = this;
+    const beforePrint = function () {
+      console.log('Functionality to run before printing.');
+      vm.drawer = false;
+    };
+    const afterPrint = function () {
+      console.log('Functionality to run after printing');
+    };
+
+    if (window.matchMedia) {
+      const mediaQueryList = window.matchMedia('print');
+      mediaQueryList.addListener(function (mql) {
+        if (mql.matches) {
+          beforePrint();
+        } else {
+          afterPrint();
+        }
+      });
+    }
+
+    window.onbeforeprint = beforePrint;
+    window.onafterprint = afterPrint;
   },
   head() {
     const i18nSeo = this.$nuxtI18nSeo();
@@ -114,4 +139,5 @@ export default {
 
 <style lang="scss">
 // @import '~/assets/scss/custom.scss';
+@import '~/assets/css/print.css' print;
 </style>
