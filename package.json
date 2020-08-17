@@ -44,7 +44,7 @@
     "@nuxtjs/axios": "5.12.1",
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/markdownit": "1.2.10",
-    "@nuxtjs/pwa": "3.0.0",
+    "@nuxtjs/pwa": "3.0.1",
     "@nuxtjs/sitemap": "2.4.0",
     "cross-env": "7.0.2",
     "github-markdown-css": "4.0.0",
