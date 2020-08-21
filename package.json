@@ -53,7 +53,7 @@
     "nuxt-fontawesome": "0.4.0",
     "nuxt-i18n": "6.13.10",
     "nuxt-webfontloader": "1.1.0",
-    "storyblok-nuxt": "1.2.0"
+    "storyblok-nuxt": "1.3.0"
   },
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "0.4.0",
