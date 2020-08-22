@@ -1,5 +1,11 @@
 # Releases
 
+## [1.19.0](https://github.com/shadow81627/daim/compare/v1.18.113...v1.19.0) (2020-08-22)
+
+### Features
+
+- **resume:** add personal attributes ([#548](https://github.com/shadow81627/daim/issues/548)) ([e954975](https://github.com/shadow81627/daim/commit/e954975ce1fde5bd708ec2f232c699ec8913f51e))
+
 ## [1.18.113](https://github.com/shadow81627/daim/compare/v1.18.112...v1.18.113) (2020-08-21)
 
 ### Bug Fixes
