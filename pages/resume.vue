@@ -6,11 +6,12 @@
           <v-card id="about" flat>
             <v-card-title>
               <h1 class="text-break">
-                Damien
-                <span class="text--primary">Robinson</span>
+                {{ firstname }}
+                <span class="text--primary">{{ lastname }}</span>
               </h1>
             </v-card-title>
-            <v-card-subtitle class="text-subtitle-1 text-break">
+
+            <v-card-subtitle class="text-subtitle-1 text-break pb-0">
               <v-btn href="mailto:damien.robinson@daim.dev" text class="pl-0">
                 <font-awesome-icon
                   :icon="faEnvelope"
@@ -26,6 +27,7 @@
                 target="_blank"
                 rel="noreferrer"
                 text
+                class="pl-0"
               >
                 <font-awesome-icon
                   :icon="faMapMarker"
@@ -36,6 +38,7 @@
                 <span>New Farm, Australia</span>
               </v-btn>
             </v-card-subtitle>
+
             <v-card-text class="body-1 text--primary">
               I am a full-stack web developer with 3 years experience, seeking
               full time employment and a chance to further my skills in front
@@ -43,52 +46,20 @@
               full-stack development experience, with a proficiency in Vue.js
               static marketing websites.
             </v-card-text>
+
             <v-card-actions class="social-icons">
-              <v-btn href="https://github.com/shadow81627" icon x-large>
-                <font-awesome-icon
-                  :icon="['fab', 'github']"
-                  title="github"
-                  size="2x"
-                />
-              </v-btn>
               <v-btn
-                href="https://www.linkedin.com/in/damien-robinson-788925101"
+                v-for="{ icon, text, url } in socials"
+                :key="text"
+                :href="url"
                 icon
                 x-large
               >
                 <font-awesome-icon
-                  :icon="['fab', 'linkedin-in']"
-                  title="linkedin"
+                  :icon="icon"
+                  :title="text"
                   size="2x"
-                />
-              </v-btn>
-              <v-btn href="https://twitter.com/Shadow81627" icon x-large>
-                <font-awesome-icon
-                  :icon="['fab', 'twitter']"
-                  title="twitter"
-                  size="2x"
-                />
-              </v-btn>
-              <v-btn
-                href="https://www.youtube.com/user/shadow81627"
-                icon
-                x-large
-              >
-                <font-awesome-icon
-                  :icon="['fab', 'youtube']"
-                  title="youtube"
-                  size="2x"
-                />
-              </v-btn>
-              <v-btn
-                href="https://www.facebook.com/damien.robinson.5036"
-                icon
-                x-large
-              >
-                <font-awesome-icon
-                  :icon="['fab', 'facebook-f']"
-                  title="facebook"
-                  size="2x"
+                  fixed-width
                 />
               </v-btn>
             </v-card-actions>
@@ -103,160 +74,24 @@
       <v-col>
         <section>
           <v-card id="skills" flat>
-            <v-card-title class="mb-5">
-              <h2>Skills</h2>
+            <v-card-title class="py-0 text-break">
+              <h2>Professional Skills</h2>
             </v-card-title>
 
-            <v-card-subtitle class="text--primary">
-              <h3>
-                Programming Languages &amp; Tools
-              </h3>
-            </v-card-subtitle>
-
             <v-container class="pt-0">
-              <v-row class="list-inline dev-icons">
-                <v-col>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'html5']"
-                      title="html5"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'css3-alt']"
-                      title="css3"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'js-square']"
-                      title="javastipt"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'vuejs']"
-                      title="vue"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'angular']"
-                      title="vue"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'node-js']"
-                      title="node"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'sass']"
-                      title="sass"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'npm']"
-                      title="npm"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'python']"
-                      title="python"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'laravel']"
-                      title="laravel"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fas', 'database']"
-                      title="mySQL"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'docker']"
-                      title="docker"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fas', 'search']"
-                      title="SEO"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'git-alt']"
-                      title="Git"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'jira']"
-                      title="Jira"
-                      size="3x"
-                    />
-                  </span>
-                  <span class="list-inline-item">
-                    <font-awesome-icon
-                      :icon="['fab', 'aws']"
-                      title="aws"
-                      size="3x"
-                    />
-                  </span>
+              <v-row class="list-inline dev-icons" no-gutters>
+                <v-col
+                  v-for="(column, index) in columns(skills)"
+                  :key="index"
+                  class="px-0"
+                >
+                  <div v-for="{ icon, text } in column" :key="text">
+                    <font-awesome-icon :icon="icon" fixed-width />
+                    <span>{{ text }}</span>
+                  </div>
                 </v-col>
               </v-row>
             </v-container>
-
-            <v-card-subtitle class="body-1 text--primary">
-              <h3>
-                Workflow
-              </h3>
-            </v-card-subtitle>
-            <v-card-text class="body-1 text--primary">
-              <ul class="fa-ul mb-0">
-                <li>
-                  <i class="fa-li fa fa-check"></i>
-                  Mobile-First, Responsive Design
-                </li>
-                <li>
-                  <i class="fa-li fa fa-check"></i>
-                  Cross Browser Testing &amp; Debugging
-                </li>
-                <li>
-                  <i class="fa-li fa fa-check"></i>
-                  Cross Functional Teams
-                </li>
-                <li>
-                  <i class="fa-li fa fa-check"></i>
-                  Agile Development &amp; Scrum
-                </li>
-              </ul>
-            </v-card-text>
           </v-card>
         </section>
       </v-col>
@@ -268,77 +103,42 @@
       <v-col>
         <section>
           <v-card id="experience" flat>
-            <v-card-title class="mb-5">
+            <v-card-title class="py-0 text-break">
               <h2>Experience</h2>
             </v-card-title>
 
-            <v-card-subtitle class="text--primary">
-              <div
-                class="resume-item d-flex flex-column flex-md-row justify-space-between mb-5"
-              >
-                <div class="resume-content">
-                  <h3 class="mb-0">
-                    Lead Frontend Developer
-                  </h3>
-                  <div class="subheading mb-3">OtherLevels</div>
-                  <p>
-                    Maintaining an Angular marketing automation dashboard.
-                  </p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">June 2020 - Present</span>
-                </div>
+            <div
+              v-for="{
+                title,
+                company,
+                startDate,
+                endDate,
+                description,
+                tools,
+              } in roles"
+              :key="(title, company, startDate, endDate)"
+              class="resume-item d-flex flex-column flex-md-row justify-space-between"
+            >
+              <div class="resume-content">
+                <v-card-title>
+                  <h3 class="mb-0 text-break">{{ title }}</h3>
+                </v-card-title>
+                <v-card-subtitle
+                  class="d-flex flex-column flex-md-row justify-space-between font-weight-medium body-1"
+                >
+                  {{ company }}
+                  <span class="resume-date text-md-right">
+                    <span class="text-primary"
+                      >{{ startDate }} - {{ endDate }}</span
+                    >
+                  </span>
+                </v-card-subtitle>
+                <v-card-text class="body-1">
+                  <p>{{ description }}</p>
+                  Tools used: {{ tools }}
+                </v-card-text>
               </div>
-
-              <div
-                class="resume-item d-flex flex-column flex-md-row justify-space-between mb-5"
-              >
-                <div class="resume-content">
-                  <h3 class="mb-0">
-                    Frontend Web Developer
-                  </h3>
-                  <div class="subheading mb-3">OtherLevels</div>
-                  <p>
-                    Working in a team to enhance and maintain an Angular
-                    marketing automation dashboard.
-                  </p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">January 2020 - June 2020</span>
-                </div>
-              </div>
-
-              <div
-                class="resume-item d-flex flex-column flex-md-row justify-space-between mb-5"
-              >
-                <div class="resume-content">
-                  <h3 class="mb-0">Junior Web Developer</h3>
-                  <div class="subheading mb-3">XCOM Media</div>
-                  <p>
-                    Full stack web developer creating and maintaining email
-                    subscription forms.
-                  </p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">March 2018 - January 2020</span>
-                </div>
-              </div>
-
-              <div
-                class="resume-item d-flex flex-column flex-md-row justify-space-between"
-              >
-                <div class="resume-content">
-                  <h3 class="mb-0">Web Designer</h3>
-                  <div class="subheading mb-3">Griffith University</div>
-                  <p>
-                    Web development and software support for Squiz Matrix CMS.
-                  </p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">July 2017 - December 2017</span>
-                </div>
-              </div>
-            </v-card-subtitle>
+            </div>
           </v-card>
         </section>
       </v-col>
@@ -350,54 +150,104 @@
       <v-col>
         <section>
           <v-card id="education" flat>
-            <v-card-title class="mb-5">
+            <v-card-title class="py-0 text-break">
               <h2>Education</h2>
             </v-card-title>
-
-            <v-card-subtitle class="text--primary">
-              <div
-                class="resume-item d-flex flex-column flex-md-row justify-space-between mb-5"
-              >
-                <div class="resume-content">
-                  <h3 class="mb-0">Griffith University</h3>
-                  <div class="subheading mb-3">
-                    Bachelor of Applied Infomation Technology
-                  </div>
-                  <!-- <div>Computer Science - Web Development Track</div> -->
-                  <p>GPA: 5.19</p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">2015 - 2017</span>
-                </div>
-              </div>
+            <v-card-title>
+              <h3 class="mb-0 text-break">Griffith University</h3>
+            </v-card-title>
+            <v-card-subtitle
+              class="d-flex flex-column flex-md-row justify-space-between font-weight-medium body-1"
+            >
+              Bachelor of Applied Infomation Technology
+              <span class="resume-date text-md-right">
+                <span class="text-primary">March, 2015 - November, 2017</span>
+              </span>
             </v-card-subtitle>
+            <v-card-text class="body-1 text--primary">
+              Grade Point Average: <strong>5.1</strong> (Scale: 1-7, with 7 the
+              highest)
+            </v-card-text>
+            <v-card-title class="py-0">
+              Key Courses
+            </v-card-title>
+            <v-card-text class="body-1 text--primary">
+              <ul>
+                <li>Dynamic Multimedia Systems</li>
+                <li>Database Systems Administration</li>
+                <li>Programming Mobile Applications</li>
+                <li>Network Security</li>
+              </ul>
+            </v-card-text>
           </v-card>
         </section>
       </v-col>
     </v-row>
 
-    <!-- <hr class="m-0" />
+    <v-divider />
 
-      <section
-        id="interests"
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-      >
-        <div class="w-100">
+    <v-card flat>
+      <v-card-title class="text-break">
+        <h2>
+          Personal Projects
+        </h2>
+      </v-card-title>
+      <v-card-text class="body-1 text--primary">
+        I enjoy making my own web applications in my free time to further my
+        skills. I have built several websites, including my personal portfolio
+        daim.dev, using a wide variety of tools to achieve this. These tools
+        include: Nuxt.js, Vue.js, Storyblok CMS, Travis CI, Bootstrap CSS,
+        Vuetify CSS, Semantic Release automation, Sentry error tracking,
+        Firebase, Lighthouse CI, Renovate automated dependency management. I am
+        happy to provide more information on these projects on request.
+      </v-card-text>
+    </v-card>
+
+    <v-divider />
+
+    <v-card flat>
+      <v-card-title class="text-break pb-0">
+        <h2>
+          Personal Attributes
+        </h2>
+      </v-card-title>
+      <div v-for="{ title, description, icon } in attributes" :key="title">
+        <v-card-title class="pb-0">
+          <h3>
+            <font-awesome-icon :icon="icon" fixed-width></font-awesome-icon>
+            {{ title }}
+          </h3>
+        </v-card-title>
+        <v-card-text class="body-1">
+          {{ description }}
+        </v-card-text>
+      </div>
+    </v-card>
+
+    <!-- <v-card
+      id="interests"
+      class="resume-section p-3 p-lg-5 d-flex align-items-center"
+      flat
+    >
+      <div class="w-100">
+        <v-card-title>
           <h2 class="mb-5">Interests</h2>
-          <p>
-            Apart from being a web developer, I enjoy most of my time being
-            outdoors. In the winter, I am an avid skier and novice ice climber.
-            During the warmer months here in Colorado, I enjoy mountain biking,
-            free climbing, and kayaking.
-          </p>
-          <p class="mb-0">
-            When forced indoors, I follow a number of sci-fi and fantasy genre
-            movies and television shows, I am an aspiring chef, and I spend a
-            large amount of my free time exploring the latest technology
-            advancements in the front-end web development world.
-          </p>
-        </div>
-      </section> -->
+        </v-card-title>
+
+        <p>
+          Apart from being a web developer, I enjoy most of my time being
+          outdoors. In the winter, I am an avid skier and novice ice climber.
+          During the warmer months here in Colorado, I enjoy mountain biking,
+          free climbing, and kayaking.
+        </p>
+        <p class="mb-0">
+          When forced indoors, I follow a number of sci-fi and fantasy genre
+          movies and television shows, I am an aspiring chef, and I spend a
+          large amount of my free time exploring the latest technology
+          advancements in the front-end web development world.
+        </p>
+      </div>
+    </v-card> -->
 
     <!-- <hr class="m-0" />
 
@@ -448,8 +298,210 @@
 <script>
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faYoutube,
+  faFacebook,
+  faLaravel,
+  faHtml5,
+  faBootstrap,
+  faJsSquare,
+} from '@fortawesome/free-brands-svg-icons';
+
 export default {
-  data: () => ({ faEnvelope, faMapMarker }),
+  data: () => ({
+    faEnvelope,
+    faMapMarker,
+    firstname: 'Damien',
+    lastname: 'Robinson',
+    socials: [
+      {
+        icon: faGithub,
+        url: 'https://github.com/shadow81627',
+        text: 'Github',
+      },
+      {
+        icon: faLinkedin,
+        url: 'https://www.linkedin.com/in/damien-robinson-788925101',
+        text: 'LinkedIn',
+      },
+      {
+        icon: faTwitter,
+        url: 'https://twitter.com/Shadow81627',
+        text: 'Twitter',
+      },
+      {
+        icon: faYoutube,
+        url: 'https://www.youtube.com/user/shadow81627',
+        text: 'Youtube',
+      },
+      {
+        icon: faFacebook,
+        url: 'https://www.facebook.com/damien.robinson.5036',
+        text: 'Facebook',
+      },
+    ],
+    skills: [
+      {
+        icon: faLaravel,
+        text: 'PHP APIs (Laravel)',
+      },
+      {
+        icon: faHtml5,
+        text: 'Semantic HTML',
+      },
+      {
+        icon: faBootstrap,
+        text: 'Bootstrap CSS',
+      },
+      {
+        icon: faJsSquare,
+        text: 'JavaScript',
+      },
+      {
+        icon: ['fab', 'vuejs'],
+        text: 'Vue',
+      },
+      {
+        icon: ['fab', 'angular'],
+        text: 'Angular',
+      },
+      {
+        icon: ['fas', 'database'],
+        text: 'Structured Query Language (MySQL)',
+      },
+      {
+        icon: ['fab', 'docker'],
+        text: 'Docker',
+      },
+      {
+        icon: ['fas', 'search'],
+        text: 'Search Engine Optimisation (SEO)',
+      },
+      {
+        icon: ['fab', 'jira'],
+        text: 'JIRA',
+      },
+      {
+        icon: ['fab', 'node-js'],
+        text: 'Node',
+      },
+      {
+        icon: ['fab', 'npm'],
+        text: 'Node Package Manager',
+      },
+      {
+        icon: ['fab', 'python'],
+        text: 'Python',
+      },
+      {
+        icon: ['fab', 'git-alt'],
+        text: 'Git (Bitbucket & Github)',
+      },
+      {
+        icon: ['fab', 'sass'],
+        text: 'Sass',
+      },
+      {
+        icon: ['fab', 'jenkins'],
+        text: 'Continuous Integration (Jenkins & Travis)',
+      },
+      {
+        icon: ['fas', 'mobile-alt'],
+        text: 'Mobile-First, Responsive Design',
+      },
+      {
+        icon: ['fas', 'bug'],
+        text: 'Cross Browser Testing & Debugging',
+      },
+      {
+        icon: ['fas', 'users'],
+        text: 'Cross Functional Teams',
+      },
+      {
+        icon: ['fas', 'sync-alt'],
+        text: 'Agile Development & Scrum',
+      },
+    ],
+    roles: [
+      {
+        title: 'Frontend Developer',
+        company: 'Otherlevels',
+        location: 'Brisbane, Queensland, Australia',
+        startDate: 'January 2020',
+        endDate: 'Present',
+        tools: 'HTML, CSS, Angular',
+        description:
+          'In my secondment with XCOM Media’s parent company Otherlevels I have gained experience in migrating and modernising Angular.js web apps. I have also worked on productising the services XCOM Media provide as integrations to the Otherlevels marketing automation platform. This role has allowed me to diversify my skills in working on large scale enterprise applications. Since June 2020 I have also been the acting Lead Front End Developer at Otherlevels, furthering my skills in project management and product development.',
+      },
+      {
+        title: 'Web Developer',
+        company: 'XCOM Media',
+        location: 'New Farm, Queensland, Australia',
+        startDate: 'March, 2018',
+        endDate: 'Present',
+        tools: 'HTML, CSS, Vue.js, PHP, SQL',
+        description:
+          'My work at XCOM Media allows me to develop skills with building secure, performant, reliable, highly available contact management solutions for global markets. During my time in this role I have worked on projects such as Tourism and Events Queensland’s scUber campaign, developing an award winning micro site for collecting competition entries. I have also maintained and modernised legacy PHP email subscription forms. In this role I have furthered my skills in implementing marketing strategies, client and professional liaising, and working in a fast-paced team environment.',
+      },
+      {
+        title: 'Web Designer',
+        company: 'Griffith University',
+        location: 'Nathan, Queensland, Australia',
+        startDate: 'July, 2017',
+        endDate: 'December, 2017',
+        tools: 'HTML, CSS, jQuery, Photoshop, Squiz Matrix, SVN, PHP, SQL',
+        description:
+          'My work in the Marketing Technology team at Griffith University included upgrading the Web Services Database to reduce data anomalies. During the project I completed day to day tasks such as changing banners on the homepage and updating body copy on web pages using Squiz Matrix Content Management System. During the upgrade of the Web Services Database I liaised with clients to design the system to meet the requirements of automating tasks carried out by the Marketing Technology team.',
+      },
+    ],
+    attributes: [
+      {
+        icon: ['fas', 'clock'],
+        title: 'Time Management',
+        description:
+          'I stay on top of tasks given to me and I never go past client deadlines. I use project management tools such as JIRA to triage issues and forecast effort estimates for projects using story points.',
+      },
+      {
+        icon: ['fas', 'puzzle-piece'],
+        title: 'Problem Solving',
+        description:
+          'I work through complex problems on my own, but I’m not afraid to ask for help in areas I’m not familiar with. I enjoy using creative thinking to present effective solutions through the use of rapid prototyping at hackathons/startup weekends.',
+      },
+      {
+        icon: ['fas', 'users'],
+        title: 'Team Player',
+        description:
+          'I work well in a team and can fill both leader and supporting positions with confidence. I enjoy working in a collaborative team structure but I have worked independently on projects as well.',
+      },
+      {
+        icon: ['fas', 'tasks'],
+        title: 'Quality Management',
+        description:
+          'I practice test driven development by creating automated unit tests using Jest, to ensure that all functions of a system operate as expected.',
+      },
+      {
+        icon: ['fas', 'paper-plane'],
+        title: 'Written Communication',
+        description:
+          'I take pride in producing clear and concise reports, programs and documentation for all code as demonstrated by liaising with clients and project teams.',
+      },
+    ],
+  }),
+  methods: {
+    columns(items, cols = 2) {
+      const columns = [];
+      if (items && Array.isArray(items) && items.length) {
+        const mid = Math.ceil(items.length / cols);
+        for (let col = 0; col < cols; col++) {
+          columns.push(items.slice(col * mid, col * mid + mid));
+        }
+      }
+      return columns;
+    },
+  },
 };
 </script>
 
