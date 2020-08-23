@@ -18,7 +18,18 @@
     <v-card-subtitle v-if="blok.subheading">{{
       blok.subheading
     }}</v-card-subtitle>
-    <v-card-text class="flex-grow-1 text--primary">{{ blok.text }}</v-card-text>
+    <!-- <v-card-text class="flex-grow-1 text--primary">{{ blok.text }}</v-card-text> -->
+
+    <div class="flex-grow-1">
+      <v-card-text v-if="blok.text" class="text--primary body-1 pt-0">
+        {{ blok.text }}
+      </v-card-text>
+      <v-card-text v-if="blok.list" class="text--primary body-1 pt-0">
+        <ul>
+          <li v-for="item in blok.list" :key="item">{{ item }}</li>
+        </ul>
+      </v-card-text>
+    </div>
 
     <v-card-actions>
       <v-spacer></v-spacer>
