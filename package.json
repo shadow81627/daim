@@ -1,6 +1,6 @@
 {
   "name": "daim",
-  "version": "1.19.0",
+  "version": "1.19.1",
   "description": "Damien Robinson Web Development",
   "author": {
     "name": "Damien Robinson",
@@ -63,8 +63,8 @@
     "luxon": "1.25.0",
     "nuxt": "2.14.3",
     "nuxt-fontawesome": "0.4.0",
-    "nuxt-i18n": "6.13.11",
-    "nuxt-webfontloader": "1.1.0"
+    "nuxt-i18n": "6.13.12",
+    "nuxt-webfontloader": "1.1.0",
   },
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "0.4.0",
