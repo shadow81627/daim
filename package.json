@@ -64,7 +64,7 @@
     "nuxt": "2.14.3",
     "nuxt-fontawesome": "0.4.0",
     "nuxt-i18n": "6.13.12",
-    "nuxt-webfontloader": "1.1.0",
+    "nuxt-webfontloader": "1.1.0"
   },
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "0.4.0",
