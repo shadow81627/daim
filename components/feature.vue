@@ -4,19 +4,16 @@
     class="flex d-flex flex-column justify-between"
     min-width="240"
   >
-    <div>
-      <v-card-title>
-        <span class="h3 text-break text-no-wrap text-truncate">
-          <font-awesome-icon
-            v-if="blok.icon"
-            :icon="blok.icon | split"
-            title=""
-            style="color: grey;"
-          />
-          {{ blok.name || blok.heading }}
-        </span>
-      </v-card-title>
-    </div>
+    <v-card-title>
+      <span class="h3 text-break text-no-wrap text-truncate">
+        <font-awesome-icon
+          v-if="blok.icon"
+          :icon="blok.icon | split"
+          class="grey--text"
+        />
+        {{ blok.name || blok.heading }}
+      </span>
+    </v-card-title>
 
     <v-card-subtitle v-if="blok.subheading">{{
       blok.subheading
@@ -30,21 +27,19 @@
         :href="blok.href"
         target="_blank"
         rel="noopener"
-        size="sm"
         text
+        small
       >
         <span>Learn more</span>
-        <!-- <span>{{ blok.heading }}</span> -->
-        <font-awesome-icon
-          :icon="['fas', 'angle-right']"
-          style="color: grey;"
-        />
+        <span class="d-sr-only-focusable"> about {{ blok.heading }}</span>
+        <v-icon color="grey" small>{{ mdiOpenInNew }}</v-icon>
       </v-btn>
     </v-card-actions>
   </v-card>
 </template>
 
 <script>
+import { mdiOpenInNew } from '@mdi/js';
 export default {
   filters: {
     split(value, sep = ' ') {
@@ -54,5 +49,10 @@ export default {
     },
   },
   props: { blok: { type: Object, required: true } },
+  data() {
+    return {
+      mdiOpenInNew,
+    };
+  },
 };
 </script>

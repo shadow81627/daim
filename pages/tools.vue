@@ -51,13 +51,6 @@ export default {
             'Vue.js (commonly referred to as Vue; pronounced /vjuː/, like view) is an open-source Model–view–viewmodel JavaScript framework for building user interfaces and single-page applications.',
         },
         {
-          icon: 'fas server',
-          heading: 'Surge',
-          href: 'https://surge.sh',
-          subheading: 'Content delivery network (CDN)',
-          text: 'Free static web publishing',
-        },
-        {
           icon: 'fab bootstrap',
           heading: 'Bootstrap',
           href: 'https://getbootstrap.com/',
@@ -72,25 +65,6 @@ export default {
           subheading: 'Fast, reliable, engaging web apps',
           text:
             'Progressive Web Apps (PWA) are reliable, fast, and engaging, although there are many things that can take a PWA from a baseline to exemplary experience.',
-        },
-        {
-          icon: 'fas shapes',
-          heading: 'Vuetify',
-          href: 'https://vuetifyjs.com/',
-          subheading: 'Material Design Component Framework',
-          text: 'UI Library with beautifully handcrafted Material Components.',
-        },
-        {
-          icon: 'fas check-double',
-          heading: 'VeeValidate',
-          href: 'https://logaretm.github.io/vee-validate/',
-          subheading: 'Template Based Form Validation Framework for Vue.js',
-        },
-        {
-          icon: 'fab font-awesome',
-          heading: 'Fontawesome',
-          href: 'https://fontawesome.com/',
-          subheading: 'Vector icons and social logos',
         },
         {
           icon: 'fas cloud',
@@ -109,10 +83,12 @@ export default {
             'Automate the entire image-processing pipeline: from uploads to on-the-fly manipulations to optimization to dynamic delivery with any CDN.',
         },
         {
-          icon: 'fas comment-alt',
-          heading: 'Storyblok',
-          href: 'https://www.storyblok.com/',
-          subheading: 'Headless CMS with a Visual Editor',
+          icon: 'fas dog',
+          heading: 'Snyk',
+          href: 'https://snyk.io/',
+          subheading: 'Automated secutiry audits',
+          text:
+            'Snyk enables development teams to move quickly and securely by automatically finding and fixing issues faster than industry average.',
         },
         {
           icon: 'fas lightbulb',
@@ -120,6 +96,45 @@ export default {
           href: 'https://github.com/GoogleChrome/lighthouse-ci',
           text:
             'Automate running Lighthouse for every commit, viewing the changes, and preventing regressions',
+        },
+        {
+          icon: 'fab docker',
+          heading: 'Docker',
+          href: 'https://www.docker.com/',
+          subheading: 'Debug your app, not your environment',
+          text: 'Securely build, share and run any application, anywhere',
+        },
+        {
+          icon: 'fas shapes',
+          heading: 'Vuetify',
+          href: 'https://vuetifyjs.com/',
+          subheading: 'Material Design Component Framework',
+          text: 'UI Library with beautifully handcrafted Material Components.',
+        },
+        {
+          icon: 'fas server',
+          heading: 'Surge',
+          href: 'https://surge.sh',
+          subheading: 'Content delivery network (CDN)',
+          text: 'Free static web publishing',
+        },
+        {
+          icon: 'fas check-double',
+          heading: 'VeeValidate',
+          href: 'https://logaretm.github.io/vee-validate/',
+          subheading: 'Template Based Form Validation Framework for Vue.js',
+        },
+        // {
+        //   icon: 'fas comment-alt',
+        //   heading: 'Storyblok',
+        //   href: 'https://www.storyblok.com/',
+        //   subheading: 'Headless CMS with a Visual Editor',
+        // },
+        {
+          icon: 'fab font-awesome',
+          heading: 'Fontawesome',
+          href: 'https://fontawesome.com/',
+          subheading: 'Vector icons and social logos',
         },
         {
           icon: 'fas hard-hat',
@@ -134,38 +149,22 @@ export default {
           subheading: 'Automated dependency updates',
         },
         {
-          icon: 'fas dog',
-          heading: 'Snyk',
-          href: 'https://snyk.io/',
-          subheading: 'Automated secutiry audits',
-          text:
-            'Snyk enables development teams to move quickly and securely by automatically finding and fixing issues faster than industry average.',
-        },
-        {
           icon: 'fas cubes',
           heading: 'Semantic Release',
           href: 'https://github.com/semantic-release/semantic-release',
-          subheading:
-            'Fully automated version management and package publishing',
+          subheading: 'Fully automated version management',
         },
         {
           icon: 'fas code',
           heading: 'Eslint',
           href: 'https://eslint.org/',
-          subheading: 'static code analysis',
+          subheading: 'Static code analysis',
         },
         {
           icon: 'fas file-code',
           heading: 'Prettier',
           href: 'https://prettier.io/',
-          subheading: 'opinionated code formatter',
-        },
-        {
-          icon: 'fab docker',
-          heading: 'Docker',
-          href: 'https://www.docker.com/',
-          subheading: 'Debug your app, not your environment',
-          text: 'Securely build, share and run any application, anywhere',
+          subheading: 'Opinionated code formatter',
         },
       ],
     };

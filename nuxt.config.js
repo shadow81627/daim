@@ -3,17 +3,21 @@ import pkg from './package';
 const STORYBLOK_TOKEN =
   process.env.STORYBLOK_TOKEN || 'kycw6YWwjgilZCDf6Xb6kAtt';
 
+const env = {
+  HOST: process.env.HOST,
+  PORT: process.env.PORT,
+  VERSION: pkg.version,
+  COMMIT: process.env.npm_package_gitHead || process.env.TRAVIS_COMMIT,
+  DATE_GENERATED: new Date().toISOString(),
+  STORYBLOK_TOKEN,
+};
+
 export default {
   mode: 'universal',
   target: 'static',
 
-  env: {
-    HOST: process.env.HOST,
-    PORT: process.env.PORT,
-    VERSION: pkg.version,
-    COMMIT: process.env.npm_package_gitHead,
-
-    STORYBLOK_TOKEN,
+  publicRuntimeConfig: {
+    ...env,
   },
 
   generate: {
@@ -78,7 +82,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/storyblok.css'],
+  css: [],
 
   /*
    ** Plugins to load before mounting the App
@@ -108,7 +112,7 @@ export default {
     'nuxt-i18n',
     // 'nuxt-webfontloader',
     // 'nuxt-purgecss',
-    'storyblok-nuxt',
+    // 'storyblok-nuxt',
 
     // always declare the sitemap module at end of array
     '@nuxtjs/sitemap',
@@ -119,21 +123,6 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
-
-  bootstrapVue: {
-    bootstrapCSS: false, // or `css`
-    bootstrapVueCSS: false, // or `bvCSS`
-    // componentPlugins: [
-    //   'Image',
-    //   'FormSelect',
-    //   'Card',
-    //   'ButtonPlugin',
-    //   'FormTextareaPlugin',
-    //   'FormGroupPlugin',
-    //   'FormInputPlugin',
-    // ],
-    // directivePlugins: ['Tooltip'],
-  },
 
   fontawesome: {
     imports: [
@@ -178,9 +167,9 @@ export default {
     mode: 'postcss',
   },
 
-  storyblok: {
-    accessToken: STORYBLOK_TOKEN,
-  },
+  // storyblok: {
+  //   accessToken: STORYBLOK_TOKEN,
+  // },
 
   sitemap: {
     hostname: 'https://daim.dev',

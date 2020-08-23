@@ -3,6 +3,8 @@
   "editor.formatOnSave": false,
   "vetur.validation.template": false,
   "files.exclude": {
+    "**/.lighthouseci/**": true,
+    "**/.nyc_output/**": true,
     "**/node_modules/**": true,
     "**/dist/**": true,
     "**/coverage/**": true,

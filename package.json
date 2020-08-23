@@ -1,8 +1,18 @@
 {
   "name": "daim",
   "version": "1.19.0",
-  "description": "Innovative Marketing Technology Automation",
-  "author": "Damien Robinson",
+  "description": "Damien Robinson Web Development",
+  "author": {
+    "name": "Damien Robinson",
+    "email": "damien.robinson@daim.dev",
+    "url": "https://daim.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shadow81627/daim.git"
+  },
+  "bugs": "https://github.com/shadow81627/daim/issues",
+  "homepage": "https://daim.dev",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -41,6 +51,7 @@
     "@fortawesome/free-regular-svg-icons": "5.14.0",
     "@fortawesome/free-solid-svg-icons": "5.14.0",
     "@fortawesome/vue-fontawesome": "0.1.10",
+    "@nuxt/content": "1.6.1",
     "@nuxtjs/axios": "5.12.1",
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/markdownit": "1.2.10",
@@ -49,11 +60,11 @@
     "cross-env": "7.0.2",
     "github-markdown-css": "4.0.0",
     "koa": "2.13.0",
+    "luxon": "1.25.0",
     "nuxt": "2.14.3",
     "nuxt-fontawesome": "0.4.0",
     "nuxt-i18n": "6.13.11",
-    "nuxt-webfontloader": "1.1.0",
-    "storyblok-nuxt": "1.3.0"
+    "nuxt-webfontloader": "1.1.0"
   },
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "0.4.0",

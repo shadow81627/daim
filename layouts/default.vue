@@ -41,7 +41,7 @@
       />
       <v-toolbar-title class="ml-0 pl-3">
         <img
-          :src="require('~/assets/img/logo.svg')"
+          :src="require('~/assets/img/logo.svg?inline')"
           class="navbar-brand"
           height="24"
           contain
@@ -51,14 +51,14 @@
       <v-spacer />
     </v-app-bar>
     <v-main role="main">
-      <nuxt style="min-height: 100vh;" />
-      <the-footer />
+      <nuxt style="min-height: 100vh;" keep-alive></nuxt>
+      <the-footer></the-footer>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import { mdiHome, mdiAccountTie, mdiToolbox } from '@mdi/js';
+import { mdiHome, mdiAccountTie, mdiToolbox, mdiFolder } from '@mdi/js';
 import TheFooter from '@/components/layout/the-footer.vue';
 export default {
   components: {
@@ -73,15 +73,20 @@ export default {
           text: 'Home',
           route: 'index',
         },
-        {
-          icon: '$info',
-          text: 'Blog',
-          route: 'blog',
-        },
+        // {
+        //   icon: '$info',
+        //   text: 'Blog',
+        //   route: 'blog',
+        // },
         {
           icon: mdiAccountTie,
           text: 'Resume',
           route: 'resume',
+        },
+        {
+          icon: mdiFolder,
+          text: 'Portfolio',
+          route: 'portfolio',
         },
         {
           icon: mdiToolbox,
@@ -92,12 +97,8 @@ export default {
     };
   },
   computed: {
-    // items() {
-    //   return [];
-    // },
     isDark() {
       return false;
-      // return this.$store.getters.getCurrentTheme().dark;
     },
   },
   mounted() {
@@ -109,7 +110,6 @@ export default {
     const afterPrint = function () {
       console.log('Functionality to run after printing');
     };
-
     if (window.matchMedia) {
       const mediaQueryList = window.matchMedia('print');
       mediaQueryList.addListener(function (mql) {
@@ -120,7 +120,6 @@ export default {
         }
       });
     }
-
     window.onbeforeprint = beforePrint;
     window.onafterprint = afterPrint;
   },
@@ -136,8 +135,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-// @import '~/assets/scss/custom.scss';
-@import '~/assets/css/print.css' print;
-</style>

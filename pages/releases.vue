@@ -1,8 +1,12 @@
 <template>
-  <div class="container bg-light">
-    <!-- eslint-disable-next-line -->
-    <div class="markdown-body" v-html="content()" />
-  </div>
+  <v-container>
+    <v-row>
+      <v-col>
+        <!-- eslint-disable-next-line -->
+        <v-card class="markdown-body pt-0" v-html="content()"></v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
