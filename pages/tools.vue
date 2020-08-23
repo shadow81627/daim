@@ -51,13 +51,6 @@ export default {
             'Vue.js (commonly referred to as Vue; pronounced /vjuː/, like view) is an open-source Model–view–viewmodel JavaScript framework for building user interfaces and single-page applications.',
         },
         {
-          icon: 'fas server',
-          heading: 'Surge',
-          href: 'https://surge.sh',
-          subheading: 'Content delivery network (CDN)',
-          text: 'Free static web publishing',
-        },
-        {
           icon: 'fab bootstrap',
           heading: 'Bootstrap',
           href: 'https://getbootstrap.com/',
@@ -66,31 +59,35 @@ export default {
             "Responsive, mobile-first, and ARIA accessible projects on the web using Vue.js and the world's most popular front-end CSS library.",
         },
         {
+          icon: 'fas lightbulb',
+          heading: 'Lighthouse',
+          href: 'https://github.com/GoogleChrome/lighthouse-ci',
+          subheading: 'SEO Audits',
+          text:
+            'Lighthouse analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices.',
+          list: [
+            'Prevent regressions in accessibility, SEO, offline support, and performance best practices.',
+            'Track performance metrics and Lighthouse scores over time.',
+            'Set and keep performance budgets on scripts and images.',
+            'Compare two versions of your site to find improvements and regressions of individual resources.',
+          ],
+        },
+        {
           icon: 'fas mobile-alt',
           heading: 'Progressive Web Apps',
           href: 'https://developers.google.com/web/progressive-web-apps',
           subheading: 'Fast, reliable, engaging web apps',
           text:
             'Progressive Web Apps (PWA) are reliable, fast, and engaging, although there are many things that can take a PWA from a baseline to exemplary experience.',
-        },
-        {
-          icon: 'fas shapes',
-          heading: 'Vuetify',
-          href: 'https://vuetifyjs.com/',
-          subheading: 'Material Design Component Framework',
-          text: 'UI Library with beautifully handcrafted Material Components.',
-        },
-        {
-          icon: 'fas check-double',
-          heading: 'VeeValidate',
-          href: 'https://logaretm.github.io/vee-validate/',
-          subheading: 'Template Based Form Validation Framework for Vue.js',
-        },
-        {
-          icon: 'fab font-awesome',
-          heading: 'Fontawesome',
-          href: 'https://fontawesome.com/',
-          subheading: 'Vector icons and social logos',
+          list: [
+            'Fast',
+            'Installable',
+            'Reliable',
+            'Engaging',
+            'Works Offline',
+            'Predictive prefetcing',
+            'Web Push Notifications',
+          ],
         },
         {
           icon: 'fas cloud',
@@ -99,6 +96,11 @@ export default {
           subheading: 'Secure DNS, proxy, CDN, with DDos protection',
           text:
             'Trusted by over 20 million Internet properties. Cloudflare provides a scalable, easy-to-use, unified control plane to deliver security, performance, and reliability for on-premises, hybrid, cloud, and SaaS applications.',
+          list: [
+            'Secure Domain Name Server (DNS)',
+            'DDos protection',
+            'Secure Sockets Layer (SSL)',
+          ],
         },
         {
           icon: 'fas images',
@@ -109,17 +111,66 @@ export default {
             'Automate the entire image-processing pipeline: from uploads to on-the-fly manipulations to optimization to dynamic delivery with any CDN.',
         },
         {
-          icon: 'fas comment-alt',
-          heading: 'Storyblok',
-          href: 'https://www.storyblok.com/',
-          subheading: 'Headless CMS with a Visual Editor',
+          icon: 'fas dog',
+          heading: 'Snyk',
+          href: 'https://snyk.io/',
+          subheading: 'Automated secutiry audits',
+          text:
+            'Snyk enables development teams to move quickly and securely by automatically finding and fixing issues faster than industry average.',
         },
         {
-          icon: 'fas lightbulb',
-          heading: 'Lighthouse',
-          href: 'https://github.com/GoogleChrome/lighthouse-ci',
+          icon: 'fab github',
+          heading: 'GitHub',
+          href: 'https://github.com',
+          subheading: 'Distributed version control system',
+          list: [
+            'CI/CD',
+            'Secure development',
+            'Code review',
+            'Project management',
+            'Hosting',
+            'Team management',
+          ],
+        },
+        {
+          icon: 'fab docker',
+          heading: 'Docker',
+          href: 'https://www.docker.com/',
+          subheading: 'Debug your app, not your environment',
+          text: 'Securely build, share and run any application, anywhere',
+        },
+        {
+          icon: 'fas shapes',
+          heading: 'Vuetify',
+          href: 'https://vuetifyjs.com/',
+          subheading: 'Material Design Component Framework',
           text:
-            'Automate running Lighthouse for every commit, viewing the changes, and preventing regressions',
+            'UI Library with beautifully handcrafted Material Design Components.',
+        },
+        {
+          icon: 'fas server',
+          heading: 'Surge',
+          href: 'https://surge.sh',
+          subheading: 'Content delivery network (CDN)',
+          text: 'Free static web hosting',
+        },
+        {
+          icon: 'fas check-double',
+          heading: 'VeeValidate',
+          href: 'https://logaretm.github.io/vee-validate/',
+          subheading: 'Template Based Form Validation Framework for Vue.js',
+        },
+        // {
+        //   icon: 'fas comment-alt',
+        //   heading: 'Storyblok',
+        //   href: 'https://www.storyblok.com/',
+        //   subheading: 'Headless CMS with a Visual Editor',
+        // },
+        {
+          icon: 'fab font-awesome',
+          heading: 'Fontawesome',
+          href: 'https://fontawesome.com/',
+          subheading: 'Vector icons and social logos',
         },
         {
           icon: 'fas hard-hat',
@@ -134,38 +185,34 @@ export default {
           subheading: 'Automated dependency updates',
         },
         {
-          icon: 'fas dog',
-          heading: 'Snyk',
-          href: 'https://snyk.io/',
-          subheading: 'Automated secutiry audits',
-          text:
-            'Snyk enables development teams to move quickly and securely by automatically finding and fixing issues faster than industry average.',
-        },
-        {
           icon: 'fas cubes',
           heading: 'Semantic Release',
           href: 'https://github.com/semantic-release/semantic-release',
-          subheading:
-            'Fully automated version management and package publishing',
+          subheading: 'Fully automated version management',
         },
         {
           icon: 'fas code',
           heading: 'Eslint',
           href: 'https://eslint.org/',
-          subheading: 'static code analysis',
+          subheading: 'Static code analysis',
         },
         {
           icon: 'fas file-code',
           heading: 'Prettier',
           href: 'https://prettier.io/',
-          subheading: 'opinionated code formatter',
+          subheading: 'Opinionated code formatter',
         },
         {
-          icon: 'fab docker',
-          heading: 'Docker',
-          href: 'https://www.docker.com/',
-          subheading: 'Debug your app, not your environment',
-          text: 'Securely build, share and run any application, anywhere',
+          icon: 'fas fire',
+          heading: 'Firebase',
+          href: 'https://firebase.google.com/',
+          subheading: 'App development platform',
+        },
+        {
+          icon: 'fas bug',
+          heading: 'Sentry',
+          href: 'https://sentry.io/',
+          subheading: 'Monitoring',
         },
       ],
     };

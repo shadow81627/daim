@@ -27,26 +27,26 @@
 import Breadcrumb from '@/components/layout/breadcrumb';
 export default {
   components: { Breadcrumb },
-  asyncData(context) {
-    const version =
-      context.query._storyblok || context.isDev ? 'draft' : 'published';
+  // asyncData(context) {
+  //   const version =
+  //     context.query._storyblok || context.isDev ? 'draft' : 'published';
 
-    return context.app.$storyapi
-      .get('cdn/stories', {
-        version,
-        starts_with: 'blog',
-        // cv: context.store.state.cacheVersion,
-      })
-      .then((res) => {
-        return res;
-      })
-      .catch((res) => {
-        context.error({
-          statusCode: res.response.status,
-          message: res.response.data,
-        });
-      });
-  },
+  //   return context.app.$storyapi
+  //     .get('cdn/stories', {
+  //       version,
+  //       starts_with: 'blog',
+  //       // cv: context.store.state.cacheVersion,
+  //     })
+  //     .then((res) => {
+  //       return res;
+  //     })
+  //     .catch((res) => {
+  //       context.error({
+  //         statusCode: res.response.status,
+  //         message: res.response.data,
+  //       });
+  //     });
+  // },
   data() {
     return { total: 0, data: { stories: [] } };
   },

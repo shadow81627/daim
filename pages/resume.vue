@@ -12,31 +12,52 @@
             </v-card-title>
 
             <v-card-subtitle class="text-subtitle-1 text-break pb-0">
-              <v-btn href="mailto:damien.robinson@daim.dev" text class="pl-0">
-                <font-awesome-icon
-                  :icon="faEnvelope"
-                  title="email"
-                  fixed-width
-                  pull="left"
-                />
-                <span>damien.robinson@daim.dev</span>
-              </v-btn>
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    target="_blank"
+                    v-bind="attrs"
+                    large
+                    text
+                    href="mailto:damien.robinson@daim.dev"
+                    class="pl-0"
+                    v-on="on"
+                  >
+                    <font-awesome-icon
+                      :icon="faEnvelope"
+                      title="email"
+                      fixed-width
+                      pull="left"
+                    />
+                    <span>damien.robinson@daim.dev</span>
+                  </v-btn>
+                </template>
+                <span>Reach out and email me now</span>
+              </v-tooltip>
 
-              <v-btn
-                href="https://www.google.com.au/maps/search/?api=1&query=New Farm, Australia"
-                target="_blank"
-                rel="noreferrer"
-                text
-                class="pl-0"
-              >
-                <font-awesome-icon
-                  :icon="faMapMarker"
-                  title="location"
-                  fixed-width
-                  pull="left"
-                />
-                <span>New Farm, Australia</span>
-              </v-btn>
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    target="_blank"
+                    v-bind="attrs"
+                    large
+                    text
+                    href="https://www.google.com.au/maps/search/?api=1&query=New Farm, Australia"
+                    class="pl-0"
+                    rel="noreferrer"
+                    v-on="on"
+                  >
+                    <font-awesome-icon
+                      :icon="faMapMarker"
+                      title="location"
+                      fixed-width
+                      pull="left"
+                    />
+                    <span>New Farm, Australia</span>
+                  </v-btn>
+                </template>
+                <span>Check out the map</span>
+              </v-tooltip>
             </v-card-subtitle>
 
             <v-card-text class="body-1 text--primary">
@@ -48,20 +69,32 @@
             </v-card-text>
 
             <v-card-actions class="social-icons">
-              <v-btn
+              <v-tooltip
                 v-for="{ icon, text, url } in socials"
                 :key="text"
-                :href="url"
-                icon
-                x-large
+                bottom
               >
-                <font-awesome-icon
-                  :icon="icon"
-                  :title="text"
-                  size="2x"
-                  fixed-width
-                />
-              </v-btn>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    target="_blank"
+                    v-bind="attrs"
+                    x-large
+                    icon
+                    class="pl-0"
+                    :href="url"
+                    v-on="on"
+                  >
+                    <font-awesome-icon
+                      :icon="icon"
+                      :title="text"
+                      size="2x"
+                      fixed-width
+                    />
+                    <span class="d-sr-only-focusable">{{ text }}</span>
+                  </v-btn>
+                </template>
+                <span>{{ text }}</span>
+              </v-tooltip>
             </v-card-actions>
           </v-card>
         </section>
@@ -74,11 +107,11 @@
       <v-col>
         <section>
           <v-card id="skills" flat>
-            <v-card-title class="py-0 text-break">
+            <v-card-title class="pb-0 text-break">
               <h2>Professional Skills</h2>
             </v-card-title>
 
-            <v-container class="pt-0">
+            <v-container>
               <v-row class="list-inline dev-icons" no-gutters>
                 <v-col
                   v-for="(column, index) in columns(skills)"
@@ -92,6 +125,67 @@
                 </v-col>
               </v-row>
             </v-container>
+          </v-card>
+        </section>
+      </v-col>
+    </v-row>
+
+    <v-divider></v-divider>
+
+    <v-card flat>
+      <v-card-title class="text-break pb-0">
+        <h2>
+          Personal Attributes
+        </h2>
+      </v-card-title>
+      <div v-for="{ title, description, icon } in attributes" :key="title">
+        <v-card-title class="pb-0">
+          <h3>
+            <font-awesome-icon :icon="icon" fixed-width></font-awesome-icon>
+            {{ title }}
+          </h3>
+        </v-card-title>
+        <v-card-text class="body-1">
+          {{ description }}
+        </v-card-text>
+      </div>
+    </v-card>
+
+    <v-divider></v-divider>
+
+    <v-row>
+      <v-col>
+        <section>
+          <v-card id="education" flat>
+            <v-card-title class="py-0 text-break">
+              <h2>Education</h2>
+            </v-card-title>
+            <v-card-title>
+              <h3 class="mb-0 text-break">Griffith University</h3>
+            </v-card-title>
+            <v-card-subtitle
+              class="d-flex flex-column flex-md-row justify-space-between font-weight-medium body-1"
+            >
+              Bachelor of Applied Infomation Technology
+              <span class="resume-date text-md-right">
+                <span class="text-primary">March, 2015 - November, 2017</span>
+              </span>
+            </v-card-subtitle>
+            <v-card-text class="body-1 text--primary">
+              Grade Point Average: <strong>5.1</strong> (Scale: 1-7, with 7 the
+              highest)
+            </v-card-text>
+            <v-card-title class="py-0">
+              Key Courses
+            </v-card-title>
+            <v-card-text class="body-1 text--primary">
+              <ul>
+                <li>Dynamic Multimedia Systems</li>
+                <li>Database Systems Administration</li>
+                <li>Programming Mobile Applications</li>
+                <li>Network Security</li>
+              </ul>
+            </v-card-text>
           </v-card>
         </section>
       </v-col>
@@ -146,46 +240,6 @@
 
     <v-divider></v-divider>
 
-    <v-row>
-      <v-col>
-        <section>
-          <v-card id="education" flat>
-            <v-card-title class="py-0 text-break">
-              <h2>Education</h2>
-            </v-card-title>
-            <v-card-title>
-              <h3 class="mb-0 text-break">Griffith University</h3>
-            </v-card-title>
-            <v-card-subtitle
-              class="d-flex flex-column flex-md-row justify-space-between font-weight-medium body-1"
-            >
-              Bachelor of Applied Infomation Technology
-              <span class="resume-date text-md-right">
-                <span class="text-primary">March, 2015 - November, 2017</span>
-              </span>
-            </v-card-subtitle>
-            <v-card-text class="body-1 text--primary">
-              Grade Point Average: <strong>5.1</strong> (Scale: 1-7, with 7 the
-              highest)
-            </v-card-text>
-            <v-card-title class="py-0">
-              Key Courses
-            </v-card-title>
-            <v-card-text class="body-1 text--primary">
-              <ul>
-                <li>Dynamic Multimedia Systems</li>
-                <li>Database Systems Administration</li>
-                <li>Programming Mobile Applications</li>
-                <li>Network Security</li>
-              </ul>
-            </v-card-text>
-          </v-card>
-        </section>
-      </v-col>
-    </v-row>
-
-    <v-divider />
-
     <v-card flat>
       <v-card-title class="text-break">
         <h2>
@@ -201,27 +255,6 @@
         Firebase, Lighthouse CI, Renovate automated dependency management. I am
         happy to provide more information on these projects on request.
       </v-card-text>
-    </v-card>
-
-    <v-divider />
-
-    <v-card flat>
-      <v-card-title class="text-break pb-0">
-        <h2>
-          Personal Attributes
-        </h2>
-      </v-card-title>
-      <div v-for="{ title, description, icon } in attributes" :key="title">
-        <v-card-title class="pb-0">
-          <h3>
-            <font-awesome-icon :icon="icon" fixed-width></font-awesome-icon>
-            {{ title }}
-          </h3>
-        </v-card-title>
-        <v-card-text class="body-1">
-          {{ description }}
-        </v-card-text>
-      </div>
     </v-card>
 
     <!-- <v-card
@@ -394,7 +427,7 @@ export default {
       },
       {
         icon: ['fab', 'python'],
-        text: 'Python',
+        text: 'Python (Flask)',
       },
       {
         icon: ['fab', 'git-alt'],
@@ -504,8 +537,3 @@ export default {
   },
 };
 </script>
-
-<style scoped lang="scss">
-// @import '~/assets/css/resume.css';
-// @import '~/assets/scss/fluid-type.scss';
-</style>

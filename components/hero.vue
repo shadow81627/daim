@@ -1,5 +1,5 @@
 <template>
-  <header v-editable="blok">
+  <header>
     <v-parallax
       :lazy-src="require(`~/assets/img/header-bg.jpg?lqip`)"
       :src="
@@ -16,11 +16,11 @@
     >
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
-          <h1 v-if="blok.headline" class="mb-4 text-light text-shadow">
-            {{ blok.headline }}
+          <h1 v-if="heading" class="mb-4 text-light text-shadow">
+            {{ heading }}
           </h1>
-          <h2 v-if="blok.desciption" class="subheading text-light text-shadow">
-            {{ blok.desciption }}
+          <h2 v-if="subheading" class="subheading text-light text-shadow">
+            {{ subheading }}
           </h2>
         </v-col>
       </v-row>
@@ -30,6 +30,9 @@
 
 <script>
 export default {
-  props: { blok: { type: Object, required: true } },
+  props: {
+    heading: { type: String, required: false, default: null },
+    subheading: { type: String, required: false, default: null },
+  },
 };
 </script>
