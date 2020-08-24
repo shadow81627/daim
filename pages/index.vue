@@ -50,7 +50,10 @@ import {
   faClipboardList,
   faFileArchive,
 } from '@fortawesome/free-solid-svg-icons';
+import Hero from '~/components/hero';
+
 export default {
+  components: { Hero },
   data() {
     return {
       features: [
