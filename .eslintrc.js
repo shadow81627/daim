@@ -4,6 +4,9 @@ module.exports = {
     browser: true,
     node: true,
   },
+  parserOptions: {
+    parser: 'babel-eslint',
+  },
   extends: [
     '@nuxtjs',
     'prettier',

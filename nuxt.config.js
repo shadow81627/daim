@@ -160,6 +160,14 @@ export default {
     mozjpeg: {
       quality: 50,
     },
+    responsive: {
+      adapter: require('responsive-loader/sharp'),
+      sharp: {
+        format: {
+          webp: true,
+        },
+      },
+    },
   },
 
   purgeCSS: {
