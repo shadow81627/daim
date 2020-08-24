@@ -9,10 +9,8 @@
             :src-set="srcSet"
             height="500"
             width="1785"
-            :style="{
-              backgroundColor,
-            }"
-            size="100vw"
+            :style="{ backgroundColor }"
+            sizes="(max-width: 1785px) 100vw, 1785px"
             max-width="1785"
             style="max-width: 1785px;"
           >
@@ -43,21 +41,20 @@ export default {
   props: {
     heading: { type: String, default: null },
     subheading: { type: String, default: null },
-    image: { type: String, default: 'header-bg' },
+    // image: { type: String, default: 'header-bg' },
     tint: { type: String, default: 'rgba(0, 0, 0, 0.6)' },
     height: { type: [Number, String], default: 500 },
   },
   computed: {
     lazySrc() {
-      const image = `~/assets/img/header-bg.jpg`;
-      return `${image}?lqip`;
+      return require(`~/assets/img/header-bg.jpg?lqip`);
     },
     src() {
       return require(`~/assets/img/header-bg.jpg?resize&size=1785&placeholder&format=webp`)
         .src;
     },
     srcSet() {
-      return require(`~/assets/img/header-bg.jpg?resize&max=4686&min=320&steps=6&format=webp`)
+      return require(`~/assets/img/header-bg.jpg?resize&max=4686&min=320&steps=12&format=webp`)
         .srcSet;
     },
     backgroundColor() {
