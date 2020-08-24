@@ -332,7 +332,19 @@
 
 <script>
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import {
+  faMapMarker,
+  faDatabase,
+  faSearch,
+  faMobileAlt,
+  faBug,
+  faUsers,
+  faSync,
+  faClock,
+  faPuzzlePiece,
+  faTasks,
+  faPaperPlane,
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faLinkedin,
@@ -343,6 +355,16 @@ import {
   faHtml5,
   faBootstrap,
   faJsSquare,
+  faVuejs,
+  faAngular,
+  faDocker,
+  faJira,
+  faNodeJs,
+  faNpm,
+  faPython,
+  faGitAlt,
+  faSass,
+  faJenkins,
 } from '@fortawesome/free-brands-svg-icons';
 
 export default {
@@ -396,67 +418,67 @@ export default {
         text: 'JavaScript',
       },
       {
-        icon: ['fab', 'vuejs'],
+        icon: faVuejs,
         text: 'Vue',
       },
       {
-        icon: ['fab', 'angular'],
+        icon: faAngular,
         text: 'Angular',
       },
       {
-        icon: ['fas', 'database'],
+        icon: faDatabase,
         text: 'Structured Query Language (MySQL)',
       },
       {
-        icon: ['fab', 'docker'],
+        icon: faDocker,
         text: 'Docker',
       },
       {
-        icon: ['fas', 'search'],
+        icon: faSearch,
         text: 'Search Engine Optimisation (SEO)',
       },
       {
-        icon: ['fab', 'jira'],
+        icon: faJira,
         text: 'JIRA',
       },
       {
-        icon: ['fab', 'node-js'],
+        icon: faNodeJs,
         text: 'Node',
       },
       {
-        icon: ['fab', 'npm'],
+        icon: faNpm,
         text: 'Node Package Manager',
       },
       {
-        icon: ['fab', 'python'],
+        icon: faPython,
         text: 'Python (Flask)',
       },
       {
-        icon: ['fab', 'git-alt'],
+        icon: faGitAlt,
         text: 'Git (Bitbucket & Github)',
       },
       {
-        icon: ['fab', 'sass'],
+        icon: faSass,
         text: 'Sass',
       },
       {
-        icon: ['fab', 'jenkins'],
+        icon: faJenkins,
         text: 'Continuous Integration (Jenkins & Travis)',
       },
       {
-        icon: ['fas', 'mobile-alt'],
+        icon: faMobileAlt,
         text: 'Mobile-First, Responsive Design',
       },
       {
-        icon: ['fas', 'bug'],
+        icon: faBug,
         text: 'Cross Browser Testing & Debugging',
       },
       {
-        icon: ['fas', 'users'],
+        icon: faUsers,
         text: 'Cross Functional Teams',
       },
       {
-        icon: ['fas', 'sync-alt'],
+        icon: faSync,
         text: 'Agile Development & Scrum',
       },
     ],
@@ -494,31 +516,31 @@ export default {
     ],
     attributes: [
       {
-        icon: ['fas', 'clock'],
+        icon: faClock,
         title: 'Time Management',
         description:
           'I stay on top of tasks given to me and I never go past client deadlines. I use project management tools such as JIRA to triage issues and forecast effort estimates for projects using story points.',
       },
       {
-        icon: ['fas', 'puzzle-piece'],
+        icon: faPuzzlePiece,
         title: 'Problem Solving',
         description:
           'I work through complex problems on my own, but I’m not afraid to ask for help in areas I’m not familiar with. I enjoy using creative thinking to present effective solutions through the use of rapid prototyping at hackathons/startup weekends.',
       },
       {
-        icon: ['fas', 'users'],
+        icon: faUsers,
         title: 'Team Player',
         description:
           'I work well in a team and can fill both leader and supporting positions with confidence. I enjoy working in a collaborative team structure but I have worked independently on projects as well.',
       },
       {
-        icon: ['fas', 'tasks'],
+        icon: faTasks,
         title: 'Quality Management',
         description:
           'I practice test driven development by creating automated unit tests using Jest, to ensure that all functions of a system operate as expected.',
       },
       {
-        icon: ['fas', 'paper-plane'],
+        icon: faPaperPlane,
         title: 'Written Communication',
         description:
           'I take pride in producing clear and concise reports, programs and documentation for all code as demonstrated by liaising with clients and project teams.',

@@ -8,7 +8,7 @@
       <span class="h3 text-break text-no-wrap text-truncate">
         <font-awesome-icon
           v-if="blok.icon"
-          :icon="blok.icon | split"
+          :icon="blok.icon"
           class="grey--text"
         />
         {{ blok.name || blok.heading }}
@@ -52,13 +52,6 @@
 <script>
 import { mdiOpenInNew } from '@mdi/js';
 export default {
-  filters: {
-    split(value, sep = ' ') {
-      if (!value) return '';
-      value = value.toString();
-      return value.split(sep);
-    },
-  },
   props: { blok: { type: Object, required: true } },
   data() {
     return {
