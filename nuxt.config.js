@@ -87,7 +87,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/components.js'],
+  plugins: [],
 
   /*
    ** Nuxt.js dev-modules
@@ -187,7 +187,7 @@ export default {
       chunk: ({ isDev }) =>
         isDev ? '[name].js' : 'chunks/[id].[contenthash].js',
     },
-    // extractCSS: true,
+    extractCSS: true,
     /*
      ** You can extend webpack config here
      */
