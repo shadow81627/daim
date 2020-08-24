@@ -3,33 +3,34 @@
     <v-row no-gutters align="center" justify="center">
       <v-col cols="12" align-self="center">
         <header>
-          <v-parallax
+          <v-img
             :lazy-src="lazySrc"
             :src="src"
             :src-set="srcSet"
-            height="500"
+            :height="height"
             width="1785"
             :style="{ backgroundColor }"
             sizes="(max-width: 1785px) 100vw, 1785px"
-            max-width="1785"
-            style="max-width: 1785px;"
           >
-            <v-row
-              align="center"
-              justify="center"
+            <v-container
+              class="fill-height align-items-end justify-start"
               :style="{ backgroundColor: tint }"
-              style="margin: -1rem;"
+              fluid
             >
-              <v-col class="text-center" cols="12">
-                <h1 v-if="heading" class="mb-4 text-light text-shadow">
-                  {{ heading }}
-                </h1>
-                <h2 v-if="subheading" class="subheading text-light text-shadow">
-                  {{ subheading }}
-                </h2>
-              </v-col>
-            </v-row>
-          </v-parallax>
+              <v-row align="center" justify="center">
+                <v-col class="text-center" cols="12">
+                  <v-card color="transparent" flat dark>
+                    <h1 v-if="heading" class="mb-4 text-shadow">
+                      {{ heading }}
+                    </h1>
+                    <h2 v-if="subheading" class="subheading text-shadow">
+                      {{ subheading }}
+                    </h2>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-img>
         </header>
       </v-col>
     </v-row>
@@ -50,11 +51,11 @@ export default {
       return require(`~/assets/img/header-bg.jpg?lqip`);
     },
     src() {
-      return require(`~/assets/img/header-bg.jpg?resize&size=1785&placeholder&format=webp`)
+      return require(`~/assets/img/header-bg.jpg?resize&size=1785&placeholder`)
         .src;
     },
     srcSet() {
-      return require(`~/assets/img/header-bg.jpg?resize&max=4686&min=320&steps=12&format=webp`)
+      return require(`~/assets/img/header-bg.jpg?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&sizes[]=4686&format=webp`)
         .srcSet;
     },
     backgroundColor() {
