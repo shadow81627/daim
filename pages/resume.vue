@@ -166,7 +166,7 @@
             <v-card-subtitle
               class="d-flex flex-column flex-md-row justify-space-between font-weight-medium body-1"
             >
-              Bachelor of Applied Infomation Technology
+              Bachelor of Applied Information Technology
               <span class="resume-date text-md-right">
                 <span class="text-primary">March, 2015 - November, 2017</span>
               </span>

@@ -72,7 +72,7 @@ export default {
         ],
       },
       {
-        name: 'Brisbane City Coucil Free Native Plant Gallery',
+        name: 'Brisbane City Council Free Native Plant Gallery',
         description:
           'Govhack project that combines several creative commons datasets to detail care requirements for Brisbane City Councils Free Native Plant Program.',
         image: '',

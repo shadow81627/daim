@@ -85,7 +85,7 @@ export default {
             'Reliable',
             'Engaging',
             'Works Offline',
-            'Predictive prefetcing',
+            'Predictive prefetching',
             'Web Push Notifications',
           ],
         },
@@ -114,7 +114,7 @@ export default {
           icon: 'fas dog',
           heading: 'Snyk',
           href: 'https://snyk.io/',
-          subheading: 'Automated secutiry audits',
+          subheading: 'Automated security audits',
           text:
             'Snyk enables development teams to move quickly and securely by automatically finding and fixing issues faster than industry average.',
         },
