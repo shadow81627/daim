@@ -20,6 +20,7 @@
                     large
                     text
                     href="mailto:damien.robinson@daim.dev"
+                    rel="noopener"
                     class="pl-0"
                     v-on="on"
                   >
@@ -82,6 +83,7 @@
                     icon
                     class="pl-0"
                     :href="url"
+                    rel="noopener"
                     v-on="on"
                   >
                     <font-awesome-icon
