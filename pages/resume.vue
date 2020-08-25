@@ -12,29 +12,9 @@
             </v-card-title>
 
             <v-card-subtitle class="text-subtitle-1 text-break pb-0">
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    target="_blank"
-                    v-bind="attrs"
-                    large
-                    text
-                    href="mailto:damien.robinson@daim.dev"
-                    rel="noopener"
-                    class="pl-0"
-                    v-on="on"
-                  >
-                    <font-awesome-icon
-                      :icon="faEnvelope"
-                      title="email"
-                      fixed-width
-                      pull="left"
-                    />
-                    <span>damien.robinson@daim.dev</span>
-                  </v-btn>
-                </template>
-                <span>Reach out and email me now</span>
-              </v-tooltip>
+              <mailgo href="mailto:damien.robinson@daim.dev" :icon="faEnvelope">
+                <span>damien.robinson@daim.dev</span>
+              </mailgo>
 
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
@@ -366,8 +346,12 @@ import {
   faSass,
   faJenkins,
 } from '@fortawesome/free-brands-svg-icons';
+import Mailgo from '@/components/mailgo.vue';
 
 export default {
+  components: {
+    Mailgo,
+  },
   data: () => ({
     faEnvelope,
     faMapMarker,
