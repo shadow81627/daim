@@ -1,5 +1,11 @@
 # Releases
 
+## [1.19.3](https://github.com/shadow81627/daim/compare/v1.19.2...v1.19.3) (2020-08-25)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.7.0 ([390add2](https://github.com/shadow81627/daim/commit/390add28668b928a1b4f2bd3b7a0850ff4818ebb))
+
 ## [1.19.2](https://github.com/shadow81627/daim/compare/v1.19.1...v1.19.2) (2020-08-25)
 
 ### Bug Fixes
