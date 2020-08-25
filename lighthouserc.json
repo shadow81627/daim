@@ -12,7 +12,8 @@
       "assertions": {
         "color-contrast": "off",
         "unused-css-rules": "off",
-        "uses-http2": "off"
+        "uses-http2": "off",
+        "unused-javascript": "off"
       }
     },
     "upload": {

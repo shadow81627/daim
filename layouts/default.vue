@@ -44,7 +44,7 @@
           :src="require('~/assets/img/logo.svg?inline')"
           class="navbar-brand"
           height="24"
-          contain
+          width="60"
           alt="Daim"
         />
       </v-toolbar-title>

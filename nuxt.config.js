@@ -87,7 +87,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/components.js'],
+  plugins: [],
 
   /*
    ** Nuxt.js dev-modules
@@ -124,19 +124,6 @@ export default {
    */
   axios: {},
 
-  fontawesome: {
-    imports: [
-      {
-        set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas'],
-      },
-      {
-        set: '@fortawesome/free-brands-svg-icons',
-        icons: ['fab'],
-      },
-    ],
-  },
-
   i18n: {
     baseUrl: 'https://daim.dev',
     seo: false,
@@ -159,6 +146,14 @@ export default {
   optimizedImages: {
     mozjpeg: {
       quality: 50,
+    },
+    responsive: {
+      adapter: require('responsive-loader/sharp'),
+      sharp: {
+        format: {
+          webp: true,
+        },
+      },
     },
   },
 
@@ -192,7 +187,7 @@ export default {
       chunk: ({ isDev }) =>
         isDev ? '[name].js' : 'chunks/[id].[contenthash].js',
     },
-    // extractCSS: true,
+    extractCSS: true,
     /*
      ** You can extend webpack config here
      */
