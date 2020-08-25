@@ -1,5 +1,11 @@
 # Releases
 
+## [1.19.2](https://github.com/shadow81627/daim/compare/v1.19.1...v1.19.2) (2020-08-25)
+
+### Bug Fixes
+
+- **hero:** image max width ([#553](https://github.com/shadow81627/daim/issues/553)) ([1133a33](https://github.com/shadow81627/daim/commit/1133a3312f759af34af5099397e7a8edaa14e3fb))
+
 ## [1.19.1](https://github.com/shadow81627/daim/compare/v1.19.0...v1.19.1) (2020-08-22)
 
 ### Bug Fixes
