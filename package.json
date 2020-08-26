@@ -94,7 +94,7 @@
     "lqip-loader": "2.2.0",
     "nodemon": "2.0.4",
     "nuxt-purgecss": "1.0.0",
-    "prettier": "2.0.5",
+    "prettier": "2.1.1",
     "remark-cli": "8.0.1",
     "remark-lint": "7.0.1",
     "remark-preset-lint-consistent": "3.0.1",
