@@ -1,5 +1,11 @@
 # Releases
 
+## [1.20.0](https://github.com/shadow81627/daim/compare/v1.19.6...v1.20.0) (2020-08-29)
+
+### Features
+
+- **portfolio:** add images ([#568](https://github.com/shadow81627/daim/issues/568)) ([e3f941c](https://github.com/shadow81627/daim/commit/e3f941c1cafb0476502f24bd78183e59683aef03))
+
 ## [1.19.6](https://github.com/shadow81627/daim/compare/v1.19.5...v1.19.6) (2020-08-27)
 
 ### Bug Fixes
