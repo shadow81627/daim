@@ -1,15 +1,15 @@
 <template>
   <v-footer class="hidden-print-only" height="auto">
-    <div class="container-fluid">
+    <v-container>
       <v-row no-gutters>
         <v-col cols="auto">
           <v-card flat color="transparent">
             <v-card-text>
-              <span>Version: {{ version }}</span>
-              <span>|</span>
-              <span>Commit: </span>
-              <nuxt-link to="releases">
-                <span> {{ commit | shortHash }}</span>
+              <span>{{ $config.VERSION }}</span>
+              <span v-if="$config.COMMIT">{{ shortHash($config.COMMIT) }}</span>
+              <span v-if="$config.VERSION && $config.COMMIT">|</span>
+              <nuxt-link :to="localePath('releases')">
+                <span>Changelog</span>
               </nuxt-link>
             </v-card-text>
           </v-card>
@@ -31,33 +31,36 @@
         <v-col cols="auto">
           <v-card flat tile color="transparent">
             <v-card-text class="py-2">
-              <span>Made with </span>
-              <span>😡</span>
-              <span> in Brisbane, Australia</span>
-              <span>© 2019 | Daim</span>
+              <font-awesome-icon
+                :icon="faMapMarker"
+                title="location"
+                fixed-width
+              />
+              <span>New Farm, Australia</span>
+              <span>© 2019 | Damien Robinson</span>
             </v-card-text>
           </v-card>
         </v-col>
         <v-spacer />
         <last-modified v-bind="{ utc }" />
       </v-row>
-    </div>
+    </v-container>
   </v-footer>
 </template>
 
 <script>
+import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import lastModified from './last-modified';
 export default {
   components: {
     lastModified,
   },
-  filters: {
+  data: () => ({
+    utc: false,
+    faMapMarker,
+  }),
+  methods: {
     shortHash: (value) => (value ? value.substring(0, 7) : null),
   },
-  data: () => ({
-    version: process.env.VERSION,
-    commit: process.env.COMMIT || process.env.TRAVIS_COMMIT,
-    utc: false,
-  }),
 };
 </script>

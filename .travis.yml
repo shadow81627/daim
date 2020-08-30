@@ -5,38 +5,36 @@ addons:
   chrome: stable # make Chrome available
 # Cache node packages between jobs
 cache: npm
-branches:
-  only:
-    # This is where pull requests from "bors r+" are built.
-    - staging
-    # This is where pull requests from "bors try" are built.
-    - trying
-    # enable building pull requests.
-    - master
-    - production
 
 script:
   - npm run lint
   # - npm run test
-  - npm run generate:modern
-  - cp -R dist public
+  - npm run build:export
   - npx semantic-release
 
 deploy:
   - provider: surge
     domain: daim.dev
-    project: ./public
-    edge: true # opt in to dpl v2
+    project: ./dist
+    # edge: true # opt in to dpl v2
+    skip_cleanup: true
     on:
       branch: master
 
   - provider: surge
     domain: staging.daim.dev
-    project: ./public
-    edge: true # opt in to dpl v2
+    project: ./dist
+    # edge: true # opt in to dpl v2
+    skip_cleanup: true
     on:
       all_branches: true
 
+  - provider: firebase
+    skip_cleanup: true
+    project: default
+    edge: true # opt in to dpl v2
+    on:
+      branch: master
+
 after_success:
-  # - npm run lh -- $APP_URL
   - npm run lhci:autorun

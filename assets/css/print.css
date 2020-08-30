@@ -39,23 +39,24 @@
     visibility: visible;
   }
 
-  .container {
+  /* .container {
     position: absolute;
     left: 0;
     top: 0;
     background: none;
     margin: 0; padding: 0;
-  }
+  } */
 
-  main.v-content {
-    padding: 0;
+  main {
+    padding: 0 !important;
   }
 
   section {
-    page-break-before: always;
+    /* page-break-before: always; */
+    page-break-inside: avoid;
   }
 
-  h1 {
+  /* h1 {
     font-size: 24pt;
   }
 
@@ -78,5 +79,5 @@
     color: #1a1a1a !important;
     widows: 4;
     orphans: 3;
-  }
+  } */
 }

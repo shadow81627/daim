@@ -1,41 +1,46 @@
 <template>
-  <section class="util__container">
-    <div v-editable="story.content" class="blog">
-      <h1>{{ story.content.name }}</h1>
-      <richtext class="blog__body" :text="story.content.body"></richtext>
-    </div>
-  </section>
+  <div>
+    <breadcrumb></breadcrumb>
+    <section class="util__container">
+      <div v-editable="story.content" class="blog">
+        <h1>{{ story.content.name }}</h1>
+        <richtext class="blog__body" :text="story.content.body"></richtext>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
+import Breadcrumb from '@/components/layout/breadcrumb';
 import Richtext from '@/components/richtext.vue';
-import storyblokLivePreview from '@/mixins/storyblokLivePreview';
+// import storyblokLivePreview from '@/mixins/storyblokLivePreview';
 
 export default {
   components: {
     Richtext,
+    Breadcrumb,
   },
-  mixins: [storyblokLivePreview],
-  asyncData(context) {
-    const version =
-      context.query._storyblok || context.isDev ? 'draft' : 'published';
-    const endpoint = `cdn/stories/blog/${context.params.slug}`;
+  // mixins: [storyblokLivePreview],
+  // asyncData(context) {
+  //   const version =
+  //     context.query._storyblok || context.isDev ? 'draft' : 'published';
+  //   const endpoint = `cdn/stories/blog/${context.params.slug}`;
 
-    return context.app.$storyapi
-      .get(endpoint, {
-        version,
-        // cv: context.store.state.cacheVersion,
-      })
-      .then((res) => {
-        return res.data;
-      })
-      .catch((res) => {
-        context.error({
-          statusCode: res.response.status,
-          message: res.response.data,
-        });
-      });
-  },
+  //   return context.app.$storyapi
+  //     .get(endpoint, {
+  //       version,
+  //       // cv: context.store.state.cacheVersion,
+  //     })
+  //     .then((res) => {
+  //       return res.data;
+  //     })
+  //     .catch((res) => {
+  //       context.error({
+  //         statusCode: res.response.status,
+  //         message: res.response.data,
+  //       });
+  //     });
+  // },
   data() {
     return { story: { content: { body: '' } } };
   },

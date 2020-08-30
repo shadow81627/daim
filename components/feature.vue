@@ -1,46 +1,62 @@
 <template>
-  <b-card v-editable="blok" class="h-100 xtext-center">
-    <b-card-title class="" title-tag="h3">
-      <font-awesome-icon
-        v-if="blok.icon"
-        :icon="blok.icon | split"
-        title=""
-        class="text-muted"
-      />
-      {{ blok.name || blok.heading }}
-    </b-card-title>
-    <b-card-sub-title v-if="blok.subheading" class="mb-2">{{
+  <v-card
+    v-editable="blok"
+    class="flex d-flex flex-column justify-between"
+    min-width="240"
+  >
+    <v-card-title>
+      <span class="h3 text-break text-no-wrap text-truncate">
+        <font-awesome-icon
+          v-if="blok.icon"
+          :icon="blok.icon"
+          class="grey--text"
+        />
+        {{ blok.name || blok.heading }}
+      </span>
+    </v-card-title>
+
+    <v-card-subtitle v-if="blok.subheading">{{
       blok.subheading
-    }}</b-card-sub-title>
-    <b-card-text v-if="blok.text">{{ blok.text }}</b-card-text>
-    <b-button
-      v-if="blok.href"
-      :href="blok.href"
-      target="_blank"
-      rel="noopener"
-      variant="link"
-      size="sm"
-      class="text-decoration-none"
-    >
-      <span>Learn more about</span>
-      <span>{{ blok.heading }}</span>
-      <font-awesome-icon :icon="['fas', 'angle-right']" class="text-muted" />
-    </b-button>
-    <!-- <template v-slot:footer>
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </template> -->
-  </b-card>
+    }}</v-card-subtitle>
+    <!-- <v-card-text class="flex-grow-1 text--primary">{{ blok.text }}</v-card-text> -->
+
+    <div class="flex-grow-1">
+      <v-card-text v-if="blok.text" class="text--primary body-1 pt-0">
+        {{ blok.text }}
+      </v-card-text>
+      <v-card-text v-if="blok.list" class="text--primary body-1 pt-0">
+        <ul>
+          <li v-for="item in blok.list" :key="item">{{ item }}</li>
+        </ul>
+      </v-card-text>
+    </div>
+
+    <v-card-actions>
+      <v-spacer></v-spacer>
+      <v-btn
+        v-if="blok.href"
+        :href="blok.href"
+        target="_blank"
+        rel="noopener"
+        text
+        small
+      >
+        <span>Learn more</span>
+        <span class="d-sr-only-focusable"> about {{ blok.heading }}</span>
+        <v-icon color="grey" small>{{ mdiOpenInNew }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+  </v-card>
 </template>
 
 <script>
+import { mdiOpenInNew } from '@mdi/js';
 export default {
-  filters: {
-    split(value, sep = ' ') {
-      if (!value) return '';
-      value = value.toString();
-      return value.split(sep);
-    },
-  },
   props: { blok: { type: Object, required: true } },
+  data() {
+    return {
+      mdiOpenInNew,
+    };
+  },
 };
 </script>

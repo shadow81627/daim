@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire" :dark="isDark" clipped-left>
+  <v-app :dark="isDark" clipped-left>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -17,7 +17,7 @@
           class="text-decoration-none"
         >
           <v-list-item-action>
-            <v-icon>${{ item.icon }}</v-icon>
+            <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>{{ item.text }}</v-list-item-title>
@@ -29,7 +29,10 @@
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
       fixed
-      class="hidden-print-only navbar-dark bg-dark"
+      color="#343a40"
+      dark
+      class="hidden-print-only"
+      height="64"
     >
       <v-app-bar-nav-icon
         aria-label="menu"
@@ -37,24 +40,25 @@
         @click.stop="drawer = !drawer"
       />
       <v-toolbar-title class="ml-0 pl-3">
-        <!-- <span class="brand navbar-brand">Daim</span> -->
         <img
-          src="~/assets/img/logo.svg"
+          :src="require('~/assets/img/logo.svg?inline')"
           class="navbar-brand"
-          height="32"
+          height="24"
+          width="60"
           alt="Daim"
         />
       </v-toolbar-title>
       <v-spacer />
     </v-app-bar>
-    <v-content role="main">
-      <nuxt style="min-height: 100vh;" />
-      <the-footer />
-    </v-content>
+    <v-main role="main">
+      <nuxt style="min-height: 100vh" keep-alive></nuxt>
+      <the-footer></the-footer>
+    </v-main>
   </v-app>
 </template>
 
 <script>
+import { mdiHome, mdiAccountTie, mdiToolbox, mdiFolder } from '@mdi/js';
 import TheFooter from '@/components/layout/the-footer.vue';
 export default {
   components: {
@@ -65,22 +69,27 @@ export default {
       drawer: false,
       items: [
         {
-          icon: 'home',
+          icon: mdiHome,
           text: 'Home',
           route: 'index',
         },
+        // {
+        //   icon: '$info',
+        //   text: 'Blog',
+        //   route: 'blog',
+        // },
         {
-          icon: 'info',
-          text: 'Blog',
-          route: 'blog',
-        },
-        {
-          icon: 'account-tie',
+          icon: mdiAccountTie,
           text: 'Resume',
           route: 'resume',
         },
         {
-          icon: 'toolbox',
+          icon: mdiFolder,
+          text: 'Portfolio',
+          route: 'portfolio',
+        },
+        {
+          icon: mdiToolbox,
           text: 'Tools',
           route: 'tools',
         },
@@ -88,13 +97,31 @@ export default {
     };
   },
   computed: {
-    // items() {
-    //   return [];
-    // },
     isDark() {
       return false;
-      // return this.$store.getters.getCurrentTheme().dark;
     },
+  },
+  mounted() {
+    const vm = this;
+    const beforePrint = function () {
+      console.log('Functionality to run before printing.');
+      vm.drawer = false;
+    };
+    const afterPrint = function () {
+      console.log('Functionality to run after printing');
+    };
+    if (window.matchMedia) {
+      const mediaQueryList = window.matchMedia('print');
+      mediaQueryList.addListener(function (mql) {
+        if (mql.matches) {
+          beforePrint();
+        } else {
+          afterPrint();
+        }
+      });
+    }
+    window.onbeforeprint = beforePrint;
+    window.onafterprint = afterPrint;
   },
   head() {
     const i18nSeo = this.$nuxtI18nSeo();
@@ -108,24 +135,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-@import '~/assets/scss/custom.scss';
-
-.brand {
-  font-family: 'Rouge Script', cursive;
-  font-size: 2rem;
-  font-weight: 400;
-  vertical-align: middle;
-}
-
-/* no pointer events */
-.pointer-events-none {
-  pointer-events: none;
-}
-
-/* navbar links no underline, can't add class to a element since it is added in js */
-.text-decoration-none a {
-  text-decoration: none !important;
-}
-</style>
