@@ -46,6 +46,8 @@
     }
   },
   "dependencies": {
+    "@analytics/google-analytics": "0.5.0",
+    "@analytics/hubspot": "0.2.0",
     "@fortawesome/fontawesome-svg-core": "1.2.30",
     "@fortawesome/free-brands-svg-icons": "5.14.0",
     "@fortawesome/free-regular-svg-icons": "5.14.0",
@@ -57,6 +59,7 @@
     "@nuxtjs/markdownit": "1.2.10",
     "@nuxtjs/pwa": "3.0.2",
     "@nuxtjs/sitemap": "2.4.0",
+    "analytics": "0.5.5",
     "cross-env": "7.0.2",
     "github-markdown-css": "4.0.0",
     "koa": "2.13.0",

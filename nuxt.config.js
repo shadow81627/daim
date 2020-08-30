@@ -1,15 +1,15 @@
 import pkg from './package';
 
-const STORYBLOK_TOKEN =
-  process.env.STORYBLOK_TOKEN || 'kycw6YWwjgilZCDf6Xb6kAtt';
-
 const env = {
   HOST: process.env.HOST,
   PORT: process.env.PORT,
   VERSION: pkg.version,
   COMMIT: process.env.npm_package_gitHead || process.env.TRAVIS_COMMIT,
   DATE_GENERATED: new Date().toISOString(),
-  STORYBLOK_TOKEN,
+  HUBSPOT_PORTAL_ID: process.env.HUBSPOT_PORTAL_ID || '7059242',
+  GOOGLE_ANALYTICS_TRACKING_ID:
+    process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'G-GX4B1VYRZN',
+  APP_NAME: process.env.APP_NAME || pkg.name,
 };
 
 export default {
@@ -71,16 +71,6 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
-      {
-        hid: 'hs-script-loader',
-        id: 'hs-script-loader',
-        async: true,
-        defer: true,
-        body: true,
-        src: 'https://js.hs-scripts.com/7059242.js',
-      },
-    ],
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
   },
 
