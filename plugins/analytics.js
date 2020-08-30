@@ -38,6 +38,8 @@ export default ({
       analytics.page();
     });
 
-    inject('analytics', analytics);
+    if (typeof analytics === 'function') {
+      inject('analytics', analytics);
+    }
   }
 };
