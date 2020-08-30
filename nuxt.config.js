@@ -96,7 +96,7 @@ export default {
     '@nuxtjs/eslint-module',
     // '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
-    '@bazzite/nuxt-optimized-images',
+    '@aceforth/nuxt-optimized-images',
   ],
 
   /*
@@ -144,9 +144,6 @@ export default {
   },
 
   optimizedImages: {
-    mozjpeg: {
-      quality: 50,
-    },
     responsive: {
       adapter: require('responsive-loader/sharp'),
       sharp: {
