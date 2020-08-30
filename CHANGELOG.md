@@ -1,5 +1,11 @@
 # Releases
 
+## [1.20.1](https://github.com/shadow81627/daim/compare/v1.20.0...v1.20.1) (2020-08-30)
+
+### Bug Fixes
+
+- **images:** update nuxt optimized images to v1.3.0 ([#570](https://github.com/shadow81627/daim/issues/570)) ([915ca7c](https://github.com/shadow81627/daim/commit/915ca7c96045b1ae1335d78e16e0b8c5f9d2be7e))
+
 ## [1.20.0](https://github.com/shadow81627/daim/compare/v1.19.6...v1.20.0) (2020-08-29)
 
 ### Features
