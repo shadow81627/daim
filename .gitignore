@@ -90,5 +90,11 @@ sw.*
 # Vim swap files
 *.swp
 
+# Firebase
+.firebase
 
+# Lighthouse
 .lighthouseci
+
+# only generated sitemap
+sitemap.xml
