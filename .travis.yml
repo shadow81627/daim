@@ -29,5 +29,13 @@ deploy:
     on:
       all_branches: true
 
+  - provider: firebase
+    skip_cleanup: true
+    project: default
+    token:
+      secure: XOiiSQN6/B3cSxiGZF3M5al8Vnb2U/THSyV0PLw+YmrcsPQA4GnEXn8xpmsDUM4vSDURD5/ztJOhF5qhPqjClYUmBLQiK9DwOX5+7ayrtxXjYHYJ2Hf3Q+RxwfpPPPSHwyVqHxtlqoNHP3ipc1+URQOMfwU0eZyAPRLcv3/uBB5utIjfZI5PaG/XCr9TXs/CdoGyZrs8rn9yq9P0P89sqHWlTlFKC2NV2/XPz3BoXd9K9/MQC5LvSri+etXrVxkA0Fa06n+RqM2YSggeDWx1RZJbhFppt1fu1ztbiktKfZDnX89hDyZmxdjzi4+sZNqNLnqKzyCFOs7HmfTig99ifvk0awlT0TZoyLT++JWRi9nNoAIuSPrEX7db12j+JZo4PbjO21KsMISB75YCd3FNGslGdAjTlFNweYHDAmTgxftk9mXc1TUWJPiuZ3BO7aOmpGXnyKQYbwQIsulM9zXe1J4D3G1OGjQfsdM8zsKIuz02u49K4JoRvKypct4+uYivSNXAfojZ12HqsWdmGPgHvgK+4alu6TorM7/1eQD+uzb4dBBIXw3xgX+x1O9N8XEa2q5HDi/m5ZZXbHOkvNFg7OBC869EEDkc6JJ/FiWlKaurWmLjaLGvzBXLAwHzI50s71odGSNxh3UKkfoBbbj3PxuRsIElwwPmPj4NQB1dJxc=
+    on:
+      branch: master
+
 after_success:
   - npm run lhci:autorun
