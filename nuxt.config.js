@@ -6,10 +6,9 @@ const env = {
   VERSION: pkg.version,
   COMMIT: process.env.npm_package_gitHead || process.env.TRAVIS_COMMIT,
   DATE_GENERATED: new Date().toISOString(),
-  HUBSPOT_PORTAL_ID: process.env.HUBSPOT_PORTAL_ID || '7059242',
-  GOOGLE_ANALYTICS_TRACKING_ID:
-    process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'G-GX4B1VYRZN',
   APP_NAME: process.env.APP_NAME || pkg.name,
+  SEGMENT_WRITE_KEY:
+    process.env.SEGMENT_WRITE_KEY || 'mqbSFxN9DE5cCnoDLaNuwYtbtHjUa0m5',
 };
 
 export default {

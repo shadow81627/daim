@@ -1,16 +1,10 @@
-import Analytics from 'analytics';
-import googleAnalytics from '@analytics/google-analytics';
-import hubSpotPlugin from '@analytics/hubspot';
+import { Analytics } from 'analytics';
+import segmentPlugin from '@analytics/segment';
 
 export default ({
   app,
   inject,
-  $config: {
-    GOOGLE_ANALYTICS_TRACKING_ID,
-    VERSION,
-    HUBSPOT_PORTAL_ID,
-    APP_NAME,
-  },
+  $config: { VERSION, APP_NAME, SEGMENT_WRITE_KEY },
 }) => {
   /*
    ** Only run on client-side and only in production mode
@@ -21,11 +15,8 @@ export default ({
       app: APP_NAME,
       version: VERSION,
       plugins: [
-        googleAnalytics({
-          trackingId: GOOGLE_ANALYTICS_TRACKING_ID,
-        }),
-        hubSpotPlugin({
-          portalId: HUBSPOT_PORTAL_ID,
+        segmentPlugin({
+          writeKey: SEGMENT_WRITE_KEY,
         }),
       ],
     });
