@@ -7,8 +7,6 @@ const env = {
   COMMIT: process.env.npm_package_gitHead || process.env.TRAVIS_COMMIT,
   DATE_GENERATED: new Date().toISOString(),
   APP_NAME: process.env.APP_NAME || pkg.name,
-  SEGMENT_WRITE_KEY:
-    process.env.SEGMENT_WRITE_KEY || 'mqbSFxN9DE5cCnoDLaNuwYtbtHjUa0m5',
 };
 
 export default {
@@ -86,7 +84,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/analytics.js', mode: 'client' }],
+  plugins: [],
 
   /*
    ** Nuxt.js dev-modules
@@ -105,8 +103,8 @@ export default {
     // 'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
+    '@nuxtjs/firebase',
     'nuxt-fontawesome',
     'nuxt-i18n',
     // 'nuxt-webfontloader',
@@ -153,14 +151,22 @@ export default {
     },
   },
 
-  purgeCSS: {
-    // your settings here
-    mode: 'postcss',
+  firebase: {
+    config: {
+      apiKey: 'AIzaSyD1wVW-hB1hSBNjokWCTaodbFay9UjamXg',
+      authDomain: 'daim-3b7c0.firebaseapp.com',
+      databaseURL: 'https://daim-3b7c0.firebaseio.com',
+      projectId: 'daim-3b7c0',
+      storageBucket: 'daim-3b7c0.appspot.com',
+      messagingSenderId: '228889932959',
+      appId: '1:228889932959:web:38a9467c367189e2fd9eaa',
+      measurementId: 'G-GX4B1VYRZN',
+    },
+    services: {
+      performance: true,
+      analytics: true,
+    },
   },
-
-  // storyblok: {
-  //   accessToken: STORYBLOK_TOKEN,
-  // },
 
   sitemap: {
     hostname: 'https://daim.dev',
