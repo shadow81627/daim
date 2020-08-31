@@ -121,7 +121,6 @@ export default {
     // 'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
     'nuxt-fontawesome',
     'nuxt-i18n',
@@ -168,15 +167,6 @@ export default {
       },
     },
   },
-
-  purgeCSS: {
-    // your settings here
-    mode: 'postcss',
-  },
-
-  // storyblok: {
-  //   accessToken: STORYBLOK_TOKEN,
-  // },
 
   sitemap: {
     hostname: 'https://daim.dev',
