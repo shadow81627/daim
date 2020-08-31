@@ -11,12 +11,7 @@ const env = {
     process.env.SEGMENT_WRITE_KEY || 'mqbSFxN9DE5cCnoDLaNuwYtbtHjUa0m5',
 };
 
-const preconnectLinks = [
-  'https://firebaseinstallations.googleapis.com',
-  'https://www.google-analytics.com',
-  'https://firebaseremoteconfig.googleapis.com',
-  'https://www.googletagmanager.com',
-];
+const preconnectLinks = [];
 
 export default {
   mode: 'universal',
