@@ -9,6 +9,13 @@ const env = {
   APP_NAME: process.env.APP_NAME || pkg.name,
 };
 
+const preconnectLinks = [
+  'https://firebaseinstallations.googleapis.com',
+  'https://www.google-analytics.com',
+  'https://firebaseremoteconfig.googleapis.com',
+  'https://www.googletagmanager.com',
+];
+
 export default {
   mode: 'universal',
   target: 'static',
@@ -67,7 +74,16 @@ export default {
         content: pkg.version,
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ...preconnectLinks.map((href) => ({
+        rel: 'preconnect',
+        href,
+        hid: `preconnect-${href}`,
+        crossorigin: 'anonymous',
+        once: true,
+      })),
+    ],
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
   },
 
