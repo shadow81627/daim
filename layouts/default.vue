@@ -51,7 +51,7 @@
       <v-spacer />
     </v-app-bar>
     <v-main role="main">
-      <nuxt style="min-height: 100vh;" keep-alive></nuxt>
+      <nuxt style="min-height: 100vh" keep-alive></nuxt>
       <the-footer></the-footer>
     </v-main>
   </v-app>

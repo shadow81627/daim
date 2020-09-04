@@ -1,5 +1,53 @@
 # Releases
 
+## [1.20.4](https://github.com/shadow81627/daim/compare/v1.20.3...v1.20.4) (2020-09-04)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.8.1 ([45b7541](https://github.com/shadow81627/daim/commit/45b75418dd95b6cba84b9c3ccdd405af09778ad3))
+
+## [1.20.3](https://github.com/shadow81627/daim/compare/v1.20.2...v1.20.3) (2020-09-01)
+
+### Bug Fixes
+
+- **deps:** update dependency @fortawesome/vue-fontawesome to v2 ([5d9d75e](https://github.com/shadow81627/daim/commit/5d9d75e5d52ac7f002df220f977954312de413bb))
+
+## [1.20.2](https://github.com/shadow81627/daim/compare/v1.20.1...v1.20.2) (2020-08-31)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.7.1 ([0e72c39](https://github.com/shadow81627/daim/commit/0e72c393b3f2b8e83153835acc3e5def6deb6913))
+
+## [1.20.1](https://github.com/shadow81627/daim/compare/v1.20.0...v1.20.1) (2020-08-30)
+
+### Bug Fixes
+
+- **images:** update nuxt optimized images to v1.3.0 ([#570](https://github.com/shadow81627/daim/issues/570)) ([915ca7c](https://github.com/shadow81627/daim/commit/915ca7c96045b1ae1335d78e16e0b8c5f9d2be7e))
+
+## [1.20.0](https://github.com/shadow81627/daim/compare/v1.19.6...v1.20.0) (2020-08-29)
+
+### Features
+
+- **portfolio:** add images ([#568](https://github.com/shadow81627/daim/issues/568)) ([e3f941c](https://github.com/shadow81627/daim/commit/e3f941c1cafb0476502f24bd78183e59683aef03))
+
+## [1.19.6](https://github.com/shadow81627/daim/compare/v1.19.5...v1.19.6) (2020-08-27)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.14.4 ([97be9b4](https://github.com/shadow81627/daim/commit/97be9b49a87f533171a632a7e2bbfbb49ac2142a))
+
+## [1.19.5](https://github.com/shadow81627/daim/compare/v1.19.4...v1.19.5) (2020-08-26)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/pwa to v3.0.2 ([5e41f5a](https://github.com/shadow81627/daim/commit/5e41f5a34d2ff4d2bafdeb1887dd6a9d3f4d0642))
+
+## [1.19.4](https://github.com/shadow81627/daim/compare/v1.19.3...v1.19.4) (2020-08-25)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.12.2 ([a4f8674](https://github.com/shadow81627/daim/commit/a4f867414e51b203392dc6e6ff851b7925b7165b))
+
 ## [1.19.3](https://github.com/shadow81627/daim/compare/v1.19.2...v1.19.3) (2020-08-25)
 
 ### Bug Fixes

@@ -116,9 +116,7 @@
 
     <v-card flat>
       <v-card-title class="text-break pb-0">
-        <h2>
-          Personal Attributes
-        </h2>
+        <h2>Personal Attributes</h2>
       </v-card-title>
       <div v-for="{ title, description, icon } in attributes" :key="title">
         <v-card-title class="pb-0">
@@ -157,9 +155,7 @@
               Grade Point Average: <strong>5.1</strong> (Scale: 1-7, with 7 the
               highest)
             </v-card-text>
-            <v-card-title class="py-0">
-              Key Courses
-            </v-card-title>
+            <v-card-title class="py-0"> Key Courses </v-card-title>
             <v-card-text class="body-1 text--primary">
               <ul>
                 <li>Dynamic Multimedia Systems</li>
@@ -224,9 +220,7 @@
 
     <v-card flat>
       <v-card-title class="text-break">
-        <h2>
-          Personal Projects
-        </h2>
+        <h2>Personal Projects</h2>
       </v-card-title>
       <v-card-text class="body-1 text--primary">
         I enjoy making my own web applications in my free time to further my

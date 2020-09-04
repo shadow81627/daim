@@ -7,23 +7,20 @@
             <v-card-subtitle class="text--primary pb-0">
               <h2
                 class="font-weight-bold text-subtitle-1"
-                style="letter-spacing: 3px;"
+                style="letter-spacing: 3px"
               >
                 500
               </h2>
             </v-card-subtitle>
             <v-card-title class="pt-0">
-              <h1
-                class="text-h5 font-weight-light"
-                style="letter-spacing: 3px;"
-              >
+              <h1 class="text-h5 font-weight-light" style="letter-spacing: 3px">
                 {{ $t('error.500.heading') }}
               </h1>
             </v-card-title>
 
             <v-card-text
               class="text--primary font-weight-light"
-              style="line-height: 140%; letter-spacing: 1px;"
+              style="line-height: 140%; letter-spacing: 1px"
               >{{ $t('error.500.description') }}</v-card-text
             >
             <v-card-text>
@@ -34,7 +31,7 @@
                 src="https://media.gettyimages.com/videos/medium-shot-baboon-pounding-on-laptop-keyboard-video-id712-54"
                 muted
                 loop
-                style="width: 100%; height: auto;"
+                style="width: 100%; height: auto"
               />
             </v-card-text>
             <v-card-text>

@@ -29,5 +29,12 @@ deploy:
     on:
       all_branches: true
 
+  - provider: firebase
+    skip_cleanup: true
+    project: default
+    edge: true # opt in to dpl v2
+    on:
+      branch: master
+
 after_success:
   - npm run lhci:autorun

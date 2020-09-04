@@ -2,9 +2,7 @@
   <v-container>
     <v-row>
       <v-col>
-        <h1>
-          Tools
-        </h1>
+        <h1>Tools</h1>
       </v-col>
     </v-row>
     <v-row>
