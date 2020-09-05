@@ -1,5 +1,11 @@
 # Releases
 
+## [1.21.0](https://github.com/shadow81627/daim/compare/v1.20.4...v1.21.0) (2020-09-05)
+
+### Features
+
+- better mailto links with mailgo ([#562](https://github.com/shadow81627/daim/issues/562)) ([5bae934](https://github.com/shadow81627/daim/commit/5bae934ce1391b6949d4f147e38221169f9d541e)), closes [#556](https://github.com/shadow81627/daim/issues/556)
+
 ## [1.20.4](https://github.com/shadow81627/daim/compare/v1.20.3...v1.20.4) (2020-09-04)
 
 ### Bug Fixes
