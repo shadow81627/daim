@@ -25,14 +25,14 @@
           <v-img
             v-if="image"
             alt=""
-            :lazy-src="lazySrc(image)"
+            :lazy-src="src(image).placeholder"
             :src="src(image).src"
-            :srcset="srcSet(image).srcSet"
+            :srcset="src(image).srcSet"
             :aspect-ratio="16 / 9"
-            contain
             :style="{
               backgroundColor: backgroundColor(image)[0],
             }"
+            sizes="(max-width: 600px) 100vw, 50vw"
             class="flex-grow-0"
           ></v-img>
           <v-card-title class="text-break">
@@ -143,28 +143,13 @@ export default {
     ],
   }),
   methods: {
-    assetsPath: require.context(
-      '~/assets/img/portfolio',
-      false,
-      /\.(png|jpe?g|svg).*$/,
-    ),
     backgroundColor: require.context(
       '~/assets/img/portfolio?lqip-colors',
       false,
       /\.(png|jpe?g|svg).*$/,
     ),
-    lazySrc: require.context(
-      `~/assets/img/portfolio?lqip`,
-      false,
-      /\.(png|jpe?g|svg).*$/,
-    ),
     src: require.context(
-      `~/assets/img/portfolio?resize&size=1785&placeholder`,
-      false,
-      /\.(png|jpe?g|svg).*$/,
-    ),
-    srcSet: require.context(
-      `~/assets/img/portfolio?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&sizes[]=4686&format=webp`,
+      `~/assets/img/portfolio?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&placeholder&format=webp`,
       false,
       /\.(png|jpe?g|svg).*$/,
     ),

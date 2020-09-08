@@ -9,7 +9,7 @@ cache: npm
 script:
   - npm run lint
   # - npm run test
-  - npm run build:export
+  - npm run generate
   - npx semantic-release
 
 deploy:

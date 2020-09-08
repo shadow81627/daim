@@ -1,15 +1,31 @@
 import pkg from './package';
 
-const STORYBLOK_TOKEN =
-  process.env.STORYBLOK_TOKEN || 'kycw6YWwjgilZCDf6Xb6kAtt';
+const BASE_URL = (
+  process.env.BASE_URL ||
+  process.env.DEPLOY_URL ||
+  process.env.URL ||
+  process.env.VERCEL_URL ||
+  `http${process.env.PORT === 433 ? 's' : ''}://${process.env.HOST}:${
+    process.env.PORT
+  }`
+).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (
+  _,
+  protocol = 'http',
+  domain,
+) {
+  return `${protocol}://${domain}`;
+});
 
 const env = {
   HOST: process.env.HOST,
   PORT: process.env.PORT,
+  BASE_URL,
   VERSION: pkg.version,
-  COMMIT: process.env.npm_package_gitHead || process.env.TRAVIS_COMMIT,
+  COMMIT:
+    process.env.npm_package_gitHead ||
+    process.env.TRAVIS_COMMIT ||
+    process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
-  STORYBLOK_TOKEN,
 };
 
 export default {
@@ -74,6 +90,18 @@ export default {
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
   },
 
+  pwa: {
+    meta: {
+      ogHost: env.BASE_URL,
+      ogImage: {
+        path: '/cover.jpg',
+        width: 1200,
+        height: 600,
+        type: 'image/jpg',
+      },
+    },
+  },
+
   /*
    ** Customize the progress-bar color
    */
@@ -106,13 +134,12 @@ export default {
     // 'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/dotenv',
+    // '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
     'nuxt-fontawesome',
     'nuxt-i18n',
     // 'nuxt-webfontloader',
     // 'nuxt-purgecss',
-    // 'storyblok-nuxt',
 
     // always declare the sitemap module at end of array
     '@nuxtjs/sitemap',
@@ -159,10 +186,6 @@ export default {
     mode: 'postcss',
   },
 
-  // storyblok: {
-  //   accessToken: STORYBLOK_TOKEN,
-  // },
-
   sitemap: {
     hostname: 'https://daim.dev',
   },
@@ -175,6 +198,14 @@ export default {
   },
 
   webfontloader: {},
+
+  dotenv: {
+    systemvars: true,
+  },
+
+  eslint: {
+    cache: true,
+  },
 
   /*
    ** Build configuration

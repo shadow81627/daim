@@ -4,9 +4,9 @@
       <v-col cols="12" align-self="center">
         <v-card :color="color" flat dark tile>
           <v-img
-            :lazy-src="lazySrc"
-            :src="src"
-            :src-set="srcSet"
+            :lazy-src="src.placeholder"
+            :src="src.src"
+            :srcset="src.srcSet"
             :height="height"
             width="1785"
             sizes="(max-width: 1785px) 100vw, 1785px"
@@ -51,16 +51,8 @@ export default {
     },
   },
   computed: {
-    lazySrc() {
-      return require(`~/assets/img/header-bg.jpg?lqip`);
-    },
     src() {
-      return require(`~/assets/img/header-bg.jpg?resize&size=1785&placeholder`)
-        .src;
-    },
-    srcSet() {
-      return require(`~/assets/img/header-bg.jpg?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&sizes[]=4686&format=webp`)
-        .srcSet;
+      return require(`~/assets/img/header-bg.jpg?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&sizes[]=4686&placeholder&format=webp`);
     },
   },
 };
