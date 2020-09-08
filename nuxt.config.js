@@ -1,13 +1,20 @@
 import pkg from './package';
 
-const BASE_URL =
+const BASE_URL = (
   process.env.BASE_URL ||
   process.env.DEPLOY_URL ||
   process.env.URL ||
   process.env.VERCEL_URL ||
   `http${process.env.PORT === 433 ? 's' : ''}://${process.env.HOST}:${
     process.env.PORT
-  }`;
+  }`
+).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (
+  _,
+  protocol = 'http',
+  domain,
+) {
+  return `${protocol}://${domain}`;
+});
 
 const env = {
   HOST: process.env.HOST,
