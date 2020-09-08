@@ -1,5 +1,11 @@
 # Releases
 
+## [1.22.0](https://github.com/shadow81627/daim/compare/v1.21.0...v1.22.0) (2020-09-08)
+
+### Features
+
+- cover image ([#586](https://github.com/shadow81627/daim/issues/586)) ([a8b5b42](https://github.com/shadow81627/daim/commit/a8b5b42a5e38591c3f94d44a7d38e05eb13ec6d6))
+
 ## [1.21.0](https://github.com/shadow81627/daim/compare/v1.20.4...v1.21.0) (2020-09-05)
 
 ### Features
