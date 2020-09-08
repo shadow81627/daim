@@ -63,7 +63,7 @@
     "mailgo": "0.9.16",
     "nuxt": "2.14.4",
     "nuxt-fontawesome": "0.4.0",
-    "nuxt-i18n": "6.13.12",
+    "nuxt-i18n": "6.14.2",
     "nuxt-webfontloader": "1.1.0"
   },
   "devDependencies": {
