@@ -127,7 +127,7 @@ export default {
     // 'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/dotenv',
+    // '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
     'nuxt-fontawesome',
     'nuxt-i18n',
@@ -191,6 +191,14 @@ export default {
   },
 
   webfontloader: {},
+
+  dotenv: {
+    systemvars: true,
+  },
+
+  eslint: {
+    cache: true,
+  },
 
   /*
    ** Build configuration
