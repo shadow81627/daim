@@ -1,5 +1,11 @@
 # Releases
 
+## [1.22.3](https://github.com/shadow81627/daim/compare/v1.22.2...v1.22.3) (2020-09-10)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.15.0 ([ef918fd](https://github.com/shadow81627/daim/commit/ef918fd05be187607aa0367720b9b152293c1ab4))
+
 ## [1.22.2](https://github.com/shadow81627/daim/compare/v1.22.1...v1.22.2) (2020-09-09)
 
 ### Bug Fixes
