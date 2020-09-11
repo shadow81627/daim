@@ -90,7 +90,7 @@
     "imagemin-pngquant": "9.0.1",
     "imagemin-svgo": "8.0.0",
     "lint-staged": "10.3.0",
-    "lqip-loader": "2.2.0",
+    "lqip-loader": "2.2.1",
     "nodemon": "2.0.4",
     "nuxt-purgecss": "1.0.0",
     "prettier": "2.1.1",
