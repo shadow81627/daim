@@ -102,7 +102,7 @@
     "require-extension-hooks-babel": "1.0.0",
     "require-extension-hooks-vue": "3.0.0",
     "responsive-loader": "2.1.1",
-    "semantic-release": "17.1.1",
+    "semantic-release": "17.1.2",
     "sharp": "0.26.0",
     "sqip-loader": "1.0.0",
     "storyblok-migrate": "0.3.4",
