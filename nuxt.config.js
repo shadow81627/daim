@@ -199,10 +199,6 @@ export default {
 
   webfontloader: {},
 
-  dotenv: {
-    systemvars: true,
-  },
-
   eslint: {
     cache: true,
   },
@@ -211,10 +207,6 @@ export default {
    ** Build configuration
    */
   build: {
-    filenames: {
-      chunk: ({ isDev }) =>
-        isDev ? '[name].js' : 'chunks/[id].[contenthash].js',
-    },
     extractCSS: true,
     /*
      ** You can extend webpack config here
