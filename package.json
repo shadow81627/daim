@@ -52,7 +52,6 @@
     "@fortawesome/vue-fontawesome": "2.0.0",
     "@nuxt/content": "1.9.0",
     "@nuxtjs/axios": "5.12.2",
-    "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/markdownit": "1.2.10",
     "@nuxtjs/pwa": "3.0.2",
     "@nuxtjs/sitemap": "2.4.0",
