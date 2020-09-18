@@ -1,5 +1,11 @@
 # Releases
 
+## [1.22.8](https://github.com/shadow81627/daim/compare/v1.22.7...v1.22.8) (2020-09-18)
+
+### Performance Improvements
+
+- replace luxon with dayjs ([#608](https://github.com/shadow81627/daim/issues/608)) ([4383be1](https://github.com/shadow81627/daim/commit/4383be1824d356ddaf236399d5c5c874d0cae9bd)), closes [#573](https://github.com/shadow81627/daim/issues/573)
+
 ## [1.22.7](https://github.com/shadow81627/daim/compare/v1.22.6...v1.22.7) (2020-09-15)
 
 ### Bug Fixes
