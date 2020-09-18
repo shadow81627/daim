@@ -37,7 +37,7 @@
                 fixed-width
               />
               <span>New Farm, Australia</span>
-              <span>© 2019 | Damien Robinson</span>
+              <span>© <time datetime="2019">2019</time> | Damien Robinson</span>
             </v-card-text>
           </v-card>
         </v-col>
