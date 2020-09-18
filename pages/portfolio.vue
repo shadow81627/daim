@@ -44,9 +44,13 @@
             {{ description }}
           </v-card-text>
           <v-card-text v-if="startDate || endDate">
-            <span v-if="startDate">{{ formatDate(startDate) }} </span>
+            <time v-if="startDate" :datetime="new Date(startDate).toISOString()"
+              >{{ formatDate(startDate) }}
+            </time>
             <span v-if="startDate && endDate">to</span>
-            <span v-if="endDate">{{ formatDate(endDate) }}</span>
+            <time v-if="endDate" :datetime="new Date(endDate).toISOString()">{{
+              formatDate(endDate)
+            }}</time>
           </v-card-text>
           <v-card-actions class="mt-auto">
             <v-spacer></v-spacer>

@@ -6,12 +6,13 @@
         <v-tooltip top>
           <span>{{ relativeDate }}</span>
           <template v-slot:activator="{ on, attrs }">
-            <span
+            <time
               v-bind="attrs"
               itemprop="dateModified"
               :content="lastModified.toISOString()"
+              :datetime="lastModified.toISOString()"
               v-on="on"
-              >{{ lastModified.format(format) }}</span
+              >{{ lastModified.format(format) }}</time
             >
           </template>
         </v-tooltip>
