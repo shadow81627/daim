@@ -44,15 +44,9 @@
             {{ description }}
           </v-card-text>
           <v-card-text v-if="startDate || endDate">
-            <span v-if="startDate"
-              >{{
-                DateTime.fromISO(startDate).toLocaleString(DateTime.DATE_MED)
-              }}
-            </span>
+            <span v-if="startDate">{{ formatDate(startDate) }} </span>
             <span v-if="startDate && endDate">to</span>
-            <span v-if="endDate">{{
-              DateTime.fromISO(endDate).toLocaleString(DateTime.DATE_MED)
-            }}</span>
+            <span v-if="endDate">{{ formatDate(endDate) }}</span>
           </v-card-text>
           <v-card-actions class="mt-auto">
             <v-spacer></v-spacer>
@@ -80,10 +74,9 @@
 
 <script>
 import { mdiWeb, mdiGithub, mdiOpenInNew } from '@mdi/js';
-import { DateTime } from 'luxon';
+import * as dayjs from 'dayjs';
 export default {
   data: () => ({
-    DateTime,
     heading: 'Portfolio',
     description: 'Explore demos and code for my projects.',
     projects: [
@@ -143,6 +136,9 @@ export default {
     ],
   }),
   methods: {
+    formatDate(date) {
+      return dayjs(date).format('MMM D, YYYY');
+    },
     backgroundColor: require.context(
       '~/assets/img/portfolio?lqip-colors',
       false,

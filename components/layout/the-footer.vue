@@ -42,7 +42,9 @@
           </v-card>
         </v-col>
         <v-spacer />
-        <last-modified v-bind="{ utc }" />
+        <v-col cols="auto">
+          <last-modified v-bind="{ utc }" />
+        </v-col>
       </v-row>
     </v-container>
   </v-footer>
