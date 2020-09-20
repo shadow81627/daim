@@ -9,7 +9,7 @@
             <div class="text-uppercase display-1">
               {{ firstname }} {{ lastname }}
             </div>
-            <div class="text-uppercase display-2">Front-end Developer</div>
+            <div class="text-uppercase display-2">{{ label }}</div>
           </h1>
         </div>
       </v-img>
@@ -421,6 +421,7 @@ export default {
         profiles,
         firstname,
         lastname,
+        label,
         email,
         location: { city, region, countryCode, postalcode: postcode },
         summary,
@@ -438,6 +439,7 @@ export default {
       firstname,
       lastname,
       email,
+      label,
       country,
       region,
       city,
