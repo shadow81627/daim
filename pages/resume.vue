@@ -1,19 +1,17 @@
 <template>
   <div>
-    <section>
-      <v-img :src="require('~/assets/img/resume-hero.png')" height="500" dark>
-        <div
-          class="row fill-height text-right pa-md-5 pa-3 mx-0 align-end justify-end"
-        >
-          <h1>
-            <div class="text-uppercase display-1">
-              {{ firstname }} {{ lastname }}
-            </div>
-            <div class="text-uppercase display-2">{{ label }}</div>
-          </h1>
-        </div>
-      </v-img>
-    </section>
+    <hero src="./resume-hero.png" gradient="">
+      <div
+        class="row fill-height text-right pa-md-5 pa-3 mx-0 align-end justify-end"
+      >
+        <h1>
+          <div class="text-uppercase display-1">
+            {{ firstname }} {{ lastname }}
+          </div>
+          <div class="text-uppercase display-2">{{ label }}</div>
+        </h1>
+      </div>
+    </hero>
 
     <v-container>
       <v-row>
@@ -408,12 +406,14 @@ import Mailgo from '@/components/mailgo.vue';
 import * as dayjs from 'dayjs';
 import countries from 'i18n-iso-countries';
 import englishCountries from 'i18n-iso-countries/langs/en.json';
+import Hero from '~/components/hero';
 
 countries.registerLocale(englishCountries);
 
 export default {
   components: {
     Mailgo,
+    Hero,
   },
   async asyncData({ $content }) {
     const {
@@ -500,6 +500,18 @@ export default {
       }
       return columns;
     },
+  },
+  head() {
+    return {
+      title: 'Resume',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.summary,
+        },
+      ],
+    };
   },
 };
 </script>

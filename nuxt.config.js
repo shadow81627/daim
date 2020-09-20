@@ -170,12 +170,20 @@ export default {
   },
 
   optimizedImages: {
+    optimizeImages: true,
+    optimizeImagesInDev: true,
     responsive: {
+      quality: 50,
       adapter: require('responsive-loader/sharp'),
+      sizes: [320, 640, 960, 1200, 1800, 2400],
+      placeholder: true,
+      placeholderSize: 20,
+      format: 'webp',
       sharp: {
         format: {
           webp: true,
         },
+        progressive: true,
       },
     },
   },
