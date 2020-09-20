@@ -58,6 +58,7 @@
     "cross-env": "7.0.2",
     "dayjs": "1.8.36",
     "github-markdown-css": "4.0.0",
+    "i18n-iso-countries": "6.0.0",
     "koa": "2.13.0",
     "mailgo": "0.9.18",
     "nuxt": "2.14.5",

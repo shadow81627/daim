@@ -15,7 +15,7 @@
         <slot></slot>
       </v-btn>
     </template>
-    <span>Reach out and contact with me now!</span>
+    <span>Reach out and contact with me now</span>
   </v-tooltip>
 </template>
 
@@ -24,7 +24,7 @@ import mailgo from 'mailgo';
 export default {
   props: {
     href: { type: String, required: true },
-    icon: { type: String, required: true },
+    icon: { type: [String, Object], required: true },
   },
   created() {
     if (process.client) {

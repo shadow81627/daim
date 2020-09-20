@@ -1,239 +1,302 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col>
-        <section>
-          <v-card id="about" flat>
-            <v-card-title>
-              <h1 class="text-break">
-                {{ firstname }}
-                <span class="text--primary">{{ lastname }}</span>
-              </h1>
-            </v-card-title>
+  <div>
+    <section>
+      <v-img :src="require('~/assets/img/resume-hero.png')" height="500" dark>
+        <div
+          class="row fill-height text-right pa-md-5 pa-3 mx-0 align-end justify-end"
+        >
+          <h1>
+            <div class="text-uppercase display-1">
+              {{ firstname }} {{ lastname }}
+            </div>
+            <div class="text-uppercase display-2">Front-end Developer</div>
+          </h1>
+        </div>
+      </v-img>
+    </section>
 
-            <v-card-subtitle class="text-subtitle-1 text-break pb-0">
-              <mailgo href="mailto:damien.robinson@daim.dev" :icon="faEnvelope">
-                <span>damien.robinson@daim.dev</span>
-              </mailgo>
+    <v-container>
+      <v-row>
+        <v-col>
+          <section>
+            <v-card id="about" flat>
+              <v-card-subtitle class="text-subtitle-1 text-break pb-0">
+                <mailgo :href="`mailto:${email}`" :icon="faEnvelope">
+                  <span>{{ email }}</span>
+                </mailgo>
 
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    target="_blank"
-                    v-bind="attrs"
-                    large
-                    text
-                    href="https://www.google.com.au/maps/search/?api=1&query=New Farm, Australia"
-                    class="pl-0"
-                    rel="noreferrer"
-                    v-on="on"
-                  >
-                    <font-awesome-icon
-                      :icon="faMapMarker"
-                      title="location"
-                      fixed-width
-                      pull="left"
-                    />
-                    <span>New Farm, Australia</span>
-                  </v-btn>
-                </template>
-                <span>Check out the map</span>
-              </v-tooltip>
-            </v-card-subtitle>
+                <v-tooltip bottom eager>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn
+                      target="_blank"
+                      v-bind="attrs"
+                      large
+                      text
+                      :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
+                        `${city || ''} ${region || ''} ${postcode || ''} ${
+                          country || ''
+                        }`,
+                      )}`"
+                      class="pl-0"
+                      rel="noreferrer"
+                      v-on="on"
+                    >
+                      <font-awesome-icon
+                        :icon="faMapMarker"
+                        title="location"
+                        fixed-width
+                        pull="left"
+                      />
+                      <span>{{ city || region }}</span>
+                      <span>{{ country ? ',' : '' }}&nbsp;</span>
+                      <span>{{ country }}</span>
+                    </v-btn>
+                  </template>
+                  <span>Check out the map</span>
+                </v-tooltip>
 
-            <v-card-text class="body-1 text--primary">
-              I am a full-stack web developer with 3 years experience, seeking
-              full time employment and a chance to further my skills in front
-              end web development for marketing websites. I have well-rounded
-              full-stack development experience, with a proficiency in Vue.js
-              static marketing websites.
-            </v-card-text>
+                <!-- add hidden content to set height to prevent page jank -->
+                <v-btn style="visibility: hidden" aria-hidden="true" large text>
+                  <font-awesome-icon :icon="faMapMarker" fixed-width />
+                  &nbsp;
+                </v-btn>
+              </v-card-subtitle>
 
-            <v-card-actions class="social-icons">
-              <v-tooltip
-                v-for="{ icon, text, url } in socials"
-                :key="text"
-                bottom
-              >
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    target="_blank"
-                    v-bind="attrs"
-                    x-large
-                    icon
-                    class="pl-0"
-                    :href="url"
-                    rel="noopener"
-                    v-on="on"
-                  >
-                    <font-awesome-icon
-                      :icon="icon"
-                      :title="text"
-                      size="2x"
-                      fixed-width
-                    />
-                    <span class="d-sr-only-focusable">{{ text }}</span>
-                  </v-btn>
-                </template>
-                <span>{{ text }}</span>
-              </v-tooltip>
-            </v-card-actions>
-          </v-card>
-        </section>
-      </v-col>
-    </v-row>
+              <v-card-text class="body-1 text--primary">
+                {{ summary }}
+              </v-card-text>
 
-    <v-divider />
-
-    <v-row>
-      <v-col>
-        <section>
-          <v-card id="skills" flat>
-            <v-card-title class="pb-0 text-break">
-              <h2>Professional Skills</h2>
-            </v-card-title>
-
-            <v-container>
-              <v-row class="list-inline dev-icons" no-gutters>
-                <v-col
-                  v-for="(column, index) in columns(skills)"
-                  :key="index"
-                  class="px-0"
+              <v-card-actions class="social-icons">
+                <v-tooltip
+                  v-for="{ icon, network, url } in profiles"
+                  :key="network"
+                  bottom
                 >
-                  <div v-for="{ icon, text } in column" :key="text">
-                    <font-awesome-icon :icon="icon" fixed-width />
-                    <span>{{ text }}</span>
-                  </div>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
-        </section>
-      </v-col>
-    </v-row>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn
+                      target="_blank"
+                      v-bind="attrs"
+                      x-large
+                      icon
+                      class="pl-0"
+                      :href="url"
+                      rel="noopener"
+                      v-on="on"
+                    >
+                      <font-awesome-icon
+                        :icon="icons[icon]"
+                        :title="network"
+                        size="2x"
+                        fixed-width
+                      />
+                      <span class="d-sr-only-focusable">{{ network }}</span>
+                    </v-btn>
+                  </template>
+                  <span>{{ network }}</span>
+                </v-tooltip>
 
-    <v-divider></v-divider>
+                <!-- add hidden content to set height to prevent page jank -->
+                <v-btn
+                  style="visibility: hidden"
+                  aria-hidden="true"
+                  x-large
+                  icon
+                >
+                  <font-awesome-icon
+                    :icon="faMapMarker"
+                    size="2x"
+                    fixed-width
+                  />
+                  &nbsp;
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </section>
+        </v-col>
+      </v-row>
 
-    <v-card flat>
-      <v-card-title class="text-break pb-0">
-        <h2>Personal Attributes</h2>
-      </v-card-title>
-      <div v-for="{ title, description, icon } in attributes" :key="title">
-        <v-card-title class="pb-0">
-          <h3>
-            <font-awesome-icon :icon="icon" fixed-width></font-awesome-icon>
-            {{ title }}
-          </h3>
+      <v-divider />
+
+      <v-row>
+        <v-col>
+          <section>
+            <v-card id="skills" flat>
+              <v-card-title class="pb-0 text-break">
+                <h2>Professional Skills</h2>
+              </v-card-title>
+
+              <v-container>
+                <v-row class="list-inline dev-icons" no-gutters>
+                  <v-col
+                    v-for="(column, index) in columns(skills)"
+                    :key="index"
+                    class="px-0"
+                  >
+                    <div v-for="{ icon, text } in column" :key="text">
+                      <font-awesome-icon :icon="icons[icon]" fixed-width />
+                      <span>{{ text }}</span>
+                    </div>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </v-card>
+          </section>
+        </v-col>
+      </v-row>
+
+      <v-divider></v-divider>
+
+      <v-card flat>
+        <v-card-title class="text-break pb-0">
+          <h2>Personal Attributes</h2>
         </v-card-title>
-        <v-card-text class="body-1">
-          {{ description }}
-        </v-card-text>
-      </div>
-    </v-card>
+        <div v-for="{ title, description, icon } in attributes" :key="title">
+          <v-card-title class="pb-0">
+            <h3>
+              <font-awesome-icon
+                :icon="icons[icon]"
+                fixed-width
+              ></font-awesome-icon>
+              {{ title }}
+            </h3>
+          </v-card-title>
+          <v-card-text class="body-1">
+            {{ description }}
+          </v-card-text>
+        </div>
+      </v-card>
 
-    <v-divider></v-divider>
+      <v-divider></v-divider>
 
-    <v-row>
-      <v-col>
-        <section>
-          <v-card id="education" flat>
-            <v-card-title class="py-0 text-break">
-              <h2>Education</h2>
-            </v-card-title>
-            <v-card-title>
-              <h3 class="mb-0 text-break">Griffith University</h3>
-            </v-card-title>
-            <v-card-subtitle
-              class="d-flex flex-column flex-md-row justify-space-between font-weight-medium body-1"
-            >
-              Bachelor of Applied Information Technology
-              <span class="resume-date text-md-right">
-                <span class="text-primary">March, 2015 - November, 2017</span>
-              </span>
-            </v-card-subtitle>
-            <v-card-text class="body-1 text--primary">
-              Grade Point Average: <strong>5.1</strong> (Scale: 1-7, with 7 the
-              highest)
-            </v-card-text>
-            <v-card-title class="py-0"> Key Courses </v-card-title>
-            <v-card-text class="body-1 text--primary">
-              <ul>
-                <li>Dynamic Multimedia Systems</li>
-                <li>Database Systems Administration</li>
-                <li>Programming Mobile Applications</li>
-                <li>Network Security</li>
-              </ul>
-            </v-card-text>
-          </v-card>
-        </section>
-      </v-col>
-    </v-row>
-
-    <v-divider></v-divider>
-
-    <v-row>
-      <v-col>
-        <section>
-          <v-card id="experience" flat>
-            <v-card-title class="py-0 text-break">
-              <h2>Experience</h2>
-            </v-card-title>
-
-            <div
-              v-for="{
-                title,
-                company,
-                startDate,
-                endDate,
-                description,
-                tools,
-              } in roles"
-              :key="(title, company, startDate, endDate)"
-              class="resume-item d-flex flex-column flex-md-row justify-space-between"
-            >
-              <div class="resume-content">
+      <v-row>
+        <v-col>
+          <section>
+            <v-card id="education" flat>
+              <v-card-title class="py-0 text-break">
+                <h2>Education</h2>
+              </v-card-title>
+              <div
+                v-for="{
+                  institution,
+                  area,
+                  studyType,
+                  startDate,
+                  endDate,
+                  gpa,
+                  courses,
+                } in education"
+                :key="(institution, area, studyType)"
+              >
                 <v-card-title>
-                  <h3 class="mb-0 text-break">{{ title }}</h3>
+                  <h3 class="mb-0 text-break">{{ institution }}</h3>
                 </v-card-title>
                 <v-card-subtitle
                   class="d-flex flex-column flex-md-row justify-space-between font-weight-medium body-1"
                 >
-                  {{ company }}
+                  <span>{{ studyType }} of {{ area }}</span>
                   <span class="resume-date text-md-right">
-                    <span class="text-primary"
-                      >{{ startDate }} - {{ endDate }}</span
+                    <time
+                      class="text-primary"
+                      :datetime="formatDate(startDate)"
+                      >{{ formatDate(startDate) }}</time
+                    >
+                    -
+                    <time
+                      class="text-primary"
+                      :datetime="formatDate(endDate)"
+                      >{{ formatDate(endDate) }}</time
                     >
                   </span>
                 </v-card-subtitle>
-                <v-card-text class="body-1">
-                  <p>{{ description }}</p>
-                  Tools used: {{ tools }}
+                <v-card-text class="body-1 text--primary">
+                  Grade Point Average: <strong>{{ gpa }}</strong>
+                </v-card-text>
+                <v-card-title class="py-0">Key Courses</v-card-title>
+                <v-card-text class="body-1 text--primary">
+                  <ul>
+                    <li v-for="course in courses" :key="course">
+                      {{ course }}
+                    </li>
+                  </ul>
                 </v-card-text>
               </div>
-            </div>
-          </v-card>
-        </section>
-      </v-col>
-    </v-row>
+            </v-card>
+          </section>
+        </v-col>
+      </v-row>
 
-    <v-divider></v-divider>
+      <v-divider></v-divider>
 
-    <v-card flat>
-      <v-card-title class="text-break">
-        <h2>Personal Projects</h2>
-      </v-card-title>
-      <v-card-text class="body-1 text--primary">
-        I enjoy making my own web applications in my free time to further my
-        skills. I have built several websites, including my personal portfolio
-        daim.dev, using a wide variety of tools to achieve this. These tools
-        include: Nuxt.js, Vue.js, Storyblok CMS, Travis CI, Bootstrap CSS,
-        Vuetify CSS, Semantic Release automation, Sentry error tracking,
-        Firebase, Lighthouse CI, Renovate automated dependency management. I am
-        happy to provide more information on these projects on request.
-      </v-card-text>
-    </v-card>
+      <v-row>
+        <v-col>
+          <section>
+            <v-card id="experience" flat>
+              <v-card-title class="py-0 text-break">
+                <h2>Experience</h2>
+              </v-card-title>
 
-    <!-- <v-card
+              <div
+                v-for="{
+                  position,
+                  company,
+                  startDate,
+                  endDate,
+                  summary,
+                  tools,
+                } in work"
+                :key="(position, company, startDate, endDate)"
+                class="resume-item d-flex flex-column flex-md-row justify-space-between"
+              >
+                <div class="resume-content">
+                  <v-card-title>
+                    <h3 class="mb-0 text-break">{{ position }}</h3>
+                  </v-card-title>
+                  <v-card-subtitle
+                    class="d-flex flex-column flex-md-row justify-space-between font-weight-medium body-1"
+                  >
+                    {{ company }}
+                    <span class="resume-date text-md-right">
+                      <time
+                        class="text-primary"
+                        :datetime="formatDate(startDate)"
+                        >{{ formatDate(startDate) }}</time
+                      >
+                      <span>-</span>
+                      <time v-if="endDate" :datetime="formatDate(endDate)">{{
+                        formatDate(endDate)
+                      }}</time>
+                      <span v-else>Present</span>
+                    </span>
+                  </v-card-subtitle>
+                  <v-card-text class="body-1">
+                    <p>{{ summary }}</p>
+                    Tools used: {{ tools }}
+                  </v-card-text>
+                </div>
+              </div>
+            </v-card>
+          </section>
+        </v-col>
+      </v-row>
+
+      <v-divider></v-divider>
+
+      <v-card flat>
+        <v-card-title class="text-break">
+          <h2>Personal Projects</h2>
+        </v-card-title>
+        <v-card-text class="body-1 text--primary">
+          I enjoy making my own web applications in my free time to further my
+          skills. I have built several websites, including my
+          <nuxt-link to="/portfolio">personal portfolio</nuxt-link>, using a
+          wide variety of tools to achieve this. These tools include: Nuxt.js,
+          Vue.js, Storyblok CMS, Travis CI, Bootstrap CSS, Vuetify CSS, Semantic
+          Release automation, Sentry error tracking, Firebase, Lighthouse CI,
+          Renovate automated dependency management.
+        </v-card-text>
+      </v-card>
+
+      <!-- <v-card
       id="interests"
       class="resume-section p-3 p-lg-5 d-flex align-items-center"
       flat
@@ -258,7 +321,7 @@
       </div>
     </v-card> -->
 
-    <!-- <hr class="m-0" />
+      <!-- <hr class="m-0" />
 
       <section
         id="awards"
@@ -301,7 +364,8 @@
           </ul>
         </div>
       </section> -->
-  </v-container>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -341,191 +405,89 @@ import {
   faJenkins,
 } from '@fortawesome/free-brands-svg-icons';
 import Mailgo from '@/components/mailgo.vue';
+import * as dayjs from 'dayjs';
+import countries from 'i18n-iso-countries';
+import englishCountries from 'i18n-iso-countries/langs/en.json';
+
+countries.registerLocale(englishCountries);
 
 export default {
   components: {
     Mailgo,
   },
+  async asyncData({ $content }) {
+    const {
+      basics: {
+        profiles,
+        firstname,
+        lastname,
+        email,
+        location: { city, region, countryCode, postalcode: postcode },
+        summary,
+      },
+      work,
+      education,
+      skills,
+      attributes,
+    } = await $content('resume').fetch();
+
+    const locale = 'en';
+    const country = countries.getName(countryCode, locale);
+    return {
+      profiles,
+      firstname,
+      lastname,
+      email,
+      country,
+      region,
+      city,
+      postcode,
+      summary,
+      work,
+      education,
+      skills,
+      attributes,
+    };
+  },
   data: () => ({
+    icons: {
+      faGithub,
+      faLinkedin,
+      faTwitter,
+      faYoutube,
+      faFacebook,
+      faLaravel,
+      faHtml5,
+      faBootstrap,
+      faJsSquare,
+      faVuejs,
+      faAngular,
+      faDocker,
+      faJira,
+      faNodeJs,
+      faNpm,
+      faPython,
+      faGitAlt,
+      faSass,
+      faJenkins,
+      faDatabase,
+      faSearch,
+      faMobileAlt,
+      faBug,
+      faUsers,
+      faSync,
+      faClock,
+      faPuzzlePiece,
+      faTasks,
+      faPaperPlane,
+    },
     faEnvelope,
     faMapMarker,
-    firstname: 'Damien',
-    lastname: 'Robinson',
-    socials: [
-      {
-        icon: faGithub,
-        url: 'https://github.com/shadow81627',
-        text: 'Github',
-      },
-      {
-        icon: faLinkedin,
-        url: 'https://www.linkedin.com/in/damien-robinson-788925101',
-        text: 'LinkedIn',
-      },
-      {
-        icon: faTwitter,
-        url: 'https://twitter.com/Shadow81627',
-        text: 'Twitter',
-      },
-      {
-        icon: faYoutube,
-        url: 'https://www.youtube.com/user/shadow81627',
-        text: 'Youtube',
-      },
-      {
-        icon: faFacebook,
-        url: 'https://www.facebook.com/damien.robinson.5036',
-        text: 'Facebook',
-      },
-    ],
-    skills: [
-      {
-        icon: faLaravel,
-        text: 'PHP APIs (Laravel)',
-      },
-      {
-        icon: faHtml5,
-        text: 'Semantic HTML',
-      },
-      {
-        icon: faBootstrap,
-        text: 'Bootstrap CSS',
-      },
-      {
-        icon: faJsSquare,
-        text: 'JavaScript',
-      },
-      {
-        icon: faVuejs,
-        text: 'Vue',
-      },
-      {
-        icon: faAngular,
-        text: 'Angular',
-      },
-      {
-        icon: faDatabase,
-        text: 'Structured Query Language (MySQL)',
-      },
-      {
-        icon: faDocker,
-        text: 'Docker',
-      },
-      {
-        icon: faSearch,
-        text: 'Search Engine Optimisation (SEO)',
-      },
-      {
-        icon: faJira,
-        text: 'JIRA',
-      },
-      {
-        icon: faNodeJs,
-        text: 'Node',
-      },
-      {
-        icon: faNpm,
-        text: 'Node Package Manager',
-      },
-      {
-        icon: faPython,
-        text: 'Python (Flask)',
-      },
-      {
-        icon: faGitAlt,
-        text: 'Git (Bitbucket & Github)',
-      },
-      {
-        icon: faSass,
-        text: 'Sass',
-      },
-      {
-        icon: faJenkins,
-        text: 'Continuous Integration (Jenkins & Travis)',
-      },
-      {
-        icon: faMobileAlt,
-        text: 'Mobile-First, Responsive Design',
-      },
-      {
-        icon: faBug,
-        text: 'Cross Browser Testing & Debugging',
-      },
-      {
-        icon: faUsers,
-        text: 'Cross Functional Teams',
-      },
-      {
-        icon: faSync,
-        text: 'Agile Development & Scrum',
-      },
-    ],
-    roles: [
-      {
-        title: 'Frontend Developer',
-        company: 'Otherlevels',
-        location: 'Brisbane, Queensland, Australia',
-        startDate: 'January 2020',
-        endDate: 'Present',
-        tools: 'HTML, CSS, Angular',
-        description:
-          'In my secondment with XCOM Media’s parent company Otherlevels I have gained experience in migrating and modernising Angular.js web apps. I have also worked on productising the services XCOM Media provide as integrations to the Otherlevels marketing automation platform. This role has allowed me to diversify my skills in working on large scale enterprise applications. Since June 2020 I have also been the acting Lead Front End Developer at Otherlevels, furthering my skills in project management and product development.',
-      },
-      {
-        title: 'Web Developer',
-        company: 'XCOM Media',
-        location: 'New Farm, Queensland, Australia',
-        startDate: 'March, 2018',
-        endDate: 'Present',
-        tools: 'HTML, CSS, Vue.js, PHP, SQL',
-        description:
-          'My work at XCOM Media allows me to develop skills with building secure, performant, reliable, highly available contact management solutions for global markets. During my time in this role I have worked on projects such as Tourism and Events Queensland’s scUber campaign, developing an award winning micro site for collecting competition entries. I have also maintained and modernised legacy PHP email subscription forms. In this role I have furthered my skills in implementing marketing strategies, client and professional liaising, and working in a fast-paced team environment.',
-      },
-      {
-        title: 'Web Designer',
-        company: 'Griffith University',
-        location: 'Nathan, Queensland, Australia',
-        startDate: 'July, 2017',
-        endDate: 'December, 2017',
-        tools: 'HTML, CSS, jQuery, Photoshop, Squiz Matrix, SVN, PHP, SQL',
-        description:
-          'My work in the Marketing Technology team at Griffith University included upgrading the Web Services Database to reduce data anomalies. During the project I completed day to day tasks such as changing banners on the homepage and updating body copy on web pages using Squiz Matrix Content Management System. During the upgrade of the Web Services Database I liaised with clients to design the system to meet the requirements of automating tasks carried out by the Marketing Technology team.',
-      },
-    ],
-    attributes: [
-      {
-        icon: faClock,
-        title: 'Time Management',
-        description:
-          'I stay on top of tasks given to me and I never go past client deadlines. I use project management tools such as JIRA to triage issues and forecast effort estimates for projects using story points.',
-      },
-      {
-        icon: faPuzzlePiece,
-        title: 'Problem Solving',
-        description:
-          'I work through complex problems on my own, but I’m not afraid to ask for help in areas I’m not familiar with. I enjoy using creative thinking to present effective solutions through the use of rapid prototyping at hackathons/startup weekends.',
-      },
-      {
-        icon: faUsers,
-        title: 'Team Player',
-        description:
-          'I work well in a team and can fill both leader and supporting positions with confidence. I enjoy working in a collaborative team structure but I have worked independently on projects as well.',
-      },
-      {
-        icon: faTasks,
-        title: 'Quality Management',
-        description:
-          'I practice test driven development by creating automated unit tests using Jest, to ensure that all functions of a system operate as expected.',
-      },
-      {
-        icon: faPaperPlane,
-        title: 'Written Communication',
-        description:
-          'I take pride in producing clear and concise reports, programs and documentation for all code as demonstrated by liaising with clients and project teams.',
-      },
-    ],
   }),
   methods: {
+    formatDate(date) {
+      return dayjs(date).format('MMMM YYYY');
+    },
     columns(items, cols = 2) {
       const columns = [];
       if (items && Array.isArray(items) && items.length) {

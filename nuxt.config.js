@@ -131,10 +131,9 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // 'bootstrap-vue/nuxt',
+    '@nuxt/content',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    // '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
     'nuxt-fontawesome',
     'nuxt-i18n',
