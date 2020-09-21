@@ -1,5 +1,11 @@
 # Releases
 
+## [1.24.1](https://github.com/shadow81627/daim/compare/v1.24.0...v1.24.1) (2020-09-21)
+
+### Bug Fixes
+
+- **resume:** professional skills full width on mobile ([#619](https://github.com/shadow81627/daim/issues/619)) ([761ad04](https://github.com/shadow81627/daim/commit/761ad04b56c7232b84ed07d01a7fcfd0e825386b))
+
 ## [1.24.0](https://github.com/shadow81627/daim/compare/v1.23.0...v1.24.0) (2020-09-21)
 
 ### Features
