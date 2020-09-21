@@ -1,5 +1,11 @@
 # Releases
 
+## [1.24.0](https://github.com/shadow81627/daim/compare/v1.23.0...v1.24.0) (2020-09-21)
+
+### Features
+
+- analytics ([#116](https://github.com/shadow81627/daim/issues/116)) ([e8c52a0](https://github.com/shadow81627/daim/commit/e8c52a075b959b36d63ce10421e6f1a365f592b1))
+
 ## [1.23.0](https://github.com/shadow81627/daim/compare/v1.22.8...v1.23.0) (2020-09-21)
 
 ### Features
