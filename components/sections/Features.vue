@@ -1,10 +1,10 @@
 <template>
-  <base-section id="features">
-    <base-section-heading :title="title">
+  <BaseSection id="features">
+    <BaseSectionHeading :title="title">
       <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in!
       Asperiores, impedit libero. Veniam rerum saepe unde nihil possimus
       quibusdam esse accusamus mollitia magni fuga. -->
-    </base-section-heading>
+    </BaseSectionHeading>
 
     <v-container>
       <v-row>
@@ -14,13 +14,13 @@
           cols="12"
           :md="features.length % 2 === 0 ? 6 : 4"
         >
-          <base-avatar-card v-bind="feature" align="left" horizontal>
+          <BaseAvatarCard v-bind="feature" align="left" horizontal>
             {{ feature.subtitle }}
-          </base-avatar-card>
+          </BaseAvatarCard>
         </v-col>
       </v-row>
     </v-container>
-  </base-section>
+  </BaseSection>
 </template>
 
 <script>
@@ -35,16 +35,7 @@ import {
   faClipboardList,
   faFileArchive,
 } from '@fortawesome/free-solid-svg-icons';
-import BaseSection from '~/components/base/Section.vue';
-import BaseSectionHeading from '~/components/base/SectionHeading.vue';
-import BaseAvatarCard from '~/components/base/AvatarCard.vue';
 export default {
-  components: {
-    BaseSection,
-    BaseSectionHeading,
-    BaseAvatarCard,
-  },
-
   data: () => ({
     title: 'Features',
     features: [

@@ -60,7 +60,7 @@ export default {
     },
     tag: {
       type: String,
-      default: 'h1',
+      default: 'h2',
     },
     title: { type: String, default: null },
     weight: {

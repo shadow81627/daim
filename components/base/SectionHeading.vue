@@ -1,6 +1,6 @@
 <template>
   <div :class="classes" class="base-section-heading">
-    <base-avatar
+    <BaseAvatar
       v-if="icon"
       :icon="icon"
       :outlined="outlined"
@@ -9,9 +9,9 @@
       dark
     />
 
-    <base-subtitle v-if="subtitle" :title="subtitle" space="1" tag="h2" />
+    <BaseSubtitle v-if="subtitle" :title="subtitle" space="1" tag="h3" />
 
-    <base-subheading
+    <BaseSubheading
       v-if="title"
       :align="align"
       :title="title"
@@ -19,15 +19,15 @@
       space="2"
     />
 
-    <base-divider :color="color" />
+    <BaseDivider :color="color" />
 
-    <base-body v-if="$slots.default || text" class="mx-auto" max-width="700">
+    <BaseBody v-if="$slots.default || text" class="mx-auto" max-width="700">
       <slot v-if="$slots.default" />
 
       <template v-else>
         {{ text }}
       </template>
-    </base-body>
+    </BaseBody>
   </div>
 </template>
 
@@ -35,15 +35,8 @@
 // Mixins
 import Heading from '@/mixins/heading';
 
-import BaseAvatar from '~/components/base/Avatar';
-import BaseSubheading from '~/components/base/Subheading';
-import BaseBody from '~/components/base/Body';
-import BaseDivider from '~/components/base/Divider';
-
 export default {
   name: 'BaseSectionHeading',
-
-  components: { BaseBody, BaseDivider, BaseAvatar, BaseSubheading },
 
   mixins: [Heading],
 
