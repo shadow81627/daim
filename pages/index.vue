@@ -1,41 +1,9 @@
 <template>
-  <section class="util__container">
+  <div>
     <hero heading="Damien Robinson" subheading="Web Development"></hero>
-    <h2 class="text-center">Features</h2>
-    <v-container>
-      <v-row>
-        <v-col
-          v-for="{ icon, title, subtitle, list, text } in features"
-          :key="title"
-          sm="6"
-          md="4"
-          class="d-flex flex-column"
-        >
-          <v-card class="flex d-flex flex-column" min-width="240">
-            <v-card-title>
-              <span class="h3 text-break text-no-wrap text-truncate">
-                <font-awesome-icon :icon="icon" class="grey--text" />
-                {{ title }}
-              </span>
-            </v-card-title>
-            <v-card-subtitle class="text--primary body-1"
-              >{{ subtitle }} &nbsp;</v-card-subtitle
-            >
-            <div class="flex-grow-1">
-              <v-card-text v-if="text" class="text--primary body-1 pt-0">
-                {{ text }}
-              </v-card-text>
-              <v-card-text v-if="list" class="text--primary body-1 pt-0">
-                <ul>
-                  <li v-for="item in list" :key="item">{{ item }}</li>
-                </ul>
-              </v-card-text>
-            </div>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
-  </section>
+    <Features></Features>
+    <Services></Services>
+  </div>
 </template>
 
 <script>
@@ -51,9 +19,11 @@ import {
   faFileArchive,
 } from '@fortawesome/free-solid-svg-icons';
 import Hero from '~/components/hero';
+import Features from '~/components/sections/Features.vue';
+import Services from '~/components/sections/Services.vue';
 
 export default {
-  components: { Hero },
+  components: { Hero, Features, Services },
   data() {
     return {
       features: [
