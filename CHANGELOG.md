@@ -1,5 +1,11 @@
 # Releases
 
+## [1.23.0](https://github.com/shadow81627/daim/compare/v1.22.8...v1.23.0) (2020-09-21)
+
+### Features
+
+- **home:** services ([#617](https://github.com/shadow81627/daim/issues/617)) ([88e7df0](https://github.com/shadow81627/daim/commit/88e7df07e2b556427c4b5b094983c99cb304c49b)), closes [#604](https://github.com/shadow81627/daim/issues/604)
+
 ## [1.22.8](https://github.com/shadow81627/daim/compare/v1.22.7...v1.22.8) (2020-09-18)
 
 ### Performance Improvements
