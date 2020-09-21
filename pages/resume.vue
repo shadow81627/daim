@@ -129,6 +129,8 @@
                     v-for="(column, index) in columns(skills)"
                     :key="index"
                     class="px-0"
+                    cols="12"
+                    sm="6"
                   >
                     <div v-for="{ icon, text } in column" :key="text">
                       <font-awesome-icon :icon="icons[icon]" fixed-width />
