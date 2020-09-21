@@ -27,8 +27,6 @@ const env = {
     process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
   APP_NAME: process.env.APP_NAME || pkg.name,
-  SEGMENT_WRITE_KEY:
-    process.env.SEGMENT_WRITE_KEY || 'mqbSFxN9DE5cCnoDLaNuwYtbtHjUa0m5',
 };
 
 const preconnectLinks = [];
@@ -40,7 +38,7 @@ export default {
   publicRuntimeConfig: {
     ...env,
     googleAnalytics: {
-      id: process.env.GOOGLE_ANALYTICS_ID,
+      id: process.env.GOOGLE_ANALYTICS_ID || 'UA-176793964-1',
     },
   },
 
@@ -156,7 +154,6 @@ export default {
     'nuxt-fontawesome',
     'nuxt-i18n',
     // 'nuxt-webfontloader',
-    // 'nuxt-purgecss',
 
     // always declare the sitemap module at end of array
     '@nuxtjs/sitemap',
@@ -223,10 +220,6 @@ export default {
 
   eslint: {
     cache: true,
-  },
-
-  googleAnalytics: {
-    id: 'UA-176793964-1', // Used as fallback if no runtime config is provided
   },
 
   /*
