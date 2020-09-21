@@ -1,23 +1,21 @@
 <template>
   <div>
     <breadcrumb></breadcrumb>
-    <section class="util__container">
+    <!-- <section class="util__container">
       <div v-editable="story.content" class="blog">
         <h1>{{ story.content.name }}</h1>
         <richtext class="blog__body" :text="story.content.body"></richtext>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
 <script>
 import Breadcrumb from '@/components/layout/breadcrumb';
-import Richtext from '@/components/richtext.vue';
 // import storyblokLivePreview from '@/mixins/storyblokLivePreview';
 
 export default {
   components: {
-    Richtext,
     Breadcrumb,
   },
   // mixins: [storyblokLivePreview],

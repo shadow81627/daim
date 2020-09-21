@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: shadow81627/daim
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    format: 'json'
+    folder: 'content/blog'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      # - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
