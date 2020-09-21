@@ -39,6 +39,9 @@ export default {
 
   publicRuntimeConfig: {
     ...env,
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID,
+    },
   },
 
   generate: {
@@ -129,7 +132,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/analytics.js', mode: 'client' }],
+  plugins: [],
 
   /*
    ** Nuxt.js dev-modules
@@ -139,6 +142,7 @@ export default {
     // '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
     '@aceforth/nuxt-optimized-images',
+    '@nuxtjs/google-analytics',
   ],
 
   /*
@@ -219,6 +223,10 @@ export default {
 
   eslint: {
     cache: true,
+  },
+
+  googleAnalytics: {
+    id: 'UA-176793964-1', // Used as fallback if no runtime config is provided
   },
 
   /*
