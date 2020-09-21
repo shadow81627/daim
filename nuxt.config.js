@@ -26,7 +26,10 @@ const env = {
     process.env.TRAVIS_COMMIT ||
     process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
+  APP_NAME: process.env.APP_NAME || pkg.name,
 };
+
+const preconnectLinks = [];
 
 export default {
   mode: 'universal',
@@ -34,6 +37,9 @@ export default {
 
   publicRuntimeConfig: {
     ...env,
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID || 'UA-176793964-1',
+    },
   },
 
   generate: {
@@ -86,7 +92,16 @@ export default {
         content: pkg.version,
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ...preconnectLinks.map((href) => ({
+        rel: 'preconnect',
+        href,
+        hid: `preconnect-${href}`,
+        crossorigin: 'anonymous',
+        once: true,
+      })),
+    ],
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
   },
 
@@ -125,6 +140,7 @@ export default {
     // '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
     '@aceforth/nuxt-optimized-images',
+    '@nuxtjs/google-analytics',
   ],
 
   /*
@@ -138,7 +154,6 @@ export default {
     'nuxt-fontawesome',
     'nuxt-i18n',
     // 'nuxt-webfontloader',
-    // 'nuxt-purgecss',
 
     // always declare the sitemap module at end of array
     '@nuxtjs/sitemap',
@@ -188,11 +203,6 @@ export default {
         progressive: true,
       },
     },
-  },
-
-  purgeCSS: {
-    // your settings here
-    mode: 'postcss',
   },
 
   sitemap: {
