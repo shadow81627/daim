@@ -31,7 +31,7 @@
     "images": "node images.js",
     "test": "ava",
     "test:unit": "cross-env TEST=unit ava --config unit.config.js",
-    "test:e2e": "cross-env TEST=e2e ava --config e2e.config.js"
+    "test:e2e": "codeceptjs run --steps"
   },
   "engines": {
     "node": "12.x"
@@ -81,6 +81,8 @@
     "babel-eslint": "10.1.0",
     "babel-plugin-module-resolver": "4.0.0",
     "browser-env": "3.3.0",
+    "codeceptjs": "2.6.10",
+    "codeceptjs-resemblehelper": "1.9.2",
     "eslint": "7.9.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-nuxt": "1.0.0",
@@ -94,6 +96,7 @@
     "nodemon": "2.0.4",
     "nuxt-purgecss": "1.0.0",
     "prettier": "2.1.2",
+    "puppeteer": "5.3.0",
     "remark-cli": "8.0.1",
     "remark-lint": "7.0.1",
     "remark-preset-lint-consistent": "3.0.1",
