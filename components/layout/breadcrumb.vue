@@ -1,8 +1,11 @@
 <template>
-  <v-breadcrumbs :items="breadcrumbs"></v-breadcrumbs>
+  <v-toolbar flat height="65">
+    <v-breadcrumbs :items="breadcrumbs"></v-breadcrumbs>
+  </v-toolbar>
 </template>
 
 <script>
+import { startCase } from 'lodash-es';
 export default {
   computed: {
     breadcrumbs() {
@@ -10,8 +13,7 @@ export default {
       const breadcrumbs = [{ text: 'Home', to: '/' }];
 
       segments.forEach((segment, index) => {
-        const text =
-          segment.charAt(0).toUpperCase() + segment.substr(1).toLowerCase();
+        const text = startCase(segment);
         const to = '/' + segments.slice(0, index + 1).join('/');
         breadcrumbs.push({ text, to, exact: true });
       });

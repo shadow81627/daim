@@ -1,35 +1,36 @@
 <template>
   <div>
-    <Breadcrumb></Breadcrumb>
-    <!-- <section class="util__container">
+    <hero src="./blog.jpg" gradient="">
       <div
-        v-for="blogPost in data.stories"
-        :key="blogPost.content._uid"
-        class="blog__overview"
+        class="row fill-height text-left pa-md-5 pa-3 mx-0 align-end justify-start"
       >
-        <h2>
-          <nuxt-link class="blog__detail-link" :to="'/' + blogPost.full_slug">
-            {{ blogPost.content.name }}
-          </nuxt-link>
-        </h2>
-        <small>
-          {{ blogPost.published_at }}
-        </small>
-        <p>
-          {{ blogPost.content.intro }}
-        </p>
+        <h1>{{ heading }}</h1>
       </div>
-    </section> -->
-    <li v-for="{ slug, title } of items" :key="slug">
-      <NuxtLink :to="slug">{{ title }}</NuxtLink>
-    </li>
+    </hero>
+    <v-container>
+      <v-row>
+        <v-col v-for="{ slug, title, description, date } of items" :key="slug">
+          <v-card :to="`/blog/${slug}`" flat>
+            <v-card-title>
+              <h2>{{ title }}</h2>
+            </v-card-title>
+            <v-card-subtitle class="body-1">
+              {{ formatDate(date) }}
+            </v-card-subtitle>
+            <v-card-text class="body-1">
+              {{ description }}
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
-import Breadcrumb from '@/components/layout/breadcrumb';
+import * as dayjs from 'dayjs';
+
 export default {
-  components: { Breadcrumb },
   async asyncData({ $content }) {
     const items = await $content('blog').fetch();
 
@@ -38,7 +39,17 @@ export default {
     };
   },
   data() {
-    return { total: 0, items: [] };
+    return { heading: "Damien Robinson's Blog", total: 0, items: [] };
+  },
+  methods: {
+    formatDate(date) {
+      return dayjs(date).format('MMMM D, YYYY');
+    },
+  },
+  head() {
+    return {
+      title: this.heading,
+    };
   },
 };
 </script>

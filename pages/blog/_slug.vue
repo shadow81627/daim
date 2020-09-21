@@ -1,63 +1,53 @@
 <template>
   <div>
     <breadcrumb></breadcrumb>
-    <!-- <section class="util__container">
-      <div v-editable="story.content" class="blog">
-        <h1>{{ story.content.name }}</h1>
-        <richtext class="blog__body" :text="story.content.body"></richtext>
-      </div>
-    </section> -->
+    <v-container>
+      <v-row>
+        <v-col>
+          <v-card flat>
+            <v-card-title>
+              <h2>{{ title }}</h2>
+            </v-card-title>
+            <v-card-subtitle class="body-1">
+              {{ formatDate(date) }}
+            </v-card-subtitle>
+            <v-card-text class="body-1">
+              {{ description }}
+            </v-card-text>
+            <v-card-text class="body-1">
+              <nuxt-content :document="body" />
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
 import Breadcrumb from '@/components/layout/breadcrumb';
-// import storyblokLivePreview from '@/mixins/storyblokLivePreview';
-
+import * as dayjs from 'dayjs';
 export default {
   components: {
     Breadcrumb,
   },
-  // mixins: [storyblokLivePreview],
-  // asyncData(context) {
-  //   const version =
-  //     context.query._storyblok || context.isDev ? 'draft' : 'published';
-  //   const endpoint = `cdn/stories/blog/${context.params.slug}`;
-
-  //   return context.app.$storyapi
-  //     .get(endpoint, {
-  //       version,
-  //       // cv: context.store.state.cacheVersion,
-  //     })
-  //     .then((res) => {
-  //       return res.data;
-  //     })
-  //     .catch((res) => {
-  //       context.error({
-  //         statusCode: res.response.status,
-  //         message: res.response.data,
-  //       });
-  //     });
-  // },
-  data() {
-    return { story: { content: { body: '' } } };
+  asyncData({ $content, route, error }) {
+    try {
+      return $content('blog', route.params.slug).fetch();
+    } catch {
+      error({ statusCode: 404 });
+    }
+  },
+  data: () => ({
+    title: null,
+    description: null,
+    date: null,
+    body: null,
+  }),
+  methods: {
+    formatDate(date) {
+      return dayjs(date).format('MMMM D, YYYY');
+    },
   },
 };
 </script>
-
-<style lang="scss">
-.blog {
-  padding: 0 20px;
-  max-width: 600px;
-  margin: 40px auto 100px;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.blog__body {
-  line-height: 1.6;
-}
-</style>
