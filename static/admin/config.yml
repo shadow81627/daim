@@ -5,6 +5,10 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+publish_mode: editorial_workflow
+site_url: https://daim.dev
+logo_url: https://daim.dev/images/icon.png
+
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -12,6 +16,7 @@ collections:
     folder: 'content/blog'
     create: true
     slug: '{{slug}}'
+    preview_path: blog/{{slug}}
     editor:
       preview: false
     fields:
