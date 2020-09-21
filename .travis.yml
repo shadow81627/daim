@@ -9,32 +9,19 @@ cache: npm
 script:
   - npm run lint
   # - npm run test
-  - npm run build:export
+  - npm run generate
+  - npm run lhci:autorun
   - npx semantic-release
 
 deploy:
   - provider: surge
-    domain: daim.dev
-    project: ./dist
-    # edge: true # opt in to dpl v2
-    skip_cleanup: true
-    on:
-      branch: master
-
-  - provider: surge
     domain: staging.daim.dev
     project: ./dist
-    # edge: true # opt in to dpl v2
+    edge: true # opt in to dpl v2
     skip_cleanup: true
+    cleanup: false
     on:
       all_branches: true
 
-  - provider: firebase
-    skip_cleanup: true
-    project: default
-    edge: true # opt in to dpl v2
-    on:
-      branch: master
-
-after_success:
-  - npm run lhci:autorun
+after_deploy:
+  - npm run test:e2e

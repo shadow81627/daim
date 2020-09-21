@@ -1,5 +1,89 @@
 # Releases
 
+## [1.23.0](https://github.com/shadow81627/daim/compare/v1.22.8...v1.23.0) (2020-09-21)
+
+### Features
+
+- **home:** services ([#617](https://github.com/shadow81627/daim/issues/617)) ([88e7df0](https://github.com/shadow81627/daim/commit/88e7df07e2b556427c4b5b094983c99cb304c49b)), closes [#604](https://github.com/shadow81627/daim/issues/604)
+
+## [1.22.8](https://github.com/shadow81627/daim/compare/v1.22.7...v1.22.8) (2020-09-18)
+
+### Performance Improvements
+
+- replace luxon with dayjs ([#608](https://github.com/shadow81627/daim/issues/608)) ([4383be1](https://github.com/shadow81627/daim/commit/4383be1824d356ddaf236399d5c5c874d0cae9bd)), closes [#573](https://github.com/shadow81627/daim/issues/573)
+
+## [1.22.7](https://github.com/shadow81627/daim/compare/v1.22.6...v1.22.7) (2020-09-15)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.9.0 ([69d20aa](https://github.com/shadow81627/daim/commit/69d20aa67b1425496aee159e1c56ef6768409393))
+
+## [1.22.6](https://github.com/shadow81627/daim/compare/v1.22.5...v1.22.6) (2020-09-14)
+
+### Bug Fixes
+
+- **deps:** update dependency mailgo to v0.9.18 ([1eeee3e](https://github.com/shadow81627/daim/commit/1eeee3e4f9ef6122d707b14c123bab902b3f0d31))
+
+## [1.22.5](https://github.com/shadow81627/daim/compare/v1.22.4...v1.22.5) (2020-09-11)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.15.1 ([1167436](https://github.com/shadow81627/daim/commit/1167436a0c17af7a7a71963467c68ae5489992b4))
+
+## [1.22.4](https://github.com/shadow81627/daim/compare/v1.22.3...v1.22.4) (2020-09-10)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.14.5 ([42c8fa4](https://github.com/shadow81627/daim/commit/42c8fa4160a09882318d5429665581d145a93b1b))
+
+## [1.22.3](https://github.com/shadow81627/daim/compare/v1.22.2...v1.22.3) (2020-09-10)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.15.0 ([ef918fd](https://github.com/shadow81627/daim/commit/ef918fd05be187607aa0367720b9b152293c1ab4))
+
+## [1.22.2](https://github.com/shadow81627/daim/compare/v1.22.1...v1.22.2) (2020-09-09)
+
+### Bug Fixes
+
+- **deps:** update dependency mailgo to v0.9.17 ([863dc69](https://github.com/shadow81627/daim/commit/863dc69fa4c1c029ccaf1bf5d37e70078ebaea87))
+
+## [1.22.1](https://github.com/shadow81627/daim/compare/v1.22.0...v1.22.1) (2020-09-08)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.14.2 ([6b55bd0](https://github.com/shadow81627/daim/commit/6b55bd0f777cdfc025e4c247d17dc3fb5cd93ccb))
+
+## [1.22.0](https://github.com/shadow81627/daim/compare/v1.21.0...v1.22.0) (2020-09-08)
+
+### Features
+
+- cover image ([#586](https://github.com/shadow81627/daim/issues/586)) ([a8b5b42](https://github.com/shadow81627/daim/commit/a8b5b42a5e38591c3f94d44a7d38e05eb13ec6d6))
+
+## [1.21.0](https://github.com/shadow81627/daim/compare/v1.20.4...v1.21.0) (2020-09-05)
+
+### Features
+
+- better mailto links with mailgo ([#562](https://github.com/shadow81627/daim/issues/562)) ([5bae934](https://github.com/shadow81627/daim/commit/5bae934ce1391b6949d4f147e38221169f9d541e)), closes [#556](https://github.com/shadow81627/daim/issues/556)
+
+## [1.20.4](https://github.com/shadow81627/daim/compare/v1.20.3...v1.20.4) (2020-09-04)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.8.1 ([45b7541](https://github.com/shadow81627/daim/commit/45b75418dd95b6cba84b9c3ccdd405af09778ad3))
+
+## [1.20.3](https://github.com/shadow81627/daim/compare/v1.20.2...v1.20.3) (2020-09-01)
+
+### Bug Fixes
+
+- **deps:** update dependency @fortawesome/vue-fontawesome to v2 ([5d9d75e](https://github.com/shadow81627/daim/commit/5d9d75e5d52ac7f002df220f977954312de413bb))
+
+## [1.20.2](https://github.com/shadow81627/daim/compare/v1.20.1...v1.20.2) (2020-08-31)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.7.1 ([0e72c39](https://github.com/shadow81627/daim/commit/0e72c393b3f2b8e83153835acc3e5def6deb6913))
+
 ## [1.20.1](https://github.com/shadow81627/daim/compare/v1.20.0...v1.20.1) (2020-08-30)
 
 ### Bug Fixes

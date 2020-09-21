@@ -1,10 +1,30 @@
 import pkg from './package';
 
+const BASE_URL = (
+  process.env.BASE_URL ||
+  process.env.DEPLOY_URL ||
+  process.env.URL ||
+  process.env.VERCEL_URL ||
+  `http${process.env.PORT === 433 ? 's' : ''}://${process.env.HOST}:${
+    process.env.PORT
+  }`
+).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (
+  _,
+  protocol = 'http',
+  domain,
+) {
+  return `${protocol}://${domain}`;
+});
+
 const env = {
   HOST: process.env.HOST,
   PORT: process.env.PORT,
+  BASE_URL,
   VERSION: pkg.version,
-  COMMIT: process.env.npm_package_gitHead || process.env.TRAVIS_COMMIT,
+  COMMIT:
+    process.env.npm_package_gitHead ||
+    process.env.TRAVIS_COMMIT ||
+    process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
   APP_NAME: process.env.APP_NAME || pkg.name,
   SEGMENT_WRITE_KEY:
@@ -84,6 +104,18 @@ export default {
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
   },
 
+  pwa: {
+    meta: {
+      ogHost: env.BASE_URL,
+      ogImage: {
+        path: '/cover.jpg',
+        width: 1200,
+        height: 600,
+        type: 'image/jpg',
+      },
+    },
+  },
+
   /*
    ** Customize the progress-bar color
    */
@@ -113,7 +145,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // 'bootstrap-vue/nuxt',
+    '@nuxt/content',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/markdownit',
@@ -121,11 +153,12 @@ export default {
     'nuxt-i18n',
     // 'nuxt-webfontloader',
     // 'nuxt-purgecss',
-    // 'storyblok-nuxt',
 
     // always declare the sitemap module at end of array
     '@nuxtjs/sitemap',
   ],
+
+  components: ['~/components', { path: '~/components/base/', prefix: 'base' }],
 
   /*
    ** Axios module configuration
@@ -153,12 +186,20 @@ export default {
   },
 
   optimizedImages: {
+    optimizeImages: true,
+    optimizeImagesInDev: true,
     responsive: {
+      quality: 50,
       adapter: require('responsive-loader/sharp'),
+      sizes: [320, 640, 960, 1200, 1800, 2400],
+      placeholder: true,
+      placeholderSize: 20,
+      format: 'webp',
       sharp: {
         format: {
           webp: true,
         },
+        progressive: true,
       },
     },
   },
@@ -176,14 +217,14 @@ export default {
 
   webfontloader: {},
 
+  eslint: {
+    cache: true,
+  },
+
   /*
    ** Build configuration
    */
   build: {
-    filenames: {
-      chunk: ({ isDev }) =>
-        isDev ? '[name].js' : 'chunks/[id].[contenthash].js',
-    },
     extractCSS: true,
     /*
      ** You can extend webpack config here

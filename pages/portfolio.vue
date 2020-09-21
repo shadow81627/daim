@@ -25,14 +25,14 @@
           <v-img
             v-if="image"
             alt=""
-            :lazy-src="lazySrc(image)"
+            :lazy-src="src(image).placeholder"
             :src="src(image).src"
-            :srcset="srcSet(image).srcSet"
+            :srcset="src(image).srcSet"
             :aspect-ratio="16 / 9"
-            contain
             :style="{
               backgroundColor: backgroundColor(image)[0],
             }"
+            sizes="(max-width: 600px) 100vw, 50vw"
             class="flex-grow-0"
           ></v-img>
           <v-card-title class="text-break">
@@ -44,15 +44,13 @@
             {{ description }}
           </v-card-text>
           <v-card-text v-if="startDate || endDate">
-            <span v-if="startDate"
-              >{{
-                DateTime.fromISO(startDate).toLocaleString(DateTime.DATE_MED)
-              }}
-            </span>
+            <time v-if="startDate" :datetime="new Date(startDate).toISOString()"
+              >{{ formatDate(startDate) }}
+            </time>
             <span v-if="startDate && endDate">to</span>
-            <span v-if="endDate">{{
-              DateTime.fromISO(endDate).toLocaleString(DateTime.DATE_MED)
-            }}</span>
+            <time v-if="endDate" :datetime="new Date(endDate).toISOString()">{{
+              formatDate(endDate)
+            }}</time>
           </v-card-text>
           <v-card-actions class="mt-auto">
             <v-spacer></v-spacer>
@@ -80,10 +78,9 @@
 
 <script>
 import { mdiWeb, mdiGithub, mdiOpenInNew } from '@mdi/js';
-import { DateTime } from 'luxon';
+import * as dayjs from 'dayjs';
 export default {
   data: () => ({
-    DateTime,
     heading: 'Portfolio',
     description: 'Explore demos and code for my projects.',
     projects: [
@@ -143,28 +140,16 @@ export default {
     ],
   }),
   methods: {
-    assetsPath: require.context(
-      '~/assets/img/portfolio',
-      false,
-      /\.(png|jpe?g|svg).*$/,
-    ),
+    formatDate(date) {
+      return dayjs(date).format('MMM D, YYYY');
+    },
     backgroundColor: require.context(
       '~/assets/img/portfolio?lqip-colors',
       false,
       /\.(png|jpe?g|svg).*$/,
     ),
-    lazySrc: require.context(
-      `~/assets/img/portfolio?lqip`,
-      false,
-      /\.(png|jpe?g|svg).*$/,
-    ),
     src: require.context(
-      `~/assets/img/portfolio?resize&size=1785&placeholder`,
-      false,
-      /\.(png|jpe?g|svg).*$/,
-    ),
-    srcSet: require.context(
-      `~/assets/img/portfolio?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&sizes[]=4686&format=webp`,
+      `~/assets/img/portfolio?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&placeholder&format=webp`,
       false,
       /\.(png|jpe?g|svg).*$/,
     ),
