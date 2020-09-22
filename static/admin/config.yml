@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: shadow81627/daim
+  open_authoring: true
 
 media_folder: static/img
 public_folder: /img
@@ -13,14 +14,14 @@ collections:
   - name: blog
     label: Blog
     format: frontmatter
-    folder: 'content/blog'
+    folder: content/blog
     create: true
     slug: '{{slug}}'
     preview_path: blog/{{slug}}
     editor:
       preview: false
     fields:
-      - { label: Image, name: image, widget: image }
+      - { label: Image, name: image, widget: image, required: false }
       - { label: Title, name: title, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
       - { label: Description, name: description, widget: string }
