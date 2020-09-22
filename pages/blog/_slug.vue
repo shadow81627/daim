@@ -4,17 +4,17 @@
     <v-container>
       <v-row>
         <v-col>
-          <v-card flat>
-            <v-card-text class="body-1">
-              <nuxt-content :document="item" />
-            </v-card-text>
-            <v-card-text
-              >Published
-              <time :datetime="item.date">{{
-                formatDate(item.date)
-              }}</time></v-card-text
-            >
-          </v-card>
+          <div class="body-1">
+            <nuxt-content :document="item" />
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <span class="font-italic"
+            >Published
+            <time :datetime="item.date">{{ formatDate(item.date) }}</time></span
+          >
         </v-col>
       </v-row>
     </v-container>

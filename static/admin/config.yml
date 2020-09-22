@@ -2,6 +2,13 @@ backend:
   name: github
   repo: shadow81627/daim
   open_authoring: true
+  commit_messages:
+    create: 'chore({{collection}}): create {{slug}}'
+    update: 'chore({{collection}}): update {{slug}}'
+    delete: 'chore({{collection}}): delete {{slug}}'
+    uploadMedia: 'chore: upload {{path}}'
+    deleteMedia: 'chore: delete {{path}}'
+    openAuthoring: '{{message}}'
 
 media_folder: static/img
 public_folder: /img

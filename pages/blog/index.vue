@@ -3,15 +3,26 @@
     <BlogHero :title="heading"></BlogHero>
     <v-container>
       <v-row>
-        <v-col v-for="{ slug, title, description, date } of items" :key="slug">
-          <v-card :to="`/blog/${slug}`" flat>
-            <v-card-title>
+        <v-col
+          v-for="{ slug, title, description, date } of items"
+          :key="slug"
+          class="d-flex flex-column"
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <v-card
+            :to="`/blog/${slug}`"
+            flat
+            class="flex d-flex flex-column justify-between"
+          >
+            <v-card-title class="text-break text-wrap">
               <h2>{{ title }}</h2>
             </v-card-title>
             <v-card-subtitle class="body-1">
               {{ formatDate(date) }}
             </v-card-subtitle>
-            <v-card-text class="body-1">
+            <v-card-text class="body-1 flex-grow-1">
               {{ description }}
             </v-card-text>
           </v-card>
