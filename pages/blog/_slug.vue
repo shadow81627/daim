@@ -1,65 +1,46 @@
 <template>
   <div>
-    <breadcrumb></breadcrumb>
-    <section class="util__container">
-      <div v-editable="story.content" class="blog">
-        <h1>{{ story.content.name }}</h1>
-        <richtext class="blog__body" :text="story.content.body"></richtext>
-      </div>
-    </section>
+    <BlogHero :title="item.title" :summary="item.description"></BlogHero>
+    <v-container>
+      <v-row>
+        <v-col>
+          <v-card flat>
+            <v-card-text class="body-1">
+              <nuxt-content :document="item" />
+            </v-card-text>
+            <v-card-text
+              >Published
+              <time :datetime="item.date">{{
+                formatDate(item.date)
+              }}</time></v-card-text
+            >
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
-import Breadcrumb from '@/components/layout/breadcrumb';
-import Richtext from '@/components/richtext.vue';
-// import storyblokLivePreview from '@/mixins/storyblokLivePreview';
-
+import * as dayjs from 'dayjs';
+import BlogHero from '~/components/sections/BlogHero';
 export default {
-  components: {
-    Richtext,
-    Breadcrumb,
+  components: { BlogHero },
+  async asyncData({ $content, route, error }) {
+    try {
+      const item = await $content('blog', route.params.slug).fetch();
+      return { item, ...item };
+    } catch {
+      error({ statusCode: 404 });
+    }
   },
-  // mixins: [storyblokLivePreview],
-  // asyncData(context) {
-  //   const version =
-  //     context.query._storyblok || context.isDev ? 'draft' : 'published';
-  //   const endpoint = `cdn/stories/blog/${context.params.slug}`;
-
-  //   return context.app.$storyapi
-  //     .get(endpoint, {
-  //       version,
-  //       // cv: context.store.state.cacheVersion,
-  //     })
-  //     .then((res) => {
-  //       return res.data;
-  //     })
-  //     .catch((res) => {
-  //       context.error({
-  //         statusCode: res.response.status,
-  //         message: res.response.data,
-  //       });
-  //     });
-  // },
-  data() {
-    return { story: { content: { body: '' } } };
+  data: () => ({
+    item: {},
+  }),
+  methods: {
+    formatDate(date) {
+      return dayjs(date).format('MMMM D, YYYY');
+    },
   },
 };
 </script>
-
-<style lang="scss">
-.blog {
-  padding: 0 20px;
-  max-width: 600px;
-  margin: 40px auto 100px;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.blog__body {
-  line-height: 1.6;
-}
-</style>

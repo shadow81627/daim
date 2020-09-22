@@ -226,6 +226,8 @@ export default {
    ** Build configuration
    */
   build: {
+    transpile: ['lodash-es', 'vuetify/lib'],
+
     extractCSS: true,
     /*
      ** You can extend webpack config here

@@ -146,12 +146,12 @@ export default {
     backgroundColor: require.context(
       '~/assets/img/portfolio?lqip-colors',
       false,
-      /\.(png|jpe?g|svg).*$/,
+      /\.(png|jpe?g).*$/,
     ),
     src: require.context(
       `~/assets/img/portfolio?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&placeholder&format=webp`,
       false,
-      /\.(png|jpe?g|svg).*$/,
+      /\.(png|jpe?g).*$/,
     ),
   },
   head() {

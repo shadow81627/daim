@@ -12,7 +12,6 @@
           v-for="item in items"
           :key="item.text"
           :to="localePath(item.route ? item.route : {})"
-          active-class="btn-primary pointer-events-none active"
           nuxt
           class="text-decoration-none"
         >
@@ -58,7 +57,13 @@
 </template>
 
 <script>
-import { mdiHome, mdiAccountTie, mdiToolbox, mdiFolder } from '@mdi/js';
+import {
+  mdiHome,
+  mdiAccountTie,
+  mdiToolbox,
+  mdiFolder,
+  mdiInformation,
+} from '@mdi/js';
 import TheFooter from '@/components/layout/the-footer.vue';
 export default {
   components: {
@@ -73,11 +78,11 @@ export default {
           text: 'Home',
           route: 'index',
         },
-        // {
-        //   icon: '$info',
-        //   text: 'Blog',
-        //   route: 'blog',
-        // },
+        {
+          icon: mdiInformation,
+          text: 'Blog',
+          route: 'blog',
+        },
         {
           icon: mdiAccountTie,
           text: 'Resume',

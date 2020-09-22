@@ -1,70 +1,49 @@
 <template>
   <div>
-    <Breadcrumb></Breadcrumb>
-    <section class="util__container">
-      <div
-        v-for="blogPost in data.stories"
-        :key="blogPost.content._uid"
-        class="blog__overview"
-      >
-        <h2>
-          <nuxt-link class="blog__detail-link" :to="'/' + blogPost.full_slug">
-            {{ blogPost.content.name }}
-          </nuxt-link>
-        </h2>
-        <small>
-          {{ blogPost.published_at }}
-        </small>
-        <p>
-          {{ blogPost.content.intro }}
-        </p>
-      </div>
-    </section>
+    <BlogHero :title="heading"></BlogHero>
+    <v-container>
+      <v-row>
+        <v-col v-for="{ slug, title, description, date } of items" :key="slug">
+          <v-card :to="`/blog/${slug}`" flat>
+            <v-card-title>
+              <h2>{{ title }}</h2>
+            </v-card-title>
+            <v-card-subtitle class="body-1">
+              {{ formatDate(date) }}
+            </v-card-subtitle>
+            <v-card-text class="body-1">
+              {{ description }}
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
-import Breadcrumb from '@/components/layout/breadcrumb';
-export default {
-  components: { Breadcrumb },
-  // asyncData(context) {
-  //   const version =
-  //     context.query._storyblok || context.isDev ? 'draft' : 'published';
+import * as dayjs from 'dayjs';
 
-  //   return context.app.$storyapi
-  //     .get('cdn/stories', {
-  //       version,
-  //       starts_with: 'blog',
-  //       // cv: context.store.state.cacheVersion,
-  //     })
-  //     .then((res) => {
-  //       return res;
-  //     })
-  //     .catch((res) => {
-  //       context.error({
-  //         statusCode: res.response.status,
-  //         message: res.response.data,
-  //       });
-  //     });
-  // },
+export default {
+  async asyncData({ $content }) {
+    const items = await $content('blog').fetch();
+
+    return {
+      items,
+    };
+  },
   data() {
-    return { total: 0, data: { stories: [] } };
+    return { heading: "Damien Robinson's Blog", total: 0, items: [] };
+  },
+  methods: {
+    formatDate(date) {
+      return dayjs(date).format('MMMM D, YYYY');
+    },
+  },
+  head() {
+    return {
+      title: this.heading,
+    };
   },
 };
 </script>
-
-<style lang="scss">
-.blog__overview {
-  padding: 0 20px;
-  max-width: 600px;
-  margin: 40px auto 60px;
-
-  p {
-    line-height: 1.6;
-  }
-}
-
-.blog__detail-link {
-  color: #000;
-}
-</style>

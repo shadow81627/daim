@@ -8,6 +8,7 @@ module.exports = {
         '/releases/',
         '/tools/',
         '/portfolio/',
+        '/blog/',
       ],
       staticDistDir: './dist',
       numberOfRuns: 5,
