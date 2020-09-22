@@ -64,12 +64,12 @@ export default {
     _src: require.context(
       `~/assets/img?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&sizes[]=4686&placeholder&format=webp`,
       true,
-      /\.(png|jpe?g|svg).*$/,
+      /\.(png|jpe?g).*$/,
     ),
     cover: require.context(
       `~/assets/img?resize&size=1200&format=jpg`,
       true,
-      /\.(png|jpe?g|svg).*$/,
+      /\.(png|jpe?g).*$/,
     ),
   },
   head() {

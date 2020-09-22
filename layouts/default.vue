@@ -12,7 +12,6 @@
           v-for="item in items"
           :key="item.text"
           :to="localePath(item.route ? item.route : {})"
-          active-class="btn-primary pointer-events-none active"
           nuxt
           class="text-decoration-none"
         >

@@ -1,12 +1,6 @@
 <template>
   <div>
-    <hero src="./blog.jpg" gradient="">
-      <div
-        class="row fill-height text-left pa-md-5 pa-3 mx-0 align-end justify-start"
-      >
-        <h1>{{ heading }}</h1>
-      </div>
-    </hero>
+    <BlogHero :title="heading"></BlogHero>
     <v-container>
       <v-row>
         <v-col v-for="{ slug, title, description, date } of items" :key="slug">

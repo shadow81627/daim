@@ -1,22 +1,19 @@
 <template>
   <div>
-    <breadcrumb></breadcrumb>
+    <BlogHero :title="item.title" :summary="item.description"></BlogHero>
     <v-container>
       <v-row>
         <v-col>
           <v-card flat>
-            <v-card-title>
-              <h2>{{ title }}</h2>
-            </v-card-title>
-            <v-card-subtitle class="body-1">
-              {{ formatDate(date) }}
-            </v-card-subtitle>
             <v-card-text class="body-1">
-              {{ description }}
+              <nuxt-content :document="item" />
             </v-card-text>
-            <v-card-text class="body-1">
-              <nuxt-content :document="body" />
-            </v-card-text>
+            <v-card-text
+              >Published
+              <time :datetime="item.date">{{
+                formatDate(item.date)
+              }}</time></v-card-text
+            >
           </v-card>
         </v-col>
       </v-row>
@@ -25,24 +22,20 @@
 </template>
 
 <script>
-import Breadcrumb from '@/components/layout/breadcrumb';
 import * as dayjs from 'dayjs';
+import BlogHero from '~/components/sections/BlogHero';
 export default {
-  components: {
-    Breadcrumb,
-  },
-  asyncData({ $content, route, error }) {
+  components: { BlogHero },
+  async asyncData({ $content, route, error }) {
     try {
-      return $content('blog', route.params.slug).fetch();
+      const item = await $content('blog', route.params.slug).fetch();
+      return { item, ...item };
     } catch {
       error({ statusCode: 404 });
     }
   },
   data: () => ({
-    title: null,
-    description: null,
-    date: null,
-    body: null,
+    item: {},
   }),
   methods: {
     formatDate(date) {
