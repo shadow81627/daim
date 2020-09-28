@@ -36,7 +36,7 @@ npm i @nuxtjs/vuetify @aceforth/nuxt-optimized-images --save-dev
 
 Add `@nuxt/content` to the `modules` and `@nuxtjs/vuetify` to `buildModules` list in `nuxt.config.js`:
 
-```js[nuxt.config.js]
+```js\[nuxt.config.js]
   modules: [
     "@nuxt/content",
   ],
@@ -86,7 +86,7 @@ Here, we will list down all the blog posts we create under `content/blog` folder
 - Blog Post created time fromated with [dayjs](https://day.js.org/)
 - Time for reading blog post
 
-```vue[pages/blog/index.vue]
+```vue\[pages/blog/index.vue]
 <template>
   <div>
     <BlogHero :title="heading"></BlogHero>
@@ -156,13 +156,13 @@ export default {
 </script>
 ```
 
-The average reader can read 200 words per minute, for technical material the average reading rate is approx 50 to 75 words a minute. Since this is a tech blog we will go with 50 words per minute, using this number we can create compute the number of minutes it takes to read an article.[^1] The `BlogHero` component can be found on [Github](https://github.com/shadow81627/daim/blob/master/components/sections/BlogHero.vue), it uses `@aceforth/nuxt-optimized-images` package to create source set and low quality placeholders.
+The average reader can read 200 words per minute, for technical material the average reading rate is approx 50 to 75 words a minute. Since this is a tech blog we will go with 50 words per minute, using this number we can create compute the number of minutes it takes to read an article.[^1][] The `BlogHero` component can be found on [Github](https://github.com/shadow81627/daim/blob/master/components/sections/BlogHero.vue), it uses `@aceforth/nuxt-optimized-images` package to create source set and low quality placeholders.
 
 ## Blog Post Page
 
 This is used for dynamic rendering of each blog post markdown file. We will fetch the content and format the front-matter of the blog post according to our requirement.
 
-```vue[pages/blog/_slug.vue]
+```vue\[pages/blog/\_slug.vue]
 <template>
   <div>
     <BlogHero

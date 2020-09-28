@@ -53,7 +53,7 @@ cd <project-name>
 npm run dev
 ```
 
-The application is now running on [http://localhost:3000](http://localhost:3000).
+The application is now running on <http://localhost:3000>.
 
 ## Summary
 
