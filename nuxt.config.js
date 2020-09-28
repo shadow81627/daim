@@ -26,7 +26,9 @@ const env = {
     process.env.TRAVIS_COMMIT ||
     process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
-  APP_NAME: process.env.APP_NAME || pkg.name,
+  APP_NAME:
+    process.env.APP_NAME ||
+    `${pkg.name.charAt(0).toUpperCase()}${pkg.name.slice(1)}`,
 };
 
 const preconnectLinks = [];
