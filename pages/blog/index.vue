@@ -1,28 +1,38 @@
 <template>
   <div>
     <BlogHero :title="heading"></BlogHero>
-    <v-container>
+    <v-container fluid style="max-width: 1785px">
       <v-row>
         <v-col
-          v-for="{ slug, title, description, date } of items"
+          v-for="{ slug, title, description, date, body, image } of items"
           :key="slug"
           class="d-flex flex-column"
           cols="12"
           sm="6"
           md="4"
+          lg="3"
         >
           <v-card
-            :to="`/blog/${slug}`"
-            flat
+            :to="`/blog/${encodeURIComponent(slug)}`"
             class="flex d-flex flex-column justify-between"
           >
+            <v-img
+              :lazy-src="src(image || './blog.jpg').placeholder"
+              :src="src(image || './blog.jpg').src"
+              :srcset="src(image || './blog.jpg').srcSet"
+              :aspect-ratio="16 / 9"
+            ></v-img>
             <v-card-title class="text-break text-wrap">
               <h2>{{ title }}</h2>
             </v-card-title>
             <v-card-subtitle class="body-1">
-              {{ formatDate(date) }}
+              <time :datetime="date">{{ formatDate(date) }}</time
+              ><span> • </span
+              ><time :datetime="`${readTime(JSON.stringify(body))}m`"
+                >{{ readTime(JSON.stringify(body)) }} min read</time
+              >
             </v-card-subtitle>
-            <v-card-text class="body-1 flex-grow-1">
+            <v-card-text class="body-1 align-self-end">
               {{ description }}
             </v-card-text>
           </v-card>
@@ -31,14 +41,11 @@
     </v-container>
   </div>
 </template>
-
 <script>
 import * as dayjs from 'dayjs';
-
 export default {
   async asyncData({ $content }) {
-    const items = await $content('blog').fetch();
-
+    const items = await $content('blog').sortBy('date', 'desc').fetch();
     return {
       items,
     };
@@ -48,8 +55,17 @@ export default {
   },
   methods: {
     formatDate(date) {
-      return dayjs(date).format('MMMM D, YYYY');
+      return dayjs(date).format('MMM D, YYYY');
     },
+    readTime(content = '', wordsPerMinute = 50) {
+      const words = content.split(' ').length;
+      return Math.ceil(words / wordsPerMinute);
+    },
+    src: require.context(
+      `~/assets/img?resize&sizes[]=100&sizes[]=200&sizes[]=400&sizes[]=800&sizes[]=1600&placeholder&format=webp`,
+      true,
+      /\.(png|jpe?g).*$/,
+    ),
   },
   head() {
     return {
