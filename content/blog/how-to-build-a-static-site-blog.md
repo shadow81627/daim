@@ -1,5 +1,5 @@
 ---
-title: How to build a static site blog?
+title: How to build a static site blog
 date: 2020-09-22T08:09:37.548Z
 description: Have you ever tried to set up a personal blog?
 
@@ -21,9 +21,275 @@ Any good content manager should let you use markdown. This is important because 
 
 While not necessary, some great bonus features of a great static site blog are free hosting, open source, and perfomance. I host my personal site on [Vercel](https://vercel.com/) since the free teir is super generous compared to [Netlify](https://www.netlify.com/). I am able to run all the builds I need for rapid prototyping, bandwidth is unlimited, the builds are fast with caching, and the CDN is super fast serving content in under 50ms.
 
+## Getting Started
+
+---
+
+Following the Nuxt [installation guide](https://nuxtjs.org/guide/installation):
+
+To get started quickly, the Nuxt.js team has created scaffolding tool create-nuxt-app. Make sure you have npx installed (npx is shipped by default since NPM 5.2.0)
+
+```bash
+npx create-nuxt-app <project-name>
+```
+
+It will ask you some questions (name, Nuxt options, UI framework (Vuetify), TypeScript, linter (Eslint, Prettier), testing framework, modules(nuxt content), etc.), when answered, it will install all the dependencies.
+
+Install npm packages:
+
+```bash
+npm i @nuxt/content prism-themes dayjs @mdi/js
+npm i @nuxtjs/vuetify @aceforth/nuxt-optimized-images --save-dev
+```
+
+Add `@nuxt/content` to the `modules` and `@nuxtjs/vuetify` to `buildModules` list in `nuxt.config.js`:
+
+```js[nuxt.config.js]
+  modules: [
+    "@nuxt/content",
+  ],
+
+  buildModules: [
+    "@nuxtjs/vuetify",
+  ],
+
+  content: {
+    markdown: {
+      // `prism-themes` for language syntax highlighting
+      prism: {
+        theme: 'prism-themes/themes/prism-vsc-dark-plus.css',
+      },
+    },
+  },
+```
+
+## Project Structure
+
+---
+
+Create a folder with name `content` inside the project folder if not created by `@nuxt/content`. Then create a sub-folder with name `blog` inside the folder `content`. `content/blog` is the folder where we write all our blog posts in markdown files.
+
+Similarly, create a sub-folder `blog` inside `pages` folder for a new page route `/blog`. Create `_slug.vue` and `index.vue` inside `pages/blog` folder.
+
+Now the project folder structure will look something like this:
+
+```txt
+├── content
+│   └── blog
+│       ├── blog-1.md
+│       └── blog-2.md
+├── pages
+│   └── blog
+│       ├── _slug.vue
+│       └── index.vue
+```
+
+## Blog Post List Page
+
+Here, we will list down all the blog posts we create under `content/blog` folder. Displaying Title, Description and hero image for each blog post with Vuetify card components.
+
+- Blog Post Image
+- Blog Post Title
+- Blog Post Description
+- Blog Post created time fromated with [dayjs](https://day.js.org/)
+- Time for reading blog post
+
+```vue[pages/blog/index.vue]
+<template>
+  <div>
+    <BlogHero :title="heading"></BlogHero>
+    <v-container fluid style="max-width: 1785px">
+      <v-row>
+        <v-col
+          v-for="{ slug, title, description, date, body, image } of items"
+          :key="slug"
+          class="d-flex flex-column"
+          cols="12"
+          sm="6"
+          md="4"
+          lg="3"
+        >
+          <v-card
+            :to="`/blog/${encodeURIComponent(slug)}`"
+            class="flex d-flex flex-column justify-between"
+          >
+            <v-img :src="image" :aspect-ratio="16 / 9"
+            ></v-img>
+            <v-card-title class="text-break text-wrap">
+              <h2>{{ title }}</h2>
+            </v-card-title>
+            <v-card-subtitle class="body-1">
+              <time :datetime="date">{{ formatDate(date) }}</time
+              ><span> • </span
+              ><time :datetime="`${readTime(JSON.stringify(body))}m`"
+                >{{ readTime(JSON.stringify(body)) }} min read</time
+              >
+            </v-card-subtitle>
+            <v-card-text class="body-1 align-self-end">
+              {{ description }}
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
+</template>
+<script>
+import * as dayjs from 'dayjs';
+export default {
+  async asyncData({ $content }) {
+    const items = await $content('blog').sortBy('date', 'desc').fetch();
+    return {
+      items,
+    };
+  },
+  data() {
+    return { heading: "Damien Robinson's Blog", total: 0, items: [] };
+  },
+  methods: {
+    formatDate(date) {
+      return dayjs(date).format('MMM D, YYYY');
+    },
+    readTime(content = '', wordsPerMinute = 50) {
+      const words = content.split(' ').length;
+      return Math.ceil(words / wordsPerMinute);
+    },
+  },
+  head() {
+    return {
+      title: this.heading,
+    };
+  },
+};
+</script>
+```
+
+The average reader can read 200 words per minute, for technical material the average reading rate is approx 50 to 75 words a minute. Since this is a tech blog we will go with 50 words per minute, using this number we can create compute the number of minutes it takes to read an article.[^1] The `BlogHero` component can be found on [Github](https://github.com/shadow81627/daim/blob/master/components/sections/BlogHero.vue), it uses `@aceforth/nuxt-optimized-images` package to create source set and low quality placeholders.
+
+## Blog Post Page
+
+This is used for dynamic rendering of each blog post markdown file. We will fetch the content and format the front-matter of the blog post according to our requirement.
+
+```vue[pages/blog/_slug.vue]
+<template>
+  <div>
+    <BlogHero
+      :title="item.title"
+      :summary="item.description"
+      :src="item.image"
+    ></BlogHero>
+    <v-container>
+      <v-row>
+        <v-col>
+          <div class="body-1">
+            <nuxt-content :document="item" />
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col class="d-flex flex-column justify-center">
+          <span class="font-italic"
+            >Published
+            <time :datetime="item.date">{{ formatDate(item.date) }}</time></span
+          >
+        </v-col>
+        <v-col sm="auto" cols="12">
+          <v-btn
+            icon
+            color="#757575"
+            target="_blank"
+            rel="noopener"
+            :href="`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+              item.title,
+            )}%0A%0A${encodeURIComponent(
+              item.description,
+            )}&url=https://daim.dev${$route.path}`"
+          >
+            <v-icon>{{ mdiTwitter }}</v-icon>
+          </v-btn>
+          <v-btn
+            icon
+            color="#757575"
+            target="_blank"
+            rel="noopener"
+            :href="`https://www.linkedin.com/shareArticle/?mini=true&url=https://daim.dev${$route.path}`"
+          >
+            <v-icon>{{ mdiLinkedin }}</v-icon>
+          </v-btn>
+          <v-btn
+            icon
+            color="#757575"
+            target="_blank"
+            rel="noopener"
+            :href="`https://www.facebook.com/sharer/sharer.php?u=https://daim.dev${$route.path}&display=page`"
+          >
+            <v-icon>{{ mdiFacebook }}</v-icon>
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
+</template>
+<script>
+import * as dayjs from 'dayjs';
+import { mdiFacebook, mdiTwitter, mdiLinkedin } from '@mdi/js';
+import BlogHero from '~/components/sections/BlogHero';
+export default {
+  components: { BlogHero },
+  async asyncData({ $content, route, error }) {
+    try {
+      const item = await $content('blog', route.params.slug).fetch();
+      return { item, ...item };
+    } catch {
+      error({ statusCode: 404 });
+    }
+  },
+  data: () => ({
+    item: {},
+    mdiFacebook,
+    mdiTwitter,
+    mdiLinkedin,
+  }),
+  methods: {
+    formatDate(date) {
+      return dayjs(date).format('MMMM D, YYYY');
+    },
+  },
+  head() {
+    return {
+      title: this.item.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.item.description,
+        },
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: this.item.title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.item.description,
+        },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+      ],
+    };
+  },
+};
+</script>
+```
+
+## Writing Blog Posts
+
+Write the blog details in front-matter and everything else in markdown. You can even mix html along with markdown. But just follow the [rules](https://content.nuxtjs.org/writing#html) properly. If are want to have the option of using a rich text editor then adding [Netlify CMS](https://www.netlifycms.org/) is a good place to start.
+
 ## Conclusion
 
-Now that you know how to build a static site blog with Nuxt, you're ready to share your awesome content with the internet without worrying about hosting and maintaining a Wordpress server.
+Now that you know how to build a static site blog with Nuxt, you're ready to share your awesome content with the internet without worrying about hosting and maintaining a Wordpress server. This website is made with Nuxt JS, blog pages are made using nuxt content and styled using Vuetify. You can find the full source code on [Github](https://github.com/shadow81627/daim).
+
+This blog post is inspired by [Pramod Devireddy](https://domarpdev.github.io/blog/create-medium-style-blog-theme/)
+
+[^1]: https://secure.execuread.com/facts
 
 <!-- ## Sources
 

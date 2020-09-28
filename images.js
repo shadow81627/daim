@@ -41,3 +41,20 @@ sharp(file)
     sharp(buffer).toFile(filename);
   }
 })();
+
+(async () => {
+  const folder = 'assets/img/blog/';
+  // get list of urls to crawl from content files
+  for await (const filename of getFiles(folder)) {
+    const buffer = await sharp(filename)
+      // .trim()
+      .resize({
+        width: 4686,
+        height: 2636,
+        fit: 'contain',
+        background: { r: 255, g: 255, b: 255 },
+      })
+      .toBuffer();
+    sharp(buffer).toFile(filename);
+  }
+})();

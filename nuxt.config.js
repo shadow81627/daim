@@ -67,25 +67,30 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: (titleChunk) => {
-      // If undefined or blank then we don't need the hyphen
-      return titleChunk ? `${titleChunk} - 𝒟𝒶𝒾𝓂` : '𝒟𝒶𝒾𝓂';
-    },
+    titleTemplate: `%s | ${env.APP_NAME}`,
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || '',
+        once: true,
+        name: 'charset',
+        hid: 'charset',
+        content: 'utf-8',
+      },
+      {
+        once: true,
+        hid: 'viewport',
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        once: true,
+        name: 'version',
+        hid: 'version',
+        content: env.VERSION,
       },
       {
         property: 'og:title',
-        template: (titleChunk) => {
-          // If undefined or blank then we don't need the hyphen
-          return titleChunk ? `${titleChunk} - 𝒟𝒶𝒾𝓂` : '𝒟𝒶𝒾𝓂';
-        },
-        vmid: 'og:title',
+        template: `%s | ${env.APP_NAME}`,
+        hid: 'og:title',
       },
       {
         name: 'version',
@@ -166,6 +171,14 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-vsc-dark-plus.css',
+      },
+    },
+  },
 
   i18n: {
     baseUrl: 'https://daim.dev',
