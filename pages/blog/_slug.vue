@@ -21,37 +21,26 @@
           >
         </v-col>
         <v-col sm="auto" cols="12">
-          <v-btn
-            icon
-            color="#757575"
-            target="_blank"
-            rel="noopener"
-            :href="`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-              item.title,
-            )}%0A%0A${encodeURIComponent(
-              item.description,
-            )}&url=https://daim.dev${$route.path}`"
+          <v-tooltip
+            v-for="{ icon, network, url } in networks"
+            :key="network"
+            bottom
           >
-            <v-icon>{{ mdiTwitter }}</v-icon>
-          </v-btn>
-          <v-btn
-            icon
-            color="#757575"
-            target="_blank"
-            rel="noopener"
-            :href="`https://www.linkedin.com/shareArticle/?mini=true&url=https://daim.dev${$route.path}`"
-          >
-            <v-icon>{{ mdiLinkedin }}</v-icon>
-          </v-btn>
-          <v-btn
-            icon
-            color="#757575"
-            target="_blank"
-            rel="noopener"
-            :href="`https://www.facebook.com/sharer/sharer.php?u=https://daim.dev${$route.path}&display=page`"
-          >
-            <v-icon>{{ mdiFacebook }}</v-icon>
-          </v-btn>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                v-bind="attrs"
+                icon
+                color="#757575"
+                target="_blank"
+                rel="noopener"
+                :href="url"
+                v-on="on"
+              >
+                <v-icon>{{ icon }}</v-icon>
+              </v-btn>
+            </template>
+            Share on {{ network }}
+          </v-tooltip>
         </v-col>
       </v-row>
     </v-container>
@@ -73,10 +62,32 @@ export default {
   },
   data: () => ({
     item: {},
-    mdiFacebook,
-    mdiTwitter,
-    mdiLinkedin,
   }),
+  computed: {
+    networks() {
+      return [
+        {
+          icon: mdiTwitter,
+          network: 'Twitter',
+          url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+            this.item.title,
+          )}%0A%0A${encodeURIComponent(this.item.description)}&url=${
+            this.$config.BASE_URL
+          }${this.$route.path}`,
+        },
+        {
+          icon: mdiLinkedin,
+          network: 'Linkedin',
+          url: `https://www.linkedin.com/sharing/share-offsite/?url=${this.$config.BASE_URL}${this.$route.path}`,
+        },
+        {
+          icon: mdiFacebook,
+          network: 'Facebook',
+          url: `https://www.facebook.com/sharer/sharer.php?u=${this.$config.BASE_URL}${this.$route.path}&display=page`,
+        },
+      ];
+    },
+  },
   methods: {
     formatDate(date) {
       return dayjs(date).format('MMMM D, YYYY');
