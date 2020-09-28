@@ -25,15 +25,7 @@ While not necessary, some great bonus features of a great static site blog are f
 
 ---
 
-Following the Nuxt [installation guide](https://nuxtjs.org/guide/installation):
-
-To get started quickly, the Nuxt.js team has created scaffolding tool create-nuxt-app. Make sure you have npx installed (npx is shipped by default since NPM 5.2.0)
-
-```bash
-npx create-nuxt-app <project-name>
-```
-
-It will ask you some questions (name, Nuxt options, UI framework (Vuetify), TypeScript, linter (Eslint, Prettier), testing framework, modules(nuxt content), etc.), when answered, it will install all the dependencies.
+If you haven't used Nuxt before you can go read my [Nuxt](/blog/nuxt#getting-started) Post about how to get started.
 
 Install npm packages:
 
