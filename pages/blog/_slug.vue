@@ -4,6 +4,7 @@
       :title="item.title"
       :summary="item.description"
       :src="item.image"
+      :credit="item.image && credit ? credit : {}"
     ></BlogHero>
     <v-container>
       <v-row>
