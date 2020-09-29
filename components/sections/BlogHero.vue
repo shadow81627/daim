@@ -14,7 +14,10 @@
           <v-card-subtitle v-if="summary">{{ summary }}</v-card-subtitle>
         </v-card>
       </v-col>
-      <v-col v-if="credit" class="d-flex text-right align-end justify-end">
+      <v-col
+        v-if="credit && credit.by"
+        class="d-flex text-right align-end justify-end"
+      >
         <span>
           Photo by
           <a

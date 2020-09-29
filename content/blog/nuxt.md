@@ -1,7 +1,7 @@
 ---
-title: Nuxt.js
+title: What is Nuxt?
 date: 2020-09-28T01:40:37.548Z
-description: Build your next Vue.js application with confidence using NuxtJS. An open source framework making web development simple and powerful.
+description: The open source framework making web development simple and powerful. Build your next Vue.js application with confidence using NuxtJS.
 image: './blog/nuxt.png'
 ---
 
@@ -57,4 +57,4 @@ The application is now running on <http://localhost:3000>.
 
 ## Summary
 
-Now you know what makes Nuxt so awesome and how to get started. You can check out my other post about [setting up a static site blog using Nuxt](/blog/how-to-build-a-static-site-blog).
+Now you know what makes Nuxt so awesome and how to get started. You can check out my other post [Build a Static Site Blog with Nuxt](/blog/how-to-build-a-static-site-blog).

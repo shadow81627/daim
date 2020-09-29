@@ -8,9 +8,8 @@
           :key="slug"
           class="d-flex flex-column"
           cols="12"
-          sm="6"
-          md="4"
-          lg="3"
+          md="6"
+          lg="4"
         >
           <v-card
             :to="`/blog/${encodeURIComponent(slug)}`"
@@ -32,7 +31,7 @@
                 >{{ readTime(JSON.stringify(body)) }} min read</time
               >
             </v-card-subtitle>
-            <v-card-text class="body-1 align-self-end">
+            <v-card-text class="body-1 text--primary">
               {{ description }}
             </v-card-text>
           </v-card>

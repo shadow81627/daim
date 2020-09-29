@@ -21,7 +21,7 @@ async function* getFiles(dir) {
 const file = 'assets/img/header-bg.jpg';
 sharp(file)
   .resize(4686)
-  .toFile(`assets/img/header-bg-1.jpg`, (err, info) => {
+  .toFile(file, (err, info) => {
     console.log(err, info);
   });
 
@@ -51,8 +51,8 @@ sharp(file)
       .resize({
         width: 4686,
         height: 2636,
-        fit: 'contain',
-        background: { r: 255, g: 255, b: 255 },
+        // fit: 'contain',
+        // background: { r: 255, g: 255, b: 255 },
       })
       .toBuffer();
     sharp(buffer).toFile(filename);
