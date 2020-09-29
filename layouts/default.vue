@@ -38,7 +38,7 @@
         dark
         @click.stop="drawer = !drawer"
       />
-      <v-toolbar-title class="ml-0 pl-3">
+      <v-toolbar-title class="ml-0 pl-3 d-flex align-center">
         <img
           :src="require('~/assets/img/logo.svg?inline')"
           class="navbar-brand"
