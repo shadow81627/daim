@@ -1,5 +1,11 @@
 # Releases
 
+## [1.27.0](https://github.com/shadow81627/daim/compare/v1.26.3...v1.27.0) (2020-09-29)
+
+### Features
+
+- **blog:** images and credit ([#626](https://github.com/shadow81627/daim/issues/626)) ([befe17d](https://github.com/shadow81627/daim/commit/befe17df191941aeac04deffe78431320c83a847))
+
 ## [1.26.3](https://github.com/shadow81627/daim/compare/v1.26.2...v1.26.3) (2020-09-28)
 
 ### Bug Fixes
