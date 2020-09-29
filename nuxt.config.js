@@ -69,6 +69,7 @@ export default {
    ** Headers of the page
    */
   head: {
+    title: 'Damien Robinson',
     titleTemplate: `%s | ${env.APP_NAME}`,
     meta: [
       {
@@ -90,7 +91,9 @@ export default {
         content: env.VERSION,
       },
       {
+        once: true,
         property: 'og:title',
+        content: 'Damien Robinson',
         template: `%s | ${env.APP_NAME}`,
         hid: 'og:title',
       },
