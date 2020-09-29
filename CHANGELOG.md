@@ -1,5 +1,11 @@
 # Releases
 
+## [1.27.1](https://github.com/shadow81627/daim/compare/v1.27.0...v1.27.1) (2020-09-29)
+
+### Bug Fixes
+
+- **meta:** global default title ([#640](https://github.com/shadow81627/daim/issues/640)) ([61bbcbe](https://github.com/shadow81627/daim/commit/61bbcbe855fb52913544dbb3a0b1710fbd7c5c87))
+
 ## [1.27.0](https://github.com/shadow81627/daim/compare/v1.26.3...v1.27.0) (2020-09-29)
 
 ### Features
