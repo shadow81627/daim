@@ -1,5 +1,11 @@
 # Releases
 
+## [1.28.0](https://github.com/shadow81627/daim/compare/v1.27.2...v1.28.0) (2020-09-30)
+
+### Features
+
+- **blog:** article structured data ([#644](https://github.com/shadow81627/daim/issues/644)) ([4692578](https://github.com/shadow81627/daim/commit/46925787abffb585a0604c9aeea7dbf7520047ce)), closes [#643](https://github.com/shadow81627/daim/issues/643)
+
 ## [1.27.2](https://github.com/shadow81627/daim/compare/v1.27.1...v1.27.2) (2020-09-29)
 
 ### Bug Fixes
