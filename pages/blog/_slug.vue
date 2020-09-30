@@ -123,6 +123,7 @@ export default {
             '@context': 'https://schema.org',
             '@type': 'Article',
             headline: this.item.title,
+            description: this.item.description,
             image: {
               '@type': 'ImageObject',
               url: `${this.$config.BASE_URL}${image.src}`,
