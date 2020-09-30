@@ -24,7 +24,6 @@
         <v-card class="flex d-flex flex-column" tile>
           <v-img
             v-if="image"
-            alt=""
             :lazy-src="src(image).placeholder"
             :src="src(image).src"
             :srcset="src(image).srcSet"
@@ -136,6 +135,16 @@ export default {
           'https://www.xcommedia.com.au/case-study-scUber.php',
           'https://teq.queensland.com/industry-resources/the-great-barrier-reef/scuber',
         ],
+      },
+      {
+        name: 'Your next Project?',
+        image: './placeholder.jpg',
+        startDate: new Date().toISOString(),
+        description:
+          'Reach out and contact us to bring your great ideas to life.',
+        credit: {
+          // <span>Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/s/photos/placeholder?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        },
       },
     ],
   }),
