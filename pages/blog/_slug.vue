@@ -55,7 +55,7 @@ export default {
   async asyncData({ $content, route, error }) {
     try {
       const item = await $content('blog', route.params.slug).fetch();
-      return { item, ...item };
+      return { item };
     } catch {
       error({ statusCode: 404 });
     }
