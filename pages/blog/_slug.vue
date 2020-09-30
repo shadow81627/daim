@@ -92,8 +92,14 @@ export default {
     formatDate(date) {
       return dayjs(date).format('MMMM D, YYYY');
     },
+    image: require.context(
+      `~/assets/img?resize&size=1200&format=jpg`,
+      true,
+      /\.(png|jpe?g).*$/,
+    ),
   },
   head() {
+    const image = this.image(`${this.item.image || './blog.jpg'}`);
     return {
       title: this.item.title,
       meta: [
@@ -110,6 +116,24 @@ export default {
           content: this.item.description,
         },
         { hid: 'og:type', property: 'og:type', content: 'article' },
+      ],
+      script: [
+        {
+          json: {
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: this.item.title,
+            image: {
+              '@type': 'ImageObject',
+              url: `${this.$config.BASE_URL}${image.src}`,
+              width: image.width,
+              height: image.height,
+            },
+            datePublished: this.item.date,
+            dateModified: this.item.date,
+          },
+          type: 'application/ld+json',
+        },
       ],
     };
   },
