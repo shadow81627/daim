@@ -8,20 +8,14 @@
     </v-row>
     <v-row>
       <v-col
-        v-for="{
-          name,
-          description,
-          links,
-          image,
-          startDate,
-          endDate,
-        } in projects"
+        v-for="{ name, description, links, image, startDate, endDate } in items"
         :key="name"
         class="d-flex flex-column"
         cols="12"
-        sm="6"
+        md="6"
+        lg="4"
       >
-        <v-card class="flex d-flex flex-column" tile>
+        <v-card class="flex d-flex flex-column">
           <v-img
             v-if="image"
             :lazy-src="src(image).placeholder"
@@ -62,7 +56,7 @@
                   v-bind="attrs"
                   v-on="on"
                 >
-                  <v-icon>{{ icon }}</v-icon>
+                  <v-icon>{{ icons[icon] }}</v-icon>
                   <span class="d-sr-only-focusable">{{ link }}</span>
                 </v-btn>
               </template>
@@ -79,74 +73,16 @@
 import { mdiWeb, mdiGithub, mdiOpenInNew } from '@mdi/js';
 import * as dayjs from 'dayjs';
 export default {
+  async asyncData({ $content }) {
+    const items = await $content('projects').sortBy('startDate').fetch();
+    return {
+      items,
+    };
+  },
   data: () => ({
     heading: 'Portfolio',
     description: 'Explore demos and code for my projects.',
-    projects: [
-      {
-        image: './pocketpasta.com_recipes.png',
-        name: 'PocketPasta',
-        description: 'Household planner for recipes and shopping.',
-        links: [
-          { link: 'https://pocketpasta.com', icon: mdiWeb, tooltip: 'Website' },
-          {
-            link: 'https://github.com/shadow81627/pocketpasta',
-            icon: mdiGithub,
-            tooltip: 'Github',
-          },
-        ],
-      },
-      {
-        image:
-          './brisbane-city-council-free-native-plants.daim.dev_species.png',
-        startDate: '2020-08-07T01:08:52Z',
-        name: 'Brisbane City Council Free Native Plant Gallery',
-        description:
-          'Govhack project that combines several creative commons datasets to detail care requirements for Brisbane City Councils Free Native Plant Program.',
-        links: [
-          {
-            link: 'https://brisbane-city-council-free-native-plants.daim.dev',
-            icon: mdiWeb,
-            tooltip: 'Website',
-          },
-          {
-            link:
-              'https://github.com/shadow81627/brisbane-city-council-free-native-plants',
-            icon: mdiGithub,
-            tooltip: 'Github',
-          },
-        ],
-      },
-      {
-        startDate: '2019-05-07T06:17:22Z',
-        endDate: '2019-07-03T03:58:42Z',
-        image: './scuber.jpg',
-        name: 'scUber',
-        client: 'Tourism and Events Queensland',
-        description: `XCOM designed and developed the scUber campaign microsite to intoduce this world's first on the Great Barrier Reef. Uber and Queensland, Australia, gave riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.`,
-        links: [
-          {
-            link: 'https://www.xcommedia.com.au/case-study-scUber.php',
-            icon: mdiOpenInNew,
-            tooltip: 'Case Study',
-          },
-        ],
-        sources: [
-          'https://www.xcommedia.com.au/case-study-scUber.php',
-          'https://teq.queensland.com/industry-resources/the-great-barrier-reef/scuber',
-        ],
-      },
-      {
-        name: 'Your next Project?',
-        image: './placeholder.jpg',
-        startDate: new Date().toISOString(),
-        description:
-          'Reach out and contact us to bring your great ideas to life.',
-        credit: {
-          // <span>Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/s/photos/placeholder?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-        },
-      },
-    ],
+    icons: { mdiWeb, mdiGithub, mdiOpenInNew },
   }),
   methods: {
     formatDate(date) {
