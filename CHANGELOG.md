@@ -1,5 +1,11 @@
 # Releases
 
+## [1.29.0](https://github.com/shadow81627/daim/compare/v1.28.0...v1.29.0) (2020-10-01)
+
+### Features
+
+- **portfolio:** add placeholder project ([#645](https://github.com/shadow81627/daim/issues/645)) ([1dfd53a](https://github.com/shadow81627/daim/commit/1dfd53a50705aab4a1098c29eadf853c3afc87c6)), closes [#642](https://github.com/shadow81627/daim/issues/642)
+
 ## [1.28.0](https://github.com/shadow81627/daim/compare/v1.27.2...v1.28.0) (2020-09-30)
 
 ### Features
