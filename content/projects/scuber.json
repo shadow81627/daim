@@ -1,0 +1,19 @@
+{
+  "startDate": "2019-05-07T06:17:22Z",
+  "endDate": "2019-07-03T03:58:42Z",
+  "image": "./scuber.jpg",
+  "name": "scUber",
+  "client": "Tourism and Events Queensland",
+  "description": "XCOM designed and developed the scUber campaign microsite to intoduce this world's first on the Great Barrier Reef. Uber and Queensland, Australia, gave riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.",
+  "links": [
+    {
+      "link": "https://www.xcommedia.com.au/case-study-scUber.php",
+      "icon": "mdiOpenInNew",
+      "tooltip": "Case Study"
+    }
+  ],
+  "sources": [
+    "https://www.xcommedia.com.au/case-study-scUber.php",
+    "https://teq.queensland.com/industry-resources/the-great-barrier-reef/scuber"
+  ]
+}
