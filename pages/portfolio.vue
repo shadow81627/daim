@@ -15,7 +15,7 @@
         md="6"
         lg="4"
       >
-        <v-card class="flex d-flex flex-column">
+        <v-card class="flex d-flex flex-column" tile>
           <v-img
             v-if="image"
             :lazy-src="src(image).placeholder"
@@ -74,7 +74,16 @@ import { mdiWeb, mdiGithub, mdiOpenInNew } from '@mdi/js';
 import * as dayjs from 'dayjs';
 export default {
   async asyncData({ $content }) {
-    const items = await $content('projects').sortBy('startDate').fetch();
+    const items = await $content('projects')
+      .sortBy('startDate', 'desc')
+      .fetch();
+
+    // Move placeholder to start
+    const first = 'placeholder';
+    items.sort(function (x, y) {
+      return x.slug === first ? -1 : y.slug === first ? 1 : 0;
+    });
+
     return {
       items,
     };
