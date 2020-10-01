@@ -53,6 +53,7 @@
                   icon
                   :href="link"
                   target="_blank"
+                  rel="noopener"
                   v-bind="attrs"
                   v-on="on"
                 >
