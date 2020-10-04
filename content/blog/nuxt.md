@@ -57,4 +57,4 @@ The application is now running on <http://localhost:3000>.
 
 ## Summary
 
-Now you know what makes Nuxt so awesome and how to get started. You can check out my other post [Build a Static Site Blog with Nuxt](/blog/how-to-build-a-static-site-blog).
+Now you know what makes Nuxt so awesome and how to get started. You can check out my other post [Build a Static Site Blog with Nuxt](/blog/build-a-static-site-blog).

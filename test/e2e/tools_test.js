@@ -4,7 +4,7 @@ const name = 'tools';
 
 Feature(name);
 
-Scenario('Heading 1', async (I) => {
+Scenario('Heading 1', async ({ I }) => {
   I.amOnPage(`/${name}`);
   I.see('TOOLS', 'h1');
 
