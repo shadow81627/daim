@@ -11,6 +11,7 @@ script:
   # - npm run test
   - npm run generate
   - npm run lhci:autorun
+  - npm run test:e2e
   - npx semantic-release
 
 deploy:
@@ -22,6 +23,3 @@ deploy:
     cleanup: false
     on:
       all_branches: true
-
-after_deploy:
-  - npm run test:e2e

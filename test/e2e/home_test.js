@@ -4,7 +4,7 @@ const name = 'home';
 
 Feature(name);
 
-Scenario('Heading 1', async (I) => {
+Scenario('Heading 1', async ({ I }) => {
   I.amOnPage(`/`);
   I.see('DAMIEN ROBINSON', 'h1');
 
