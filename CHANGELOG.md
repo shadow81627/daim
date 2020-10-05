@@ -1,5 +1,11 @@
 # Releases
 
+## [1.29.2](https://github.com/shadow81627/daim/compare/v1.29.1...v1.29.2) (2020-10-05)
+
+### Bug Fixes
+
+- **deps:** update font awesome ([e45983f](https://github.com/shadow81627/daim/commit/e45983f60eb7b413cc65e1c33df8b2b7a437c8cb))
+
 ## [1.29.1](https://github.com/shadow81627/daim/compare/v1.29.0...v1.29.1) (2020-10-05)
 
 ### Bug Fixes
