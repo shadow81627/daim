@@ -1,5 +1,11 @@
 # Releases
 
+## [1.29.1](https://github.com/shadow81627/daim/compare/v1.29.0...v1.29.1) (2020-10-05)
+
+### Bug Fixes
+
+- **deps:** update dependency prism-themes to v1.4.1 ([670cd71](https://github.com/shadow81627/daim/commit/670cd71e996af22da0b34070da36a78581163fac))
+
 ## [1.29.0](https://github.com/shadow81627/daim/compare/v1.28.0...v1.29.0) (2020-10-01)
 
 ### Features
