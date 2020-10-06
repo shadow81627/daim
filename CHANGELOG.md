@@ -1,5 +1,11 @@
 # Releases
 
+## [1.29.3](https://github.com/shadow81627/daim/compare/v1.29.2...v1.29.3) (2020-10-06)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/pwa to v3.1.0 ([766196d](https://github.com/shadow81627/daim/commit/766196d1cb46d5cda750da8a5b870c4b32c927c4))
+
 ## [1.29.2](https://github.com/shadow81627/daim/compare/v1.29.1...v1.29.2) (2020-10-05)
 
 ### Bug Fixes
