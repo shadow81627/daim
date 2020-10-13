@@ -1,5 +1,11 @@
 # Releases
 
+## [1.29.7](https://github.com/shadow81627/daim/compare/v1.29.6...v1.29.7) (2020-10-13)
+
+### Bug Fixes
+
+- **deps:** update dependency dayjs to v1.9.3 ([ed47787](https://github.com/shadow81627/daim/commit/ed47787497feb76f3a0107a25d13d4e60bc91c01))
+
 ## [1.29.6](https://github.com/shadow81627/daim/compare/v1.29.5...v1.29.6) (2020-10-12)
 
 ### Bug Fixes
