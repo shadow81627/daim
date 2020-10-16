@@ -1,5 +1,11 @@
 # Releases
 
+## [1.29.14](https://github.com/shadow81627/daim/compare/v1.29.13...v1.29.14) (2020-10-16)
+
+### Bug Fixes
+
+- **deps:** update dependency mailgo to v0.10.3 ([b2a66a3](https://github.com/shadow81627/daim/commit/b2a66a3d9c0b185d56f5f12ffc128c3156c228df))
+
 ## [1.29.13](https://github.com/shadow81627/daim/compare/v1.29.12...v1.29.13) (2020-10-16)
 
 ### Bug Fixes
