@@ -22,6 +22,7 @@
 
 <script>
 export default {
+  name: 'ContactPage',
   data: () => ({
     heading: 'Contact',
     description: 'Want to get in touch? Check out my details below.',

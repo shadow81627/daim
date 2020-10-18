@@ -6,7 +6,7 @@
           <v-col cols="10">
             <base-title
               :space="$vuetify.breakpoint.mdAndUp ? 0 : 4"
-              title="HAVE QUESTIONS? LET US KNOW!"
+              title="HAVE QUESTIONS? LET ME KNOW!"
             />
 
             <base-body space="0">
@@ -25,7 +25,7 @@
               large
               outlined
             >
-              Contact Us
+              Contact Me
             </base-btn>
           </v-col>
         </v-row>
@@ -33,9 +33,3 @@
     </base-section>
   </v-theme-provider>
 </template>
-
-<script>
-export default {
-  name: 'SectionContactUs',
-};
-</script>

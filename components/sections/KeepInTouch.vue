@@ -3,20 +3,13 @@
     <v-container>
       <v-row justify="space-between">
         <v-col cols="12" md="5">
-          <base-business-info title="KEEP IN TOUCH WITH US">
-          </base-business-info>
+          <BaseBusinessInfo></BaseBusinessInfo>
         </v-col>
 
         <v-col cols="12" md="6">
-          <base-contact-form />
+          <BaseContactForm></BaseContactForm>
         </v-col>
       </v-row>
     </v-container>
   </base-section>
 </template>
-
-<script>
-export default {
-  name: 'SectionKeepInTouch',
-};
-</script>

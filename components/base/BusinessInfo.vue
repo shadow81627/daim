@@ -8,8 +8,6 @@
 
 <script>
 export default {
-  name: 'BaseBusinessInfo',
-
   props: { dark: Boolean },
 };
 </script>

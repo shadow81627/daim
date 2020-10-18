@@ -1,9 +1,5 @@
 <template>
-  <v-card
-    v-editable="blok"
-    class="flex d-flex flex-column justify-between"
-    min-width="240"
-  >
+  <v-card class="flex d-flex flex-column justify-between" min-width="240">
     <v-card-title>
       <span class="h3 text-break text-no-wrap text-truncate">
         <font-awesome-icon

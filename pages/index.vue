@@ -19,12 +19,9 @@ import {
   faClipboardList,
   faFileArchive,
 } from '@fortawesome/free-solid-svg-icons';
-import Hero from '~/components/hero';
-import Features from '~/components/sections/Features.vue';
-import Services from '~/components/sections/Services.vue';
 
 export default {
-  components: { Hero, Features, Services },
+  name: 'HomePage',
   data() {
     return {
       features: [

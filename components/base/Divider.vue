@@ -6,9 +6,7 @@
     min-height="3"
     v-bind="$attrs"
     v-on="$listeners"
-  >
-    <!-- <v-divider /> -->
-  </v-responsive>
+  ></v-responsive>
 </template>
 
 <script>
@@ -31,12 +29,7 @@ export default {
 
   computed: {
     classes() {
-      return [
-        this.color,
-        this.margin,
-        `mb-${this.space}`,
-        // this.dense && 'base-divider--dense',
-      ];
+      return [this.color, this.margin, `mb-${this.space}`];
     },
     margin() {
       switch (this.align) {
@@ -51,11 +44,3 @@ export default {
   },
 };
 </script>
-
-<style lang="sass">
-// .base-divider .v-divider
-//   border-width: 3px 0 0 0 !important
-
-// .base-divider.base-divider--dense .v-divider
-//   border-width: 2px 0 0 0 !important
-</style>
