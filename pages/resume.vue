@@ -19,44 +19,43 @@
           <section>
             <v-card id="about" flat>
               <v-card-subtitle class="text-subtitle-1 text-break pb-0">
-                <mailgo :href="`mailto:${email}`" :icon="faEnvelope">
+                <mailgo
+                  v-if="email"
+                  :href="`mailto:${email}`"
+                  :icon="faEnvelope"
+                  class="pl-0"
+                >
                   <span>{{ email }}</span>
                 </mailgo>
-
-                <v-tooltip bottom eager>
-                  <template v-slot:activator="{ on, attrs }">
-                    <v-btn
-                      target="_blank"
-                      v-bind="attrs"
-                      large
-                      text
-                      :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
-                        `${city || ''} ${region || ''} ${postcode || ''} ${
-                          country || ''
-                        }`,
-                      )}`"
-                      class="pl-0"
-                      rel="noreferrer"
-                      v-on="on"
-                    >
-                      <font-awesome-icon
-                        :icon="faMapMarker"
-                        title="location"
-                        fixed-width
-                        pull="left"
-                      />
-                      <span>{{ city || region }}</span>
-                      <span>{{ country ? ',' : '' }}&nbsp;</span>
-                      <span>{{ country }}</span>
-                    </v-btn>
-                  </template>
-                  <span>Check out the map</span>
-                </v-tooltip>
-
-                <!-- add hidden content to set height to prevent page jank -->
-                <v-btn style="visibility: hidden" aria-hidden="true" large text>
-                  <font-awesome-icon :icon="faMapMarker" fixed-width />
-                  &nbsp;
+                <mailgo
+                  v-if="phone"
+                  :href="`tel:${phone}`"
+                  :icon="faPhone"
+                  class="pl-0"
+                >
+                  <span>{{ phone }}</span>
+                </mailgo>
+                <v-btn
+                  target="_blank"
+                  large
+                  text
+                  :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
+                    `${city || ''} ${region || ''} ${postcode || ''} ${
+                      country || ''
+                    }`,
+                  )}`"
+                  class="pl-0"
+                  rel="noreferrer"
+                >
+                  <font-awesome-icon
+                    :icon="faMapMarker"
+                    title="location"
+                    fixed-width
+                    pull="left"
+                  />
+                  <span>{{ city || region }}</span>
+                  <span>{{ country ? ',' : '' }}&nbsp;</span>
+                  <span>{{ country }}</span>
                 </v-btn>
               </v-card-subtitle>
 
@@ -382,6 +381,7 @@ import {
   faPuzzlePiece,
   faTasks,
   faPaperPlane,
+  faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
@@ -425,6 +425,7 @@ export default {
         lastname,
         label,
         email,
+        phone,
         location: { city, region, countryCode, postalcode: postcode },
         summary,
       },
@@ -441,6 +442,7 @@ export default {
       firstname,
       lastname,
       email,
+      phone,
       label,
       country,
       region,
@@ -486,6 +488,7 @@ export default {
       faPaperPlane,
     },
     faEnvelope,
+    faPhone,
     faMapMarker,
   }),
   methods: {

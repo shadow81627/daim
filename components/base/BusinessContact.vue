@@ -5,7 +5,7 @@
         <slot></slot>
       </base-info-card>
 
-      <template v-for="({ icon, text, title: t }, i) in business">
+      <template v-for="({ icon, text, title: t, type, href }, i) in business">
         <BaseAvatarCard
           :key="i"
           :icon="icon"
@@ -15,7 +15,20 @@
           horizontal
           space="0"
         >
-          {{ text }}
+          <mailgo v-if="type" :href="`${type}:${text}`" class="px-0">
+            <span>{{ text }}</span>
+          </mailgo>
+          <v-btn
+            v-else-if="href"
+            target="_blank"
+            large
+            text
+            :href="href"
+            rel="noopener"
+            class="px-0"
+            >{{ text }}</v-btn
+          >
+          <span v-else>{{ text }}</span>
         </BaseAvatarCard>
 
         <v-divider
@@ -34,7 +47,11 @@ import {
   faPhone,
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
+import Mailgo from '@/components/mailgo.vue';
 export default {
+  components: {
+    Mailgo,
+  },
   props: {
     dark: Boolean,
     dense: Boolean,
@@ -46,16 +63,21 @@ export default {
         icon: faMapMarker,
         title: 'Location',
         text: 'New Farm, Australia',
+        href: `https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
+          'New Farm, Australia',
+        )}`,
       },
       {
         icon: faPhone,
         title: 'Phone',
-        text: '0437 606 977',
+        text: '+61-437-606-977',
+        type: 'tel',
       },
       {
         icon: faEnvelope,
         title: 'Email',
         text: 'damien.robinson@daim.dev',
+        type: 'mailto',
       },
     ],
   }),
