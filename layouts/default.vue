@@ -1,5 +1,5 @@
 <template>
-  <v-app :dark="isDark" clipped-left>
+  <v-app clipped-left>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -38,7 +38,7 @@
         dark
         @click.stop="drawer = !drawer"
       />
-      <v-toolbar-title class="ml-0 pl-3 d-flex align-center">
+      <v-toolbar-title class="ml-0 px-3 d-flex align-center">
         <img
           :src="require('~/assets/img/logo.svg?inline')"
           class="navbar-brand"
@@ -48,6 +48,17 @@
         />
       </v-toolbar-title>
       <v-spacer />
+      <v-tabs class="hidden-sm-and-down" optional right>
+        <v-tabs-slider></v-tabs-slider>
+        <v-tab
+          v-for="{ text, route } in items"
+          :key="route"
+          :to="localePath(route ? route : {})"
+          text
+        >
+          {{ text }}
+        </v-tab>
+      </v-tabs>
     </v-app-bar>
     <v-main role="main">
       <nuxt style="min-height: 100vh" keep-alive></nuxt>
@@ -63,6 +74,7 @@ import {
   mdiToolbox,
   mdiFolder,
   mdiInformation,
+  mdiAndroidMessages,
 } from '@mdi/js';
 import TheFooter from '@/components/layout/the-footer.vue';
 export default {
@@ -98,13 +110,13 @@ export default {
           text: 'Tools',
           route: 'tools',
         },
+        {
+          icon: mdiAndroidMessages,
+          text: 'Contact',
+          route: 'contact',
+        },
       ],
     };
-  },
-  computed: {
-    isDark() {
-      return false;
-    },
   },
   mounted() {
     const vm = this;

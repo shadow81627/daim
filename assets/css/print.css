@@ -39,14 +39,6 @@
     visibility: visible;
   }
 
-  /* .container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: none;
-    margin: 0; padding: 0;
-  } */
-
   main {
     padding: 0 !important;
   }
@@ -55,29 +47,4 @@
     /* page-break-before: always; */
     page-break-inside: avoid;
   }
-
-  /* h1 {
-    font-size: 24pt;
-  }
-
-  h2 {
-    page-break-after: always;
-    font-size: 42pt !important;
-  }
-
-  h3 {
-    font-size: 24pt !important;
-  }
-
-  ul {
-    page-break-inside: avoid;
-  }
-
-  p,
-  p.lead {
-    font-size: 13pt !important;
-    color: #1a1a1a !important;
-    widows: 4;
-    orphans: 3;
-  } */
 }

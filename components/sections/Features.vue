@@ -33,11 +33,12 @@ import {
   faGlobe,
   faBug,
   faClipboardList,
-  faFileArchive,
+  // faFileArchive,
 } from '@fortawesome/free-solid-svg-icons';
+import { faOsi } from '@fortawesome/free-brands-svg-icons';
 export default {
   data: () => ({
-    title: 'Features',
+    title: 'Website Features',
     features: [
       {
         icon: faLock,
@@ -74,27 +75,32 @@ export default {
       },
       {
         icon: faGlobe,
-        title: 'Localization',
+        title: 'Localized',
         subtitle: 'Serve multiple countries and languages.',
       },
       {
         icon: faBug,
-        title: 'Monitoring',
+        title: 'Monitored',
         subtitle:
           'Our software team discover, triage, and prioritize errors in real-time.',
       },
       {
         icon: faClipboardList,
-        title: 'Audits',
+        title: 'Audited',
         subtitle:
           'Continuously find and fix vulnerabilities. Lighthouse audits for performance, accessibility, progressive web apps, SEO and more.',
       },
       {
-        icon: faFileArchive,
-        title: 'Save Bandwidth',
-        subtitle:
-          'Reduce bandwidth usage by over 75% with content compression.',
+        icon: faOsi,
+        title: 'Open Source',
+        subtitle: `Our code is open source which allows anyone to use, study, change, and share the software in modified and unmodified form.`,
       },
+      // {
+      //   icon: faFileArchive,
+      //   title: 'Save Bandwidth',
+      //   subtitle:
+      //     'Reduce bandwidth usage by over 75% with content compression.',
+      // },
     ],
   }),
 };

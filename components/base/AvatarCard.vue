@@ -11,7 +11,12 @@
     />
 
     <div :class="horizontal && title && 'ml-6'">
-      <base-title :title="title" class="text-uppercase" space="3" />
+      <base-title
+        v-if="title"
+        :title="title"
+        class="text-uppercase text-break"
+        space="3"
+      />
 
       <base-body
         v-if="text || $slots.default"

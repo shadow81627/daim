@@ -3,6 +3,7 @@
     <hero heading="Damien Robinson" subheading="Web Development"></hero>
     <Features></Features>
     <Services></Services>
+    <ContactUs></ContactUs>
   </div>
 </template>
 
