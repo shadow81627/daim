@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.0](https://github.com/shadow81627/daim/compare/v1.29.15...v1.30.0) (2020-10-18)
+
+### Features
+
+- add contact page ([#677](https://github.com/shadow81627/daim/issues/677)) ([d98649e](https://github.com/shadow81627/daim/commit/d98649e93d12f7dbe915bc0bb91df9b8a72742c0))
+
 ## [1.29.15](https://github.com/shadow81627/daim/compare/v1.29.14...v1.29.15) (2020-10-17)
 
 ### Bug Fixes
