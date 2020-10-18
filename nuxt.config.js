@@ -49,22 +49,6 @@ export default {
     fallback: true,
   },
 
-  server: {
-    timing: {
-      total: true,
-    },
-  },
-
-  render: {
-    http2: {
-      push: true,
-      pushAssets: (req, res, publicPath, preloadFiles) =>
-        preloadFiles.map(
-          (f) => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`,
-        ),
-    },
-  },
-
   /*
    ** Headers of the page
    */
@@ -244,22 +228,7 @@ export default {
    ** Build configuration
    */
   build: {
-    transpile: ['lodash-es', 'vuetify/lib'],
-
+    transpile: ['lodash-es', 'vuetify/lib', 'vee-validate/dist/rules'],
     extractCSS: true,
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/,
-        });
-      }
-    },
   },
 };

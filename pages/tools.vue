@@ -41,6 +41,7 @@ import {
   faFileCode,
   faFire,
   faBug,
+  faAlignLeft,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faVuejs,
@@ -171,17 +172,25 @@ export default {
             'UI Library with beautifully handcrafted Material Design Components.',
         },
         {
-          icon: faServer,
-          heading: 'Surge',
-          href: 'https://surge.sh',
-          subheading: 'Content delivery network (CDN)',
-          text: 'Free static web hosting',
+          icon: faAlignLeft,
+          heading: 'Formspree',
+          href: 'https://formspree.io/',
+          subheading: 'Form submission API',
+          text: 'Set up simple forms to send data to an email address',
         },
         {
           icon: faCheckDouble,
           heading: 'VeeValidate',
           href: 'https://logaretm.github.io/vee-validate/',
           subheading: 'Template Based Form Validation Framework for Vue.js',
+          text: 'Validate form input to ensure data is clean and usable.',
+        },
+        {
+          icon: faServer,
+          heading: 'Surge',
+          href: 'https://surge.sh',
+          subheading: 'Content delivery network (CDN)',
+          text: 'Free static web hosting',
         },
         // {
         //   icon: 'fas comment-alt',

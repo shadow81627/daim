@@ -4,16 +4,14 @@
       <v-card-text class="py-2">
         <span>Last modified</span>
         <v-tooltip top>
-          <span>{{ relativeDate }}</span>
+          <time
+            itemprop="dateModified"
+            :content="lastModified.toISOString()"
+            :datetime="lastModified.toISOString()"
+            >{{ lastModified.format(format) }}</time
+          >
           <template v-slot:activator="{ on, attrs }">
-            <time
-              v-bind="attrs"
-              itemprop="dateModified"
-              :content="lastModified.toISOString()"
-              :datetime="lastModified.toISOString()"
-              v-on="on"
-              >{{ lastModified.format(format) }}</time
-            >
+            <span v-bind="attrs" v-on="on">{{ relativeDate }}</span>
           </template>
         </v-tooltip>
       </v-card-text>

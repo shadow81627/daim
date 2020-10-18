@@ -1,14 +1,5 @@
 <template>
   <div :class="classes" class="base-avatar d-inline-flex">
-    <!-- <v-avatar
-      v-if="outlined"
-      :color="color || 'grey lighten-3'"
-      :size="outlineSize"
-      :style="styles"
-      class="base-avatar__outline"
-      style="opacity: 0.4"
-    /> -->
-
     <v-avatar
       :color="color || 'white'"
       :size="size"
@@ -62,21 +53,3 @@ export default {
   },
 };
 </script>
-
-<style lang="sass">
-// .base-avatar
-//   border-radius: 50%
-//   position: relative
-//   overflow: visible
-
-//   &__outline
-//     position: absolute !important
-//     left: 0
-//     top: 0
-
-//   &--outlined
-//     background-color: #FFFFFF
-
-//     .base-avatar__avatar
-//       border: thin solid rgba(0, 0, 0, .12) !important
-</style>

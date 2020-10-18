@@ -6,7 +6,7 @@
     "label": "Web Developer",
     "picture": "",
     "email": "damien.robinson@daim.dev",
-    "phone": "",
+    "phone": "+61-437-606-977",
     "website": "https://daim.dev",
     "summary": "I am a full-stack web developer with 3 years experience, seeking full time employment and a chance to further my skills in front end web development for marketing websites. I have well-rounded full-stack development experience, with a proficiency in Vue.js static marketing websites.",
     "location": {
@@ -54,6 +54,7 @@
       "company": "Otherlevels",
       "location": "Brisbane, Queensland, Australia",
       "startDate": "2020-01-14",
+      "endDate": "2020-11-16",
       "tools": "HTML, CSS, Angular",
       "url": "https://www.otherlevels.com/",
       "summary": "In my secondment with XCOM Media’s parent company Otherlevels I have gained experience in migrating and modernising Angular.js web apps. I have also worked on productising the services XCOM Media provide as integrations to the Otherlevels marketing automation platform. This role has allowed me to diversify my skills in working on large scale enterprise applications. Since June 2020 I have also been the acting Lead Front End Developer at Otherlevels, furthering my skills in project management and product development."
@@ -63,6 +64,7 @@
       "position": "Web Developer",
       "url": "https://xcommedia.com.au",
       "startDate": "2018-03-29",
+      "endDate": "2020-01-14",
       "summary": "My work at XCOM Media allows me to develop skills with building secure, performant, reliable, highly available contact management solutions for global markets. During my time in this role I have worked on projects such as Tourism and Events Queensland’s scUber campaign, developing an award winning micro site for collecting competition entries. I have also maintained and modernised legacy PHP email subscription forms. In this role I have furthered my skills in implementing marketing strategies, client and professional liaising, and working in a fast-paced team environment.",
       "tools": "HTML, CSS, Vue.js, PHP, SQL"
     },
@@ -84,7 +86,7 @@
       "area": "Applied Information Technology",
       "studyType": "Bachelor",
       "startDate": "2015-03-01",
-      "endDate": "2017-11-01",
+      "endDate": "2017-11-09",
       "gpa": "5.1/7",
       "courses": [
         "Dynamic Multimedia Systems",

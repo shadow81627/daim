@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-0" style="max-width: 1785px">
+  <v-container class="pa-0 hidden-print-only" style="max-width: 1785px">
     <v-row no-gutters align="center" justify="center">
       <v-col cols="12" align-self="center">
         <v-card :color="color || backgroundColor(src)[0]" flat dark tile>

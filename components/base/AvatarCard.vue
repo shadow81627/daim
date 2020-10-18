@@ -11,16 +11,22 @@
     />
 
     <div :class="horizontal && title && 'ml-6'">
-      <base-title :title="title" class="text-uppercase" space="3" />
+      <base-title
+        v-if="title"
+        :title="title"
+        class="text-uppercase text-break"
+        space="3"
+      />
 
       <base-body
         v-if="text || $slots.default"
-        :space="horizontal ? 0 : undefined"
-        :text="text"
+        :space="horizontal || dense ? 0 : undefined"
         class="mx-auto"
         max-width="700"
       >
-        <slot />
+        <slot>
+          {{ text }}
+        </slot>
       </base-body>
     </div>
   </div>
@@ -48,6 +54,7 @@ export default {
     },
     color: { type: String, default: null },
     dark: Boolean,
+    dense: Boolean,
     horizontal: Boolean,
     icon: { type: [String, Object], default: null },
     outlined: {
