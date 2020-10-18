@@ -8,14 +8,21 @@
       <template v-for="({ icon, text, title: t, type, href }, i) in business">
         <BaseAvatarCard
           :key="i"
-          :icon="icon"
+          :icon="$vuetify.breakpoint.mdAndUp ? icon : undefined"
           :outlined="false"
           :title="!dense ? t : undefined"
           color="transparent"
-          horizontal
+          :horizontal="$vuetify.breakpoint.mdAndUp"
+          dense
           space="0"
+          style="overflow: hidden"
         >
-          <mailgo v-if="type" :href="`${type}:${text}`" class="px-0">
+          <mailgo
+            v-if="type"
+            :href="`${type}:${text}`"
+            class="px-0"
+            :icon="!$vuetify.breakpoint.mdAndUp ? icon : undefined"
+          >
             <span>{{ text }}</span>
           </mailgo>
           <v-btn
@@ -26,8 +33,15 @@
             :href="href"
             rel="noopener"
             class="px-0"
-            >{{ text }}</v-btn
           >
+            <font-awesome-icon
+              v-if="!$vuetify.breakpoint.mdAndUp && icon"
+              :icon="icon"
+              fixed-width
+              pull="left"
+            />
+            {{ text }}
+          </v-btn>
           <span v-else>{{ text }}</span>
         </BaseAvatarCard>
 
