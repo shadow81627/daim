@@ -1,9 +1,7 @@
 <template>
   <BaseSection id="features">
     <BaseSectionHeading :title="title">
-      <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in!
-      Asperiores, impedit libero. Veniam rerum saepe unde nihil possimus
-      quibusdam esse accusamus mollitia magni fuga. -->
+      Get a high quality custom landing page or microsite built by professinals.
     </BaseSectionHeading>
 
     <v-container>
@@ -43,12 +41,8 @@ export default {
       {
         icon: faLock,
         title: 'Secure',
-        subtitle: 'Make sure your site can resist attacks.',
-        list: [
-          'Secure Domain Name Server (DNS)',
-          'DDos protection',
-          'Secure Sockets Layer (SSL)',
-        ],
+        subtitle:
+          'Make sure your site can resist attacks. With Secure Domain Name Server (DNS), DDos protection, Secure Sockets Layer (SSL)',
       },
       {
         icon: faTachometerAlt,

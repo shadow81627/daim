@@ -71,21 +71,15 @@
 
 <script>
 import { ValidationObserver, extend } from 'vee-validate';
-
-// dynamiclly import rules
-(async () => {
-  const names = ['email', 'required', 'max'];
-  for (const name of names) {
-    const { [name]: rule } = await import('vee-validate/dist/rules');
-    const {
-      messages: { [name]: message },
-    } = await import('vee-validate/dist/locale/en.json');
-    extend(name, {
-      ...rule,
-      message,
-    });
-  }
-})();
+import { messages } from 'vee-validate/dist/locale/en.json';
+import { required, email, max } from 'vee-validate/dist/rules';
+const rules = { required, email, max };
+for (const [rule, validation] of Object.entries(rules)) {
+  extend(rule, {
+    ...validation,
+    message: messages[rule],
+  });
+}
 
 export default {
   name: 'BaseContactForm',

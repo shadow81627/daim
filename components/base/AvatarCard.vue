@@ -21,11 +21,12 @@
       <base-body
         v-if="text || $slots.default"
         :space="horizontal ? 0 : undefined"
-        :text="text"
         class="mx-auto"
         max-width="700"
       >
-        <slot />
+        <slot>
+          {{ text }}
+        </slot>
       </base-body>
     </div>
   </div>
