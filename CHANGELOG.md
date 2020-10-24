@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.5](https://github.com/shadow81627/daim/compare/v1.30.4...v1.30.5) (2020-10-24)
+
+### Bug Fixes
+
+- **deps:** update dependency i18n-iso-countries to v6.2.1 ([3d91280](https://github.com/shadow81627/daim/commit/3d912808f946b32539f9643b967af9b85b9bc478))
+
 ## [1.30.4](https://github.com/shadow81627/daim/compare/v1.30.3...v1.30.4) (2020-10-23)
 
 ### Bug Fixes
