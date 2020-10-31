@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.8](https://github.com/shadow81627/daim/compare/v1.30.7...v1.30.8) (2020-10-31)
+
+### Bug Fixes
+
+- **hero:** fluid ([#704](https://github.com/shadow81627/daim/issues/704)) ([c36b286](https://github.com/shadow81627/daim/commit/c36b286028025a655dffcee0bee1c83300e2104f))
+
 ## [1.30.7](https://github.com/shadow81627/daim/compare/v1.30.6...v1.30.7) (2020-10-27)
 
 ### Bug Fixes
