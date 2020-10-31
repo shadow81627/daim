@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-0 hidden-print-only" style="max-width: 1785px">
+  <v-container class="pa-0 hidden-print-only" fluid>
     <v-row no-gutters align="center" justify="center">
       <v-col cols="12" align-self="center">
         <v-card :color="color || backgroundColor(src)[0]" flat dark tile>
@@ -8,7 +8,6 @@
             :src="_src(src).src"
             :srcset="_src(src).srcSet"
             :height="height"
-            width="1785"
             sizes="(max-width: 1785px) 100vw, 1785px"
             :gradient="gradient"
           >
