@@ -79,7 +79,7 @@
     "@nuxtjs/vuetify": "1.11.2",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.0",
-    "@vue/test-utils": "1.1.0",
+    "@vue/test-utils": "1.1.1",
     "ava": "3.13.0",
     "babel-eslint": "10.1.0",
     "babel-plugin-module-resolver": "4.0.0",
