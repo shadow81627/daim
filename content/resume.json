@@ -57,7 +57,7 @@
       "endDate": "2020-11-16",
       "tools": "HTML, CSS, Angular",
       "url": "https://www.otherlevels.com/",
-      "summary": "In my secondment with XCOM Media’s parent company Otherlevels I have gained experience in migrating and modernising Angular.js web apps. I have also worked on productising the services XCOM Media provide as integrations to the Otherlevels marketing automation platform. This role has allowed me to diversify my skills in working on large scale enterprise applications. Since June 2020 I have also been the acting Lead Front End Developer at Otherlevels, furthering my skills in project management and product development."
+      "summary": "In my secondment with XCOM Media’s parent company Otherlevels I have gained experience in migrating and modernizing Angular.js web apps. I have also worked on productizing the services XCOM Media provide as integrations to the Otherlevels marketing automation platform. This role has allowed me to diversify my skills in working on large scale enterprise applications. Since June 2020 I have also been the acting Lead Front End Developer at Otherlevels, furthering my skills in project management and product development."
     },
     {
       "company": "XCOM Media",
@@ -65,7 +65,7 @@
       "url": "https://xcommedia.com.au",
       "startDate": "2018-03-29",
       "endDate": "2020-01-14",
-      "summary": "My work at XCOM Media allows me to develop skills with building secure, performant, reliable, highly available contact management solutions for global markets. During my time in this role I have worked on projects such as Tourism and Events Queensland’s scUber campaign, developing an award winning micro site for collecting competition entries. I have also maintained and modernised legacy PHP email subscription forms. In this role I have furthered my skills in implementing marketing strategies, client and professional liaising, and working in a fast-paced team environment.",
+      "summary": "My work at XCOM Media allows me to develop skills with building secure, performant, reliable, highly available contact management solutions for global markets. During my time in this role I have worked on projects such as Tourism and Events Queensland’s scUber campaign, developing an award winning micro site for collecting competition entries. I have also maintained and modernized legacy PHP email subscription forms. In this role I have furthered my skills in implementing marketing strategies, client and professional liaising, and working in a fast-paced team environment.",
       "tools": "HTML, CSS, Vue.js, PHP, SQL"
     },
     {
@@ -131,7 +131,7 @@
     },
     {
       "icon": "faSearch",
-      "text": "Search Engine Optimisation (SEO)"
+      "text": "Search Engine Optimization (SEO)"
     },
     {
       "icon": "faJira",
@@ -243,7 +243,7 @@
       "name": "scUber",
       "url": "https://scuberqueensland.com",
       "entity": "Tourism and Events Queensland",
-      "description": "XCOM designed and developed the scUber campaign microsite to intoduce this world's first on the Great Barrier Reef. Uber and Queensland, Australia, gave riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.",
+      "description": "XCOM designed and developed the scUber campaign microsite to introduce this world's first on the Great Barrier Reef. Uber and Queensland, Australia, gave riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.",
       "type": "application",
       "roles": ["Front End Developer"],
       "links": [

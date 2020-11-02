@@ -11,24 +11,24 @@ image: './blog/nuxt.png'
 
 - Pre-rendered pages
 - Great project structure
-- Configless page routing
+- Config less page routing
 - Lots of useful modules
 - Good documentation
 - Growing Community
 
 ### Static Site Generation
 
-Static Site Generation is a very hot topic right now (aka [JAMStack](https://jamstack.org/)). Instead of switching to another framework and spending time to get used to it, why not kill two birds with one stone?
+Static Site Generation is a hot topic right now (aka [JAMStack](https://jamstack.org/)). Instead of switching to another framework and spending time getting used to it, you can meet all your needs with one framework?
 
-Nuxt.js supports generating a static website based on your Vue application. It is the "best of both worlds" as you don't need a server but still have SEO benefits because Nuxt will pre-render all pages and include the necessary HTML. Also, you can deploy the resulting page easily to [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
+Nuxt.js supports generating a static website based on your Vue application. It's the "best of both worlds" as you don't need a server but still have SEO benefits because Nuxt will pre-render all pages and include the necessary HTML. Also, you can deploy the resulting pages to [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
 
-### Perfomance
+### Performance
 
-Applications are optimized out of the box. We do our best to build performant applications by utilizing Vue.js and Node.js best practices. Squeezing every unnecessary bit out of your app Nuxt includes a bundle analyzer and lots of opportunities to fine-tune your app.
+You get optimized applications out of the box. We do our best to build performant applications by utilizing Vue.js and Node.js best practices. Squeezing every unnecessary bit out of your app Nuxt includes a bundle analyzer and lots of opportunities to fine-tune your app.
 
 ### Modular
 
-You can choose from more than [50 awesome modules](https://github.com/nuxt-community/awesome-nuxt) to make your development faster and easier. You don't have to reinvent the wheel to get [PWA](https://pwa.nuxtjs.org/) benefits, add [Google Analytics](https://github.com/nuxt-community/analytics-module) to your page or generate a [sitemap](https://www.npmjs.com/package/@nuxtjs/sitemap).
+You can choose from more than [50 awesome modules](https://github.com/nuxt-community/awesome-nuxt) to make your development faster and easier. You don't have to there is no need to fiddle around setting up service workers to get [PWA](https://pwa.nuxtjs.org/) benefits, add [Google Analytics](https://github.com/nuxt-community/analytics-module) to your page or generate a [sitemap](https://www.npmjs.com/package/@nuxtjs/sitemap).
 
 ### Developer Experience
 
@@ -40,7 +40,7 @@ We love Nuxt.js and continuously improve the framework so you love it too! Appea
 
 Following the Nuxt [installation guide](https://nuxtjs.org/guide/installation):
 
-To get started quickly, the Nuxt.js team has created scaffolding tool create-nuxt-app. Make sure you have npx installed (npx is shipped by default since NPM 5.2.0)
+The Nuxt.js team has created a scaffolding tool called create-nuxt-app to help get you started.
 
 ```bash
 npx create-nuxt-app <project-name>
