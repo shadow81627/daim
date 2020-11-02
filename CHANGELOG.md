@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.9](https://github.com/shadow81627/daim/compare/v1.30.8...v1.30.9) (2020-11-02)
+
+### Bug Fixes
+
+- spell check ([#709](https://github.com/shadow81627/daim/issues/709)) ([01c5053](https://github.com/shadow81627/daim/commit/01c5053744faf6c1a3679568343bc5013f35b0d3))
+
 ## [1.30.8](https://github.com/shadow81627/daim/compare/v1.30.7...v1.30.8) (2020-10-31)
 
 ### Bug Fixes
