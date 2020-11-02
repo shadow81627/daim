@@ -61,7 +61,7 @@
       </template>
     </v-snackbar>
     <v-snackbar v-model="success" bottom right fixed color="green">
-      Thanks for getting in contact. We will contact you very soon!
+      Thanks for getting in contact. We will contact you soon!
       <template v-slot:action="{ attrs }">
         <v-btn text v-bind="attrs" @click="success = false"> Close </v-btn>
       </template>

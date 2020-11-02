@@ -1,0 +1,40 @@
+// cSpell Settings
+{
+    "version": "0.1",
+    // language - current active spelling language
+    "language": "en",
+    // words - list of words to be always considered correct
+    "words": [
+        "Akismet",
+        "Alibaba",
+        "Cloudinary",
+        "Codepen",
+        "daim",
+        "Formspree",
+        "Govhack",
+        "hackathons",
+        "Hubspot",
+        "JIRA",
+        "Laravel",
+        "Linkedin",
+        "Mailgun",
+        "microsite",
+        "nuxt",
+        "nuxtjs",
+        "Otherlevels",
+        "Photoshop",
+        "pocketpasta",
+        "productizing",
+        "rideshare",
+        "scuber",
+        "Sendgrid",
+        "Squiz",
+        "vercel",
+        "Vuejs",
+        "vuetify",
+        "webp",
+        "XCOM",
+        "Xiaomi",
+        "Youtube"
+    ]
+}

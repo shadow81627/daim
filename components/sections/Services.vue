@@ -38,7 +38,7 @@ export default {
         icon: faSearch,
         title: 'SEO',
         text:
-          'Organicly raise high quality content to the top of search results.',
+          'Organically raise high quality content to the top of search results.',
       },
       {
         icon: faPaperPlane,
