@@ -202,7 +202,7 @@
 
 ### Features
 
-- **blog:** readtime ([#634](https://github.com/shadow81627/daim/issues/634)) ([33c8764](https://github.com/shadow81627/daim/commit/33c87642e91220197e6e8be2c3e12a1b73eb6baf)), closes [#631](https://github.com/shadow81627/daim/issues/631)
+- **blog:** read time ([#634](https://github.com/shadow81627/daim/issues/634)) ([33c8764](https://github.com/shadow81627/daim/commit/33c87642e91220197e6e8be2c3e12a1b73eb6baf)), closes [#631](https://github.com/shadow81627/daim/issues/631)
 
 ## [1.25.0](https://github.com/shadow81627/daim/compare/v1.24.2...v1.25.0) (2020-09-22)
 

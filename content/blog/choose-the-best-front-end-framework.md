@@ -24,7 +24,7 @@ Another drawback of the Angular framework is the frequent release on the new ver
 
 ### React
 
-Facebook and Instagram develope and support React. It's used for browser-based web-apps and mobile apps. The aim of the framework is to provide high speed, simplicity, and operability of the apps on web and mobile platforms.
+Facebook and Instagram develop and support React. It's used for browser-based web-apps and mobile apps. The aim of the framework is to provide high speed, simplicity, and operability of the apps on web and mobile platforms.
 
 React is not a full-fledged framework, but a function library. To use it as a framework, you need to add other third-party libraries.
 The strength of React comes from it's speed, small bundle size, cross-platform format, and big community.

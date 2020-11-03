@@ -12,7 +12,7 @@ export default {
   name: 'HomePage',
   data: () => ({
     description:
-      'Get a high quality custom landing page or microsite built by professinals.',
+      'Get a high quality custom landing page or microsite built by professionals.',
   }),
   head() {
     return {

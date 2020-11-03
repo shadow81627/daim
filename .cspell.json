@@ -10,6 +10,7 @@
         "Cloudinary",
         "Codepen",
         "daim",
+        "Fontawesome",
         "Formspree",
         "Govhack",
         "hackathons",
@@ -28,6 +29,7 @@
         "rideshare",
         "scuber",
         "Sendgrid",
+        "Snyk",
         "Squiz",
         "vercel",
         "Vuejs",
@@ -36,5 +38,8 @@
         "XCOM",
         "Xiaomi",
         "Youtube"
+    ],
+    "enableFiletypes": [
+        "vue"
     ]
 }

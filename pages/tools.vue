@@ -14,10 +14,7 @@
         md="4"
         class="d-flex flex-column"
       >
-        <Feature
-          :blok="feature"
-          xclass="flex d-flex flex-column xjustify-between xjustify-space-between align-stretch"
-        ></Feature>
+        <Feature :blok="feature"></Feature>
       </v-col>
     </v-row>
   </v-container>
