@@ -44,7 +44,7 @@ export default {
         icon: faPaperPlane,
         title: 'Messaging',
         text:
-          'Keep the conversation going with omni-channel messaging automation.',
+          'Keep the conversation going with multi-channel messaging automation.',
       },
       {
         icon: faPuzzlePiece,
