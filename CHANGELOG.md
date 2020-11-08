@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.11](https://github.com/shadow81627/daim/compare/v1.30.10...v1.30.11) (2020-11-08)
+
+### Bug Fixes
+
+- **deps:** update dependency vee-validate to v3.4.4 ([b8983ea](https://github.com/shadow81627/daim/commit/b8983eadcab174a5a4e2a29afb8011e8180933d0))
+
 ## [1.30.10](https://github.com/shadow81627/daim/compare/v1.30.9...v1.30.10) (2020-11-05)
 
 ### Bug Fixes
