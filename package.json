@@ -110,7 +110,7 @@
     "require-extension-hooks-babel": "1.0.0",
     "require-extension-hooks-vue": "3.0.0",
     "responsive-loader": "2.2.0",
-    "semantic-release": "17.2.2",
+    "semantic-release": "17.2.3",
     "serve-handler": "6.1.3",
     "sharp": "0.26.2",
     "sqip-loader": "1.0.0",
