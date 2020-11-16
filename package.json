@@ -62,7 +62,7 @@
     "i18n-iso-countries": "6.2.2",
     "koa": "2.13.0",
     "lodash-es": "4.17.15",
-    "mailgo": "0.10.4",
+    "mailgo": "0.11.1",
     "nuxt": "2.14.7",
     "nuxt-fontawesome": "0.4.0",
     "nuxt-i18n": "6.15.4",
