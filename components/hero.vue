@@ -54,23 +54,6 @@ export default {
       default: './header-bg.jpg',
     },
   },
-  methods: {
-    backgroundColor: require.context(
-      '~/assets/img?lqip-colors',
-      true,
-      /\.(png|jpe?g).*$/,
-    ),
-    _src: require.context(
-      `~/assets/img?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&sizes[]=4686&placeholder&format=webp`,
-      true,
-      /\.(png|jpe?g).*$/,
-    ),
-    cover: require.context(
-      `~/assets/img?resize&size=1200&format=jpg`,
-      true,
-      /\.(png|jpe?g).*$/,
-    ),
-  },
   head() {
     return {
       meta: [
@@ -91,6 +74,23 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    backgroundColor: require.context(
+      '~/assets/img?lqip-colors',
+      true,
+      /\.(png|jpe?g).*$/,
+    ),
+    _src: require.context(
+      `~/assets/img?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&sizes[]=4686&placeholder&format=webp`,
+      true,
+      /\.(png|jpe?g).*$/,
+    ),
+    cover: require.context(
+      `~/assets/img?resize&size=1200&format=jpg`,
+      true,
+      /\.(png|jpe?g).*$/,
+    ),
   },
 };
 </script>

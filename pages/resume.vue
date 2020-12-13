@@ -69,7 +69,7 @@
                   :key="network"
                   bottom
                 >
-                  <template v-slot:activator="{ on, attrs }">
+                  <template #activator="{ on, attrs }">
                     <v-btn
                       target="_blank"
                       v-bind="attrs"
@@ -491,6 +491,18 @@ export default {
     faPhone,
     faMapMarker,
   }),
+  head() {
+    return {
+      title: 'Resume',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.summary,
+        },
+      ],
+    };
+  },
   methods: {
     formatDate(date) {
       return dayjs(date).format('MMMM YYYY');
@@ -505,18 +517,6 @@ export default {
       }
       return columns;
     },
-  },
-  head() {
-    return {
-      title: 'Resume',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.summary,
-        },
-      ],
-    };
   },
 };
 </script>

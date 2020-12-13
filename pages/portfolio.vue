@@ -8,7 +8,14 @@
     </v-row>
     <v-row>
       <v-col
-        v-for="{ name, description, links, image, startDate, endDate } in items"
+        v-for="{
+          name,
+          description: title,
+          links,
+          image,
+          startDate,
+          endDate,
+        } in items"
         :key="name"
         class="d-flex flex-column"
         cols="12"
@@ -34,7 +41,7 @@
             </h2>
           </v-card-title>
           <v-card-text class="body-1 text--primary flex-grow-1">
-            {{ description }}
+            {{ title }}
           </v-card-text>
           <v-card-text v-if="startDate || endDate">
             <time v-if="startDate" :datetime="new Date(startDate).toISOString()"
@@ -48,7 +55,7 @@
           <v-card-actions class="mt-auto">
             <v-spacer></v-spacer>
             <v-tooltip v-for="{ link, icon, tooltip } in links" :key="link" top>
-              <template v-slot:activator="{ on, attrs }">
+              <template #activator="{ on, attrs }">
                 <v-btn
                   icon
                   :href="link"
@@ -94,6 +101,18 @@ export default {
     description: 'Explore demos and code for my projects.',
     icons: { mdiWeb, mdiGithub, mdiOpenInNew },
   }),
+  head() {
+    return {
+      title: this.heading,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
+      ],
+    };
+  },
   methods: {
     formatDate(date) {
       return dayjs(date).format('MMM D, YYYY');
@@ -108,18 +127,6 @@ export default {
       false,
       /\.(png|jpe?g).*$/,
     ),
-  },
-  head() {
-    return {
-      title: this.heading,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
-        },
-      ],
-    };
   },
 };
 </script>

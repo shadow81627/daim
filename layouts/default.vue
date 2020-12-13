@@ -118,6 +118,16 @@ export default {
       ],
     };
   },
+  head() {
+    const i18nSeo = this.$nuxtI18nSeo();
+    return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [...i18nSeo.meta],
+      link: [...i18nSeo.link],
+    };
+  },
   mounted() {
     const vm = this;
     const beforePrint = function () {
@@ -139,16 +149,6 @@ export default {
     }
     window.onbeforeprint = beforePrint;
     window.onafterprint = afterPrint;
-  },
-  head() {
-    const i18nSeo = this.$nuxtI18nSeo();
-    return {
-      htmlAttrs: {
-        ...i18nSeo.htmlAttrs,
-      },
-      meta: [...i18nSeo.meta],
-      link: [...i18nSeo.link],
-    };
   },
 };
 </script>

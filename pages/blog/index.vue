@@ -52,6 +52,11 @@ export default {
   data() {
     return { heading: "Damien Robinson's Blog", total: 0, items: [] };
   },
+  head() {
+    return {
+      title: this.heading,
+    };
+  },
   methods: {
     formatDate(date) {
       return dayjs(date).format('MMM D, YYYY');
@@ -65,11 +70,6 @@ export default {
       true,
       /\.(png|jpe?g).*$/,
     ),
-  },
-  head() {
-    return {
-      title: this.heading,
-    };
   },
 };
 </script>
