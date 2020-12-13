@@ -214,8 +214,6 @@ export default {
     defaultAssets: false,
   },
 
-  webfontloader: {},
-
   eslint: {
     cache: true,
   },
@@ -226,5 +224,11 @@ export default {
   build: {
     transpile: ['lodash-es', 'vuetify/lib', 'vee-validate/dist/rules'],
     extractCSS: true,
+    extend(config, { isClient }) {
+      // Extend only webpack config for client-bundle
+      if (isClient) {
+        config.devtool = 'source-map';
+      }
+    },
   },
 };
