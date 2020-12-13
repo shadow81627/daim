@@ -1,5 +1,18 @@
 # Releases
 
+## [1.30.17](https://github.com/shadow81627/daim/compare/v1.30.16...v1.30.17) (2020-12-13)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.12.3 ([1e891b4](https://github.com/shadow81627/daim/commit/1e891b42d508e46aee65723472cde457568405f9))
+- **deps:** update dependency @nuxtjs/pwa to v3.3.0 ([83515de](https://github.com/shadow81627/daim/commit/83515dee987599b78de29fff175bc6c4e2559962))
+- **deps:** update dependency @nuxtjs/pwa to v3.3.1 ([25c70ed](https://github.com/shadow81627/daim/commit/25c70edf7cfe92a388237082d51b9ccea439f4de))
+- **deps:** update dependency @nuxtjs/pwa to v3.3.2 ([3f33156](https://github.com/shadow81627/daim/commit/3f33156c2c3155fbb21ecbddf0974b49b8b72f86))
+- **deps:** update dependency cross-env to v7.0.3 ([7a5ae58](https://github.com/shadow81627/daim/commit/7a5ae5884b885179428bc0287fb69c9095d16146))
+- **deps:** update dependency mailgo to v0.11.2 ([0e4f9af](https://github.com/shadow81627/daim/commit/0e4f9af142ec2f7a63270bc166faa12b2a2d940b))
+- **deps:** update dependency nuxt to v2.14.8 ([78d4cbf](https://github.com/shadow81627/daim/commit/78d4cbf7c219f2f97d4ba7c4b321f8d27f2ac9fe))
+- **deps:** update dependency nuxt to v2.14.9 ([c50e4cc](https://github.com/shadow81627/daim/commit/c50e4cc966c8c93aa89af2077934c7c67301d8c5))
+
 ## [1.30.16](https://github.com/shadow81627/daim/compare/v1.30.15...v1.30.16) (2020-11-25)
 
 ### Bug Fixes
