@@ -89,7 +89,7 @@
     "codeceptjs-resemblehelper": "1.9.2",
     "cspell": "5.0.2",
     "eslint": "7.14.0",
-    "eslint-config-prettier": "6.15.0",
+    "eslint-config-prettier": "7.0.0",
     "eslint-plugin-nuxt": "2.0.0",
     "eslint-plugin-prettier": "3.2.0",
     "husky": "4.3.0",
