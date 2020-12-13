@@ -3,7 +3,6 @@ name: Main
 on:
   pull_request:
     branches:
-      - main
       - master
 
 jobs:
@@ -35,7 +34,7 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: npm ci
 
-      - name: Lint 👀
+      - name: Lint ✨
         run: npm run lint
 
       - name: Build 🔨
@@ -46,3 +45,5 @@ jobs:
 
       - name: Run Lighthouse 💡
         run: npm run lhci:autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
