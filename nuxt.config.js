@@ -8,12 +8,8 @@ const BASE_URL = (
   `http${process.env.PORT === 433 ? 's' : ''}://${process.env.HOST}:${
     process.env.PORT
   }`
-).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (
-  _,
-  protocol = 'http',
-  domain,
-) {
-  return `${protocol}://${domain}`;
+).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (_, protocol, domain) {
+  return `${protocol || 'http'}://${domain}`;
 });
 
 const env = {
