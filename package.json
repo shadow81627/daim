@@ -24,7 +24,7 @@
     "serve:lhci": "npm run start",
     "generate": "nuxt generate --modern",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore . && npm run lint:md",
-    "lint:fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix && npm run lint:md -- -o",
+    "lint:fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "lint:md": "remark . -r .remarkrc.js -f",
     "mdspell": "mdspell -r -n -a --en-us content/**/**.md || true",
     "write-good": "write-good content",

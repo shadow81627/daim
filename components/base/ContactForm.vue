@@ -56,13 +56,13 @@
     </validation-observer>
     <v-snackbar v-model="error" top right fixed :timeout="-1" color="red">
       There was an issue submitting your message
-      <template v-slot:action="{ attrs }">
+      <template #action="{ attrs }">
         <v-btn text v-bind="attrs" @click="error = false"> Close </v-btn>
       </template>
     </v-snackbar>
     <v-snackbar v-model="success" bottom right fixed color="green">
       Thanks for getting in contact. We will contact you soon!
-      <template v-slot:action="{ attrs }">
+      <template #action="{ attrs }">
         <v-btn text v-bind="attrs" @click="success = false"> Close </v-btn>
       </template>
     </v-snackbar>

@@ -10,7 +10,7 @@
             :datetime="lastModified.toISOString()"
             >{{ lastModified.format(format) }}</time
           >
-          <template v-slot:activator="{ on, attrs }">
+          <template #activator="{ on, attrs }">
             <span v-bind="attrs" v-on="on">{{ relativeDate }}</span>
           </template>
         </v-tooltip>

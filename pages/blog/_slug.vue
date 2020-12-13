@@ -27,7 +27,7 @@
             :key="network"
             bottom
           >
-            <template v-slot:activator="{ on, attrs }">
+            <template #activator="{ on, attrs }">
               <v-btn
                 v-bind="attrs"
                 icon
@@ -64,41 +64,6 @@ export default {
   data: () => ({
     item: {},
   }),
-  computed: {
-    networks() {
-      return [
-        {
-          icon: mdiTwitter,
-          network: 'Twitter',
-          url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-            this.item.title,
-          )}%0A%0A${encodeURIComponent(this.item.description)}&url=${
-            this.$config.BASE_URL
-          }${this.$route.path}`,
-        },
-        {
-          icon: mdiLinkedin,
-          network: 'Linkedin',
-          url: `https://www.linkedin.com/sharing/share-offsite/?url=${this.$config.BASE_URL}${this.$route.path}`,
-        },
-        {
-          icon: mdiFacebook,
-          network: 'Facebook',
-          url: `https://www.facebook.com/sharer/sharer.php?u=${this.$config.BASE_URL}${this.$route.path}&display=page`,
-        },
-      ];
-    },
-  },
-  methods: {
-    formatDate(date) {
-      return dayjs(date).format('MMMM D, YYYY');
-    },
-    image: require.context(
-      `~/assets/img?resize&size=1200&format=jpg`,
-      true,
-      /\.(png|jpe?g).*$/,
-    ),
-  },
   head() {
     const image = this.image(`${this.item.image || './blog.jpg'}`);
     return {
@@ -138,6 +103,41 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    networks() {
+      return [
+        {
+          icon: mdiTwitter,
+          network: 'Twitter',
+          url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+            this.item.title,
+          )}%0A%0A${encodeURIComponent(this.item.description)}&url=${
+            this.$config.BASE_URL
+          }${this.$route.path}`,
+        },
+        {
+          icon: mdiLinkedin,
+          network: 'Linkedin',
+          url: `https://www.linkedin.com/sharing/share-offsite/?url=${this.$config.BASE_URL}${this.$route.path}`,
+        },
+        {
+          icon: mdiFacebook,
+          network: 'Facebook',
+          url: `https://www.facebook.com/sharer/sharer.php?u=${this.$config.BASE_URL}${this.$route.path}&display=page`,
+        },
+      ];
+    },
+  },
+  methods: {
+    formatDate(date) {
+      return dayjs(date).format('MMMM D, YYYY');
+    },
+    image: require.context(
+      `~/assets/img?resize&size=1200&format=jpg`,
+      true,
+      /\.(png|jpe?g).*$/,
+    ),
   },
 };
 </script>
