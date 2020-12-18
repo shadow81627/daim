@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.19](https://github.com/shadow81627/daim/compare/v1.30.18...v1.30.19) (2020-12-18)
+
+### Bug Fixes
+
+- **deps:** update actions/setup-node requirement to v2.1.4 ([#782](https://github.com/shadow81627/daim/issues/782)) ([8e93043](https://github.com/shadow81627/daim/commit/8e930439f4cf9146c86c9a936f7be50b05094a18))
+
 ## [1.30.18](https://github.com/shadow81627/daim/compare/v1.30.17...v1.30.18) (2020-12-14)
 
 ### Bug Fixes
