@@ -83,7 +83,7 @@
     "@semantic-release/git": "9.0.0",
     "@vue/test-utils": "1.1.1",
     "babel-eslint": "10.1.0",
-    "babel-plugin-module-resolver": "4.0.0",
+    "babel-plugin-module-resolver": "4.1.0",
     "browser-env": "3.3.0",
     "codeceptjs": "3.0.2",
     "codeceptjs-resemblehelper": "1.9.2",
