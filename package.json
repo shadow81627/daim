@@ -57,7 +57,7 @@
     "@nuxtjs/pwa": "3.3.2",
     "@nuxtjs/sitemap": "2.4.0",
     "cross-env": "7.0.3",
-    "dayjs": "1.9.6",
+    "dayjs": "1.9.7",
     "github-markdown-css": "4.0.0",
     "i18n-iso-countries": "6.2.2",
     "koa": "2.13.0",
