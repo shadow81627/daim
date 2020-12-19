@@ -30,7 +30,6 @@ const env = {
 const preconnectLinks = [];
 
 export default {
-  mode: 'universal',
   target: 'static',
 
   publicRuntimeConfig: {
@@ -98,6 +97,7 @@ export default {
   pwa: {
     meta: {
       ogHost: env.BASE_URL,
+      theme_color: '#343a40',
       ogImage: {
         path: '/cover.jpg',
         width: 1200,
@@ -166,7 +166,7 @@ export default {
   },
 
   i18n: {
-    baseUrl: 'https://daim.dev',
+    baseUrl: env.BASE_URL,
     seo: false,
     defaultLocale: 'en',
     vueI18n: {
@@ -204,7 +204,7 @@ export default {
   },
 
   sitemap: {
-    hostname: 'https://daim.dev',
+    hostname: env.BASE_URL,
   },
 
   vuetify: {
