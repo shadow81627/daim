@@ -20,6 +20,7 @@ module.exports = {
         'unused-css-rules': 'warn',
         'non-composited-animations': 'warn',
         'errors-in-console': 'warn',
+        canonical: 'warn',
       },
     },
     upload: {
