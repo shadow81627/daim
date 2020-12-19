@@ -9,7 +9,12 @@
         <v-col v-if="title || subtitle" :cols="callout ? 9 : 12">
           <BaseSubtitle v-if="subtitle" :title="subtitle" space="1" />
 
-          <BaseTitle :title="title" class="text-uppercase" space="1" />
+          <BaseTitle
+            :title="title"
+            class="text-uppercase"
+            space="1"
+            :tag="`h${level}`"
+          />
 
           <BaseDivider :color="color" />
 
@@ -49,6 +54,7 @@ export default {
     subtitle: { type: String, default: null },
     text: { type: String, default: null },
     title: { type: String, default: null },
+    level: { type: Number, default: 3 },
   },
 };
 </script>

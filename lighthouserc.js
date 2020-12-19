@@ -9,10 +9,19 @@ module.exports = {
         '/tools/',
         '/portfolio/',
         '/blog/',
-        '/contact',
+        '/contact/',
       ],
       staticDistDir: './dist',
-      numberOfRuns: 5,
+    },
+    assert: {
+      preset: 'lighthouse:recommended',
+      assertions: {
+        'unused-javascript': 'warn',
+        'unused-css-rules': 'warn',
+        'non-composited-animations': 'warn',
+        'errors-in-console': 'warn',
+        canonical: 'warn',
+      },
     },
     upload: {
       target: 'temporary-public-storage',

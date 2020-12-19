@@ -5,6 +5,7 @@
       :subtitle="subtitle"
       space="4"
       color="primary"
+      level="2"
     />
     <validation-observer ref="obs" v-slot="{ handleSubmit }">
       <form
@@ -46,7 +47,7 @@
         />
 
         <base-btn
-          :color="!theme.isDark ? 'accent' : 'white'"
+          :color="!theme.isDark ? 'primary' : 'white'"
           outlined
           type="submit"
         >

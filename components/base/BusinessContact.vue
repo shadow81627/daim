@@ -1,7 +1,7 @@
 <template>
   <v-theme-provider :dark="dark">
     <div>
-      <base-info-card :title="title" color="primary">
+      <base-info-card :title="title" color="primary" level="2">
         <slot></slot>
       </base-info-card>
 
