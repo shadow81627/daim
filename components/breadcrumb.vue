@@ -13,7 +13,8 @@ export default {
   },
   computed: {
     breadcrumbs() {
-      const segments = this.$route.path.split('/').slice(1);
+      // trim leading and trailing slash from pathname and split into segments array
+      const segments = this.$route.path.replace(/^\/+|\/+$/g, '').split('/');
       const breadcrumbs = [{ text: 'Home', to: '/' }];
 
       segments.forEach((segment, index) => {
