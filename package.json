@@ -87,7 +87,7 @@
     "browser-env": "3.3.0",
     "codeceptjs": "3.0.4",
     "codeceptjs-resemblehelper": "1.9.2",
-    "cspell": "5.0.8",
+    "cspell": "5.1.0",
     "eslint": "7.16.0",
     "eslint-config-prettier": "7.1.0",
     "eslint-plugin-nuxt": "2.0.0",
