@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.33](https://github.com/shadow81627/daim/compare/v1.30.32...v1.30.33) (2021-01-09)
+
+### Bug Fixes
+
+- **deps:** update dependency koa to v2.13.1 ([cd0b8f6](https://github.com/shadow81627/daim/commit/cd0b8f675c30234cbcb95efa43c4c39651b017e2))
+
 ## [1.30.32](https://github.com/shadow81627/daim/compare/v1.30.31...v1.30.32) (2021-01-09)
 
 ### Bug Fixes
