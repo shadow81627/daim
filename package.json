@@ -73,7 +73,7 @@
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "1.4.0",
     "@lhci/cli": "0.6.1",
-    "@mdi/js": "5.8.55",
+    "@mdi/js": "5.9.55",
     "@nuxtjs/eslint-config": "5.0.0",
     "@nuxtjs/eslint-module": "3.0.2",
     "@nuxtjs/google-analytics": "2.4.0",
