@@ -78,7 +78,7 @@
     "@nuxtjs/eslint-module": "3.0.2",
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/stylelint-module": "4.0.0",
-    "@nuxtjs/vuetify": "1.11.2",
+    "@nuxtjs/vuetify": "1.11.3",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.0",
     "@vue/test-utils": "1.1.2",
