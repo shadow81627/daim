@@ -54,7 +54,7 @@
     "@nuxt/content": "1.11.1",
     "@nuxtjs/axios": "5.12.5",
     "@nuxtjs/markdownit": "2.0.0",
-    "@nuxtjs/pwa": "3.3.4",
+    "@nuxtjs/pwa": "3.3.5",
     "@nuxtjs/sitemap": "2.4.0",
     "cross-env": "7.0.3",
     "dayjs": "1.10.4",
