@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.42](https://github.com/shadow81627/daim/compare/v1.30.41...v1.30.42) (2021-02-12)
+
+### Bug Fixes
+
+- **deps:** bump actions/cache from v2 to v2.1.4 ([#847](https://github.com/shadow81627/daim/issues/847)) ([790a0ca](https://github.com/shadow81627/daim/commit/790a0ca5b28fbbe467ffdaabe091d6a15cd59603))
+
 ## [1.30.41](https://github.com/shadow81627/daim/compare/v1.30.40...v1.30.41) (2021-01-29)
 
 ### Bug Fixes
