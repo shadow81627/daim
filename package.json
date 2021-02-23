@@ -115,7 +115,7 @@
     "sharp": "0.27.1",
     "sqip-loader": "1.0.0",
     "stylelint": "13.9.0",
-    "vuetify": "2.4.3",
+    "vuetify": "2.4.4",
     "webp-loader": "0.6.0",
     "write-good": "1.0.4"
   }
