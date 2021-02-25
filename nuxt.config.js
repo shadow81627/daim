@@ -151,7 +151,11 @@ export default {
     '@nuxtjs/sitemap',
   ],
 
-  components: ['~/components', { path: '~/components/base/', prefix: 'base' }],
+  components: [
+    '~/components',
+    '~/components/sections',
+    { path: '~/components/base/', prefix: 'base' },
+  ],
 
   /*
    ** Axios module configuration
