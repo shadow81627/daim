@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.46](https://github.com/shadow81627/daim/compare/v1.30.45...v1.30.46) (2021-02-25)
+
+### Bug Fixes
+
+- **components:** add path to sections ([e8b24f2](https://github.com/shadow81627/daim/commit/e8b24f2b1826323445bc104ab50640cfe8d7b7c7))
+
 ## [1.30.45](https://github.com/shadow81627/daim/compare/v1.30.44...v1.30.45) (2021-02-23)
 
 ### Bug Fixes
