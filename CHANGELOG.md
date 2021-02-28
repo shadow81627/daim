@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.49](https://github.com/shadow81627/daim/compare/v1.30.48...v1.30.49) (2021-02-28)
+
+### Bug Fixes
+
+- **deps:** update dependency lodash-es to v4.17.21 ([60b828d](https://github.com/shadow81627/daim/commit/60b828d4089a4738a78c700aecd5141812956517))
+
 ## [1.30.48](https://github.com/shadow81627/daim/compare/v1.30.47...v1.30.48) (2021-02-26)
 
 ### Bug Fixes
