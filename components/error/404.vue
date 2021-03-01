@@ -3,7 +3,7 @@
     sizes="100vw"
     :lazy-src="require(`~/assets/img/404.jpg?lqip`)"
     :src="require('~/assets/img/404.jpg?resize&size=1785&placeholder').src"
-    :src-set="
+    :srcset="
       require(`~/assets/img/404.jpg?resize&max=1785&min=320&steps=6`).srcSet
     "
     :style="{
@@ -63,6 +63,17 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.$t('error.404.description'),
+        },
+      ],
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: require('~/assets/img/404.jpg?resize&size=1785&placeholder')
+            .src,
+          imagesrcset: require(`~/assets/img/404.jpg?resize&max=1785&min=320&steps=6`)
+            .srcSet,
+          imagesizes: '100vw',
         },
       ],
     };
