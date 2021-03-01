@@ -73,6 +73,15 @@ export default {
           content: this.cover(`${this.src}`).height,
         },
       ],
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: this._src(`${this.src}`).src,
+          imagesrcset: this._src(`${this.src}`).srcSet,
+          imagesizes: '(max-width: 1785px) 100vw, 1785px',
+        },
+      ],
     };
   },
   methods: {
