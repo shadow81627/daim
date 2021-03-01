@@ -35,7 +35,7 @@
     "test:e2e": "codeceptjs run --steps"
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
