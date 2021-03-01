@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.51](https://github.com/shadow81627/daim/compare/v1.30.50...v1.30.51) (2021-03-01)
+
+### Performance Improvements
+
+- **hero image:** preload ([#878](https://github.com/shadow81627/daim/issues/878)) ([6865a11](https://github.com/shadow81627/daim/commit/6865a11845862ec0568aaf853f4ade5f118f1d40))
+
 ## [1.30.50](https://github.com/shadow81627/daim/compare/v1.30.49...v1.30.50) (2021-03-01)
 
 ### Bug Fixes
