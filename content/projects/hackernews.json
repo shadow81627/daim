@@ -1,0 +1,18 @@
+{
+  "image": "./hackernews.daim.dev.png",
+  "name": "Hackernews",
+  "description": "Hacker News search built with Nuxt.js.",
+  "startDate": "2020-12-12T01:04:09Z",
+  "links": [
+    {
+      "link": "https://hackernews.daim.dev/",
+      "icon": "mdiWeb",
+      "tooltip": "Website"
+    },
+    {
+      "link": "https://github.com/shadow81627/hackernews",
+      "icon": "mdiGithub",
+      "tooltip": "Github"
+    }
+  ]
+}
