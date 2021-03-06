@@ -289,8 +289,8 @@
           skills. I have built several websites, including my
           <nuxt-link to="/portfolio">personal portfolio</nuxt-link>, using a
           wide variety of tools to achieve this. These tools include: Nuxt.js,
-          Vue.js, Travis CI, Bootstrap CSS, Vuetify CSS, Semantic Release
-          automation, Sentry error tracking, Firebase, Lighthouse CI, Renovate
+          Vue.js, Github, Bootstrap CSS, Vuetify CSS, Semantic Release
+          automation, Sentry error tracking, Vercel, Lighthouse CI, Renovate
           automated dependency management.
         </v-card-text>
       </v-card>

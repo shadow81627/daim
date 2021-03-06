@@ -8,7 +8,7 @@
     "email": "damien.robinson@daim.dev",
     "phone": "+61-437-606-977",
     "website": "https://daim.dev",
-    "summary": "I am a full-stack web developer with 3 years experience, seeking full time employment and a chance to further my skills in front end web development for marketing websites. I have well-rounded full-stack development experience, with a proficiency in Vue.js static marketing websites.",
+    "summary": "I am a full-stack web developer with 3 years experience, seeking full time employment and a chance to further my skills in front end web development for marketing websites. I have well-rounded full-stack development experience, with a proficiency in Nuxt.js static marketing websites.",
     "location": {
       "postalCode": "4005",
       "city": "New Farm",
@@ -50,6 +50,15 @@
   },
   "work": [
     {
+      "position": "Web Developer",
+      "company": "OSE",
+      "location": "Brisbane, Queensland, Australia",
+      "startDate": "2020-11-16",
+      "tools": "HTML, CSS, Vue.js, PHP (Laravel, Magento, Wordpress), SQL",
+      "url": "https://www.ose.com.au/",
+      "summary": "At OSE I have worked with a variety of ecommerce management systems including Shopify, Wordpress, Magento and Laravel. I have provided on call after hours support to resolve incidents and ensure website reliability."
+    },
+    {
       "position": "Frontend Developer",
       "company": "Otherlevels",
       "location": "Brisbane, Queensland, Australia",
@@ -66,7 +75,7 @@
       "startDate": "2018-03-29",
       "endDate": "2020-01-14",
       "summary": "My work at XCOM Media allows me to develop skills with building secure, performant, reliable, highly available contact management solutions for global markets. During my time in this role I have worked on projects such as Tourism and Events Queensland’s scUber campaign, developing an award winning micro site for collecting competition entries. I have also maintained and modernized legacy PHP email subscription forms. In this role I have furthered my skills in implementing marketing strategies, client and professional liaising, and working in a fast-paced team environment.",
-      "tools": "HTML, CSS, Vue.js, PHP, SQL"
+      "tools": "HTML, CSS, Vue.js (Nuxt.js), PHP (Laravel), SQL(MySQL)"
     },
     {
       "position": "Web Designer",
