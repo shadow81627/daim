@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.56](https://github.com/shadow81627/daim/compare/v1.30.55...v1.30.56) (2021-03-10)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.21.0 ([79f9bfc](https://github.com/shadow81627/daim/commit/79f9bfc8d382393d5427a96fa5b6949ee9ed083e))
+
 ## [1.30.55](https://github.com/shadow81627/daim/compare/v1.30.54...v1.30.55) (2021-03-08)
 
 ### Bug Fixes
