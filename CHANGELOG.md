@@ -1,5 +1,11 @@
 # Releases
 
+## [1.30.57](https://github.com/shadow81627/daim/compare/v1.30.56...v1.30.57) (2021-03-10)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.15.3 ([c0d0373](https://github.com/shadow81627/daim/commit/c0d0373b0a74203a460f63132342c987645255a4))
+
 ## [1.30.56](https://github.com/shadow81627/daim/compare/v1.30.55...v1.30.56) (2021-03-10)
 
 ### Bug Fixes
