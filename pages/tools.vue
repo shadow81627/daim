@@ -25,20 +25,19 @@ import {
   faMountain,
   faLightbulb,
   faMobileAlt,
-  faCloud,
   faImages,
   faDog,
   faShapes,
   faServer,
   faCheckDouble,
-  faHardHat,
   faPaintRoller,
   faCubes,
   faCode,
   faFileCode,
-  faFire,
   faBug,
   faAlignLeft,
+  faDatabase,
+  faRocket,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faVuejs,
@@ -46,6 +45,9 @@ import {
   faGithub,
   faDocker,
   faFontAwesome,
+  faLaravel,
+  faCloudflare,
+  faAlgolia,
 } from '@fortawesome/free-brands-svg-icons';
 import Feature from '~/components/feature';
 export default {
@@ -80,6 +82,23 @@ export default {
             "Responsive, mobile-first, and ARIA accessible projects on the web using Vue.js and the world's most popular front-end CSS library.",
         },
         {
+          icon: faLaravel,
+          heading: 'Laravel',
+          href: 'https://laravel.com/',
+          subheading: 'Web Application Framework',
+          text:
+            'Expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:',
+          list: [
+            'Simple, fast routing engine',
+            'Powerful dependency injection container',
+            'Multiple back-ends for sessions and cache storage',
+            'Expressive, intuitive database ORM',
+            'Database agnostic schema migrations',
+            'Robust background job processing',
+            'Real-time event broadcasting',
+          ],
+        },
+        {
           icon: faLightbulb,
           heading: 'Lighthouse',
           href: 'https://github.com/GoogleChrome/lighthouse-ci',
@@ -111,7 +130,7 @@ export default {
           ],
         },
         {
-          icon: faCloud,
+          icon: faCloudflare,
           heading: 'Cloudflare',
           href: 'https://www.cloudflare.com/',
           subheading: 'Secure DNS, proxy, CDN, with DDos protection',
@@ -183,65 +202,104 @@ export default {
           text: 'Validate form input to ensure data is clean and usable.',
         },
         {
-          icon: faServer,
-          heading: 'Surge',
-          href: 'https://surge.sh',
-          subheading: 'Content delivery network (CDN)',
-          text: 'Free static web hosting',
-        },
-        // {
-        //   icon: 'fas comment-alt',
-        //   heading: 'Storyblok',
-        //   href: 'https://www.storyblok.com/',
-        //   subheading: 'Headless CMS with a Visual Editor',
-        // },
-        {
           icon: faFontAwesome,
           heading: 'Fontawesome',
           href: 'https://fontawesome.com/',
           subheading: 'Vector icons and social logos',
-        },
-        {
-          icon: faHardHat,
-          heading: 'Travis CI',
-          href: 'https://travis-ci.com/',
-          subheading: 'The simplest way to test and deploy your projects.',
+          text:
+            "Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.",
         },
         {
           icon: faPaintRoller,
           heading: 'Renovate bot',
           href: 'https://github.com/renovatebot/renovate',
           subheading: 'Automated dependency updates',
+          text:
+            'Save time and reduce risk by automating dependency updates in software projects.',
         },
         {
           icon: faCubes,
           heading: 'Semantic Release',
           href: 'https://github.com/semantic-release/semantic-release',
           subheading: 'Fully automated version management',
+          text:
+            'Automate the whole package release workflow including: determining the next version number, generating the release notes and publishing the package. This removes the immediate connection between human emotions and version numbers, strictly following the Semantic Versioning specification.',
         },
         {
           icon: faCode,
           heading: 'Eslint',
           href: 'https://eslint.org/',
           subheading: 'Static code analysis',
+          text:
+            'Statically analyze your code to quickly find problems. ESLint is built into most text editors and you can run ESLint as part of your continuous integration pipeline.',
         },
         {
           icon: faFileCode,
           heading: 'Prettier',
           href: 'https://prettier.io/',
           subheading: 'Opinionated code formatter',
+          list: [
+            'An opinionated code formatter',
+            'Supports many languages',
+            'Integrates with most editors',
+            'Has few options',
+            'You press save and code is formatted',
+            'No need to discuss style in code review',
+            'Saves you time and energy',
+          ],
         },
         {
-          icon: faFire,
-          heading: 'Firebase',
-          href: 'https://firebase.google.com/',
-          subheading: 'App development platform',
+          icon: faServer,
+          heading: 'Heroku',
+          href: 'https://www.heroku.com/',
+          subheading: 'Web Hosting',
+          text:
+            'Cloud-based, fully-managed platform as a service (PaaS) for building, running, and managing apps.',
+        },
+        {
+          icon: faDatabase,
+          heading: 'PostgreSQL',
+          href: 'https://www.postgresql.org/',
+          subheading: 'Database',
+          text:
+            'Powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.',
+        },
+        {
+          icon: faAlgolia,
+          heading: 'Algolia',
+          href: 'https://www.algolia.com/',
+          subheading: 'Search',
+          text:
+            'A powerful hosted search API that provides product teams with the resources & tools they need to create fast, relevant search.',
+          list: [
+            'Typo Tolerance',
+            'Rules',
+            'Query Suggestions',
+            'Filters and Facets',
+            'Multi-Lingual',
+            'Synonyms',
+            'Transparent Relevancy',
+            'Custom Ranking',
+            'A/B Testing',
+            'Personalization',
+            'Relevant Sort',
+          ],
         },
         {
           icon: faBug,
           heading: 'Sentry',
           href: 'https://sentry.io/',
           subheading: 'Monitoring',
+          text:
+            'Application monitoring platform helps every developer diagnose, fix, and optimize the performance of their code.',
+        },
+        {
+          icon: faRocket,
+          heading: 'Postman',
+          href: 'https://www.postman.com/',
+          subheading: 'Testing, Monitoring, Documentation',
+          text:
+            "A collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs faster.",
         },
       ],
     };
