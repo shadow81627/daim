@@ -1,5 +1,11 @@
 # Releases
 
+## [1.31.0](https://github.com/shadow81627/daim/compare/v1.30.69...v1.31.0) (2021-04-13)
+
+### Features
+
+- **tools:** title case subheading ([219e1db](https://github.com/shadow81627/daim/commit/219e1dbbfc3a7ea66dfb7b2199b3d144d885ffa6))
+
 ## [1.30.69](https://github.com/shadow81627/daim/compare/v1.30.68...v1.30.69) (2021-04-09)
 
 ### Bug Fixes
