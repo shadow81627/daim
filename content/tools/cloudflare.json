@@ -1,0 +1,12 @@
+{
+  "icon": "faCloudflare",
+  "heading": "Cloudflare",
+  "href": "https://www.cloudflare.com/",
+  "subheading": "Secure DNS, proxy, CDN, with DDos protection",
+  "description": "Trusted by over 20 million Internet properties. Cloudflare provides a scalable, easy-to-use, unified control plane to deliver security, performance, and reliability for on-premises, hybrid, cloud, and SaaS applications.",
+  "list": [
+    "Secure Domain Name Server (DNS)",
+    "DDos protection",
+    "Secure Sockets Layer (SSL)"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "icon": "faCheckDouble",
+  "heading": "VeeValidate",
+  "href": "https://logaretm.github.io/vee-validate/",
+  "subheading": "Template Based Form Validation Framework for Vue.js",
+  "description": "Validate form input to ensure data is clean and usable."
+}

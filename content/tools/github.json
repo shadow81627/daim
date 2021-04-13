@@ -1,0 +1,14 @@
+{
+  "icon": "faGithub",
+  "heading": "GitHub",
+  "href": "https://github.com",
+  "subheading": "Distributed version control system",
+  "list": [
+    "CI/CD",
+    "Secure development",
+    "Code review",
+    "Project management",
+    "Hosting",
+    "Team management"
+  ]
+}

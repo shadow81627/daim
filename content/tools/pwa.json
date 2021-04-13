@@ -1,0 +1,16 @@
+{
+  "icon": "faMobileAlt",
+  "heading": "Progressive Web Apps",
+  "href": "https://developers.google.com/web/progressive-web-apps",
+  "subheading": "Fast, reliable, engaging web apps",
+  "description": "Progressive Web Apps (PWA) are reliable, fast, and engaging, although there are many things that can take a PWA from a baseline to exemplary experience.",
+  "list": [
+    "Fast",
+    "Installable",
+    "Reliable",
+    "Engaging",
+    "Works Offline",
+    "Predictive prefetching",
+    "Web Push Notifications"
+  ]
+}

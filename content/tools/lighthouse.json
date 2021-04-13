@@ -1,0 +1,14 @@
+{
+  "sort_order": 4,
+  "icon": "faLightbulb",
+  "heading": "Lighthouse",
+  "href": "https://github.com/GoogleChrome/lighthouse-ci",
+  "subheading": "SEO Audits",
+  "description": "Lighthouse analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices.",
+  "list": [
+    "Prevent regressions in accessibility, SEO, offline support, and performance best practices.",
+    "Track performance metrics and Lighthouse scores over time.",
+    "Set and keep performance budgets on scripts and images.",
+    "Compare two versions of your site to find improvements and regressions of individual resources."
+  ]
+}

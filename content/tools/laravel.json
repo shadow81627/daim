@@ -1,0 +1,17 @@
+{
+  "sort_order": 3,
+  "icon": "faLaravel",
+  "heading": "Laravel",
+  "href": "https://laravel.com/",
+  "subheading": "Web Application Framework",
+  "description": "Expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:",
+  "list": [
+    "Simple, fast routing engine",
+    "Powerful dependency injection container",
+    "Multiple back-ends for sessions and cache storage",
+    "Expressive, intuitive database ORM",
+    "Database agnostic schema migrations",
+    "Robust background job processing",
+    "Real-time event broadcasting"
+  ]
+}

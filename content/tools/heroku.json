@@ -1,0 +1,7 @@
+{
+  "icon": "faServer",
+  "heading": "Heroku",
+  "href": "https://www.heroku.com/",
+  "subheading": "Web Hosting",
+  "description": "Cloud-based, fully-managed platform as a service (PaaS) for building, running, and managing apps."
+}

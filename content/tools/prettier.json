@@ -1,0 +1,15 @@
+{
+  "icon": "faFileCode",
+  "heading": "Prettier",
+  "href": "https://prettier.io/",
+  "subheading": "Opinionated code formatter",
+  "list": [
+    "An opinionated code formatter",
+    "Supports many languages",
+    "Integrates with most editors",
+    "Has few options",
+    "You press save and code is formatted",
+    "No need to discuss style in code review",
+    "Saves you time and energy"
+  ]
+}

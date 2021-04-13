@@ -1,0 +1,8 @@
+{
+  "sort_order": 5,
+  "icon": "faBootstrap",
+  "heading": "Bootstrap",
+  "href": "https://getbootstrap.com/",
+  "subheading": "Modern responsive component framework",
+  "description": "Responsive, mobile-first, and ARIA accessible projects on the web using Vue.js and the world's most popular front-end CSS library."
+}

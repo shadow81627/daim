@@ -1,0 +1,20 @@
+{
+  "icon": "faAlgolia",
+  "heading": "Algolia",
+  "href": "https://www.algolia.com/",
+  "subheading": "Search",
+  "description": "A powerful hosted search API that provides product teams with the resources & tools they need to create fast, relevant search.",
+  "list": [
+    "Typo Tolerance",
+    "Rules",
+    "Query Suggestions",
+    "Filters and Facets",
+    "Multi-Lingual",
+    "Synonyms",
+    "Transparent Relevancy",
+    "Custom Ranking",
+    "A/B Testing",
+    "Personalization",
+    "Relevant Sort"
+  ]
+}

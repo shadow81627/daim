@@ -1,0 +1,7 @@
+{
+  "icon": "faPaintRoller",
+  "heading": "Renovate bot",
+  "href": "https://github.com/renovatebot/renovate",
+  "subheading": "Automated dependency updates",
+  "description": "Save time and reduce risk by automating dependency updates in software projects."
+}

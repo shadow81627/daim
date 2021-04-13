@@ -1,0 +1,7 @@
+{
+  "icon": "faDocker",
+  "heading": "Docker",
+  "href": "https://www.docker.com/",
+  "subheading": "Debug your app, not your environment",
+  "description": "Securely build, share and run any application, anywhere"
+}

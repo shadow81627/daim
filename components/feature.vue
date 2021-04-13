@@ -17,8 +17,8 @@
     <!-- <v-card-text class="flex-grow-1 text--primary">{{ blok.text }}</v-card-text> -->
 
     <div class="flex-grow-1">
-      <v-card-text v-if="blok.text" class="text--primary body-1 pt-0">
-        {{ blok.text }}
+      <v-card-text v-if="blok.description" class="text--primary body-1 pt-0">
+        {{ blok.description }}
       </v-card-text>
       <v-card-text v-if="blok.list" class="text--primary body-1 pt-0">
         <ul>

@@ -1,0 +1,7 @@
+{
+  "icon": "faCubes",
+  "heading": "Semantic Release",
+  "href": "https://github.com/semantic-release/semantic-release",
+  "subheading": "Fully automated version management",
+  "description": "Automate the whole package release workflow including: determining the next version number, generating the release notes and publishing the package. This removes the immediate connection between human emotions and version numbers, strictly following the Semantic Versioning specification."
+}
