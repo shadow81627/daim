@@ -1,5 +1,11 @@
 # Releases
 
+## [1.32.0](https://github.com/shadow81627/daim/compare/v1.31.0...v1.32.0) (2021-04-13)
+
+### Features
+
+- **tools:** banner ([#929](https://github.com/shadow81627/daim/issues/929)) ([1d92946](https://github.com/shadow81627/daim/commit/1d92946d24fc59401f9a8e7eb381aee45cd66596))
+
 ## [1.31.0](https://github.com/shadow81627/daim/compare/v1.30.69...v1.31.0) (2021-04-13)
 
 ### Features
