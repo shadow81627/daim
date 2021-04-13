@@ -12,9 +12,8 @@
     </v-card-title>
 
     <v-card-subtitle v-if="blok.subheading">{{
-      blok.subheading
+      titleCase(blok.subheading)
     }}</v-card-subtitle>
-    <!-- <v-card-text class="flex-grow-1 text--primary">{{ blok.text }}</v-card-text> -->
 
     <div class="flex-grow-1">
       <v-card-text v-if="blok.description" class="text--primary body-1 pt-0">
@@ -47,12 +46,16 @@
 
 <script>
 import { mdiOpenInNew } from '@mdi/js';
+import titleCase from '@/utils/title-case';
 export default {
   props: { blok: { type: Object, required: true } },
   data() {
     return {
       mdiOpenInNew,
     };
+  },
+  methods: {
+    titleCase,
   },
 };
 </script>
