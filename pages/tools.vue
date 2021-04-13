@@ -1,23 +1,27 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col>
-        <h1>Tools</h1>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col
-        v-for="tool in tools"
-        :key="tool.slug"
-        cols="12"
-        sm="6"
-        md="4"
-        class="d-flex flex-column"
-      >
-        <Feature :blok="{ ...tool, icon: icons[tool.icon] }"></Feature>
-      </v-col>
-    </v-row>
-  </v-container>
+  <div>
+    <!-- Photo by <a href="https://unsplash.com/@hnhmarketing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hunter Haley</a> on <a href="https://unsplash.com/s/photos/tools?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+    <BlogHero
+      :title="heading"
+      :summary="description"
+      src="./banners/tools.jpg"
+      :credit="{}"
+    ></BlogHero>
+    <v-container>
+      <v-row>
+        <v-col
+          v-for="tool in tools"
+          :key="tool.slug"
+          cols="12"
+          sm="6"
+          md="4"
+          class="d-flex flex-column"
+        >
+          <Feature :blok="{ ...tool, icon: icons[tool.icon] }"></Feature>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -60,6 +64,8 @@ export default {
   },
   data() {
     return {
+      heading: 'Tools',
+      description: 'Check out what we use to create awesome web apps.',
       tools: [],
       icons: {
         faMountain,
@@ -87,6 +93,18 @@ export default {
         faCloudflare,
         faAlgolia,
       },
+    };
+  },
+  head() {
+    return {
+      title: this.heading,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
+      ],
     };
   },
 };
