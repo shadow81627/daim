@@ -80,7 +80,7 @@
     "codeceptjs": "3.0.6",
     "codeceptjs-resemblehelper": "1.9.2",
     "cspell": "5.3.12",
-    "eslint": "7.24.0",
+    "eslint": "7.25.0",
     "eslint-config-prettier": "8.2.0",
     "eslint-plugin-nuxt": "2.0.0",
     "eslint-plugin-prettier": "3.4.0",
