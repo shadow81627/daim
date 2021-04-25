@@ -207,6 +207,7 @@ export default {
 
   image: {
     screens: {
+      placeholder: 10,
       xs: 320,
       sm: 600,
       md: 960,
