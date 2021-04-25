@@ -27,7 +27,7 @@
             <v-img
               v-if="image"
               :lazy-src="$img(image, { width: 10, quality: 70 })"
-              :src="$img(image, { quality: 70 })"
+              :src="$img(image, { quality: 70, width: 600 })"
               :srcset="_srcset(image).srcset"
               :aspect-ratio="16 / 9"
               :sizes="_srcset.size"
@@ -126,10 +126,11 @@ export default {
     },
     _srcset(src) {
       return this.$img.getSizes(src, {
-        sizes: 'xs:100vw sm:100vw md:50vw lg:30vw xl:30vw',
+        sizes: 'xs:100vw sm:100vw',
         modifiers: {
           format: 'webp',
           quality: 70,
+          width: 600,
         },
       });
     },

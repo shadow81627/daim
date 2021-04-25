@@ -5,7 +5,7 @@
         <v-card :color="color" flat dark tile>
           <v-img
             :lazy-src="$img(src, { width: 10, quality: 70 })"
-            :src="$img(src, { quality: 70 })"
+            :src="$img(src, { quality: 70, height: 500 })"
             :srcset="_srcset.srcset"
             :height="height"
             :sizes="_srcset.size"
@@ -99,6 +99,7 @@ export default {
         modifiers: {
           format: 'webp',
           quality: 70,
+          height: 500,
         },
       });
     },
