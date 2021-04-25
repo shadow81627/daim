@@ -87,7 +87,7 @@ export default {
             height: 630,
           })}`,
           imagesrcset: this._srcset.srcset,
-          imagesizes: _srcset.size,
+          imagesizes: this._srcset.size,
         },
       ],
     };
