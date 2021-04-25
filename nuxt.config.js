@@ -131,7 +131,7 @@ export default {
     '@nuxtjs/eslint-module',
     // '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
-    '@aceforth/nuxt-optimized-images',
+    '@nuxt/image',
     '@nuxtjs/google-analytics',
   ],
 
@@ -190,25 +190,6 @@ export default {
     langDir: 'lang/',
   },
 
-  optimizedImages: {
-    optimizeImages: true,
-    optimizeImagesInDev: true,
-    responsive: {
-      quality: 50,
-      adapter: require('responsive-loader/sharp'),
-      sizes: [320, 640, 960, 1200, 1800, 2400],
-      placeholder: true,
-      placeholderSize: 20,
-      format: 'webp',
-      sharp: {
-        format: {
-          webp: true,
-        },
-        progressive: true,
-      },
-    },
-  },
-
   sitemap: {
     hostname: env.BASE_URL,
   },
@@ -222,6 +203,16 @@ export default {
 
   eslint: {
     cache: true,
+  },
+
+  image: {
+    screens: {
+      xs: 320,
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
   },
 
   /*

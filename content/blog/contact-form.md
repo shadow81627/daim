@@ -2,7 +2,7 @@
 title: How to build an email contact form?
 date: 2020-10-18T04:18:29.026Z
 description: Need a simple way to allow your website visitors to get in contact with you?
-image: ./blog/paperplane.jpg
+image: /img/blog/paperplane.jpg
 # image credit: <span>Photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/s/photos/message?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 ## Introduction

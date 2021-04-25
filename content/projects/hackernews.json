@@ -1,5 +1,5 @@
 {
-  "image": "./hackernews.daim.dev.png",
+  "image": "/img/portfolio/hackernews.daim.dev.png",
   "name": "Hackernews",
   "description": "Hacker News search built with Nuxt.js.",
   "startDate": "2020-12-12T01:04:09Z",

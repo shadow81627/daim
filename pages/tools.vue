@@ -4,7 +4,7 @@
     <BlogHero
       :title="heading"
       :summary="description"
-      src="./banners/tools.jpg"
+      src="/img/banners/tools.jpg"
       :credit="{}"
     ></BlogHero>
     <v-container>

@@ -2,11 +2,11 @@
   <v-container class="pa-0 hidden-print-only" fluid>
     <v-row no-gutters align="center" justify="center">
       <v-col cols="12" align-self="center">
-        <v-card :color="color || backgroundColor(src)[0]" flat dark tile>
+        <v-card :color="color" flat dark tile>
           <v-img
-            :lazy-src="_src(src).placeholder"
-            :src="_src(src).src"
-            :srcset="_src(src).srcSet"
+            :lazy-src="$img(src, { width: 10 })"
+            :src="$img(src, { quality: 70 })"
+            :srcset="_srcset.srcset"
             :height="height"
             sizes="(max-width: 1785px) 100vw, 1785px"
             :gradient="gradient"
@@ -40,10 +40,12 @@ export default {
   props: {
     heading: { type: String, default: null },
     subheading: { type: String, default: null },
+    alt: { type: String, default: '' },
     gradient: {
       type: String,
       default: 'rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)',
     },
+    width: { type: [Number, String], default: 1200 },
     height: { type: [Number, String], default: 500 },
     color: {
       type: String,
@@ -51,7 +53,7 @@ export default {
     },
     src: {
       type: String,
-      default: './header-bg.jpg',
+      default: '/img/header-bg.jpg',
     },
   },
   head() {
@@ -60,46 +62,46 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `${this.$config.BASE_URL}${this.cover(`${this.src}`).src}`,
+          content: `${this.$config.BASE_URL}${this.$img(this.src, {
+            width: 1200,
+            height: 630,
+          })}`,
         },
         {
           hid: 'og:image:width',
           property: 'og:image:width',
-          content: this.cover(`${this.src}`).width,
+          content: 1200,
         },
         {
           hid: 'og:image:height',
           property: 'og:image:height',
-          content: this.cover(`${this.src}`).height,
+          content: 630,
         },
       ],
       link: [
         {
           rel: 'preload',
           as: 'image',
-          href: this._src(`${this.src}`).src,
-          imagesrcset: this._src(`${this.src}`).srcSet,
+          href: `${this.$config.BASE_URL}${this.$img(this.src, {
+            width: 1200,
+            height: 630,
+          })}`,
+          imagesrcset: this._srcset.srcset,
           imagesizes: '(max-width: 1785px) 100vw, 1785px',
         },
       ],
     };
   },
-  methods: {
-    backgroundColor: require.context(
-      '~/assets/img?lqip-colors',
-      true,
-      /\.(png|jpe?g).*$/,
-    ),
-    _src: require.context(
-      `~/assets/img?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&sizes[]=4686&placeholder&format=webp`,
-      true,
-      /\.(png|jpe?g).*$/,
-    ),
-    cover: require.context(
-      `~/assets/img?resize&size=1200&format=jpg`,
-      true,
-      /\.(png|jpe?g).*$/,
-    ),
+  computed: {
+    _srcset() {
+      return this.$img.getSizes(this.src, {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        modifiers: {
+          format: 'webp',
+          quality: 70,
+        },
+      });
+    },
   },
 };
 </script>

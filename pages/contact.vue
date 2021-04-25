@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero v-bind="{ heading, src: './contact.jpg' }">
+    <Hero v-bind="{ heading, src: 'img/contact.jpg' }">
       <v-row class="fill-height mx-0 pa-4" no-gutters>
         <v-col
           class="d-flex text-left align-end justify-start"

@@ -2,7 +2,7 @@
 title: How to choose the best front end framework?
 date: 2020-09-25T02:07:05.543Z
 description: Are you overwhelmed by the choice of Javascript frameworks?
-image: './blog/best-front-end-framework.jpg'
+image: '/img/blog/best-front-end-framework.jpg'
 ---
 ## Introduction
 

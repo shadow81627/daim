@@ -3,7 +3,7 @@
     <BlogHero
       :title="heading"
       :summary="description"
-      src="./portfolio/scuber.jpg"
+      src="/img/portfolio/scuber.jpg"
       :credit="{}"
     ></BlogHero>
     <v-container>
@@ -26,13 +26,10 @@
           <v-card class="flex d-flex flex-column" tile>
             <v-img
               v-if="image"
-              :lazy-src="src(image).placeholder"
-              :src="src(image).src"
-              :srcset="src(image).srcSet"
+              :lazy-src="$img(image, { width: 10 })"
+              :src="$img(image, { quality: 70 })"
+              :srcset="_srcset(image).srcset"
               :aspect-ratio="16 / 9"
-              :style="{
-                backgroundColor: backgroundColor(image)[0],
-              }"
               sizes="(max-width: 600px) 100vw, 50vw"
               class="flex-grow-0"
             ></v-img>
@@ -127,16 +124,15 @@ export default {
     formatDate(date) {
       return dayjs(date).format('MMM D, YYYY');
     },
-    backgroundColor: require.context(
-      '~/assets/img/portfolio?lqip-colors',
-      false,
-      /\.(png|jpe?g).*$/,
-    ),
-    src: require.context(
-      `~/assets/img/portfolio?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&placeholder&format=webp`,
-      false,
-      /\.(png|jpe?g).*$/,
-    ),
+    _srcset(src) {
+      return this.$img.getSizes(src, {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        modifiers: {
+          format: 'webp',
+          quality: 70,
+        },
+      });
+    },
   },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero src="./resume-hero.png" gradient="">
+    <hero src="/img/resume-hero.png" gradient="">
       <div
         class="row fill-height text-right pa-md-5 pa-3 mx-0 align-end justify-end"
       >
