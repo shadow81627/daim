@@ -126,7 +126,7 @@ export default {
     },
     _srcset(src) {
       return this.$img.getSizes(src, {
-        sizes: 'xs:100vw sm:100vw md:50vw lg:33vw xl:33vw',
+        sizes: 'xs:100vw sm:100vw md:50vw lg:30vw xl:30vw',
         modifiers: {
           format: 'webp',
           quality: 70,
