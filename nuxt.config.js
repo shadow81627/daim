@@ -213,6 +213,7 @@ export default {
       lg: 1280,
       xl: 1920,
     },
+    domains: [env.HOST],
   },
 
   /*
