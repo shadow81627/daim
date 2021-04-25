@@ -4,11 +4,11 @@
       <v-col cols="12" align-self="center">
         <v-card :color="color" flat dark tile>
           <v-img
-            :lazy-src="$img(src, { width: 10 })"
+            :lazy-src="$img(src, { width: 10, quality: 70 })"
             :src="$img(src, { quality: 70 })"
             :srcset="_srcset.srcset"
             :height="height"
-            sizes="(max-width: 1785px) 100vw, 1785px"
+            :sizes="_srcset.size"
             :gradient="gradient"
           >
             <slot>

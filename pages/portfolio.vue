@@ -26,11 +26,11 @@
           <v-card class="flex d-flex flex-column" tile>
             <v-img
               v-if="image"
-              :lazy-src="$img(image, { width: 10 })"
+              :lazy-src="$img(image, { width: 10, quality: 70 })"
               :src="$img(image, { quality: 70 })"
               :srcset="_srcset(image).srcset"
               :aspect-ratio="16 / 9"
-              sizes="(max-width: 600px) 100vw, 50vw"
+              :sizes="_srcset.size"
               class="flex-grow-0"
             ></v-img>
             <v-card-title class="text-break">
@@ -126,7 +126,7 @@ export default {
     },
     _srcset(src) {
       return this.$img.getSizes(src, {
-        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        sizes: 'xs:100vw sm:100vw md:50vw lg:50vw xl:50vw',
         modifiers: {
           format: 'webp',
           quality: 70,

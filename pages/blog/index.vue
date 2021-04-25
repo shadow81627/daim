@@ -16,9 +16,10 @@
             class="flex d-flex flex-column justify-between"
           >
             <v-img
-              :lazy-src="$img(image || src, { width: 10 })"
+              :lazy-src="$img(image || src, { width: 10, quality: 70 })"
               :src="$img(image || src, { quality: 70 })"
               :srcset="_srcset(image || src).srcset"
+              :sizes="_srcset.size"
               :aspect-ratio="16 / 9"
             ></v-img>
             <v-card-title class="text-break text-wrap">
