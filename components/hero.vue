@@ -87,7 +87,7 @@ export default {
             height: 630,
           })}`,
           imagesrcset: this._srcset.srcset,
-          imagesizes: '(max-width: 1785px) 100vw, 1785px',
+          imagesizes: _srcset.size,
         },
       ],
     };
