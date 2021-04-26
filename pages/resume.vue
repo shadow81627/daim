@@ -15,6 +15,11 @@
 
     <v-container>
       <v-row>
+        <v-col cols="auto">
+          <v-avatar height="200" width="200">
+            <v-img src="/profile.jpg" width="200" contain></v-img>
+          </v-avatar>
+        </v-col>
         <v-col>
           <section>
             <v-card id="about" flat>
@@ -63,7 +68,7 @@
                 {{ summary }}
               </v-card-text>
 
-              <v-card-actions class="social-icons">
+              <v-card-actions class="social-icons flex-wrap">
                 <v-tooltip
                   v-for="{ icon, network, url } in profiles"
                   :key="network"
@@ -111,8 +116,6 @@
           </section>
         </v-col>
       </v-row>
-
-      <v-divider />
 
       <v-row>
         <v-col>
@@ -381,6 +384,8 @@ import {
   faGitAlt,
   faSass,
   faJenkins,
+  faSteam,
+  faSkype,
 } from '@fortawesome/free-brands-svg-icons';
 import Mailgo from '@/components/mailgo.vue';
 import * as dayjs from 'dayjs';
@@ -464,6 +469,8 @@ export default {
       faPuzzlePiece,
       faTasks,
       faPaperPlane,
+      faSteam,
+      faSkype,
     },
     faEnvelope,
     faPhone,
