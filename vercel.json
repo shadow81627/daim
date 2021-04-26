@@ -16,8 +16,9 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=43200, immutable"
-        }
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        { "key": "Service-Worker-Allowed", "value": "/" }
       ]
     },
     {
