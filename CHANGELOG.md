@@ -1,5 +1,11 @@
 # Releases
 
+## [1.33.0](https://github.com/shadow81627/daim/compare/v1.32.5...v1.33.0) (2021-04-26)
+
+### Features
+
+- **resume:** profile picture ([#954](https://github.com/shadow81627/daim/issues/954)) ([8455a7b](https://github.com/shadow81627/daim/commit/8455a7b17719c590332ff256ebe911f392fdb4ee))
+
 ## [1.32.5](https://github.com/shadow81627/daim/compare/v1.32.4...v1.32.5) (2021-04-26)
 
 ### Bug Fixes
