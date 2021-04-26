@@ -68,7 +68,7 @@
                 {{ summary }}
               </v-card-text>
 
-              <v-card-actions class="social-icons">
+              <v-card-actions class="social-icons flex-wrap">
                 <v-tooltip
                   v-for="{ icon, network, url } in profiles"
                   :key="network"
