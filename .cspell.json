@@ -1,9 +1,6 @@
-// cSpell Settings
 {
     "version": "0.1",
-    // language - current active spelling language
     "language": "en",
-    // words - list of words to be always considered correct
     "words": [
         "Akismet",
         "Alibaba",
