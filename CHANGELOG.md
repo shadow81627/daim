@@ -1,5 +1,11 @@
 # Releases
 
+## [1.32.5](https://github.com/shadow81627/daim/compare/v1.32.4...v1.32.5) (2021-04-26)
+
+### Bug Fixes
+
+- **breadcrumb:** title case so a is lowercase ([#949](https://github.com/shadow81627/daim/issues/949)) ([72fc504](https://github.com/shadow81627/daim/commit/72fc504f3029ee62cedda87a64276ecb216099ac))
+
 ## [1.32.4](https://github.com/shadow81627/daim/compare/v1.32.3...v1.32.4) (2021-04-20)
 
 ### Bug Fixes
