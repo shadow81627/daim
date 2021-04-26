@@ -131,9 +131,9 @@
                     cols="12"
                     sm="6"
                   >
-                    <div v-for="{ icon, text } in column" :key="text">
+                    <div v-for="{ icon, title } in column" :key="title">
                       <font-awesome-icon :icon="icons[icon]" fixed-width />
-                      <span>{{ text }}</span>
+                      <span>{{ title }}</span>
                     </div>
                   </v-col>
                 </v-row>
@@ -145,33 +145,11 @@
 
       <v-divider></v-divider>
 
-      <v-card flat>
-        <v-card-title class="text-break pb-0">
-          <h2>Personal Attributes</h2>
-        </v-card-title>
-        <div v-for="{ title, description, icon } in attributes" :key="title">
-          <v-card-title class="pb-0">
-            <h3>
-              <font-awesome-icon
-                :icon="icons[icon]"
-                fixed-width
-              ></font-awesome-icon>
-              {{ title }}
-            </h3>
-          </v-card-title>
-          <v-card-text class="body-1">
-            {{ description }}
-          </v-card-text>
-        </div>
-      </v-card>
-
-      <v-divider></v-divider>
-
       <v-row>
         <v-col>
           <section>
             <v-card id="education" flat>
-              <v-card-title class="py-0 text-break">
+              <v-card-title class="pb-0 text-break">
                 <h2>Education</h2>
               </v-card-title>
               <div
@@ -230,7 +208,7 @@
         <v-col>
           <section>
             <v-card id="experience" flat>
-              <v-card-title class="py-0 text-break">
+              <v-card-title class="pb-0 text-break">
                 <h2>Experience</h2>
               </v-card-title>
 
@@ -246,7 +224,7 @@
                 :key="(position, company, startDate, endDate)"
                 class="resume-item d-flex flex-column flex-md-row justify-space-between"
               >
-                <div class="resume-content">
+                <div class="resume-content" style="width: 100%">
                   <v-card-title>
                     <h3 class="mb-0 text-break">{{ position }}</h3>
                   </v-card-title>
@@ -281,8 +259,8 @@
       <v-divider></v-divider>
 
       <v-card flat>
-        <v-card-title class="text-break">
-          <h2>Personal Projects</h2>
+        <v-card-title class="text-break pb-0">
+          <h2>Projects</h2>
         </v-card-title>
         <v-card-text class="body-1 text--primary">
           I enjoy making my own web applications in my free time to further my
