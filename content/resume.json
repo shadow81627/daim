@@ -8,7 +8,7 @@
     "email": "damien.robinson@daim.dev",
     "phone": "+61-437-606-977",
     "website": "https://daim.dev",
-    "summary": "I am a full-stack web developer with 3 years experience, seeking full time employment and a chance to further my skills in front end web development for marketing websites. I have well-rounded full-stack development experience, with a proficiency in Nuxt.js static marketing websites.",
+    "summary": "I am a full-stack web developer with 4 years experience, seeking full time employment and a chance to further my skills in front end web development for marketing websites. I have well-rounded full-stack development experience, with a proficiency in Nuxt.js static marketing websites.",
     "location": {
       "postalCode": "4005",
       "city": "New Farm",
@@ -51,10 +51,20 @@
   "work": [
     {
       "position": "Web Developer",
+      "company": "Spatial Media",
+      "location": "Brisbane, Queensland, Australia",
+      "startDate": "2021-04-27",
+      "tools": "HTML, CSS, Vue.js, PHP(Laravel), SQL",
+      "url": "https://www.spatialmedia.com.au/",
+      "summary": "Supplying a strong JS dev skillset and an eye for clean design and code for Digital EIS and engagement portals."
+    },
+    {
+      "position": "Web Developer",
       "company": "OSE",
       "location": "Brisbane, Queensland, Australia",
       "startDate": "2020-11-16",
-      "tools": "HTML, CSS, Vue.js, PHP (Laravel, Magento, Wordpress), SQL",
+      "endDate": "2021-04-26",
+      "tools": "HTML, CSS, Vue.js, PHP(Laravel, Magento, Wordpress), SQL(MySQL)",
       "url": "https://www.ose.com.au/",
       "summary": "At OSE I have worked with a variety of ecommerce management systems including Shopify, Wordpress, Magento and Laravel. I have provided on call after hours support to resolve incidents and ensure website reliability."
     },
@@ -75,7 +85,7 @@
       "startDate": "2018-03-29",
       "endDate": "2020-01-14",
       "summary": "My work at XCOM Media allows me to develop skills with building secure, performant, reliable, highly available contact management solutions for global markets. During my time in this role I have worked on projects such as Tourism and Events Queensland’s scUber campaign, developing an award winning micro site for collecting competition entries. I have also maintained and modernized legacy PHP email subscription forms. In this role I have furthered my skills in implementing marketing strategies, client and professional liaising, and working in a fast-paced team environment.",
-      "tools": "HTML, CSS, Vue.js (Nuxt.js), PHP (Laravel), SQL(MySQL)"
+      "tools": "HTML, CSS, Vue.js(Nuxt.js), PHP(Laravel), SQL(MySQL)"
     },
     {
       "position": "Web Designer",
@@ -108,86 +118,84 @@
   "skills": [
     {
       "icon": "faLaravel",
-      "text": "PHP APIs (Laravel)"
+      "title": "PHP APIs (Laravel)"
     },
     {
       "icon": "faHtml5",
-      "text": "Semantic HTML"
+      "title": "Semantic HTML"
     },
     {
       "icon": "faBootstrap",
-      "text": "Bootstrap CSS"
+      "title": "Bootstrap CSS"
     },
     {
       "icon": "faJsSquare",
-      "text": "JavaScript"
+      "title": "JavaScript"
     },
     {
       "icon": "faVuejs",
-      "text": "Vue"
+      "title": "Vue"
     },
     {
       "icon": "faAngular",
-      "text": "Angular"
+      "title": "Angular"
     },
     {
       "icon": "faDatabase",
-      "text": "Structured Query Language (MySQL)"
+      "title": "Structured Query Language (MySQL, PostgreSQL)"
     },
     {
       "icon": "faDocker",
-      "text": "Docker"
+      "title": "Docker"
     },
     {
       "icon": "faSearch",
-      "text": "Search Engine Optimization (SEO)"
+      "title": "Search Engine Optimization (SEO)"
     },
     {
       "icon": "faJira",
-      "text": "JIRA"
+      "title": "JIRA"
     },
     {
       "icon": "faNodeJs",
-      "text": "Node"
+      "title": "Node"
     },
     {
       "icon": "faNpm",
-      "text": "Node Package Manager"
+      "title": "Node Package Manager"
     },
     {
       "icon": "faPython",
-      "text": "Python (Flask)"
+      "title": "Python (Flask)"
     },
     {
       "icon": "faGitAlt",
-      "text": "Git (Bitbucket & Github)"
+      "title": "Git (Bitbucket & Github)"
     },
     {
       "icon": "faSass",
-      "text": "Sass"
+      "title": "Sass"
     },
     {
       "icon": "faJenkins",
-      "text": "Continuous Integration (Jenkins & Travis)"
+      "title": "Continuous Integration (Jenkins & Travis)"
     },
     {
       "icon": "faMobileAlt",
-      "text": "Mobile-First, Responsive Design"
+      "title": "Mobile-First, Responsive Design"
     },
     {
       "icon": "faBug",
-      "text": "Cross Browser Testing & Debugging"
+      "title": "Cross Browser Testing & Debugging"
     },
     {
       "icon": "faUsers",
-      "text": "Cross Functional Teams"
+      "title": "Cross Functional Teams"
     },
     {
       "icon": "faSync",
-      "text": "Agile Development & Scrum"
-    }
-  ],
-  "attributes": [
+      "title": "Agile Development & Scrum"
+    },
     {
       "icon": "faClock",
       "title": "Time Management",
@@ -227,9 +235,26 @@
       "url": "https://pocketpasta.com",
       "roles": ["Founder", "Developer"],
       "entity": "Daim",
-      "type": "application"
+      "type": "application",
+      "image": "./pocketpasta.com_recipes.png",
+      "startDate": "2017-06-18",
+      "links": [
+        {
+          "link": "https://pocketpasta.com",
+          "icon": "mdiWeb",
+          "tooltip": "Website"
+        },
+        {
+          "link": "https://github.com/shadow81627/pocketpasta",
+          "icon": "mdiGithub",
+          "tooltip": "Github"
+        }
+      ]
     },
     {
+      "roles": ["Developer"],
+      "entity": "Govhack",
+      "type": "application",
       "image": "./brisbane-city-council-free-native-plants.daim.dev_species.png",
       "startDate": "2020-08-07",
       "name": "Brisbane City Council Free Native Plant Gallery",
