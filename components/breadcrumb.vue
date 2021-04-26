@@ -6,6 +6,7 @@
 
 <script>
 import { startCase } from 'lodash-es';
+import titleCase from '@/utils/title-case';
 export default {
   props: {
     dark: { type: Boolean, default: false },
@@ -18,7 +19,7 @@ export default {
       const breadcrumbs = [{ text: 'Home', to: '/' }];
 
       segments.forEach((segment, index) => {
-        const text = startCase(segment);
+        const text = titleCase(startCase(segment));
         const to = this.localePath(
           '/' + segments.slice(0, index + 1).join('/'),
         );
