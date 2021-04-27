@@ -206,6 +206,7 @@ export default {
   },
 
   image: {
+    provider: 'static',
     screens: {
       placeholder: 10,
       xs: 320,
