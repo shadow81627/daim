@@ -45,7 +45,7 @@ export default {
       type: String,
       default: 'rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)',
     },
-    width: { type: [Number, String], default: 1200 },
+    width: { type: [Number, String], default: 1280 },
     height: { type: [Number, String], default: 500 },
     color: {
       type: String,
@@ -63,14 +63,14 @@ export default {
           hid: 'og:image',
           property: 'og:image',
           content: `${this.$config.BASE_URL}${this.$img(this.src, {
-            width: 1200,
+            width: 1280,
             height: 630,
           })}`,
         },
         {
           hid: 'og:image:width',
           property: 'og:image:width',
-          content: 1200,
+          content: 1280,
         },
         {
           hid: 'og:image:height',
@@ -83,7 +83,7 @@ export default {
           rel: 'preload',
           as: 'image',
           href: `${this.$config.BASE_URL}${this.$img(this.src, {
-            width: 1200,
+            width: 1280,
             height: 630,
           })}`,
           imagesrcset: this._srcset.srcset,
