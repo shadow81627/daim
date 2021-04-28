@@ -68,7 +68,7 @@ export default {
     const image = `${this.$config.BASE_URL}${this.$img(
       this.item.image || '/img/blog.jpg',
       {
-        width: 1200,
+        width: 1280,
         height: 630,
       },
     )}`;
