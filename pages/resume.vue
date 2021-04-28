@@ -17,7 +17,14 @@
       <v-row>
         <v-col cols="auto">
           <v-avatar height="200" width="200">
-            <v-img src="/profile.jpg" width="200" contain></v-img>
+            <v-img
+              :lazy-src="$img('/profile.jpg', { width: 10, quality: 70 })"
+              :src="$img('/profile.jpg', { quality: 70, width: 600 })"
+              :srcset="_srcset('/profile.jpg').srcset"
+              :sizes="_srcset.size"
+              width="200"
+              contain
+            ></v-img>
           </v-avatar>
         </v-col>
         <v-col>
@@ -391,6 +398,7 @@ import Mailgo from '@/components/mailgo.vue';
 import * as dayjs from 'dayjs';
 import countries from 'i18n-iso-countries';
 import englishCountries from 'i18n-iso-countries/langs/en.json';
+import ImageSources from '@/mixins/srcset';
 import Hero from '~/components/hero';
 
 countries.registerLocale(englishCountries);
@@ -400,6 +408,7 @@ export default {
     Mailgo,
     Hero,
   },
+  mixins: [ImageSources],
   async asyncData({ $content }) {
     const {
       basics: {

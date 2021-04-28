@@ -87,7 +87,9 @@
 <script>
 import { mdiWeb, mdiGithub, mdiOpenInNew } from '@mdi/js';
 import * as dayjs from 'dayjs';
+import ImageSources from '@/mixins/srcset';
 export default {
+  mixins: [ImageSources],
   async asyncData({ $content }) {
     const items = await $content('projects')
       .sortBy('startDate', 'desc')
@@ -123,16 +125,6 @@ export default {
   methods: {
     formatDate(date) {
       return dayjs(date).format('MMM D, YYYY');
-    },
-    _srcset(src) {
-      return this.$img.getSizes(src, {
-        sizes: 'xs:100vw sm:100vw',
-        modifiers: {
-          format: 'webp',
-          quality: 70,
-          width: 600,
-        },
-      });
     },
   },
 };

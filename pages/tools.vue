@@ -53,11 +53,13 @@ import {
   faCloudflare,
   faAlgolia,
 } from '@fortawesome/free-brands-svg-icons';
+import ImageSources from '@/mixins/srcset';
 import Feature from '~/components/feature';
 export default {
   components: {
     Feature,
   },
+  mixins: [ImageSources],
   async asyncData({ $content }) {
     const tools = await $content('tools').sortBy('slug').fetch();
     return { tools };
