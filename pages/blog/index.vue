@@ -16,9 +16,10 @@
             class="flex d-flex flex-column justify-between"
           >
             <v-img
-              :lazy-src="src(image || './blog.jpg').placeholder"
-              :src="src(image || './blog.jpg').src"
-              :srcset="src(image || './blog.jpg').srcSet"
+              :lazy-src="$img(image || src, { width: 10, quality: 70 })"
+              :src="$img(image || src, { quality: 70, width: 600 })"
+              :srcset="_srcset(image || src).srcset"
+              :sizes="_srcset.size"
               :aspect-ratio="16 / 9"
             ></v-img>
             <v-card-title class="text-break text-wrap">
@@ -50,7 +51,12 @@ export default {
     };
   },
   data() {
-    return { heading: "Damien Robinson's Blog", total: 0, items: [] };
+    return {
+      heading: "Damien Robinson's Blog",
+      total: 0,
+      items: [],
+      src: '/img/blog.jpg',
+    };
   },
   head() {
     return {
@@ -65,11 +71,16 @@ export default {
       const words = content.split(' ').length;
       return Math.ceil(words / wordsPerMinute);
     },
-    src: require.context(
-      `~/assets/img?resize&sizes[]=100&sizes[]=200&sizes[]=400&sizes[]=800&sizes[]=1600&placeholder&format=webp`,
-      true,
-      /\.(png|jpe?g).*$/,
-    ),
+    _srcset(src) {
+      return this.$img.getSizes(src, {
+        sizes: 'xs:100vw sm:100vw',
+        modifiers: {
+          format: 'webp',
+          quality: 70,
+          width: 600,
+        },
+      });
+    },
   },
 };
 </script>

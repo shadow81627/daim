@@ -44,7 +44,7 @@
 <script>
 export default {
   props: {
-    src: { type: String, default: './blog.jpg' },
+    src: { type: String, default: '/img/blog.jpg' },
     title: { type: String, required: true },
     summary: { type: String, default: null },
     credit: {

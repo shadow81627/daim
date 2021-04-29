@@ -65,7 +65,13 @@ export default {
     item: {},
   }),
   head() {
-    const image = this.image(`${this.item.image || './blog.jpg'}`);
+    const image = `${this.$config.BASE_URL}${this.$img(
+      this.item.image || '/img/blog.jpg',
+      {
+        width: 1280,
+        height: 630,
+      },
+    )}`;
     return {
       title: this.item.title,
       meta: [
@@ -133,11 +139,6 @@ export default {
     formatDate(date) {
       return dayjs(date).format('MMMM D, YYYY');
     },
-    image: require.context(
-      `~/assets/img?resize&size=1200&format=jpg`,
-      true,
-      /\.(png|jpe?g).*$/,
-    ),
   },
 };
 </script>

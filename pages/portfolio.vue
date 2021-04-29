@@ -3,7 +3,7 @@
     <BlogHero
       :title="heading"
       :summary="description"
-      src="./portfolio/scuber.jpg"
+      src="/img/portfolio/scuber.jpg"
       :credit="{}"
     ></BlogHero>
     <v-container>
@@ -26,14 +26,11 @@
           <v-card class="flex d-flex flex-column" tile>
             <v-img
               v-if="image"
-              :lazy-src="src(image).placeholder"
-              :src="src(image).src"
-              :srcset="src(image).srcSet"
+              :lazy-src="$img(image, { width: 10, quality: 70 })"
+              :src="$img(image, { quality: 70, width: 600 })"
+              :srcset="_srcset(image).srcset"
               :aspect-ratio="16 / 9"
-              :style="{
-                backgroundColor: backgroundColor(image)[0],
-              }"
-              sizes="(max-width: 600px) 100vw, 50vw"
+              :sizes="_srcset.size"
               class="flex-grow-0"
             ></v-img>
             <v-card-title class="text-break">
@@ -90,7 +87,9 @@
 <script>
 import { mdiWeb, mdiGithub, mdiOpenInNew } from '@mdi/js';
 import * as dayjs from 'dayjs';
+import ImageSources from '@/mixins/srcset';
 export default {
+  mixins: [ImageSources],
   async asyncData({ $content }) {
     const items = await $content('projects')
       .sortBy('startDate', 'desc')
@@ -127,16 +126,6 @@ export default {
     formatDate(date) {
       return dayjs(date).format('MMM D, YYYY');
     },
-    backgroundColor: require.context(
-      '~/assets/img/portfolio?lqip-colors',
-      false,
-      /\.(png|jpe?g).*$/,
-    ),
-    src: require.context(
-      `~/assets/img/portfolio?resize&sizes[]=320&sizes[]=600&sizes[]=900&sizes[]=1785&placeholder&format=webp`,
-      false,
-      /\.(png|jpe?g).*$/,
-    ),
   },
 };
 </script>

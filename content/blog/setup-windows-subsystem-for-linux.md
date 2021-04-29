@@ -2,7 +2,7 @@
 title: Setup Windows Subsystem for Linux (WSL)
 date: 2021-04-26T04:30:28Z
 description: Need an easy way to develop php applications on Windows? Learn how to setup WSL for PHP development.
-image: ./blog/windows.jpg
+image: /img/blog/windows.jpg
 # image credit: Photo by <a href="https://unsplash.com/@stadsa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tadas Sar</a> on <a href="https://unsplash.com/s/photos/windows?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 

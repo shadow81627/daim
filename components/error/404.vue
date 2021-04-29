@@ -1,14 +1,9 @@
 <template>
   <v-img
     sizes="100vw"
-    :lazy-src="require(`~/assets/img/404.jpg?lqip`)"
-    :src="require('~/assets/img/404.jpg?resize&size=1785&placeholder').src"
-    :srcset="
-      require(`~/assets/img/404.jpg?resize&max=1785&min=320&steps=6`).srcSet
-    "
-    :style="{
-      backgroundColor: require('~/assets/img/404.jpg?lqip-colors')[0],
-    }"
+    :lazy-src="$img(src, { width: 10 })"
+    :src="$img(src, { quality: 70 })"
+    :srcset="_srcset.srcset"
     height="100vh"
     width="100vw"
   >
@@ -69,14 +64,26 @@ export default {
         {
           rel: 'preload',
           as: 'image',
-          href: require('~/assets/img/404.jpg?resize&size=1785&placeholder')
-            .src,
-          imagesrcset: require(`~/assets/img/404.jpg?resize&max=1785&min=320&steps=6`)
-            .srcSet,
+          href: `${this.$config.BASE_URL}${this.$img(this.src, {
+            width: 1200,
+            height: 630,
+          })}`,
+          imagesrcset: this._srcset.srcset,
           imagesizes: '100vw',
         },
       ],
     };
+  },
+  computed: {
+    _srcset() {
+      return this.$img.getSizes('/img/404.jpg', {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        modifiers: {
+          format: 'webp',
+          quality: 70,
+        },
+      });
+    },
   },
 };
 </script>
