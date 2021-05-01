@@ -174,6 +174,12 @@ export default {
   i18n: {
     baseUrl: env.BASE_URL,
     seo: false,
+    detectBrowserLanguage: {
+      alwaysRedirect: false,
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true,
+    },
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
@@ -182,8 +188,9 @@ export default {
       {
         code: 'en',
         name: 'English',
-        iso: 'en',
+        iso: 'en-AU',
         file: 'en.js',
+        isCatchallLocale: true,
       },
     ],
     lazy: true,
