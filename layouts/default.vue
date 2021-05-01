@@ -119,13 +119,24 @@ export default {
     };
   },
   head() {
-    const i18nSeo = this.$nuxtI18nSeo();
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
+    const { href: canonical } = i18nHead.link.find(
+      ({ hid }) => hid === 'i18n-can',
+    );
     return {
       htmlAttrs: {
-        ...i18nSeo.htmlAttrs,
+        ...i18nHead.htmlAttrs,
       },
-      meta: [...i18nSeo.meta],
-      link: [...i18nSeo.link],
+      meta: [
+        ...i18nHead.meta,
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
+          content: canonical,
+        },
+      ],
+      link: [...i18nHead.link],
     };
   },
   mounted() {
