@@ -2,7 +2,7 @@
   <v-img
     sizes="100vw"
     :lazy-src="$img(src, { width: 10 })"
-    :src="$img(src, { quality: 70 })"
+    :src="$img(src, { quality: 70, width: '100vw' })"
     :srcset="_srcset.srcset"
     height="100vh"
     width="100vw"
@@ -49,6 +49,10 @@ export default {
       type: Object,
       default: () => {},
     },
+    src: {
+      type: String,
+      default: '/img/404.jpg',
+    },
   },
   head() {
     return {
@@ -61,22 +65,22 @@ export default {
         },
       ],
       link: [
-        {
-          rel: 'preload',
-          as: 'image',
-          href: `${this.$config.BASE_URL}${this.$img(this.src, {
-            width: 1200,
-            height: 630,
-          })}`,
-          imagesrcset: this._srcset.srcset,
-          imagesizes: '100vw',
-        },
+        // {
+        //   rel: 'preload',
+        //   as: 'image',
+        //   href: `${this.$config.BASE_URL}${this.$img(this.src, {
+        //     width: 1200,
+        //     height: 630,
+        //   })}`,
+        //   imagesrcset: this._srcset.srcset,
+        //   imagesizes: '100vw',
+        // },
       ],
     };
   },
   computed: {
     _srcset() {
-      return this.$img.getSizes('/img/404.jpg', {
+      return this.$img.getSizes(this.src, {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
           format: 'webp',
