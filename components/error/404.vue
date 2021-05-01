@@ -1,7 +1,7 @@
 <template>
   <v-img
     sizes="100vw"
-    :lazy-src="$img(src, { width: 10 })"
+    :lazy-src="$img(src, { width: 10, quality: 70 })"
     :src="$img(src, { quality: 70, width: '100vw' })"
     :srcset="_srcset.srcset"
     height="100vh"
@@ -65,16 +65,16 @@ export default {
         },
       ],
       link: [
-        // {
-        //   rel: 'preload',
-        //   as: 'image',
-        //   href: `${this.$config.BASE_URL}${this.$img(this.src, {
-        //     width: 1200,
-        //     height: 630,
-        //   })}`,
-        //   imagesrcset: this._srcset.srcset,
-        //   imagesizes: '100vw',
-        // },
+        {
+          rel: 'preload',
+          as: 'image',
+          href: `${this.$config.BASE_URL}${this.$img(this.src, {
+            width: 1280,
+            height: 630,
+          })}`,
+          imagesrcset: this._srcset.srcset,
+          imagesizes: '100vw',
+        },
       ],
     };
   },
