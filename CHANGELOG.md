@@ -1,5 +1,11 @@
 # Releases
 
+## [1.33.1](https://github.com/shadow81627/daim/compare/v1.33.0...v1.33.1) (2021-05-01)
+
+### Bug Fixes
+
+- **meta:** og url from canonical ([#957](https://github.com/shadow81627/daim/issues/957)) ([53b5e05](https://github.com/shadow81627/daim/commit/53b5e057c7de179ee8a4feca50d853fd4a62e05a)), closes [#955](https://github.com/shadow81627/daim/issues/955)
+
 ## [1.33.0](https://github.com/shadow81627/daim/compare/v1.32.5...v1.33.0) (2021-04-26)
 
 ### Features
