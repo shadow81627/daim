@@ -394,6 +394,7 @@ import {
   faSteam,
   faSkype,
   faLastfm,
+  faTumblr,
 } from '@fortawesome/free-brands-svg-icons';
 import Mailgo from '@/components/mailgo.vue';
 import * as dayjs from 'dayjs';
@@ -482,6 +483,7 @@ export default {
       faSteam,
       faSkype,
       faLastfm,
+      faTumblr,
     },
     faEnvelope,
     faPhone,

@@ -63,6 +63,12 @@
         "username": "shadow81627",
         "url": "https://www.last.fm/user/shadow81627",
         "network": "last.fm"
+      },
+      {
+        "icon": "faTumblr",
+        "username": "pocketpastaplanner-blog",
+        "url": "https://pocketpastaplanner-blog.tumblr.com/",
+        "network": "Tumblr"
       }
     ]
   },
