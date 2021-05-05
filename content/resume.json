@@ -57,6 +57,12 @@
         "username": "shadow81627",
         "url": "https://join.skype.com/invite/v5JDwAaVCBZg",
         "network": "Skype"
+      },
+      {
+        "icon": "faLastfm",
+        "username": "shadow81627",
+        "url": "https://www.last.fm/user/shadow81627",
+        "network": "last.fm"
       }
     ]
   },
