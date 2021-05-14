@@ -1,10 +1,14 @@
 {
+  "prConcurrentLimit": 2,
   "dependencyDashboard": true,
   "rollbackPrs": true,
   "automerge": true,
   "bumpVersion": null,
   "labels": ["dependencies"],
-  "lockFileMaintenance": { "enabled": true },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "schedule:daily"
+  },
   "extends": [
     "config:base",
     ":semanticCommits",
