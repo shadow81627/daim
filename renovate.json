@@ -6,8 +6,7 @@
   "bumpVersion": null,
   "labels": ["dependencies"],
   "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": "schedule:daily"
+    "enabled": true
   },
   "extends": [
     "config:base",
