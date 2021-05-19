@@ -31,26 +31,22 @@ export default {
       {
         icon: faKeyboard,
         title: 'Web Development',
-        text:
-          'Rapid prototyping of bespoke designs into fast, feature rich websites.',
+        text: 'Rapid prototyping of bespoke designs into fast, feature rich websites.',
       },
       {
         icon: faSearch,
         title: 'SEO',
-        text:
-          'Organically raise high quality content to the top of search results.',
+        text: 'Organically raise high quality content to the top of search results.',
       },
       {
         icon: faPaperPlane,
         title: 'Messaging',
-        text:
-          'Keep the conversation going with multi-channel messaging automation.',
+        text: 'Keep the conversation going with multi-channel messaging automation.',
       },
       {
         icon: faPuzzlePiece,
         title: '24/7 Support',
-        text:
-          'Dedication to maintaining quality websites means we are always reachable.',
+        text: 'Dedication to maintaining quality websites means we are always reachable.',
       },
     ],
   }),
