@@ -52,13 +52,11 @@ export default {
       default: () => ({
         by: {
           text: 'Patrick Fore',
-          href:
-            'https://unsplash.com/@patrickian4?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText',
+          href: 'https://unsplash.com/@patrickian4?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText',
         },
         on: {
           text: 'Unsplash',
-          href:
-            'https://unsplash.com/s/photos/blog?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText',
+          href: 'https://unsplash.com/s/photos/blog?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText',
         },
       }),
     },

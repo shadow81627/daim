@@ -2,7 +2,15 @@
   <div>
     <hero src="/img/resume-hero.png" gradient="">
       <div
-        class="row fill-height text-right pa-md-5 pa-3 mx-0 align-end justify-end"
+        class="
+          row
+          fill-height
+          text-right
+          pa-md-5 pa-3
+          mx-0
+          align-end
+          justify-end
+        "
       >
         <h1>
           <div class="text-uppercase display-1">
@@ -178,7 +186,13 @@
                   <h3 class="mb-0 text-break">{{ institution }}</h3>
                 </v-card-title>
                 <v-card-subtitle
-                  class="d-flex flex-column flex-md-row justify-space-between font-weight-medium body-1"
+                  class="
+                    d-flex
+                    flex-column flex-md-row
+                    justify-space-between
+                    font-weight-medium
+                    body-1
+                  "
                 >
                   <span>{{ studyType }} of {{ area }}</span>
                   <span class="resume-date text-md-right">
@@ -232,14 +246,25 @@
                   tools,
                 } in work"
                 :key="(position, company, startDate, endDate)"
-                class="resume-item d-flex flex-column flex-md-row justify-space-between"
+                class="
+                  resume-item
+                  d-flex
+                  flex-column flex-md-row
+                  justify-space-between
+                "
               >
                 <div class="resume-content" style="width: 100%">
                   <v-card-title>
                     <h3 class="mb-0 text-break">{{ position }}</h3>
                   </v-card-title>
                   <v-card-subtitle
-                    class="d-flex flex-column flex-md-row justify-space-between font-weight-medium body-1"
+                    class="
+                      d-flex
+                      flex-column flex-md-row
+                      justify-space-between
+                      font-weight-medium
+                      body-1
+                    "
                   >
                     {{ company }}
                     <span class="resume-date text-md-right">
