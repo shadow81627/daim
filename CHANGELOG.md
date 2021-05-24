@@ -1,5 +1,11 @@
 # Releases
 
+## [1.33.8](https://github.com/shadow81627/daim/compare/v1.33.7...v1.33.8) (2021-05-24)
+
+### Bug Fixes
+
+- **deps:** update dependency vee-validate to v3.4.6 ([d5dee69](https://github.com/shadow81627/daim/commit/d5dee69409cd0808e653ffaf15d86b209a711d65))
+
 ## [1.33.7](https://github.com/shadow81627/daim/compare/v1.33.6...v1.33.7) (2021-05-19)
 
 ### Bug Fixes
