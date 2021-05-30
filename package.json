@@ -64,7 +64,7 @@
   "devDependencies": {
     "@lhci/cli": "0.7.2",
     "@mdi/js": "5.9.55",
-    "@nuxt/image": "0.4.12",
+    "@nuxt/image": "0.4.13",
     "@nuxtjs/eslint-config": "6.0.1",
     "@nuxtjs/eslint-module": "3.0.2",
     "@nuxtjs/google-analytics": "2.4.0",
