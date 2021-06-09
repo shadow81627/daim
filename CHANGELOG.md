@@ -1,5 +1,11 @@
 # Releases
 
+## [1.34.0](https://github.com/shadow81627/daim/compare/v1.33.14...v1.34.0) (2021-06-09)
+
+### Features
+
+- **layout:** title home link ([#1015](https://github.com/shadow81627/daim/issues/1015)) ([ede3fcc](https://github.com/shadow81627/daim/commit/ede3fcc3144affb5b45d5e2df3de8a3ccc2a39fc))
+
 ## [1.33.14](https://github.com/shadow81627/daim/compare/v1.33.13...v1.33.14) (2021-06-07)
 
 ### Bug Fixes
