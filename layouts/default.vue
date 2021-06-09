@@ -39,13 +39,15 @@
         @click.stop="drawer = !drawer"
       />
       <v-toolbar-title class="ml-0 px-3 d-flex align-center">
-        <img
-          :src="require('~/assets/img/logo.svg?inline')"
-          class="navbar-brand"
-          height="24"
-          width="60"
-          alt="Daim"
-        />
+        <a href="/" title="Home" aria-label="Home">
+          <img
+            :src="require('~/assets/img/logo.svg?inline')"
+            class="navbar-brand"
+            height="24"
+            width="60"
+            alt="Daim"
+          />
+        </a>
       </v-toolbar-title>
       <v-spacer />
       <v-tabs class="hidden-sm-and-down" optional right>
