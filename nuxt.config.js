@@ -232,9 +232,7 @@ export default {
       chunk: ({ isDev, isModern }) =>
         isDev
           ? `[name]${isModern ? '.modern' : ''}.js`
-          : `[name].[contenthash:7]${
-              isModern ? '.modern' : ''
-            }.js?v=[contenthash:7]`,
+          : `[name]${isModern ? '.modern' : ''}.js?v=[contenthash:7]`,
       css: ({ isDev }) =>
         isDev ? '[name].css' : 'css/[name].css?v=[contenthash:7]',
       img: ({ isDev }) =>
