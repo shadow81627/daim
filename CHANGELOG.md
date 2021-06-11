@@ -1,5 +1,11 @@
 # Releases
 
+## [1.34.1](https://github.com/shadow81627/daim/compare/v1.34.0...v1.34.1) (2021-06-11)
+
+### Bug Fixes
+
+- **filenames:** content hash query string ([#1018](https://github.com/shadow81627/daim/issues/1018)) ([c905cfe](https://github.com/shadow81627/daim/commit/c905cfe8dae375448cef5e573322c1f28a311b06))
+
 ## [1.34.0](https://github.com/shadow81627/daim/compare/v1.33.14...v1.34.0) (2021-06-09)
 
 ### Features
