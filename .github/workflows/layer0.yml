@@ -35,7 +35,7 @@ jobs:
           echo You must define the "layer0_deploy_token" secret in GitHub project settings
           exit 1
         env:
-          layer0_deploy_token: ${{secrets.layer0_deploy_token}}
+          layer0_deploy_token: ${{secrets.LAYER0_DEPLOY_TOKEN}}
       - name: Extract branch name
         shell: bash
         run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')" >> $GITHUB_ENV
@@ -58,4 +58,4 @@ jobs:
       - name: Deploy to Layer0
         run: npm run layer0:deploy -- ${{'--branch=$BRANCH_NAME' || ''}} --token=$layer0_deploy_token ${{github.event_name == 'push' && env.BRANCH_NAME == 'main' && '--environment=staging' || ''}} ${{github.event_name == 'release' && '--environment=production' || ''}}
         env:
-          layer0_deploy_token: ${{secrets.layer0_deploy_token}}
+          layer0_deploy_token: ${{secrets.LAYER0_DEPLOY_TOKEN}}
