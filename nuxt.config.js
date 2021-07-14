@@ -161,6 +161,10 @@ export default {
     { path: '~/components/base/', prefix: 'base' },
   ],
 
+  layer0: {
+    layer0SourceMaps: true,
+  },
+
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
