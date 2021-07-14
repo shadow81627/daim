@@ -33,6 +33,7 @@ const preconnectLinks = [];
 
 export default {
   target: 'static',
+  modern: true,
 
   publicRuntimeConfig: {
     ...env,
