@@ -28,14 +28,15 @@ jobs:
     # cancels the deployment for the automatic merge push created when tagging a release
     if: contains(github.ref, 'refs/tags') == false || github.event_name == 'release'
     runs-on: ubuntu-latest
+    env:
+          layer0_deploy_token: ${{secrets.LAYER0_DEPLOY_TOKEN}}
     steps:
       - name: Check for Layer0 deploy token secret
         if: env.layer0_deploy_token == ''
         run: |
           echo You must define the "layer0_deploy_token" secret in GitHub project settings
           exit 1
-        env:
-          layer0_deploy_token: ${{secrets.LAYER0_DEPLOY_TOKEN}}
+
       - name: Extract branch name
         shell: bash
         run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')" >> $GITHUB_ENV
@@ -43,7 +44,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      - name: Cache node modules
+
+      - name: Cache node_modules 📦
         uses: actions/cache@v1
         env:
           cache-name: cache-node-modules
@@ -54,8 +56,9 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+
+      - name: Install dependencies 👨🏻‍💻
       - run: npm ci
-      - name: Deploy to Layer0
+
+      - name: Deploy to Layer0 🚀
         run: npm run layer0:deploy -- ${{'--branch=$BRANCH_NAME' || ''}} --token=$layer0_deploy_token ${{github.event_name == 'push' && env.BRANCH_NAME == 'main' && '--environment=staging' || ''}} ${{github.event_name == 'release' && '--environment=production' || ''}}
-        env:
-          layer0_deploy_token: ${{secrets.LAYER0_DEPLOY_TOKEN}}
