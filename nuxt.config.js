@@ -232,24 +232,6 @@ export default {
   build: {
     transpile: ['lodash-es', 'vuetify/lib', 'vee-validate/dist/rules'],
     extractCSS: true,
-    filenames: {
-      app: ({ isDev, isModern }) =>
-        isDev
-          ? `[name]${isModern ? '.modern' : ''}.js`
-          : `[name].${isModern ? '.modern' : ''}.js?v=[contenthash:7]`,
-      chunk: ({ isDev, isModern }) =>
-        isDev
-          ? `[name]${isModern ? '.modern' : ''}.js`
-          : `[name]${isModern ? '.modern' : ''}.js?v=[contenthash:7]`,
-      css: ({ isDev }) =>
-        isDev ? '[name].css' : 'css/[name].css?v=[contenthash:7]',
-      img: ({ isDev }) =>
-        isDev ? '[path][name].[ext]' : 'img/[name].[ext]?v=[contenthash:7]',
-      font: ({ isDev }) =>
-        isDev ? '[path][name].[ext]' : 'fonts/[name].[ext]?v=[contenthash:7]',
-      video: ({ isDev }) =>
-        isDev ? '[path][name].[ext]' : 'videos/[name].[ext]?v=[contenthash:7]',
-    },
     extend(config, { isClient }) {
       // Extend only webpack config for client-bundle
       if (isClient) {
