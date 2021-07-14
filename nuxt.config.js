@@ -107,6 +107,9 @@ export default {
         type: 'image/jpg',
       },
     },
+    workbox: {
+      importScripts: ['service-worker.js'],
+    },
   },
 
   /*
