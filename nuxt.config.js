@@ -99,7 +99,7 @@ export default {
   pwa: {
     meta: {
       ogHost: env.BASE_URL,
-      theme_color: '#343a40',
+      theme_color: '#253045',
       ogImage: {
         path: '/cover.jpg',
         width: 1200,
