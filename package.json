@@ -1,20 +1,8 @@
 {
-  "name": "daim",
-  "version": "1.34.3",
-  "description": "Damien Robinson Web Development",
-  "author": {
-    "name": "Damien Robinson",
-    "email": "damien.robinson@daim.dev",
-    "url": "https://daim.dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shadow81627/daim.git"
-  },
-  "bugs": "https://github.com/shadow81627/daim/issues",
-  "homepage": "https://daim.dev",
-  "private": true,
   "scripts": {
+    "layer0:dev": "layer0 dev",
+    "layer0:build": "layer0 build",
+    "layer0:deploy": "layer0 deploy",
     "dev": "nuxt",
     "build": "nuxt build --modern",
     "build:analyze": "nuxt build --analyze",
@@ -33,6 +21,21 @@
     "test": "codeceptjs run --steps",
     "test:e2e": "codeceptjs run --steps"
   },
+  "name": "daim",
+  "version": "1.34.3",
+  "description": "Damien Robinson Web Development",
+  "author": {
+    "name": "Damien Robinson",
+    "email": "damien.robinson@daim.dev",
+    "url": "https://daim.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shadow81627/daim.git"
+  },
+  "bugs": "https://github.com/shadow81627/daim/issues",
+  "homepage": "https://daim.dev",
+  "private": true,
   "engines": {
     "node": "14.x",
     "npm": "7.x"
@@ -44,6 +47,7 @@
     "@fortawesome/free-solid-svg-icons": "5.15.3",
     "@fortawesome/vue-fontawesome": "2.0.2",
     "@nuxt/content": "1.14.0",
+    "@nuxt/core": "2.15.6",
     "@nuxtjs/axios": "5.13.6",
     "@nuxtjs/markdownit": "2.0.0",
     "@nuxtjs/pwa": "3.3.5",
@@ -63,6 +67,12 @@
     "vee-validate": "3.4.9"
   },
   "devDependencies": {
+    "@layer0/cli": "3.16.1",
+    "@layer0/core": "3.16.1",
+    "@layer0/devtools": "3.16.1",
+    "@layer0/nuxt": "3.16.1",
+    "@layer0/prefetch": "3.16.1",
+    "@layer0/vue": "3.16.1",
     "@lhci/cli": "0.7.2",
     "@mdi/js": "5.9.55",
     "@nuxt/image": "0.4.14",

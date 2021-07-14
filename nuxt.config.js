@@ -133,6 +133,7 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxt/image',
     '@nuxtjs/google-analytics',
+    '@layer0/nuxt/module',
   ],
 
   /*
