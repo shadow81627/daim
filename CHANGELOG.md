@@ -1,5 +1,11 @@
 # Releases
 
+## [1.34.6](https://github.com/shadow81627/daim/compare/v1.34.5...v1.34.6) (2021-07-21)
+
+### Bug Fixes
+
+- **last modified:** remove timer ([#1047](https://github.com/shadow81627/daim/issues/1047)) ([ddc35eb](https://github.com/shadow81627/daim/commit/ddc35ebb44575e1681b11398a6920d0ec254d5df))
+
 ## [1.34.5](https://github.com/shadow81627/daim/compare/v1.34.4...v1.34.5) (2021-07-21)
 
 ### Bug Fixes
