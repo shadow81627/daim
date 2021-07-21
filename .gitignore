@@ -98,3 +98,6 @@ sw.*
 
 # only generated sitemap
 sitemap.xml
+
+# Layer0 generated build directory
+.layer0
