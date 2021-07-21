@@ -1,5 +1,15 @@
 # Releases
 
+## [1.34.5](https://github.com/shadow81627/daim/compare/v1.34.4...v1.34.5) (2021-07-21)
+
+### Bug Fixes
+
+- **deps:** bump actions/setup-node from 2.2.0 to 2.3.0 ([#1033](https://github.com/shadow81627/daim/issues/1033)) ([ba7d1ef](https://github.com/shadow81627/daim/commit/ba7d1efc5a96c6f5a51762c199f6e0d95147a1d1))
+- **deps:** update dependency dayjs to v1.10.6 ([#1038](https://github.com/shadow81627/daim/issues/1038)) ([736e088](https://github.com/shadow81627/daim/commit/736e0880607e3853f85b8c19961b108b898a110b))
+- **deps:** update dependency i18n-iso-countries to v6.8.0 ([#1043](https://github.com/shadow81627/daim/issues/1043)) ([5f6bf7f](https://github.com/shadow81627/daim/commit/5f6bf7f8bb2b84ed1e9b6e39172dc505ab1e30fb))
+- **deps:** update dependency mailgo to v0.12.2 ([#1039](https://github.com/shadow81627/daim/issues/1039)) ([cebcc92](https://github.com/shadow81627/daim/commit/cebcc92987cbbdd169bb172b6613134b50bbc972))
+- **deps:** update dependency nuxt-i18n to v6.27.3 ([#1041](https://github.com/shadow81627/daim/issues/1041)) ([abdeddb](https://github.com/shadow81627/daim/commit/abdeddb48b823c70e8d9cbfa89c0b5553d8d313c))
+
 ## [1.34.4](https://github.com/shadow81627/daim/compare/v1.34.3...v1.34.4) (2021-07-21)
 
 ### Bug Fixes
