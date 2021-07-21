@@ -45,7 +45,7 @@ export default {
       },
       {
         icon: faPuzzlePiece,
-        title: '24/7 Support',
+        title: 'Support',
         text: 'Dedication to maintaining quality websites means we are always reachable.',
       },
     ],
