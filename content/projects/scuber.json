@@ -10,6 +10,16 @@
       "link": "https://www.xcommedia.com.au/case-study-scUber.php",
       "icon": "mdiOpenInNew",
       "tooltip": "Case Study"
+    },
+    {
+      "link": "https://scuber.daim.dev",
+      "icon": "mdiWeb",
+      "tooltip": "Website"
+    },
+    {
+      "link": "https://github.com/shadow81627/barry",
+      "icon": "mdiGithub",
+      "tooltip": "Github"
     }
   ],
   "sources": [
