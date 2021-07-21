@@ -55,6 +55,12 @@
               >
             </v-card-text>
             <v-card-actions class="mt-auto">
+              <!-- add hidden content to set height to prevent page jank -->
+              <v-btn style="visibility: hidden" aria-hidden="true" icon>
+                <v-icon />
+                &nbsp;
+              </v-btn>
+
               <v-spacer></v-spacer>
               <BaseTooltipButton
                 v-for="{ link, icon, tooltip } in links"

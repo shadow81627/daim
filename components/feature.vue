@@ -27,12 +27,19 @@
     </div>
 
     <v-card-actions>
+      <!-- add hidden content to set height to prevent page jank -->
+      <v-btn style="visibility: hidden" aria-hidden="true" icon>
+        <v-icon />
+        &nbsp;
+      </v-btn>
+
       <v-spacer></v-spacer>
       <BaseTooltipButton
         v-if="blok.href"
         v-bind="{
           link: blok.href,
           tooltip: `Learn more about ${blok.heading}`,
+          size: 'small',
         }"
       ></BaseTooltipButton>
     </v-card-actions>

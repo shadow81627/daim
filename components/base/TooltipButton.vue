@@ -9,7 +9,9 @@
         v-bind="attrs"
         v-on="on"
       >
-        <v-icon color="grey">{{ icons[icon] }}</v-icon>
+        <v-icon color="grey" :small="size === 'small'">{{
+          icons[icon]
+        }}</v-icon>
         <span class="d-sr-only-focusable">{{ tooltip }}</span>
       </v-btn>
     </template>
@@ -20,19 +22,21 @@
 <script>
 import { mdiWeb, mdiGithub, mdiOpenInNew } from '@mdi/js';
 const icons = { mdiWeb, mdiGithub, mdiOpenInNew };
+const defaultIcon = 'mdiOpenInNew';
+
 export default {
   name: 'BaseTooltipButton',
   props: {
     icon: {
       type: String,
-      default: 'mdiOpenInNew',
+      default: defaultIcon,
       validator: (value) => Object.keys(icons).includes(value),
     },
     link: { type: String, required: true },
     tooltip: { type: String, required: true },
     color: { type: String, default: 'grey' },
-    size: { type: String, default: 'small' },
+    size: { type: String, default: null },
   },
-  data: () => ({ icons }),
+  data: () => ({ icons, defaultIcon }),
 };
 </script>
