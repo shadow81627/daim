@@ -1,5 +1,11 @@
 # Releases
 
+## [1.34.4](https://github.com/shadow81627/daim/compare/v1.34.3...v1.34.4) (2021-07-21)
+
+### Bug Fixes
+
+- **deps:** bump actions/setup-dotnet from 1.8.0 to 1.8.1 ([#1031](https://github.com/shadow81627/daim/issues/1031)) ([c99aed2](https://github.com/shadow81627/daim/commit/c99aed27a844f2645ac353a3f52b9501242da7c3))
+
 ## [1.34.3](https://github.com/shadow81627/daim/compare/v1.34.2...v1.34.3) (2021-07-14)
 
 ### Bug Fixes
