@@ -8,10 +8,12 @@
             itemprop="dateModified"
             :content="lastModified.toISOString()"
             :datetime="lastModified.toISOString()"
-            >{{ lastModified.format(format) }}</time
+            >{{ lastModified.fromNow() }}</time
           >
           <template #activator="{ on, attrs }">
-            <span v-bind="attrs" v-on="on">{{ relativeDate }}</span>
+            <span v-bind="attrs" v-on="on">{{
+              lastModified.format(format)
+            }}</span>
           </template>
         </v-tooltip>
       </v-card-text>
@@ -40,18 +42,6 @@ export default {
   computed: {
     lastModified() {
       return dayjs(this.$config.DATE_GENERATED);
-    },
-  },
-  created() {
-    this.toRelativeDate();
-    this.timer = setInterval(this.toRelativeDate, this.interval);
-  },
-  beforeDestroy() {
-    clearInterval(this.timer);
-  },
-  methods: {
-    toRelativeDate() {
-      this.relativeDate = this.lastModified.fromNow();
     },
   },
 };
