@@ -28,18 +28,13 @@
 
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn
+      <BaseTooltipButton
         v-if="blok.href"
-        :href="blok.href"
-        target="_blank"
-        rel="noopener"
-        text
-        small
-      >
-        <span>Learn more</span>
-        <span class="d-sr-only-focusable"> about {{ blok.heading }}</span>
-        <v-icon color="grey" small>{{ mdiOpenInNew }}</v-icon>
-      </v-btn>
+        v-bind="{
+          link: blok.href,
+          tooltip: `Learn more about ${blok.heading}`,
+        }"
+      ></BaseTooltipButton>
     </v-card-actions>
   </v-card>
 </template>
