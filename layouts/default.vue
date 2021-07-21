@@ -99,8 +99,8 @@ export default {
         },
         {
           icon: mdiAccountTie,
-          text: 'Resume',
-          route: 'resume',
+          text: 'People',
+          route: 'people',
         },
         {
           icon: mdiFolder,
