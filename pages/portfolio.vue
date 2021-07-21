@@ -55,27 +55,18 @@
               >
             </v-card-text>
             <v-card-actions class="mt-auto">
+              <!-- add hidden content to set height to prevent page jank -->
+              <v-btn style="visibility: hidden" aria-hidden="true" icon>
+                <v-icon />
+                &nbsp;
+              </v-btn>
+
               <v-spacer></v-spacer>
-              <v-tooltip
+              <BaseTooltipButton
                 v-for="{ link, icon, tooltip } in links"
+                v-bind="{ link, icon, tooltip }"
                 :key="link"
-                top
-              >
-                <template #activator="{ on, attrs }">
-                  <v-btn
-                    icon
-                    :href="link"
-                    target="_blank"
-                    rel="noopener"
-                    v-bind="attrs"
-                    v-on="on"
-                  >
-                    <v-icon>{{ icons[icon] }}</v-icon>
-                    <span class="d-sr-only-focusable">{{ link }}</span>
-                  </v-btn>
-                </template>
-                <span>{{ tooltip }}</span>
-              </v-tooltip>
+              ></BaseTooltipButton>
             </v-card-actions>
           </v-card>
         </v-col>
