@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 
-const slug = 'pople';
+const slug = 'people';
 
 Feature(slug);
 
