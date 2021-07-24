@@ -98,3 +98,6 @@ sw.*
 
 # only generated sitemap
 sitemap.xml
+
+# yarn
+package-lock.json
