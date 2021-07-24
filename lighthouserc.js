@@ -4,7 +4,7 @@ module.exports = {
       url: [
         '/',
         '/404.html',
-        '/resume/',
+        '/people/',
         '/releases/',
         '/tools/',
         '/portfolio/',
