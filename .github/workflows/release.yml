@@ -18,17 +18,10 @@ jobs:
         uses: actions/setup-node@v2.3.0
         with:
           node-version: 12
-
-      - name: Cache node_modules 📦
-        uses: actions/cache@v2.1.6
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: yarn
 
       - name: Install dependencies 👨🏻‍💻
-        run: npm ci
+        run: yarn install
 
       - name: Release 🚀
         env:
