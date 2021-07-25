@@ -31,7 +31,8 @@
     "lhci:autorun": "lhci autorun",
     "images": "node images.js",
     "test": "codeceptjs run --steps",
-    "test:e2e": "codeceptjs run --steps"
+    "test:e2e": "codeceptjs run --steps",
+    "update:snapshots": "rsync -a ./test/e2e/output/ ./test/e2e/screenshots/base"
   },
   "engines": {
     "node": "<=14.x"
