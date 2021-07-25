@@ -245,7 +245,7 @@ export default {
     },
     extend(config, { isClient }) {
       // Extend only webpack config for client-bundle
-      config.devtool = 'source-map';
+      if (isClient) config.devtool = '#source-map';
     },
   },
 };
