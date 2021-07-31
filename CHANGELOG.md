@@ -1,5 +1,11 @@
 # Releases
 
+## [1.34.9](https://github.com/shadow81627/daim/compare/v1.34.8...v1.34.9) (2021-07-31)
+
+### Bug Fixes
+
+- **deps:** bump actions/setup-node from 2.2.0 to 2.3.0 ([#1061](https://github.com/shadow81627/daim/issues/1061)) ([95085a8](https://github.com/shadow81627/daim/commit/95085a89c91056cfce88af293116cc07124bc566))
+
 ## [1.34.8](https://github.com/shadow81627/daim/compare/v1.34.7...v1.34.8) (2021-07-25)
 
 ### Bug Fixes
