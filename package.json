@@ -35,7 +35,9 @@
     "update:snapshots": "rsync -a ./test/e2e/output/ ./test/e2e/screenshots/base"
   },
   "engines": {
-    "node": "<=14.x"
+    "node": "<=14.x",
+    "npm": "please-use-yarn",
+    "yarn": "1.x"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.35",
