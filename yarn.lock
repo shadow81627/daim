@@ -4587,10 +4587,10 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
-codeceptjs-resemblehelper@1.9.3:
-  version "1.9.3"
-  resolved "https://registry.yarnpkg.com/codeceptjs-resemblehelper/-/codeceptjs-resemblehelper-1.9.3.tgz#aff17c9b14e04f8ca548c4f0285d9c45a44645e9"
-  integrity sha512-ZaGTV4BR9Dzy2aCfY46s2q7DEgjFMbgxzUmG786M/aoiWwnTFqg0J1NZ9R66sqduEZiLBzZt0/TPpfIH+E6seQ==
+codeceptjs-resemblehelper@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/codeceptjs-resemblehelper/-/codeceptjs-resemblehelper-1.9.4.tgz#5929fff7166e077583c50512c19f0a56cdb6e930"
+  integrity sha512-jYSs9fHFypxfVnM/UnOSY3d2q+nLu9xcfdwNs3GTN/i3HuQ40vJHfL8comRkeLFQh27VJ72bmFyF70QOfPWCqg==
   dependencies:
     assert "^1.5.0"
     aws-sdk "^2.662.0"
