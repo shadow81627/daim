@@ -1,5 +1,11 @@
 # Releases
 
+## [1.34.12](https://github.com/shadow81627/daim/compare/v1.34.11...v1.34.12) (2021-08-17)
+
+### Bug Fixes
+
+- **deps:** update font awesome ([8b8c57e](https://github.com/shadow81627/daim/commit/8b8c57ed2da590552dfce9b1bc406f19c3f07248))
+
 ## [1.34.11](https://github.com/shadow81627/daim/compare/v1.34.10...v1.34.11) (2021-08-17)
 
 ### Bug Fixes
