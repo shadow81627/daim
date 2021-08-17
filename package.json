@@ -77,7 +77,7 @@
     "babel-eslint": "10.1.0",
     "babel-plugin-module-resolver": "4.1.0",
     "browser-env": "3.3.0",
-    "codeceptjs": "3.0.7",
+    "codeceptjs": "3.1.1",
     "codeceptjs-resemblehelper": "1.9.4",
     "cspell": "5.7.2",
     "eslint": "7.28.0",
