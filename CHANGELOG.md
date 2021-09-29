@@ -1,5 +1,11 @@
 # Releases
 
+## [1.34.16](https://github.com/shadow81627/daim/compare/v1.34.15...v1.34.16) (2021-09-29)
+
+### Bug Fixes
+
+- **deps:** bump github/codeql-action from 1.0.12 to 1.0.15 ([#1100](https://github.com/shadow81627/daim/issues/1100)) ([2a26223](https://github.com/shadow81627/daim/commit/2a26223cd507955eb00468404c98468b33b92fd7))
+
 ## [1.34.15](https://github.com/shadow81627/daim/compare/v1.34.14...v1.34.15) (2021-08-30)
 
 ### Bug Fixes
