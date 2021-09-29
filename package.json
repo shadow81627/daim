@@ -101,7 +101,7 @@
     "semantic-release": "17.4.7",
     "serve-handler": "6.1.3",
     "stylelint": "13.13.1",
-    "vuetify": "2.5.8",
+    "vuetify": "2.5.9",
     "write-good": "1.0.8"
   }
 }
