@@ -1,0 +1,18 @@
+{
+  "image": "/img/portfolio/www.hardingspropertyservices.com.png",
+  "name": "Harding's Property Services",
+  "description": "Handyman services for the local area.",
+  "startDate": "2022-02-12T00:10:25Z",
+  "links": [
+    {
+      "link": "https://www.hardingspropertyservices.com/",
+      "icon": "mdiWeb",
+      "tooltip": "Website"
+    },
+    {
+      "link": "https://github.com/shadow81627/hardingspropertyservices",
+      "icon": "mdiGithub",
+      "tooltip": "Github"
+    }
+  ]
+}
