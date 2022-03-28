@@ -11,6 +11,13 @@
               <nuxt-link :to="localePath('releases')">
                 <span>Changelog</span>
               </nuxt-link>
+              |
+              <a
+                href="https://stats.uptimerobot.com/X7JPPc4pLz"
+                target="_blank"
+                rel="noopener"
+                >Status</a
+              >
             </v-card-text>
           </v-card>
         </v-col>
