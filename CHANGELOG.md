@@ -1,5 +1,11 @@
 # Releases
 
+## [1.36.0](https://github.com/shadow81627/daim/compare/v1.35.0...v1.36.0) (2022-03-28)
+
+### Features
+
+- **footer:** satus page link ([53f7bfc](https://github.com/shadow81627/daim/commit/53f7bfcf178fc99ff1b9e4b7978645bb1f5337f0))
+
 ## [1.35.0](https://github.com/shadow81627/daim/compare/v1.34.19...v1.35.0) (2022-03-28)
 
 ### Features
