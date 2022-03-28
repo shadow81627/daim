@@ -27,6 +27,16 @@ const env = {
   APP_NAME:
     process.env.APP_NAME ||
     `${pkg.name.charAt(0).toUpperCase()}${pkg.name.slice(1)}`,
+
+  MATOMO_URL: process.env.MATOMO_URL ?? 'https://matomo.daim.dev/',
+  MATOMO_SITE_ID: process.env.MATOMO_SITE_ID ?? 2,
+  MATOMO_DEBUG: process.env.MATOMO_DEBUG ?? false,
+};
+
+const matomo = {
+  matomoUrl: env.MATOMO_URL,
+  siteId: env.MATOMO_SITE_ID,
+  debug: env.MATOMO_DEBUG,
 };
 
 const preconnectLinks = [];
@@ -147,6 +157,7 @@ export default {
     'nuxt-fontawesome',
     'nuxt-i18n',
     // 'nuxt-webfontloader',
+    ['nuxt-matomo', matomo],
 
     // always declare the sitemap module at end of array
     '@nuxtjs/sitemap',
