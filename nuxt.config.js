@@ -147,6 +147,7 @@ export default {
     'nuxt-fontawesome',
     'nuxt-i18n',
     // 'nuxt-webfontloader',
+    'nuxt-matomo',
 
     // always declare the sitemap module at end of array
     '@nuxtjs/sitemap',
@@ -163,6 +164,11 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+
+  matomo: {
+    matomoUrl: 'https://matomo.daim.dev',
+    siteId: 2,
+  },
 
   content: {
     markdown: {
