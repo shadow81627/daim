@@ -1,5 +1,11 @@
 # Releases
 
+## [1.35.0](https://github.com/shadow81627/daim/compare/v1.34.19...v1.35.0) (2022-03-28)
+
+### Features
+
+- matomo analytics ([#1134](https://github.com/shadow81627/daim/issues/1134)) ([5b2ea13](https://github.com/shadow81627/daim/commit/5b2ea13b8bca0fcd5b16621cff33c5b77849943e))
+
 ## [1.34.19](https://github.com/shadow81627/daim/compare/v1.34.18...v1.34.19) (2021-09-30)
 
 ### Bug Fixes
