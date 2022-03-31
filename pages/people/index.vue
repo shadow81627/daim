@@ -44,17 +44,13 @@
                   :href="`mailto:${email}`"
                   :icon="faEnvelope"
                   class="pl-0"
-                >
-                  <span>{{ email }}</span>
-                </mailgo>
+                ></mailgo>
                 <mailgo
                   v-if="phone"
                   :href="`tel:${phone}`"
                   :icon="faPhone"
                   class="pl-0"
-                >
-                  <span>{{ phone }}</span>
-                </mailgo>
+                ></mailgo>
                 <v-btn
                   target="_blank"
                   large

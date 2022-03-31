@@ -22,9 +22,7 @@
             :href="`${type}:${text}`"
             class="px-0"
             :icon="!$vuetify.breakpoint.mdAndUp ? icon : undefined"
-          >
-            <span>{{ text }}</span>
-          </mailgo>
+          ></mailgo>
           <v-btn
             v-else-if="href"
             target="_blank"
