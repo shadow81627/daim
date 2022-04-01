@@ -95,7 +95,7 @@ export default {
     subtitle: { type: String, default: null },
     title: {
       type: String,
-      default: 'EMAIL ME YOUR MESSAGE',
+      default: 'EMAIL US YOUR MESSAGE',
     },
   },
   data: () => ({
