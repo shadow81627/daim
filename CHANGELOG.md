@@ -1,5 +1,12 @@
 # Releases
 
+## [1.40.2](https://github.com/shadow81627/daim/compare/v1.40.1...v1.40.2) (2022-04-01)
+
+### Bug Fixes
+
+- **people:** chnage education to use alumniOf micro data ([dc3d094](https://github.com/shadow81627/daim/commit/dc3d0947942a980e5c972d72b425286b2d13b257))
+- **people:** remove works for ([49e4b0d](https://github.com/shadow81627/daim/commit/49e4b0d40d23fdc52ce90943da45ce06b48571b8))
+
 ## [1.40.1](https://github.com/shadow81627/daim/compare/v1.40.0...v1.40.1) (2022-04-01)
 
 ### Bug Fixes
