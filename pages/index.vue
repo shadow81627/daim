@@ -7,6 +7,7 @@
           :height="192"
           :width="480"
           alt="Daim"
+          style="max-width: 100%"
         />
       </template>
     </Hero>
