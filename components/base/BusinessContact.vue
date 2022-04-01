@@ -21,7 +21,7 @@
             v-if="type"
             :href="`${type}:${text}`"
             class="px-0"
-            :icon="!$vuetify.breakpoint.mdAndUp ? icon : undefined"
+            :no-icon="$vuetify.breakpoint.mdAndUp"
           ></mailgo>
           <v-btn
             v-else-if="href"

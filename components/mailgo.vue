@@ -27,9 +27,11 @@ export default {
   props: {
     href: { type: String, required: true },
     icon: { type: [String, Object], default: null },
+    noIcon: { type: Boolean, defulat: undefined },
   },
   computed: {
     _icon() {
+      if (this.noIcon) return;
       if (this.icon) return this.icon;
       return this.isTel ? faPhone : faEnvelope;
     },
