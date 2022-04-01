@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div itemtype="https://schema.org/Blog" itemscope>
     <BlogHero :title="heading"></BlogHero>
     <v-container fluid style="max-width: 1785px">
       <v-row>
@@ -67,9 +67,6 @@ export default {
   },
   head() {
     return {
-      htmlAttrs: {
-        itemtype: 'https://schema.org/Blog',
-      },
       title: this.heading,
     };
   },

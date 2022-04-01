@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div itemscope itemtype="https://schema.org/BlogPosting">
     <BlogHero
       :title="item.title"
       :summary="item.description"
@@ -75,9 +75,6 @@ export default {
       },
     )}`;
     return {
-      htmlAttrs: {
-        itemtype: 'https://schema.org/BlogPosting',
-      },
       title: this.item.title,
       meta: [
         {
