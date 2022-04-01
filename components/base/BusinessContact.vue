@@ -1,9 +1,9 @@
 <template>
   <v-theme-provider :dark="dark">
     <div>
-      <base-info-card :title="title" color="primary" level="2">
+      <BaseInfoCard :title="title" color="primary" :level="2">
         <slot></slot>
-      </base-info-card>
+      </BaseInfoCard>
 
       <template v-for="({ icon, text, title: t, type, href }, i) in business">
         <BaseAvatarCard
