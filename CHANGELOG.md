@@ -1,5 +1,11 @@
 # Releases
 
+## [1.37.0](https://github.com/shadow81627/daim/compare/v1.36.0...v1.37.0) (2022-04-01)
+
+### Features
+
+- **mailgo:** data attributes ([#1139](https://github.com/shadow81627/daim/issues/1139)) ([ceca91b](https://github.com/shadow81627/daim/commit/ceca91bc1e3744b7af9c0504a9ae8e0450f9a598))
+
 ## [1.36.0](https://github.com/shadow81627/daim/compare/v1.35.0...v1.36.0) (2022-03-28)
 
 ### Features
