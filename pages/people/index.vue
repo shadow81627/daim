@@ -325,7 +325,7 @@
                   </v-card-subtitle>
                   <v-card-text class="body-1">
                     <p itemprop="description">{{ summary }}</p>
-                    Tools used: <span itemprop="skills">{{ tools }}</span>
+                    Tools used: <span>{{ tools }}</span>
                   </v-card-text>
                 </div>
               </div>
