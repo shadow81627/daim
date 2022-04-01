@@ -10,16 +10,12 @@
     :data-tel="tel"
   >
     <font-awesome-icon v-if="icon" :icon="icon" fixed-width pull="left" />
-    <span
-      ><slot
-        ><template v-if="address">{{ address }}</template
-        ><span style="display: none">example.</span
-        ><template v-if="hasSplits">@</template
-        ><template v-if="domain">{{ domain }}</template
-        ><template v-if="tel">{{ tel }}</template
-        ><span style="display: none">.localhost</span></slot
-      ></span
-    >
+    <slot>
+      <span style="display: none">info.</span>
+      <span v-if="address && domain" itemprop="email">{{ stripped }}</span>
+      <span style="display: none">.localhost</span>
+      <span v-if="tel" itemprop="telephone">{{ tel }}</span>
+    </slot>
   </v-btn>
 </template>
 
@@ -31,6 +27,9 @@ export default {
     icon: { type: [String, Object], default: null },
   },
   computed: {
+    // itemprop() {
+    //   return this.tel ? 'telephone' : 'email';
+    // },
     stripped() {
       return this.href.replace(/^mailto:/, '').replace(/^tel:/, '');
     },
