@@ -63,8 +63,9 @@
                     }`,
                   )}`"
                   rel="noreferrer"
-                  itemprop="location"
+                  itemprop="address"
                   itemscope
+                  itemtype="https://schema.org/PostalAddress"
                 >
                   <font-awesome-icon
                     :icon="faMapMarker"
@@ -72,19 +73,21 @@
                     fixed-width
                     pull="left"
                   />
-                  <span itemscope itemtype="https://schema.org/City">{{
-                    city || region
+                  <span v-if="city" itemprop="addressLocality">{{ city }}</span>
+                  <span v-show="!city" itemprop="addressRegion">{{
+                    region
+                  }}</span>
+                  <span v-show="false" v-if="postcode" itemprop="postalCode">{{
+                    postcode
                   }}</span>
                   <span>{{ country ? ',' : '' }}&nbsp;</span>
-                  <span itemscope itemtype="https://schema.org/Country">{{
-                    country
-                  }}</span>
+                  <span itemprop="addressCountry">{{ country }}</span>
                 </v-btn>
-                <span style="diplay: none" itemprop="nationality"
+                <span style="display: none" itemprop="nationality"
                   >Australian</span
                 >
                 <span
-                  style="diplay: none"
+                  style="display: none"
                   itemprop="gender"
                   itemtype="https://schema.org/Male"
                   >Male</span
@@ -222,14 +225,14 @@
                   <span class="resume-date text-md-right">
                     <time
                       class="text-primary"
-                      itemprop="dateCreated"
+                      itemprop="startDate"
                       :datetime="formatDate(startDate)"
                       >{{ formatDate(startDate) }}</time
                     >
                     -
                     <time
                       class="text-primary"
-                      itemprop="datePublished"
+                      itemprop="endDate"
                       :datetime="formatDate(endDate)"
                       >{{ formatDate(endDate) }}</time
                     >
@@ -299,7 +302,7 @@
                   >
                     <span
                       itemtype="https://schema.org/Organization"
-                      itemprop="hiringOrganization"
+                      itemprop="worksFor"
                       itemscope
                       ><span itemprop="name">{{ company }}</span></span
                     >
