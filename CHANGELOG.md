@@ -1,5 +1,11 @@
 # Releases
 
+## [1.41.0](https://github.com/shadow81627/daim/compare/v1.40.4...v1.41.0) (2022-04-01)
+
+### Features
+
+- about section ([#1141](https://github.com/shadow81627/daim/issues/1141)) ([930322d](https://github.com/shadow81627/daim/commit/930322ddf1e8c2a41b7b07fb07bddd8a5cc18ae0))
+
 ## [1.40.4](https://github.com/shadow81627/daim/compare/v1.40.3...v1.40.4) (2022-04-01)
 
 ### Bug Fixes
