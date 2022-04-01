@@ -1,5 +1,16 @@
 # Releases
 
+## [1.40.0](https://github.com/shadow81627/daim/compare/v1.39.0...v1.40.0) (2022-04-01)
+
+### Bug Fixes
+
+- **footer:** remove invalid location micro data ([88b7279](https://github.com/shadow81627/daim/commit/88b72798f3a22e1d7298aef8605439f54e77111d))
+- **layout:** add main itemscope ([120c770](https://github.com/shadow81627/daim/commit/120c770317bc55257a5abf752d774e7ff7dcc944))
+
+### Features
+
+- **breadcrumbs:** add microdata ([b361297](https://github.com/shadow81627/daim/commit/b3612973c99fde9db9ff3fd6382b798e10e1a6cc))
+
 ## [1.39.0](https://github.com/shadow81627/daim/compare/v1.38.1...v1.39.0) (2022-04-01)
 
 ### Bug Fixes
