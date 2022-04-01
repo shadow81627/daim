@@ -43,12 +43,7 @@
                 title="location"
                 fixed-width
               />
-              <span
-                itemprop="location"
-                itemscope
-                itemtype="https://schema.org/City"
-                >New Farm, Australia</span
-              >
+              <span>New Farm, Australia</span>
               <span>© <time datetime="2019">2019</time> | Damien Robinson</span>
             </v-card-text>
           </v-card>
