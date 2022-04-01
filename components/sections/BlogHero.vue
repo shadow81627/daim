@@ -9,9 +9,11 @@
       >
         <v-card color="transparent" flat>
           <v-card-title class="text-break">
-            <h1 class="mb-0">{{ title }}</h1>
+            <h1 class="mb-0" itemprop="name">{{ title }}</h1>
           </v-card-title>
-          <v-card-subtitle v-if="summary">{{ summary }}</v-card-subtitle>
+          <v-card-subtitle v-if="summary" itemprop="description">{{
+            summary
+          }}</v-card-subtitle>
         </v-card>
       </v-col>
       <v-col

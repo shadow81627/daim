@@ -9,7 +9,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <div class="body-1">
+          <div class="body-1" itemprop="articleBody">
             <nuxt-content :document="item" />
           </div>
         </v-col>
@@ -18,7 +18,9 @@
         <v-col class="d-flex flex-column justify-center">
           <span class="font-italic"
             >Published
-            <time :datetime="item.date">{{ formatDate(item.date) }}</time></span
+            <time :datetime="item.date" itemprop="dateModified">{{
+              formatDate(item.date)
+            }}</time></span
           >
         </v-col>
         <v-col sm="auto" cols="12">
@@ -73,6 +75,9 @@ export default {
       },
     )}`;
     return {
+      htmlAttrs: {
+        itemtype: 'https://schema.org/BlogPosting',
+      },
       title: this.item.title,
       meta: [
         {

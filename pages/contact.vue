@@ -29,6 +29,9 @@ export default {
   }),
   head() {
     return {
+      htmlAttrs: {
+        itemtype: 'https://schema.org/ContactPage',
+      },
       title: this.heading,
       meta: [
         {

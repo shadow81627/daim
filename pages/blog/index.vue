@@ -14,6 +14,9 @@
           <v-card
             :to="`/blog/${encodeURIComponent(slug)}`"
             class="flex d-flex flex-column justify-between"
+            itemprop="blogPost"
+            itemscope
+            itemtype="https://schema.org/BlogPosting"
           >
             <v-img
               :lazy-src="$img(image || src, { width: 10, quality: 70 })"
@@ -21,9 +24,10 @@
               :srcset="_srcset(image || src).srcset"
               :sizes="_srcset.size"
               :aspect-ratio="16 / 9"
+              itemprop="image"
             ></v-img>
             <v-card-title class="text-break text-wrap">
-              <h2>{{ title }}</h2>
+              <h2 itemprop="name">{{ title }}</h2>
             </v-card-title>
             <v-card-subtitle class="body-1">
               <time :datetime="date">{{ formatDate(date) }}</time
@@ -31,8 +35,11 @@
               ><time :datetime="`${readTime(JSON.stringify(body))}m`"
                 >{{ readTime(JSON.stringify(body)) }} min read</time
               >
+              <span style="display: none">{{
+                words(JSON.stringify(body))
+              }}</span>
             </v-card-subtitle>
-            <v-card-text class="body-1 text--primary">
+            <v-card-text class="body-1 text--primary" itemprop="description">
               {{ description }}
             </v-card-text>
           </v-card>
@@ -52,7 +59,7 @@ export default {
   },
   data() {
     return {
-      heading: "Damien Robinson's Blog",
+      heading: 'Blog',
       total: 0,
       items: [],
       src: '/img/blog.jpg',
@@ -60,6 +67,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        itemtype: 'https://schema.org/Blog',
+      },
       title: this.heading,
     };
   },
@@ -67,9 +77,11 @@ export default {
     formatDate(date) {
       return dayjs(date).format('MMM D, YYYY');
     },
+    words(content = '') {
+      return content.split(' ').length;
+    },
     readTime(content = '', wordsPerMinute = 50) {
-      const words = content.split(' ').length;
-      return Math.ceil(words / wordsPerMinute);
+      return Math.ceil(this.words(content) / wordsPerMinute);
     },
     _srcset(src) {
       return this.$img.getSizes(src, {

@@ -57,12 +57,18 @@
           :key="route"
           :to="localePath(route ? route : {})"
           text
+          itemscope
+          itemtype="https://schema.org/SiteNavigationElement"
         >
           {{ text }}
         </v-tab>
       </v-tabs>
     </v-app-bar>
-    <v-main role="main">
+    <v-main
+      role="main"
+      itemprop="mainContentOfPage"
+      itemtype="https://schema.org/WebPageElement"
+    >
       <nuxt style="min-height: 100vh" keep-alive></nuxt>
       <the-footer></the-footer>
     </v-main>
@@ -127,6 +133,8 @@ export default {
     );
     return {
       htmlAttrs: {
+        itemscope: '',
+        itemtype: 'https://schema.org/WebPage',
         ...i18nHead.htmlAttrs,
       },
       meta: [
