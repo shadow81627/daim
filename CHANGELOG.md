@@ -1,5 +1,15 @@
 # Releases
 
+## [1.39.0](https://github.com/shadow81627/daim/compare/v1.38.1...v1.39.0) (2022-04-01)
+
+### Bug Fixes
+
+- **people:** remove experience skill item prop ([52bc201](https://github.com/shadow81627/daim/commit/52bc201c3cc98422de2525ecdbf03efa132c5d3b))
+
+### Features
+
+- add page micro data ([20403b5](https://github.com/shadow81627/daim/commit/20403b5c3b010f3df24aa3293ff5d3e753570d23))
+
 ## [1.38.1](https://github.com/shadow81627/daim/compare/v1.38.0...v1.38.1) (2022-04-01)
 
 ### Bug Fixes
