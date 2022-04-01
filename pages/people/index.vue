@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div itemscope itemtype="https://schema.org/Person">
     <hero src="/img/resume-hero.png" gradient="">
       <div
         class="
@@ -13,10 +13,13 @@
         "
       >
         <h1>
-          <div class="text-uppercase display-1">
-            {{ firstname }} {{ lastname }}
+          <div class="text-uppercase display-1" itemprop="name">
+            <span itemprop="givenName">{{ firstname }}</span>
+            <span itemprop="familyName">{{ lastname }}</span>
           </div>
-          <div class="text-uppercase display-2">{{ label }}</div>
+          <div class="text-uppercase display-2" itemprop="jobTitle">
+            {{ label }}
+          </div>
         </h1>
       </div>
     </hero>
@@ -32,6 +35,7 @@
               :sizes="_srcset.size"
               width="200"
               contain
+              itemprop="image"
             ></v-img>
           </v-avatar>
         </v-col>
@@ -59,7 +63,7 @@
                     }`,
                   )}`"
                   rel="noreferrer"
-                  itemprop="areaServed"
+                  itemprop="location"
                   itemscope
                 >
                   <font-awesome-icon
@@ -76,6 +80,15 @@
                     country
                   }}</span>
                 </v-btn>
+                <span style="diplay: none" itemprop="nationality"
+                  >Australian</span
+                >
+                <span
+                  style="diplay: none"
+                  itemprop="gender"
+                  itemtype="https://schema.org/Male"
+                  >Male</span
+                >
               </v-card-subtitle>
 
               <v-card-text class="body-1 text--primary">
@@ -96,6 +109,7 @@
                       icon
                       :href="url"
                       rel="noopener"
+                      itemprop="sameAs"
                       v-on="on"
                     >
                       <font-awesome-icon
@@ -149,7 +163,7 @@
                   >
                     <div v-for="{ icon, title } in column" :key="title">
                       <font-awesome-icon :icon="icons[icon]" fixed-width />
-                      <span>{{ title }}</span>
+                      <span itemprop="knowsAbout">{{ title }}</span>
                     </div>
                   </v-col>
                 </v-row>
@@ -179,9 +193,18 @@
                   courses,
                 } in education"
                 :key="(institution, area, studyType)"
+                itemtype="https://schema.org/EducationalOccupationalCredential"
+                itemscope
+                itemprop="hasCredential"
               >
-                <v-card-title>
-                  <h3 class="mb-0 text-break">{{ institution }}</h3>
+                <v-card-title
+                  itemtype="https://schema.org/EducationalOrganization"
+                  itemscope
+                  itemprop="recognizedBy"
+                >
+                  <h3 class="mb-0 text-break" itemprop="name">
+                    {{ institution }}
+                  </h3>
                 </v-card-title>
                 <v-card-subtitle
                   class="
@@ -192,16 +215,21 @@
                     body-1
                   "
                 >
-                  <span>{{ studyType }} of {{ area }}</span>
+                  <span itemprop="name">
+                    <span itemprop="credentialCategory">{{ studyType }}</span>
+                    of {{ area }}</span
+                  >
                   <span class="resume-date text-md-right">
                     <time
                       class="text-primary"
+                      itemprop="dateCreated"
                       :datetime="formatDate(startDate)"
                       >{{ formatDate(startDate) }}</time
                     >
                     -
                     <time
                       class="text-primary"
+                      itemprop="datePublished"
                       :datetime="formatDate(endDate)"
                       >{{ formatDate(endDate) }}</time
                     >
@@ -212,7 +240,7 @@
                 </v-card-text>
                 <v-card-title class="py-0">Key Courses</v-card-title>
                 <v-card-text class="body-1 text--primary">
-                  <ul>
+                  <ul itemprop="abstract">
                     <li v-for="course in courses" :key="course">
                       {{ course }}
                     </li>
@@ -250,10 +278,15 @@
                   flex-column flex-md-row
                   justify-space-between
                 "
+                itemprop="hasOccupation"
+                itemtype="https://schema.org/EmployeeRole"
+                itemscope
               >
                 <div class="resume-content" style="width: 100%">
                   <v-card-title>
-                    <h3 class="mb-0 text-break">{{ position }}</h3>
+                    <h3 class="mb-0 text-break" itemprop="roleName">
+                      {{ position }}
+                    </h3>
                   </v-card-title>
                   <v-card-subtitle
                     class="
@@ -264,23 +297,32 @@
                       body-1
                     "
                   >
-                    {{ company }}
+                    <span
+                      itemtype="https://schema.org/Organization"
+                      itemprop="hiringOrganization"
+                      itemscope
+                      ><span itemprop="name">{{ company }}</span></span
+                    >
                     <span class="resume-date text-md-right">
                       <time
                         class="text-primary"
+                        itemprop="startDate"
                         :datetime="formatDate(startDate)"
                         >{{ formatDate(startDate) }}</time
                       >
                       <span>-</span>
-                      <time v-if="endDate" :datetime="formatDate(endDate)">{{
-                        formatDate(endDate)
-                      }}</time>
+                      <time
+                        v-if="endDate"
+                        :datetime="formatDate(endDate)"
+                        itemprop="endDate"
+                        >{{ formatDate(endDate) }}</time
+                      >
                       <span v-else>Present</span>
                     </span>
                   </v-card-subtitle>
                   <v-card-text class="body-1">
-                    <p>{{ summary }}</p>
-                    Tools used: {{ tools }}
+                    <p itemprop="description">{{ summary }}</p>
+                    Tools used: <span itemprop="skills">{{ tools }}</span>
                   </v-card-text>
                 </div>
               </div>
