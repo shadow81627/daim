@@ -1,5 +1,11 @@
 # Releases
 
+## [1.40.3](https://github.com/shadow81627/daim/compare/v1.40.2...v1.40.3) (2022-04-01)
+
+### Bug Fixes
+
+- **hero:** add hidden img for microdata ([62ae71c](https://github.com/shadow81627/daim/commit/62ae71cca4231feb1240dd0f786afd8f2f263ee2))
+
 ## [1.40.2](https://github.com/shadow81627/daim/compare/v1.40.1...v1.40.2) (2022-04-01)
 
 ### Bug Fixes
