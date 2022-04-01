@@ -1,5 +1,17 @@
 # Releases
 
+## [1.38.0](https://github.com/shadow81627/daim/compare/v1.37.1...v1.38.0) (2022-04-01)
+
+### Bug Fixes
+
+- **footer:** use location itemprop ([5233ce0](https://github.com/shadow81627/daim/commit/5233ce01ceb4c69ff959684738d8b9ba51bdee92))
+
+### Features
+
+- area served microdata ([a18e6d1](https://github.com/shadow81627/daim/commit/a18e6d1efed2e35fbd9e709b96218e35dfecc330))
+- person microdata ([b22fc8e](https://github.com/shadow81627/daim/commit/b22fc8e38f6c884e5e24e7e8de38f02c53a6025c))
+- **services:** microdata ([6e7c586](https://github.com/shadow81627/daim/commit/6e7c58604fbf29846a58212a7a8c60196952f908))
+
 ## [1.37.1](https://github.com/shadow81627/daim/compare/v1.37.0...v1.37.1) (2022-04-01)
 
 ### Bug Fixes
