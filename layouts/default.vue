@@ -67,6 +67,7 @@
     <v-main
       role="main"
       itemprop="mainContentOfPage"
+      itemscope
       itemtype="https://schema.org/WebPageElement"
     >
       <nuxt style="min-height: 100vh" keep-alive></nuxt>
