@@ -1,5 +1,11 @@
 # Releases
 
+## [1.37.1](https://github.com/shadow81627/daim/compare/v1.37.0...v1.37.1) (2022-04-01)
+
+### Bug Fixes
+
+- **people:** remove pl-0 from contact buttons ([871faf7](https://github.com/shadow81627/daim/commit/871faf7fcf3d649789307481403705f4d6c3c938))
+
 ## [1.37.0](https://github.com/shadow81627/daim/compare/v1.36.0...v1.37.0) (2022-04-01)
 
 ### Features
