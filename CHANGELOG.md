@@ -1,5 +1,11 @@
 # Releases
 
+## [1.40.1](https://github.com/shadow81627/daim/compare/v1.40.0...v1.40.1) (2022-04-01)
+
+### Bug Fixes
+
+- **blog:** move blogpost microdata into page ([ade94a7](https://github.com/shadow81627/daim/commit/ade94a7b341513a05c4cec8fc918795f4d6b3d75))
+
 ## [1.40.0](https://github.com/shadow81627/daim/compare/v1.39.0...v1.40.0) (2022-04-01)
 
 ### Bug Fixes
