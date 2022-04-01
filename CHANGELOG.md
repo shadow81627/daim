@@ -1,5 +1,11 @@
 # Releases
 
+## [1.40.4](https://github.com/shadow81627/daim/compare/v1.40.3...v1.40.4) (2022-04-01)
+
+### Bug Fixes
+
+- **blog:** image url ld json use .image ([105390f](https://github.com/shadow81627/daim/commit/105390f97b30f0c936c9c5339584ac0056115b76))
+
 ## [1.40.3](https://github.com/shadow81627/daim/compare/v1.40.2...v1.40.3) (2022-04-01)
 
 ### Bug Fixes
