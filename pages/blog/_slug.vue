@@ -100,7 +100,7 @@ export default {
             description: this.item.description,
             image: {
               '@type': 'ImageObject',
-              url: `${this.$config.BASE_URL}${image.src}`,
+              url: `${this.$config.BASE_URL}${image.image}`,
               width: image.width,
               height: image.height,
             },
