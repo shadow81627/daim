@@ -1,5 +1,12 @@
 # Releases
 
+## [1.41.2](https://github.com/shadow81627/daim/compare/v1.41.1...v1.41.2) (2022-04-01)
+
+### Bug Fixes
+
+- change me to us ([21a9abc](https://github.com/shadow81627/daim/commit/21a9abc01f1bb429b67e511bfb906404add603e2))
+- **section heading:** add body padding ([e63e762](https://github.com/shadow81627/daim/commit/e63e76280fa6d28c62b91bd6281c93a0a3268412))
+
 ## [1.41.1](https://github.com/shadow81627/daim/compare/v1.41.0...v1.41.1) (2022-04-01)
 
 ### Bug Fixes
