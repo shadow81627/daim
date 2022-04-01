@@ -1,5 +1,11 @@
 # Releases
 
+## [1.38.1](https://github.com/shadow81627/daim/compare/v1.38.0...v1.38.1) (2022-04-01)
+
+### Bug Fixes
+
+- **people:** location to address ([dbc0926](https://github.com/shadow81627/daim/commit/dbc092624a19b209cb3134bd3e626d25f440bb68))
+
 ## [1.38.0](https://github.com/shadow81627/daim/compare/v1.37.1...v1.38.0) (2022-04-01)
 
 ### Bug Fixes
