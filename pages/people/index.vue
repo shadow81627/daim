@@ -196,15 +196,11 @@
                   courses,
                 } in education"
                 :key="(institution, area, studyType)"
-                itemtype="https://schema.org/EducationalOccupationalCredential"
+                itemtype="https://schema.org/CollegeOrUniversity"
                 itemscope
-                itemprop="hasCredential"
+                itemprop="alumniOf"
               >
-                <v-card-title
-                  itemtype="https://schema.org/EducationalOrganization"
-                  itemscope
-                  itemprop="recognizedBy"
-                >
+                <v-card-title>
                   <h3 class="mb-0 text-break" itemprop="name">
                     {{ institution }}
                   </h3>
@@ -217,6 +213,8 @@
                     font-weight-medium
                     body-1
                   "
+                  itemprop="hasCredential"
+                  itemtype="https://schema.org/EducationalOccupationalCredential"
                 >
                   <span itemprop="name">
                     <span itemprop="credentialCategory">{{ studyType }}</span>
