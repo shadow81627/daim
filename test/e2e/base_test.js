@@ -1,6 +1,6 @@
 const pages = [
-  { slug: 'home', heading: 'DAMIEN ROBINSON', route: '/' },
-  { slug: 'blog', heading: "DAMIEN ROBINSON'S BLOG" },
+  { slug: 'home', route: '/' },
+  { slug: 'blog', heading: 'BLOG' },
   { slug: 'contact' },
   { slug: 'tools' },
   { slug: 'portfolio' },
