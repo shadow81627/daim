@@ -14,11 +14,17 @@
             class="text-uppercase"
             space="1"
             :tag="`h${level}`"
+            :itemprop="titleItemprop"
           />
 
           <BaseDivider :color="color" />
 
-          <BaseBody v-if="text || $slots.default" :text="text" space="6">
+          <BaseBody
+            v-if="text || $slots.default"
+            :text="text"
+            space="6"
+            :itemprop="bodyItemprop"
+          >
             <slot />
           </BaseBody>
         </v-col>
@@ -45,6 +51,14 @@ export default {
 
   props: {
     dark: Boolean,
+    titleItemprop: {
+      type: String,
+      default: undefined,
+    },
+    bodyItemprop: {
+      type: String,
+      default: undefined,
+    },
     callout: { type: String, default: null },
     color: {
       type: String,
