@@ -1,6 +1,18 @@
 <template>
   <v-toolbar flat height="65" color="transparent" :absolute="absolute">
-    <v-breadcrumbs :items="breadcrumbs" class="pa-0"></v-breadcrumbs>
+    <v-breadcrumbs
+      :items="breadcrumbs"
+      class="pa-0"
+      itemprop="breadcrumb"
+      itemtype="https://schema.org/BreadcrumbList"
+      itemscope
+    >
+      <template #item="{ item }">
+        <v-breadcrumbs-item v-bind="item" itemprop="itemListElement">
+          {{ item.text }}
+        </v-breadcrumbs-item>
+      </template>
+    </v-breadcrumbs>
   </v-toolbar>
 </template>
 
@@ -23,7 +35,11 @@ export default {
         const to = this.localePath(
           '/' + segments.slice(0, index + 1).join('/'),
         );
-        breadcrumbs.push({ text, to, exact: true });
+        breadcrumbs.push({
+          text,
+          to,
+          exact: true,
+        });
       });
 
       return breadcrumbs;
