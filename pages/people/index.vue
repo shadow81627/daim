@@ -59,6 +59,8 @@
                     }`,
                   )}`"
                   rel="noreferrer"
+                  itemprop="areaServed"
+                  itemscope
                 >
                   <font-awesome-icon
                     :icon="faMapMarker"
@@ -66,9 +68,13 @@
                     fixed-width
                     pull="left"
                   />
-                  <span>{{ city || region }}</span>
+                  <span itemscope itemtype="https://schema.org/City">{{
+                    city || region
+                  }}</span>
                   <span>{{ country ? ',' : '' }}&nbsp;</span>
-                  <span>{{ country }}</span>
+                  <span itemscope itemtype="https://schema.org/Country">{{
+                    country
+                  }}</span>
                 </v-btn>
               </v-card-subtitle>
 
