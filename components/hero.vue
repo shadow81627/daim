@@ -10,8 +10,17 @@
             :height="height"
             :sizes="_srcset.size"
             :gradient="gradient"
-            itemprop="image"
           >
+            <img
+              style="display: none"
+              :src="$img(src, { quality: 70, height: 500 })"
+              :srcset="_srcset.srcset"
+              :height="height"
+              :sizes="_srcset.size"
+              alt=""
+              loading="lazy"
+              itemprop="image"
+            />
             <slot>
               <v-container
                 class="fill-height align-items-end justify-start"
