@@ -43,13 +43,11 @@
                   v-if="email"
                   :href="`mailto:${email}`"
                   :icon="faEnvelope"
-                  class="pl-0"
                 ></mailgo>
                 <mailgo
                   v-if="phone"
                   :href="`tel:${phone}`"
                   :icon="faPhone"
-                  class="pl-0"
                 ></mailgo>
                 <v-btn
                   target="_blank"
@@ -60,7 +58,6 @@
                       country || ''
                     }`,
                   )}`"
-                  class="pl-0"
                   rel="noreferrer"
                 >
                   <font-awesome-icon
@@ -91,7 +88,6 @@
                       v-bind="attrs"
                       x-large
                       icon
-                      class="pl-0"
                       :href="url"
                       rel="noopener"
                       v-on="on"
