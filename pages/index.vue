@@ -1,6 +1,16 @@
 <template>
   <div>
-    <hero heading="Damien Robinson" subheading="Web Development"></hero>
+    <Hero subheading="Digital Agency">
+      <template #heading>
+        <img
+          :src="require('~/assets/img/logo.svg?inline')"
+          :height="192"
+          :width="480"
+          alt="Daim"
+        />
+      </template>
+    </Hero>
+    <About></About>
     <Features></Features>
     <Services></Services>
     <ContactUs></ContactUs>

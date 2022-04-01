@@ -43,46 +43,12 @@
           <section>
             <v-card id="about" flat>
               <v-card-subtitle class="text-subtitle-1 text-break pb-0">
-                <mailgo
-                  v-if="email"
-                  :href="`mailto:${email}`"
-                  :icon="faEnvelope"
-                ></mailgo>
-                <mailgo
-                  v-if="phone"
-                  :href="`tel:${phone}`"
-                  :icon="faPhone"
-                ></mailgo>
-                <v-btn
-                  target="_blank"
-                  large
-                  text
-                  :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
-                    `${city || ''} ${region || ''} ${postcode || ''} ${
-                      country || ''
-                    }`,
-                  )}`"
-                  rel="noreferrer"
-                  itemprop="address"
-                  itemscope
-                  itemtype="https://schema.org/PostalAddress"
-                >
-                  <font-awesome-icon
-                    :icon="faMapMarker"
-                    title="location"
-                    fixed-width
-                    pull="left"
-                  />
-                  <span v-if="city" itemprop="addressLocality">{{ city }}</span>
-                  <span v-show="!city" itemprop="addressRegion">{{
-                    region
-                  }}</span>
-                  <span v-show="false" v-if="postcode" itemprop="postalCode">{{
-                    postcode
-                  }}</span>
-                  <span>{{ country ? ',' : '' }}&nbsp;</span>
-                  <span itemprop="addressCountry">{{ country }}</span>
-                </v-btn>
+                <mailgo v-if="email" :href="`mailto:${email}`"></mailgo>
+                <mailgo v-if="phone" :href="`tel:${phone}`"></mailgo>
+                <LocationButton
+                  v-if="city || region || postcode || country"
+                  v-bind="{ city, region, postcode, country }"
+                ></LocationButton>
                 <span style="display: none" itemprop="nationality"
                   >Australian</span
                 >

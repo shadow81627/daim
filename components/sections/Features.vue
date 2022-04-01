@@ -1,10 +1,6 @@
 <template>
   <BaseSection id="features">
-    <BaseSectionHeading :title="title">
-      Get a high quality custom landing page or microsite built by
-      professionals.
-    </BaseSectionHeading>
-
+    <BaseSectionHeading :title="title"></BaseSectionHeading>
     <v-container>
       <v-row>
         <v-col

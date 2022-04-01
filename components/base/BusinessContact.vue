@@ -88,7 +88,7 @@ export default {
       {
         icon: faEnvelope,
         title: 'Email',
-        text: 'damien.robinson@daim.dev',
+        text: 'contact@daim.dev',
         type: 'mailto',
       },
     ],
