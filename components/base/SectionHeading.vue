@@ -21,7 +21,11 @@
 
     <BaseDivider :color="color" />
 
-    <BaseBody v-if="$slots.default || text" class="mx-auto" max-width="700">
+    <BaseBody
+      v-if="$slots.default || text"
+      class="mx-auto px-2"
+      max-width="700"
+    >
       <slot v-if="$slots.default" />
 
       <template v-else>
