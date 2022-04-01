@@ -298,10 +298,7 @@
                       body-1
                     "
                   >
-                    <span
-                      itemtype="https://schema.org/Organization"
-                      itemprop="worksFor"
-                      itemscope
+                    <span itemtype="https://schema.org/Organization" itemscope
                       ><span itemprop="name">{{ company }}</span></span
                     >
                     <span class="resume-date text-md-right">
