@@ -1,5 +1,11 @@
 # Releases
 
+## [1.41.1](https://github.com/shadow81627/daim/compare/v1.41.0...v1.41.1) (2022-04-01)
+
+### Bug Fixes
+
+- **home:** logo max width ([486d00f](https://github.com/shadow81627/daim/commit/486d00fe72f987b455b17051dacbd70e815c4084))
+
 ## [1.41.0](https://github.com/shadow81627/daim/compare/v1.40.4...v1.41.0) (2022-04-01)
 
 ### Features
