@@ -28,9 +28,15 @@
               >
                 <v-row align="center" justify="center">
                   <v-col class="text-center" cols="12">
-                    <h1 v-if="heading" class="mb-4 text-shadow" itemprop="name">
-                      {{ heading }}
-                    </h1>
+                    <slot name="heading">
+                      <h1
+                        v-if="heading"
+                        class="mb-4 text-shadow"
+                        itemprop="name"
+                      >
+                        {{ heading }}
+                      </h1>
+                    </slot>
                     <h2
                       v-if="subheading"
                       class="subheading text-shadow"

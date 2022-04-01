@@ -40,7 +40,7 @@ export default {
     cards: [
       {
         icon: faKeyboard,
-        title: 'Web Development',
+        title: 'Websites',
         text: 'Rapid prototyping of bespoke designs into fast, feature rich websites.',
       },
       {

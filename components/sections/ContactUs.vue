@@ -6,7 +6,7 @@
           <v-col cols="10" align-self="center">
             <base-title
               :space="$vuetify.breakpoint.mdAndUp ? 0 : 4"
-              title="HAVE QUESTIONS? LET ME KNOW!"
+              title="HAVE QUESTIONS? LET US KNOW!"
             />
 
             <!-- <base-body space="0">
@@ -25,7 +25,7 @@
               large
               outlined
             >
-              Contact Me
+              Contact Us
             </base-btn>
           </v-col>
         </v-row>

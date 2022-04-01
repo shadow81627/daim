@@ -1,9 +1,9 @@
 <template>
   <v-theme-provider :dark="dark">
     <div>
-      <base-info-card :title="title" color="primary" level="2">
+      <BaseInfoCard :title="title" color="primary" :level="2">
         <slot></slot>
-      </base-info-card>
+      </BaseInfoCard>
 
       <template v-for="({ icon, text, title: t, type, href }, i) in business">
         <BaseAvatarCard
@@ -21,7 +21,7 @@
             v-if="type"
             :href="`${type}:${text}`"
             class="px-0"
-            :icon="!$vuetify.breakpoint.mdAndUp ? icon : undefined"
+            :no-icon="$vuetify.breakpoint.mdAndUp"
           ></mailgo>
           <v-btn
             v-else-if="href"
@@ -88,7 +88,7 @@ export default {
       {
         icon: faEnvelope,
         title: 'Email',
-        text: 'damien.robinson@daim.dev',
+        text: 'contact@daim.dev',
         type: 'mailto',
       },
     ],
