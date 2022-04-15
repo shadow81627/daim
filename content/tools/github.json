@@ -1,8 +1,10 @@
 {
+  "image": "https://github.githubassets.com/images/modules/site/social-cards/github-social.png",
   "icon": "faGithub",
   "heading": "GitHub",
   "href": "https://github.com",
   "subheading": "Distributed version control system",
+  "description": "GitHub is where millions of developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.",
   "list": [
     "CI/CD",
     "Secure development",

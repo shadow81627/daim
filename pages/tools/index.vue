@@ -17,7 +17,15 @@
           md="4"
           class="d-flex flex-column"
         >
-          <Feature :blok="{ ...tool, icon: icons[tool.icon] }"></Feature>
+          {{ tool.deleted_at }}
+          <Feature
+            v-bind="{
+              ...tool,
+              title: tool.heading,
+              href: tool.offers ? `/tools/${tool.slug}` : tool.href,
+              icon: icons[tool.icon],
+            }"
+          ></Feature>
         </v-col>
       </v-row>
     </v-container>
@@ -61,7 +69,9 @@ export default {
   },
   mixins: [ImageSources],
   async asyncData({ $content }) {
-    const tools = await $content('tools').sortBy('slug').fetch();
+    const tools = (await $content('tools').sortBy('slug').fetch()).filter(
+      (tool) => !tool.deleted_at,
+    );
     return { tools };
   },
   data() {
