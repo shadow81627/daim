@@ -1,4 +1,5 @@
 {
+  "image": "https://triplet-assets.s3.amazonaws.com/prettier.png",
   "icon": "faFileCode",
   "heading": "Prettier",
   "href": "https://prettier.io/",

@@ -1,14 +1,7 @@
 <template>
   <v-tooltip top>
     <template #activator="{ on, attrs }">
-      <v-btn
-        icon
-        :href="link"
-        target="_blank"
-        rel="noopener"
-        v-bind="attrs"
-        v-on="on"
-      >
+      <v-btn icon v-bind="{ ...attrs, ...btnAttrs }" v-on="on">
         <v-icon color="grey" :small="size === 'small'">{{
           icons[icon]
         }}</v-icon>
@@ -38,5 +31,20 @@ export default {
     size: { type: String, default: null },
   },
   data: () => ({ icons, defaultIcon }),
+  computed: {
+    isExternal() {
+      return this.link.startsWith('http');
+    },
+    linkAttribute() {
+      return this.isExternal ? 'href' : 'to';
+    },
+    btnAttrs() {
+      return {
+        [this.linkAttribute]: this.link,
+        target: this.isExternal ? '_blank' : undefined,
+        rel: this.isExternal ? 'noopener' : undefined,
+      };
+    },
+  },
 };
 </script>
