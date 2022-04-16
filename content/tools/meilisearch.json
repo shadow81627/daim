@@ -1,0 +1,22 @@
+{
+  "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--mekYcjRB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n9lo10cdv23exdhodgv9.png",
+  "icon": "faSearch",
+  "heading": "Meilisearch",
+  "href": "https://www.meilisearch.com/",
+  "subheading": "Search",
+  "description": "An open-source, lightning-fast, and hyper-relevant search engine that fits effortlessly into your apps, websites, and workflow.",
+  "list": [
+    "Lightning fast",
+    "Plug ‘n play",
+    "Flexible",
+    "Typo tolerant"
+  ],
+  "plans": {
+    "basic": {
+      "name": "Basic",
+      "price": 31,
+      "interval": "month",
+      "currency": "USD"
+    }
+  }
+}

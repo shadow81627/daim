@@ -4,5 +4,19 @@
   "heading": "Cloudinary",
   "href": "https://cloudinary.com/",
   "subheading": "Optimization, moderation, transformation image CDN",
-  "description": "Automate the entire image-processing pipeline: from uploads to on-the-fly manipulations to optimization to dynamic delivery with any CDN."
+  "description": "Automate the entire image-processing pipeline: from uploads to on-the-fly manipulations to optimization to dynamic delivery with any CDN.",
+  "plans": {
+    "free": {
+      "name": "Free",
+      "description": "Instantly personalize images and videos to take your blogs and projects to the next level.",
+      "price": 0
+    },
+    "plus": {
+      "name": "Plus",
+      "description": "Extend your small team’s digital media capabilities when creating and managing websites and mobile apps.",
+      "price": 99,
+      "interval": "month",
+      "currency": "USD"
+    }
+  }
 }

@@ -12,5 +12,28 @@
     "Project management",
     "Hosting",
     "Team management"
-  ]
+  ],
+  "plans": {
+    "free": {
+      "name": "Free",
+      "description": "The basics for individuals and organizations",
+      "price": 0
+    },
+    "team": {
+      "name": "Team",
+      "description": "Advanced collaboration for individuals and organizations",
+      "price": 4,
+      "currency": "USD",
+      "interval": "month",
+      "unitText": "user"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Security, compliance, and flexible deployment",
+      "price": 21,
+      "currency": "USD",
+      "interval": "month",
+      "unitText": "user"
+    }
+  }
 }

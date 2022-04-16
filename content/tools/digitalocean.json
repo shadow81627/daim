@@ -1,0 +1,24 @@
+{
+  "heading": "Digital Ocean",
+  "subheading": "Simpler cloud. Happier devs. Better results.",
+  "description": "Businesses grow faster when developers can build on the simple, affordable cloud they love. DigitalOcean has the cloud computing services you need, with predictable pricing, robust documentation, and scalability to support your growth at any stage.",
+  "image": "https://www.digitalocean.com/_next/static/media/social-share-default.e8530e9e.jpeg",
+  "list": [
+    "Scalable virtual machines",
+    "Databases",
+    "Load balancers",
+    "Virtual Private Cloud"
+  ],
+  "plans": {
+    "droplet": {
+      "name": "Basic Droplet",
+      "price": 24,
+      "interval": "month"
+    },
+    "database": {
+      "name": "PostgreSQL Database",
+      "price": 30,
+      "interval": "month"
+    }
+  }
+}

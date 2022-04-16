@@ -4,5 +4,26 @@
   "heading": "Renovate bot",
   "href": "https://github.com/renovatebot/renovate",
   "subheading": "Automated dependency updates",
-  "description": "Save time and reduce risk by automating dependency updates in software projects."
+  "description": "Save time and reduce risk by automating dependency updates in software projects.",
+  "list": [
+    "Real-time vulnerability alerts",
+    "Dependency detection including transitive dependencies",
+    "Detailed remediation guidance",
+    "License compliance",
+    "Native integration with Azure pipelines",
+    "Package scanning",
+    "Exportable reports"
+  ],
+  "plans": {
+    "free": {
+      "name": "Free",
+      "description": "Free plan for open source",
+      "price": 0
+    },
+    "essentials": {
+      "name": "Essentials",
+      "price": 10,
+      "interval": "month"
+    }
+  }
 }

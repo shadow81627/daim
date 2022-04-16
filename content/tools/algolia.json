@@ -17,5 +17,14 @@
     "A/B Testing",
     "Personalization",
     "Relevant Sort"
-  ]
+  ],
+  "plans": {
+    "standard": {
+      "name": "Standard",
+      "price": 1,
+      "interval": "month",
+      "currency": "USD",
+      "unitText": "searches"
+    }
+  }
 }

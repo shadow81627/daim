@@ -25,6 +25,9 @@
           <li v-for="item in list" :key="item">{{ item }}</li>
         </ul>
       </v-card-text>
+      <v-card-text class="text--primary body-1 pt-0">
+        <slot></slot>
+      </v-card-text>
     </div>
 
     <v-card-actions>

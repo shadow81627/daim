@@ -4,5 +4,23 @@
   "heading": "Fontawesome",
   "href": "https://fontawesome.com/",
   "subheading": "Vector icons and social logos",
-  "description": "Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit."
+  "description": "Font Awesome is the Internet's icon library and toolkit, used by millions of designers, developers, and content creators. Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.",
+  "list": [
+    "Thousands of Unique Icons",
+    "Brand + Social Icons",
+    "Pixel Perfect Icons"
+  ],
+  "plans": {
+    "free": {
+      "name": "Free",
+      "description": "Best for individuals and small teams with minimal icon needs who like free samples.",
+      "price": 0
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Best for collaborative dev + design teams who champion the open source community. ",
+      "price": 9,
+      "interval": "month"
+    }
+  }
 }

@@ -3,6 +3,33 @@
   "icon": "faBug",
   "heading": "Sentry",
   "href": "https://sentry.io/",
-  "subheading": "Monitoring",
-  "description": "Application monitoring platform helps every developer diagnose, fix, and optimize the performance of their code."
+  "subheading": "Full Stack Monitoring",
+  "description": "Your code is telling you more than what your logs let on. Sentry’s full stack monitoring gives you full visibility into your code, so you can catch issues before they become downtime.",
+  "list": [
+    "Trace an error’s trail",
+    "Constant context",
+    "Maximum efficiency. Minimal effort"
+  ],
+  "plans": {
+    "developer": {
+      "name": "Developer",
+      "description": "Limited Error and Performance Monitoring.",
+      "price": 0,
+      "currency": "USD"
+    },
+    "team": {
+      "name": "Team",
+      "description": "Core Error and Performance Monitoring with flexible event volume.",
+      "price": 26,
+      "interval": "month",
+      "currency": "USD"
+    },
+    "business": {
+      "name": "Business",
+      "description": "Standardized Error and Performance Monitoring with insights powered by Discover.",
+      "price": 80,
+      "interval": "month",
+      "currency": "USD"
+    }
+  }
 }
