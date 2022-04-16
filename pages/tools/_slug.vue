@@ -56,7 +56,12 @@
                   class="d-flex flex-column"
                 >
                   <Feature
-                    v-bind="{ ...offer, title: offer.name, href: offer.url }"
+                    v-bind="{
+                      ...offer,
+                      title: offer.name,
+                      href: offer.url,
+                      image: `/img/tools/offers/${item.slug}/${offerKey}.png`,
+                    }"
                     class="mb-3"
                   >
                   </Feature>

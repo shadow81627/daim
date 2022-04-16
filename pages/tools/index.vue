@@ -23,6 +23,7 @@
               ...tool,
               title: tool.heading,
               href: tool.offers ? `/tools/${tool.slug}` : tool.href,
+              image: `/img/tools/${tool.slug}.png`,
               icon: icons[tool.icon],
             }"
           >

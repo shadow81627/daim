@@ -1,6 +1,14 @@
 <template>
   <v-card class="flex d-flex flex-column justify-between" min-width="240">
-    <v-img v-if="image" class="flex-grow-0" height="300" :src="image"></v-img>
+    <v-img
+      v-if="image"
+      class="flex-grow-0"
+      height="300"
+      :lazy-src="$img(image, { width: 10, quality: 70 })"
+      :src="$img(image, { quality: 70, height: 300 })"
+      :srcset="_srcset.srcset"
+      :sizes="_srcset.size"
+    ></v-img>
     <v-card-title>
       <span class="h3 text-break">
         <font-awesome-icon v-if="icon" :icon="icon" class="grey--text" />
@@ -62,6 +70,18 @@ export default {
     subheading: { type: String, default: undefined },
     description: { type: String, default: undefined },
     list: { type: Array, default: undefined },
+  },
+  computed: {
+    _srcset() {
+      return this.$img.getSizes(this.image, {
+        sizes: 'xs:100vw sm:50vw md:33vw lg:33vw xl:33vw',
+        modifiers: {
+          format: 'webp',
+          quality: 70,
+          height: 300,
+        },
+      });
+    },
   },
   methods: {
     titleCase,
