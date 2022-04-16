@@ -1,5 +1,11 @@
 # Releases
 
+## [1.42.0](https://github.com/shadow81627/daim/compare/v1.41.2...v1.42.0) (2022-04-16)
+
+### Features
+
+- **tools:** add images ([#1145](https://github.com/shadow81627/daim/issues/1145)) ([2b8087a](https://github.com/shadow81627/daim/commit/2b8087ab95ecbd8d33759075c0ea8d9e6e015375))
+
 ## [1.41.2](https://github.com/shadow81627/daim/compare/v1.41.1...v1.41.2) (2022-04-01)
 
 ### Bug Fixes
