@@ -49,6 +49,7 @@
     "@nuxtjs/pwa": "3.3.5",
     "@nuxtjs/sitemap": "2.4.0",
     "cross-env": "7.0.3",
+    "cross-fetch": "3.1.5",
     "dayjs": "1.10.7",
     "github-markdown-css": "4.0.0",
     "i18n-iso-countries": "6.8.0",
@@ -64,6 +65,7 @@
     "vee-validate": "3.4.13"
   },
   "devDependencies": {
+    "@iconify/vue2": "1.2.1",
     "@lhci/cli": "0.7.2",
     "@mdi/js": "5.9.55",
     "@nuxt/image": "0.6.0",
