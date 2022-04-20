@@ -27,38 +27,7 @@
               icon: icons[tool.icon],
             }"
           >
-            <template v-if="!priceUnset(plans(tool.plans))">
-              <div>Price range</div>
-
-              {{ price(priceMax(plans(tool.plans)).price) }}
-              {{ priceMax(plans(tool.plans)).currency || 'USD' }}
-
-              <template
-                v-if="
-                  priceMax(plans(tool.plans)).interval &&
-                  priceMin(tool.plans).price === 0
-                "
-                >/{{ priceMax(plans(tool.plans)).interval }}</template
-              >
-
-              <template v-if="!priceSame(plans(tool.plans))"> - </template>
-
-              <strong v-if="!priceSame(plans(tool.plans))">
-                <template v-if="priceMin(tool.plans).price === 0">
-                  Free option available</template
-                >
-                <template v-else>{{ price(priceMin(tool.plans)) }}</template>
-              </strong>
-
-              <template
-                v-if="
-                  priceMax(plans(tool.plans)).interval &&
-                  priceMin(tool.plans).price !== 0
-                "
-              >
-                / {{ priceMax(plans(tool.plans)).interval }}</template
-              >
-            </template>
+            <PriceRange :items="tool.plans"></PriceRange>
           </Feature>
         </v-col>
       </v-row>
@@ -99,10 +68,12 @@ import {
 import ImageSources from '@/mixins/srcset';
 import { sortBy, maxBy, minBy } from 'lodash-es';
 import Feature from '~/components/feature';
+import PriceRange from '~/components/price-range';
 import price from '~/utils/price';
 export default {
   components: {
     Feature,
+    PriceRange,
   },
   mixins: [ImageSources],
   async asyncData({ $content }) {
