@@ -32,6 +32,18 @@
         </v-col>
       </v-row>
     </v-container>
+    <BaseSection>
+      <v-responsive class="mx-auto" max-width="1350">
+        <v-container fluid>
+          <v-row>
+            <v-col cols="12" align="center">
+              <h2>Total for all services</h2>
+              <div class="h3">{{ price(totalCost() * 2) }} per month</div>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-responsive>
+    </BaseSection>
   </div>
 </template>
 
@@ -175,6 +187,15 @@ export default {
             max.interval ? '/' : ''
           } ${max.interval ?? ''}`
         : '';
+    },
+    totalCost(min = false) {
+      return this.tools.reduce((acc, tool) => {
+        const plans = this.plans(tool?.plans);
+        const price = min
+          ? this.priceMin(plans).price
+          : this.priceMax(plans).price;
+        return acc + price;
+      }, 0);
     },
   },
 };
