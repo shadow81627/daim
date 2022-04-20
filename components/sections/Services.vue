@@ -15,7 +15,9 @@
             <BaseInfoCard
               align="center"
               dark
-              v-bind="card"
+              :icon="card.icon"
+              :title="card.name"
+              :text="card.description"
               itemscope
               itemtype="https://schema.org/Service"
               title-itemprop="name"
@@ -29,36 +31,12 @@
 </template>
 
 <script>
-import {
-  faKeyboard,
-  faSearch,
-  faPaperPlane,
-  faPuzzlePiece,
-} from '@fortawesome/free-solid-svg-icons';
 export default {
   data: () => ({
-    cards: [
-      {
-        icon: faKeyboard,
-        title: 'Websites',
-        text: 'Rapid prototyping of bespoke designs into fast, feature rich websites.',
-      },
-      {
-        icon: faSearch,
-        title: 'SEO',
-        text: 'Organically raise high quality content to the top of search results.',
-      },
-      {
-        icon: faPaperPlane,
-        title: 'Messaging',
-        text: 'Keep the conversation going with multi-channel messaging automation.',
-      },
-      {
-        icon: faPuzzlePiece,
-        title: 'Support',
-        text: 'Dedication to maintaining quality websites means we are always reachable.',
-      },
-    ],
+    cards: [],
   }),
+  async fetch() {
+    this.cards = await this.$content('services').fetch();
+  },
 };
 </script>
