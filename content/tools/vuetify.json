@@ -1,6 +1,6 @@
 {
   "image": "https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png",
-  "icon": "faShapes",
+  "icon": "logos:vuetifyjs",
   "heading": "Vuetify",
   "href": "https://vuetifyjs.com/",
   "subheading": "Material Design Component Framework",

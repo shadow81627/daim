@@ -1,6 +1,6 @@
 {
   "image": "https://triplet-assets.s3.amazonaws.com/prettier.png",
-  "icon": "faFileCode",
+  "icon": "logos:prettier",
   "heading": "Prettier",
   "href": "https://prettier.io/",
   "subheading": "Opinionated code formatter",

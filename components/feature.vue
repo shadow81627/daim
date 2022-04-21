@@ -11,7 +11,19 @@
     ></v-img>
     <v-card-title>
       <span class="h3 text-break">
-        <font-awesome-icon v-if="icon" :icon="icon" class="grey--text" />
+        <template v-if="icon">
+          <font-awesome-icon
+            v-if="typeof icon === 'object'"
+            :icon="icon"
+            class="grey--text"
+          />
+          <BaseIcon
+            v-else
+            color="grey"
+            :icon="icon"
+            style="font-size: 1em"
+          ></BaseIcon>
+        </template>
         {{ title }}
         <template v-if="acronym">
           (<abbr :title="title">{{ acronym }}</abbr

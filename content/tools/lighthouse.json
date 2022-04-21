@@ -1,7 +1,7 @@
 {
   "image": "https://onward.justia.com/wp-content/uploads/2021/08/Website-Metrics-With-Google-Lighthouse-1024x538.png",
   "sort_order": 4,
-  "icon": "faLightbulb",
+  "icon": "logos:lighthouse",
   "heading": "Lighthouse",
   "href": "https://github.com/GoogleChrome/lighthouse-ci",
   "subheading": "SEO Audits",

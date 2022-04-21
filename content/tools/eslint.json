@@ -1,7 +1,7 @@
 {
-  "ximage": "https://eslint.org/assets/img/favicon.512x512.png",
+  "favicon": "https://eslint.org/assets/img/favicon.512x512.png",
   "image": "https://miro.medium.com/max/1200/1*jFyfsakE2WBv5sFjBQUsuw.png",
-  "icon": "faCode",
+  "icon": "logos:eslint",
   "heading": "Eslint",
   "href": "https://eslint.org/",
   "subheading": "Static code analysis",

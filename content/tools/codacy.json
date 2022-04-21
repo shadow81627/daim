@@ -1,0 +1,21 @@
+{
+  "image": "https://www.codacy.com/landing-page-assets/images/og.png",
+  "icon": "cib:codacy",
+  "heading": "Codacy",
+  "href": "https://www.codacy.com/",
+  "subheading": "Automate code reviews",
+  "description": "Check your code quality and keep track of your technical debt for more than 40 programming languages. Seamlessly integrated within your development workflow.",
+  "list": [
+    "Static code analysis",
+    "Code coverage tracking"
+  ],
+  "plans": {
+    "team": {
+      "name": "Teams",
+      "price": 18,
+      "interval": "month",
+      "currency": "USD",
+      "unitText": "users"
+    }
+  }
+}

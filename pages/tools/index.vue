@@ -24,7 +24,7 @@
               title: tool.heading,
               href: tool.offers ? `/tools/${tool.slug}` : tool.href,
               image: `/img/tools/${tool.slug}.png`,
-              icon: icons[tool.icon],
+              icon: icons[tool.icon] || tool.icon,
             }"
           >
             <PriceRange :items="tool.plans"></PriceRange>

@@ -2,9 +2,10 @@
   <v-tooltip top>
     <template #activator="{ on, attrs }">
       <v-btn icon v-bind="{ ...attrs, ...btnAttrs }" v-on="on">
-        <v-icon color="grey" :small="size === 'small'">{{
+        <v-icon v-if="icons[icon]" color="grey" :small="size === 'small'">{{
           icons[icon]
         }}</v-icon>
+        <BaseIcon v-else color="grey" :icon="icon"></BaseIcon>
         <span class="d-sr-only-focusable">{{ tooltip }}</span>
       </v-btn>
     </template>
@@ -23,7 +24,6 @@ export default {
     icon: {
       type: String,
       default: defaultIcon,
-      validator: (value) => Object.keys(icons).includes(value),
     },
     link: { type: String, required: true },
     tooltip: { type: String, required: true },
