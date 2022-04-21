@@ -425,10 +425,10 @@ import {
   faLastfm,
   faTumblr,
 } from '@fortawesome/free-brands-svg-icons';
-import Mailgo from '@/components/mailgo.vue';
 import * as dayjs from 'dayjs';
 import countries from 'i18n-iso-countries';
 import englishCountries from 'i18n-iso-countries/langs/en.json';
+import Mailgo from '@/components/mailgo.vue';
 import ImageSources from '@/mixins/srcset';
 import Hero from '~/components/hero';
 

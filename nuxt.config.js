@@ -144,6 +144,7 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxt/image',
     '@nuxtjs/google-analytics',
+    '@nuxt/typescript-build',
   ],
 
   /*
