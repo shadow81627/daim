@@ -101,6 +101,15 @@ export default {
           const max = maxBy(plans, 'price');
           return max.price;
         },
+        /**
+         * Sort number of characters in description and list
+         * @param {*} o item to sort
+         */
+        function (o) {
+          const list = (o.list ?? []).join(' ');
+          const chars = o.description ?? '' + list;
+          return chars.length;
+        },
         'slug',
       ],
     ).reverse();
