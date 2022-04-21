@@ -2,6 +2,7 @@
   "name": "daim",
   "version": "1.43.0",
   "description": "Damien Robinson Web Development",
+  "type": "module",
   "author": {
     "name": "Damien Robinson",
     "email": "damien.robinson@daim.dev",
