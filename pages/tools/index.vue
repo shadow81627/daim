@@ -77,8 +77,8 @@ import {
   faCloudflare,
   faAlgolia,
 } from '@fortawesome/free-brands-svg-icons';
-import ImageSources from '@/mixins/srcset';
 import { sortBy, maxBy, minBy } from 'lodash-es';
+import ImageSources from '@/mixins/srcset';
 import Feature from '~/components/feature';
 import PriceRange from '~/components/price-range';
 import price from '~/utils/price';
