@@ -1,5 +1,20 @@
 # Releases
 
+## [1.43.0](https://github.com/shadow81627/daim/compare/v1.42.0...v1.43.0) (2022-04-21)
+
+### Bug Fixes
+
+- **feature image:** height 260 ([84e478b](https://github.com/shadow81627/daim/commit/84e478b5365a04de667f556f34f5e0befe38598a))
+
+### Features
+
+- **feature:** iconify ([4884494](https://github.com/shadow81627/daim/commit/4884494789554d6a735653b62b51d2793fa66486))
+- **tools:** add total cost ([6070237](https://github.com/shadow81627/daim/commit/60702370c527690d5d52d1b519cbe80368843de5))
+
+### Performance Improvements
+
+- **icon:** iconify ([a3ffed3](https://github.com/shadow81627/daim/commit/a3ffed3a460d9a0148f58689022df3974f476058))
+
 ## [1.42.0](https://github.com/shadow81627/daim/compare/v1.41.2...v1.42.0) (2022-04-16)
 
 ### Features
