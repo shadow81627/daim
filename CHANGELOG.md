@@ -1,5 +1,11 @@
 # Releases
 
+## [1.43.1](https://github.com/shadow81627/daim/compare/v1.43.0...v1.43.1) (2022-04-21)
+
+### Bug Fixes
+
+- **tools:** sort by text length ([fb5ae6c](https://github.com/shadow81627/daim/commit/fb5ae6cd7d9080bb45f821bdb3714928aa7a27a9))
+
 ## [1.43.0](https://github.com/shadow81627/daim/compare/v1.42.0...v1.43.0) (2022-04-21)
 
 ### Bug Fixes
