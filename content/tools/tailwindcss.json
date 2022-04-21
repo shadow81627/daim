@@ -1,0 +1,20 @@
+{
+  "image": "https://tailwindcss.com/_next/static/media/social-card-large.f6878fd8df804f73ba3f1a271122105a.jpg",
+  "icon": "logos:tailwindcss-icon",
+  "heading": "Tailwind CSS",
+  "href": "https://tailwindcss.com/",
+  "subheading": "Utility-first CSS framework",
+  "description": "Rapidly build modern websites without ever leaving your HTML. A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.",
+  "list": [
+    "An API for your design system",
+    "Build whatever you want, seriously",
+    "It's tiny — never ship unused CSS again",
+    "Responsive everything",
+    "Hover and focus states? We got ’em",
+    "Now with Dark Mode",
+    "Extend it, tweak it, change it",
+    "Cutting-edge is our comfort zone",
+    "World-class IDE integration",
+    "Move even faster with Tailwind UI"
+  ]
+}
