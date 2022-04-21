@@ -3,9 +3,9 @@
     <v-img
       v-if="image"
       class="flex-grow-0"
-      height="300"
+      :height="imageHeight"
       :lazy-src="$img(image, { width: 10, quality: 70 })"
-      :src="$img(image, { quality: 70, height: 300 })"
+      :src="$img(image, { quality: 70, height: imageHeight })"
       :srcset="_srcset.srcset"
       :sizes="_srcset.size"
     ></v-img>
@@ -70,6 +70,7 @@ export default {
     subheading: { type: String, default: undefined },
     description: { type: String, default: undefined },
     list: { type: Array, default: undefined },
+    imageHeight: { type: Number, default: 260 },
   },
   computed: {
     _srcset() {
