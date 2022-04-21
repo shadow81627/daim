@@ -27,7 +27,7 @@ export default {
   props: {
     href: { type: String, required: true },
     icon: { type: [String, Object], default: null },
-    noIcon: { type: Boolean, defulat: undefined },
+    noIcon: { type: Boolean, default: false },
   },
   computed: {
     _icon() {
