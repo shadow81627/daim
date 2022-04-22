@@ -44,6 +44,7 @@ export default {
     body: { type: String, default: null },
     image: { type: String, default: '/img/blog.jpg' },
     date: { type: String, default: null },
+    modified: { type: String, default: null },
     imageWidth: { type: Number, default: 571 },
     imageQuality: { type: Number, default: 70 },
     imageHeight: { type: Number, default: 260 },
@@ -51,6 +52,9 @@ export default {
     wordsPerMinute: { type: Number, default: 50 },
   },
   computed: {
+    _date() {
+      return this.formatDate(this.modified ?? this.date);
+    },
     lazy() {
       const svg = Buffer.from(
         `<svg xmlns='http://www.w3.org/2000/svg'

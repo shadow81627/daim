@@ -18,8 +18,13 @@
         <v-col class="d-flex flex-column justify-center">
           <span class="font-italic"
             >Published
-            <time :datetime="item.date" itemprop="dateModified">{{
+            <time :datetime="item.date" itemprop="datePublished">{{
               formatDate(item.date)
+            }}</time></span
+          ><span v-if="item.modified"
+            >Modified
+            <time :datetime="item.modified" itemprop="dateModified">{{
+              formatDate(item.modified)
             }}</time></span
           >
         </v-col>

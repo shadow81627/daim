@@ -1,6 +1,7 @@
 ---
 title: Whats the best Git workflow?
 date: 2021-06-11T07:36:04Z
+modified: 2022-04-22T04:57:13.272Z
 description: I want to detail a terse but complete description of a simple workflow for continuous delivery.
 image: /img/blog/git-workflow.png
 color: '#f8f8f8'
@@ -27,7 +28,7 @@ Use a Issue template to provide a skeleton of all the details needed for a good 
 
 Now create a branch for the feature or bug-fix:
 `git checkout -b feature/ISSUE-123-awesome-feature`
-The branch name structure I show here is just the one we use, but you can pick any convention you feel comfortable with.
+The branch name structure I show here is the one we use, but you can pick any convention you feel comfortable with.
 
 ### 4. **Commit messages**
 
@@ -45,7 +46,7 @@ resolves #GITHUB_ISSUE_ID
 
 **Types:**
 
-By default types specified in [commitizen conventional-commit-types](https://github.com/commitizen/conventional-commit-types/blob/v3.0.0/index.json) are used. You can override the valid types eg. [gitmoji](https://github.com/carloscuesta/gitmoji/blob/master/src/data/gitmojis.json).
+By default we use types specified in [commitizen conventional-commit-types](https://github.com/commitizen/conventional-commit-types/blob/v3.0.0/index.json). You can override the valid types eg. [gitmoji](https://github.com/carloscuesta/gitmoji/blob/master/src/data/gitmojis.json).
 
 - **feat:** Introduce new features.
 - **fix:** Fix a bug.
@@ -60,7 +61,7 @@ By default types specified in [commitizen conventional-commit-types](https://git
 
 ### 5. Frequently **push** your branch remotely
 
-Always push commits to remote so that if your local machine fails you do not lose work. Sharing your work also allows for soliciting feedback from reviewers. `git push -u origin ISSUE-123-awesome-feature` (if the branch is already set as 'upstream' and your remote is called 'origin', 'git push' is enough)
+Always push commits to remote so that if your local machine fails you do not lose work. Sharing your work also allows for soliciting feedback from reviewers. `git push -u origin ISSUE-123-awesome-feature` (if the branch is already set as 'upstream' and the name of your remote is 'origin', 'git push' is enough)
 
 ### 6. Create a **pull request**
 
@@ -83,12 +84,12 @@ In the (somewhat less common) case where other people are also working on the sa
 At this point solve any conflicts that come out of the rebase.
 Resolving conflicts during the rebase allows you to have always clean merges at the end of the feature development. It also keeps your feature branch history clean and focused without spurious noise.
 
-### 8. Perform a final rebase cleanup after the pull request has been approved
+### 8. Perform a final **rebase** cleanup after the pull request gets approved
 
-Before the review is done, it's good to perform a final cleanup and scrub of the feature branch commit history to remove spurious commits that are not providing relevant information. In some cases – if your team is experienced and they can handle it – you can rebase also during development, but I strongly advise against it.
+Before the review, it's good to perform a final cleanup and scrub of the feature branch commit history to remove spurious commits that are not providing relevant information. An experienced team can handle it – you can rebase also during development, but I don't recommend it.
 
 `git rebase -i origin/main`
-(At this point if you have rewritten the history of a published branch and provided that no one else will commit to it or use it, you might need to push your changes using the –force flag).
+(At this point if you have rewritten the history of a published branch and if no one else will commit to it or use it, you might need to push your changes using the –force flag).
 
 ### 9. Once approved, **merge** to main branch
 
@@ -101,7 +102,7 @@ git pull origin master
 git merge --no-ff ISSUE-123-awesome-feature
 ```
 
-If you followed the advice above and you have used rebase to keep your feature branch up to date, the actual merge commit will not include any changes; this is cool! The merge commit becomes just a marker that stores the context about the feature branch.
+If you followed the advice above and you have used rebase to keep your feature branch up to date, the actual merge commit will not include any changes; this is cool! The merge commit becomes a marker that stores the context about the feature branch.
 
 ## Useful .gitconfig option to toggle
 
@@ -112,7 +113,7 @@ git config --global branch.autosetuprebase always
 git config --global pull.rebase preserve
 ```
 
-Not everyone likes to change the default behavior of core commands so you should only incorporate the above if you understand its implications. See Stack Overflow for details on preserve merges.
+Not everyone likes to change the default behavior of core commands so you should incorporate the above if you understand its implications. See Stack Overflow for details on preserve merges.
 
 ## References
 
