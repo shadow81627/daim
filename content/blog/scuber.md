@@ -1,6 +1,7 @@
 ---
 title: Scuber
 date: 2021-07-25T07:35:22.268Z
+modified: 2022-04-22T05:24:32.498Z
 description: Uber and Queensland, Australia, gave riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.
 image: /img/portfolio/scuber.jpg
 color: '#083858'
@@ -11,19 +12,19 @@ campaign: scUber
 
 ## SUMMARY
 
-XCOM are very proud to have designed and delivered this global campaign for TEQ and Uber. With a challenging timeline and evolving requirements from multiple stakeholders, this campaign has been a fantastic success! Going out to an estimated global audience of **3.3 billion people** and generating over **3,900 positive news stories** about the reef's resilience and world-leading management.
+XCOM are proud to have designed and delivered this global campaign for TEQ and Uber. With a challenging timeline and evolving requirements from stakeholders, this campaign has been a fantastic success! Going out to an estimated global audience of **3.3 billion people** and generating over **3,900 positive news stories** about the reef's resilience and world-leading management.
 
 - XCOM's design fused elements from the TEQ and Uber brand style guides to produce a beautiful and highly performant website; showcasing fantastic video and imagery of the reef and scUber vehicle.
 
-- Fast page load speeds were ensured through our architecture solution, utilising Amazon CloudFront to provide global edge hosting for the static content.
+- Ensured fast page load speeds through our architecture solution, using Amazon CloudFront to provide global edge hosting for the static content.
 
-- Our Microsite and Competition architecture was based around static web pages utilising an API for dynamic behaviour (high-volume competition entries and sending triggered confirmation emails).
+- Microsite and Competition architecture based around static web pages using an API for dynamic behavior (high-volume competition entries and sending triggered confirmation emails).
 
-- Dynamic Content was handled via AWS Lambda functions (serverless compute services) - providing an incredibly scalable back-end, to handle millions of entries.
+- Dynamic Content handled via AWS Lambda functions (serverless compute services) - providing an incredibly scalable back-end, to handle millions of entries.
 
 ## THE THINKING
 
-XCOM designed and developed the scUber campaign microsite to intoduce this world's first on the Great Barrier Reef. Uber and Queensland, Australia, gave riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.
+XCOM designed and developed the scUber campaign microsite to introduce this world's first on the Great Barrier Reef. Uber and Queensland, Australia, gave riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.
 
 From **May 27 to June 17, 2019,** this once-in-a-lifetime experience provided riders with an unfiltered view of an extraordinary underwater world, rich and diverse in marine life.
 
@@ -31,11 +32,11 @@ This hugely successful global campaign featured a competition component, along w
 
 ## OBJECTIVES
 
-Promote the Great Barrier Reef through an extremely performant microsite - able to handle very high-volume site traffic. Grow TEQ's subscriber databases, across both domestic and key international markets with an appealing game of skill competition mechanic.
+Promote the Great Barrier Reef through a performant microsite - able to handle high-volume site traffic. Grow TEQ's subscriber databases, across both domestic and key international markets with an appealing game of skill competition mechanic.
 
 ## SOLUTION
 
-The microsite featured multiple pages about scUber, the competition component, how best to explore the reef, and travel offers from global partners. XCOM's robust and scalable competition technology could handle over **500 entries every SECOND**, and sustain this for over **1.8 million entries per hour**.
+The microsite featured pages about scUber, the competition component, how best to explore the reef, and travel offers from global partners. XCOM's robust and scalable competition technology could handle over **500 entries every SECOND**, and sustain this for over **1.8 million entries per hour**.
 
 ## RESULTS
 

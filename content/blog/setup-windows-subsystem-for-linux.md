@@ -1,6 +1,7 @@
 ---
 title: Setup Windows Subsystem for Linux (WSL)
 date: 2021-04-26T04:30:28Z
+modified: 2022-04-22T05:25:55.075Z
 description: Need an easy way to develop php applications on Windows? Learn how to setup WSL for PHP development.
 image: /img/blog/windows.jpg
 color: '#080808'
@@ -9,13 +10,13 @@ color: '#080808'
 
 ## Setup
 
-1. Make sure you are using Windows Pro since Docker needs hyper-v which is only in the pro version
+1. Make sure you are using Windows Pro since Docker needs hyper-v which is in the pro version
 2. [Install Ubuntu from the Microsoft store](https://www.microsoft.com/p/ubuntu-2004-lts/9n6svws3rx71)
 3. Open the Ubuntu CLI app
 4. I recommend installing [Visual Studio Code](https://code.visualstudio.com/) with [WSL extensions](https://code.visualstudio.com/docs/remote/wsl) from Microsoft
 5. Then you can use the code command to open VS Code from Ubuntu WSL eg. `code .`
-6. For the best file system performance and proper inotify events to be fired the git repo code should be cloned in side of Ubuntu
-7. Make sure git is installed in Ubuntu WSL
+6. For the best file system performance and proper inotify events clone the git repo code in side of Ubuntu
+7. Install git in Ubuntu WSL
    `sudo apt-get install git`
 8. [Install docker](https://docs.docker.com/engine/install/ubuntu/)
 9. [Install docker compose](https://docs.docker.com/compose/install/)
