@@ -1,5 +1,15 @@
 # Releases
 
+## [1.44.7](https://github.com/shadow81627/daim/compare/v1.44.6...v1.44.7) (2022-04-22)
+
+### Bug Fixes
+
+- **404:** reduce image quality ([75db77a](https://github.com/shadow81627/daim/commit/75db77a9d88701febaecee3c96c0aa43a64dd911))
+
+### Performance Improvements
+
+- **icon:** preconnect iconify ([471ebe5](https://github.com/shadow81627/daim/commit/471ebe562393141944a39ccf7e4e46d40f7849bb))
+
 ## [1.44.6](https://github.com/shadow81627/daim/compare/v1.44.5...v1.44.6) (2022-04-22)
 
 ### Bug Fixes
