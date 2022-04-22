@@ -1,6 +1,9 @@
 <template>
   <div itemtype="https://schema.org/Blog" itemscope>
-    <BlogHero :title="heading"></BlogHero>
+    <BlogHero
+      :title="heading"
+      summary="Damien Robinson's personal blog"
+    ></BlogHero>
     <v-container fluid style="max-width: 1785px">
       <v-row>
         <v-col
