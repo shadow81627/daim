@@ -1,5 +1,11 @@
 # Releases
 
+## [1.44.2](https://github.com/shadow81627/daim/compare/v1.44.1...v1.44.2) (2022-04-22)
+
+### Bug Fixes
+
+- **blog:** image background colors ([ce2fe75](https://github.com/shadow81627/daim/commit/ce2fe75c4f10d51f0acb9693c3ea4629f35d64a1))
+
 ## [1.44.1](https://github.com/shadow81627/daim/compare/v1.44.0...v1.44.1) (2022-04-22)
 
 ### Bug Fixes
