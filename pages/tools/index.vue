@@ -25,6 +25,7 @@
               href: tool.offers ? `/tools/${tool.slug}` : tool.href,
               image: `/img/tools/${tool.slug}.png`,
               imageColor: tool.color,
+              iconColor: tool.iconColor,
               icon: icons[tool.icon] || tool.icon,
             }"
           >
