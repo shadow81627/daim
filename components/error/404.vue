@@ -1,11 +1,11 @@
 <template>
   <v-img
     sizes="100vw"
-    :lazy-src="$img(src, { width: 10, quality })"
     :src="$img(src, { quality, width, height })"
     :srcset="_srcset.srcset"
     height="100vh"
     width="100vw"
+    eager
   >
     <v-container class="fill-height" fluid>
       <v-row class="align-self-center">
@@ -51,7 +51,7 @@ export default {
     },
   },
   data() {
-    return { src: '/img/404.jpg', quality: 50, width: 1200, height: 630 };
+    return { src: '/img/404.jpg', quality: 25, width: 1200, height: 630 };
   },
   head() {
     const { quality, width, height } = this;
@@ -85,7 +85,7 @@ export default {
       return this.$img.getSizes(this.src, {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
-          format: 'webp',
+          format: 'avif',
           quality,
           width,
           height,
