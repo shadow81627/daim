@@ -12,9 +12,9 @@
   />
   <Icon
     v-else
-    style="font-size: 2em"
+    style="font-size: 2em; width: 32px; height: 32px"
+    :style="{ color: color }"
     :icon="icon"
-    :class="[`${color}--text`]"
     v-bind="$attrs"
     v-on="$listeners"
   ></Icon>
