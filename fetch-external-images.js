@@ -53,6 +53,10 @@ async function downloadResize(imageUrl, imagePath) {
     const imageUrl = content.image;
     const slug = path.parse(filename).name;
     const imagePath = `${imageFolder}${slug}.png`;
+    if (content.url) {
+      content.href = content.url;
+      content.url = undefined;
+    }
     if (content.offers) {
       for (const categoryKey in content.offers) {
         const category = content.offers[categoryKey];
