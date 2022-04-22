@@ -10,7 +10,6 @@
     "Automatic & manual fixes for vulnerable dependencies",
     "Security policies",
     "Real-time semantic code analysis"
-
   ],
   "plans": {
     "free": {
@@ -29,5 +28,6 @@
       "interval": "month",
       "unitText": "dev"
     }
-  }
+  },
+  "color": "#7808b8"
 }

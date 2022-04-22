@@ -4,5 +4,6 @@
   "heading": "Postman",
   "href": "https://www.postman.com/",
   "subheading": "Testing, Monitoring, Documentation",
-  "description": "A collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs faster."
+  "description": "A collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs faster.",
+  "color": "#f8f8f8"
 }

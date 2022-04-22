@@ -21,5 +21,6 @@
       "unitText": "emails/day",
       "quantity": 50000
     }
-  }
+  },
+  "color": "#f8f8f8"
 }

@@ -11,5 +11,6 @@
     "Track performance metrics and Lighthouse scores over time.",
     "Set and keep performance budgets on scripts and images.",
     "Compare two versions of your site to find improvements and regressions of individual resources."
-  ]
+  ],
+  "color": "#083898"
 }

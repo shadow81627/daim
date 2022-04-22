@@ -4,10 +4,11 @@
       v-if="image"
       class="flex-grow-0"
       :height="imageHeight"
-      :lazy-src="$img(image, { width: 10, quality: 70 })"
-      :src="$img(image, { quality: 70, height: imageHeight })"
+      :lazy-src="lazy"
+      :src="img"
       :srcset="_srcset.srcset"
       :sizes="_srcset.size"
+      contain
     ></v-img>
     <v-card-title>
       <span class="h3 text-break">
@@ -83,15 +84,42 @@ export default {
     description: { type: String, default: undefined },
     list: { type: Array, default: undefined },
     imageHeight: { type: Number, default: 260 },
+    imageQuality: { type: Number, default: 70 },
+    imageColor: { type: String, default: '#808080' },
   },
   computed: {
+    lazy() {
+      const svg = Buffer.from(
+        `<svg xmlns='http://www.w3.org/2000/svg'
+      viewBox='00512512'>
+      <rect width="100%" height="100%" fill="${this.imageColor}"/>
+      </svg>`,
+      ).toString('base64');
+      return `data:image/svg+xml;base64,${svg}`;
+    },
+    img() {
+      return this.$img(this.image, {
+        quality: this.imageQuality,
+        width: 571,
+        height: this.imageHeight,
+        enlarge: undefined,
+        fit: 'cover',
+        trim: undefined,
+        position: 'center',
+      });
+    },
     _srcset() {
       return this.$img.getSizes(this.image, {
         sizes: 'xs:100vw sm:50vw md:33vw lg:33vw xl:33vw',
         modifiers: {
           format: 'webp',
-          quality: 70,
-          height: 300,
+          quality: this.imageQuality,
+          width: 571,
+          height: this.imageHeight,
+          enlarge: undefined,
+          fit: 'cover',
+          trim: undefined,
+          position: 'center',
         },
       });
     },

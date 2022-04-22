@@ -31,5 +31,6 @@
       "interval": "month",
       "currency": "USD"
     }
-  }
+  },
+  "color": "#f8d8b8"
 }

@@ -5,5 +5,6 @@
   "heading": "Eslint",
   "href": "https://eslint.org/",
   "subheading": "Static code analysis",
-  "description": "Statically analyze your code to quickly find problems. ESLint is built into most description editors and you can run ESLint as part of your continuous integration pipeline."
+  "description": "Statically analyze your code to quickly find problems. ESLint is built into most description editors and you can run ESLint as part of your continuous integration pipeline.",
+  "color": "#282868"
 }

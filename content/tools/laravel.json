@@ -14,5 +14,6 @@
     "Database agnostic schema migrations",
     "Robust background job processing",
     "Real-time event broadcasting"
-  ]
+  ],
+  "color": "#181818"
 }

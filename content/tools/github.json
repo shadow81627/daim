@@ -35,5 +35,6 @@
       "interval": "month",
       "unitText": "user"
     }
-  }
+  },
+  "color": "#080828"
 }

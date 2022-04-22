@@ -4,5 +4,6 @@
   "heading": "Vuetify",
   "href": "https://vuetifyjs.com/",
   "subheading": "Material Design Component Framework",
-  "description": "UI Library with beautifully handcrafted Material Design Components."
+  "description": "UI Library with beautifully handcrafted Material Design Components.",
+  "color": "#f8f8f8"
 }

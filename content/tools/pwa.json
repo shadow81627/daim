@@ -13,5 +13,6 @@
     "Works Offline",
     "Predictive prefetching",
     "Web Push Notifications"
-  ]
+  ],
+  "color": "#080808"
 }

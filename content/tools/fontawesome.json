@@ -22,5 +22,6 @@
       "price": 9,
       "interval": "month"
     }
-  }
+  },
+  "color": "#183858"
 }

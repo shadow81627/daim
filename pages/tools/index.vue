@@ -24,6 +24,7 @@
               title: tool.heading,
               href: tool.offers ? `/tools/${tool.slug}` : tool.href,
               image: `/img/tools/${tool.slug}.png`,
+              imageColor: tool.color,
               icon: icons[tool.icon] || tool.icon,
             }"
           >
