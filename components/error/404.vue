@@ -1,8 +1,8 @@
 <template>
   <v-img
     sizes="100vw"
-    :lazy-src="$img(src, { width: 10 })"
-    :src="$img(src, { quality: 70 })"
+    :lazy-src="$img(src, { width: 10, quality })"
+    :src="$img(src, { quality, width, height })"
     :srcset="_srcset.srcset"
     height="100vh"
     width="100vw"
@@ -51,9 +51,10 @@ export default {
     },
   },
   data() {
-    return { src: '/img/404.jpg' };
+    return { src: '/img/404.jpg', quality: 50, width: 1200, height: 630 };
   },
   head() {
+    const { quality, width, height } = this;
     return {
       title: this.$t('error.404.heading'),
       meta: [
@@ -68,8 +69,9 @@ export default {
           rel: 'preload',
           as: 'image',
           href: `${this.$config.BASE_URL}${this.$img(this.src, {
-            width: 1200,
-            height: 630,
+            width,
+            height,
+            quality,
           })}`,
           imagesrcset: this._srcset.srcset,
           imagesizes: '100vw',
@@ -79,11 +81,14 @@ export default {
   },
   computed: {
     _srcset() {
+      const { quality, width, height } = this;
       return this.$img.getSizes(this.src, {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
           format: 'webp',
-          quality: 70,
+          quality,
+          width,
+          height,
         },
       });
     },
