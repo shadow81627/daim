@@ -1,5 +1,11 @@
 # Releases
 
+## [1.44.9](https://github.com/shadow81627/daim/compare/v1.44.8...v1.44.9) (2022-04-22)
+
+### Performance Improvements
+
+- **404:** optimize background image ([9f995f7](https://github.com/shadow81627/daim/commit/9f995f7db1eff5db353a24c08f9293b116a7cfd7))
+
 ## [1.44.8](https://github.com/shadow81627/daim/compare/v1.44.7...v1.44.8) (2022-04-22)
 
 ### Bug Fixes
