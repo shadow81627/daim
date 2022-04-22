@@ -1,5 +1,11 @@
 # Releases
 
+## [1.44.10](https://github.com/shadow81627/daim/compare/v1.44.9...v1.44.10) (2022-04-22)
+
+### Performance Improvements
+
+- **404:** remove background image ([adbf84f](https://github.com/shadow81627/daim/commit/adbf84f5674d482caeaba3bc6e705155c80bdecc))
+
 ## [1.44.9](https://github.com/shadow81627/daim/compare/v1.44.8...v1.44.9) (2022-04-22)
 
 ### Performance Improvements
