@@ -50,6 +50,9 @@ export default {
       default: () => {},
     },
   },
+  data() {
+    return { src: '/img/404.jpg' };
+  },
   head() {
     return {
       title: this.$t('error.404.heading'),
@@ -76,7 +79,7 @@ export default {
   },
   computed: {
     _srcset() {
-      return this.$img.getSizes('/img/404.jpg', {
+      return this.$img.getSizes(this.src, {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
           format: 'webp',
