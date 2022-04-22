@@ -1,6 +1,7 @@
 {
   "image": "https://img.fortawesome.com/349cfdf6/fontawesome-open-graph.png",
-  "icon": "faFontAwesome",
+  "icon": "simple-icons:fontawesome",
+  "iconColor": "#146ebe",
   "heading": "Fontawesome",
   "href": "https://fontawesome.com/",
   "subheading": "Vector icons and social logos",

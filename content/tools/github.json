@@ -1,6 +1,7 @@
 {
   "image": "https://github.githubassets.com/images/modules/site/social-cards/github-social.png",
-  "icon": "faGithub",
+  "icon": "cib:github",
+  "iconColor": "#161b22",
   "heading": "GitHub",
   "href": "https://github.com",
   "subheading": "Distributed version control system",

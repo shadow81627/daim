@@ -1,6 +1,7 @@
 {
   "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--mekYcjRB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n9lo10cdv23exdhodgv9.png",
-  "icon": "faSearch",
+  "icon": "flat-color-icons:search",
+  "iconColor": "#ff5caa",
   "heading": "Meilisearch",
   "href": "https://www.meilisearch.com/",
   "subheading": "Search",

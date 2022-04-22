@@ -1,7 +1,8 @@
 {
   "image": "https://formspree.io/img/formspree-og.jpg",
-  "icon": "faAlignLeft",
+  "icon": "clarity:form-line",
   "heading": "Formspree",
+  "iconColor": "#e5122e",
   "href": "https://formspree.io/",
   "subheading": "Form submission API",
   "description": "Set up simple forms to send data to an email address",

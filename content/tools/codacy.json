@@ -1,6 +1,7 @@
 {
   "image": "https://www.codacy.com/landing-page-assets/images/og.png",
   "icon": "cib:codacy",
+  "iconColor": "#384888",
   "heading": "Codacy",
   "href": "https://www.codacy.com/",
   "subheading": "Automate code reviews",

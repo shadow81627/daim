@@ -1,6 +1,6 @@
 {
   "image": "https://snyk.io/wp-content/uploads/hp-featured-image.png",
-  "icon": "cib:snyk",
+  "icon": "logos:snyk",
   "heading": "Snyk",
   "href": "https://snyk.io/",
   "subheading": "Automated security audits",

@@ -1,6 +1,6 @@
 {
   "image": "/img/tools/cloudflare.png",
-  "icon": "faCloudflare",
+  "icon": "logos:cloudflare",
   "heading": "Cloudflare",
   "href": "https://www.cloudflare.com/",
   "subheading": "Secure DNS, proxy, CDN, with DDos protection",

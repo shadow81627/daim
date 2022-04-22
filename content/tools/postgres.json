@@ -1,6 +1,6 @@
 {
   "image": "https://miro.medium.com/max/1400/0*Qqvoxkm9VqB-NbVd.png",
-  "icon": "cib:postgresql",
+  "icon": "logos:postgresql",
   "heading": "PostgreSQL",
   "href": "https://www.postgresql.org/",
   "subheading": "Database",

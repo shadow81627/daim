@@ -1,9 +1,11 @@
 {
   "image": "https://ssl.gstatic.com/search-console/scfe/about/svg/section1.svg",
+  "icon": "akar-icons:google-contained-fill",
+  "iconColor": "#1a73e8",
   "heading": "Google Search Console",
   "subheading": "Improve your performance on Google Search",
   "description": "Search Console tools and reports help you measure your site's Search traffic and performance, fix issues, and make your site shine in Google Search results",
-  "url": "https://search.google.com/search-console/about",
+  "href": "https://search.google.com/search-console/about",
   "list": [
     "Optimize your content with Search Analytics",
     "Get your content on Google",

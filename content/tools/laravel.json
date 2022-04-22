@@ -1,7 +1,7 @@
 {
   "image": "https://laravel.com/img/og-image.jpg",
   "sort_order": 3,
-  "icon": "faLaravel",
+  "icon": "logos:laravel",
   "heading": "Laravel",
   "href": "https://laravel.com/",
   "subheading": "Web Application Framework",
