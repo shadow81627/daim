@@ -3,7 +3,7 @@
     {{ icon }}
   </v-icon> -->
   <font-awesome-icon
-    v-if="typeof icon === 'object'"
+    v-if="isFontAwesomeIcon"
     size="2x"
     :icon="icon"
     :class="[`${color}--text`]"
@@ -37,7 +37,28 @@ export default {
       default: 56,
     },
   },
-
+  head() {
+    if (!this.isFontAwesomeIcon) {
+      const href = 'https://api.iconify.design';
+      return {
+        link: [
+          // https://api.iconify.design
+          {
+            rel: 'preconnect',
+            href,
+            hid: `preconnect-${href}`,
+            crossorigin: 'anonymous',
+            once: true,
+          },
+        ],
+      };
+    }
+  },
+  computed: {
+    isFontAwesomeIcon() {
+      return typeof this.icon === 'object';
+    },
+  },
   created() {
     _api.setFetch(fetch);
   },
