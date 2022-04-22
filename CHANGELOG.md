@@ -1,5 +1,15 @@
 # Releases
 
+## [1.44.1](https://github.com/shadow81627/daim/compare/v1.44.0...v1.44.1) (2022-04-22)
+
+### Bug Fixes
+
+- **feature:** add icon color prop ([e3bf99c](https://github.com/shadow81627/daim/commit/e3bf99c2f12993402b917087413e58261949beb8))
+- **icon:** add color style ([e605a28](https://github.com/shadow81627/daim/commit/e605a28c3235ce134e55d1d4b045d66db4d7b370))
+- **price range:** default Free ([8a8899a](https://github.com/shadow81627/daim/commit/8a8899a26bbc468479ac2e3ec36265931565e7d8))
+- **tool:** pull in icon color ([3b39f28](https://github.com/shadow81627/daim/commit/3b39f28bdc1ed38c11550c1c21fdf36717d9158c))
+- **tools:** add icon colors ([32c3fd7](https://github.com/shadow81627/daim/commit/32c3fd7346726ddc6bc8cd0f336a461116288d4d))
+
 ## [1.44.0](https://github.com/shadow81627/daim/compare/v1.43.1...v1.44.0) (2022-04-22)
 
 ### Features
