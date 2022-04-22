@@ -3,6 +3,7 @@ title: Whats the best Git workflow?
 date: 2021-06-11T07:36:04Z
 description: I want to detail a terse but complete description of a simple workflow for continuous delivery.
 image: /img/blog/git-workflow.png
+color: '#f8f8f8'
 ---
 
 ## Workflow

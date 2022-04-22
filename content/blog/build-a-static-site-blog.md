@@ -2,7 +2,8 @@
 title: How to build a static site blog?
 date: 2020-09-22T08:09:37.548Z
 description: Have you ever tried to set up a personal blog?
-
+image: '/img/blog.jpg'
+color: '#181818'
 ---
 
 ## Introduction

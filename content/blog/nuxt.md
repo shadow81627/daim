@@ -3,6 +3,7 @@ title: What is Nuxt?
 date: 2020-09-28T01:40:37.548Z
 description: The open source framework making web development simple and powerful. Build your next Vue.js application with confidence using NuxtJS.
 image: '/img/blog/nuxt.png'
+color: '#f8f8f8'
 ---
 
 ## Features

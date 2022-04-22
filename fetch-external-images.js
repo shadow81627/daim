@@ -83,3 +83,22 @@ async function downloadResize(imageUrl, imagePath) {
     }
   }
 })();
+
+(async () => {
+  const images = [
+    'static/img/blog/best-front-end-framework.jpg',
+    'static/img/blog/docker.jpg',
+    'static/img/blog/git-workflow.png',
+    'static/img/blog/nuxt.png',
+    'static/img/blog/paperplane.jpg',
+    'static/img/blog/windows.jpg',
+    'static/img/blog.jpg',
+    'static/img/portfolio/scuber.jpg',
+  ];
+  // get list of urls to crawl from content files
+  for await (const filename of images) {
+    const { dominant } = await sharp(filename).stats();
+    const hex = rgbToHex(dominant);
+    console.log(filename, hex);
+  }
+})();
