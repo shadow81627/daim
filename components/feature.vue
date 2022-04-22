@@ -20,7 +20,7 @@
           />
           <BaseIcon
             v-else
-            color="grey"
+            :color="iconColor"
             :icon="icon"
             style="font-size: 1em"
           ></BaseIcon>
@@ -86,6 +86,7 @@ export default {
     imageHeight: { type: Number, default: 260 },
     imageQuality: { type: Number, default: 70 },
     imageColor: { type: String, default: '#808080' },
+    iconColor: { type: String, default: 'grey' },
   },
   computed: {
     lazy() {
