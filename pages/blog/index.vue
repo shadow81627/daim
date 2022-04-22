@@ -1,31 +1,17 @@
 <template>
   <div itemtype="https://schema.org/Blog" itemscope>
-    <BlogHero
-      :title="heading"
-      summary="Damien Robinson's personal blog"
-    ></BlogHero>
+    <BlogHero :title="heading" :summary="description"></BlogHero>
     <v-container fluid style="max-width: 1785px">
       <v-row>
         <v-col
-          v-for="{
-            slug,
-            title,
-            description,
-            date,
-            body,
-            image,
-            color,
-          } of items"
-          :key="slug"
+          v-for="item of items"
+          :key="item.slug"
           class="d-flex flex-column"
           cols="12"
           md="6"
           lg="4"
         >
-          <BlogCard
-            v-bind="{ slug, title, description, date, body, image }"
-            :image-color="color"
-          ></BlogCard>
+          <BlogCard v-bind="item" :image-color="item.color"></BlogCard>
         </v-col>
       </v-row>
     </v-container>
@@ -46,6 +32,7 @@ export default {
   data() {
     return {
       heading: 'Blog',
+      description: "Damien Robinson's personal blog",
       total: 0,
       items: [],
     };
@@ -53,6 +40,19 @@ export default {
   head() {
     return {
       title: this.heading,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
+        { hid: 'og:title', property: 'og:title', content: this.heading },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.description,
+        },
+      ],
     };
   },
 };
