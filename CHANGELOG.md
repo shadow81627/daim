@@ -1,5 +1,11 @@
 # Releases
 
+## [1.44.8](https://github.com/shadow81627/daim/compare/v1.44.7...v1.44.8) (2022-04-22)
+
+### Bug Fixes
+
+- **blog:** add og description ([d200ef5](https://github.com/shadow81627/daim/commit/d200ef53e7ee675f82e1d1d07dff4f3aec61d313))
+
 ## [1.44.7](https://github.com/shadow81627/daim/compare/v1.44.6...v1.44.7) (2022-04-22)
 
 ### Bug Fixes
