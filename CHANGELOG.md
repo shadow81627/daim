@@ -1,5 +1,11 @@
 # Releases
 
+## [1.44.0](https://github.com/shadow81627/daim/compare/v1.43.1...v1.44.0) (2022-04-22)
+
+### Features
+
+- **tools:** background color ([49f58af](https://github.com/shadow81627/daim/commit/49f58afcdf60b7593532e0ae3ae2643b2e4e66d1))
+
 ## [1.43.1](https://github.com/shadow81627/daim/compare/v1.43.0...v1.43.1) (2022-04-21)
 
 ### Bug Fixes
