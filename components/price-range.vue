@@ -27,7 +27,7 @@
   </div>
   <div v-else>
     <div>Price range</div>
-    <strong>Free option available</strong>
+    <strong>Free</strong>
   </div>
 </template>
 
