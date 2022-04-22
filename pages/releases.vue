@@ -15,6 +15,18 @@ import 'github-markdown-css/github-markdown.css';
 import content from '@/CHANGELOG.md';
 
 export default {
+  head() {
+    return {
+      title: 'Release Notes',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: "See what's new in the latest version of Daim",
+        },
+      ],
+    };
+  },
   methods: {
     content() {
       return content;
