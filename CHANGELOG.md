@@ -1,5 +1,11 @@
 # Releases
 
+## [1.44.4](https://github.com/shadow81627/daim/compare/v1.44.3...v1.44.4) (2022-04-22)
+
+### Bug Fixes
+
+- **404:** add src as data ([c276dbe](https://github.com/shadow81627/daim/commit/c276dbe44f2014b86e24fc36ae8af790b205e076))
+
 ## [1.44.3](https://github.com/shadow81627/daim/compare/v1.44.2...v1.44.3) (2022-04-22)
 
 ### Bug Fixes
