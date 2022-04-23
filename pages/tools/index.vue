@@ -82,8 +82,11 @@ export default {
          * @param {*} o item to sort
          */
         function (o) {
-          const list = (o.list ?? []).join(' ');
-          const chars = o.description ?? '' + list;
+          const list = (o.list ?? []).join(' ') ?? '';
+          const description = o.description ?? '';
+          const subheading = o.subheading ?? '';
+          const heading = o.heading ?? '';
+          const chars = description + list + subheading + heading;
           return chars.length;
         },
         'slug',
