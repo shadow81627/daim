@@ -1,10 +1,9 @@
 {
-  "image": "https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/LvIq0sbMK73ycjb2yomw.svg?auto=format&fit=max&w=1200&fm=auto",
-  "icon": "logos:pwa",
-  "heading": "Progressive Web Apps",
-  "href": "https://developers.google.com/web/progressive-web-apps",
-  "subheading": "Fast, reliable, engaging web apps",
+  "color": "#080808",
   "description": "Progressive Web Apps (PWA) are reliable, fast, and engaging, although there are many things that can take a PWA from a baseline to exemplary experience.",
+  "heading": "Progressive Web Apps",
+  "icon": "logos:pwa",
+  "image": "https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/LvIq0sbMK73ycjb2yomw.svg?auto=format&fit=max&w=1200&fm=auto",
   "list": [
     "Fast",
     "Installable",
@@ -14,5 +13,6 @@
     "Predictive prefetching",
     "Web Push Notifications"
   ],
-  "color": "#080808"
+  "subheading": "Fast, reliable, engaging web apps",
+  "url": "https://developers.google.com/web/progressive-web-apps"
 }

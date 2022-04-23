@@ -1,9 +1,9 @@
 {
-  "image": "https://bscstudent.netlify.app/assets/static/semantic-release.07cc2b7.14c276b03a5dba506c478b8aad8e827d.jpeg",
-  "icon": "logos:semantic-release",
-  "heading": "Semantic Release",
-  "href": "https://github.com/semantic-release/semantic-release",
-  "subheading": "Fully automated version management",
+  "color": "#f8f8f8",
   "description": "Automate the whole package release workflow including: determining the next version number, generating the release notes and publishing the package. This removes the immediate connection between human emotions and version numbers, strictly following the Semantic Versioning specification.",
-  "color": "#f8f8f8"
+  "heading": "Semantic Release",
+  "icon": "logos:semantic-release",
+  "image": "https://bscstudent.netlify.app/assets/static/semantic-release.07cc2b7.14c276b03a5dba506c478b8aad8e827d.jpeg",
+  "subheading": "Fully automated version management",
+  "url": "https://github.com/semantic-release/semantic-release"
 }

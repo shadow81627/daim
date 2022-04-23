@@ -1,0 +1,10 @@
+{
+  "color": "#f8f8f8",
+  "description": "There are many excellent icon sets available. Each icon set has its own custom syntax, some are available only as fonts. Unfortunately, almost all of them load an entire set, even if you are displaying just a few icons. This makes it hard to use different icon sets. Iconify tries to unify all icon sets. You can use the same code no matter what icon set you choose. You can mix icons from multiple icon sets on the same page.",
+  "heading": "Iconify",
+  "icon": "simple-icons:iconify",
+  "iconColor": "#1769aa",
+  "image": "https://www.figma.com/community/plugin/735098390272716381/thumbnail",
+  "subheading": "Thousands of icons, one unified framework",
+  "url": "https://iconify.design/"
+}

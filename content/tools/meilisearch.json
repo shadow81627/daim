@@ -1,11 +1,10 @@
 {
-  "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--mekYcjRB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n9lo10cdv23exdhodgv9.png",
+  "color": "#f8f8f8",
+  "description": "An open-source, lightning-fast, and hyper-relevant search engine that fits effortlessly into your apps, websites, and workflow.",
+  "heading": "Meilisearch",
   "icon": "flat-color-icons:search",
   "iconColor": "#ff5caa",
-  "heading": "Meilisearch",
-  "href": "https://www.meilisearch.com/",
-  "subheading": "Search",
-  "description": "An open-source, lightning-fast, and hyper-relevant search engine that fits effortlessly into your apps, websites, and workflow.",
+  "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--mekYcjRB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n9lo10cdv23exdhodgv9.png",
   "list": [
     "Lightning fast",
     "Plug ‘n play",
@@ -14,11 +13,12 @@
   ],
   "plans": {
     "basic": {
-      "name": "Basic",
-      "price": 31,
+      "currency": "USD",
+      "heading": "Basic",
       "interval": "month",
-      "currency": "USD"
+      "price": 31
     }
   },
-  "color": "#f8f8f8"
+  "subheading": "Search",
+  "url": "https://www.meilisearch.com/"
 }

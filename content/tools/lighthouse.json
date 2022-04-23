@@ -1,16 +1,16 @@
 {
-  "image": "https://onward.justia.com/wp-content/uploads/2021/08/Website-Metrics-With-Google-Lighthouse-1024x538.png",
-  "sort_order": 4,
-  "icon": "logos:lighthouse",
-  "heading": "Lighthouse",
-  "href": "https://github.com/GoogleChrome/lighthouse-ci",
-  "subheading": "SEO Audits",
+  "color": "#083898",
   "description": "Lighthouse analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices.",
+  "heading": "Lighthouse",
+  "icon": "logos:lighthouse",
+  "image": "https://onward.justia.com/wp-content/uploads/2021/08/Website-Metrics-With-Google-Lighthouse-1024x538.png",
   "list": [
     "Prevent regressions in accessibility, SEO, offline support, and performance best practices.",
     "Track performance metrics and Lighthouse scores over time.",
     "Set and keep performance budgets on scripts and images.",
     "Compare two versions of your site to find improvements and regressions of individual resources."
   ],
-  "color": "#083898"
+  "sort_order": 4,
+  "subheading": "SEO Audits",
+  "url": "https://github.com/GoogleChrome/lighthouse-ci"
 }

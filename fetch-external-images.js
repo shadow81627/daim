@@ -3,6 +3,7 @@ const path = require('path');
 const axios = require('axios');
 const sharp = require('sharp');
 const getFiles = require('./utils/get-files');
+const normalizeData = require('./utils/normalize-data');
 
 function componentToHex(c) {
   const hex = c.toString(16);
@@ -11,6 +12,13 @@ function componentToHex(c) {
 
 function rgbToHex({ r, g, b }) {
   return '#' + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+function renameKeys(content) {
+  return normalizeData({
+    obj: content,
+    keysMap: { href: 'url', name: 'heading' },
+  });
 }
 
 const downloadImage = (url, imagePath) =>
@@ -57,10 +65,6 @@ async function downloadResize(imageUrl, imagePath) {
     const imageUrl = content.image;
     const slug = path.parse(filename).name;
     const imagePath = `${imageFolder}${slug}.png`;
-    if (content.url) {
-      content.href = content.url;
-      content.url = undefined;
-    }
     if (content.offers) {
       for (const categoryKey in content.offers) {
         const category = content.offers[categoryKey];
@@ -82,7 +86,8 @@ async function downloadResize(imageUrl, imagePath) {
       await downloadResize(imageUrl, imagePath);
       const { dominant } = await sharp(imagePath).stats();
       content.color = rgbToHex(dominant);
-      const stringContent = JSON.stringify(content, null, 2) + '\n';
+      const renamed = renameKeys(content);
+      const stringContent = JSON.stringify(renamed, null, 2) + '\n';
       fs.writeFileSync(filename, stringContent);
     }
   }

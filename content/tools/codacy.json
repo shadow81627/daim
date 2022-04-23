@@ -1,23 +1,23 @@
 {
-  "image": "https://www.codacy.com/landing-page-assets/images/og.png",
+  "color": "#384888",
+  "description": "Check your code quality and keep track of your technical debt for more than 40 programming languages. Seamlessly integrated within your development workflow.",
+  "heading": "Codacy",
   "icon": "cib:codacy",
   "iconColor": "#384888",
-  "heading": "Codacy",
-  "href": "https://www.codacy.com/",
-  "subheading": "Automate code reviews",
-  "description": "Check your code quality and keep track of your technical debt for more than 40 programming languages. Seamlessly integrated within your development workflow.",
+  "image": "https://www.codacy.com/landing-page-assets/images/og.png",
   "list": [
     "Static code analysis",
     "Code coverage tracking"
   ],
   "plans": {
     "team": {
-      "name": "Teams",
-      "price": 18,
-      "interval": "month",
       "currency": "USD",
+      "heading": "Teams",
+      "interval": "month",
+      "price": 18,
       "unitText": "users"
     }
   },
-  "color": "#384888"
+  "subheading": "Automate code reviews",
+  "url": "https://www.codacy.com/"
 }

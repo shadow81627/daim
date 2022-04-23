@@ -1,9 +1,8 @@
 {
-  "image": "https://triplet-assets.s3.amazonaws.com/prettier.png",
-  "icon": "logos:prettier",
+  "color": "#f8f8f8",
   "heading": "Prettier",
-  "href": "https://prettier.io/",
-  "subheading": "Opinionated code formatter",
+  "icon": "logos:prettier",
+  "image": "https://triplet-assets.s3.amazonaws.com/prettier.png",
   "list": [
     "An opinionated code formatter",
     "Supports many languages",
@@ -13,5 +12,6 @@
     "No need to discuss style in code review",
     "Saves you time and energy"
   ],
-  "color": "#f8f8f8"
+  "subheading": "Opinionated code formatter",
+  "url": "https://prettier.io/"
 }

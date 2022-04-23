@@ -60,9 +60,9 @@
 
       <v-spacer></v-spacer>
       <BaseTooltipButton
-        v-if="href"
+        v-if="url"
         v-bind="{
-          link: href,
+          link: url,
           tooltip: `Learn more about ${title}`,
           size: 'small',
         }"
@@ -77,7 +77,7 @@ export default {
   props: {
     acronym: { type: String, default: undefined },
     image: { type: String, default: undefined },
-    href: { type: String, default: undefined },
+    url: { type: String, default: undefined },
     icon: { type: [String, Object], default: () => undefined },
     title: { type: String, default: undefined },
     subheading: { type: String, default: undefined },

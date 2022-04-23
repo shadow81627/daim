@@ -1,9 +1,9 @@
 {
-  "image": "https://miro.medium.com/max/1400/0*Qqvoxkm9VqB-NbVd.png",
-  "icon": "logos:postgresql",
-  "heading": "PostgreSQL",
-  "href": "https://www.postgresql.org/",
-  "subheading": "Database",
+  "color": "#f8f8f8",
   "description": "Powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.",
-  "color": "#f8f8f8"
+  "heading": "PostgreSQL",
+  "icon": "logos:postgresql",
+  "image": "https://miro.medium.com/max/1400/0*Qqvoxkm9VqB-NbVd.png",
+  "subheading": "Database",
+  "url": "https://www.postgresql.org/"
 }

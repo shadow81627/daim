@@ -1,9 +1,10 @@
 {
+  "color": "#081828",
+  "description": "Wasabi is making cloud data storage simple, affordable, fast and secure. It’s all we do, and we do it better than anyone.",
   "heading": "Wasabi",
   "icon": "simple-icons:amazons3",
   "iconColor": "#36b32f",
   "image": "https://wasabi.com/wp-content/uploads/2020/09/global-wasabi-header.png",
-  "subheading": "Cloud Storage",
   "list": [
     "Protects Against Ransomware",
     "80% Less than Amazon S3",
@@ -13,14 +14,13 @@
   ],
   "plans": {
     "pay-as-you-go": {
-      "name": "Pay As You Go",
-      "price": 5.99,
+      "heading": "Pay As You Go",
       "interval": "month",
+      "price": 5.99,
       "quantity": 1,
       "unit": "TB"
     }
   },
-  "description": "Wasabi is making cloud data storage simple, affordable, fast and secure. It’s all we do, and we do it better than anyone.",
-  "href": "https://wasabi.com/",
-  "color": "#081828"
+  "subheading": "Cloud Storage",
+  "url": "https://wasabi.com/"
 }

@@ -1,11 +1,10 @@
 {
-  "image": "https://github.githubassets.com/images/modules/site/social-cards/github-social.png",
+  "color": "#080828",
+  "description": "GitHub is where millions of developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.",
+  "heading": "GitHub",
   "icon": "cib:github",
   "iconColor": "#161b22",
-  "heading": "GitHub",
-  "href": "https://github.com",
-  "subheading": "Distributed version control system",
-  "description": "GitHub is where millions of developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.",
+  "image": "https://github.githubassets.com/images/modules/site/social-cards/github-social.png",
   "list": [
     "CI/CD",
     "Secure development",
@@ -15,27 +14,28 @@
     "Team management"
   ],
   "plans": {
+    "enterprise": {
+      "currency": "USD",
+      "description": "Security, compliance, and flexible deployment",
+      "heading": "Enterprise",
+      "interval": "month",
+      "price": 21,
+      "unitText": "user"
+    },
     "free": {
-      "name": "Free",
       "description": "The basics for individuals and organizations",
+      "heading": "Free",
       "price": 0
     },
     "team": {
-      "name": "Team",
+      "currency": "USD",
       "description": "Advanced collaboration for individuals and organizations",
+      "heading": "Team",
+      "interval": "month",
       "price": 4,
-      "currency": "USD",
-      "interval": "month",
-      "unitText": "user"
-    },
-    "enterprise": {
-      "name": "Enterprise",
-      "description": "Security, compliance, and flexible deployment",
-      "price": 21,
-      "currency": "USD",
-      "interval": "month",
       "unitText": "user"
     }
   },
-  "color": "#080828"
+  "subheading": "Distributed version control system",
+  "url": "https://github.com"
 }

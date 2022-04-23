@@ -1,10 +1,9 @@
 {
-  "icon": "cib:digital-ocean",
-  "heading": "Digital Ocean",
-  "href": "https://www.digitalocean.com/",
-  "iconColor": "#0069ff",
-  "subheading": "Simpler cloud. Happier devs. Better results.",
+  "color": "#0848f8",
   "description": "Businesses grow faster when developers can build on the simple, affordable cloud they love. DigitalOcean has the cloud computing services you need, with predictable pricing, robust documentation, and scalability to support your growth at any stage.",
+  "heading": "Digital Ocean",
+  "icon": "cib:digital-ocean",
+  "iconColor": "#0069ff",
   "image": "https://www.digitalocean.com/_next/static/media/social-share-default.e8530e9e.jpeg",
   "list": [
     "Scalable virtual machines",
@@ -13,16 +12,17 @@
     "Virtual Private Cloud"
   ],
   "plans": {
-    "droplet": {
-      "name": "Basic Droplet",
-      "price": 24,
-      "interval": "month"
-    },
     "database": {
-      "name": "PostgreSQL Database",
-      "price": 30,
-      "interval": "month"
+      "heading": "PostgreSQL Database",
+      "interval": "month",
+      "price": 30
+    },
+    "droplet": {
+      "heading": "Basic Droplet",
+      "interval": "month",
+      "price": 24
     }
   },
-  "color": "#0848f8"
+  "subheading": "Simpler cloud. Happier devs. Better results.",
+  "url": "https://www.digitalocean.com/"
 }

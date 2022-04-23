@@ -1,16 +1,16 @@
 {
-  "image": "https://ssl.gstatic.com/search-console/scfe/about/svg/section1.svg",
+  "color": "#f8f8f8",
+  "description": "Search Console tools and reports help you measure your site's Search traffic and performance, fix issues, and make your site shine in Google Search results",
+  "heading": "Google Search Console",
   "icon": "akar-icons:google-contained-fill",
   "iconColor": "#1a73e8",
-  "heading": "Google Search Console",
-  "subheading": "Improve your performance on Google Search",
-  "description": "Search Console tools and reports help you measure your site's Search traffic and performance, fix issues, and make your site shine in Google Search results",
-  "href": "https://search.google.com/search-console/about",
+  "image": "https://ssl.gstatic.com/search-console/scfe/about/svg/section1.svg",
   "list": [
     "Optimize your content with Search Analytics",
     "Get your content on Google",
     "Get alerted on issues and fix your site",
     "Understand how Google Search sees your pages"
   ],
-  "color": "#f8f8f8"
+  "subheading": "Improve your performance on Google Search",
+  "url": "https://search.google.com/search-console/about"
 }

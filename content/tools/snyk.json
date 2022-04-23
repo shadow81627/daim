@@ -1,10 +1,9 @@
 {
-  "image": "https://snyk.io/wp-content/uploads/hp-featured-image.png",
-  "icon": "logos:snyk",
-  "heading": "Snyk",
-  "href": "https://snyk.io/",
-  "subheading": "Automated security audits",
+  "color": "#6808b8",
   "description": "Snyk enables development teams to move quickly and securely by automatically finding and fixing issues faster than industry average.",
+  "heading": "Snyk",
+  "icon": "logos:snyk",
+  "image": "https://snyk.io/wp-content/uploads/hp-featured-image.png",
   "list": [
     "License compliance",
     "Automatic & manual fixes for vulnerable dependencies",
@@ -12,22 +11,23 @@
     "Real-time semantic code analysis"
   ],
   "plans": {
-    "free": {
-      "price": 0,
-      "name": "Free"
-    },
-    "team": {
-      "price": 107,
-      "name": "Team",
+    "business": {
+      "heading": "Business",
       "interval": "month",
+      "price": 139,
       "unitText": "dev"
     },
-    "business": {
-      "price": 139,
-      "name": "Business",
+    "free": {
+      "heading": "Free",
+      "price": 0
+    },
+    "team": {
+      "heading": "Team",
       "interval": "month",
+      "price": 107,
       "unitText": "dev"
     }
   },
-  "color": "#6808b8"
+  "subheading": "Automated security audits",
+  "url": "https://snyk.io/"
 }

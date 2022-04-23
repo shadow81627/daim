@@ -1,11 +1,9 @@
 {
-  "image": "https://laravel.com/img/og-image.jpg",
-  "sort_order": 3,
-  "icon": "logos:laravel",
-  "heading": "Laravel",
-  "href": "https://laravel.com/",
-  "subheading": "Web Application Framework",
+  "color": "#181818",
   "description": "Expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:",
+  "heading": "Laravel",
+  "icon": "logos:laravel",
+  "image": "https://laravel.com/img/og-image.jpg",
   "list": [
     "Simple, fast routing engine",
     "Powerful dependency injection container",
@@ -15,5 +13,7 @@
     "Robust background job processing",
     "Real-time event broadcasting"
   ],
-  "color": "#181818"
+  "sort_order": 3,
+  "subheading": "Web Application Framework",
+  "url": "https://laravel.com/"
 }

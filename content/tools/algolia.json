@@ -1,11 +1,10 @@
 {
-  "image": "https://res.cloudinary.com/hilnmyskv/image/upload/v1527077656/Algolia_OG_image_m3xgjb.png",
+  "color": "#f8f8f8",
+  "description": "A powerful hosted search API that provides product teams with the resources & tools they need to create fast, relevant search.",
+  "heading": "Algolia",
   "icon": "simple-icons:algolia",
   "iconColor": "#5468ff",
-  "heading": "Algolia",
-  "href": "https://www.algolia.com/",
-  "subheading": "Search",
-  "description": "A powerful hosted search API that provides product teams with the resources & tools they need to create fast, relevant search.",
+  "image": "https://res.cloudinary.com/hilnmyskv/image/upload/v1527077656/Algolia_OG_image_m3xgjb.png",
   "list": [
     "Typo Tolerance",
     "Rules",
@@ -21,12 +20,13 @@
   ],
   "plans": {
     "standard": {
-      "name": "Standard",
-      "price": 1,
-      "interval": "month",
       "currency": "USD",
+      "heading": "Standard",
+      "interval": "month",
+      "price": 1,
       "unitText": "searches"
     }
   },
-  "color": "#f8f8f8"
+  "subheading": "Search",
+  "url": "https://www.algolia.com/"
 }

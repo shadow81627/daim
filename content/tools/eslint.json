@@ -1,10 +1,10 @@
 {
-  "favicon": "https://eslint.org/assets/img/favicon.512x512.png",
-  "image": "https://miro.medium.com/max/1200/1*jFyfsakE2WBv5sFjBQUsuw.png",
-  "icon": "logos:eslint",
-  "heading": "Eslint",
-  "href": "https://eslint.org/",
-  "subheading": "Static code analysis",
+  "color": "#282868",
   "description": "Statically analyze your code to quickly find problems. ESLint is built into most description editors and you can run ESLint as part of your continuous integration pipeline.",
-  "color": "#282868"
+  "favicon": "https://eslint.org/assets/img/favicon.512x512.png",
+  "heading": "Eslint",
+  "icon": "logos:eslint",
+  "image": "https://miro.medium.com/max/1200/1*jFyfsakE2WBv5sFjBQUsuw.png",
+  "subheading": "Static code analysis",
+  "url": "https://eslint.org/"
 }
