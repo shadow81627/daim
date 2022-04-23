@@ -34,7 +34,11 @@ async function downloadResize(imageUrl, imagePath) {
       .resize({
         width: 4686,
         height: 2636,
+        fit: sharp.fit.inside,
+        background: { r: 255, g: 255, b: 255, alpha: 1 },
+        trim: true,
       })
+      .toFormat('png')
       .toBuffer();
     await sharp(buffer).toFile(imagePath);
   } catch (e) {

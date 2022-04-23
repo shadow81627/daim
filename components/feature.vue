@@ -8,7 +8,8 @@
       :src="img"
       :srcset="_srcset.srcset"
       :sizes="_srcset.size"
-      contain
+      cover
+      :aspect-ratio="16 / 9"
     ></v-img>
     <v-card-title>
       <span class="h3 text-break">
@@ -83,9 +84,16 @@ export default {
     subheading: { type: String, default: undefined },
     description: { type: String, default: undefined },
     list: { type: Array, default: undefined },
-    imageHeight: { type: Number, default: 260 },
-    imageQuality: { type: Number, default: 70 },
-    imageColor: { type: String, default: '#808080' },
+    imageHeight: { type: Number, default: 180 },
+    imageWidth: { type: Number, default: 320 },
+    imageQuality: { type: Number, default: 100 },
+    imageColor: { type: String, default: '#fff' },
+    imageFit: {
+      type: String,
+      default: 'inside',
+      validator: (val) =>
+        ['cover', 'contain', 'inside', 'outside'].includes(val),
+    },
     iconColor: { type: String, default: 'grey' },
   },
   computed: {
@@ -101,12 +109,14 @@ export default {
     img() {
       return this.$img(this.image, {
         quality: this.imageQuality,
-        width: 571,
+        width: this.imageWidth,
         height: this.imageHeight,
         enlarge: undefined,
-        fit: 'cover',
+        fit: this.imageFit,
         trim: undefined,
         position: 'center',
+        format: 'png',
+        background: this.imageColor,
       });
     },
     _srcset() {
@@ -115,10 +125,10 @@ export default {
         modifiers: {
           format: 'webp',
           quality: this.imageQuality,
-          width: 571,
+          width: this.imageWidth,
           height: this.imageHeight,
           enlarge: undefined,
-          fit: 'cover',
+          fit: this.imageFit,
           trim: undefined,
           position: 'center',
         },
