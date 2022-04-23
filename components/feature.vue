@@ -3,7 +3,6 @@
     <v-img
       v-if="image"
       class="flex-grow-0"
-      :height="imageHeight"
       :lazy-src="lazy"
       :src="img"
       :srcset="_srcset.srcset"
@@ -84,8 +83,8 @@ export default {
     subheading: { type: String, default: undefined },
     description: { type: String, default: undefined },
     list: { type: Array, default: undefined },
-    imageHeight: { type: Number, default: 180 },
-    imageWidth: { type: Number, default: 320 },
+    imageHeight: { type: Number, default: 360 },
+    imageWidth: { type: Number, default: 640 },
     imageQuality: { type: Number, default: 100 },
     imageColor: { type: String, default: '#fff' },
     imageFit: {
