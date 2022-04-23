@@ -1,5 +1,7 @@
 {
   "heading": "Wasabi",
+  "icon": "simple-icons:amazons3",
+  "iconColor": "#36b32f",
   "image": "https://wasabi.com/wp-content/uploads/2020/09/global-wasabi-header.png",
   "subheading": "Cloud Storage",
   "list": [
@@ -14,6 +16,7 @@
       "name": "Pay As You Go",
       "price": 5.99,
       "interval": "month",
+      "quantity": 1,
       "unit": "TB"
     }
   },

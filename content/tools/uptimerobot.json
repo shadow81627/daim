@@ -1,0 +1,31 @@
+{
+  "image": "https://uptimerobot.com/assets/images/ogimage.png",
+  "heading": "Uptime Robot",
+  "iconColor": "#3bd671",
+  "icon": "arcticons:uptimerobot",
+  "subheading": "The world's leading uptime monitoring service.",
+  "description": "Start monitoring in 30 seconds. Use advanced SSL, keyword and cron monitoring. Get notified by email, SMS, Slack and more. Get 50 monitors for FREE!",
+  "list": [
+    "Website monitoring",
+    "SSL monitoring",
+    "Ping monitoring",
+    "Port monitoring",
+    "Cron job monitoring",
+    "Keyword monitoring"
+  ],
+  "href": "https://uptimerobot.com/",
+  "plans": {
+    "free": {
+      "name": "Free",
+      "price": 0
+    },
+    "pro": {
+      "name": "Pro",
+      "price": 15,
+      "interval": "month",
+      "quantity": 50,
+      "unitText": "monitors"
+    }
+  },
+  "color": "#181828"
+}
