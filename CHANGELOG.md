@@ -1,5 +1,17 @@
 # Releases
 
+## [1.44.12](https://github.com/shadow81627/daim/compare/v1.44.11...v1.44.12) (2022-04-23)
+
+### Bug Fixes
+
+- **feature:** remove height from image ([2696dbf](https://github.com/shadow81627/daim/commit/2696dbfdf1a2ec4bf5489ddba78315cb916f338f))
+- **tools:** add free tier text ([3c54047](https://github.com/shadow81627/daim/commit/3c54047a7293ecfa47e61a03482a85ef44ff45e6))
+- **tools:** more columns on xl ([3927a9d](https://github.com/shadow81627/daim/commit/3927a9d9626353c7c1e885a688b0e6ac769a0bf2))
+
+### Performance Improvements
+
+- **tools:** remove old font awesome icons ([7c4682a](https://github.com/shadow81627/daim/commit/7c4682ad989448b3b64155ad8bd4df385940240c))
+
 ## [1.44.11](https://github.com/shadow81627/daim/compare/v1.44.10...v1.44.11) (2022-04-23)
 
 ### Bug Fixes
