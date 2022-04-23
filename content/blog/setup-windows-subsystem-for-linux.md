@@ -42,7 +42,7 @@ color: '#080808'
     ```
 
 13. [Install PHP extension for PHP version](https://magento.stackexchange.com/questions/123246/magento-2-php-extensions-missing/134259#134259)
-    `sudo apt-get install php8.0-gd php8.0-mcrypt php8.0-curl php8.0-intl php8.0-xsl php8.0-mbstring php8.0-openssl php8.0-zip php8.0-soap`
+    `sudo apt-get install php8.0-gd php8.0-mcrypt php8.0-curl php8.0-intl php8.0-xsl php8.0-mbstring openssl php8.0-zip php8.0-soap`
 14. Optionally [Install Composer Satis](https://alanstorm.com/magento_2_composer_marketplace_and_local_satis_mirrors/) for faster composer installs and easier auth with private packages
 
     ```bash
