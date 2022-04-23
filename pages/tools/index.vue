@@ -24,7 +24,7 @@
             v-bind="{
               ...tool,
               title: tool.heading,
-              href: tool.offers ? `/tools/${tool.slug}` : tool.href,
+              url: tool.offers ? `/tools/${tool.slug}` : tool.url,
               image: `/img/tools/${tool.slug}.png`,
               imageColor: tool.color,
               iconColor: tool.iconColor,
