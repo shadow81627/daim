@@ -28,7 +28,7 @@
               image: `/img/tools/${tool.slug}.png`,
               imageColor: tool.color,
               iconColor: tool.iconColor,
-              icon: icons[tool.icon] || tool.icon,
+              icon: tool.icon,
             }"
           >
             <PriceRange :items="tool.plans"></PriceRange>
@@ -52,35 +52,6 @@
 </template>
 
 <script>
-import {
-  faMountain,
-  faLightbulb,
-  faMobileAlt,
-  faImages,
-  faDog,
-  faShapes,
-  faServer,
-  faCheckDouble,
-  faPaintRoller,
-  faCubes,
-  faCode,
-  faFileCode,
-  faBug,
-  faAlignLeft,
-  faDatabase,
-  faRocket,
-  faSearch,
-} from '@fortawesome/free-solid-svg-icons';
-import {
-  faVuejs,
-  faBootstrap,
-  faGithub,
-  faDocker,
-  faFontAwesome,
-  faLaravel,
-  faCloudflare,
-  faAlgolia,
-} from '@fortawesome/free-brands-svg-icons';
 import { sortBy, maxBy, minBy } from 'lodash-es';
 import ImageSources from '@/mixins/srcset';
 import Feature from '~/components/feature';
@@ -124,33 +95,6 @@ export default {
       heading: 'Tools',
       description: 'Check out what we use to create awesome web apps.',
       tools: [],
-      icons: {
-        faMountain,
-        faLightbulb,
-        faMobileAlt,
-        faImages,
-        faDog,
-        faShapes,
-        faServer,
-        faCheckDouble,
-        faPaintRoller,
-        faCubes,
-        faCode,
-        faFileCode,
-        faBug,
-        faAlignLeft,
-        faDatabase,
-        faRocket,
-        faVuejs,
-        faBootstrap,
-        faGithub,
-        faDocker,
-        faFontAwesome,
-        faLaravel,
-        faCloudflare,
-        faAlgolia,
-        faSearch,
-      },
       defaultPlan: { unset: { price: 0 } },
     };
   },
