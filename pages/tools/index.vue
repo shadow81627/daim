@@ -14,7 +14,9 @@
           :key="tool.slug"
           cols="12"
           sm="6"
-          md="4"
+          md="6"
+          lg="4"
+          xl="3"
           class="d-flex flex-column"
         >
           {{ tool.deleted_at }}
