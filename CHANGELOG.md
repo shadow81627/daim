@@ -1,5 +1,11 @@
 # Releases
 
+## [1.44.14](https://github.com/shadow81627/daim/compare/v1.44.13...v1.44.14) (2022-04-23)
+
+### Bug Fixes
+
+- **tools:** sort text length with heading ([56fd929](https://github.com/shadow81627/daim/commit/56fd929f28490bcf0857f700396c84e6eb2c30fe))
+
 ## [1.44.13](https://github.com/shadow81627/daim/compare/v1.44.12...v1.44.13) (2022-04-23)
 
 ### Bug Fixes
