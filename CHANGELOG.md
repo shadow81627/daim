@@ -1,5 +1,11 @@
 # Releases
 
+## [1.44.11](https://github.com/shadow81627/daim/compare/v1.44.10...v1.44.11) (2022-04-23)
+
+### Bug Fixes
+
+- **feature:** image aspect ratio 16 / 9 ([38bdfe4](https://github.com/shadow81627/daim/commit/38bdfe4342767ac49c437443147b0d0318483671))
+
 ## [1.44.10](https://github.com/shadow81627/daim/compare/v1.44.9...v1.44.10) (2022-04-22)
 
 ### Performance Improvements
