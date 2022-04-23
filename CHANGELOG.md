@@ -1,5 +1,11 @@
 # Releases
 
+## [1.44.13](https://github.com/shadow81627/daim/compare/v1.44.12...v1.44.13) (2022-04-23)
+
+### Bug Fixes
+
+- **feature:** change href to url ([5e53804](https://github.com/shadow81627/daim/commit/5e5380423a9c265b6b81c7cf60607c3a4e35dbb7))
+
 ## [1.44.12](https://github.com/shadow81627/daim/compare/v1.44.11...v1.44.12) (2022-04-23)
 
 ### Bug Fixes
