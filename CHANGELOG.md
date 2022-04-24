@@ -1,5 +1,19 @@
 # Releases
 
+## [1.45.0](https://github.com/shadow81627/daim/compare/v1.44.14...v1.45.0) (2022-04-24)
+
+### Bug Fixes
+
+- **feature:** add background image color ([f439ef4](https://github.com/shadow81627/daim/commit/f439ef470e4e871bf6e7487c56dcc7bfb2bdbc0d))
+- **fetch external images:** run on existing images ([37bab90](https://github.com/shadow81627/daim/commit/37bab908dfddd1589cf6eeed119e3e5a1c795278))
+- **layout:** iconify ([9753dd8](https://github.com/shadow81627/daim/commit/9753dd8f73fdbcb6e2205e7d8e8afcc2ec1e550b))
+- **tools:** remove total ([1e211ac](https://github.com/shadow81627/daim/commit/1e211ac7e1ab5ce15d189278f3e589ff28deb17b))
+
+### Features
+
+- **pages:** alternatives ([834ccdb](https://github.com/shadow81627/daim/commit/834ccdbd88fc6058837feb2ffa8af645fa29d67b))
+- **price:** allow 0 margin ([9ff2e1e](https://github.com/shadow81627/daim/commit/9ff2e1ebff9d563dec6dbaadbdd0b76def147f28))
+
 ## [1.44.14](https://github.com/shadow81627/daim/compare/v1.44.13...v1.44.14) (2022-04-23)
 
 ### Bug Fixes
