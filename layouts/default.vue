@@ -16,10 +16,12 @@
           class="text-decoration-none"
         >
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <BaseIcon :icon="item.icon"></BaseIcon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>{{ item.text }}</v-list-item-title>
+            <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
+              item.text
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -77,14 +79,6 @@
 </template>
 
 <script>
-import {
-  mdiHome,
-  mdiAccountTie,
-  mdiToolbox,
-  mdiFolder,
-  mdiInformation,
-  mdiAndroidMessages,
-} from '@mdi/js';
 import TheFooter from '@/components/layout/the-footer.vue';
 export default {
   components: {
@@ -95,32 +89,37 @@ export default {
       drawer: false,
       items: [
         {
-          icon: mdiHome,
+          icon: 'carbon:home',
           text: 'Home',
           route: 'index',
         },
         {
-          icon: mdiInformation,
+          icon: 'carbon:blog',
           text: 'Blog',
           route: 'blog',
         },
         {
-          icon: mdiAccountTie,
+          icon: 'carbon:person',
           text: 'People',
           route: 'people',
         },
         {
-          icon: mdiFolder,
+          icon: 'carbon:portfolio',
           text: 'Portfolio',
           route: 'portfolio',
         },
         {
-          icon: mdiToolbox,
+          icon: 'carbon:tool-box',
           text: 'Tools',
           route: 'tools',
         },
         {
-          icon: mdiAndroidMessages,
+          text: 'Alternatives',
+          icon: 'carbon:compare',
+          route: 'alternatives',
+        },
+        {
+          icon: 'bx:message',
           text: 'Contact',
           route: 'contact',
         },
