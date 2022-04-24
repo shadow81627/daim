@@ -1,6 +1,7 @@
 {
   "color": "#4828a8",
   "description": "WebReinvent Technologies Pvt Ltd is India's most process oriented software, web & mobile app development company. Our ambit of service encompasses and is as vivid as web applications, crm, erp, hrm, api and hybrid mobile applications development.",
+  "heading": "Web Reinvent",
   "image": "https://webreinvent.com/images/social-sharing.png",
   "list": [
     "SaaS",
@@ -17,6 +18,5 @@
     "Shopify"
   ],
   "subheading": "The tech artists for digital products",
-  "url": "https://webreinvent.com/",
-  "heading": "Web Reinvent"
+  "url": "https://webreinvent.com/"
 }
