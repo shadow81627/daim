@@ -42,7 +42,7 @@
           <v-row>
             <v-col cols="12" align="center">
               <h2>Total for all services</h2>
-              <div class="h3">{{ price(totalCost() * 2) }} per month</div>
+              <div class="h3">{{ price({ cost: totalCost() }) }} per month</div>
               <div class="h3"><strong>Free tier available</strong></div>
             </v-col>
           </v-row>

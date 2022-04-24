@@ -33,12 +33,16 @@
 
 <script>
 import { sortBy, maxBy, minBy } from 'lodash-es';
-import price from '~/utils/price';
+import _price from '~/utils/price';
 export default {
   props: {
     items: {
       type: Object,
       default: () => ({}),
+    },
+    margin: {
+      type: Number,
+      default: 0.5,
     },
     defaultPlan: {
       type: Object,
@@ -52,7 +56,9 @@ export default {
     },
   },
   methods: {
-    price,
+    price(cost) {
+      return _price({ cost, margin: this.margin });
+    },
     plans(plans) {
       return sortBy(plans ?? this.defaultPlan, 'price');
     },
@@ -79,9 +85,9 @@ export default {
       const same = this.priceSame(plans);
       const unset = this.priceUnset(plans);
       return !unset
-        ? `${min.price === 0 ? 'Free' : price(min.price)}${
+        ? `${min.price === 0 ? 'Free' : this.price(min.price)}${
             !same ? ' up to ' : ''
-          }${!same ? price(max.price) : ''} ${min.currency ?? ''} ${
+          }${!same ? this.price(max.price) : ''} ${min.currency ?? ''} ${
             max.interval ? '/' : ''
           } ${max.interval ?? ''}`
         : '';
