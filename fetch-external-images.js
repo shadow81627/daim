@@ -35,36 +35,41 @@ const downloadImage = (url, imagePath) =>
       }),
   );
 
-async function downloadResize(imageUrl, imagePath) {
-  await downloadImage(imageUrl, imagePath);
+function checkFileExists(file) {
+  return fs.promises
+    .access(file, fs.constants.F_OK)
+    .then(() => true)
+    .catch(() => false);
+}
+
+async function resize({ input, output }) {
   try {
-    const buffer = await sharp(imagePath)
+    const buffer = await sharp(input)
       .resize({
         width: 4686,
         height: 2636,
-        fit: sharp.fit.inside,
+        fit: sharp.fit.contain,
         background: { r: 255, g: 255, b: 255, alpha: 1 },
         trim: true,
+        enlarge: true,
       })
       .toFormat('png')
       .toBuffer();
-    await sharp(buffer).toFile(imagePath);
+    await sharp(buffer).toFile(output ?? input);
   } catch (e) {
     console.error(e);
   }
 }
 
-(async () => {
-  const folder = 'content/tools/';
-  const imageFolder = 'static/img/tools/';
+async function updateContent({ folder, imageFolder }) {
   // get list of urls to crawl from content files
   for await (const filename of getFiles(folder)) {
     const data = fs.readFileSync(filename);
     const content = JSON.parse(data);
-    console.log(content.image);
     const imageUrl = content.image;
     const slug = path.parse(filename).name;
     const imagePath = `${imageFolder}${slug}.png`;
+    console.log(slug);
     if (content.offers) {
       for (const categoryKey in content.offers) {
         const category = content.offers[categoryKey];
@@ -74,16 +79,31 @@ async function downloadResize(imageUrl, imagePath) {
           console.log('        - ', offerKey);
           const imageUrl = offer.image;
           const imagePath = `${imageFolder}/offers/${slug}/${offerKey}.png`;
-          if (imageUrl && imageUrl.startsWith('http')) {
-            await downloadResize(imageUrl, imagePath);
+          if (imageUrl) {
+            if (imageUrl.startsWith('http')) {
+              const fileExists = await checkFileExists(imagePath);
+              if (!fileExists) {
+                await downloadImage(imageUrl, imagePath);
+              }
+            } else {
+              await resize({ input: `static/${imageUrl}`, output: imagePath });
+            }
             const { dominant } = await sharp(imagePath).stats();
             offer.color = rgbToHex(dominant);
           }
         }
       }
     }
-    if (imageUrl && imageUrl.startsWith('http')) {
-      await downloadResize(imageUrl, imagePath);
+    if (imageUrl) {
+      if (imageUrl.startsWith('http')) {
+        const fileExists = await checkFileExists(imagePath);
+        if (!fileExists) {
+          await downloadImage(imageUrl, imagePath);
+        }
+        await resize({ input: imagePath, output: imagePath });
+      } else {
+        await resize({ input: `static/${imageUrl}`, output: imagePath });
+      }
       const { dominant } = await sharp(imagePath).stats();
       content.color = rgbToHex(dominant);
       const renamed = renameKeys(content);
@@ -91,9 +111,26 @@ async function downloadResize(imageUrl, imagePath) {
       fs.writeFileSync(filename, stringContent);
     }
   }
-})();
+}
 
 (async () => {
+  const contents = [
+    {
+      slug: 'tools',
+      folder: 'content/tools/',
+      imageFolder: 'static/img/tools/',
+    },
+    {
+      slug: 'alternatives',
+      folder: 'content/alternatives/',
+      imageFolder: 'static/img/alternatives/',
+    },
+  ];
+  for (const content of contents) {
+    console.log(content.slug);
+    await updateContent(content);
+  }
+
   const images = [
     'static/img/blog/best-front-end-framework.jpg',
     'static/img/blog/docker.jpg',
@@ -108,6 +145,7 @@ async function downloadResize(imageUrl, imagePath) {
   for await (const filename of images) {
     const { dominant } = await sharp(filename).stats();
     const hex = rgbToHex(dominant);
-    console.log(filename, hex);
+    const slug = path.parse(filename).name;
+    console.log(slug, hex);
   }
 })();
