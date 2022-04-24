@@ -52,7 +52,7 @@ export default {
       name: 'Daim',
       typeDisplay: 'Digital Agency',
       description:
-        'high quality bespoke landing pages and websites built by professionals. Handcrafted marketing websites are our specialty. Hit us up today for a quote on a slick new digital presence today.',
+        'high quality, bespoke landing pages and websites built by professionals. Handcrafted marketing websites are our speciality. Hit us up today for a quote on a slick new digital presence today.',
       // priceRange: '$$',
       priceRange: undefined,
       url: 'https://daim.dev/',
