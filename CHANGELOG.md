@@ -1,5 +1,11 @@
 # Releases
 
+## [1.45.2](https://github.com/shadow81627/daim/compare/v1.45.1...v1.45.2) (2022-04-24)
+
+### Bug Fixes
+
+- **icon:** remove attrs and listeners ([2d4ee6c](https://github.com/shadow81627/daim/commit/2d4ee6c95f0595b53d661ee5c0e092c345d56398))
+
 ## [1.45.1](https://github.com/shadow81627/daim/compare/v1.45.0...v1.45.1) (2022-04-24)
 
 ### Bug Fixes
