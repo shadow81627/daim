@@ -9,6 +9,7 @@
       :sizes="_srcset.size"
       cover
       :aspect-ratio="16 / 9"
+      :style="`background-color: ${_imageBackgroundColor}`"
     ></v-img>
     <v-card-title>
       <span class="h3 text-break">
@@ -75,6 +76,7 @@
 import titleCase from '@/utils/title-case';
 export default {
   props: {
+    dark: { type: Boolean, default: false },
     acronym: { type: String, default: undefined },
     image: { type: String, default: undefined },
     url: { type: String, default: undefined },
@@ -87,6 +89,7 @@ export default {
     imageWidth: { type: Number, default: 640 },
     imageQuality: { type: Number, default: 100 },
     imageColor: { type: String, default: '#fff' },
+    imageBackgroundColor: { type: String, default: null },
     imageFit: {
       type: String,
       default: 'inside',
@@ -96,11 +99,14 @@ export default {
     iconColor: { type: String, default: 'grey' },
   },
   computed: {
+    _imageBackgroundColor() {
+      return this.imageBackgroundColor ?? this.imageColor;
+    },
     lazy() {
       const svg = Buffer.from(
         `<svg xmlns='http://www.w3.org/2000/svg'
       viewBox='00512512'>
-      <rect width="100%" height="100%" fill="${this.imageColor}"/>
+      <rect width="100%" height="100%" fill="${this._imageBackgroundColor}"/>
       </svg>`,
       ).toString('base64');
       return `data:image/svg+xml;base64,${svg}`;
