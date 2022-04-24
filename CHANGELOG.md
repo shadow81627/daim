@@ -1,5 +1,11 @@
 # Releases
 
+## [1.45.1](https://github.com/shadow81627/daim/compare/v1.45.0...v1.45.1) (2022-04-24)
+
+### Bug Fixes
+
+- **fetch external images:** transparent background ([032c912](https://github.com/shadow81627/daim/commit/032c912abe27e19f84b3322c0c44313c4cd5a3fd))
+
 ## [1.45.0](https://github.com/shadow81627/daim/compare/v1.44.14...v1.45.0) (2022-04-24)
 
 ### Bug Fixes
