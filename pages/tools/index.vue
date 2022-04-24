@@ -58,6 +58,7 @@ import ImageSources from '@/mixins/srcset';
 import Feature from '~/components/feature';
 import PriceRange from '~/components/price-range';
 import price from '~/utils/price';
+import textLength from '~/utils/feature-text-length';
 export default {
   components: {
     Feature,
@@ -77,18 +78,7 @@ export default {
           const max = maxBy(plans, 'price');
           return max.price;
         },
-        /**
-         * Sort number of characters in description and list
-         * @param {*} o item to sort
-         */
-        function (o) {
-          const list = (o.list ?? []).join(' ') ?? '';
-          const description = o.description ?? '';
-          const subheading = o.subheading ?? '';
-          const heading = o.heading ?? '';
-          const chars = description + list + subheading + heading;
-          return chars.length;
-        },
+        textLength,
         'slug',
       ],
     ).reverse();
