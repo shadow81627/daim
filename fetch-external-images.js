@@ -45,15 +45,15 @@ function checkFileExists(file) {
 async function resize({ input, output }) {
   try {
     const buffer = await sharp(input)
+      .toFormat('png')
       .resize({
         width: 4686,
         height: 2636,
         fit: sharp.fit.contain,
-        background: { r: 255, g: 255, b: 255, alpha: 1 },
+        background: { r: 255, g: 255, b: 255, alpha: 0 },
         trim: true,
         enlarge: true,
       })
-      .toFormat('png')
       .toBuffer();
     await sharp(buffer).toFile(output ?? input);
   } catch (e) {
