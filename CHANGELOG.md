@@ -1,5 +1,11 @@
 # Releases
 
+## [1.45.3](https://github.com/shadow81627/daim/compare/v1.45.2...v1.45.3) (2022-04-24)
+
+### Bug Fixes
+
+- **about:** fix description spelling ([7c423bf](https://github.com/shadow81627/daim/commit/7c423bf99b442c6394892c1032b4c2fb6b708803))
+
 ## [1.45.2](https://github.com/shadow81627/daim/compare/v1.45.1...v1.45.2) (2022-04-24)
 
 ### Bug Fixes
