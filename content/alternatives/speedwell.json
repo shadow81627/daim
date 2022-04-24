@@ -1,0 +1,25 @@
+{
+  "color": "#080808",
+  "description": "Speedwell specialises in the development of scalable, robust digital solutions. We provide expertise in business analysis, digital strategy, user experience and enterprise-grade web & mobile development. Speedwell’s digital engineers are a new breed of digital expert that help clients with building and designing enterprise apps and websites. They integrate digital systems with existing infrastructure with minimal disruption.",
+  "heading": "Speedwell",
+  "image": "https://speedwell.com.au/-/media/Project/Speedwell/Public-Website/Banner/Speedwell-Homepage-Banner-Client-Stories-2018.png",
+  "imageBackgroundColor": "#272727",
+  "list": [
+    "Client Portals",
+    "Automation",
+    "Ecommerce",
+    "Websites",
+    "Content Management",
+    "Marketing Automation",
+    "Personalisation",
+    "Mobile Apps",
+    "ERP",
+    "CRM",
+    "IOT",
+    "Maintenance",
+    "Rescue",
+    "Upgrade"
+  ],
+  "subheading": "Digital Engineers",
+  "url": "https://speedwell.com.au/en"
+}
