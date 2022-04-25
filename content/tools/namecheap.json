@@ -1,0 +1,20 @@
+{
+  "color": "#f8f8f8",
+  "description": "Register domain names at Namecheap. Buy cheap domain names and enjoy 24/7 support. With over 13 million domains under management, you know you’re in good hands.",
+  "heading": "Namecheap",
+  "image": "/img/tools/namecheap.svg",
+  "plans": {
+    "basic": {
+      "currency": "USD",
+      "interval": "year",
+      "price": 20
+    },
+    "premium": {
+      "currency": "USD",
+      "interval": "year",
+      "price": 200
+    }
+  },
+  "subheading": "Domain Register",
+  "url": "https://www.namecheap.com/"
+}

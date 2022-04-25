@@ -12,27 +12,27 @@
   "plans": {
     "api": {
       "currency": "AUD",
+      "heading": "API",
       "interval": "month",
       "price": 78,
       "quantity": 250,
-      "unitText": "calls",
-      "heading": "API"
+      "unitText": "calls"
     },
     "free": {
-      "price": 0,
-      "heading": "Free"
+      "heading": "Free",
+      "price": 0
     },
     "individual": {
       "currency": "AUD",
+      "heading": "Individual",
       "interval": "month",
-      "price": 24.9,
-      "heading": "Individual"
+      "price": 24.9
     },
     "team": {
       "currency": "AUD",
+      "heading": "Team",
       "interval": "month",
-      "price": 11.99,
-      "heading": "Team"
+      "price": 11.99
     }
   },
   "subheading": "Writing Assistant",
