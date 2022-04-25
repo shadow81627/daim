@@ -3,7 +3,7 @@
     <BaseSectionHeading title="About">
       <span itemprop="name">{{ name }}</span> is a
       <span>{{ typeDisplay }}</span>
-      building <span itemprop="description">{{ description }}</span>
+      providing <span itemprop="description">{{ description }}</span>
     </BaseSectionHeading>
     <v-responsive class="mx-auto" max-width="1350">
       <v-container fluid>
@@ -52,7 +52,7 @@ export default {
       name: 'Daim',
       typeDisplay: 'Digital Agency',
       description:
-        'high quality, bespoke landing pages and websites built by professionals. Handcrafted marketing websites are our speciality. Hit us up today for a quote on a slick new digital presence today.',
+        'high quality, bespoke websites built by professionals. Handcrafted marketing websites are our speciality. Hit us up today for a quote on a slick new digital presence today.',
       // priceRange: '$$',
       priceRange: undefined,
       url: 'https://daim.dev/',
