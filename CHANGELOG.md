@@ -1,5 +1,11 @@
 # Releases
 
+## [1.45.5](https://github.com/shadow81627/daim/compare/v1.45.4...v1.45.5) (2022-04-25)
+
+### Bug Fixes
+
+- **price range:** hide max price interval and currency if min price ([3b76931](https://github.com/shadow81627/daim/commit/3b769310d54fce6320871ea6dd91db50566ff196))
+
 ## [1.45.4](https://github.com/shadow81627/daim/compare/v1.45.3...v1.45.4) (2022-04-25)
 
 ### Bug Fixes
