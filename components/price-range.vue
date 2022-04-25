@@ -7,20 +7,27 @@
 
     <template
       v-if="priceMax(plans(items)).interval && priceMin(items).price === 0"
-      >/{{ priceMax(plans(items)).interval }}</template
+      >/ {{ priceMax(plans(items)).interval }}</template
     >
 
     <template v-if="!priceSame(plans(items))"> - </template>
 
-    <strong v-if="!priceSame(plans(items))">
-      <template v-if="priceMin(items).price === 0">
-        Free option available</template
+    <template v-if="!priceSame(plans(items))">
+      <strong v-if="priceMin(plans(items)).price === 0">
+        Free option available</strong
       >
-      <template v-else>{{ price(priceMin(items)) }}</template>
-    </strong>
+      <template v-else
+        >{{ price(priceMin(plans(items)).price) }}
+        {{ priceMax(plans(items)).currency || 'USD' }}</template
+      >
+    </template>
 
     <template
-      v-if="priceMax(plans(items)).interval && priceMin(items).price !== 0"
+      v-if="
+        priceMax(plans(items)).interval &&
+        !priceSame(plans(items)) &&
+        priceMin(plans(items)).price !== 0
+      "
     >
       / {{ priceMax(plans(items)).interval }}</template
     >
