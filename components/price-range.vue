@@ -3,11 +3,12 @@
     <div>Price range</div>
 
     {{ price(priceMax.price) }}
-    {{ priceMax.currency || 'USD' }}
 
-    <template v-if="priceMax.interval && priceMin.price === 0"
-      >/ {{ priceMax.interval }}</template
-    >
+    <template v-if="priceSame || priceMin.price === 0">
+      {{ priceMax.currency || 'USD' }}
+
+      <template v-if="priceMax.interval">/ {{ priceMax.interval }}</template>
+    </template>
 
     <template v-if="!priceSame"> - </template>
 
