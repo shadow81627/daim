@@ -1,35 +1,25 @@
 <template>
-  <div v-if="!priceUnset(plans(items))">
+  <div v-if="!priceUnset">
     <div>Price range</div>
 
-    {{ price(priceMax(plans(items)).price) }}
-    {{ priceMax(plans(items)).currency || 'USD' }}
+    {{ price(priceMax.price) }}
+    {{ priceMax.currency || 'USD' }}
 
-    <template
-      v-if="priceMax(plans(items)).interval && priceMin(items).price === 0"
-      >/ {{ priceMax(plans(items)).interval }}</template
+    <template v-if="priceMax.interval && priceMin.price === 0"
+      >/ {{ priceMax.interval }}</template
     >
 
-    <template v-if="!priceSame(plans(items))"> - </template>
+    <template v-if="!priceSame"> - </template>
 
-    <template v-if="!priceSame(plans(items))">
-      <strong v-if="priceMin(plans(items)).price === 0">
-        Free option available</strong
-      >
+    <template v-if="!priceSame">
+      <strong v-if="priceMin.price === 0"> Free option available</strong>
       <template v-else
-        >{{ price(priceMin(plans(items)).price) }}
-        {{ priceMax(plans(items)).currency || 'USD' }}</template
+        >{{ price(priceMin.price) }} {{ priceMax.currency || 'USD' }}</template
       >
     </template>
 
-    <template
-      v-if="
-        priceMax(plans(items)).interval &&
-        !priceSame(plans(items)) &&
-        priceMin(plans(items)).price !== 0
-      "
-    >
-      / {{ priceMax(plans(items)).interval }}</template
+    <template v-if="priceMax.interval && !priceSame && priceMin.price !== 0">
+      / {{ priceMax.interval }}</template
     >
   </div>
   <div v-else>
@@ -62,6 +52,26 @@ export default {
       }),
     },
   },
+  computed: {
+    priceSame() {
+      const min = this.priceMin;
+      const max = this.priceMax;
+      return min.price === max.price;
+    },
+    priceUnset() {
+      const min = this.priceMin;
+      const same = this.priceSame;
+      return same && min === this.defaultPlan.unset;
+    },
+    priceMax() {
+      const plans = this.plans(this.items);
+      return maxBy(plans, 'price') ?? this.defaultPlan.unset;
+    },
+    priceMin() {
+      const plans = this.plans(this.items);
+      return minBy(plans, 'price') ?? this.defaultPlan.unset;
+    },
+  },
   methods: {
     price(cost) {
       return _price({ cost, margin: this.margin });
@@ -69,28 +79,11 @@ export default {
     plans(plans) {
       return sortBy(plans ?? this.defaultPlan, 'price');
     },
-    priceMin(plans) {
-      return minBy(plans, 'price') ?? this.defaultPlan.unset;
-    },
-    priceMax(plans) {
-      return maxBy(plans, 'price') ?? this.defaultPlan.unset;
-    },
-    priceSame(plans) {
-      const min = this.priceMin(plans);
-      const max = this.priceMax(plans);
-      return min.price === max.price;
-    },
-    priceUnset(plans) {
-      const min = this.priceMin(plans);
-      const same = this.priceSame(plans);
-      return same && min === this.defaultPlan.unset;
-    },
     priceRange(tool) {
-      const plans = this.plans(tool?.plans);
-      const max = this.priceMax(plans);
-      const min = this.priceMin(plans);
-      const same = this.priceSame(plans);
-      const unset = this.priceUnset(plans);
+      const max = this.priceMax;
+      const min = this.priceMin;
+      const same = this.priceSame;
+      const unset = this.priceUnset;
       return !unset
         ? `${min.price === 0 ? 'Free' : this.price(min.price)}${
             !same ? ' up to ' : ''
