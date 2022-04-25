@@ -1,5 +1,11 @@
 # Releases
 
+## [1.45.4](https://github.com/shadow81627/daim/compare/v1.45.3...v1.45.4) (2022-04-25)
+
+### Bug Fixes
+
+- **price range:** show low price rather than free ([4de1a4f](https://github.com/shadow81627/daim/commit/4de1a4f621763ca6e84904fb3686c463f1d8620c))
+
 ## [1.45.3](https://github.com/shadow81627/daim/compare/v1.45.2...v1.45.3) (2022-04-24)
 
 ### Bug Fixes
