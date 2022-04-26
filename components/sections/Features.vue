@@ -19,70 +19,58 @@
 </template>
 
 <script>
-import {
-  faLock,
-  faTachometerAlt,
-  faCloudUploadAlt,
-  faMousePointer,
-  faMobileAlt,
-  faGlobe,
-  faBug,
-  faClipboardList,
-  // faFileArchive,
-} from '@fortawesome/free-solid-svg-icons';
-import { faOsi } from '@fortawesome/free-brands-svg-icons';
 export default {
   data: () => ({
     title: 'Website Features',
     features: [
       {
-        icon: faLock,
+        icon: 'carbon:locked',
         title: 'Secure',
         subtitle:
           'Make sure your site can resist attacks. With Secure Domain Name Server (DNS), DDos protection, Secure Sockets Layer (SSL)',
       },
       {
-        icon: faTachometerAlt,
+        icon: 'ic:baseline-speed',
         title: 'Fast',
         subtitle:
           'Respond quickly to user interactions with silky smooth animations and no janky scrolling.',
       },
       {
-        icon: faCloudUploadAlt,
+        icon: 'carbon:cloud-upload',
         title: 'Reliable',
         subtitle:
           'Load instantly and never show the downasaur, even in uncertain network conditions.',
       },
       {
-        icon: faMousePointer,
+        icon: 'lucide:mouse-pointer-click',
         title: 'Engaging',
         subtitle:
           'Feel like a natural app on the device, with an immersive user experience.',
       },
       {
-        icon: faMobileAlt,
+        icon: 'mdi:responsive',
         title: 'Responsive',
         subtitle: 'Fit the screens of different devices automatically.',
       },
       {
-        icon: faGlobe,
+        icon: 'clarity:network-globe-line',
         title: 'Localized',
         subtitle: 'Serve multiple countries and languages.',
       },
       {
-        icon: faBug,
+        icon: 'ic:outline-monitor-heart',
         title: 'Monitored',
         subtitle:
           'Our software team discover, triage, and prioritize errors in real-time.',
       },
       {
-        icon: faClipboardList,
+        icon: 'ant-design:audit-outlined',
         title: 'Audited',
         subtitle:
           'Continuously find and fix vulnerabilities. Lighthouse audits for performance, accessibility, progressive web apps, SEO and more.',
       },
       {
-        icon: faOsi,
+        icon: 'mdi:open-source-initiative',
         title: 'Open Source',
         subtitle: `Our code is open source which allows anyone to use, study, change, and share the software in modified and unmodified form.`,
       },
