@@ -1,5 +1,11 @@
 # Releases
 
+## [1.45.6](https://github.com/shadow81627/daim/compare/v1.45.5...v1.45.6) (2022-04-26)
+
+### Performance Improvements
+
+- **features:** replace font awesome with iconify ([f265dab](https://github.com/shadow81627/daim/commit/f265dab3657987998076be6a57d1af47eff45f7b))
+
 ## [1.45.5](https://github.com/shadow81627/daim/compare/v1.45.4...v1.45.5) (2022-04-25)
 
 ### Bug Fixes
