@@ -9,7 +9,11 @@
     :data-domain="domain"
     :data-tel="tel"
   >
-    <font-awesome-icon v-if="_icon" :icon="_icon" fixed-width pull="left" />
+    <BaseIcon
+      :icon="_icon"
+      style="width: 14px; margin-right: 0.3em"
+      color="black"
+    ></BaseIcon>
     <slot>
       <span style="display: none">info.</span>
       <span v-if="address && domain" itemprop="email">{{ stripped }}</span>
@@ -20,8 +24,6 @@
 </template>
 
 <script>
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import mailgo from 'mailgo';
 export default {
   props: {
@@ -33,11 +35,8 @@ export default {
     _icon() {
       if (this.noIcon) return;
       if (this.icon) return this.icon;
-      return this.isTel ? faPhone : faEnvelope;
+      return this.isTel ? 'fa:phone' : 'fa:envelope';
     },
-    // itemprop() {
-    //   return this.tel ? 'telephone' : 'email';
-    // },
     stripped() {
       return this.href.replace(/^mailto:/, '').replace(/^tel:/, '');
     },
