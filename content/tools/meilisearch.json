@@ -10,15 +10,15 @@
     "Flexible",
     "Typo tolerant"
   ],
+  "name": "Meilisearch",
   "plans": {
     "basic": {
       "currency": "USD",
       "interval": "month",
-      "price": 31,
-      "name": "Basic"
+      "name": "Basic",
+      "price": 31
     }
   },
   "subheading": "Search",
-  "url": "https://www.meilisearch.com/",
-  "name": "Meilisearch"
+  "url": "https://www.meilisearch.com/"
 }

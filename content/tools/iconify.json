@@ -4,7 +4,7 @@
   "icon": "simple-icons:iconify",
   "iconColor": "#1769aa",
   "image": "https://www.figma.com/community/plugin/735098390272716381/thumbnail",
+  "name": "Iconify",
   "subheading": "Thousands of icons, one unified framework",
-  "url": "https://iconify.design/",
-  "name": "Iconify"
+  "url": "https://iconify.design/"
 }

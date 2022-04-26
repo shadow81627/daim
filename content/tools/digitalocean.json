@@ -10,19 +10,19 @@
     "Load balancers",
     "Virtual Private Cloud"
   ],
+  "name": "Digital Ocean",
   "plans": {
     "database": {
       "interval": "month",
-      "price": 30,
-      "name": "PostgreSQL Database"
+      "name": "PostgreSQL Database",
+      "price": 30
     },
     "droplet": {
       "interval": "month",
-      "price": 24,
-      "name": "Basic Droplet"
+      "name": "Basic Droplet",
+      "price": 24
     }
   },
   "subheading": "Simpler cloud. Happier devs. Better results.",
-  "url": "https://www.digitalocean.com/",
-  "name": "Digital Ocean"
+  "url": "https://www.digitalocean.com/"
 }

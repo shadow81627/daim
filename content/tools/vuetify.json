@@ -3,7 +3,7 @@
   "description": "UI Library with beautifully handcrafted Material Design Components.",
   "icon": "logos:vuetifyjs",
   "image": "https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png",
+  "name": "Vuetify",
   "subheading": "Material Design Component Framework",
-  "url": "https://vuetifyjs.com/",
-  "name": "Vuetify"
+  "url": "https://vuetifyjs.com/"
 }

@@ -12,19 +12,19 @@
     "Package scanning",
     "Exportable reports"
   ],
+  "name": "Renovate bot",
   "plans": {
     "essentials": {
       "interval": "month",
-      "price": 10,
-      "name": "Essentials"
+      "name": "Essentials",
+      "price": 10
     },
     "free": {
       "description": "Free plan for open source",
-      "price": 0,
-      "name": "Free"
+      "name": "Free",
+      "price": 0
     }
   },
   "subheading": "Automated dependency updates",
-  "url": "https://github.com/renovatebot/renovate",
-  "name": "Renovate bot"
+  "url": "https://github.com/renovatebot/renovate"
 }

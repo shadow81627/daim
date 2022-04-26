@@ -9,20 +9,20 @@
     "Brand + Social Icons",
     "Pixel Perfect Icons"
   ],
+  "name": "Fontawesome",
   "plans": {
     "free": {
       "description": "Best for individuals and small teams with minimal icon needs who like free samples.",
-      "price": 0,
-      "name": "Free"
+      "name": "Free",
+      "price": 0
     },
     "pro": {
       "description": "Best for collaborative dev + design teams who champion the open source community. ",
       "interval": "month",
-      "price": 9,
-      "name": "Pro"
+      "name": "Pro",
+      "price": 9
     }
   },
   "subheading": "Vector icons and social logos",
-  "url": "https://fontawesome.com/",
-  "name": "Fontawesome"
+  "url": "https://fontawesome.com/"
 }

@@ -11,16 +11,16 @@
     "Faster than the competition",
     "Data center redundancy"
   ],
+  "name": "Wasabi",
   "plans": {
     "pay-as-you-go": {
       "interval": "month",
+      "name": "Pay As You Go",
       "price": 5.99,
       "quantity": 1,
-      "unit": "TB",
-      "name": "Pay As You Go"
+      "unit": "TB"
     }
   },
   "subheading": "Cloud Storage",
-  "url": "https://wasabi.com/",
-  "name": "Wasabi"
+  "url": "https://wasabi.com/"
 }

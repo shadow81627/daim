@@ -3,26 +3,26 @@
   "description": "With Nuxt.js, your application will be optimized out of the box. We do our best to build performant applications by utilizing Vue.js and Node.js best practices. To squeeze every unnecessary bit out of your app Nuxt includes a bundle analyzer and lots of opportunities to fine-tune your app.",
   "icon": "logos:nuxt-icon",
   "image": "https://nuxtjs.org/preview.png",
+  "name": "Nuxt.js",
   "plans": {
     "backer": {
       "description": "You will receive a Sponsor badge on your profile and you will be listed on our website.",
       "interval": "month",
-      "price": 10,
-      "name": "Backer"
+      "name": "Backer",
+      "price": 10
     },
     "free": {
-      "price": 0,
-      "name": "Free Open Source"
+      "name": "Free Open Source",
+      "price": 0
     },
     "sponsor": {
       "description": "Your company's logo placed on our website and the nuxt.js README file on GitHub.",
       "interval": "month",
-      "price": 100,
-      "name": "Sponsor"
+      "name": "Sponsor",
+      "price": 100
     }
   },
   "sort_order": 1,
   "subheading": "Progressive Vue.js Framework",
-  "url": "https://nuxtjs.org",
-  "name": "Nuxt.js"
+  "url": "https://nuxtjs.org"
 }

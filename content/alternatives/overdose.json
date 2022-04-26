@@ -1,0 +1,23 @@
+{
+  "color": "#f8f8f8",
+  "imageBackgroundColor": "#232936",
+  "description": "Award-winning global digital commerce agency, with enterprise capability across Strategy, UX, Tech, Marketing, Search & Data.",
+  "image": "https://overdose.digital/app/uploads/2020/05/overdose_digital_logo.png",
+  "list": [
+    "Creative",
+    "Data",
+    "Marketing",
+    "Search",
+    "Strategy",
+    "Technology"
+  ],
+  "name": "Overdose Digital",
+  "sameAs": [
+    "https://www.facebook.com/www.overdose.digital/",
+    "https://www.instagram.com/overdose.digital/",
+    "https://www.linkedin.com/company/overdose.digital/",
+    "https://twitter.com/overdosestudio"
+  ],
+  "subheading": "Complete Commerce Consultants",
+  "url": "https://overdose.digital/"
+}

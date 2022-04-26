@@ -12,20 +12,20 @@
     "Cron job monitoring",
     "Keyword monitoring"
   ],
+  "name": "Uptime Robot",
   "plans": {
     "free": {
-      "price": 0,
-      "name": "Free"
+      "name": "Free",
+      "price": 0
     },
     "pro": {
       "interval": "month",
+      "name": "Pro",
       "price": 15,
       "quantity": 50,
-      "unitText": "monitors",
-      "name": "Pro"
+      "unitText": "monitors"
     }
   },
   "subheading": "Uptime monitoring service.",
-  "url": "https://uptimerobot.com/",
-  "name": "Uptime Robot"
+  "url": "https://uptimerobot.com/"
 }

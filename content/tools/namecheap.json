@@ -3,6 +3,7 @@
   "description": "Register domain names at Namecheap. Buy cheap domain names and enjoy 24/7 support. With over 13 million domains under management, you know you’re in good hands.",
   "icon": "logos:namecheap",
   "image": "/img/tools/namecheap.svg",
+  "name": "Namecheap",
   "plans": {
     "basic": {
       "currency": "USD",
@@ -16,6 +17,5 @@
     }
   },
   "subheading": "Domain Register",
-  "url": "https://www.namecheap.com/",
-  "name": "Namecheap"
+  "url": "https://www.namecheap.com/"
 }

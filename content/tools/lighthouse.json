@@ -9,8 +9,8 @@
     "Set and keep performance budgets on scripts and images.",
     "Compare two versions of your site to find improvements and regressions of individual resources."
   ],
+  "name": "Lighthouse",
   "sort_order": 4,
   "subheading": "SEO Audits",
-  "url": "https://github.com/GoogleChrome/lighthouse-ci",
-  "name": "Lighthouse"
+  "url": "https://github.com/GoogleChrome/lighthouse-ci"
 }

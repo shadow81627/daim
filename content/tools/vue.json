@@ -3,8 +3,8 @@
   "description": "Vue.js (commonly referred to as Vue; pronounced /vjuː/, like view) is an open-source Model–view–viewmodel JavaScript framework for building user interfaces and single-page applications.",
   "icon": "logos:vue",
   "image": "https://miro.medium.com/max/1400/1*vj-6rx5pN8aoQcbs_z0CKw.jpeg",
+  "name": "Vue.js",
   "sort_order": 2,
   "subheading": "Progressive JavaScript Framework",
-  "url": "https://vuejs.org/",
-  "name": "Vue.js"
+  "url": "https://vuejs.org/"
 }

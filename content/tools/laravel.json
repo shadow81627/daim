@@ -12,8 +12,8 @@
     "Robust background job processing",
     "Real-time event broadcasting"
   ],
+  "name": "Laravel",
   "sort_order": 3,
   "subheading": "Web Application Framework",
-  "url": "https://laravel.com/",
-  "name": "Laravel"
+  "url": "https://laravel.com/"
 }

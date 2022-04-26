@@ -14,6 +14,7 @@
     "Built‑in marketing",
     "Mobile apps"
   ],
+  "name": "Wordpress",
   "plans": {
     "free": {
       "price": 0
@@ -24,6 +25,5 @@
     }
   },
   "subheading": "The world’s most popular website builder",
-  "url": "https://wordpress.com/",
-  "name": "Wordpress"
+  "url": "https://wordpress.com/"
 }

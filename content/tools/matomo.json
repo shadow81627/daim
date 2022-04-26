@@ -15,17 +15,17 @@
     "Enhanced insights",
     "Tracking personal data"
   ],
+  "name": "Matomo",
   "plans": {
     "cloud": {
       "currency": "USD",
       "interval": "month",
+      "name": "Cloud",
       "price": 31,
       "quantity": 50000,
-      "unitText": "hits",
-      "name": "Cloud"
+      "unitText": "hits"
     }
   },
   "subheading": "Google Analytics alternative that protects your data and your customers' privacy",
-  "url": "https://matomo.org/",
-  "name": "Matomo"
+  "url": "https://matomo.org/"
 }

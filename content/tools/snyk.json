@@ -9,25 +9,25 @@
     "Security policies",
     "Real-time semantic code analysis"
   ],
+  "name": "Snyk",
   "plans": {
     "business": {
       "interval": "month",
+      "name": "Business",
       "price": 139,
-      "unitText": "dev",
-      "name": "Business"
+      "unitText": "dev"
     },
     "free": {
-      "price": 0,
-      "name": "Free"
+      "name": "Free",
+      "price": 0
     },
     "team": {
       "interval": "month",
+      "name": "Team",
       "price": 107,
-      "unitText": "dev",
-      "name": "Team"
+      "unitText": "dev"
     }
   },
   "subheading": "Automated security audits",
-  "url": "https://snyk.io/",
-  "name": "Snyk"
+  "url": "https://snyk.io/"
 }

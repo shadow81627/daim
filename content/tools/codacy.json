@@ -8,16 +8,16 @@
     "Static code analysis",
     "Code coverage tracking"
   ],
+  "name": "Codacy",
   "plans": {
     "team": {
       "currency": "USD",
       "interval": "month",
+      "name": "Teams",
       "price": 18,
-      "unitText": "users",
-      "name": "Teams"
+      "unitText": "users"
     }
   },
   "subheading": "Automate code reviews",
-  "url": "https://www.codacy.com/",
-  "name": "Codacy"
+  "url": "https://www.codacy.com/"
 }

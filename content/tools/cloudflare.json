@@ -8,49 +8,50 @@
     "Distributed Denial of Service protection (DDoS)",
     "Secure Sockets Layer (SSL)"
   ],
+  "name": "Cloudflare",
   "offers": {
     "Application Performance": {
       "Website Optimization Services": {
         "color": "#080808",
         "description": "Delivering fast web experiences is not just about moving files closer to your visitors. It’s about ensuring the first pixels load on your visitors’ screens as quickly as possible. It’s about optimizing the order of page resource delivery to make the page visible and usable faster.",
         "image": "https://www.cloudflare.com/static/a603099072e0712424417de4214bbbae/optimize-web-experiences-hero-illustration.svg",
+        "name": "Website Optimization Services",
         "subheading": "Gauge how fast your website is. And how you can make it even faster",
-        "url": "https://www.cloudflare.com/website-optimization/",
-        "name": "Website Optimization Services"
+        "url": "https://www.cloudflare.com/website-optimization/"
       },
       "cdn": {
         "acronym": "CDN",
         "color": "#080808",
         "description": "Cloudflare offers ultra-fast static and dynamic content delivery over our global edge network. Exercise precise control over content caching, reduce bandwidth costs, and take advantage of built-in unmetered DDoS protection.",
         "image": "https://www.cloudflare.com/static/e483f0dab463205cec2642ab111e81fc/cdn-global-hero-illustration.svg",
+        "name": "Content Delivery Network",
         "subheading": "A fast, agile, and secure global network",
-        "url": "https://www.cloudflare.com/cdn",
-        "name": "Content Delivery Network"
+        "url": "https://www.cloudflare.com/cdn"
       },
       "dns": {
         "acronym": "DNS",
         "color": "#f8f8f8",
         "description": "Cloudflare DNS is an enterprise-grade authoritative DNS service that offers the fastest response time, unparalleled redundancy, and advanced security with built-in DDoS mitigation and DNSSEC.",
         "image": "https://www.cloudflare.com/static/07c330059a6e7ba8289566756ba405aa/dns-hero-illustration.svg",
+        "name": "Domain name server",
         "subheading": "Fast, Secure, and Resilient DNS",
-        "url": "https://www.cloudflare.com/dns",
-        "name": "Domain name server"
+        "url": "https://www.cloudflare.com/dns"
       },
       "load-balancing": {
         "color": "#080808",
         "description": "Overused or geographically distant servers add latency and degrade the user experience. Such mistakes can prove costly, resulting in lost customers, missed revenue, and reputation damage. With Cloudflare Load Balancing, you can improve application performance and availability by steering traffic away from unhealthy origin servers and dynamically distributing it to the most available and responsive server pools.",
         "image": "https://www.cloudflare.com/static/0306685f86235a99dfdcf555a9690959/load-balancing-hero-illustration.svg",
+        "name": "Load Balancing",
         "subheading": "Maximize application performance and availability",
-        "url": "https://www.cloudflare.com/load-balancing/",
-        "name": "Load Balancing"
+        "url": "https://www.cloudflare.com/load-balancing/"
       },
       "waiting-room": {
         "color": "#080808",
         "description": "Sudden increases in traffic can overwhelm your applications and infrastructure, leading to slow performance or complete disruption to your online presence. Cloudflare Waiting Room allows organizations to route excess users to a custom-branded waiting room, helping preserve customer experience and protect origin servers from being overwhelmed with requests.",
         "image": "https://www.cloudflare.com/static/50f0ac5476c04e589b53b0033ac18fb8/cloudflare-waiting-room-hero-illustration.svg",
+        "name": "Waiting Room",
         "subheading": "A virtual waiting room to manage peak traffic",
-        "url": "https://www.cloudflare.com/waiting-room/",
-        "name": "Waiting Room"
+        "url": "https://www.cloudflare.com/waiting-room/"
       }
     },
     "Application Security": {
@@ -58,52 +59,52 @@
         "color": "#080808",
         "description": "At Cloudflare, we know APIs make the app world go around. That is why we make our massive global network your API security gateway. With API discovery and powerful, layered API defenses, Cloudflare ensures APIs drive business success like never before.",
         "image": "https://www.cloudflare.com/static/d404f552269d43cc64b18e28a4e86095/security-api-web-apps-spot-illustration.svg",
+        "name": "API Shield",
         "subheading": "Keeping APIs secure and productive",
-        "url": "https://www.cloudflare.com/apishield/",
-        "name": "API Shield"
+        "url": "https://www.cloudflare.com/apishield/"
       },
       "bot": {
         "color": "#080808",
         "description": "Undetected malicious bots can damage your brand, steal sensitive information, take over accounts, and negatively impact your revenue. Now you can manage good and bad bots in real-time with speed and accuracy by harnessing the data from the millions of Internet properties on Cloudflare.",
         "image": "https://www.cloudflare.com/static/8af213f87d9b6a646150b6533e9db000/bot-analytics-hero-illustration-3.svg",
+        "name": "Bot Management",
         "subheading": "Stop bad bots by using threat intelligence at-scale",
-        "url": "https://www.cloudflare.com/products/bot-management/",
-        "name": "Bot Management"
+        "url": "https://www.cloudflare.com/products/bot-management/"
       },
       "ddos": {
         "acronym": "DDoS",
         "color": "#080808",
         "description": "Cloudflare DDoS protection secures websites, applications, and entire networks while ensuring the performance of legitimate traffic is not compromised. Cloudflare’s 121 Tbps network blocks an average of 86 billion threats per day, including some of the largest DDoS attacks in history.",
         "image": "https://www.cloudflare.com/static/13f2ea281819359b271bcb1c5f1cfc8f/ddos-protection-hero-illustration.svg",
+        "name": "Distributed Denial of Service Protection",
         "subheading": "Built for anything connected to the Internet",
-        "url": "https://www.cloudflare.com/ddos",
-        "name": "Distributed Denial of Service Protection"
+        "url": "https://www.cloudflare.com/ddos"
       },
       "rate-limiting": {
         "color": "#080808",
         "description": "Advanced rate limiting protects against denial-of-service attacks, brute-force login attempts, API traffic surges and other types of abuse targeting APIs and applications. Advanced Rate Limiting is integrated with our Web Application Firewall (WAF) and is part of Cloudflare’s application security portfolio.",
         "image": "https://www.cloudflare.com/static/cbad4718771e0dbd36f7a877b41bfbf5/dns-unmetered-ddos-spot-illustration.svg",
+        "name": "Rate Limiting",
         "subheading": "Granular controls to block abuse",
-        "url": "https://www.cloudflare.com/rate-limiting/",
-        "name": "Rate Limiting"
+        "url": "https://www.cloudflare.com/rate-limiting/"
       },
       "ssl": {
         "acronym": "SSL",
         "color": "#080808",
         "description": "Encrypting as much web traffic as possible to prevent data theft and other tampering is a critical step toward building a safer, better Internet. We’re proud to be the first Internet performance and security company to offer SSL protection free of charge.",
         "image": "https://www.cloudflare.com/static/a43cff13068decf44ec5ffe50774a58e/ssl-tls-hero-illustration.svg",
+        "name": "Secure Sockets Layer",
         "subheading": "Get free SSL / TLS with any application services plan",
-        "url": "https://www.cloudflare.com/ssl",
-        "name": "Secure Sockets Layer"
+        "url": "https://www.cloudflare.com/ssl"
       },
       "waf": {
         "acronym": "WAF",
         "color": "#486878",
         "description": "Enterprises rely on applications and APIs for growth--and with our world-class web application firewall, expanding attack surfaces and novel attacks never get in the way. Our powerful web application firewall is integrated with the rest of our leading cloud-delivered application security portfolio.",
         "image": "https://www.cloudflare.com/static/dcc3b65c4771488c8fafc8e6d307d451/waf-spot-illustration_3x-8.png",
+        "name": "Web Application Firewall",
         "subheading": "Modern protections for modern applications",
-        "url": "https://www.cloudflare.com/waf/",
-        "name": "Web Application Firewall"
+        "url": "https://www.cloudflare.com/waf/"
       }
     },
     "Hosting": {
@@ -111,17 +112,17 @@
         "color": "#e8f8f8",
         "description": "Making a beautiful well designed site is only half a web developer’s job. You also want it to be secure, fast, and scalable. Cloudflare Pages makes it easy to check those boxes. We’ll take care of the infrastructure, so you can focus on design and content.",
         "image": "https://blog.cloudflare.com/content/images/2020/12/twitter-shared-link-18.png",
+        "name": "Pages",
         "subheading": "JAMstack platform for frontend developers to collaborate and deploy websites",
-        "url": "https://pages.cloudflare.com/",
-        "name": "Pages"
+        "url": "https://pages.cloudflare.com/"
       },
       "workers": {
         "color": "#f8f8f8",
         "description": "Deploy serverless code instantly across the globe to give it exceptional performance, reliability, and scale.",
         "image": "https://repository-images.githubusercontent.com/215130914/0a128400-41f5-11ea-8dc8-b1c09a48fa06",
+        "name": "Workers",
         "subheading": "Serverless JavaScript for building serverless web applications with minimal latency",
-        "url": "https://workers.cloudflare.com/",
-        "name": "Workers"
+        "url": "https://workers.cloudflare.com/"
       }
     }
   },
@@ -130,28 +131,27 @@
       "currency": "USD",
       "description": "For small businesses operating online.",
       "interval": "month",
+      "name": "Business",
       "price": 200,
-      "url": "https://www.cloudflare.com/plans/business/",
-      "name": "Business"
+      "url": "https://www.cloudflare.com/plans/business/"
     },
     "free": {
       "currency": "USD",
       "description": "For personal or hobby projects that aren’t business-critical.",
       "interval": "month",
+      "name": "Free",
       "price": 0,
-      "url": "https://www.cloudflare.com/plans/free/",
-      "name": "Free"
+      "url": "https://www.cloudflare.com/plans/free/"
     },
     "pro": {
       "currency": "USD",
       "description": "For professional websites that aren't business-critical.",
       "interval": "month",
+      "name": "Professional",
       "price": 20,
-      "url": "https://www.cloudflare.com/plans/pro/",
-      "name": "Professional"
+      "url": "https://www.cloudflare.com/plans/pro/"
     }
   },
   "subheading": "Secure DNS, proxy, CDN, with DDos protection",
-  "url": "https://www.cloudflare.com/",
-  "name": "Cloudflare"
+  "url": "https://www.cloudflare.com/"
 }

@@ -10,7 +10,7 @@
     "Get alerted on issues and fix your site",
     "Understand how Google Search sees your pages"
   ],
+  "name": "Google Search Console",
   "subheading": "Improve your performance on Google Search",
-  "url": "https://search.google.com/search-console/about",
-  "name": "Google Search Console"
+  "url": "https://search.google.com/search-console/about"
 }

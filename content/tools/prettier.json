@@ -11,7 +11,7 @@
     "No need to discuss style in code review",
     "Saves you time and energy"
   ],
+  "name": "Prettier",
   "subheading": "Opinionated code formatter",
-  "url": "https://prettier.io/",
-  "name": "Prettier"
+  "url": "https://prettier.io/"
 }

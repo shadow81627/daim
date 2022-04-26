@@ -4,7 +4,7 @@
   "favicon": "https://eslint.org/assets/img/favicon.512x512.png",
   "icon": "logos:eslint",
   "image": "https://miro.medium.com/max/1200/1*jFyfsakE2WBv5sFjBQUsuw.png",
+  "name": "Eslint",
   "subheading": "Static code analysis",
-  "url": "https://eslint.org/",
-  "name": "Eslint"
+  "url": "https://eslint.org/"
 }

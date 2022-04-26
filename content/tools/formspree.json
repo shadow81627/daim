@@ -11,32 +11,32 @@
     "Submissions Inbox",
     "3rd party integrations"
   ],
+  "name": "Formspree",
   "plans": {
     "business": {
       "description": "For organizations and agencies",
       "interval": "month",
-      "price": 102,
-      "name": "Business"
+      "name": "Business",
+      "price": 102
     },
     "free": {
       "description": "Use Formspree for testing and development with unlimited projects and forms, limited to 50 submissions/mo.",
-      "price": 0,
-      "name": "Free"
+      "name": "Free",
+      "price": 0
     },
     "personal": {
       "description": "For personal or portfolio sites",
       "interval": "month",
-      "price": 10,
-      "name": "Personal"
+      "name": "Personal",
+      "price": 10
     },
     "professional": {
       "description": "For freelancers and startups",
       "interval": "month",
-      "price": 22,
-      "name": "Professional"
+      "name": "Professional",
+      "price": 22
     }
   },
   "subheading": "Form submission API",
-  "url": "https://formspree.io/",
-  "name": "Formspree"
+  "url": "https://formspree.io/"
 }

@@ -17,16 +17,16 @@
     "Personalization",
     "Relevant Sort"
   ],
+  "name": "Algolia",
   "plans": {
     "standard": {
       "currency": "USD",
       "interval": "month",
+      "name": "Standard",
       "price": 1,
-      "unitText": "searches",
-      "name": "Standard"
+      "unitText": "searches"
     }
   },
   "subheading": "Search",
-  "url": "https://www.algolia.com/",
-  "name": "Algolia"
+  "url": "https://www.algolia.com/"
 }

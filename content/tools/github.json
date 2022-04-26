@@ -12,30 +12,30 @@
     "Hosting",
     "Team management"
   ],
+  "name": "GitHub",
   "plans": {
     "enterprise": {
       "currency": "USD",
       "description": "Security, compliance, and flexible deployment",
       "interval": "month",
+      "name": "Enterprise",
       "price": 21,
-      "unitText": "user",
-      "name": "Enterprise"
+      "unitText": "user"
     },
     "free": {
       "description": "The basics for individuals and organizations",
-      "price": 0,
-      "name": "Free"
+      "name": "Free",
+      "price": 0
     },
     "team": {
       "currency": "USD",
       "description": "Advanced collaboration for individuals and organizations",
       "interval": "month",
+      "name": "Team",
       "price": 4,
-      "unitText": "user",
-      "name": "Team"
+      "unitText": "user"
     }
   },
   "subheading": "Distributed version control system",
-  "url": "https://github.com",
-  "name": "GitHub"
+  "url": "https://github.com"
 }

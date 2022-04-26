@@ -9,29 +9,29 @@
     "Constant context",
     "Maximum efficiency. Minimal effort"
   ],
+  "name": "Sentry",
   "plans": {
     "business": {
       "currency": "USD",
       "description": "Standardized Error and Performance Monitoring with insights powered by Discover.",
       "interval": "month",
-      "price": 80,
-      "name": "Business"
+      "name": "Business",
+      "price": 80
     },
     "developer": {
       "currency": "USD",
       "description": "Limited Error and Performance Monitoring.",
-      "price": 0,
-      "name": "Developer"
+      "name": "Developer",
+      "price": 0
     },
     "team": {
       "currency": "USD",
       "description": "Core Error and Performance Monitoring with flexible event volume.",
       "interval": "month",
-      "price": 26,
-      "name": "Team"
+      "name": "Team",
+      "price": 26
     }
   },
   "subheading": "Full Stack Monitoring",
-  "url": "https://sentry.io/",
-  "name": "Sentry"
+  "url": "https://sentry.io/"
 }
