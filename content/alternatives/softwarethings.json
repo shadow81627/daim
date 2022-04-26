@@ -1,7 +1,6 @@
 {
   "color": "#181818",
   "description": "We are Software Things and we do Mobile applications, Web applications and Websites. Walk with us through the entire lifecycle of creating a digital product 🦖.",
-  "heading": "Software Things",
   "image": "https://softwarethings.pro/og-img.png",
   "list": [
     "Web Applications",
@@ -9,5 +8,6 @@
     "Websites"
   ],
   "subheading": "Passion Driven Development",
-  "url": "https://softwarethings.pro/"
+  "url": "https://softwarethings.pro/",
+  "name": "Software Things"
 }

@@ -1,7 +1,6 @@
 {
   "color": "#f8f8f8",
   "description": "We provide you with additional technical capacity to power-up your digital transformation journeys with our teams of first-class engineers and consultants. Full stack JavaScript Cloud experts ready to work with you and your team.",
-  "heading": "Passionate People",
   "image": "https://passionatepeople.io/preview.jpg",
   "list": [
     "Full Stack Javascript Development",
@@ -10,5 +9,6 @@
     "Expert Code Review Service"
   ],
   "subheading": "External Engineering Experts",
-  "url": "https://passionatepeople.io/"
+  "url": "https://passionatepeople.io/",
+  "name": "Passionate People"
 }

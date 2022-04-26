@@ -1,7 +1,6 @@
 {
   "color": "#181828",
   "description": "Start monitoring in 30 seconds. Use advanced SSL, keyword and cron monitoring. Get notified by email, SMS, Slack and more. Get 50 monitors for FREE!",
-  "heading": "Uptime Robot",
   "icon": "arcticons:uptimerobot",
   "iconColor": "#3bd671",
   "image": "https://uptimerobot.com/assets/images/ogimage.png",
@@ -15,17 +14,18 @@
   ],
   "plans": {
     "free": {
-      "heading": "Free",
-      "price": 0
+      "price": 0,
+      "name": "Free"
     },
     "pro": {
-      "heading": "Pro",
       "interval": "month",
       "price": 15,
       "quantity": 50,
-      "unitText": "monitors"
+      "unitText": "monitors",
+      "name": "Pro"
     }
   },
   "subheading": "Uptime monitoring service.",
-  "url": "https://uptimerobot.com/"
+  "url": "https://uptimerobot.com/",
+  "name": "Uptime Robot"
 }

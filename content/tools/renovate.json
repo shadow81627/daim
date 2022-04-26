@@ -1,7 +1,6 @@
 {
   "color": "#f8c808",
   "description": "Save time and reduce risk by automating dependency updates in software projects.",
-  "heading": "Renovate bot",
   "icon": "vscode-icons:file-type-renovate",
   "image": "https://repository-images.githubusercontent.com/76734068/0d2b8c00-8d71-11ea-9af4-23b41d5a239b",
   "list": [
@@ -15,16 +14,17 @@
   ],
   "plans": {
     "essentials": {
-      "heading": "Essentials",
       "interval": "month",
-      "price": 10
+      "price": 10,
+      "name": "Essentials"
     },
     "free": {
       "description": "Free plan for open source",
-      "heading": "Free",
-      "price": 0
+      "price": 0,
+      "name": "Free"
     }
   },
   "subheading": "Automated dependency updates",
-  "url": "https://github.com/renovatebot/renovate"
+  "url": "https://github.com/renovatebot/renovate",
+  "name": "Renovate bot"
 }

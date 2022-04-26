@@ -23,7 +23,6 @@
           <Feature
             v-bind="{
               ...tool,
-              title: tool.heading,
               url: tool.offers ? `/tools/${tool.slug}` : tool.url,
               image: `/img/tools/${tool.slug}.png`,
               imageColor: tool.color,

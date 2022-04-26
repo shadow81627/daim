@@ -1,7 +1,6 @@
 {
   "color": "#f8f8f8",
   "description": "Expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:",
-  "heading": "Laravel",
   "icon": "logos:laravel",
   "image": "https://laravel.com/img/og-image.jpg",
   "list": [
@@ -15,5 +14,6 @@
   ],
   "sort_order": 3,
   "subheading": "Web Application Framework",
-  "url": "https://laravel.com/"
+  "url": "https://laravel.com/",
+  "name": "Laravel"
 }

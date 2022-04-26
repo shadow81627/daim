@@ -21,7 +21,6 @@
           <Feature
             v-bind="{
               ...item,
-              title: item.heading,
               url: item.offers ? `/alternatives/${item.slug}` : item.url,
               image: `/img/alternatives/${item.slug}.png`,
               imageColor: item.color,

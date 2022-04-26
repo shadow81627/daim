@@ -1,7 +1,6 @@
 {
   "color": "#080808",
   "description": "We design custom solutions to engage with your audience in revolutionary ways and provide you with vital data and statistical feedback designed for communication and stakeholder engagement.",
-  "heading": "Spatial Media",
   "image": "https://cdn.spatialmedia.io/media/images/sm-logo-dark-full.svg",
   "imageBackgroundColor": "#0F1F2F",
   "list": [
@@ -12,5 +11,6 @@
     "Community Analytics Platform"
   ],
   "subheading": "Visual Engagement Solutions",
-  "url": "https://www.spatialmedia.com.au/"
+  "url": "https://www.spatialmedia.com.au/",
+  "name": "Spatial Media"
 }

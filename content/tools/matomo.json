@@ -1,7 +1,6 @@
 {
   "color": "#f8f8f8",
   "description": "Don’t damage your reputation with Google Analytics. Matomo is the ethical alternative where you won’t make privacy sacrifices or compromise your site. Take back control with Matomo – a powerful web analytics platform that gives you 100% data ownership.",
-  "heading": "Matomo",
   "icon": "simple-icons:matomo",
   "iconColor": "#276CBC",
   "image": "https://static.matomo.org/wp-content/uploads/2020/06/website-graphics-2020-v5-1-e1611111459689.png",
@@ -19,13 +18,14 @@
   "plans": {
     "cloud": {
       "currency": "USD",
-      "heading": "Cloud",
       "interval": "month",
       "price": 31,
       "quantity": 50000,
-      "unitText": "hits"
+      "unitText": "hits",
+      "name": "Cloud"
     }
   },
   "subheading": "Google Analytics alternative that protects your data and your customers' privacy",
-  "url": "https://matomo.org/"
+  "url": "https://matomo.org/",
+  "name": "Matomo"
 }

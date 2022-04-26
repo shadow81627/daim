@@ -1,7 +1,6 @@
 {
   "color": "#384888",
   "description": "Check your code quality and keep track of your technical debt for more than 40 programming languages. Seamlessly integrated within your development workflow.",
-  "heading": "Codacy",
   "icon": "cib:codacy",
   "iconColor": "#384888",
   "image": "https://www.codacy.com/landing-page-assets/images/og.png",
@@ -12,12 +11,13 @@
   "plans": {
     "team": {
       "currency": "USD",
-      "heading": "Teams",
       "interval": "month",
       "price": 18,
-      "unitText": "users"
+      "unitText": "users",
+      "name": "Teams"
     }
   },
   "subheading": "Automate code reviews",
-  "url": "https://www.codacy.com/"
+  "url": "https://www.codacy.com/",
+  "name": "Codacy"
 }

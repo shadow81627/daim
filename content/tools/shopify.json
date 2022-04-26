@@ -1,7 +1,6 @@
 {
   "color": "#f8f8f8",
   "description": "Millions of the world's most successful brands trust Shopify to sell, ship and process payments anywhere.",
-  "heading": "Shopify",
   "icon": "logos:shopify",
   "image": "https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero/en/hero-product@tablet-dcee1276b5e044d7e201cd88922474aa3676c3133222b6946a578f01f5367589.png",
   "list": [
@@ -15,31 +14,32 @@
     "advanced": {
       "currency": "USD",
       "description": "Best for scaling businesses that require advanced reporting",
-      "heading": "Advanced",
       "interval": "month",
-      "price": 299
+      "price": 299,
+      "name": "Advanced"
     },
     "basic": {
       "currency": "USD",
       "description": "Best for new ecommerce businesses with occasional in-person sales",
-      "heading": "Basic",
       "interval": "month",
-      "price": 29
+      "price": 29,
+      "name": "Basic"
     },
     "lite": {
       "currency": "USD",
       "description": "Add products to any website or blog and accept credit card payments for only $9 USD per month.",
-      "heading": "Basic",
       "interval": "month",
-      "price": 9
+      "price": 9,
+      "name": "Basic"
     },
     "shopify": {
       "currency": "USD",
       "description": "Best for growing businesses selling online or in-store",
-      "heading": "Shopify",
       "interval": "month",
-      "price": 79
+      "price": 79,
+      "name": "Shopify"
     }
   },
-  "subheading": "Ecommerce Software"
+  "subheading": "Ecommerce Software",
+  "name": "Shopify"
 }

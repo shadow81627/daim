@@ -1,9 +1,9 @@
 {
   "color": "#f8f8f8",
   "description": "A collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs faster.",
-  "heading": "Postman",
   "icon": "logos:postman-icon",
   "image": "https://www.postman.com/_ar-assets/images/postman-api-platform-social-preview-9420276277ad8d4e67e53ee548409999.jpg",
   "subheading": "Testing, Monitoring, Documentation",
-  "url": "https://www.postman.com/"
+  "url": "https://www.postman.com/",
+  "name": "Postman"
 }

@@ -1,10 +1,10 @@
 {
   "color": "#f8f8f8",
   "description": "Responsive, mobile-first, and ARIA accessible projects on the web using Vue.js and the world's most popular front-end CSS library.",
-  "heading": "Bootstrap",
   "icon": "logos:bootstrap",
   "image": "https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png",
   "sort_order": 5,
   "subheading": "Modern responsive component framework",
-  "url": "https://getbootstrap.com/"
+  "url": "https://getbootstrap.com/",
+  "name": "Bootstrap"
 }

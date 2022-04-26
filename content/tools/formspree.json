@@ -1,7 +1,6 @@
 {
   "color": "#c80828",
   "description": "Set up simple forms to send data to an email address",
-  "heading": "Formspree",
   "icon": "clarity:form-line",
   "iconColor": "#e5122e",
   "image": "https://formspree.io/img/formspree-og.jpg",
@@ -15,28 +14,29 @@
   "plans": {
     "business": {
       "description": "For organizations and agencies",
-      "heading": "Business",
       "interval": "month",
-      "price": 102
+      "price": 102,
+      "name": "Business"
     },
     "free": {
       "description": "Use Formspree for testing and development with unlimited projects and forms, limited to 50 submissions/mo.",
-      "heading": "Free",
-      "price": 0
+      "price": 0,
+      "name": "Free"
     },
     "personal": {
       "description": "For personal or portfolio sites",
-      "heading": "Personal",
       "interval": "month",
-      "price": 10
+      "price": 10,
+      "name": "Personal"
     },
     "professional": {
       "description": "For freelancers and startups",
-      "heading": "Professional",
       "interval": "month",
-      "price": 22
+      "price": 22,
+      "name": "Professional"
     }
   },
   "subheading": "Form submission API",
-  "url": "https://formspree.io/"
+  "url": "https://formspree.io/",
+  "name": "Formspree"
 }

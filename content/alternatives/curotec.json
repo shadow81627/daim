@@ -1,7 +1,6 @@
 {
   "color": "#282848",
   "description": "Curotec clients leverage our deep Vue.js & Nuxt.js expertise to develop better digital products and quickly expand their development operations.",
-  "heading": "Curotec",
   "image": "https://www.curotec.com/wp-content/uploads/2019/03/curotec-logo-bg.png",
   "list": [
     "UI Refactoring",
@@ -10,5 +9,6 @@
     "Native Mobile Apps",
     "Iterative and Rapid Application Development"
   ],
-  "subheading": "Vue.js & Nuxt.js experts"
+  "subheading": "Vue.js & Nuxt.js experts",
+  "name": "Curotec"
 }

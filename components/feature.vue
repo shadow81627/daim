@@ -26,9 +26,9 @@
             style="font-size: 1em"
           ></BaseIcon>
         </template>
-        {{ title }}
+        {{ name }}
         <template v-if="acronym">
-          (<abbr :title="title">{{ acronym }}</abbr
+          (<abbr :title="name">{{ acronym }}</abbr
           >)</template
         >
       </span>
@@ -81,7 +81,7 @@ export default {
     image: { type: String, default: undefined },
     url: { type: String, default: undefined },
     icon: { type: [String, Object], default: () => undefined },
-    title: { type: String, default: undefined },
+    name: { type: String, default: undefined },
     subheading: { type: String, default: undefined },
     description: { type: String, default: undefined },
     list: { type: Array, default: undefined },

@@ -1,26 +1,26 @@
 {
   "color": "#f8f8f8",
   "description": "Leverage the email service that customer-first brands trust for reliable inbox delivery at scale. Integrate in minutes with our email API and trust your emails reach the inbox.",
-  "heading": "Sendgrid",
   "icon": "logos:sendgrid-icon",
   "image": "https://media-exp1.licdn.com/dms/image/C561BAQE59CyB6UWG8g/company-background_10000/0/1549030482702?e=2147483647&v=beta&t=tLXp80nS_1JbZv-u5gM3aB3zA-dDTfuuOpJ1mjW5TjI",
   "plans": {
     "essentials": {
-      "heading": "Essentials",
       "interval": "month",
       "price": 14.95,
       "quantity": 50000,
-      "unitText": "emails/day"
+      "unitText": "emails/day",
+      "name": "Essentials"
     },
     "free": {
       "description": "Try it out! Integrate fast and explore features with 100 emails/day forever.",
-      "heading": "Free",
       "interval": "month",
       "price": 0,
       "quantity": 100,
-      "unitText": "emails/day"
+      "unitText": "emails/day",
+      "name": "Free"
     }
   },
   "subheading": "Deliver Exceptional Email Experiences with SendGrid",
-  "url": "https://sendgrid.com/"
+  "url": "https://sendgrid.com/",
+  "name": "Sendgrid"
 }

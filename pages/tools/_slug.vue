@@ -58,7 +58,6 @@
                   <Feature
                     v-bind="{
                       ...offer,
-                      title: offer.name,
                       url: offer.url,
                       image: `/img/tools/offers/${item.slug}/${offerKey}.png`,
                     }"

@@ -1,23 +1,23 @@
 {
   "color": "#f8f8f8",
   "description": "Automate the entire image-processing pipeline: from uploads to on-the-fly manipulations to optimization to dynamic delivery with any CDN.",
-  "heading": "Cloudinary",
   "icon": "logos:cloudinary",
   "image": "https://res.cloudinary.com/cloudinary-marketing/image/upload/f_auto,q_auto/v1597642219/creative_source/Brand/Social%20Images/Cld_SocShare_Card_FB_2020.png",
   "plans": {
     "free": {
       "description": "Instantly personalize images and videos to take your blogs and projects to the next level.",
-      "heading": "Free",
-      "price": 0
+      "price": 0,
+      "name": "Free"
     },
     "plus": {
       "currency": "USD",
       "description": "Extend your small team’s digital media capabilities when creating and managing websites and mobile apps.",
-      "heading": "Plus",
       "interval": "month",
-      "price": 99
+      "price": 99,
+      "name": "Plus"
     }
   },
   "subheading": "Optimization, moderation, transformation image CDN",
-  "url": "https://cloudinary.com/"
+  "url": "https://cloudinary.com/",
+  "name": "Cloudinary"
 }

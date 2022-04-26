@@ -1,7 +1,6 @@
 {
   "color": "#f8f8f8",
   "description": "64 Robots is Baltimore's premium web and mobile app development agency. We use the latest technologies and rigorous testing methodology to take you to the next level.",
-  "heading": "64 Robots",
   "image": "https://www.64robots.com/social.png",
   "list": [
     "Product Development",
@@ -13,5 +12,6 @@
     "Secutiry HIPPA / Fedramp"
   ],
   "subheading": "digital product agency",
-  "url": "https://www.64robots.com/"
+  "url": "https://www.64robots.com/",
+  "name": "64 Robots"
 }

@@ -1,7 +1,6 @@
 {
   "color": "#080808",
   "description": "Ship Shape's app development company offers a top-tier team of on-shore, full-stack software consultants who can't wait to build or improve your product.",
-  "heading": "Ship Shape",
   "image": "https://i.imgur.com/30OI4fv.png",
   "list": [
     "Full-stack",
@@ -12,5 +11,6 @@
     "Seamless"
   ],
   "subheading": "Our software consultants make waves",
-  "url": "https://shipshape.io/"
+  "url": "https://shipshape.io/",
+  "name": "Ship Shape"
 }

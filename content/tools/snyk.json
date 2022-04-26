@@ -1,7 +1,6 @@
 {
   "color": "#7808b8",
   "description": "Snyk enables development teams to move quickly and securely by automatically finding and fixing issues faster than industry average.",
-  "heading": "Snyk",
   "icon": "logos:snyk",
   "image": "https://snyk.io/wp-content/uploads/hp-featured-image.png",
   "list": [
@@ -12,22 +11,23 @@
   ],
   "plans": {
     "business": {
-      "heading": "Business",
       "interval": "month",
       "price": 139,
-      "unitText": "dev"
+      "unitText": "dev",
+      "name": "Business"
     },
     "free": {
-      "heading": "Free",
-      "price": 0
+      "price": 0,
+      "name": "Free"
     },
     "team": {
-      "heading": "Team",
       "interval": "month",
       "price": 107,
-      "unitText": "dev"
+      "unitText": "dev",
+      "name": "Team"
     }
   },
   "subheading": "Automated security audits",
-  "url": "https://snyk.io/"
+  "url": "https://snyk.io/",
+  "name": "Snyk"
 }

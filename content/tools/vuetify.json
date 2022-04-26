@@ -1,9 +1,9 @@
 {
   "color": "#080808",
   "description": "UI Library with beautifully handcrafted Material Design Components.",
-  "heading": "Vuetify",
   "icon": "logos:vuetifyjs",
   "image": "https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png",
   "subheading": "Material Design Component Framework",
-  "url": "https://vuetifyjs.com/"
+  "url": "https://vuetifyjs.com/",
+  "name": "Vuetify"
 }

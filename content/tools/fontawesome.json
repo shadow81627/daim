@@ -1,7 +1,6 @@
 {
   "color": "#183858",
   "description": "Font Awesome is the Internet's icon library and toolkit, used by millions of designers, developers, and content creators. Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.",
-  "heading": "Fontawesome",
   "icon": "simple-icons:fontawesome",
   "iconColor": "#146ebe",
   "image": "https://img.fortawesome.com/349cfdf6/fontawesome-open-graph.png",
@@ -13,16 +12,17 @@
   "plans": {
     "free": {
       "description": "Best for individuals and small teams with minimal icon needs who like free samples.",
-      "heading": "Free",
-      "price": 0
+      "price": 0,
+      "name": "Free"
     },
     "pro": {
       "description": "Best for collaborative dev + design teams who champion the open source community. ",
-      "heading": "Pro",
       "interval": "month",
-      "price": 9
+      "price": 9,
+      "name": "Pro"
     }
   },
   "subheading": "Vector icons and social logos",
-  "url": "https://fontawesome.com/"
+  "url": "https://fontawesome.com/",
+  "name": "Fontawesome"
 }

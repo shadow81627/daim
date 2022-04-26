@@ -1,6 +1,5 @@
 {
   "color": "#f8f8f8",
-  "heading": "Prettier",
   "icon": "logos:prettier",
   "image": "https://triplet-assets.s3.amazonaws.com/prettier.png",
   "list": [
@@ -13,5 +12,6 @@
     "Saves you time and energy"
   ],
   "subheading": "Opinionated code formatter",
-  "url": "https://prettier.io/"
+  "url": "https://prettier.io/",
+  "name": "Prettier"
 }

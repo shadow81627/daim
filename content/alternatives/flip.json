@@ -1,7 +1,6 @@
 {
   "color": "#f8f8f8",
   "description": "Brisbane's most awarded independent digital agency. Ad, campaigns, technology, software, Wordpress, TVC, branding and all things digital are made here",
-  "heading": "Flip",
   "image": "https://scontent-syd2-1.xx.fbcdn.net/v/t1.6435-9/198744277_341782074309831_3244373888013513845_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=QBAsEwzmGcEAX-uhg7L&_nc_ht=scontent-syd2-1.xx&oh=00_AT8Yb9ZvW66lXP9_7FpOMbGZ0KDwsJ_v0gRDfNwBL5kaNA&oe=628BBA07",
   "list": [
     "Strategy",
@@ -16,5 +15,6 @@
   ],
   "location": "Fortitude Valley, Brisbane, Australia",
   "subheading": "We craft creative with heart and develop digital with backbone",
-  "url": "https://www.weareflip.com/"
+  "url": "https://www.weareflip.com/",
+  "name": "Flip"
 }

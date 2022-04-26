@@ -1,7 +1,6 @@
 {
   "color": "#2888f8",
   "description": "LanguageTool is a free online proofreading service for English, Spanish, and 20 other languages. Instantly check your text for grammar and style mistakes.",
-  "heading": "Language Tool",
   "image": "https://languagetool.org/images/social/og_image.jpg",
   "list": [
     "Spelling",
@@ -12,29 +11,30 @@
   "plans": {
     "api": {
       "currency": "AUD",
-      "heading": "API",
       "interval": "month",
       "price": 78,
       "quantity": 250,
-      "unitText": "calls"
+      "unitText": "calls",
+      "name": "API"
     },
     "free": {
-      "heading": "Free",
-      "price": 0
+      "price": 0,
+      "name": "Free"
     },
     "individual": {
       "currency": "AUD",
-      "heading": "Individual",
       "interval": "month",
-      "price": 24.9
+      "price": 24.9,
+      "name": "Individual"
     },
     "team": {
       "currency": "AUD",
-      "heading": "Team",
       "interval": "month",
-      "price": 11.99
+      "price": 11.99,
+      "name": "Team"
     }
   },
   "subheading": "Writing Assistant",
-  "url": "https://languagetool.org/"
+  "url": "https://languagetool.org/",
+  "name": "Language Tool"
 }

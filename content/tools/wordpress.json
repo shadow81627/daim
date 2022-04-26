@@ -1,7 +1,6 @@
 {
   "color": "#f8f8f8",
   "description": "43% of the web is built on WordPress. More bloggers, small businesses, and Fortune 500 companies use WordPress than all other options combined. Join the millions of people that call WordPress.com home.",
-  "heading": "Wordpress",
   "icon": "logos:wordpress-icon",
   "image": "https://s.w.org/images/home/screen-themes.png?3",
   "list": [
@@ -25,5 +24,6 @@
     }
   },
   "subheading": "The world’s most popular website builder",
-  "url": "https://wordpress.com/"
+  "url": "https://wordpress.com/",
+  "name": "Wordpress"
 }

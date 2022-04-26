@@ -1,7 +1,6 @@
 {
   "color": "#e8e8f8",
   "description": "Rapidly build modern websites without ever leaving your HTML. A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.",
-  "heading": "Tailwind CSS",
   "icon": "logos:tailwindcss-icon",
   "image": "https://tailwindcss.com/_next/static/media/social-card-large.f6878fd8df804f73ba3f1a271122105a.jpg",
   "list": [
@@ -17,5 +16,6 @@
     "Move even faster with Tailwind UI"
   ],
   "subheading": "Utility-first CSS framework",
-  "url": "https://tailwindcss.com/"
+  "url": "https://tailwindcss.com/",
+  "name": "Tailwind CSS"
 }
