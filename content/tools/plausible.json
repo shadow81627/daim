@@ -1,0 +1,33 @@
+{
+  "color": "#f8f8f8",
+  "description": "Plausible is lightweight and open source web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. Made and hosted in the EU, powered by European-owned cloud infrastructure.",
+  "image": "https://plausible.io/assets/images/plausible_promo.jpg",
+  "list": [
+    "Ditch Google Analytics",
+    "Simple analytics at a glance",
+    "Lightweight script that keeps your site speed fast",
+    "No need for cookie banners or GDPR consent",
+    "Track events, goal conversions and campaigns",
+    "Invite team members and share your dashboard",
+    "Transparent and fully open source software"
+  ],
+  "name": "Plausible",
+  "plans": {
+    "advanced": {
+      "currency": "USD",
+      "interval": "month",
+      "price": 169,
+      "quantity": 10000000,
+      "unitText": "pageviews"
+    },
+    "basic": {
+      "currency": "USD",
+      "interval": "month",
+      "price": 9,
+      "quantity": 10000,
+      "unitText": "pageviews"
+    }
+  },
+  "subheading": "Simple and privacy-friendly Google Analytics alternative",
+  "url": "https://plausible.io/"
+}
