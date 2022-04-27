@@ -3,12 +3,12 @@
   "basics": {
     "firstname": "Damien",
     "lastname": "Robinson",
-    "label": "Web Developer",
+    "label": "Digital Consultant",
     "picture": "https://daim.dev/profile.jpg",
     "email": "damien.robinson@daim.dev",
     "phone": "+61-437-606-977",
     "website": "https://daim.dev",
-    "summary": "Full-stack web developer with 4 years experience, seeking to further my skills in front end web development for marketing websites. I have well-rounded full-stack development experience, with a proficiency in Nuxt.js static marketing websites.",
+    "summary": "Damien is a Digital Consultant with 5+ years of experience. He specialises in handcrafted, bespoke websites, with an interest in open source, marketing and ecommerce. Reach out about your fresh new digital presence today.",
     "location": {
       "postalCode": "4005",
       "city": "New Farm",

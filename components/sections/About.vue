@@ -2,8 +2,8 @@
   <BaseSection id="about" itemtype="https://schema.org/LocalBusiness" itemscope>
     <BaseSectionHeading title="About">
       <span itemprop="name">{{ name }}</span> is a
-      <span>{{ typeDisplay }}</span>
-      providing <span itemprop="description">{{ description }}</span>
+      <span>{{ typeDisplay }}</span> with {{ experience }} years of experience.
+      <span itemprop="description">{{ description }}</span>
     </BaseSectionHeading>
     <v-responsive class="mx-auto" max-width="1350">
       <v-container fluid>
@@ -49,10 +49,11 @@ countries.registerLocale(englishCountries);
 export default {
   data() {
     return {
-      name: 'Daim',
-      typeDisplay: 'Digital Agency',
+      name: 'Damien',
+      typeDisplay: 'Digital Consultant',
+      experience: '5+',
       description:
-        'high quality, bespoke websites built by professionals. Handcrafted marketing websites are our speciality. Hit us up today for a quote on a slick new digital presence today.',
+        'He specialises in handcrafted, bespoke websites, with an interest in open source, marketing and ecommerce. Reach out about your fresh new digital presence today.',
       // priceRange: '$$',
       priceRange: undefined,
       url: 'https://daim.dev/',

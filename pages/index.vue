@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero subheading="Digital Agency">
+    <Hero subheading="Digital Consultant">
       <template #heading>
         <img
           :src="require('~/assets/img/logo.svg?inline')"
