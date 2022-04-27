@@ -17,12 +17,20 @@
   ],
   "name": "Matomo",
   "plans": {
-    "cloud": {
+    "50000": {
       "currency": "USD",
       "interval": "month",
       "name": "Cloud",
       "price": 31,
       "quantity": 50000,
+      "unitText": "hits"
+    },
+    "600000": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Cloud",
+      "price": 179,
+      "quantity": 600000,
       "unitText": "hits"
     }
   },
