@@ -1,0 +1,15 @@
+{
+  "color": "#f8f8f8",
+  "description": "Get a complete understanding of your customers across devices and platforms. Google Analytics gives you the tools, free of charge, to understand the customer journey and improve marketing ROI.",
+  "icon": "akar-icons:google-contained-fill",
+  "iconColor": "#1a73e8",
+  "image": "https://lh3.googleusercontent.com/DonyYGiwP0gZLRox-47nXwteiGGAmhi9f9VlygOqqk3ATRRcd56jtYBoAWiAGHS7d00oId4TXPPwp_diOkJHWK9CQQPGv9sf-USSmISqtp8LUjRGF9o=s768",
+  "list": [
+    "Unlock customer-centric measurement.",
+    "Get smarter insights to improve ROI.",
+    "Connect your insights to results.",
+    "Make your data work for you."
+  ],
+  "name": "Google Marketing Platform",
+  "subheading": "Get essential customer insights"
+}
