@@ -9,20 +9,20 @@
     "Laravel Artisans"
   ],
   "name": "Pixel",
-  "subheading": "A small but mighty digital agency helping brands",
   "plans": {
-    "retainer": {
-      "name": "Monthly Partnership",
-      "price": 3000,
-      "currency": "AUD",
-      "interval": "month"
-    },
     "project": {
-      "name": "Project",
-      "price": 20000,
       "currency": "AUD",
-      "interval": "month"
+      "interval": "month",
+      "name": "Project",
+      "price": 20000
+    },
+    "retainer": {
+      "currency": "AUD",
+      "interval": "month",
+      "name": "Monthly Partnership",
+      "price": 3000
     }
   },
+  "subheading": "A small but mighty digital agency helping brands",
   "url": "https://wearepixel.com.au/"
 }
