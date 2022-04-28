@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import { sortBy } from 'lodash-es';
+import { sortBy, maxBy } from 'lodash-es';
 import ImageSources from '@/mixins/srcset';
 import Feature from '~/components/feature';
 import PriceRange from '~/components/price-range';
@@ -57,7 +57,19 @@ export default {
       (await $content('alternatives').fetch()).filter(
         (item) => !item.deleted_at,
       ),
-      [textLength, 'slug'],
+      [
+        /**
+         * Sort by largest price
+         * @param {*} o item to sort
+         */
+        function (o) {
+          const plans = sortBy(o?.plans ?? { free: { price: 0 } }, 'price');
+          const max = maxBy(plans, 'price');
+          return max.price;
+        },
+        textLength,
+        'slug',
+      ],
     ).reverse();
     return { items };
   },
