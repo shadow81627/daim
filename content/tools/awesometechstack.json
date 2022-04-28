@@ -1,0 +1,14 @@
+{
+  "color": "#080808",
+  "description": "AwesomeTechStack provides insights into the security, modernity, and performance of any website's technology stack and guidance to improve core web vitals and technology stack awesomeness.",
+  "image": "https://awesometechstack.com/AwesomeTechStack.png",
+  "list": [
+    "Free technology lookup",
+    "Rating for all websites and web-apps",
+    "Real-time analysis using cutting edge technology",
+    "Suggestions to improve core web vitals, security, website performance and tech stack"
+  ],
+  "name": "Awesome Tech Stack",
+  "subheading": "Website Technology Stack Analysis",
+  "url": "https://awesometechstack.com/"
+}
