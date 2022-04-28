@@ -1,17 +1,26 @@
 {
-  "color": "#f8f8f8",
+  "color": "#080808",
   "description": "Partner with Australia's #1 wholesale domain name and web hosting provider today. Begin selling cPanel web hosting services to your customers from our fully managed and secure Dell Cloud infrastructure based in Australia.",
+  "icon": "bi:server",
+  "iconColor": "#f47929",
   "image": "https://synergywholesale.com/wp-content/uploads/2020/09/logo-synergy-wholesale.png",
+  "list": [
+    "Web Hosting",
+    "Domain Names",
+    "Email Hosting"
+  ],
   "name": "Synergy Wholesale",
+  "plans": {
+    "starter": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 5
+    }
+  },
   "sameAs": [
     "https://www.facebook.com/SynergyWholesale/",
     "https://twitter.com/synergyws"
   ],
   "subheading": "Resell Web Hosting, Domain Names, And More",
-  "url": "https://synergywholesale.com/",
-  "list": [
-    "Web Hosting",
-    "Domain Names",
-    "Email Hosting"
-  ]
+  "url": "https://synergywholesale.com/"
 }
