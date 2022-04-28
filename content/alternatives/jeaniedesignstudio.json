@@ -1,0 +1,36 @@
+{
+  "color": "#080808",
+  "description": "Brisbane based freelance designer specialising in premium branding and website design. Giving you the design solutions your business needs.",
+  "image": "https://jeaniedesignstudio.com/wp-content/uploads/2021/03/Artboard-15-e1629707391313.png",
+  "list": [
+    "Branding",
+    "Website Design",
+    "Social Media"
+  ],
+  "name": "Jeanie Design Studio",
+  "plans": {
+    "branding": {
+      "currency": "AUD",
+      "description": "Basic Branding Packages starting from",
+      "interval": "",
+      "name": "Branding",
+      "price": 1100
+    },
+    "social-media": {
+      "currency": "AUD",
+      "description": "Monthly Social Media Packages starting from",
+      "interval": "month",
+      "name": "Social Media",
+      "price": 800
+    },
+    "website-design": {
+      "currency": "AUD",
+      "description": "Basic Website Packages starting from",
+      "interval": "",
+      "name": "Website Design",
+      "price": 2000
+    }
+  },
+  "subheading": "Graphic Design and Web Design",
+  "url": "https://jeaniedesignstudio.com/"
+}
