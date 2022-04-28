@@ -1,5 +1,11 @@
 # Releases
 
+## [1.45.7](https://github.com/shadow81627/daim/compare/v1.45.6...v1.45.7) (2022-04-28)
+
+### Bug Fixes
+
+- **alternatives:** sort by price ([ced5252](https://github.com/shadow81627/daim/commit/ced525234b508fdec3151bc56a1e34679188cf81))
+
 ## [1.45.6](https://github.com/shadow81627/daim/compare/v1.45.5...v1.45.6) (2022-04-26)
 
 ### Performance Improvements
