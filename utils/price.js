@@ -7,13 +7,15 @@ export default function price(args) {
   };
   const price = cost / (margin || 1);
   const nines =
-    price === 0 || price % 1 !== 0 || margin === 0 ? price : price - 0.01;
-  const minimumFractionDigits = nines % 1 !== 0 ? 0 : 2;
-  const maximumSignificantDigits = 3;
-  return nines.toLocaleString('en-US', {
+    price === 0 || !Number.isInteger(price) || margin === 0
+      ? price
+      : price - 0.01;
+  const minimumFractionDigits = Number.isInteger(nines) ? 0 : 2;
+  const formatOptions = {
     style: 'currency',
     currency,
     minimumFractionDigits,
-    maximumSignificantDigits,
-  });
+  };
+  const formatted = new Intl.NumberFormat('en-US', formatOptions).format(nines);
+  return formatted;
 }
