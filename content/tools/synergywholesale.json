@@ -16,15 +16,15 @@
       "interval": "month",
       "price": 5
     },
-    "standard": {
-      "currency": "AUD",
-      "interval": "month",
-      "price": 10
-    },
     "pro": {
       "currency": "AUD",
       "interval": "month",
       "price": 15
+    },
+    "standard": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 10
     }
   },
   "sameAs": [

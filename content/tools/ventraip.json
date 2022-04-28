@@ -1,0 +1,32 @@
+{
+  "color": "#f8f8f8",
+  "description": "VentraIP Australia is Australia's most trusted provider for domain names, website hosting and online solutions. Get started online today.",
+  "icon": "bi:server",
+  "iconColor": "#912c99",
+  "image": "https://ventraip.com.au/wp-content/uploads/2018/06/default-blog-image-au-1.jpg",
+  "list": [
+    "Web Hosting",
+    "Domain Names",
+    "Email Hosting"
+  ],
+  "name": "Ventraip",
+  "plans": {
+    "basic": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 5
+    },
+    "pro": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 15
+    },
+    "standard": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 10
+    }
+  },
+  "subheading": "Web Hosting",
+  "url": "https://ventraip.com.au/"
+}
