@@ -1,0 +1,42 @@
+{
+  "color": "#080808",
+  "subheading": "Web design for creatives",
+  "description": "I design dream websites for small businesses ready to take their creative business to the next level",
+  "image": "https://evelystudio.com.au/wp-content/uploads/evelystudioLogo.png",
+  "imageBackgroundColor": "#FFFFFF",
+  "name": "Evely Studio",
+  "list": [
+    "Web design",
+    "Web hosting",
+    "SEO",
+    "Wordpress",
+    "Website maintenance"
+  ],
+  "plans": {
+    "large": {
+      "currency": "AUD",
+      "description": "This is for the business owner that wants it all! Toghther we will design a beautiful website that let your business shine! ",
+      "interval": "",
+      "name": "Large",
+      "price": 8000,
+      "subheading": "go big or go home!"
+    },
+    "medium": {
+      "currency": "AUD",
+      "description": "Designed for business owners who are ready to upgrade from their startup website, they have been in business for a couple of years and are really ready to go all out and smash their goals!",
+      "interval": "",
+      "name": "Medium",
+      "price": 4000,
+      "subheading": "Take your biz to the next level"
+    },
+    "small": {
+      "currency": "AUD",
+      "description": "Perfect for businesses with a smaller budget but still want an amazing web presence, great for those in a service business.",
+      "interval": "",
+      "name": "Small",
+      "price": 2500,
+      "subheading": "For the smaller business that needs something on the interwebs"
+    }
+  },
+  "url": "https://evelystudio.com.au/"
+}
