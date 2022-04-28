@@ -1,10 +1,8 @@
 {
   "color": "#080808",
-  "subheading": "Web design for creatives",
   "description": "I design dream websites for small businesses ready to take their creative business to the next level",
   "image": "https://evelystudio.com.au/wp-content/uploads/evelystudioLogo.png",
   "imageBackgroundColor": "#FFFFFF",
-  "name": "Evely Studio",
   "list": [
     "Web design",
     "Web hosting",
@@ -12,6 +10,7 @@
     "Wordpress",
     "Website maintenance"
   ],
+  "name": "Evely Studio",
   "plans": {
     "large": {
       "currency": "AUD",
@@ -38,5 +37,6 @@
       "subheading": "For the smaller business that needs something on the interwebs"
     }
   },
+  "subheading": "Web design for creatives",
   "url": "https://evelystudio.com.au/"
 }
