@@ -10,5 +10,19 @@
   ],
   "name": "Pixel",
   "subheading": "A small but mighty digital agency helping brands",
+  "plans": {
+    "retainer": {
+      "name": "Monthly Partnership",
+      "price": 3000,
+      "currency": "AUD",
+      "interval": "month"
+    },
+    "project": {
+      "name": "Project",
+      "price": 20000,
+      "currency": "AUD",
+      "interval": "month"
+    }
+  },
   "url": "https://wearepixel.com.au/"
 }
