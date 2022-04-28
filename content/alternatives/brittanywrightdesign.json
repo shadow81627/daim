@@ -1,0 +1,31 @@
+{
+  "color": "#080808",
+  "description": "Brittany Wright Design. Brisbane based graphic design, website creation, illustration, wedding and events designer. Contact Brittany Wright Design today for a quote on graphic design, print, websites, invites, logos and so much more!",
+  "image": "https://lirp.cdn-website.com/04dd1236/dms3rep/multi/opt/Black-BWD-logo-1920w.png",
+  "imageBackgroundColor": "#FFFFFF",
+  "list": [
+    "Branding",
+    "Web Design",
+    "Graphic Design",
+    "Illustrator",
+    "Artist"
+  ],
+  "name": "Brittany Wright Design",
+  "plans": {
+    "brand": {
+      "currency": "AUD",
+      "description": "More than just a logo, our Brand Build Package gives you a comprehensive brand to set you up for success",
+      "interval": "",
+      "name": "Brand Build Package",
+      "price": 1500
+    },
+    "web-design": {
+      "currency": "AUD",
+      "description": "Connect with your audience with a custom made website with brand consistency and functionality at its heart.",
+      "interval": "",
+      "name": "Web Design",
+      "price": 2400
+    }
+  },
+  "url": "https://www.brittanywrightdesign.com.au/"
+}
