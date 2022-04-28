@@ -2,7 +2,7 @@ export default function price(args) {
   const { cost, currency, margin } = {
     cost: 0,
     currency: 'USD',
-    margin: 0.5,
+    margin: 0,
     ...args,
   };
   const price = cost / (margin || 1);

@@ -39,11 +39,10 @@
 </template>
 
 <script>
-import { sortBy, maxBy, minBy } from 'lodash-es';
+import { sortBy, maxBy } from 'lodash-es';
 import ImageSources from '@/mixins/srcset';
 import Feature from '~/components/feature';
 import PriceRange from '~/components/price-range';
-import price from '~/utils/price';
 import textLength from '~/utils/feature-text-length';
 export default {
   components: {
@@ -89,51 +88,6 @@ export default {
         },
       ],
     };
-  },
-  methods: {
-    price,
-    plans(plans) {
-      return sortBy(plans ?? this.defaultPlan, 'price');
-    },
-    priceMin(plans) {
-      return minBy(plans, 'price') ?? this.defaultPlan.unset;
-    },
-    priceMax(plans) {
-      return maxBy(plans, 'price') ?? this.defaultPlan.unset;
-    },
-    priceSame(plans) {
-      const min = this.priceMin(plans);
-      const max = this.priceMax(plans);
-      return min.price === max.price;
-    },
-    priceUnset(plans) {
-      const min = this.priceMin(plans);
-      const same = this.priceSame(plans);
-      return same && min === this.defaultPlan.unset;
-    },
-    priceRange(tool) {
-      const plans = this.plans(tool?.plans);
-      const max = this.priceMax(plans);
-      const min = this.priceMin(plans);
-      const same = this.priceSame(plans);
-      const unset = this.priceUnset(plans);
-      return !unset
-        ? `${min.price === 0 ? 'Free' : price(min.price)}${
-            !same ? ' up to ' : ''
-          }${!same ? price(max.price) : ''} ${min.currency ?? ''} ${
-            max.interval ? '/' : ''
-          } ${max.interval ?? ''}`
-        : '';
-    },
-    totalCost(min = false) {
-      return this.tools.reduce((acc, tool) => {
-        const plans = this.plans(tool?.plans);
-        const price = min
-          ? this.priceMin(plans).price
-          : this.priceMax(plans).price;
-        return acc + price;
-      }, 0);
-    },
   },
 };
 </script>

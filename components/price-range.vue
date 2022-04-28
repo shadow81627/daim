@@ -40,7 +40,7 @@ export default {
     },
     margin: {
       type: Number,
-      default: 0.5,
+      default: 0,
     },
     defaultPlan: {
       type: Object,
