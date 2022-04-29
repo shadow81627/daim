@@ -100,7 +100,7 @@ export default {
         },
         {
           icon: 'carbon:person',
-          text: 'People',
+          text: 'Team',
           route: 'people',
         },
         {
