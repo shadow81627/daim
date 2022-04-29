@@ -1,0 +1,36 @@
+{
+  "color": "#f8d8d8",
+  "description": "Create a customizable website or online store with an all-in-one solution from Squarespace. Choose a website template and start your free trial today.",
+  "icon": "logos:squarespace",
+  "image": "http://static1.squarespace.com/static/5134cbefe4b0c6fb04df8065/t/614b47afa0f77b1418f13c5f/1632323503633/squarespace.com.jpg?format=1500w",
+  "list": [
+    "Create a Website",
+    "Sell anything",
+    "Market your business"
+  ],
+  "name": "Squarespace",
+  "plans": {
+    "advanced-commerce": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 52
+    },
+    "basic-commerce": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 34
+    },
+    "business": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 25
+    },
+    "personal": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 16
+    }
+  },
+  "subheading": "Everything to sell anything",
+  "url": "https://www.squarespace.com/"
+}
