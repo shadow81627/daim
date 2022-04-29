@@ -60,6 +60,7 @@
       </v-btn>
 
       <v-spacer></v-spacer>
+      <LocationButton v-if="location" v-bind="location"></LocationButton>
       <BaseTooltipButton
         v-if="url"
         v-bind="{
@@ -76,6 +77,7 @@
 import titleCase from '@/utils/title-case';
 export default {
   props: {
+    location: { type: Object, default: null },
     dark: { type: Boolean, default: false },
     acronym: { type: String, default: undefined },
     image: { type: String, default: undefined },
