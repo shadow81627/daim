@@ -2,7 +2,15 @@
   "color": "#080808",
   "description": "All-Star Digital specialises in DIY websites, sales funnels, e-commerce website builder, automated lead generation, CRM, Coaching Websites, Membership Websites. All-in-one DIY website funnel builder to grow your business online. DIY (Do it Yourself) or DFY (Done for You) solutions.",
   "image": "https://content.app-sources.com/s/29424379066860061/uploads/Images/Main_Image-2042777.gif",
+  "location": {
+    "streetAddress": "899 Brunswick St",
+    "postalCode": "4005",
+    "city": "New Farm",
+    "countryCode": "AU",
+    "region": "Queensland"
+  },
   "list": [
+    "Chatbots",
     "Drag & Drop",
     "Premium Designs",
     "Mobile Responsive",
@@ -19,6 +27,18 @@
     "Affiliate"
   ],
   "name": "Stardust Media",
+  "plans": {
+    "mini": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 6
+    },
+    "pro": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 179
+    }
+  },
   "subheading": "Websites  .  Funnels  .  E-Commerce",
   "url": "https://stardustmedia.co/"
 }
