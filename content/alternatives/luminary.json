@@ -1,0 +1,34 @@
+{
+  "color": "#080808",
+  "description": "Digital agency services include web development, UX & UI design, digital strategy, research, digital transformation and hosting for Australia and beyond.",
+  "email": "hi@luminary.com",
+  "image": "https://assets.luminary.com/b6a4aaae-9258-4804-bf5f-3d9f04f0ff56/Team%20cover%20photo%202021.png",
+  "list": [
+    "Digital Design",
+    "Digital Strategy",
+    "Digital Transformation",
+    "Discovery",
+    "Agile-focused delivery",
+    "Hosting",
+    "Ongoing support and maintenance",
+    "Platforms",
+    "Websites"
+  ],
+  "location": {
+    "city": "Melbourne",
+    "countryCode": "AU",
+    "postcode": "3000",
+    "region": "VIC",
+    "streetAddress": "Level 1 195 Little Collins St"
+  },
+  "name": "Luminary",
+  "phone": "1300 554 891",
+  "sameAs": [
+    "https://www.instagram.com/luminary_digital/",
+    "https://www.linkedin.com/company/luminaryhq/",
+    "https://twitter.com/LuminaryHQ",
+    "https://www.facebook.com/LuminaryHQ/"
+  ],
+  "subheading": "Australia's brightest digital agency",
+  "url": "https://www.luminary.com/"
+}
