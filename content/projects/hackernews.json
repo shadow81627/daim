@@ -3,6 +3,7 @@
   "name": "Hackernews",
   "description": "Hacker News search built with Nuxt.js.",
   "startDate": "2020-12-12T01:04:09Z",
+  "deletedAt": "2022-04-29T22:06:13.618Z",
   "links": [
     {
       "link": "https://hackernews.daim.dev/",

@@ -82,9 +82,9 @@ import ImageSources from '@/mixins/srcset';
 export default {
   mixins: [ImageSources],
   async asyncData({ $content }) {
-    const items = await $content('projects')
-      .sortBy('startDate', 'desc')
-      .fetch();
+    const items = (
+      await $content('projects').sortBy('startDate', 'desc').fetch()
+    ).filter((item) => !item.deletedAt);
 
     // Move placeholder to start
     const last = 'placeholder';
