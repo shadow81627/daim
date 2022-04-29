@@ -1,8 +1,8 @@
 {
   "deleted_at": "2022-04-15T09:16:39.808Z",
+  "description": "Cloud-based, fully-managed platform as a service (PaaS) for building, running, and managing apps.",
   "icon": "faServer",
-  "heading": "Heroku",
-  "href": "https://www.heroku.com/",
   "subheading": "Web Hosting",
-  "description": "Cloud-based, fully-managed platform as a service (PaaS) for building, running, and managing apps."
+  "name": "Heroku",
+  "url": "https://www.heroku.com/"
 }
