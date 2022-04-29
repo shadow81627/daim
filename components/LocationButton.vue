@@ -27,8 +27,12 @@
     <span v-show="false" v-if="postcode" itemprop="postalCode">{{
       postcode
     }}</span>
-    <span>{{ country ? ',' : '' }}&nbsp;</span>
-    <span itemprop="addressCountry">{{ country }}</span>
+    <span
+      >{{
+        (country || countryCode) && (postcode || city || region) ? ',' : ''
+      }}&nbsp;</span
+    >
+    <span itemprop="addressCountry">{{ country || countryCode }}</span>
   </v-btn>
 </template>
 
@@ -41,6 +45,7 @@ export default {
     region: { type: String, default: null },
     postcode: { type: String, default: null },
     country: { type: String, default: null },
+    countryCode: { type: String, default: null },
   },
   data: () => ({
     faMapMarker,
