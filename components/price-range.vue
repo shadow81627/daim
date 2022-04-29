@@ -23,10 +23,6 @@
       / {{ priceMax.interval }}</template
     >
   </div>
-  <div v-else>
-    <div>Price range</div>
-    <strong>Free</strong>
-  </div>
 </template>
 
 <script>
