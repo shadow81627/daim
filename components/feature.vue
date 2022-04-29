@@ -64,7 +64,7 @@
         v-if="url"
         v-bind="{
           link: url,
-          tooltip: `Learn more about ${title}`,
+          tooltip: `Learn more about ${name}`,
           size: 'small',
         }"
       ></BaseTooltipButton>
