@@ -1,0 +1,21 @@
+{
+  "color": "#989888",
+  "description": "S. Group is a multi-disciplinary studio integrating residential & commercial architecture & strategic brand & digital design in Launceston, Hobart & Melbourne. We create great work, but we also aim to create hope, opportunity and a better world. And with all that we do, we aim to create something that lasts… we create wonder.",
+  "image": "https://s-group.imgix.net/general/jongazzignato-sgroup-preview-1.jpg?auto=format&crop=focalpoint&domain=s-group.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&h=630&ixlib=php-3.3.0&q=82&usm=20&w=1200&s=21dd7f5431c45afc6310c18c8787e2d9",
+  "list": [
+    "Architecture",
+    "Brand",
+    "Marketing",
+    "BAM"
+  ],
+  "location": {
+    "city": "Launceston",
+    "countryCode": "AU",
+    "postcode": "7250",
+    "region": "TAS",
+    "streetAddress": "Level 1, 10-14 Paterson Street"
+  },
+  "name": "S. Group",
+  "subheading": "We create joy through creating",
+  "url": "https://sgroup.com.au/"
+}
