@@ -10,6 +10,9 @@
   ],
   "name": "Codacy",
   "plans": {
+    "open-source": {
+      "price": 0
+    },
     "team": {
       "currency": "USD",
       "interval": "month",
