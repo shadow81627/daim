@@ -1,0 +1,6 @@
+{
+  "icon": "carbon:home",
+  "name": "Home",
+  "route": "index",
+  "pos": "1/1"
+}

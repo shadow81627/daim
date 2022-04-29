@@ -1,0 +1,6 @@
+{
+  "icon": "bx:message",
+  "name": "Contact",
+  "route": "contact",
+  "pos": "7/1"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Alternatives",
+  "icon": "carbon:compare",
+  "route": "alternatives",
+  "pos": "6/1"
+}

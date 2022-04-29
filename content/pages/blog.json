@@ -1,0 +1,6 @@
+{
+  "icon": "carbon:blog",
+  "name": "Blog",
+  "route": "blog",
+  "pos": "2/1"
+}

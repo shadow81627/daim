@@ -1,0 +1,6 @@
+{
+  "icon": "carbon:tool-box",
+  "name": "Tools",
+  "route": "tools",
+  "pos": "5/1"
+}
