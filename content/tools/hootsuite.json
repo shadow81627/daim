@@ -1,7 +1,7 @@
 {
   "color": "#686868",
-  "icon": "simple-icons:hootsuite",
   "description": "Enhance your social media management with Hootsuite, the leading social media dashboard. Manage multiple networks and profiles and measure your campaign results.",
+  "icon": "simple-icons:hootsuite",
   "image": "https://www.hootsuite.com/dist/images/placeholders/social-share.jpg",
   "name": "Hootsuite",
   "plans": {
