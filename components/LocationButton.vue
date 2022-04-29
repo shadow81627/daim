@@ -4,7 +4,9 @@
     large
     text
     :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
-      `${city || ''} ${region || ''} ${postcode || ''} ${country || ''}`,
+      `${streetAddress || ''} ${city || ''} ${region || ''} ${postcode || ''} ${
+        country || ''
+      }`,
     )}`"
     rel="noreferrer"
     itemprop="address"
@@ -17,6 +19,9 @@
       fixed-width
       pull="left"
     />
+    <span v-if="streetAddress" v-show="false" itemprop="streetAddress">{{
+      streetAddress
+    }}</span>
     <span v-if="city" itemprop="addressLocality">{{ city }}</span>
     <span v-show="!city" itemprop="addressRegion">{{ region }}</span>
     <span v-show="false" v-if="postcode" itemprop="postalCode">{{
@@ -31,6 +36,7 @@
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 export default {
   props: {
+    streetAddress: { type: String, default: null },
     city: { type: String, default: null },
     region: { type: String, default: null },
     postcode: { type: String, default: null },
