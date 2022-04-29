@@ -1,0 +1,25 @@
+{
+  "color": "#f8f8f8",
+  "description": "Boost leads and sales with Australia’s 5-star digital marketing agency. Book your strategy consultation today.",
+  "email": "info@digitaleagles.com.au",
+  "image": "https://p3w9u6d6.rocketcdn.me/wp-content/uploads/2021/02/logo.png",
+  "list": [
+    "SEO",
+    "Content",
+    "CRO",
+    "PPC",
+    "Social Media",
+    "Web"
+  ],
+  "location": {
+    "city": "Melbourne",
+    "countryCode": "AU",
+    "postcode": "3000",
+    "region": "VIC",
+    "streetAddress": "Level 2, 161 Collins St"
+  },
+  "name": "Digital Eagles",
+  "phone": "1300 662 225",
+  "subheading": "Digital Marketing Agency",
+  "url": "https://www.digitaleagles.com.au/"
+}
