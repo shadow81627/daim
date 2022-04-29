@@ -1,0 +1,19 @@
+{
+  "color": "#080808",
+  "description": "Graphic Designer and Brisbane Photographer. Specialising in Website Design, Photography, Post Production Retouching and Content. Contact me for a chat about my competitive rates",
+  "image": "https://static1.squarespace.com/static/51e66567e4b038b7a66788b7/t/5a13d6609140b77f9e2971a9/1511249512463/EF_LOGO.png",
+  "list": [
+    "Graphic Design",
+    "Photography",
+    "UI/UX Design"
+  ],
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "postcode": "4000",
+    "region": "Queensland"
+  },
+  "name": "Eli Francis",
+  "subheading": "Brisbane Based Design and Photography",
+  "url": "https://elifrancis.com/"
+}

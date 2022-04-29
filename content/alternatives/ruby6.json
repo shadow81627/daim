@@ -1,9 +1,9 @@
 {
   "color": "#080808",
-  "imageBackgroundColor": "#FFF",
   "description": "We are a Brisbane creative studio that has been delivering artistic and cutting-edge work since 2007. We work with ambitious clients to bring strategic thinking and creative flair to their marketing challenges, websites and rebranding projects. We are the ‘compliment creators’ behind many popular and successful brands.",
   "email": "info@ruby6.com.au",
   "image": "https://images.squarespace-cdn.com/content/v1/621868975e318f6ddcffde18/3b71cca1-42d2-41ed-a314-90b6d51bcdd3/Ruby6_Logo_Charcoal-01.png?format=500w",
+  "imageBackgroundColor": "#FFF",
   "list": [
     "Logo Design",
     "Brand Identity",
