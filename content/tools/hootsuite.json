@@ -1,0 +1,26 @@
+{
+  "color": "#686868",
+  "icon": "simple-icons:hootsuite",
+  "description": "Enhance your social media management with Hootsuite, the leading social media dashboard. Manage multiple networks and profiles and measure your campaign results.",
+  "image": "https://www.hootsuite.com/dist/images/placeholders/social-share.jpg",
+  "name": "Hootsuite",
+  "plans": {
+    "business": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 1049
+    },
+    "professional": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 69
+    },
+    "team": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 169
+    }
+  },
+  "subheading": "Social is your superpower",
+  "url": "https://www.hootsuite.com/"
+}
