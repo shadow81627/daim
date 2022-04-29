@@ -60,7 +60,16 @@
       </v-btn>
 
       <v-spacer></v-spacer>
-      <LocationButton v-if="location" v-bind="location"></LocationButton>
+      <LocationButton
+        v-if="
+          location &&
+          (location.postcode ||
+            location.city ||
+            location.region ||
+            location.country)
+        "
+        v-bind="location"
+      ></LocationButton>
       <BaseTooltipButton
         v-if="url"
         v-bind="{
