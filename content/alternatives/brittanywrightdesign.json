@@ -10,6 +10,11 @@
     "Illustrator",
     "Artist"
   ],
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "region": "Queensland"
+  },
   "name": "Brittany Wright Design",
   "plans": {
     "brand": {

@@ -9,6 +9,13 @@
     "Native Mobile Apps",
     "Iterative and Rapid Application Development"
   ],
+  "location": {
+    "city": "Wayne",
+    "countryCode": "US",
+    "postcode": "19087",
+    "region": "PA",
+    "streetAddress": "983 Old Eagle School Road Suite 616"
+  },
   "name": "Curotec",
   "subheading": "Vue.js & Nuxt.js experts",
   "url": "https://www.curotec.com/"

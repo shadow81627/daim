@@ -11,6 +11,12 @@
     "Stable",
     "Scalable"
   ],
+  "location": {
+    "city": "Wroclaw",
+    "country": "Poland",
+    "postcode": "50-382",
+    "streetAddress": "Bejamas Group Sp. z o.o. Business Link Green2Day Szczytnicka 11"
+  },
   "name": "Bejamas",
   "subheading": "Jamstack Developers For Hire",
   "url": "https://bejamas.io/"

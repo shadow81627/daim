@@ -8,7 +8,15 @@
     "Shopify Experts",
     "Laravel Artisans"
   ],
+  "location": {
+    "city": "East Brisbane",
+    "countryCode": "AU",
+    "postcode": "4169",
+    "region": "Queensland",
+    "streetAddress": "Suite 153, 42 Manilla St"
+  },
   "name": "Pixel",
+  "phone": "+61468575424",
   "plans": {
     "project": {
       "currency": "AUD",

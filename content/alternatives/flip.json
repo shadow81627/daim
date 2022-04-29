@@ -13,7 +13,11 @@
     "Software",
     "Social"
   ],
-  "location": "Fortitude Valley, Brisbane, Australia",
+  "location": {
+    "city": "Fortitude Valley",
+    "countryCode": "AU",
+    "region": "Queensland"
+  },
   "name": "Flip",
   "subheading": "We craft creative with heart and develop digital with backbone",
   "url": "https://www.weareflip.com/"

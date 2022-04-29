@@ -19,6 +19,13 @@
     "Rescue",
     "Upgrade"
   ],
+  "location": {
+    "city": "Fortitude Valley",
+    "countryCode": "AU",
+    "postalCode": "4006",
+    "region": "Queensland",
+    "streetAddress": "105 Brunswick Street"
+  },
   "name": "Speedwell",
   "subheading": "Digital Engineers",
   "url": "https://speedwell.com.au/en"

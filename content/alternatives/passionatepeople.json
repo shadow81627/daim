@@ -8,6 +8,11 @@
     "Architecture Consulting: Jamstack Enablement",
     "Expert Code Review Service"
   ],
+  "location": {
+    "city": "Amsterdam",
+    "countryCode": "NL",
+    "streetAddress": "Condensatorweg 54 1014 AX"
+  },
   "name": "Passionate People",
   "subheading": "External Engineering Experts",
   "url": "https://passionatepeople.io/"

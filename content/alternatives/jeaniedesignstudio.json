@@ -7,6 +7,11 @@
     "Website Design",
     "Social Media"
   ],
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "region": "Queensland"
+  },
   "name": "Jeanie Design Studio",
   "plans": {
     "branding": {

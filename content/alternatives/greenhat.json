@@ -13,6 +13,13 @@
     "Ecommerce Websites",
     "Online Stores & Shopping Carts"
   ],
+  "location": {
+    "city": "Fortitude Valley",
+    "countryCode": "AU",
+    "postalCode": "4006",
+    "region": "Queensland",
+    "streetAddress": "47 Baxter Street"
+  },
   "name": "Greenhat",
   "subheading": "Web & graphic design",
   "url": "https://www.greenhat.net/"

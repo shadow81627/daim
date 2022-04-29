@@ -9,6 +9,11 @@
     "Online Marketing",
     "Digital Consulting"
   ],
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "region": "Queensland"
+  },
   "name": "Eight Ball Media",
   "subheading": "Design. Web. Marketing",
   "url": "https://www.8bm.com.au/"

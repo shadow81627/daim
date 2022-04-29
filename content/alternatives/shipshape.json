@@ -10,6 +10,11 @@
     "IQ + EQ",
     "Seamless"
   ],
+  "location": {
+    "city": "Middleburg",
+    "countryCode": "US",
+    "region": "Virginia"
+  },
   "name": "Ship Shape",
   "subheading": "Our software consultants make waves",
   "url": "https://shipshape.io/"

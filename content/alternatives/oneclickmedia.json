@@ -13,7 +13,11 @@
     "Ecommerce Hosting",
     "Business Web Hosting"
   ],
-  "location": "Brisbane, Australia",
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "region": "Queensland"
+  },
   "name": "One Click Media",
   "subheading": "Ecommerce",
   "url": "https://www.oneclickmedia.com.au/"

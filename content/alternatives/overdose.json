@@ -11,6 +11,12 @@
     "Strategy",
     "Technology"
   ],
+  "location": {
+    "city": "Fortitude Valley",
+    "countryCode": "AU",
+    "region": "QLD",
+    "streetAddress": "1024 Ann Street"
+  },
   "name": "Overdose Digital",
   "sameAs": [
     "https://www.facebook.com/www.overdose.digital/",

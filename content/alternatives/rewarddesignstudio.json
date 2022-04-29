@@ -8,6 +8,11 @@
     "Digital",
     "Illustration"
   ],
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "region": "Queensland"
+  },
   "name": "Reward Design Studio",
   "url": "https://www.rewarddesignstudio.com.au/"
 }

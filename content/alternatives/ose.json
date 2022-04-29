@@ -10,7 +10,11 @@
     "AWS",
     "Google"
   ],
-  "location": "Brisbane, Australia",
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "region": "Queensland"
+  },
   "name": "OSE Digital",
   "subheading": "Ecommerce agency specialising in Magento Commerce and Shopify Plus",
   "url": "https://www.ose.com.au/"

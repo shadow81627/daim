@@ -10,6 +10,11 @@
     "Wordpress",
     "Website maintenance"
   ],
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "region": "Queensland"
+  },
   "name": "Evely Studio",
   "plans": {
     "large": {
