@@ -81,8 +81,8 @@
                       itemprop="sameAs"
                       v-on="on"
                     >
-                      <font-awesome-icon
-                        :icon="icons[icon]"
+                      <BaseIcon
+                        :icon="icons[icon] || icon"
                         :title="network"
                         size="2x"
                         fixed-width
