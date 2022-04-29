@@ -1,6 +1,6 @@
 <template>
   <v-card
-    :to="`/blog/${encodeURIComponent(slug)}`"
+    :to="to"
     class="flex d-flex flex-column justify-between"
     itemprop="blogPost"
     itemscope
@@ -31,6 +31,25 @@
     <v-card-text class="body-1 text--primary" itemprop="description">
       {{ description }}
     </v-card-text>
+
+    <v-card-actions>
+      <!-- add hidden content to set height to prevent page jank -->
+      <v-btn style="visibility: hidden" aria-hidden="true" icon>
+        <v-icon />
+        &nbsp;
+      </v-btn>
+
+      <v-spacer></v-spacer>
+      <BaseTooltipButton
+        v-if="url"
+        itemprop="url"
+        v-bind="{
+          link: url,
+          tooltip: `Learn more about ${title}`,
+          size: 'small',
+        }"
+      ></BaseTooltipButton>
+    </v-card-actions>
   </v-card>
 </template>
 
@@ -38,6 +57,7 @@
 import * as dayjs from 'dayjs';
 export default {
   props: {
+    url: { type: String, default: null },
     slug: { type: String, default: null },
     title: { type: String, default: null },
     description: { type: String, default: null },
@@ -52,6 +72,9 @@ export default {
     wordsPerMinute: { type: Number, default: 50 },
   },
   computed: {
+    to() {
+      return !this.url ? `/blog/${encodeURIComponent(this.slug)}` : undefined;
+    },
     _date() {
       return this.formatDate(this.modified ?? this.date);
     },
