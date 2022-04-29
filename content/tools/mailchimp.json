@@ -1,0 +1,28 @@
+{
+  "color": "#f8d818",
+  "description": "Grow your business on your terms with Mailchimp's All-In-One marketing, automation & email marketing platform. Easy to use - start for free!",
+  "icon": "logos:mailchimp-freddie",
+  "image": "https://eep.io/images/yzco4xsimv0y/35IRSMpQGqdpH4erzPcypG/b326de5a966e72fcd643855e07f91258/MC_Share_Card-min.png",
+  "name": "Mailchimp",
+  "plans": {
+    "essentials": {
+      "currency": "USD",
+      "interval": "month",
+      "price": 11
+    },
+    "free": {
+      "price": 0
+    },
+    "premium": {
+      "currency": "USD",
+      "interval": "month",
+      "price": 299
+    },
+    "standard": {
+      "currency": "USD",
+      "interval": "month",
+      "price": 17
+    }
+  },
+  "url": "https://mailchimp.com/en-au/"
+}
