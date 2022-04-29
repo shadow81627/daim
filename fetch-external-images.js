@@ -79,12 +79,10 @@ async function updateContent({ folder, imageFolder }) {
           console.log('        - ', offerKey);
           const imageUrl = offer.image;
           const imagePath = `${imageFolder}/offers/${slug}/${offerKey}.png`;
-          if (imageUrl) {
+          const fileExists = await checkFileExists(imagePath);
+          if (imageUrl && !fileExists) {
             if (imageUrl.startsWith('http')) {
-              const fileExists = await checkFileExists(imagePath);
-              if (!fileExists) {
-                await downloadImage(imageUrl, imagePath);
-              }
+              await downloadImage(imageUrl, imagePath);
             } else {
               await resize({ input: `static/${imageUrl}`, output: imagePath });
             }
@@ -94,22 +92,20 @@ async function updateContent({ folder, imageFolder }) {
         }
       }
     }
-    if (imageUrl) {
+    const fileExists = await checkFileExists(imagePath);
+    if (imageUrl && !fileExists) {
       if (imageUrl.startsWith('http')) {
-        const fileExists = await checkFileExists(imagePath);
-        if (!fileExists) {
-          await downloadImage(imageUrl, imagePath);
-        }
+        await downloadImage(imageUrl, imagePath);
         await resize({ input: imagePath, output: imagePath });
       } else {
         await resize({ input: `static/${imageUrl}`, output: imagePath });
       }
       const { dominant } = await sharp(imagePath).stats();
       content.color = rgbToHex(dominant);
-      const renamed = renameKeys(content);
-      const stringContent = JSON.stringify(renamed, null, 2) + '\n';
-      fs.writeFileSync(filename, stringContent);
     }
+    const renamed = renameKeys(content);
+    const stringContent = JSON.stringify(renamed, null, 2) + '\n';
+    fs.writeFileSync(filename, stringContent);
   }
 }
 
@@ -132,20 +128,31 @@ async function updateContent({ folder, imageFolder }) {
   }
 
   const images = [
-    'static/img/blog/best-front-end-framework.jpg',
-    'static/img/blog/docker.jpg',
-    'static/img/blog/git-workflow.png',
-    'static/img/blog/nuxt.png',
-    'static/img/blog/paperplane.jpg',
-    'static/img/blog/windows.jpg',
-    'static/img/blog.jpg',
-    'static/img/portfolio/scuber.jpg',
+    'img/blog/best-front-end-framework.jpg',
+    'img/blog/docker.jpg',
+    'img/blog/git-workflow.png',
+    'img/blog/nuxt.png',
+    'img/blog/paperplane.jpg',
+    'img/blog/windows.jpg',
+    'img/blog.jpg',
+    'img/portfolio/scuber.jpg',
+    'https://begriffs.com/images/reorder-list.png',
   ];
   // get list of urls to crawl from content files
-  for await (const filename of images) {
-    const { dominant } = await sharp(filename).stats();
+  for await (const image of images) {
+    const slug = path.parse(image).name;
+    const imagePath = `static/img/blog/${slug}.png`;
+    if (image.startsWith('http')) {
+      const fileExists = await checkFileExists(image);
+      if (!fileExists) {
+        await downloadImage(image, imagePath);
+      }
+      await resize({ input: imagePath, output: imagePath });
+    } else {
+      await resize({ input: `static/${image}`, output: imagePath });
+    }
+    const { dominant } = await sharp(imagePath).stats();
     const hex = rgbToHex(dominant);
-    const slug = path.parse(filename).name;
     console.log(slug, hex);
   }
 })();
