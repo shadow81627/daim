@@ -10,7 +10,7 @@
       <v-list dense>
         <v-list-item
           v-for="item in items"
-          :key="item.text"
+          :key="item.name"
           :to="localePath(item.route ? item.route : {})"
           nuxt
           class="text-decoration-none"
@@ -20,7 +20,7 @@
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
-              item.text
+              item.name
             }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -55,14 +55,14 @@
       <v-tabs class="hidden-sm-and-down" optional right>
         <v-tabs-slider></v-tabs-slider>
         <v-tab
-          v-for="{ text, route } in items"
+          v-for="{ name, route } in items"
           :key="route"
           :to="localePath(route ? route : {})"
           text
           itemscope
           itemtype="https://schema.org/SiteNavigationElement"
         >
-          {{ text }}
+          {{ name }}
         </v-tab>
       </v-tabs>
     </v-app-bar>
@@ -79,7 +79,9 @@
 </template>
 
 <script>
+import { sortBy } from 'lodash-es';
 import TheFooter from '@/components/layout/the-footer.vue';
+import fractionToDecimal from '~/utils/fraction-to-decimal';
 export default {
   components: {
     TheFooter,
@@ -87,44 +89,15 @@ export default {
   data() {
     return {
       drawer: false,
-      items: [
-        {
-          icon: 'carbon:home',
-          text: 'Home',
-          route: 'index',
-        },
-        {
-          icon: 'carbon:blog',
-          text: 'Blog',
-          route: 'blog',
-        },
-        {
-          icon: 'carbon:person',
-          text: 'Team',
-          route: 'people',
-        },
-        {
-          icon: 'carbon:portfolio',
-          text: 'Portfolio',
-          route: 'portfolio',
-        },
-        {
-          icon: 'carbon:tool-box',
-          text: 'Tools',
-          route: 'tools',
-        },
-        {
-          text: 'Alternatives',
-          icon: 'carbon:compare',
-          route: 'alternatives',
-        },
-        {
-          icon: 'bx:message',
-          text: 'Contact',
-          route: 'contact',
-        },
-      ],
+      items: [],
     };
+  },
+  async fetch() {
+    const items = (await this.$content('pages').fetch()).map((item) => ({
+      ...item,
+      pos: fractionToDecimal(item.pos),
+    }));
+    this.items = sortBy(items, ['pos']);
   },
   head() {
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
