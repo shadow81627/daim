@@ -77,7 +77,7 @@ export default {
         location: { city, region, countryCode, postalcode: postcode },
         summary,
       },
-    } = await this.$content('resume').fetch();
+    } = await this.$content('team', 'damien-robinson').fetch();
 
     const locale = 'en';
     const country = countries.getName(countryCode, locale);
