@@ -1,5 +1,8 @@
 {
+  "color": "#e8e8e8",
+  "description": "Organically raise high quality content to the top of search results.",
   "icon": "fa:search",
+  "image": "/img/services/seo.png",
   "name": "SEO",
-  "description": "Organically raise high quality content to the top of search results."
+  "pos": "1/2"
 }

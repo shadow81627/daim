@@ -1,5 +1,8 @@
 {
+  "color": "#f8f8f8",
+  "description": "Keep the conversation going with multi-channel messaging automation.",
   "icon": "fa:paper-plane",
+  "image": "/img/services/messaging.png",
   "name": "Messaging",
-  "description": "Keep the conversation going with multi-channel messaging automation."
+  "pos": "1/3"
 }

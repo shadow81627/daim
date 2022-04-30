@@ -31,12 +31,22 @@
 </template>
 
 <script>
+import { sortBy } from 'lodash-es';
+import fractionToDecimal from '~/utils/fraction-to-decimal';
 export default {
   data: () => ({
     cards: [],
   }),
   async fetch() {
-    this.cards = await this.$content('services').fetch();
+    const data = await this.$content('services').fetch();
+    const items = sortBy(
+      data.map((item) => ({
+        ...item,
+        pos: fractionToDecimal(item.pos),
+      })),
+      ['pos'],
+    ).reverse();
+    this.cards = items;
   },
 };
 </script>

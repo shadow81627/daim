@@ -1,5 +1,8 @@
 {
+  "color": "#282838",
+  "description": "Rapid prototyping of bespoke designs into fast, feature rich websites.",
   "icon": "fa:keyboard-o",
+  "image": "/img/services/websites.png",
   "name": "Websites",
-  "description": "Rapid prototyping of bespoke designs into fast, feature rich websites."
+  "pos": "1/1"
 }

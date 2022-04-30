@@ -1,5 +1,8 @@
 {
+  "color": "#282828",
+  "description": "Dedication to maintaining quality websites means we are always reachable.",
   "icon": "fa:puzzle-piece",
+  "image": "/img/services/support.png",
   "name": "Support",
-  "description": "Dedication to maintaining quality websites means we are always reachable."
+  "pos": "1/4"
 }
