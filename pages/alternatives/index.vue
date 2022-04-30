@@ -42,7 +42,6 @@
 
 <script>
 import { sortBy, maxBy } from 'lodash-es';
-import ImageSources from '@/mixins/srcset';
 import Feature from '~/components/feature';
 import PriceRange from '~/components/price-range';
 import textLength from '~/utils/feature-text-length';
@@ -51,7 +50,6 @@ export default {
     Feature,
     PriceRange,
   },
-  mixins: [ImageSources],
   async asyncData({ $content }) {
     const items = sortBy(
       (await $content('alternatives').fetch()).filter(
