@@ -1,5 +1,17 @@
 # Releases
 
+## [1.45.9](https://github.com/shadow81627/daim/compare/v1.45.8...v1.45.9) (2022-04-30)
+
+### Bug Fixes
+
+- **feature:** aspect ratio from width and height props ([d1cdbec](https://github.com/shadow81627/daim/commit/d1cdbece7176beadf0e2770bafaf1bab5c9d6832))
+- **fetch external images:** allow skipping key renaming ([7ec8206](https://github.com/shadow81627/daim/commit/7ec8206a2d03aca49353e9c4594bc93bdf767fd8))
+- **team page:** make into list of team members ([9707444](https://github.com/shadow81627/daim/commit/97074446cf30c72f09402f54d86fe44f4716678d))
+
+### Performance Improvements
+
+- **alternatives:** remove unused image mixin ([ca2ff69](https://github.com/shadow81627/daim/commit/ca2ff69d6621daf426c27e7a5ab6c800016c8436))
+
 ## [1.45.8](https://github.com/shadow81627/daim/compare/v1.45.7...v1.45.8) (2022-04-30)
 
 ### Bug Fixes
