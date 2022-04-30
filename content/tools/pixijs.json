@@ -1,0 +1,20 @@
+{
+  "color": "#f8f8f8",
+  "description": "Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.",
+  "image": "https://pixijs.com/images/logo.svg",
+  "list": [
+    "Fast",
+    "Flexible",
+    "Free"
+  ],
+  "name": "PixiJS",
+  "subheading": "HTML5 Creation Engine",
+  "url": "https://pixijs.com/",
+  "xplans": {
+    "open-source": {
+      "description": "PixiJS is and always will be Open Source, with a large and supportive community pushing its growth and evolution.",
+      "name": "Free",
+      "price": 0
+    }
+  }
+}
