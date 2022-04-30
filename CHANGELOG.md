@@ -1,5 +1,12 @@
 # Releases
 
+## [1.45.10](https://github.com/shadow81627/daim/compare/v1.45.9...v1.45.10) (2022-04-30)
+
+### Bug Fixes
+
+- **fetch external images:** remove duplicate / for local image ([472c60b](https://github.com/shadow81627/daim/commit/472c60babf3f2224d7ccb0f076e30311a618f68f))
+- **services:** add page ([ae9ce97](https://github.com/shadow81627/daim/commit/ae9ce973e76e46a9da65c8f268e6e206cab4af8f))
+
 ## [1.45.9](https://github.com/shadow81627/daim/compare/v1.45.8...v1.45.9) (2022-04-30)
 
 ### Bug Fixes
