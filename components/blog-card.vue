@@ -21,10 +21,10 @@
       <h2 itemprop="name">{{ title }}</h2>
     </v-card-title>
     <v-card-subtitle class="body-1">
-      <time :datetime="date">{{ formatDate(date) }}</time
-      ><span> • </span
-      ><time :datetime="`${readTime(JSON.stringify(body))}m`"
-        >{{ readTime(JSON.stringify(body)) }} min read</time
+      <time :datetime="date">{{ formatDate(date) }}</time>
+      <span v-if="_readTime"> • </span>
+      <time v-if="_readTime" :datetime="`${_readTime}m`"
+        >{{ _readTime }} min read</time
       >
       <span style="display: none">{{ words(JSON.stringify(body)) }}</span>
     </v-card-subtitle>
@@ -61,7 +61,7 @@ export default {
     slug: { type: String, default: null },
     title: { type: String, default: null },
     description: { type: String, default: null },
-    body: { type: String, default: null },
+    body: { type: Object, default: () => {} },
     image: { type: String, default: '/img/blog.jpg' },
     date: { type: String, default: null },
     modified: { type: String, default: null },
@@ -72,6 +72,12 @@ export default {
     wordsPerMinute: { type: Number, default: 50 },
   },
   computed: {
+    _readTime() {
+      if (!this.body?.children?.length) {
+        return undefined;
+      }
+      return this.readTime(JSON.stringify(this.body));
+    },
     to() {
       return !this.url ? `/blog/${encodeURIComponent(this.slug)}` : undefined;
     },
