@@ -106,7 +106,8 @@ async function updateContent({
         await downloadImage(imageUrl, imagePath);
         await resize({ input: imagePath, output: imagePath });
       } else {
-        await resize({ input: `static/${imageUrl}`, output: imagePath });
+        const input = `static/${imageUrl}`.replace('//', '/');
+        await resize({ input, output: imagePath });
       }
       const { dominant } = await sharp(imagePath).stats();
       content.color = rgbToHex(dominant);
@@ -137,6 +138,11 @@ async function updateContent({
       imageFolder: 'static/img/team/',
       imageKey: 'basics.picture',
       rename: false,
+    },
+    {
+      slug: 'services',
+      folder: 'content/services/',
+      imageFolder: 'static/img/services/',
     },
   ];
   for (const content of contents) {
