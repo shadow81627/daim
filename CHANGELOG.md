@@ -1,5 +1,28 @@
 # Releases
 
+## [1.45.8](https://github.com/shadow81627/daim/compare/v1.45.7...v1.45.8) (2022-04-30)
+
+### Bug Fixes
+
+- **blog card:** allow external url ([632de4b](https://github.com/shadow81627/daim/commit/632de4bfe3a4681db1598d62157404d89944ac67))
+- **blog card:** hide read time if no body content ([29715d4](https://github.com/shadow81627/daim/commit/29715d4f00a802f02cc3cb673b479a8e92aff52a))
+- **feature:** add location button ([be407c3](https://github.com/shadow81627/daim/commit/be407c350e21202a0d9bf26f08f96c81a3892ef0))
+- **feature:** button tooltip name rather than title ([b6b3877](https://github.com/shadow81627/daim/commit/b6b387763cb6b76ca51eb914ada4c3f5f69e655c))
+- **feature:** only show location if we have data for it ([4e74752](https://github.com/shadow81627/daim/commit/4e74752011ba5a221959c45fdd505ecc2f8e35ba))
+- **fetch external images:** check if blog image already exists ([02651d4](https://github.com/shadow81627/daim/commit/02651d4d07657855d56f2dc4584e81609ea0b949))
+- **fetch external images:** http blog image url ([3a2ca8f](https://github.com/shadow81627/daim/commit/3a2ca8f15e46a768c07eaa3b7f937b9042a15c3d))
+- **location button:** add street address ([63ea8ab](https://github.com/shadow81627/daim/commit/63ea8ab18ddc591dfb497c8e65dd5a0f0baadf8a))
+- **location button:** show country code ([123734e](https://github.com/shadow81627/daim/commit/123734e00c1d950ec032393bdf03972a911648c3))
+- **price range:** default margin 0 ([1af3ef7](https://github.com/shadow81627/daim/commit/1af3ef76fb876017345bb33dc3b3c1e3a43aeacf))
+- **price range:** remove free ([a997326](https://github.com/shadow81627/daim/commit/a997326e6c5ee06ec7e0bb7149a6f690d2712359))
+- **resume:** add polywork ([cb15702](https://github.com/shadow81627/daim/commit/cb15702dc7ec1d71657fb5ba8dec4de26427d4d3))
+- **utils:** add fraction to decimal ([31dc571](https://github.com/shadow81627/daim/commit/31dc571483b2c37109a809b832ac2daeba89e36b))
+- **utils price:** minimumFractionDigits 0 when whole number ([53205ad](https://github.com/shadow81627/daim/commit/53205addf7ed3ee904f70b6fec4d0ea928ef3d44))
+
+### Performance Improvements
+
+- **utils price:** Intl number format ([17b2173](https://github.com/shadow81627/daim/commit/17b2173bce5780810698d2a44b2f6da80058c9ae))
+
 ## [1.45.7](https://github.com/shadow81627/daim/compare/v1.45.6...v1.45.7) (2022-04-28)
 
 ### Bug Fixes
