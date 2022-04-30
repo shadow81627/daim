@@ -8,7 +8,7 @@
       :srcset="_srcset.srcset"
       :sizes="_srcset.size"
       cover
-      :aspect-ratio="16 / 9"
+      :aspect-ratio="imageWidth / imageHeight"
       :style="`background-color: ${_imageBackgroundColor}`"
     ></v-img>
     <v-card-title>
