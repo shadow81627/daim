@@ -142,18 +142,19 @@ async function updateContent({ folder, imageFolder }) {
   // get list of urls to crawl from content files
   for await (const image of images) {
     const slug = path.parse(image).name;
+    console.log(slug);
     const imagePath = `static/img/blog/${slug}.png`;
-    if (image.startsWith('http')) {
-      const fileExists = await checkFileExists(image);
-      if (!fileExists) {
+    const fileExists = await checkFileExists(imagePath);
+    if (!fileExists) {
+      if (image.startsWith('http')) {
         await downloadImage(image, imagePath);
+        await resize({ input: imagePath, output: imagePath });
+      } else {
+        await resize({ input: `static/${image}`, output: imagePath });
       }
-      await resize({ input: imagePath, output: imagePath });
-    } else {
-      await resize({ input: `static/${image}`, output: imagePath });
     }
-    const { dominant } = await sharp(imagePath).stats();
-    const hex = rgbToHex(dominant);
-    console.log(slug, hex);
+    // const { dominant } = await sharp(imagePath).stats();
+    // const hex = rgbToHex(dominant);
+    // console.log(slug, hex);
   }
 })();
