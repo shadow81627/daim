@@ -137,6 +137,7 @@ async function updateContent({ folder, imageFolder }) {
     'img/blog.jpg',
     'img/portfolio/scuber.jpg',
     'https://begriffs.com/images/reorder-list.png',
+    'https://wearepixel.com.au/static/93dc2daa73fab468fc19e7d053047220/47498/selecting_a_digital_agency.jpg',
   ];
   // get list of urls to crawl from content files
   for await (const image of images) {
