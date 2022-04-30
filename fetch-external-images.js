@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 const sharp = require('sharp');
+const lodash = require('lodash');
 const getFiles = require('./utils/get-files');
 const normalizeData = require('./utils/normalize-data');
 
@@ -61,12 +62,19 @@ async function resize({ input, output }) {
   }
 }
 
-async function updateContent({ folder, imageFolder }) {
+async function updateContent({
+  folder,
+  imageFolder,
+  imageKey = 'image',
+  rename = true,
+}) {
   // get list of urls to crawl from content files
   for await (const filename of getFiles(folder)) {
     const data = fs.readFileSync(filename);
     const content = JSON.parse(data);
-    const imageUrl = content.image;
+    let imageUrl = lodash.get(content, imageKey) ?? '';
+    imageUrl = imageUrl.replace(/^\/\//, 'https://');
+    imageUrl = imageUrl.replace(/^https:\/\/daim.dev\//, '');
     const slug = path.parse(filename).name;
     const imagePath = `${imageFolder}${slug}.png`;
     console.log(slug);
@@ -103,9 +111,11 @@ async function updateContent({ folder, imageFolder }) {
       const { dominant } = await sharp(imagePath).stats();
       content.color = rgbToHex(dominant);
     }
-    const renamed = renameKeys(content);
-    const stringContent = JSON.stringify(renamed, null, 2) + '\n';
-    fs.writeFileSync(filename, stringContent);
+    if (rename) {
+      const renamed = renameKeys(content);
+      const stringContent = JSON.stringify(renamed, null, 2) + '\n';
+      fs.writeFileSync(filename, stringContent);
+    }
   }
 }
 
@@ -120,6 +130,13 @@ async function updateContent({ folder, imageFolder }) {
       slug: 'alternatives',
       folder: 'content/alternatives/',
       imageFolder: 'static/img/alternatives/',
+    },
+    {
+      slug: 'team',
+      folder: 'content/team/',
+      imageFolder: 'static/img/team/',
+      imageKey: 'basics.picture',
+      rename: false,
     },
   ];
   for (const content of contents) {
