@@ -1,10 +1,15 @@
 ---
 title: What is Nuxt?
 date: 2020-09-28T01:40:37.548Z
+modified: 2022-05-01T05:09:19.195Z
 description: The open source framework making web development simple and powerful. Build your next Vue.js application with confidence using NuxtJS.
 image: '/img/blog/nuxt.png'
 color: '#f8f8f8'
 ---
+
+<div style="position: relative;padding-bottom: 56.25%;height: 0;overflow: hidden;max-width: 100%;">
+<iframe style="  position: absolute;top: 0;left: 0;width: 100%;height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/noq-ZHTD2Cg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Features
 
@@ -59,3 +64,7 @@ The application is now running on <http://localhost:3000>.
 ## Summary
 
 Now you know what makes Nuxt so awesome and how to get started. You can check out my other post [Build a Static Site Blog with Nuxt](/blog/build-a-static-site-blog).
+
+## Sources
+
+- [Bejamas | Nuxtjs](https://bejamas.io/discovery/static-site-generators/nuxtjs/)
