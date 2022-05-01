@@ -1,5 +1,12 @@
 # Releases
 
+## [1.45.11](https://github.com/shadow81627/daim/compare/v1.45.10...v1.45.11) (2022-05-01)
+
+### Bug Fixes
+
+- **services:** add hourly rate ([e57dd2e](https://github.com/shadow81627/daim/commit/e57dd2ea15f64ba15e6074b538d967fe47520f60))
+- **services:** add limit ([5bd9299](https://github.com/shadow81627/daim/commit/5bd9299e7eed19a9bb89d5ff9a85f17b43497f7b))
+
 ## [1.45.10](https://github.com/shadow81627/daim/compare/v1.45.9...v1.45.10) (2022-04-30)
 
 ### Bug Fixes
