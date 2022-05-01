@@ -1,0 +1,16 @@
+{
+  "color": "#080808",
+  "imageBackgroundColor": "#FFFFFF",
+  "description": "Our community is designed for Business Professionals, Mobile Workforce, Consultants, Freelancers, Working Parents, Micro & Small Businesses, Trades, Creatives and more. We offer leadership and mentoring support for micro, small and start-up businesses in the community.",
+  "image": "https://centralbusinessassociates.com.au/wp-content/uploads/2019/02/CBA-Logo-with-Values-01-300x196-1.png",
+  "location": {
+    "city": "Manly",
+    "countryCode": "AU",
+    "postcode": "4179",
+    "region": "QLD",
+    "streetAddress": "First Floor, 455 Esplanade"
+  },
+  "name": "Central Business Associates",
+  "subheading": "Collaboration in Brisbane’s Bayside",
+  "url": "https://centralbusinessassociates.com.au/"
+}

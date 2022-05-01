@@ -1,11 +1,5 @@
 {
   "color": "#f8f8f8",
-  "location": {
-    "city": "Brisbane",
-    "countryCode": "AU",
-    "postcode": "4000",
-    "region": "QLD"
-  },
   "description": "Brisbane based graphic design support for business owners who want to transform their brand and take it to the next level.",
   "email": "design@steinart.com.au",
   "image": "https://steinart.com.au/wp-content/uploads/2020/11/SteinArt_Website-home-image.png",
@@ -15,6 +9,12 @@
     "Digital",
     "Social"
   ],
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "postcode": "4000",
+    "region": "QLD"
+  },
   "name": "Stein Art",
   "subheading": "Graphic Design",
   "url": "https://steinart.com.au/"
