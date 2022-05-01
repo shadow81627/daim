@@ -8,6 +8,28 @@
     ></BlogHero>
     <v-container>
       <v-row>
+        <v-col>
+          <h2>Retainer Services</h2>
+          <div>
+            <p>
+              We prefer to quote projects with full scope and understanding of
+              the work. This allows us to provide a more tailored quote so that
+              we can give you a fixed price for a project. The quote is
+              estimated using our base hourly rate. Planning ahead allows us to
+              allocate time to prioritise your project rather than jumping
+              between ad hoc tasks. We can offer discounted hourly rates when
+              committing to a large project.
+            </p>
+            <p>
+              We can work on ad hoc tasks for our
+              <strong>base hourly rate at $98 per hour</strong>. This price
+              covers the compensation for developers, designers, and other
+              staff.
+            </p>
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
         <v-col
           v-for="item in items"
           :key="item.slug"
