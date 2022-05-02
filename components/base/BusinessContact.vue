@@ -17,7 +17,7 @@
           space="0"
           style="overflow: hidden"
         >
-          <mailgo v-if="type" :href="`${type}:${text}`" class="px-0"></mailgo>
+          <mailgo v-if="type" :href="`${type}:${text}`"></mailgo>
           <v-btn
             v-else-if="href"
             target="_blank"
@@ -25,16 +25,25 @@
             text
             :href="href"
             rel="noopener"
-            class="px-0"
           >
+            <BaseIcon
+              v-if="icon && typeof icon === 'string'"
+              :icon="icon"
+              style="width: 14px; margin-right: 0.3em"
+              color="black"
+            ></BaseIcon>
             <font-awesome-icon
-              v-if="icon"
+              v-else-if="icon"
               :icon="icon"
               fixed-width
               pull="left"
             />
             {{ text || `Visit ${t}` }}
-            <BaseIcon :icon="mdiOpenInNew" color="grey"></BaseIcon>
+            <BaseIcon
+              icon="mdi:open-in-new"
+              style="width: 14px; margin-left: 0.3em"
+              color="grey"
+            ></BaseIcon>
           </v-btn>
           <span v-else>{{ text }}</span>
         </BaseAvatarCard>
@@ -52,19 +61,18 @@
 <script>
 import { mdiOpenInNew } from '@mdi/js';
 import {
-  faMapMarker,
-  faPhone,
-  faEnvelope,
+  // faMapMarker,
+  // faPhone,
+  // faEnvelope,
   faArrowRight,
 } from '@fortawesome/free-solid-svg-icons';
-import {
-  faGithub,
-  faLinkedin,
-  // faTwitter,
-  // faYoutube,
-  // faFacebook,
-  // faNpm,
-} from '@fortawesome/free-brands-svg-icons';
+import // faGithub,
+// faLinkedin,
+// faTwitter,
+// faYoutube,
+// faFacebook,
+// faNpm,
+'@fortawesome/free-brands-svg-icons';
 import Mailgo from '@/components/mailgo.vue';
 export default {
   components: {
@@ -80,7 +88,7 @@ export default {
     mdiOpenInNew,
     business: [
       {
-        icon: faMapMarker,
+        icon: 'fa:map-marker',
         title: 'Location',
         text: 'New Farm, Australia',
         href: `https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
@@ -88,26 +96,31 @@ export default {
         )}`,
       },
       {
-        icon: faPhone,
+        icon: 'fa:phone',
         title: 'Phone',
         text: '+61-437-606-977',
         type: 'tel',
       },
       {
-        icon: faEnvelope,
+        icon: 'fa:envelope',
         title: 'Email',
         text: 'contact@daim.dev',
         type: 'mailto',
       },
       {
-        icon: faLinkedin,
+        icon: 'fa:linkedin',
         title: 'LinkedIn',
         href: 'https://www.linkedin.com/company/daim-digital',
       },
       {
-        icon: faGithub,
+        icon: 'fa:github',
         title: 'GitHub',
         href: 'https://github.com/daim-dev',
+      },
+      {
+        icon: 'mdi:car-clutch',
+        title: 'Clutch',
+        href: 'https://clutch.co/profile/daim-digital',
       },
     ],
   }),
