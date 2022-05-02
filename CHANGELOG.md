@@ -1,5 +1,12 @@
 # Releases
 
+## [1.45.12](https://github.com/shadow81627/daim/compare/v1.45.11...v1.45.12) (2022-05-02)
+
+### Bug Fixes
+
+- **contact:** add clutch ([b18a94c](https://github.com/shadow81627/daim/commit/b18a94cbde2f757725452aac49015e86178c4c35))
+- **contact:** move location below email ([00fe8f0](https://github.com/shadow81627/daim/commit/00fe8f0f1819be981a5123baeb9331dcaa3186db))
+
 ## [1.45.11](https://github.com/shadow81627/daim/compare/v1.45.10...v1.45.11) (2022-05-01)
 
 ### Bug Fixes
