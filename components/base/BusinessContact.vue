@@ -88,14 +88,6 @@ export default {
     mdiOpenInNew,
     business: [
       {
-        icon: 'fa:map-marker',
-        title: 'Location',
-        text: 'New Farm, Australia',
-        href: `https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
-          'New Farm, Australia',
-        )}`,
-      },
-      {
         icon: 'fa:phone',
         title: 'Phone',
         text: '+61-437-606-977',
@@ -106,6 +98,14 @@ export default {
         title: 'Email',
         text: 'contact@daim.dev',
         type: 'mailto',
+      },
+      {
+        icon: 'fa:map-marker',
+        title: 'Location',
+        text: 'New Farm, Australia',
+        href: `https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
+          'New Farm, Australia',
+        )}`,
       },
       {
         icon: 'fa:linkedin',
