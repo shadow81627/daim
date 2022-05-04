@@ -1,0 +1,24 @@
+{
+  "color": "#080818",
+  "description": "White Peak Digital is an Award Winning Digital Design Agency. Get in front of your competition with a website and brand that delivers real results.",
+  "email": "contact@whitepeakdigital.com",
+  "image": "https://www.whitepeakdigital.com/wp-content/uploads/2020/08/White-Peak-Digital-Brisbane-Web-Design.png",
+  "list": [
+    "Web Design",
+    "Brand Design",
+    "Digital Marketing",
+    "Professional Copywriting",
+    "eCommerce",
+    "Mobile App Development"
+  ],
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "postcode": "4000",
+    "region": "QLD"
+  },
+  "name": "White Peak Digital",
+  "phone": "1300 489 144",
+  "subheading": "Award-Winning Digital Design Agency",
+  "url": "http://www.whitepeakdigital.com"
+}
