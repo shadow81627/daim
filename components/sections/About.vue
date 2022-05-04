@@ -28,7 +28,13 @@
                     <span itemprop="areaServed">
                       <LocationButton
                         v-if="city || region || postcode || country"
-                        v-bind="{ city, region, postcode, country }"
+                        v-bind="{
+                          city,
+                          region,
+                          postcode,
+                          country,
+                          streetAddress,
+                        }"
                       ></LocationButton>
                     </span>
                   </div>
@@ -60,6 +66,7 @@ export default {
       email: 'contact@daim.dev',
       phone: undefined,
       city: undefined,
+      streetAddress: undefined,
       region: undefined,
       postcode: undefined,
       country: undefined,
@@ -74,7 +81,13 @@ export default {
         label,
         // email,
         phone,
-        location: { city, region, countryCode, postalcode: postcode },
+        location: {
+          streetAddress,
+          city,
+          region,
+          countryCode,
+          postalcode: postcode,
+        },
         summary,
       },
     } = await this.$content('team', 'damien-robinson').fetch();
@@ -91,6 +104,7 @@ export default {
       country,
       region,
       city,
+      streetAddress,
       postcode,
       summary,
     };

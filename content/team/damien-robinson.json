@@ -6,8 +6,10 @@
     "label": "Digital Consultant",
     "lastname": "Robinson",
     "location": {
+      "streetAddress": "Salt Space 1/888 Brunswick Street",
       "city": "New Farm",
       "countryCode": "AU",
+      "country": "Australia",
       "postalCode": "4005",
       "region": "Queensland"
     },
@@ -119,10 +121,7 @@
         }
       ],
       "name": "PocketPasta",
-      "roles": [
-        "Founder",
-        "Developer"
-      ],
+      "roles": ["Founder", "Developer"],
       "startDate": "2017-06-18",
       "type": "application",
       "url": "https://pocketpasta.com"
@@ -142,9 +141,7 @@
         }
       ],
       "name": "Brisbane City Council Free Native Plant Gallery",
-      "roles": [
-        "Developer"
-      ],
+      "roles": ["Developer"],
       "startDate": "2020-08-07",
       "type": "application"
     },
@@ -160,9 +157,7 @@
         }
       ],
       "name": "scUber",
-      "roles": [
-        "Front End Developer"
-      ],
+      "roles": ["Front End Developer"],
       "sources": [
         "https://www.xcommedia.com.au/case-study-scUber.php",
         "https://teq.queensland.com/industry-resources/the-great-barrier-reef/scuber"

@@ -47,7 +47,7 @@
                 <mailgo v-if="phone" :href="`tel:${phone}`"></mailgo>
                 <LocationButton
                   v-if="city || region || postcode || country"
-                  v-bind="{ city, region, postcode, country }"
+                  v-bind="{ city, region, postcode, country, streetAddress }"
                 ></LocationButton>
                 <!-- <span style="display: none" itemprop="nationality"
                   >Australian</span
@@ -450,7 +450,13 @@ export default {
         label,
         email,
         phone,
-        location: { city, region, countryCode, postalcode: postcode },
+        location: {
+          city,
+          region,
+          countryCode,
+          postalcode: postcode,
+          streetAddress,
+        },
         summary,
       },
       work,
@@ -472,6 +478,7 @@ export default {
       country,
       region,
       city,
+      streetAddress,
       postcode,
       summary,
       work,

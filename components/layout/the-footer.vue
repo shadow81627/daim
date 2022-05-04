@@ -36,15 +36,39 @@
       </v-row>
       <v-row no-gutters>
         <v-col cols="auto">
-          <v-card flat tile color="transparent">
+          <v-card
+            flat
+            tile
+            color="transparent"
+            :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
+              `${streetAddress || ''} ${city || ''} ${region || ''} ${
+                postcode || ''
+              } ${country || ''}`,
+            )}`"
+          >
             <v-card-text class="py-2">
               <font-awesome-icon
                 :icon="faMapMarker"
                 title="location"
                 fixed-width
               />
-              <span>New Farm, Australia</span>
-              <span>© <time datetime="2019">2019</time> | Damien Robinson</span>
+              <span v-if="streetAddress" itemprop="streetAddress">{{
+                streetAddress
+              }}</span>
+              <span v-if="city" itemprop="addressLocality">{{ city }}</span>
+              <span v-show="!city" itemprop="addressRegion">{{ region }}</span>
+              <span v-show="false" v-if="postcode" itemprop="postalCode">{{
+                postcode
+              }}</span
+              ><span
+                >{{
+                  (country || countryCode) && (postcode || city || region)
+                    ? ','
+                    : ''
+                }}&nbsp;</span
+              ><span itemprop="addressCountry">{{
+                country || countryCode
+              }}</span>
             </v-card-text>
           </v-card>
         </v-col>
@@ -67,6 +91,12 @@ export default {
   data: () => ({
     utc: false,
     faMapMarker,
+    streetAddress: 'Salt Space 1/888 Brunswick Street',
+    city: 'New Farm',
+    countryCode: 'AU',
+    country: 'Australia',
+    postalCode: '4005',
+    region: 'Queensland',
   }),
   methods: {
     shortHash: (value) => (value ? value.substring(0, 7) : null),

@@ -5,7 +5,9 @@
         <slot></slot>
       </BaseInfoCard>
 
-      <template v-for="({ icon, text, title: t, type, href }, i) in business">
+      <template
+        v-for="({ icon, text, title: t, type, href, ...item }, i) in business"
+      >
         <BaseAvatarCard
           :key="i"
           :xicon="$vuetify.breakpoint.mdAndUp ? icon : undefined"
@@ -17,7 +19,11 @@
           space="0"
           style="overflow: hidden"
         >
-          <mailgo v-if="type" :href="`${type}:${text}`"></mailgo>
+          <LocationButton
+            v-if="type === 'location'"
+            v-bind="item.location"
+          ></LocationButton>
+          <mailgo v-else-if="type" :href="`${type}:${text}`"></mailgo>
           <v-btn
             v-else-if="href"
             target="_blank"
@@ -60,23 +66,13 @@
 
 <script>
 import { mdiOpenInNew } from '@mdi/js';
-import {
-  // faMapMarker,
-  // faPhone,
-  // faEnvelope,
-  faArrowRight,
-} from '@fortawesome/free-solid-svg-icons';
-import // faGithub,
-// faLinkedin,
-// faTwitter,
-// faYoutube,
-// faFacebook,
-// faNpm,
-'@fortawesome/free-brands-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import LocationButton from '../LocationButton.vue';
 import Mailgo from '@/components/mailgo.vue';
 export default {
   components: {
     Mailgo,
+    LocationButton,
   },
   props: {
     dark: Boolean,
@@ -100,12 +96,18 @@ export default {
         type: 'mailto',
       },
       {
+        type: 'location',
         icon: 'fa:map-marker',
         title: 'Location',
         text: 'New Farm, Australia',
-        href: `https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
-          'New Farm, Australia',
-        )}`,
+        location: {
+          streetAddress: 'Salt Space 1/888 Brunswick Street',
+          city: 'New Farm',
+          countryCode: 'AU',
+          country: 'Australia',
+          postalCode: '4005',
+          region: 'Queensland',
+        },
       },
       {
         icon: 'fa:linkedin',
