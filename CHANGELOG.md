@@ -1,5 +1,11 @@
 # Releases
 
+## [1.45.13](https://github.com/shadow81627/daim/compare/v1.45.12...v1.45.13) (2022-05-04)
+
+### Bug Fixes
+
+- **address:** add street ([0c3c580](https://github.com/shadow81627/daim/commit/0c3c580fb96ea0e4a8a1f658d52d2fced09a40d2))
+
 ## [1.45.12](https://github.com/shadow81627/daim/compare/v1.45.11...v1.45.12) (2022-05-02)
 
 ### Bug Fixes
