@@ -71,29 +71,38 @@ export default {
     },
     query: {
       get() {
+        const foundQuery =
+          this.$route && this.$route.fullPath
+            ? qs.parse(qs.extract(this.$route.fullPath), {
+                parseNumbers: true,
+                parseBooleans: true,
+              }) ?? {}
+            : {};
+
         const query = JSON.parse(
           JSON.stringify({
             ...this.defaultQuery,
-            ...qs.parse(qs.extract(this.$route.fullPath), {
-              parseNumbers: true,
-              parseBooleans: true,
-            }),
+            ...foundQuery,
           }),
         );
-        return query;
+        return this.cleanQuery(query);
       },
       set(value) {
-        const vm = this;
-        const query = omitBy(value, function (v, k) {
-          const isBlank = v === undefined || v === null || v === '';
-          const isDefault = v === vm.defaultQuery[k];
-          return isBlank || isDefault;
-        });
+        const query = this.cleanQuery(value);
         this.$router.push({ path: this.$route.path, query });
       },
     },
   },
   methods: {
+    cleanQuery(value) {
+      const vm = this;
+      const query = omitBy(value, function (v, k) {
+        const isBlank = v === undefined || v === null || v === '';
+        const isDefault = v === vm.defaultQuery[k];
+        return isBlank || isDefault;
+      });
+      return query;
+    },
     search: debounce(function (value) {
       const search = value;
       this.query = { ...this.query, search };
