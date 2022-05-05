@@ -8,32 +8,8 @@
     ></BlogHero>
     <v-container>
       <v-row>
-        <v-col
-          v-for="item in items"
-          :key="item.slug"
-          cols="12"
-          sm="6"
-          md="6"
-          lg="4"
-          xl="3"
-          class="d-flex flex-column"
-        >
-          <Feature
-            v-bind="{
-              ...item,
-              url: item.offers ? `/alternatives/${item.slug}` : item.url,
-              image: `/img/alternatives/${item.slug}.png`,
-              imageColor: item.color,
-              iconColor: item.iconColor,
-              icon: item.icon,
-            }"
-          >
-            <PriceRange
-              v-if="item.plans"
-              :items="item.plans"
-              :margin="0"
-            ></PriceRange>
-          </Feature>
+        <v-col>
+          <DataIterator :items="items"></DataIterator>
         </v-col>
       </v-row>
     </v-container>
@@ -42,17 +18,20 @@
 
 <script>
 import { sortBy, maxBy } from 'lodash-es';
-import Feature from '~/components/feature';
-import PriceRange from '~/components/price-range';
 import textLength from '~/utils/feature-text-length';
 export default {
-  components: {
-    Feature,
-    PriceRange,
+  data() {
+    return {
+      heading: 'Alternatives',
+      description:
+        'Compare alternative digital agencies and find the best one for your business.',
+      items: [],
+      defaultPlan: { unset: { price: 0 } },
+    };
   },
-  async asyncData({ $content }) {
-    const items = sortBy(
-      (await $content('alternatives').fetch()).filter(
+  async fetch() {
+    const data = sortBy(
+      (await this.$content('alternatives').fetch()).filter(
         (item) => !item.deleted_at,
       ),
       [
@@ -69,16 +48,13 @@ export default {
         'slug',
       ],
     ).reverse();
-    return { items };
-  },
-  data() {
-    return {
-      heading: 'Alternatives',
-      description:
-        'Compare alternative digital agencies and find the best one for your business.',
-      items: [],
-      defaultPlan: { unset: { price: 0 } },
-    };
+    const items = data.map((item) => ({
+      ...item,
+      url: item.offers ? `/alternatives/${item.slug}` : item.url,
+      image: `/img/alternatives/${item.slug}.png`,
+      imageColor: item.color,
+    }));
+    this.items = items;
   },
   head() {
     return {

@@ -9,29 +9,8 @@
     ></BlogHero>
     <v-container>
       <v-row>
-        <v-col
-          v-for="tool in tools"
-          :key="tool.slug"
-          cols="12"
-          sm="6"
-          md="6"
-          lg="4"
-          xl="3"
-          class="d-flex flex-column"
-        >
-          {{ tool.deleted_at }}
-          <Feature
-            v-bind="{
-              ...tool,
-              url: tool.offers ? `/tools/${tool.slug}` : tool.url,
-              image: `/img/tools/${tool.slug}.png`,
-              imageColor: tool.color,
-              iconColor: tool.iconColor,
-              icon: tool.icon,
-            }"
-          >
-            <PriceRange :items="tool.plans"></PriceRange>
-          </Feature>
+        <v-col>
+          <DataIterator :items="tools"></DataIterator>
         </v-col>
       </v-row>
     </v-container>
@@ -40,19 +19,21 @@
 
 <script>
 import { sortBy, maxBy } from 'lodash-es';
-import ImageSources from '@/mixins/srcset';
-import Feature from '~/components/feature';
-import PriceRange from '~/components/price-range';
 import textLength from '~/utils/feature-text-length';
+import DataIterator from '~/components/data-iterator.vue';
 export default {
-  components: {
-    Feature,
-    PriceRange,
+  components: { DataIterator },
+  data() {
+    return {
+      heading: 'Tools',
+      description: 'Check out what we use to create awesome web apps.',
+      tools: [],
+      defaultPlan: { unset: { price: 0 } },
+    };
   },
-  mixins: [ImageSources],
-  async asyncData({ $content }) {
-    const tools = sortBy(
-      (await $content('tools').fetch()).filter((tool) => !tool.deleted_at),
+  async fetch() {
+    const data = sortBy(
+      (await this.$content('tools').fetch()).filter((tool) => !tool.deleted_at),
       [
         /**
          * Sort by largest price
@@ -67,15 +48,13 @@ export default {
         'slug',
       ],
     ).reverse();
-    return { tools };
-  },
-  data() {
-    return {
-      heading: 'Tools',
-      description: 'Check out what we use to create awesome web apps.',
-      tools: [],
-      defaultPlan: { unset: { price: 0 } },
-    };
+    const items = data.map((tool) => ({
+      ...tool,
+      url: tool.offers ? `/tools/${tool.slug}` : tool.url,
+      image: `/img/tools/${tool.slug}.png`,
+      imageColor: tool.color,
+    }));
+    this.tools = items;
   },
   head() {
     return {
@@ -88,6 +67,9 @@ export default {
         },
       ],
     };
+  },
+  watch: {
+    '$route.query': '$fetch',
   },
 };
 </script>
