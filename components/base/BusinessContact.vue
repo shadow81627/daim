@@ -67,8 +67,8 @@
 <script>
 import { mdiOpenInNew } from '@mdi/js';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import LocationButton from '../LocationButton.vue';
 import Mailgo from '@/components/mailgo.vue';
+import LocationButton from '../LocationButton.vue';
 export default {
   components: {
     Mailgo,
