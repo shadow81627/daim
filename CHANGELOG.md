@@ -1,5 +1,11 @@
 # Releases
 
+## [1.45.14](https://github.com/shadow81627/daim/compare/v1.45.13...v1.45.14) (2022-05-05)
+
+### Bug Fixes
+
+- **footer:** show postcode ([bdacdc5](https://github.com/shadow81627/daim/commit/bdacdc5230c0e62600c406c7425d247eb7cc61e1))
+
 ## [1.45.13](https://github.com/shadow81627/daim/compare/v1.45.12...v1.45.13) (2022-05-04)
 
 ### Bug Fixes
