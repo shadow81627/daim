@@ -68,5 +68,8 @@ export default {
       ],
     };
   },
+  watch: {
+    '$route.query': '$fetch',
+  },
 };
 </script>
