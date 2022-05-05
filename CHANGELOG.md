@@ -1,5 +1,11 @@
 # Releases
 
+## [1.46.0](https://github.com/shadow81627/daim/compare/v1.45.14...v1.46.0) (2022-05-05)
+
+### Features
+
+- add data iterator ([#1151](https://github.com/shadow81627/daim/issues/1151)) ([55c28ae](https://github.com/shadow81627/daim/commit/55c28ae56a72a1883996a24e9841ea985b80e5d7))
+
 ## [1.45.14](https://github.com/shadow81627/daim/compare/v1.45.13...v1.45.14) (2022-05-05)
 
 ### Bug Fixes
