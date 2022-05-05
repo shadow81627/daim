@@ -57,9 +57,7 @@
               }}</span>
               <span v-if="city" itemprop="addressLocality">{{ city }}</span>
               <span v-show="!city" itemprop="addressRegion">{{ region }}</span>
-              <span v-show="false" v-if="postcode" itemprop="postalCode">{{
-                postcode
-              }}</span
+              <span v-if="postcode" itemprop="postalCode">{{ postcode }}</span
               ><span
                 >{{
                   (country || countryCode) && (postcode || city || region)
@@ -95,7 +93,7 @@ export default {
     city: 'New Farm',
     countryCode: 'AU',
     country: 'Australia',
-    postalCode: '4005',
+    postcode: '4005',
     region: 'Queensland',
   }),
   methods: {
