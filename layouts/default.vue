@@ -99,6 +99,7 @@ export default {
     }));
     this.items = sortBy(items, ['pos']);
   },
+  fetchKey: 'layout/default',
   head() {
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
     const { href: canonical } = i18nHead.link.find(
