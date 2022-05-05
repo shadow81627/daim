@@ -9,7 +9,10 @@
     <v-container>
       <v-row>
         <v-col>
-          <DataIterator :items="items"></DataIterator>
+          <DataIterator
+            :items="items"
+            :loading="$fetchState.pending"
+          ></DataIterator>
         </v-col>
       </v-row>
     </v-container>
@@ -50,12 +53,14 @@ export default {
     ).reverse();
     const items = data.map((item) => ({
       ...item,
+      id: item.slug,
       url: item.offers ? `/alternatives/${item.slug}` : item.url,
       image: `/img/alternatives/${item.slug}.png`,
       imageColor: item.color,
     }));
     this.items = items;
   },
+  fetchKey: 'alternatives',
   head() {
     return {
       title: this.heading,

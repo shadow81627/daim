@@ -10,7 +10,10 @@
     <v-container>
       <v-row>
         <v-col>
-          <DataIterator :items="tools"></DataIterator>
+          <DataIterator
+            :items="items"
+            :loading="$fetchState.pending"
+          ></DataIterator>
         </v-col>
       </v-row>
     </v-container>
@@ -27,13 +30,13 @@ export default {
     return {
       heading: 'Tools',
       description: 'Check out what we use to create awesome web apps.',
-      tools: [],
+      items: [],
       defaultPlan: { unset: { price: 0 } },
     };
   },
   async fetch() {
     const data = sortBy(
-      (await this.$content('tools').fetch()).filter((tool) => !tool.deleted_at),
+      (await this.$content('tools').fetch()).filter((item) => !item.deleted_at),
       [
         /**
          * Sort by largest price
@@ -48,14 +51,16 @@ export default {
         'slug',
       ],
     ).reverse();
-    const items = data.map((tool) => ({
-      ...tool,
-      url: tool.offers ? `/tools/${tool.slug}` : tool.url,
-      image: `/img/tools/${tool.slug}.png`,
-      imageColor: tool.color,
+    const items = data.map((item) => ({
+      ...item,
+      id: item.slug,
+      url: item.offers ? `/tools/${item.slug}` : item.url,
+      image: `/img/tools/${item.slug}.png`,
+      imageColor: item.color,
     }));
-    this.tools = items;
+    this.items = items;
   },
+  fetchKey: 'tools',
   head() {
     return {
       title: this.heading,

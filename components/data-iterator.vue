@@ -89,7 +89,9 @@ export default {
       },
       set(value) {
         const query = this.cleanQuery(value);
-        this.$router.push({ path: this.$route.path, query });
+        if (this.$route.path) {
+          this.$router.push({ path: this.$route.path, query });
+        }
       },
     },
   },
