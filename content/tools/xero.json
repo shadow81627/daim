@@ -1,0 +1,46 @@
+{
+  "color": "#f8f8f8",
+  "description": "Xero online accounting software for your business connects you to your bank, accountant, bookkeeper, and other business apps. Start a free trial today.",
+  "image": "/img/tools/xero.svg",
+  "name": "Xero",
+  "plans": {
+    "premium-5": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 70
+    },
+    "standard": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 54
+    },
+    "starter": {
+      "currency": "AUD",
+      "interval": "month",
+      "price": 27
+    }
+  },
+  "subheading": "Accounting software to do your to-do",
+  "list": [
+    "Send invoices",
+    "Bank reconciliation",
+    "Pay bills",
+    "Claim expenses",
+    "Accept payments",
+    "Track projects",
+    "GST Returns",
+    "Payroll",
+    "Manage Xero contacts",
+    "Capture data",
+    "Files",
+    "Reporting",
+    "Inventory",
+    "Multi-currency",
+    "Purchase orders",
+    "Quotes",
+    "Analytics",
+    "Accounting dashboard",
+    "Manage fixed assets"
+  ],
+  "url": "https://www.xero.com/au/"
+}
