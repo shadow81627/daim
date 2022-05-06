@@ -1,0 +1,15 @@
+{
+  "color": "#f8f8f8",
+  "description": "Discover the new Windows 11 operating system from Microsoft, which features all the power and security of Windows 10 with a redesigned and refreshed look.",
+  "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWSSPL",
+  "name": "Windows",
+  "plans": {
+    "windows-10-pro": {
+      "currency": "AUD",
+      "interval": "license",
+      "price": 339
+    }
+  },
+  "subheading": "Operating System",
+  "url": "https://www.microsoft.com/en-au/windows/business/"
+}
