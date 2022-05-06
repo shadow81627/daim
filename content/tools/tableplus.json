@@ -1,8 +1,25 @@
 {
   "color": "#f8f8f8",
   "description": "Modern, native client with intuitive GUI tools to create, access, query & edit multiple relational databases: MySQL, PostgreSQL, SQLite, Microsoft SQL Server, Amazon Redshift, MariaDB, CockroachDB, Vertica, Cassandra, and Redis.",
+  "icon": "mdi:elephant",
+  "iconColor": "#ff9600",
   "image": "https://tableplus.com/resources/images/fb-thumbnail@2x.jpg",
   "name": "TablePlus",
+  "plans": {
+    "basic": {
+      "currency": "USD",
+      "interval": "license",
+      "price": 79
+    },
+    "free": {
+      "price": 0
+    },
+    "standard": {
+      "currency": "USD",
+      "interval": "license",
+      "price": 99
+    }
+  },
   "subheading": "Database management made easy",
   "url": "https://tableplus.com/"
 }
