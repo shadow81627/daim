@@ -38,7 +38,7 @@ export default {
     cards: [],
   }),
   async fetch() {
-    const data = await this.$content('services').limit(4).fetch();
+    const data = await this.$content('services').fetch();
     const items = sortBy(
       data.map((item) => ({
         ...item,
@@ -46,7 +46,7 @@ export default {
       })),
       ['pos'],
     ).reverse();
-    this.cards = items;
+    this.cards = items.slice(0, 4);
   },
 };
 </script>
