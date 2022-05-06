@@ -1,5 +1,11 @@
 # Releases
 
+## [1.47.2](https://github.com/shadow81627/daim/compare/v1.47.1...v1.47.2) (2022-05-06)
+
+### Bug Fixes
+
+- **services section:** limit after sort ([97c3ddf](https://github.com/shadow81627/daim/commit/97c3ddfd5a45167f60d3f66a07f8d62fafea5f4f))
+
 ## [1.47.1](https://github.com/shadow81627/daim/compare/v1.47.0...v1.47.1) (2022-05-06)
 
 ### Bug Fixes
