@@ -7,7 +7,7 @@
           <td colspan="2">
             <h4>Problem</h4>
             <p>
-              <strong>Wordpress</strong> and other website builders provides a
+              <strong>WordPress</strong> and other website builders provides a
               <strong>terrible developer experience</strong> and are holding
               back technical innovate of the web.
             </p>
@@ -17,7 +17,7 @@
               difficult to customize and tailor to brand style.
             </p>
             <p>
-              Server side rendered websites like Wordpress are not ideal for
+              Server side rendered websites like WordPress are not ideal for
               reliability and sustainability. They often have
               <strong>server scaling</strong> and hosting management headaches.
             </p>
@@ -27,11 +27,11 @@
             <p>
               Innovate marketing websites built with bleeding edge technology.
               Beautifully designed to provide a competitive digital presence for
-              start ups.
+              start-ups.
             </p>
             <p>
-              I want to automated and speed up the process of making
-              personalized marketing websites.
+              I want to automate and speed up the process of making personalized
+              marketing websites.
             </p>
             <p>
               <strong>Nuxt</strong> is an innovating
@@ -56,7 +56,7 @@
           <td colspan="2">
             <h4>Unfair Advantage</h4>
             <p>
-              I'm an <strong>entrepreneur</strong> myself and work 80 hour weeks
+              I'm an <strong>entrepreneur</strong> myself and work 80-hour weeks
               for the last 5 years building my skills in both business and
               technology.
             </p>
@@ -66,14 +66,14 @@
             </p>
             <p>
               Passion for <strong>open source</strong> and collaboration allow
-              me to make wonderful long lasting industry connections.
+              me to make wonderful long-lasting industry connections.
             </p>
             <p>"Content is King - Code is Queen ".</p>
           </td>
           <td colspan="2">
             <h4>Customer Segments</h4>
             <p>
-              Sole Traders, Start ups and small business need a digital
+              Sole Traders, Start-ups and small business need a digital
               presence. Rather than having them work for their website I want to
               make the website work for them.
             </p>
@@ -93,7 +93,7 @@
             </p>
 
             <ul>
-              <li>Wordpress (43% market share)</li>
+              <li>WordPress (43% market share)</li>
               <li>Square Space</li>
               <li>Wix</li>
               <li>Shopify</li>
@@ -119,10 +119,10 @@
             <p>
               Custom, bespoke, personalized, tailored
               <strong>web design and development</strong> for
-              <strong>start ups</strong> focused on innovation.
+              <strong>start-ups</strong> focused on innovation.
             </p>
-            <p>Wordpress for start ups.</p>
-            <p>Digital Agency for start ups.</p>
+            <p>WordPress for start-ups.</p>
+            <p>Digital Agency for start-ups.</p>
           </td>
           <td colspan="2">
             <h4>Channels</h4>
@@ -138,7 +138,7 @@
               <li>Instagram</li>
               <li>Email</li>
               <li>Website</li>
-              <li>Tic Tok?</li>
+              <li>TikTok?</li>
               <li>Start up Incubators</li>
               <li>Co working spaces</li>
             </ol>
@@ -147,13 +147,13 @@
             <h4>Early adopters</h4>
             <p>
               Working with <strong>people I know</strong> and expanding my
-              network to find <strong>start ups</strong> and
+              network to find <strong>start-ups</strong> and
               <strong>sole traders</strong> who need a website.
             </p>
             <ol>
               <li>Family &amp; Friends</li>
               <li>Sole Traders</li>
-              <li>Start ups</li>
+              <li>Start-ups</li>
               <li>Small business</li>
             </ol>
           </td>
@@ -184,8 +184,8 @@
           <td colspan="5">
             <h4>Revenue Streams</h4>
             <p>
-              Project based work for initial website builds and the providing on
-              going support and maintenance.
+              Project based work for initial website builds and the providing
+              ongoing support and maintenance.
             </p>
             <table>
               <tr>
@@ -235,7 +235,7 @@
           </td>
           <td colspan="2">
             <h4>Key Activities</h4>
-            <p>What key activities do our value propostions require?</p>
+            <p>What key activities do our value propositions require?</p>
             <p>Our distribution channels?</p>
             <p>Customer relationships?</p>
             <p>Revenue Streams?</p>
