@@ -1,5 +1,11 @@
 # Releases
 
+## [1.47.3](https://github.com/shadow81627/daim/compare/v1.47.2...v1.47.3) (2022-05-06)
+
+### Bug Fixes
+
+- **feature:** only show up to 4 list items ([ba4576f](https://github.com/shadow81627/daim/commit/ba4576fded86cfe5a9ad14f778dc7756f17467b8))
+
 ## [1.47.2](https://github.com/shadow81627/daim/compare/v1.47.1...v1.47.2) (2022-05-06)
 
 ### Bug Fixes
