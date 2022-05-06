@@ -1,5 +1,11 @@
 # Releases
 
+## [1.47.0](https://github.com/shadow81627/daim/compare/v1.46.0...v1.47.0) (2022-05-06)
+
+### Features
+
+- **pages:** lean canvas ([#1152](https://github.com/shadow81627/daim/issues/1152)) ([3fe83db](https://github.com/shadow81627/daim/commit/3fe83db9b17df834daaa0391ab8576ad25640d85))
+
 ## [1.46.0](https://github.com/shadow81627/daim/compare/v1.45.14...v1.46.0) (2022-05-05)
 
 ### Features
