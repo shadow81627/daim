@@ -1,0 +1,29 @@
+{
+  "color": "#0898e8",
+  "description": "Firebase is Google's mobile platform that helps you quickly develop high-quality apps and grow your business.",
+  "image": "https://firebase.google.com/images/social.png",
+  "list": [
+    "Cloud Firestore",
+    "Cloud Functions",
+    "Authentication",
+    "Cloud Storage",
+    "Firebase ML",
+    "Hosting",
+    "Analytics"
+  ],
+  "name": "Firebase",
+  "plans": {
+    "spark": {
+      "name": "Spark",
+      "price": 0
+    },
+    "blaze": {
+      "name": "Blaze",
+      "price": 25,
+      "currency": "USD",
+      "interval": "month"
+    }
+  },
+  "subheading": "App Development Platform",
+  "url": "https://firebase.google.com/"
+}
