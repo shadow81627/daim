@@ -1,5 +1,11 @@
 # Releases
 
+## [1.47.1](https://github.com/shadow81627/daim/compare/v1.47.0...v1.47.1) (2022-05-06)
+
+### Bug Fixes
+
+- **lean canvas:** spelling ([56866be](https://github.com/shadow81627/daim/commit/56866be47b413c3936cc625d9f5e358f819adb3e))
+
 ## [1.47.0](https://github.com/shadow81627/daim/compare/v1.46.0...v1.47.0) (2022-05-06)
 
 ### Features
