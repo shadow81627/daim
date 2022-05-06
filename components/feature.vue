@@ -44,7 +44,7 @@
       </v-card-text>
       <v-card-text v-if="list" class="text--primary body-1 pt-0">
         <ul>
-          <li v-for="item in list" :key="item">{{ item }}</li>
+          <li v-for="item in list.slice(0, 4)" :key="item">{{ item }}</li>
         </ul>
       </v-card-text>
       <v-card-text class="text--primary body-1 pt-0">
