@@ -89,10 +89,22 @@ export default {
       },
       set(value) {
         const _value = JSON.parse(JSON.stringify(value));
-        if (!Number.isInteger(_value.itemsPerPage)) {
+        /**
+         * Set items per page to a multiple of default per page
+         */
+        if (
+          _value.itemsPerPage &&
+          _value.itemsPerPage !== -1 &&
+          _value.itemsPerPage % 24 !== 0
+        ) {
+          _value.itemsPerPage =
+            this.defaultQuery.itemsPerPage *
+            Math.ceil(_value.itemsPerPage / this.defaultQuery.itemsPerPage);
+        }
+        if (_value.itemsPerPage && !Number.isInteger(_value.itemsPerPage)) {
           _value.itemsPerPage = this.defaultQuery.itemsPerPage;
         }
-        const query = this.cleanQuery(value);
+        const query = this.cleanQuery(_value);
         if (this.$route.path) {
           this.$router.push({ path: this.$route.path, query });
         }
