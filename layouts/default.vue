@@ -55,7 +55,7 @@
       <v-tabs class="hidden-sm-and-down" optional right>
         <v-tabs-slider></v-tabs-slider>
         <v-tab
-          v-for="{ name, route } in items"
+          v-for="{ name, route } in items.filter((item) => item.show_tab)"
           :key="route"
           :to="localePath(route ? route : {})"
           text
