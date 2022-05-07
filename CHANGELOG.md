@@ -1,5 +1,11 @@
 # Releases
 
+## [1.48.3](https://github.com/shadow81627/daim/compare/v1.48.2...v1.48.3) (2022-05-07)
+
+### Bug Fixes
+
+- **data iterator:** remove duplicate price range ([b694816](https://github.com/shadow81627/daim/commit/b6948162fddfbaad901dfe3496afda86e349b47c))
+
 ## [1.48.2](https://github.com/shadow81627/daim/compare/v1.48.1...v1.48.2) (2022-05-07)
 
 ### Bug Fixes
