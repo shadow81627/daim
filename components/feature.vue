@@ -48,6 +48,7 @@
         </ul>
       </v-card-text>
       <v-card-text class="text--primary body-1 pt-0">
+        <PriceRange :items="plans"></PriceRange>
         <slot></slot>
       </v-card-text>
     </div>
@@ -101,6 +102,7 @@ export default {
     description: { type: String, default: undefined },
     list: { type: Array, default: undefined },
     links: { type: Array, default: undefined },
+    plans: { type: Array, default: undefined },
     imageHeight: { type: Number, default: 360 },
     imageWidth: { type: Number, default: 640 },
     imageQuality: { type: Number, default: 100 },
