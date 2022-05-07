@@ -85,7 +85,7 @@ export default {
             ...foundQuery,
           }),
         );
-        return this.cleanQuery(query);
+        return query;
       },
       set(value) {
         const _value = JSON.parse(JSON.stringify(value));
