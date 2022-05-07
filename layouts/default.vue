@@ -97,7 +97,7 @@ export default {
       ...item,
       pos: fractionToDecimal(item.pos),
     }));
-    this.items = sortBy(items, ['pos']);
+    this.items = sortBy(items, ['show_tab', 'pos']);
   },
   fetchKey: 'layout/default',
   head() {
