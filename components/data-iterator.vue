@@ -88,6 +88,10 @@ export default {
         return this.cleanQuery(query);
       },
       set(value) {
+        const _value = JSON.parse(JSON.stringify(value));
+        if (!Number.isInteger(_value.itemsPerPage)) {
+          _value.itemsPerPage = this.defaultQuery.itemsPerPage;
+        }
         const query = this.cleanQuery(value);
         if (this.$route.path) {
           this.$router.push({ path: this.$route.path, query });
