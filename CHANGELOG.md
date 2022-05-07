@@ -1,5 +1,15 @@
 # Releases
 
+## [1.48.2](https://github.com/shadow81627/daim/compare/v1.48.1...v1.48.2) (2022-05-07)
+
+### Bug Fixes
+
+- **data iterator:** items per page set to default if default is less than number of items ([853434d](https://github.com/shadow81627/daim/commit/853434de7c5d4438d0125bc38be39da54e112523))
+- **feature component:** list of links ([4f3d51f](https://github.com/shadow81627/daim/commit/4f3d51f3e416bb220631f617f212da788c35298f))
+- **feature component:** price range ([0b545ac](https://github.com/shadow81627/daim/commit/0b545ace5368cc9c432408497c9a102a49af3068))
+- **feature component:** start date and end date ([60334c8](https://github.com/shadow81627/daim/commit/60334c833b65bcd0b6a596f82af8ae03f08b65d8))
+- **fetch external images:** add projects ([856d42b](https://github.com/shadow81627/daim/commit/856d42bf2ae4dd51b1e5a1ea3cd415435350344e))
+
 ## [1.48.1](https://github.com/shadow81627/daim/compare/v1.48.0...v1.48.1) (2022-05-07)
 
 ### Bug Fixes
