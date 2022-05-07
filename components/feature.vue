@@ -75,8 +75,12 @@
         v-bind="{
           link: url,
           tooltip: `Learn more about ${name}`,
-          size: 'small',
         }"
+      ></BaseTooltipButton>
+      <BaseTooltipButton
+        v-for="link in links"
+        v-bind="link"
+        :key="link"
       ></BaseTooltipButton>
     </v-card-actions>
   </v-card>
@@ -96,6 +100,7 @@ export default {
     subheading: { type: String, default: undefined },
     description: { type: String, default: undefined },
     list: { type: Array, default: undefined },
+    links: { type: Array, default: undefined },
     imageHeight: { type: Number, default: 360 },
     imageWidth: { type: Number, default: 640 },
     imageQuality: { type: Number, default: 100 },
