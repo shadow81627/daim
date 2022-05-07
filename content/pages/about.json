@@ -1,0 +1,7 @@
+{
+  "name": "About",
+  "icon": "carbon:information",
+  "route": "about",
+  "pos": "3/2",
+  "description": "Learn more about Daim."
+}
