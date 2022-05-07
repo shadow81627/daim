@@ -22,10 +22,21 @@ export default {
   components: { LeanCanvas },
   data() {
     return {
+      slug: 'lean-canvas',
       heading: 'Lean Canvas',
-      description:
-        'Lean Canvas replaces long and boring business plans with a 1-page business model that takes 20 minutes to create and gets read.',
+      description: null,
     };
+  },
+  async fetch() {
+    const { description, name } = await this.$content(
+      'pages',
+      this.slug,
+    ).fetch();
+    this.heading = name;
+    this.description = description;
+  },
+  fetchKey() {
+    return `page/${this.slug}`;
   },
   head() {
     return {
