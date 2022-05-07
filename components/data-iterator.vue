@@ -32,9 +32,7 @@
             xl="3"
             class="d-flex flex-column"
           >
-            <Feature v-bind="item">
-              <PriceRange :items="item.plans"></PriceRange>
-            </Feature>
+            <Feature v-bind="item"></Feature>
           </v-col>
         </v-row>
         <v-row>
