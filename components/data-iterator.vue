@@ -138,16 +138,20 @@ export default {
       this.itemsPerPage = number;
     },
     infiniteScrolling(entries, observer, isIntersecting) {
-      setTimeout(() => {
-        const itemsPerPage = this.query.itemsPerPage + 24;
-        if (itemsPerPage <= this.items.length + 24) {
+      if (isIntersecting) {
+        const next =
+          this.query.itemsPerPage !== -1
+            ? this.query.itemsPerPage + 24
+            : this.query.itemsPerPage;
+        const itemsPerPage = next >= this.items.length ? -1 : next;
+        if (this.query.itemsPerPage !== itemsPerPage) {
           this.query = {
             ...this.query,
             page: 1,
             itemsPerPage,
           };
         }
-      }, 500);
+      }
     },
   },
 };
