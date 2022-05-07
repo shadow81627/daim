@@ -1,5 +1,19 @@
 # Releases
 
+## [1.48.0](https://github.com/shadow81627/daim/compare/v1.47.3...v1.48.0) (2022-05-07)
+
+### Bug Fixes
+
+- **default layout:** sort by show tabs before manual sort ([1583074](https://github.com/shadow81627/daim/commit/15830749f267acfca0d46b6864490b014a3c487f))
+- **fraction to decimal:** return 0 if no fraction ([e7181e8](https://github.com/shadow81627/daim/commit/e7181e827158a0b5004aceecd93a752f5c65de2b))
+- **layout:** filter tabs ([91894ad](https://github.com/shadow81627/daim/commit/91894ade63ff6863f6c0e6f1e51cf6a6a2542be1))
+- **pages:** add show tabs attribute ([99cf981](https://github.com/shadow81627/daim/commit/99cf98106f5f14fbe8155f8bdf7c77fd380c0b8b))
+
+### Features
+
+- **pages:** add about ([38f41cb](https://github.com/shadow81627/daim/commit/38f41cbebd10babd380d47f1d850cc2008493540))
+- **pages:** add features ([59223ae](https://github.com/shadow81627/daim/commit/59223ae095748c1a41bf13421257a40e0e3b8841))
+
 ## [1.47.3](https://github.com/shadow81627/daim/compare/v1.47.2...v1.47.3) (2022-05-06)
 
 ### Bug Fixes
