@@ -2,5 +2,6 @@
   "icon": "carbon:home",
   "name": "Home",
   "route": "index",
+  "show_tab": true,
   "pos": "1/1"
 }

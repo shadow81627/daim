@@ -2,5 +2,6 @@
   "icon": "carbon:blog",
   "name": "Blog",
   "route": "blog",
+  "show_tab": true,
   "pos": "2/1"
 }

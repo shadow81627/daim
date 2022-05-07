@@ -1,6 +1,7 @@
 {
-  "icon": "carbon:person",
+  "icon": "ant-design:team-outlined",
   "name": "Team",
   "route": "people",
-  "pos": "6/1"
+  "show_tab": true,
+  "pos": "5/1"
 }

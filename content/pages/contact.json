@@ -2,5 +2,6 @@
   "icon": "bx:message",
   "name": "Contact",
   "route": "contact",
-  "pos": "7/1"
+  "show_tab": true,
+  "pos": "6/1"
 }

@@ -2,5 +2,6 @@
   "icon": "ic:outline-local-offer",
   "name": "Services",
   "route": "services",
-  "pos": "3/2"
+  "show_tab": true,
+  "pos": "4/2"
 }

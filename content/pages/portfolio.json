@@ -2,5 +2,6 @@
   "icon": "carbon:portfolio",
   "name": "Portfolio",
   "route": "portfolio",
+  "show_tab": true,
   "pos": "4/1"
 }
