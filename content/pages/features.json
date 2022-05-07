@@ -1,0 +1,7 @@
+{
+  "name": "Features",
+  "route": "features",
+  "description": "Find out what features we have to offer",
+  "icon": "system-uicons:component-add",
+  "pos": "5/2"
+}
