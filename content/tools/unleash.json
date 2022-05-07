@@ -1,0 +1,20 @@
+{
+  "color": "#080808",
+  "description": "Feature management lets you turn new features on/off in production with no need for redeployment. A software development best practice for releasing and validating new features.",
+  "image": "https://repository-images.githubusercontent.com/24594933/0ee96080-d406-11eb-856d-7df51ff2efbb",
+  "name": "Unleash",
+  "plans": {
+    "open-source": {
+      "name": "Open Source",
+      "price": 0
+    },
+    "pro": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Pro",
+      "price": 80
+    }
+  },
+  "subheading": "Open source feature toggle service",
+  "url": "https://www.getunleash.io/"
+}
