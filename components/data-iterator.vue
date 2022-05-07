@@ -101,7 +101,11 @@ export default {
             this.defaultQuery.itemsPerPage *
             Math.ceil(_value.itemsPerPage / this.defaultQuery.itemsPerPage);
         }
-        if (_value.itemsPerPage && !Number.isInteger(_value.itemsPerPage)) {
+        if (
+          (_value.itemsPerPage && !Number.isInteger(_value.itemsPerPage)) ||
+          (_value.itemsPerPage === -1 &&
+            this.items.length < this.defaultQuery.itemsPerPage)
+        ) {
           _value.itemsPerPage = this.defaultQuery.itemsPerPage;
         }
         const query = this.cleanQuery(_value);
