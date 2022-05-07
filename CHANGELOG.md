@@ -1,5 +1,14 @@
 # Releases
 
+## [1.48.1](https://github.com/shadow81627/daim/compare/v1.48.0...v1.48.1) (2022-05-07)
+
+### Bug Fixes
+
+- **data iterator:** items per page is a number ([4efcefb](https://github.com/shadow81627/daim/commit/4efcefb49a84b5896d03ef5bd4978fc46e1817b5))
+- **data iterator:** only update items per page when intersecting ([7341017](https://github.com/shadow81627/daim/commit/734101780ca98cf7c2232e95cf0da7b05cbfbf5f))
+- **data iterator:** remove clean query from query getter ([06b7c8b](https://github.com/shadow81627/daim/commit/06b7c8b24904b24a92f93e1e6b6e1deec198f5e7))
+- **data iterator:** set items per page to a multiple of 24 ([e1ca619](https://github.com/shadow81627/daim/commit/e1ca61954ee67a4e9e789243f08d0d7fb65c703a))
+
 ## [1.48.0](https://github.com/shadow81627/daim/compare/v1.47.3...v1.48.0) (2022-05-07)
 
 ### Bug Fixes
