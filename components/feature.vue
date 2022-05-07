@@ -49,6 +49,13 @@
       </v-card-text>
       <v-card-text class="text--primary body-1 pt-0">
         <PriceRange :items="plans"></PriceRange>
+        <time v-if="startDate" :datetime="new Date(startDate).toISOString()"
+          >{{ formatDate(startDate) }}
+        </time>
+        <span v-if="startDate && endDate">to</span>
+        <time v-if="endDate" :datetime="new Date(endDate).toISOString()">{{
+          formatDate(endDate)
+        }}</time>
         <slot></slot>
       </v-card-text>
     </div>
@@ -88,6 +95,7 @@
 </template>
 
 <script>
+import * as dayjs from 'dayjs';
 import titleCase from '@/utils/title-case';
 export default {
   props: {
@@ -103,6 +111,8 @@ export default {
     list: { type: Array, default: undefined },
     links: { type: Array, default: undefined },
     plans: { type: Array, default: undefined },
+    startDate: { type: String, default: undefined },
+    endDate: { type: String, default: undefined },
     imageHeight: { type: Number, default: 360 },
     imageWidth: { type: Number, default: 640 },
     imageQuality: { type: Number, default: 100 },
@@ -160,6 +170,9 @@ export default {
   },
   methods: {
     titleCase,
+    formatDate(date) {
+      return dayjs(date).format('MMM D, YYYY');
+    },
   },
 };
 </script>
