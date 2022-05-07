@@ -1,18 +1,19 @@
 {
-  "image": "/img/portfolio/brisbane-city-council-free-native-plants.daim.dev_species.png",
-  "startDate": "2020-08-07T01:08:52Z",
-  "name": "Plant Gallery",
+  "color": "#f8f8f8",
   "description": "Govhack project that combines two creative commons datasets to detail care requirements for Brisbane City Councils Free Native Plant Program.",
+  "image": "/img/portfolio/brisbane-city-council-free-native-plants.daim.dev_species.png",
   "links": [
     {
-      "link": "https://brisbane-city-council-free-native-plants.daim.dev",
       "icon": "mdiWeb",
+      "link": "https://brisbane-city-council-free-native-plants.daim.dev",
       "tooltip": "Website"
     },
     {
-      "link": "https://github.com/shadow81627/brisbane-city-council-free-native-plants",
       "icon": "mdiGithub",
+      "link": "https://github.com/shadow81627/brisbane-city-council-free-native-plants",
       "tooltip": "Github"
     }
-  ]
+  ],
+  "name": "Plant Gallery",
+  "startDate": "2020-08-07T01:08:52Z"
 }

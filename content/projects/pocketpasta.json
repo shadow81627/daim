@@ -1,18 +1,19 @@
 {
-  "image": "/img/portfolio/pocketpasta.com_recipes.png",
-  "name": "PocketPasta",
+  "color": "#f8f8f8",
   "description": "Household planner for recipes and shopping.",
-  "startDate": "2017-06-18T00:18:00Z",
+  "image": "/img/portfolio/pocketpasta.com_recipes.png",
   "links": [
     {
-      "link": "https://pocketpasta.com",
       "icon": "mdiWeb",
+      "link": "https://pocketpasta.com",
       "tooltip": "Website"
     },
     {
-      "link": "https://github.com/shadow81627/pocketpasta",
       "icon": "mdiGithub",
+      "link": "https://github.com/shadow81627/pocketpasta",
       "tooltip": "Github"
     }
-  ]
+  ],
+  "name": "PocketPasta",
+  "startDate": "2017-06-18T00:18:00Z"
 }

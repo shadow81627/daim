@@ -144,6 +144,11 @@ async function updateContent({
       folder: 'content/services/',
       imageFolder: 'static/img/services/',
     },
+    {
+      slug: 'portfolio',
+      folder: 'content/projects/',
+      imageFolder: 'static/img/portfolio/',
+    },
   ];
   for (const content of contents) {
     console.log(content.slug);

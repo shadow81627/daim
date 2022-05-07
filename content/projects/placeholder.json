@@ -1,12 +1,13 @@
 {
-  "name": "Your next Project?",
-  "image": "/img/portfolio/placeholder.jpg",
+  "color": "#080808",
   "description": "Reach out and contact us to bring your great ideas to life.",
+  "image": "/img/portfolio/placeholder.jpg",
   "links": [
     {
-      "link": "/contact",
       "icon": "mdiOpenInNew",
+      "link": "/contact",
       "tooltip": "Contact"
     }
-  ]
+  ],
+  "name": "Your next Project?"
 }

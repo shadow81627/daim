@@ -1,18 +1,19 @@
 {
-  "image": "/img/portfolio/gondwanarama.com.jpg",
-  "name": "Gondwanarama",
+  "color": "#f8f8f8",
   "description": "Artist & palaeontologist from Brisbane, Australia. Big fan of marsupials, bugs, & ancient supercontinents. Gondwanarama on Etsy!",
-  "startDate": "2021-05-30T07:40:07Z",
+  "image": "/img/portfolio/gondwanarama.com.jpg",
   "links": [
     {
-      "link": "https://gondwanarama.com/",
       "icon": "mdiWeb",
+      "link": "https://gondwanarama.com/",
       "tooltip": "Website"
     },
     {
-      "link": "https://github.com/shadow81627/gondwanarama",
       "icon": "mdiGithub",
+      "link": "https://github.com/shadow81627/gondwanarama",
       "tooltip": "Github"
     }
-  ]
+  ],
+  "name": "Gondwanarama",
+  "startDate": "2021-05-30T07:40:07Z"
 }

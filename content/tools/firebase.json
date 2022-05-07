@@ -13,15 +13,15 @@
   ],
   "name": "Firebase",
   "plans": {
+    "blaze": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Blaze",
+      "price": 25
+    },
     "spark": {
       "name": "Spark",
       "price": 0
-    },
-    "blaze": {
-      "name": "Blaze",
-      "price": 25,
-      "currency": "USD",
-      "interval": "month"
     }
   },
   "subheading": "App Development Platform",

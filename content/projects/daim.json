@@ -1,18 +1,19 @@
 {
-  "image": "/img/portfolio/daim.dev.png",
-  "name": "Daim",
+  "color": "#f8f8f8",
   "description": "Personal site, portfolio and blog.",
-  "startDate": "2019-11-29T21:53:05Z",
+  "image": "/img/portfolio/daim.dev.png",
   "links": [
     {
-      "link": "https://daim.dev",
       "icon": "mdiWeb",
+      "link": "https://daim.dev",
       "tooltip": "Website"
     },
     {
-      "link": "https://github.com/shadow81627/daim",
       "icon": "mdiGithub",
+      "link": "https://github.com/shadow81627/daim",
       "tooltip": "Github"
     }
-  ]
+  ],
+  "name": "Daim",
+  "startDate": "2019-11-29T21:53:05Z"
 }
