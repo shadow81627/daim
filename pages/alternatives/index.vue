@@ -26,13 +26,14 @@ export default {
   data() {
     return {
       heading: 'Alternatives',
-      description:
-        'Compare alternative digital agencies and find the best one for your business.',
+      description: null,
       items: [],
       defaultPlan: { unset: { price: 0 } },
     };
   },
   async fetch() {
+    const { description } = await this.$content('pages', 'about').fetch();
+    this.description = description;
     const data = sortBy(
       (await this.$content('alternatives').fetch()).filter(
         (item) => !item.deleted_at,
