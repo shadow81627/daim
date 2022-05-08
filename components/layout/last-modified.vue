@@ -1,23 +1,21 @@
 <template>
   <client-only>
-    <v-card v-if="lastModified" flat tile color="transparent">
-      <v-card-text class="py-2">
-        <span>Last modified</span>
-        <v-tooltip top>
-          <time
-            itemprop="dateModified"
-            :content="lastModified.toISOString()"
-            :datetime="lastModified.toISOString()"
-            >{{ lastModified.fromNow() }}</time
-          >
-          <template #activator="{ on, attrs }">
-            <span v-bind="attrs" v-on="on">{{
-              lastModified.format(format)
-            }}</span>
-          </template>
-        </v-tooltip>
-      </v-card-text>
-    </v-card>
+    <span v-if="lastModified">
+      <span>Last modified</span>
+      <v-tooltip top>
+        <time
+          itemprop="dateModified"
+          :content="lastModified.toISOString()"
+          :datetime="lastModified.toISOString()"
+          >{{ lastModified.fromNow() }}</time
+        >
+        <template #activator="{ on, attrs }">
+          <span v-bind="attrs" v-on="on">{{
+            lastModified.format(format)
+          }}</span>
+        </template>
+      </v-tooltip>
+    </span>
   </client-only>
 </template>
 
