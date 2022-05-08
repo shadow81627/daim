@@ -1,5 +1,12 @@
 # Releases
 
+## [1.48.4](https://github.com/shadow81627/daim/compare/v1.48.3...v1.48.4) (2022-05-08)
+
+### Bug Fixes
+
+- **footer:** add pages links and socials ([282dc49](https://github.com/shadow81627/daim/commit/282dc49f2fd53b0899cf7d9f176abab06bd40bfd))
+- **last modified:** card to span ([3eb51e4](https://github.com/shadow81627/daim/commit/3eb51e43a2aebb8ba12fc7a42e6f5a7b7b1c8a24))
+
 ## [1.48.3](https://github.com/shadow81627/daim/compare/v1.48.2...v1.48.3) (2022-05-07)
 
 ### Bug Fixes
