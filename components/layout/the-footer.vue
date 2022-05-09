@@ -1,10 +1,7 @@
 <template>
-  <!-- -----------------------------------------------
-        Start Footer
-  ----------------------------------------------- -->
   <v-footer class="footer">
     <v-container>
-      <v-row class="py-0 py-md-15">
+      <v-row class="py-0 py-md-7">
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
           <v-card flat tile color="transparent">
             <v-card-title class="headline">Contact</v-card-title>
