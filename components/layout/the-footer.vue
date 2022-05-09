@@ -98,7 +98,7 @@
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
           <v-card flat tile color="transparent">
-            <v-card-title class="headline"></v-card-title>
+            <v-card-title class="headline">&nbsp;</v-card-title>
           </v-card>
           <v-list dense flat tile color="transparent">
             <v-list-item
