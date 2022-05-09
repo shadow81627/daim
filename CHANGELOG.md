@@ -1,5 +1,11 @@
 # Releases
 
+## [1.48.5](https://github.com/shadow81627/daim/compare/v1.48.4...v1.48.5) (2022-05-09)
+
+### Bug Fixes
+
+- **footer:** half top and bottom padding ([a2ba020](https://github.com/shadow81627/daim/commit/a2ba020221fdd49cde43cedf07d352161f1eb6c2))
+
 ## [1.48.4](https://github.com/shadow81627/daim/compare/v1.48.3...v1.48.4) (2022-05-08)
 
 ### Bug Fixes
