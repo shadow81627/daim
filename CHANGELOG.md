@@ -1,5 +1,11 @@
 # Releases
 
+## [1.48.6](https://github.com/shadow81627/daim/compare/v1.48.5...v1.48.6) (2022-05-09)
+
+### Bug Fixes
+
+- **footer:** add space in empty card title for pages ([3105ac9](https://github.com/shadow81627/daim/commit/3105ac9d6e2c6e9db1a88c06fadb28246b9abced))
+
 ## [1.48.5](https://github.com/shadow81627/daim/compare/v1.48.4...v1.48.5) (2022-05-09)
 
 ### Bug Fixes
