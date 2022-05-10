@@ -1,5 +1,11 @@
 # Releases
 
+## [1.48.7](https://github.com/shadow81627/daim/compare/v1.48.6...v1.48.7) (2022-05-10)
+
+### Bug Fixes
+
+- **footer:** remove extra | ([be2d83c](https://github.com/shadow81627/daim/commit/be2d83c9eeaeb74da11be5a4be8ba6c13c5b6fd7))
+
 ## [1.48.6](https://github.com/shadow81627/daim/compare/v1.48.5...v1.48.6) (2022-05-09)
 
 ### Bug Fixes
