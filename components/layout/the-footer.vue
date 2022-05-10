@@ -163,7 +163,6 @@
                 <span v-if="$config.COMMIT">{{
                   shortHash($config.COMMIT)
                 }}</span>
-                <span v-if="$config.VERSION && $config.COMMIT">|</span>
                 <nuxt-link :to="localePath('releases')" class="link px-4">
                   <span>Changelog</span>
                 </nuxt-link>
