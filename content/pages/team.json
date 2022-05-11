@@ -3,5 +3,6 @@
   "name": "Team",
   "route": "people",
   "show_tab": true,
+  "show_footer": true,
   "pos": "5/1"
 }

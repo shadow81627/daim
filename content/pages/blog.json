@@ -3,5 +3,6 @@
   "name": "Blog",
   "route": "blog",
   "show_tab": true,
+  "show_footer": true,
   "pos": "2/1"
 }

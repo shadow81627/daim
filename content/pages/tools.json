@@ -2,5 +2,6 @@
   "icon": "carbon:tool-box",
   "name": "Tools",
   "route": "tools",
+  "show_footer": true,
   "pos": "7/1"
 }

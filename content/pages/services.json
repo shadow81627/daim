@@ -3,5 +3,6 @@
   "name": "Services",
   "route": "services",
   "show_tab": true,
+  "show_footer": true,
   "pos": "4/2"
 }

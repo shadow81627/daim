@@ -3,5 +3,6 @@
   "icon": "carbon:compare",
   "route": "alternatives",
   "description": "Compare alternative digital agencies and find the best one for your business.",
+  "show_footer": true,
   "pos": "8/1"
 }
