@@ -1,0 +1,15 @@
+{
+  "type": "location",
+  "icon": "carbon:location",
+  "subtitle": "Location",
+  "title": "New Farm, Australia",
+  "href": "https://www.google.com.au/maps/search/?api=1&query=Daim%20Digital%201%2F888%20Brunswick%20Street%20New%20Farm%20Queensland%204005%20Australia",
+  "location": {
+    "streetAddress": "Salt Space 1/888 Brunswick Street",
+    "city": "New Farm",
+    "countryCode": "AU",
+    "country": "Australia",
+    "postalCode": "4005",
+    "region": "Queensland"
+  }
+}
