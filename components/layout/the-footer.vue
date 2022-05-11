@@ -7,14 +7,19 @@
             <v-card-title class="headline">Contact</v-card-title>
           </v-card>
           <v-card flat tile color="transparent">
-            <div>
-              <mailgo v-if="email" :href="`mailto:${email}`"></mailgo>
-            </div>
-            <div>
-              <mailgo v-if="phone" :href="`tel:${phone}`"></mailgo>
-            </div>
+            <BaseLinks :items="contact">
+              <template #default="{ item }">
+                <v-list-item-subtitle v-if="item.subtitle">{{
+                  item.subtitle
+                }}</v-list-item-subtitle>
+                <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
+                  item.title
+                }}</v-list-item-title>
+              </template>
+            </BaseLinks>
           </v-card>
           <v-card
+            v-if="false"
             flat
             tile
             color="transparent"
@@ -121,27 +126,9 @@
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
           <v-card flat tile color="transparent">
-            <v-card-title class="headline">Social</v-card-title>
+            <v-card-title class="headline">Socials</v-card-title>
           </v-card>
-          <v-list dense flat tile color="transparent">
-            <v-list-item
-              v-for="item in socials"
-              :key="item.href"
-              :href="item.href"
-              rel="noopener"
-              target="_blank"
-              class="text-decoration-none"
-            >
-              <v-list-item-action>
-                <BaseIcon :icon="item.icon"></BaseIcon>
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
-                  item.title
-                }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
+          <BaseLinks :items="socials"></BaseLinks>
         </v-col>
       </v-row>
       <div class="footer-bottom-bar font-14">
@@ -185,7 +172,6 @@
 
 <script>
 import { sortBy } from 'lodash-es';
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import lastModified from './last-modified';
 import fractionToDecimal from '~/utils/fraction-to-decimal';
 export default {
@@ -194,32 +180,16 @@ export default {
   },
   data: () => ({
     utc: false,
-    faMapMarker,
-    email: 'contact@daim.dev',
-    phone: undefined,
     socials: [],
+    contact: [],
     nav1: [],
     nav2: [],
-    location: {
-      personName: 'Damien Robinson',
-      companyName: 'Daim Digital',
-      placeName: 'Salt Space',
-      streetAddress: '1/888 Brunswick Street',
-      city: 'New Farm',
-      countryCode: 'AU',
-      country: 'Australia',
-      postcode: '4005',
-      region: 'Queensland',
-    },
   }),
   async fetch() {
-    const {
-      basics: { phone },
-    } = await this.$content('team', 'damien-robinson').fetch();
-
     const socials = await this.$content('socials').fetch();
+    const contact = await this.$content('contact').fetch();
     const navData = (
-      await this.$content('pages').where({ show_tab: true }).fetch()
+      await this.$content('pages').where({ show_footer: true }).fetch()
     ).map((item) => ({
       ...item,
       pos: fractionToDecimal(item.pos),
@@ -230,8 +200,8 @@ export default {
     const nav2 = nav.slice(-navHalf);
 
     const data = {
+      contact,
       socials,
-      phone,
       nav1,
       nav2,
     };
