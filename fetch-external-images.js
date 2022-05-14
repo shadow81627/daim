@@ -86,7 +86,15 @@ async function updateContent({
           const offer = category[offerKey];
           console.log('        - ', offerKey);
           const imageUrl = offer.image;
-          const imagePath = `${imageFolder}/offers/${slug}/${offerKey}.png`;
+          const offerFolder = `${imageFolder}/offers/${slug}/`.replace(
+            /\/\//,
+            '/',
+          );
+          const imagePath = `${offerFolder}${offerKey}.png`;
+          const folderExists = await checkFileExists(offerFolder);
+          if (!folderExists) {
+            fs.mkdirSync(offerFolder);
+          }
           const fileExists = await checkFileExists(imagePath);
           if (imageUrl && !fileExists) {
             if (imageUrl.startsWith('http')) {
