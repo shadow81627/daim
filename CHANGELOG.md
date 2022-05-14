@@ -1,5 +1,16 @@
 # Releases
 
+## [1.48.8](https://github.com/shadow81627/daim/compare/v1.48.7...v1.48.8) (2022-05-14)
+
+### Bug Fixes
+
+- **fetch external images:** make offers folder ([6e77962](https://github.com/shadow81627/daim/commit/6e77962fa4dc72dc850e5b6c656d261332182ca3))
+- **fetch external images:** transform banner images ([99cfcfd](https://github.com/shadow81627/daim/commit/99cfcfd8596ee71ca99b4f76ff8413608e8e0314))
+- **portfolio:** reverse links order ([9b7af5b](https://github.com/shadow81627/daim/commit/9b7af5bc464fd625d8d6290dc63560e1f9a96a4a))
+- **tools detail page:** hide plans heading when empty section ([4ce7bf2](https://github.com/shadow81627/daim/commit/4ce7bf2be80c432ff268d6a138e7174b9cddd1c0))
+- **tools details page:** use banner images if exists ([5a27a27](https://github.com/shadow81627/daim/commit/5a27a27d0ab1a5aa6ef62ebecfe1f7d72942a3fa))
+- **tooltip button component:** internal links use arrow ([e374ac1](https://github.com/shadow81627/daim/commit/e374ac1b92768d49c3c3527892e3485da34f03c0))
+
 ## [1.48.7](https://github.com/shadow81627/daim/compare/v1.48.6...v1.48.7) (2022-05-10)
 
 ### Bug Fixes
