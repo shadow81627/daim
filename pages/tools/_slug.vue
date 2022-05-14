@@ -81,9 +81,13 @@ export default {
   components: { BlogHero, Feature },
   async asyncData({ $content, route, error }) {
     try {
-      const item = await $content('tools', route.params.slug).fetch();
+      const data = await $content('tools', route.params.slug).fetch();
       // price phycology: largest first, end in 99 rather than 00
-      item.plans = sortBy(item.plans, 'price').reverse();
+      data.plans = sortBy(data.plans, 'price').reverse();
+      const item = {
+        ...data,
+        image: `/img/tools/${data.banner ? 'banners/' : ''}${data.slug}.png`,
+      };
       return { item };
     } catch {
       error({ statusCode: 404 });
