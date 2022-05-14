@@ -20,7 +20,7 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-row tag="section">
+      <v-row v-if="item.plans && item.plans.length" tag="section">
         <v-col cols="12"><h2>Plans</h2></v-col>
         <v-col
           v-for="(plan, planKey) of item.plans"
