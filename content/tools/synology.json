@@ -1,0 +1,60 @@
+{
+  "banner": "https://www.synology.com/img/homebanner/20220210_DSM71_Beta/bg_xl.png",
+  "color": "#f8f8f8",
+  "description": "Synology uniquely enables you to manage, secure, and protect your data - at the scale needed to accommodate the exponential data growth of the digital world.",
+  "image": "/img/tools/synology.svg",
+  "list": [
+    "NAS",
+    "Surveillance",
+    "Networking",
+    "Data Management",
+    "Backup"
+  ],
+  "name": "Synology",
+  "offers": {
+    "Network Accessible Storage": {
+      "DS220j": {
+        "color": "#f8f8f8",
+        "description": "DS220j is an entry-level 2-bay NAS designed for home and personal users to store and share photos, videos, and documents. The private cloud solution is powered by the award-winning DiskStation Manager (DSM) OS, providing an intuitive user interface and safe data protection approaches for easy digital asset backups from computers and mobile devices at no additional cost.",
+        "image": "https://assets.umart.com.au/newsite/images/202006/source_img/54372_P_1591593882297.webp",
+        "name": "Synology DiskStation DS220j 2 Bay NAS",
+        "plans": {
+          "currency": "AUD",
+          "interval": "5 years",
+          "price": 245
+        },
+        "subheading": "An easy-to-use private cloud for everyone",
+        "url": "https://www.synology.com/en-global/products/DS220j"
+      },
+      "DS418": {
+        "color": "#f8f8f8",
+        "description": "Versatile 4-bay NAS for high-speed file sharing and centralized data management. Synology DS418 comes with a new 64-bit quad-core processor, delivering excellent data transfer speed and large storage volume management.",
+        "image": "https://assets.umart.com.au/newsite/images/201709/source_img/40189_P_1505879364801.webp",
+        "name": "Synology DS418 DiskStation 4-Bay NAS",
+        "plans": {
+          "currency": "AUD",
+          "interval": "5 years",
+          "price": 585
+        },
+        "subheading": "Powerful 4-bay NAS for home and office users",
+        "url": "https://www.synology.com/en-global/products/DS418"
+      }
+    },
+    "Networking": {
+      "RT2600ac": {
+        "color": "#f8f8f8",
+        "description": "Blazing-fast Wi-Fi with up to 2.53Gbps combined wireless bandwidth to supercharge your Internet experience. RT2600ac is a powerful wireless router for homes and small offices seeking to understand, control, and secure their network. Now coming with mesh Wi-Fi technology, its coverage becomes easily expandable with additional Synology MR2200ac.",
+        "image": "https://assets.umart.com.au/newsite/images/201703/source_img/37763_P_1490330159720.webp",
+        "name": "Synology Router RT2600ac",
+        "plans": {
+          "currency": "AUD",
+          "interval": "5 year",
+          "price": 319
+        },
+        "subheading": "Synology RT2600ac 1.7GHz Dual Core Quad Stream, Dual Band, Synology SSL VPN",
+        "url": "https://www.synology.com/en-global/products/RT2600ac"
+      }
+    }
+  },
+  "url": "https://www.synology.com/"
+}
