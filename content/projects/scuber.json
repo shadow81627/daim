@@ -6,17 +6,15 @@
   "image": "/img/portfolio/scuber.jpg",
   "links": [
     {
-      "icon": "mdiOpenInNew",
       "link": "/blog/scuber",
       "tooltip": "Case Study"
     },
     {
-      "icon": "mdiWeb",
       "link": "https://scuber.daim.dev",
       "tooltip": "Website"
     },
     {
-      "icon": "mdiGithub",
+      "icon": "mdi:github",
       "link": "https://github.com/shadow81627/barry",
       "tooltip": "Github"
     }

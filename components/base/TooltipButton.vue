@@ -1,11 +1,13 @@
 <template>
   <v-tooltip top>
     <template #activator="{ on, attrs }">
-      <v-btn icon v-bind="{ ...attrs, ...btnAttrs }" v-on="on">
-        <v-icon v-if="icons[icon]" color="grey" :small="size === 'small'">{{
-          icons[icon]
-        }}</v-icon>
-        <BaseIcon v-else color="grey" :icon="icon"></BaseIcon>
+      <v-btn
+        icon
+        v-bind="{ ...$attrs, ...attrs, ...btnAttrs }"
+        :class="buttonClass"
+        v-on="on"
+      >
+        <BaseIcon color="grey" :icon="_icon"></BaseIcon>
         <span class="d-sr-only-focusable">{{ tooltip }}</span>
       </v-btn>
     </template>
@@ -14,24 +16,30 @@
 </template>
 
 <script>
-import { mdiWeb, mdiGithub, mdiOpenInNew } from '@mdi/js';
-const icons = { mdiWeb, mdiGithub, mdiOpenInNew };
-const defaultIcon = 'mdiOpenInNew';
-
 export default {
   name: 'BaseTooltipButton',
+  inheritAttrs: false,
   props: {
     icon: {
       type: String,
-      default: defaultIcon,
+      default: null,
+    },
+    buttonClass: {
+      type: String,
+      default: null,
     },
     link: { type: String, required: true },
     tooltip: { type: String, required: true },
     color: { type: String, default: 'grey' },
     size: { type: String, default: null },
   },
-  data: () => ({ icons, defaultIcon }),
   computed: {
+    _icon() {
+      if (this.icon) {
+        return this.icon;
+      }
+      return this.isExternal ? 'mdi:open-in-new' : 'mdi-light:arrow-right';
+    },
     isExternal() {
       return this.link.startsWith('http');
     },

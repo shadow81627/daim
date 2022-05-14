@@ -4,12 +4,11 @@
   "image": "/img/portfolio/www.hardingspropertyservices.com.png",
   "links": [
     {
-      "icon": "mdiWeb",
       "link": "https://www.hardingspropertyservices.com/",
       "tooltip": "Website"
     },
     {
-      "icon": "mdiGithub",
+      "icon": "mdi:github",
       "link": "https://github.com/shadow81627/hardingspropertyservices",
       "tooltip": "Github"
     }

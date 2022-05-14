@@ -4,7 +4,6 @@
   "image": "/img/portfolio/placeholder.jpg",
   "links": [
     {
-      "icon": "mdiOpenInNew",
       "link": "/contact",
       "tooltip": "Contact"
     }

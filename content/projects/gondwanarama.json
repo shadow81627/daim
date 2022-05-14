@@ -4,12 +4,11 @@
   "image": "/img/portfolio/gondwanarama.com.jpg",
   "links": [
     {
-      "icon": "mdiWeb",
       "link": "https://gondwanarama.com/",
       "tooltip": "Website"
     },
     {
-      "icon": "mdiGithub",
+      "icon": "mdi:github",
       "link": "https://github.com/shadow81627/gondwanarama",
       "tooltip": "Github"
     }

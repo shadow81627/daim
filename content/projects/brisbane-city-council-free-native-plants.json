@@ -4,12 +4,11 @@
   "image": "/img/portfolio/brisbane-city-council-free-native-plants.daim.dev_species.png",
   "links": [
     {
-      "icon": "mdiWeb",
       "link": "https://brisbane-city-council-free-native-plants.daim.dev",
       "tooltip": "Website"
     },
     {
-      "icon": "mdiGithub",
+      "icon": "mdi:github",
       "link": "https://github.com/shadow81627/brisbane-city-council-free-native-plants",
       "tooltip": "Github"
     }

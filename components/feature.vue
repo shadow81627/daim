@@ -76,10 +76,12 @@
             location.region ||
             location.country)
         "
+        button-class="ml-2"
         v-bind="location"
       ></LocationButton>
       <BaseTooltipButton
         v-if="url"
+        button-class="ml-2"
         v-bind="{
           link: url,
           tooltip: `Learn more about ${name}`,
@@ -89,6 +91,7 @@
         v-for="link in links"
         v-bind="link"
         :key="link"
+        button-class="ml-2"
       ></BaseTooltipButton>
     </v-card-actions>
   </v-card>
