@@ -41,6 +41,7 @@ export default {
       url: item.offers ? `/${slug}/${item.slug}` : item.url,
       image: `/img/${slug}/${item.slug}.png`,
       imageColor: item.color,
+      links: item.links.reverse(),
     }));
 
     // Move placeholder to start
