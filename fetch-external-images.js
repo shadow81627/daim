@@ -72,11 +72,8 @@ async function updateContent({
   for await (const filename of getFiles(folder)) {
     const data = fs.readFileSync(filename);
     const content = JSON.parse(data);
-    let imageUrl = lodash.get(content, imageKey) ?? '';
-    imageUrl = imageUrl.replace(/^\/\//, 'https://');
-    imageUrl = imageUrl.replace(/^https:\/\/daim.dev\//, '');
     const slug = path.parse(filename).name;
-    const imagePath = `${imageFolder}${slug}.png`;
+
     console.log(slug);
     if (content.offers) {
       for (const categoryKey in content.offers) {
@@ -108,18 +105,33 @@ async function updateContent({
         }
       }
     }
-    const fileExists = await checkFileExists(imagePath);
-    if (imageUrl && !fileExists) {
-      if (imageUrl.startsWith('http')) {
-        await downloadImage(imageUrl, imagePath);
-        await resize({ input: imagePath, output: imagePath });
-      } else {
-        const input = `static/${imageUrl}`.replace('//', '/');
-        await resize({ input, output: imagePath });
+    const imageUrl = (lodash.get(content, imageKey) ?? '')
+      .replace(/^\/\//, 'https://')
+      .replace(/^https:\/\/daim.dev\//, '');
+    const bannerUrl = lodash.get(content, 'banner') ?? '';
+    const imagePath = `${imageFolder}${slug}.png`;
+    const bannerPath = `${imageFolder}/banners/${slug}.png`;
+    const images = [
+      { imageUrl, imagePath, type: 'main' },
+      { imageUrl: bannerUrl, imagePath: bannerPath, type: 'banner' },
+    ];
+    for (const image of images) {
+      const fileExists = await checkFileExists(image.imagePath);
+      if (image.imageUrl && !fileExists) {
+        if (image.imageUrl.startsWith('http')) {
+          await downloadImage(image.imageUrl, image.imagePath);
+          await resize({ input: image.imagePath, output: image.imagePath });
+        } else {
+          const input = `static/${image.imageUrl}`.replace('//', '/');
+          await resize({ input, output: image.imagePath });
+        }
+        if (image.type === 'main' && !content.color) {
+          const { dominant } = await sharp(image.imagePath).stats();
+          content.color = rgbToHex(dominant);
+        }
       }
-      const { dominant } = await sharp(imagePath).stats();
-      content.color = rgbToHex(dominant);
     }
+
     if (rename) {
       const renamed = renameKeys(content);
       const stringContent = JSON.stringify(renamed, null, 2) + '\n';
