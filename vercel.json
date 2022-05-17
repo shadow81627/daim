@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "trailingSlash": false,
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/_nuxt/(.*)",
