@@ -2,6 +2,7 @@
   "name": "daim",
   "version": "1.48.8",
   "description": "Damien Robinson Web Development",
+  "packageManager": "yarn@3.2.0",
   "author": {
     "name": "Damien Robinson",
     "email": "damien.robinson@daim.dev",
