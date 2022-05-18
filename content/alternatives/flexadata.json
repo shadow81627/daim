@@ -1,0 +1,22 @@
+{
+  "color": "#FFFFFF",
+  "description": "Big data analytics, digital transformation & cloud consulting. Unlock growth opportunities and cost efficiencies with an Australian business that listens.",
+  "image": "https://flexadata.com/assets/images/logo-2.png",
+  "name": "flexa",
+  "subheading": "Data Analytics Consultants",
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "postcode": "4000",
+    "region": "QLD"
+  },
+  "list": [
+    "IT Strategy, Planning & Advice",
+    "Cloud, Digital & Data Transformation",
+    "Insights & Data Science",
+    "Enterprise & Solution Architecture",
+    "Product Design & Development",
+    "Project Management"
+  ],
+  "url": "https://flexadata.com/"
+}
