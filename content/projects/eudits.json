@@ -1,0 +1,12 @@
+{
+  "description": "Eudits is an auditing platform that enables technical users to complete complex audits performed by people.",
+  "image": "/img/portfolio/eudits.png",
+  "links": [
+    {
+      "link": "https://eudits-public-landing.pages.dev/",
+      "tooltip": "Website"
+    }
+  ],
+  "name": "Eudits",
+  "startDate": "2022-05-25T05:57:04Z"
+}
