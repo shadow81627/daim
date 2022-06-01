@@ -1,5 +1,11 @@
 # Releases
 
+## [1.49.0](https://github.com/shadow81627/daim/compare/v1.48.8...v1.49.0) (2022-06-01)
+
+### Features
+
+- **pages:** add value based pricing canvas ([4d0f4af](https://github.com/shadow81627/daim/commit/4d0f4af90b2cbc7a0db96f9d11e204250117d6ff))
+
 ## [1.48.8](https://github.com/shadow81627/daim/compare/v1.48.7...v1.48.8) (2022-05-14)
 
 ### Bug Fixes
