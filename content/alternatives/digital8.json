@@ -1,0 +1,21 @@
+{
+  "color": "#f8f8f8",
+  "description": "We are Brisbane's premier digital transformation experts delivering cutting edge digital solutions for businesses and organisations to get to the forefront of their industry.",
+  "image": "https://digital8.com.au/wp-content/uploads/2020/01/ogimage.jpg",
+  "list": [
+    "Website Development",
+    "Apps",
+    "Design & Experience",
+    "Digital Marketing",
+    "Copywriting and Content Services"
+  ],
+  "location": {
+    "streetAddress": "Level 1, 49 Melbourne Street",
+    "city": "South Brisbane",
+    "countryCode": "AU",
+    "region": "Queensland"
+  },
+  "name": "digital8",
+  "subtitle": "Brisbane's home of web design.",
+  "url": "https://digital8.com.au/"
+}
