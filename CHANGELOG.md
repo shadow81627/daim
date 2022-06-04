@@ -1,5 +1,11 @@
 # Releases
 
+## [1.50.0](https://github.com/shadow81627/daim/compare/v1.49.2...v1.50.0) (2022-06-04)
+
+### Features
+
+- **pages:** add pitches ([d467332](https://github.com/shadow81627/daim/commit/d467332e859b2633138b4480b26a7d06329b0f0a))
+
 ## [1.49.2](https://github.com/shadow81627/daim/compare/v1.49.1...v1.49.2) (2022-06-04)
 
 ### Bug Fixes
