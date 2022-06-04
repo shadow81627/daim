@@ -7,6 +7,11 @@
     "Extend my IT team",
     "I need UI/UX/IT consulting"
   ],
+  "location": {
+    "city": "Warszawa",
+    "countryCode": "PL",
+    "streetAddress": "MDBootstrap Kijowska 7, 03-738"
+  },
   "name": "Material Design Bootstrap (MDB)",
   "plans": {
     "basic": {
