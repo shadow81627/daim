@@ -1,5 +1,11 @@
 # Releases
 
+## [1.49.1](https://github.com/shadow81627/daim/compare/v1.49.0...v1.49.1) (2022-06-04)
+
+### Bug Fixes
+
+- **price range:** display free options avalible rather than $0 ([4727fbd](https://github.com/shadow81627/daim/commit/4727fbda5e629478b9412707b4856f6997b0a765))
+
 ## [1.49.0](https://github.com/shadow81627/daim/compare/v1.48.8...v1.49.0) (2022-06-01)
 
 ### Features
