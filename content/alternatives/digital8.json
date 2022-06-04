@@ -10,10 +10,10 @@
     "Copywriting and Content Services"
   ],
   "location": {
-    "streetAddress": "Level 1, 49 Melbourne Street",
     "city": "South Brisbane",
     "countryCode": "AU",
-    "region": "Queensland"
+    "region": "Queensland",
+    "streetAddress": "Level 1, 49 Melbourne Street"
   },
   "name": "digital8",
   "subtitle": "Brisbane's home of web design.",
