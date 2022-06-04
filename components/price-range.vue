@@ -2,9 +2,13 @@
   <div v-if="!priceUnset">
     <div>Price range</div>
 
-    {{ price(priceMax.price) }}
+    <template v-if="priceMax.price !== 0">
+      {{ price(priceMax.price) }}
+    </template>
 
-    <template v-if="priceSame || priceMin.price === 0">
+    <template
+      v-if="(priceSame || priceMin.price === 0) && priceMax.price !== 0"
+    >
       {{ priceMax.currency || 'USD' }}
 
       <template v-if="priceMax.interval">/ {{ priceMax.interval }}</template>
@@ -12,7 +16,7 @@
 
     <template v-if="!priceSame"> - </template>
 
-    <template v-if="!priceSame">
+    <template v-if="!priceSame || priceMax.price === 0">
       <strong v-if="priceMin.price === 0"> Free option available</strong>
       <template v-else
         >{{ price(priceMin.price) }} {{ priceMax.currency || 'USD' }}</template
