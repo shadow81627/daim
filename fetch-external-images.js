@@ -18,7 +18,7 @@ function rgbToHex({ r, g, b }) {
 function renameKeys(content) {
   return normalizeData({
     obj: content,
-    keysMap: { href: 'url', heading: 'name' },
+    keysMap: { href: 'url', heading: 'name', subtitle: 'subheading' },
   });
 }
 
