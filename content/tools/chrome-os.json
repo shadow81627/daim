@@ -9,6 +9,6 @@
     "Supporting Hybrid work"
   ],
   "name": "Chrome OS",
-  "subtitle": "A cloud-first operating system for your enterprise",
-  "url": "https://chromeenterprise.google/intl/en_au/os/"
+  "url": "https://chromeenterprise.google/intl/en_au/os/",
+  "subheading": "A cloud-first operating system for your enterprise"
 }
