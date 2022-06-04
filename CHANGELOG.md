@@ -1,5 +1,11 @@
 # Releases
 
+## [1.49.2](https://github.com/shadow81627/daim/compare/v1.49.1...v1.49.2) (2022-06-04)
+
+### Bug Fixes
+
+- **fetch exteral images:** rename subtitle to subheading ([6cc01f8](https://github.com/shadow81627/daim/commit/6cc01f8f6f7b5b19b003bbd1cc7cfc36a8f2a321))
+
 ## [1.49.1](https://github.com/shadow81627/daim/compare/v1.49.0...v1.49.1) (2022-06-04)
 
 ### Bug Fixes
