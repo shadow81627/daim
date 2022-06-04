@@ -1,0 +1,13 @@
+{
+  "color": "#f8f8f8",
+  "description": "Bootstrap components recreated with Tailwind CSS, but with better design and more functionalities. ",
+  "image": "https://tailwind-elements.com/img/components.png",
+  "list": [
+    "500+ UI components",
+    "Super simple, 1 minute installation",
+    "Free hosting",
+    "MIT license - free for personal & commercial use"
+  ],
+  "name": "Tailwind Elements",
+  "url": "https://tailwind-elements.com/"
+}
