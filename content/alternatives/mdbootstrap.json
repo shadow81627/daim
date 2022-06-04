@@ -1,0 +1,21 @@
+{
+  "color": "#f8f8f8",
+  "description": "With the help of a global brand experienced in projects of any scale",
+  "image": "https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/about/assets/mdb5-about.jpg",
+  "list": [
+    "Code something for me",
+    "Extend my IT team",
+    "I need UI/UX/IT consulting"
+  ],
+  "name": "Material Design Bootstrap (MDB)",
+  "plans": {
+    "basic": {
+      "price": 1000
+    },
+    "max": {
+      "price": 500000
+    }
+  },
+  "subheading": "Innovate Quickly",
+  "url": "https://mdbootstrap.com/"
+}
