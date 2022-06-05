@@ -1,0 +1,23 @@
+{
+  "color": "#FFFFFF",
+  "description": "R6 Digital is Brisbane's best full-service digital agency, with a team of over 50 people who are award winning specialists in their fields. We provide businesses with end-to-end digital solutions, from brand discovery through to app development & google ads, our team has the expertise to help you hit your business goals.",
+  "image": "https://r6digital.com.au/wp-content/uploads/2021/06/R6Digital@2x.png",
+  "list": [
+    "Brand Identity",
+    "User Experience",
+    "Web Design",
+    "Custom Development",
+    "Digital Marketing",
+    "Content Creation"
+  ],
+  "location": {
+    "city": "Brisbane",
+    "countryCode": "AU",
+    "postcode": "4000",
+    "region": "Queensland",
+    "streetAddress": "Level 21, 167 Eagle St"
+  },
+  "name": "R6 Digital",
+  "subheading": "We help ambitious businesses harness the power of digital.",
+  "url": "https://r6digital.com.au/"
+}
