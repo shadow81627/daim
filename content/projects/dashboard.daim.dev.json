@@ -1,0 +1,18 @@
+{
+  "color": "#f8f8f8",
+  "description": "Project management dashboard for digital agencies.",
+  "image": "/img/portfolio/daim.dev.png",
+  "links": [
+    {
+      "link": "https://dashboard.daim.dev",
+      "tooltip": "Website"
+    },
+    {
+      "icon": "mdi:github",
+      "link": "https://github.com/daim-dev/daim",
+      "tooltip": "Github"
+    }
+  ],
+  "name": "Daim Dashboard",
+  "_startDate": "2022-06-12T07:02:26Z"
+}
