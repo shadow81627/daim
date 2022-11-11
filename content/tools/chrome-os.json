@@ -1,6 +1,7 @@
 {
   "color": "#f8f8f8",
   "description": "The nerve centre of a cloud-first business, Chrome OS provides employees with a modern experience and devices that stay fast, have built-in security, deploy quickly and reduce the total cost of ownership.",
+  "icon": "logos:chrome",
   "image": "https://storage.googleapis.com/chrome-enterprise/img/global/social/chrome-enterprise-fb.png",
   "list": [
     "Security",
