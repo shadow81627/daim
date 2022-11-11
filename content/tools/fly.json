@@ -1,8 +1,8 @@
 {
   "color": "#4c4e67",
   "description": "Run your full stack apps (and databases!) all over the world. No ops required.",
-  "image": "/img/tools/fly.svg",
   "icon": "logos:fly-icon",
+  "image": "/img/tools/fly.svg",
   "list": [
     "PostgreSQL Clusters",
     "CPU, Memory, and Storage on Tap",
