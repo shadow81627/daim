@@ -1,0 +1,29 @@
+{
+  "color": "#4c4e67",
+  "description": "Run your full stack apps (and databases!) all over the world. No ops required.",
+  "image": "/img/tools/fly.svg",
+  "list": [
+    "PostgreSQL Clusters",
+    "CPU, Memory, and Storage on Tap",
+    "Metrics and Alerting",
+    "Batteries Included Networking",
+    "SSL At Any Scale"
+  ],
+  "name": "Fly.io",
+  "plans": {
+    "launch": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Launch",
+      "price": 29
+    },
+    "scale": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Scale",
+      "price": 199
+    }
+  },
+  "subheading": "Deploy App Servers Close to Your Users",
+  "url": "https://fly.io/"
+}
