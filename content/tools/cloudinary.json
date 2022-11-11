@@ -1,7 +1,7 @@
 {
   "color": "#f8f8f8",
   "description": "Automate the entire image-processing pipeline: from uploads to on-the-fly manipulations to optimization to dynamic delivery with any CDN.",
-  "icon": "logos:cloudinary",
+  "icon": "logos:cloudinary-icon",
   "image": "https://res.cloudinary.com/cloudinary-marketing/image/upload/f_auto,q_auto/v1597642219/creative_source/Brand/Social%20Images/Cld_SocShare_Card_FB_2020.png",
   "name": "Cloudinary",
   "plans": {
