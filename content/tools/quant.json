@@ -1,0 +1,33 @@
+{
+  "color": "#f8f8f8",
+  "description": "Quant UX is a research, usability and prototyping tool to quickly test your designs and get data driven insights.",
+  "image": "https://quant-ux.com/pics/landing/teaser6_lq.webp",
+  "list": [
+    "Visual Designer",
+    "Design Tokens",
+    "Design Systems",
+    "Animations",
+    "Rich Component Palette",
+    "Smart Tools",
+    "A / B Testing",
+    "Business Logic",
+    "Validation & Data",
+    "Integration",
+    "QR Codes"
+  ],
+  "name": "Quant UX",
+  "plans": {
+    "blaze": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Blaze",
+      "price": 25
+    },
+    "spark": {
+      "name": "Spark",
+      "price": 0
+    }
+  },
+  "subheading": "Prototype, Test and Learn.",
+  "url": "https://quant-ux.com/"
+}
