@@ -30,7 +30,7 @@
     "write-good": "write-good content",
     "cspell": "cspell content/**",
     "lhci:autorun": "lhci autorun",
-    "images": "node images.js",
+    "images": "node fetch-external-images.js",
     "test": "codeceptjs run --steps",
     "test:e2e": "codeceptjs run --steps",
     "update:snapshots": "rsync -a ./test/e2e/output/ ./test/e2e/screenshots/base"
