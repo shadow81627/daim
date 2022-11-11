@@ -1,0 +1,16 @@
+{
+  "color": "#0898e8",
+  "description": "Get production-accurate data and preview databases to code against, fast.",
+  "image": "https://uploads-ssl.webflow.com/605b054afe05f848015d3a1a/633588cf2187764d7e600289_Updated%20graphic.svg",
+  "list": [
+    "Safe & secure",
+    "Custom anonymized data",
+    "Fast, tiny downloads",
+    "Realistic",
+    "Up to date",
+    "Easy to restore"
+  ],
+  "name": "Snaplet",
+  "subheading": "Quit writing seed scripts, start shipping features",
+  "url": "https://www.snaplet.dev/"
+}
