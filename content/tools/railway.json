@@ -1,0 +1,30 @@
+{
+  "color": "#4c4e67",
+  "description": "Made for any language, for projects big and small. Railway is the cloud that takes the complexity out of shipping software.",
+  "icon": "simple-icons:railway",
+  "iconColor": "#000000",
+  "image": "https://railway.app/og.png",
+  "list": [
+    "Keyboard Friendly",
+    "Secrets Management",
+    "Usage-based Pricing",
+    "Start or Extend your Infrastructure with One Click."
+  ],
+  "name": "Railway",
+  "plans": {
+    "trail": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Trail",
+      "price": 0
+    },
+    "usage": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Usage",
+      "price": 20
+    }
+  },
+  "subheading": "Bring your code, we'll handle the rest.",
+  "url": "https://railway.app/"
+}
