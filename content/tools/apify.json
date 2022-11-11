@@ -1,0 +1,43 @@
+{
+  "color": "#f8f8f8",
+  "description": "Apify is your one-stop shop for web scraping, data extraction, and RPA. Automate anything you can do manually in a browser.",
+  "image": "https://apify.com/img/og-image.png",
+  "list": [
+    "Collect data from any website",
+    "Automate any online process",
+    "Integrate with any system",
+    "Never get blocked",
+    "Rich developer ecosystem"
+  ],
+  "name": "Apify",
+  "plans": {
+    "enterprise": {
+      "currency": "USD",
+      "description": "Customized package for your scale. Upgrade anytime.",
+      "interval": "month",
+      "name": "Enterprise",
+      "price": 499
+    },
+    "free": {
+      "description": "The easiest way to get started with Apify. Forever free, but with limits.",
+      "name": "Free",
+      "price": 0
+    },
+    "personal": {
+      "currency": "USD",
+      "description": "Cost-effective plan for freelancers, developers, and students.",
+      "interval": "month",
+      "name": "Personal",
+      "price": 49
+    },
+    "team": {
+      "currency": "USD",
+      "description": "Ideal for small teams working together on projects.",
+      "interval": "month",
+      "name": "Team",
+      "price": 499
+    }
+  },
+  "subheading": "The most powerful web scraping and automation platform",
+  "url": "https://apify.com/"
+}
