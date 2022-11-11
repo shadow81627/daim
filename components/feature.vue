@@ -9,7 +9,10 @@
       :sizes="_srcset.size"
       cover
       :aspect-ratio="imageWidth / imageHeight"
-      :style="`background-color: ${_imageBackgroundColor}`"
+      :style="{
+        backgroundColor: _imageBackgroundColor,
+        backgroundImage,
+      }"
     ></v-img>
     <v-card-title>
       <span class="h3 text-break">
@@ -121,6 +124,7 @@ export default {
     imageQuality: { type: Number, default: 100 },
     imageColor: { type: String, default: '#fff' },
     imageBackgroundColor: { type: String, default: null },
+    backgroundImage: { type: String, default: undefined },
     imageFit: {
       type: String,
       default: 'inside',
