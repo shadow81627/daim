@@ -1,5 +1,6 @@
 {
   "color": "#080808",
+  "icon": "@custom:custom:unleash-icon",
   "description": "Feature management lets you turn new features on/off in production with no need for redeployment. A software development best practice for releasing and validating new features.",
   "image": "https://repository-images.githubusercontent.com/24594933/0ee96080-d406-11eb-856d-7df51ff2efbb",
   "name": "Unleash",

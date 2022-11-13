@@ -1,7 +1,7 @@
 {
   "color": "#2888f8",
   "description": "LanguageTool is a free online proofreading service for English, Spanish, and 20 other languages. Instantly check your text for grammar and style mistakes.",
-  "icon": "icon-park:writing-fluently",
+  "icon": "logos:languagetool",
   "image": "https://languagetool.org/images/social/og_image.jpg",
   "list": [
     "Spelling",

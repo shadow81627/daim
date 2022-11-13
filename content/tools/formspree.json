@@ -1,7 +1,7 @@
 {
   "color": "#c80828",
   "description": "Set up simple forms to send data to an email address",
-  "icon": "clarity:form-line",
+  "icon": "@custom:custom:formspree-icon",
   "iconColor": "#e5122e",
   "image": "https://formspree.io/img/formspree-og.jpg",
   "list": [

@@ -1,7 +1,7 @@
 {
   "color": "#181828",
   "description": "Start monitoring in 30 seconds. Use advanced SSL, keyword and cron monitoring. Get notified by email, SMS, Slack and more. Get 50 monitors for FREE!",
-  "icon": "arcticons:uptimerobot",
+  "icon": "@custom:custom:uptimerobot-icon",
   "iconColor": "#3bd671",
   "image": "https://uptimerobot.com/assets/images/ogimage.png",
   "list": [

@@ -133,7 +133,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: 'plugins/icons' }],
 
   /*
    ** Nuxt.js dev-modules
