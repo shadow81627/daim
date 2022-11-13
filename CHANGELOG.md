@@ -1,5 +1,15 @@
 # Releases
 
+## [1.51.0](https://github.com/shadow81627/daim/compare/v1.50.0...v1.51.0) (2022-11-13)
+
+### Bug Fixes
+
+- **icon:** allow inline ([303f818](https://github.com/shadow81627/daim/commit/303f8189baa3a270604e16f01487d42d2efd9123))
+
+### Features
+
+- generate custom svg icon logos for tools ([6b9b8b0](https://github.com/shadow81627/daim/commit/6b9b8b044665e6788de2ba7e67bc9d93aabaefe2))
+
 ## [1.50.0](https://github.com/shadow81627/daim/compare/v1.49.2...v1.50.0) (2022-06-04)
 
 ### Features
