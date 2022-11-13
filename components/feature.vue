@@ -27,6 +27,7 @@
             :color="iconColor"
             :icon="icon"
             style="font-size: 1em"
+            :inline="true"
           ></BaseIcon>
         </template>
         {{ name }}

@@ -12,7 +12,7 @@
     v-else
     style="font-size: 2em; width: 32px; height: 32px"
     :style="{ color: color }"
-    :icon="icon"
+    v-bind="{ icon, inline }"
   ></Icon>
 </template>
 
@@ -32,6 +32,7 @@ export default {
       type: [Number, String],
       default: 56,
     },
+    inline: { type: Boolean, default: null },
   },
   head() {
     if (!this.isFontAwesomeIcon) {
