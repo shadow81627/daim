@@ -1,7 +1,7 @@
 {
   "color": "#f8f8f8",
-  "icon": "@custom:custom:quant-icon",
   "description": "Quant UX is a research, usability and prototyping tool to quickly test your designs and get data driven insights.",
+  "icon": "@custom:custom:quant-icon",
   "image": "https://quant-ux.com/pics/landing/teaser6_lq.webp",
   "list": [
     "Visual Designer",

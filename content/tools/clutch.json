@@ -1,7 +1,7 @@
 {
   "color": "#f8f8f8",
   "description": "Ratings and reviews of leading IT, marketing, and business services companies. Clutch is your data-driven field guide for B2B buying and hiring decisions.",
-  "icon": "mdi:car-clutch",
+  "icon": "@custom:custom:clutch-icon",
   "image": "/img/tools/clutch.svg",
   "imageBackgroundColor": "#17313b",
   "name": "Clutch",

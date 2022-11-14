@@ -1,7 +1,7 @@
 {
   "color": "#081838",
   "description": "Wasabi is making cloud data storage simple, affordable, fast and secure. It’s all we do, and we do it better than anyone.",
-  "icon": "simple-icons:amazons3",
+  "icon": "@custom:custom:wasabi",
   "iconColor": "#36b32f",
   "image": "https://embedwistia-a.akamaihd.net/deliveries/e14673db4bd7c76b7236d23eefa7521e.webp",
   "list": [

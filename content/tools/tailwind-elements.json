@@ -1,6 +1,7 @@
 {
   "color": "#f8f8f8",
   "description": "Bootstrap components recreated with Tailwind CSS, but with better design and more functionalities. ",
+  "icon": "@custom:custom:tailwind-elements-icon",
   "image": "https://tailwind-elements.com/img/components.png",
   "list": [
     "500+ UI components",

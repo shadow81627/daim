@@ -1,7 +1,7 @@
 {
   "color": "#f8f8f8",
   "description": "Vue Storefront provides online shopping experiences like native apps, boosts site performance, & customization. Check other benefits!",
-  "icon": "ic:baseline-storefront",
+  "icon": "@custom:custom:vue-storefront-icon",
   "iconColor": "#02c652",
   "image": "https://uploads-ssl.webflow.com/5e7cf661c23ac9df156d9c3d/6165d2f29e8d9c5daccf76f3_About%20us.png",
   "name": "Vue Storefront",

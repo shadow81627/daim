@@ -1,8 +1,8 @@
 {
   "backgroundImage": "url('https://carrd.co/assets/images/etc/overlay.png'), linear-gradient(45deg, #6E436C 25%, #2A4584 75%)",
   "color": "#2A4584",
-  "icon": "@custom:custom:carrd-icon",
   "description": "Whether it's a personal profile, a landing page to capture emails, or something a bit more elaborate, Carrd has you covered. Simple, responsive, and yup — totally free.",
+  "icon": "@custom:custom:carrd-icon",
   "image": "/img/tools/carrd.svg",
   "list": [
     "Custom Domains",
