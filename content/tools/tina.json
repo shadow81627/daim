@@ -1,0 +1,45 @@
+{
+  "color": "#f8f8f8",
+  "iconColor": "#ec4815",
+  "description": "Tina is an open-source, headless CMS for Markdown, MDX, and JSON.",
+  "icon": "@custom:custom:tina-icon",
+  "image": "https://tinacms.org/img/tina-twitter-share.png",
+  "list": [
+    "Own Your Content",
+    "Simple CMS Configuration",
+    "Powered by Git",
+    "Visual Editing",
+    "Static and Dynamic",
+    "Develop Locally",
+    "3rd-party Media",
+    "Composable Blocks",
+    "Markdown at Scale"
+  ],
+  "name": "Tina CMS",
+  "plans": {
+    "basic": {
+      "name": "Basic",
+      "price": 0
+    },
+    "business": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Business",
+      "price": 599
+    },
+    "enterprise": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Enterprise",
+      "price": 2999
+    },
+    "team": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Team",
+      "price": 29
+    }
+  },
+  "subheading": "Edit Markdown, Visually",
+  "url": "https://firebase.google.com/"
+}
