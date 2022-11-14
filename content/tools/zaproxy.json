@@ -1,0 +1,15 @@
+{
+  "color": "#f8f8f8",
+  "description": "The world’s most widely used web app scanner. Free and open source. Actively maintained by a dedicated international team of volunteers. A GitHub Top 1000 project.",
+  "icon": "@custom:custom:zap-icon",
+  "image": "https://www.zaproxy.org/img/zap-banner.png",
+  "list": [
+    "Vulnerability Assessment ",
+    "Penetration Testing",
+    "Runtime Testing",
+    "Code Review"
+  ],
+  "name": "OWASP Zed Attack Proxy (ZAP)",
+  "subheading": "App Development Platform",
+  "url": "https://www.zaproxy.org/"
+}

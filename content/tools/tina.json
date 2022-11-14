@@ -1,8 +1,8 @@
 {
   "color": "#f8f8f8",
-  "iconColor": "#ec4815",
   "description": "Tina is an open-source, headless CMS for Markdown, MDX, and JSON.",
   "icon": "@custom:custom:tina-icon",
+  "iconColor": "#ec4815",
   "image": "https://tinacms.org/img/tina-twitter-share.png",
   "list": [
     "Own Your Content",
@@ -41,5 +41,5 @@
     }
   },
   "subheading": "Edit Markdown, Visually",
-  "url": "https://firebase.google.com/"
+  "url": "https://tina.io/"
 }
