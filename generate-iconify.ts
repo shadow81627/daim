@@ -99,9 +99,14 @@ async function cropSVG(svg: string) {
 
   // Save to file
   await fs.writeFile(`assets/icons.json`, exported, 'utf8');
+  // Save svg optimization state
   await fs.writeFile(
     optimizedFilePath,
-    JSON.stringify(optimized, undefined, 2) + '\n',
+    JSON.stringify(
+      optimized.sort((a, b) => a.name.localeCompare(b.name)),
+      undefined,
+      2,
+    ) + '\n',
     'utf-8',
   );
 })();
