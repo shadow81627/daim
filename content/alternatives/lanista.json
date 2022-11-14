@@ -1,0 +1,19 @@
+{
+  "description": "We help companies and startups make their products better every day. So we create high quality digital products for a professional look.",
+  "image": "https://lanista.com.tr/_nuxt/image/d4ed53.svg",
+  "list": [
+    "UI/UX Design",
+    "Frontend Development",
+    "Backend Development",
+    "Project Consult"
+  ],
+  "location": {
+    "city": "Tuşba",
+    "countryCode": "TR",
+    "region": "Van",
+    "streetAddress": "BARDAKÇI MAH.TEKNOKENT SK NO: 1 IÇ KAPI NO: 9, 65040"
+  },
+  "name": "Lanista",
+  "subheading": "We create high quality digital products for everyone.",
+  "url": "https://lanista.com.tr/"
+}
