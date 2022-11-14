@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 import { importDirectory } from '@iconify/tools/lib/import/directory';
 import { cleanupSVG } from '@iconify/tools/lib/svg/cleanup';
 import { runSVGO } from '@iconify/tools/lib/optimise/svgo';
-// import { parseColors, isEmptyColor } from '@iconify/tools/lib/colors/parse';
+import { parseColors, isEmptyColor } from '@iconify/tools/lib/colors/parse';
 import axios from 'axios';
 import { optimize } from 'svgo';
 
@@ -80,6 +80,18 @@ async function cropSVG(svg: string) {
 
     // Update icon
     iconSet.fromSVG(name, svg);
+
+    const greys = ['clutch-icon'];
+    if (greys.includes(name)) {
+      const nameGray = `${name}-gray`;
+      await parseColors(svg, {
+        defaultColor: 'currentColor',
+        callback: (attr, colorStr, color) => {
+          return !color || isEmptyColor(color) ? colorStr : 'currentColor';
+        },
+      });
+      iconSet.fromSVG(nameGray, svg);
+    }
   });
 
   // Export as IconifyJSON
