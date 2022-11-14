@@ -5,6 +5,10 @@ import { runSVGO } from '@iconify/tools/lib/optimise/svgo';
 import { parseColors, isEmptyColor } from '@iconify/tools/lib/colors/parse';
 import axios from 'axios';
 import { optimize } from 'svgo';
+import type { SVG } from '@iconify/tools/lib/svg';
+import { IconSet } from '@iconify/tools/lib/icon-set';
+
+type OptimizedStateItem = { name: string; date: Date };
 
 async function cropSVG(svg: string) {
   const response = await axios.post(
@@ -21,10 +25,22 @@ async function cropSVG(svg: string) {
   return response.data.result;
 }
 
+async function cleanSvg(name: string, svg: SVG, iconSet: IconSet) {
+  // Clean up and optimise icons
+  try {
+    await cleanupSVG(svg);
+    await runSVGO(svg);
+  } catch (err) {
+    // Invalid icon
+    console.error(`Error parsing ${name}:`, err);
+    iconSet.remove(name);
+  }
+}
+
 (async () => {
   const optimizedFilePath = 'assets/img/icons/optimized.json';
   const optimizedFile = await fs.readFile(optimizedFilePath, 'utf-8');
-  const optimized = JSON.parse(optimizedFile);
+  const optimized: OptimizedStateItem[] = JSON.parse(optimizedFile);
 
   // Import icons
   const iconSet = await importDirectory('assets/img/icons', {
@@ -44,11 +60,7 @@ async function cropSVG(svg: string) {
       return;
     }
 
-    if (
-      !optimized.some(
-        (item: { name: string; date: Date }) => item.name === name,
-      )
-    ) {
+    if (!optimized.some((item) => item.name === name)) {
       const cropped = await cropSVG(svg.toString());
       const result = await optimize(cropped, {
         js2svg: {
@@ -61,24 +73,7 @@ async function cropSVG(svg: string) {
       optimized.push({ name, date: new Date() });
     }
 
-    // Clean up and optimise icons
-    try {
-      await cleanupSVG(svg);
-      // await parseColors(svg, {
-      //   defaultColor: 'currentColor',
-      //   callback: (attr, colorStr, color) => {
-      //     return !color || isEmptyColor(color) ? colorStr : 'currentColor';
-      //   },
-      // });
-      await runSVGO(svg);
-    } catch (err) {
-      // Invalid icon
-      console.error(`Error parsing ${name}:`, err);
-      iconSet.remove(name);
-      return;
-    }
-
-    // Update icon
+    cleanSvg(name, svg, iconSet);
     iconSet.fromSVG(name, svg);
 
     const greys = ['clutch-icon'];
