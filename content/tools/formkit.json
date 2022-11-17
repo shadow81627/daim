@@ -1,0 +1,20 @@
+{
+  "color": "#f8f8f8",
+  "description": "A Vue form building framework that simplifies form structure, generation, validation, theming, submission, error handling, and more.",
+  "icon": "vscode-icons:file-type-formkit",
+  "image": "https://cdn.formk.it/og/og.png",
+  "list": [
+    "Validation built in",
+    "Powerful form generation",
+    "Robust theming including Tailwind support",
+    "Open source and free to use",
+    "High-Performance",
+    "Conditional Logic",
+    "Hooks & Events",
+    "Built-in Messaging",
+    "Internationalization"
+  ],
+  "name": "FormKit",
+  "subheading": "Build Vue 3 forms 10x faster.",
+  "url": "https://formkit.com/"
+}
