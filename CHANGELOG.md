@@ -1,5 +1,11 @@
 # Releases
 
+## [1.52.0](https://github.com/shadow81627/daim/compare/v1.51.0...v1.52.0) (2022-11-18)
+
+### Features
+
+- **tools:** allow sort url param ([0c2b76a](https://github.com/shadow81627/daim/commit/0c2b76a98a4db8860a3030be7dcaa65f9fdfbb66))
+
 ## [1.51.0](https://github.com/shadow81627/daim/compare/v1.50.0...v1.51.0) (2022-11-13)
 
 ### Bug Fixes
