@@ -21,8 +21,9 @@
 </template>
 
 <script>
-import { sortBy, maxBy } from 'lodash-es';
+import { sortBy } from 'lodash-es';
 import textLength from '~/utils/feature-text-length';
+import priceSort from '~/utils/price-sort';
 import DataIterator from '~/components/data-iterator.vue';
 export default {
   components: { DataIterator },
@@ -35,21 +36,13 @@ export default {
     };
   },
   async fetch() {
+    const sorts = [priceSort, textLength, 'slug'];
+    if (this.$route.query.sort) {
+      sorts.unshift(this.$route.query.sort);
+    }
     const data = sortBy(
       (await this.$content('tools').fetch()).filter((item) => !item.deleted_at),
-      [
-        /**
-         * Sort by largest price
-         * @param {*} o item to sort
-         */
-        function (o) {
-          const plans = sortBy(o?.plans ?? { free: { price: 0 } }, 'price');
-          const max = maxBy(plans, 'price');
-          return max.price;
-        },
-        textLength,
-        'slug',
-      ],
+      sorts,
     ).reverse();
     const items = data.map((item) => ({
       ...item,
