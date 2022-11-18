@@ -24,7 +24,8 @@
     },
     "types": [
       "@types/node",
-      "@nuxt/types"
+      "@nuxt/types",
+      "@types/lodash"
     ]
   },
   "ts-node": {
