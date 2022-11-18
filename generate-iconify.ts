@@ -49,6 +49,7 @@ async function cleanSvg(name: string, svg: SVG, iconSet: IconSet) {
 
   // Validate, clean up, fix palette and optimise
   await iconSet.forEach(async (name, type) => {
+    console.log(name);
     if (type !== 'icon') {
       return;
     }
