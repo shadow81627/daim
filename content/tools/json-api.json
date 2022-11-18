@@ -1,0 +1,18 @@
+{
+  "description": "By following shared conventions, you can increase productivity, take advantage of generalized tooling and best practices. Clients built around JSON:API are able to take advantage of its features around efficiently caching responses, sometimes eliminating network requests entirely.",
+  "icon": "mdi:code-json",
+  "image": "https://jsonapi.org/images/jsonapi.png",
+  "list": [
+    "Content negotiation",
+    "Fetching resources",
+    "Fetching relationships",
+    "Inclusion of related resources (compound documents)",
+    "Sparse field sets",
+    "Sorting",
+    "Pagination",
+    "Filtering"
+  ],
+  "name": "JSON API",
+  "subheading": "A specification for building APIs in JSON",
+  "url": "https://jsonapi.org/"
+}
