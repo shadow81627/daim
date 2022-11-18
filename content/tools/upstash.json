@@ -1,0 +1,27 @@
+{
+  "color": "#181818",
+  "description": "Designed for the serverless with per-request pricing and Redis®/Kafka® API.",
+  "icon": "logos:upstash-icon",
+  "image": "https://upstash.com/static/logo/og-homepage.jpg",
+  "list": [
+    "Durable Redis",
+    "Per-Request Pricing with Cap",
+    "Designed for the Edge",
+    "Global Low Latency"
+  ],
+  "name": "Upstash",
+  "plans": {
+    "free": {
+      "name": "Free",
+      "price": 0
+    },
+    "pay-as-you-go": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "Pay as you go",
+      "price": 160
+    }
+  },
+  "subheading": "Serverless Data for Redis and Kafka",
+  "url": "https://upstash.com/"
+}
