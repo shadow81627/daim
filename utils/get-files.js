@@ -1,5 +1,5 @@
-const { readdir } = require('fs').promises;
-const { resolve } = require('path');
+import { readdir } from 'fs/promises';
+import { resolve } from 'path';
 
 /**
  * https://stackoverflow.com/questions/5827612/node-js-fs-readdir-recursive-directory-search
@@ -17,4 +17,4 @@ async function* getFiles(dir) {
   }
 }
 
-module.exports = getFiles;
+export default getFiles;
