@@ -3813,6 +3813,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/sharp@npm:0.31.0":
+  version: 0.31.0
+  resolution: "@types/sharp@npm:0.31.0"
+  dependencies:
+    "@types/node": "*"
+  checksum: c7698de18183a0574bf2f703226a5a7dc32b8a7340b52790eff0f6775b8ad708b6782f48fcaaf4d1be15fd76215c81c3ea55595d55484bf7ce870923c8174294
+  languageName: node
+  linkType: hard
+
 "@types/source-list-map@npm:*":
   version: 0.1.2
   resolution: "@types/source-list-map@npm:0.1.2"
@@ -8097,6 +8106,7 @@ __metadata:
     "@semantic-release/changelog": 5.0.1
     "@semantic-release/git": 9.0.1
     "@types/lodash": 4.14.189
+    "@types/sharp": 0.31.0
     "@vue/test-utils": 1.2.2
     babel-plugin-module-resolver: 4.1.0
     browser-env: 3.3.0
