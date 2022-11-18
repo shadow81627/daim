@@ -1,0 +1,34 @@
+{
+  "color": "#181818",
+  "description": "Our global infrastructure gives you powerful features to deploy the serverless way and build modern applications faster.",
+  "icon": "simple-icons:koyeb",
+  "iconColor": "#000000",
+  "image": "https://www.koyeb.com/static/images/illustrations/og/koyeb-home.png",
+  "list": [
+    "Seamlessly host web apps and APIs",
+    "Blazing fast continuous deployment",
+    "Fully-managed background tasks",
+    "Serverless, zero infrastructure required",
+    "Edge. Multi-cloud. Global.",
+    "Powerful service mesh and discovery",
+    "Observability",
+    "Easily interconnect all your services",
+    "Intuitive web interface and CLI",
+    "Deploy globally in minutes"
+  ],
+  "name": "Koyeb",
+  "plans": {
+    "side-projects": {
+      "name": "For Side-Projects",
+      "price": 0
+    },
+    "small-production-apps": {
+      "currency": "USD",
+      "interval": "month",
+      "name": "For small production apps",
+      "price": 79
+    }
+  },
+  "subheading": "One platform for all your apps",
+  "url": "https://www.koyeb.com/"
+}
