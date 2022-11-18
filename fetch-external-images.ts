@@ -1,28 +1,29 @@
-const fs = require('fs');
-const path = require('path');
-const axios = require('axios');
-const sharp = require('sharp');
-const lodash = require('lodash');
-const getFiles = require('./utils/get-files');
-const normalizeData = require('./utils/normalize-data');
+import fs from 'fs';
+import path from 'path';
+import axios from 'axios';
+import sharp from 'sharp';
+import lodash from 'lodash';
+import getFiles from './utils/get-files';
+import normalizeData from './utils/normalize-data';
 
-function componentToHex(c) {
+function componentToHex(c: number) {
   const hex = c.toString(16);
   return hex.length === 1 ? '0' + hex : hex;
 }
 
-function rgbToHex({ r, g, b }) {
+type RGBToHexOptions = { r: number; g: number; b: number };
+function rgbToHex({ r, g, b }: RGBToHexOptions) {
   return '#' + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
-function renameKeys(content) {
+function renameKeys(content: Record<string, unknown>) {
   return normalizeData({
     obj: content,
     keysMap: { href: 'url', heading: 'name', subtitle: 'subheading' },
   });
 }
 
-const downloadImage = (url, imagePath) =>
+const downloadImage = (url: string, imagePath: string) =>
   axios({
     url,
     responseType: 'stream',
@@ -31,19 +32,19 @@ const downloadImage = (url, imagePath) =>
       new Promise((resolve, reject) => {
         response.data
           .pipe(fs.createWriteStream(imagePath))
-          .on('finish', () => resolve())
-          .on('error', (e) => reject(e));
+          .on('finish', () => resolve(imagePath))
+          .on('error', (e: Error) => reject(e));
       }),
   );
 
-function checkFileExists(file) {
+function checkFileExists(file: string) {
   return fs.promises
     .access(file, fs.constants.F_OK)
     .then(() => true)
     .catch(() => false);
 }
-
-async function resize({ input, output }) {
+type ResizeOptions = { input: string; output: string };
+async function resize({ input, output }: ResizeOptions) {
   try {
     const buffer = await sharp(input)
       .toFormat('png')
@@ -61,13 +62,18 @@ async function resize({ input, output }) {
     console.error(e);
   }
 }
-
+type UpdateContentOptions = {
+  folder: string;
+  imageFolder: string;
+  imageKey?: string;
+  rename?: boolean;
+};
 async function updateContent({
   folder,
   imageFolder,
   imageKey = 'image',
   rename = true,
-}) {
+}: UpdateContentOptions) {
   // get list of urls to crawl from content files
   for await (const filename of getFiles(folder)) {
     const data = fs.readFileSync(filename);
