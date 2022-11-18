@@ -1,0 +1,17 @@
+{
+  "color": "#080808",
+  "description": "A framework for orchestrating access, transformation, and synchronization between data sources.",
+  "icon": "mdi:orbit",
+  "iconColor": "#080808",
+  "image": "https://orbitjs.com/img/logo.png",
+  "list": [
+    "Multiple Data Sources",
+    "Uniform Data Access",
+    "Deterministic Change Tracking",
+    "Optimistic / Pessimistic Requests",
+    "Offline Support"
+  ],
+  "name": "Orbitjs",
+  "subheading": "The Universal Data Layer",
+  "url": "https://orbitjs.com/"
+}
