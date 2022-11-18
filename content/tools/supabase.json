@@ -1,0 +1,30 @@
+{
+  "color": "#080808",
+  "description": "Supabase is an open source Firebase alternative. Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, and Storage.",
+  "icon": "logos:supabase-icon",
+  "image": "https://supabase.com/images/og/og-image.jpg",
+  "list": [
+    "Database",
+    "Authentication",
+    "Storage",
+    "Edge Functions",
+    "Realtime"
+  ],
+  "name": "Supabase",
+  "plans": {
+    "free": {
+      "description": "Perfect for passion projects & simple websites.",
+      "name": "Free",
+      "price": 0
+    },
+    "pro": {
+      "currency": "USD",
+      "description": "For production applications with the option to scale.",
+      "interval": "month",
+      "name": "Pro",
+      "price": 25
+    }
+  },
+  "subheading": "Build in a weekend Scale to millions",
+  "url": "https://supabase.com/"
+}
