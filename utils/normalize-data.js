@@ -1,5 +1,5 @@
-const lodash = require('lodash');
-const sortObject = require('./sort-object');
+import { isObject } from 'lodash-es';
+import sortObject from './sort-object';
 
 /**
  * Normalize content for string diff
@@ -15,7 +15,7 @@ function normalizeData({ obj, keysMap = {} }) {
     if (keysMap[i]) {
       result[keysMap[i]] = result[i];
       delete result[i];
-    } else if (lodash.isObject(result[i])) {
+    } else if (isObject(result[i])) {
       result[i] = normalizeData({
         obj: result[i],
         keysMap,
@@ -25,4 +25,4 @@ function normalizeData({ obj, keysMap = {} }) {
   return result;
 }
 
-module.exports = normalizeData;
+export default normalizeData;
