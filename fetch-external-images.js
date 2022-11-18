@@ -132,6 +132,9 @@ async function updateContent({
       }
     }
 
+    // Remove last full stop from subheading
+    content.subheading = content.subheading?.replace(/\.$/, '');
+
     if (rename) {
       const renamed = renameKeys(content);
       const stringContent = JSON.stringify(renamed, null, 2) + '\n';
