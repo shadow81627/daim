@@ -8000,6 +8000,7 @@ __metadata:
     eslint-plugin-nuxt: 2.0.0
     eslint-plugin-prettier: 4.0.0
     github-markdown-css: 4.0.0
+    gitlog: 4.0.4
     husky: 7.0.2
     i18n-iso-countries: 6.8.0
     koa: 2.13.3
@@ -10668,6 +10669,16 @@ __metadata:
   dependencies:
     emoji-regex: ">=6.0.0 <=6.1.1"
   checksum: fe96b363df9363c78bd2f644697e2ce2a05b1b10391ac0ff918a433992b03d0dcb0b6903b1f44bee972616eb5d8799837f357cbe278fb35c5fef40b69316a8d8
+  languageName: node
+  linkType: hard
+
+"gitlog@npm:4.0.4":
+  version: 4.0.4
+  resolution: "gitlog@npm:4.0.4"
+  dependencies:
+    debug: ^4.1.1
+    tslib: ^1.14.1
+  checksum: 16c07800b8e04ab556651ec396d39e48fba7464d79c7c0a40f81661d7cfbc37babfde1a0ebad7d0eaa24834b85043e07b1cfb8b9a983a73279566732fdd4da90
   languageName: node
   linkType: hard
 
@@ -22971,7 +22982,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^1.8.1, tslib@npm:^1.9.0":
+"tslib@npm:^1.14.1, tslib@npm:^1.8.1, tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
