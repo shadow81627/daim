@@ -1,0 +1,22 @@
+{
+  "color": "#f8f8f8",
+  "description": "RxDB (short for Reactive Database) is a NoSQL-database for JavaScript Applications like Websites, hybrid Apps, Electron-Apps, Progressive Web Apps and Node.js.",
+  "icon": "logos:rxdb",
+  "image": "https://rxdb.info/files/logo/logo_text.png",
+  "list": [
+    "Realtime applications made easy",
+    "Replicate with your existing infrastructure",
+    "Online is optional",
+    "Flexible",
+    "Trusted and open source"
+  ],
+  "name": "RxDB",
+  "plans": {
+    "basic": {
+      "name": "RxDB Basics",
+      "price": 0
+    }
+  },
+  "subheading": "A client side, offline-first, reactive database for JavaScript Applications",
+  "url": "https://rxdb.info/"
+}
