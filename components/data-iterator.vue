@@ -4,6 +4,7 @@
     :search="query.search"
     :footer-props="{ itemsPerPageOptions }"
     :options.sync="query"
+    :loading="loading"
   >
     <template #header>
       <v-toolbar class="mb-1" flat>
@@ -48,6 +49,7 @@ import qs from 'query-string';
 export default {
   props: {
     items: { type: Array, default: () => [] },
+    loading: { type: Boolean, default: null },
   },
   data() {
     return {
