@@ -1,0 +1,15 @@
+{
+  "color": "#f8f8f8",
+  "description": "Umami is an open source, privacy-focused alternative to Google Analytics",
+  "icon": "@custom:custom:umami-icon",
+  "image": "https://umami.is/images/intro.jpg",
+  "list": [
+    "Respect data privacy",
+    "Own your data",
+    "Simple analytics",
+    "Open source"
+  ],
+  "name": "Umami",
+  "subheading": "Own your website analytics",
+  "url": "https://umami.is/"
+}
