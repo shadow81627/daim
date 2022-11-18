@@ -1,4 +1,4 @@
-const lodash = require('lodash');
+import { isObject } from 'lodash-es';
 
 /**
  * Sort object by keys
@@ -6,7 +6,7 @@ const lodash = require('lodash');
  * @returns {Object}
  */
 function sortObject(object) {
-  if (lodash.isObject(object) && !Array.isArray(object)) {
+  if (isObject(object) && !Array.isArray(object)) {
     return Object.keys(object)
       .sort()
       .reduce(function (result, key) {
@@ -17,4 +17,4 @@ function sortObject(object) {
   return object;
 }
 
-module.exports = sortObject;
+export default sortObject;
