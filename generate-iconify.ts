@@ -82,7 +82,7 @@ async function cleanSvg(name: string, svg: SVG, iconSet: IconSet) {
       const nameGray = `${name}-gray`;
       await parseColors(svg, {
         defaultColor: 'currentColor',
-        callback: (attr, colorStr, color) => {
+        callback: (_, colorStr, color) => {
           return !color || isEmptyColor(color) ? colorStr : 'currentColor';
         },
       });
