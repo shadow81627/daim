@@ -1,5 +1,5 @@
 // Utilities
-import { camelCase, upperFirst } from 'lodash';
+import { camelCase, upperFirst } from 'lodash-es';
 
 export default function (sections = []) {
   return {
