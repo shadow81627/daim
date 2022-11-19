@@ -1,6 +1,5 @@
 {
   "eslint.validate": ["vue", "javascript", "javascriptreact"],
-  "editor.formatOnSave": false,
   "vetur.validation.template": false,
   "files.exclude": {
     "**/.lighthouseci/**": true,
