@@ -1,5 +1,11 @@
 # Releases
 
+## [1.52.1](https://github.com/shadow81627/daim/compare/v1.52.0...v1.52.1) (2022-11-19)
+
+### Bug Fixes
+
+- **data iterator:** alias this.defaultQuery ([d65692e](https://github.com/shadow81627/daim/commit/d65692ee288617c1dcb4917e2062e098169cba12))
+
 ## [1.52.0](https://github.com/shadow81627/daim/compare/v1.51.0...v1.52.0) (2022-11-18)
 
 ### Features
