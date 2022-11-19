@@ -45,7 +45,7 @@
 </template>
 <script>
 import { debounce, omitBy } from 'lodash-es';
-import qs from 'query-string';
+import { parse, extract } from 'query-string';
 export default {
   props: {
     items: { type: Array, default: () => [] },
@@ -73,7 +73,7 @@ export default {
       get() {
         const foundQuery =
           this.$route && this.$route.fullPath
-            ? qs.parse(qs.extract(this.$route.fullPath), {
+            ? parse(extract(this.$route.fullPath), {
                 parseNumbers: true,
                 parseBooleans: true,
               }) ?? {}
