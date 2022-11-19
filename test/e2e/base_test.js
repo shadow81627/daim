@@ -16,11 +16,9 @@ const pages = [
   { slug: 'robots', route: '/robots.txt' },
 ];
 
-// eslint-disable-next-line no-undef
 Feature('layout');
 
 for (const { slug, heading, route } of pages) {
-  // eslint-disable-next-line no-undef
   Scenario(slug, async ({ I }) => {
     I.amOnPage(route || `/${slug}`);
 
