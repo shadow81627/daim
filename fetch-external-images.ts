@@ -51,10 +51,9 @@ async function resize({ input, output }: ResizeOptions) {
       .resize({
         width: 4686,
         height: 2636,
+        // eslint-disable-next-line import/no-named-as-default-member
         fit: sharp.fit.contain,
         background: { r: 255, g: 255, b: 255, alpha: 0 },
-        trim: true,
-        enlarge: true,
       })
       .toBuffer();
     await sharp(buffer).toFile(output ?? input);
