@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const readFileSync = require('fs').readFileSync;
 const resolve = require(`path`).resolve;
 
