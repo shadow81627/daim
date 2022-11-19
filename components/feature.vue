@@ -117,7 +117,7 @@ export default {
     description: { type: String, default: undefined },
     list: { type: Array, default: undefined },
     links: { type: Array, default: undefined },
-    plans: { type: Array, default: undefined },
+    plans: { type: [Array, Object], default: undefined },
     startDate: { type: String, default: undefined },
     endDate: { type: String, default: undefined },
     imageHeight: { type: Number, default: 360 },
