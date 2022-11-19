@@ -117,10 +117,9 @@ export default {
   },
   methods: {
     cleanQuery(value) {
-      const vm = this;
       const query = omitBy(value, function (v, k) {
         const isBlank = v === undefined || v === null || v === '';
-        const isDefault = v === vm.defaultQuery[k];
+        const isDefault = v === this.defaultQuery[k];
         return isBlank || isDefault;
       });
       return query;
