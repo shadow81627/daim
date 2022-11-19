@@ -124,10 +124,9 @@ export default {
     };
   },
   mounted() {
-    const vm = this;
     const beforePrint = function () {
       console.log('Functionality to run before printing.');
-      vm.drawer = false;
+      this.drawer = false;
     };
     const afterPrint = function () {
       console.log('Functionality to run after printing');
