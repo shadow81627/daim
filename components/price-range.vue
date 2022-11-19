@@ -80,7 +80,7 @@ export default {
     plans(plans) {
       return sortBy(plans ?? this.defaultPlan, 'price');
     },
-    priceRange(tool) {
+    priceRange() {
       const max = this.priceMax;
       const min = this.priceMin;
       const same = this.priceSame;
