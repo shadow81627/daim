@@ -141,7 +141,7 @@ export default {
     updateItemsPerPage(number) {
       this.itemsPerPage = number;
     },
-    infiniteScrolling(entries, observer, isIntersecting) {
+    infiniteScrolling(_1, _2, isIntersecting) {
       if (isIntersecting) {
         const next =
           this.query.itemsPerPage !== -1
