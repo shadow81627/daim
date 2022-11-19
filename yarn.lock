@@ -3424,6 +3424,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/css-tree@npm:*":
+  version: 2.0.0
+  resolution: "@types/css-tree@npm:2.0.0"
+  checksum: 52d89f5c52c6ec5feac674a3f28f35994211f26c662cc8718f21ebabad992329e8c810da1e070aa61c49f89e92cd5ef7b460e81de52f0d0f5973618d87ebc3ae
+  languageName: node
+  linkType: hard
+
+"@types/csso@npm:5.0.0":
+  version: 5.0.0
+  resolution: "@types/csso@npm:5.0.0"
+  dependencies:
+    "@types/css-tree": "*"
+  checksum: 4aba6f76c4b402cb045525773b18f86fba7f61dc8be451b6c94b926f99c1f83c5c4b3ec62c1423da6f75437b954c8b4eaf9c4008e7a85bb10dd892a8fc42a0ae
+  languageName: node
+  linkType: hard
+
 "@types/debug@npm:^4.0.0":
   version: 4.1.7
   resolution: "@types/debug@npm:4.1.7"
@@ -8105,6 +8121,7 @@ __metadata:
     "@nuxtjs/vuetify": 1.12.1
     "@semantic-release/changelog": 5.0.1
     "@semantic-release/git": 9.0.1
+    "@types/csso": 5.0.0
     "@types/lodash": 4.14.189
     "@types/sharp": 0.31.0
     "@vue/test-utils": 1.2.2
