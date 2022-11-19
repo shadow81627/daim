@@ -77,7 +77,7 @@ async function updateContent({
   // get list of urls to crawl from content files
   for await (const filename of getFiles(folder)) {
     const data = fs.readFileSync(filename);
-    const content = JSON.parse(data);
+    const content = JSON.parse(data.toString());
     const slug = path.parse(filename).name;
 
     console.log(slug);
