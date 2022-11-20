@@ -1,6 +1,10 @@
-import { isObject } from 'lodash-es';
+import isObject from 'lodash/isObject';
 import sortObject from './sort-object';
 
+type NormalizeDataOptions = {
+  obj: Record<string, unknown>;
+  keysMap: Record<string, string>;
+};
 /**
  * Normalize content for string diff
  * Remove keys that the user doesn't change
@@ -8,8 +12,11 @@ import sortObject from './sort-object';
  * @param {Object} data
  * @returns {Object}
  */
-function normalizeData({ obj, keysMap = {} }) {
-  const result = sortObject(JSON.parse(JSON.stringify(obj)));
+function normalizeData({ obj, keysMap = {} }: NormalizeDataOptions) {
+  const result = sortObject(JSON.parse(JSON.stringify(obj))) as Record<
+    string,
+    unknown
+  >;
   for (const i in result) {
     if (!Object.prototype.hasOwnProperty.call(result, i)) continue;
     if (keysMap[i]) {
@@ -17,7 +24,7 @@ function normalizeData({ obj, keysMap = {} }) {
       delete result[i];
     } else if (isObject(result[i])) {
       result[i] = normalizeData({
-        obj: result[i],
+        obj: result[i] as Record<string, unknown>,
         keysMap,
       });
     }
