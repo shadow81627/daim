@@ -147,7 +147,8 @@ async function updateContent({
     // Remove last full stop from subheading
     content.subheading = content.subheading?.replace(/\.$/, '');
     content.createdAt = timestamps[contentFilePath].created;
-    content.updatedAt = timestamps[contentFilePath].modified;
+    // content.updatedAt = timestamps[contentFilePath].modified;
+    content.updatedAt = undefined;
 
     if (rename) {
       const renamed = renameKeys(content);
