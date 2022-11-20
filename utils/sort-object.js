@@ -1,4 +1,4 @@
-import { isObject } from 'lodash-es';
+import isObject from 'lodash/isObject';
 
 /**
  * Sort object by keys
