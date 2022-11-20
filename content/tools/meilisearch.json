@@ -1,5 +1,6 @@
 {
   "color": "#f8f8f8",
+  "createdAt": 1650092009,
   "description": "An open-source, lightning-fast, and hyper-relevant search engine that fits effortlessly into your apps, websites, and workflow.",
   "icon": "@custom:custom:meilisearch-icon",
   "iconColor": "#ff5caa",

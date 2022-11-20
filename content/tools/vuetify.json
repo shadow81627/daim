@@ -1,5 +1,6 @@
 {
   "color": "#080808",
+  "createdAt": 1618314116,
   "description": "UI Library with beautifully handcrafted Material Design Components.",
   "icon": "logos:vuetifyjs",
   "image": "https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png",

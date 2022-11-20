@@ -1,5 +1,6 @@
 {
   "color": "#f8f8f8",
+  "createdAt": 1618314116,
   "description": "A powerful hosted search API that provides product teams with the resources & tools they need to create fast, relevant search.",
   "icon": "simple-icons:algolia",
   "iconColor": "#5468ff",

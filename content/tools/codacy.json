@@ -1,5 +1,6 @@
 {
   "color": "#384888",
+  "createdAt": 1650515107,
   "description": "Check your code quality and keep track of your technical debt for more than 40 programming languages. Seamlessly integrated within your development workflow.",
   "icon": "cib:codacy",
   "iconColor": "#384888",

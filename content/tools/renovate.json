@@ -1,5 +1,6 @@
 {
   "color": "#f8c808",
+  "createdAt": 1618314116,
   "description": "Save time and reduce risk by automating dependency updates in software projects.",
   "icon": "vscode-icons:file-type-renovate",
   "image": "https://repository-images.githubusercontent.com/76734068/0d2b8c00-8d71-11ea-9af4-23b41d5a239b",

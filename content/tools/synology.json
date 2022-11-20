@@ -1,6 +1,7 @@
 {
   "banner": "https://www.synology.com/img/homebanner/20220210_DSM71_Beta/bg_xl.png",
   "color": "#f8f8f8",
+  "createdAt": 1652504987,
   "description": "Synology uniquely enables you to manage, secure, and protect your data - at the scale needed to accommodate the exponential data growth of the digital world.",
   "icon": "simple-icons:synology",
   "image": "/img/tools/synology.svg",

@@ -1,5 +1,6 @@
 {
   "color": "#f8f8f8",
+  "createdAt": 1654301984,
   "description": "Bootstrap components recreated with Tailwind CSS, but with better design and more functionalities. ",
   "icon": "@custom:custom:tailwind-elements-icon",
   "image": "https://tailwind-elements.com/img/components.png",

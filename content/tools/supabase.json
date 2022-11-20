@@ -1,5 +1,6 @@
 {
   "color": "#080808",
+  "createdAt": 1668756754,
   "description": "Supabase is an open source Firebase alternative. Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, and Storage.",
   "icon": "logos:supabase-icon",
   "image": "https://supabase.com/images/og/og-image.jpg",

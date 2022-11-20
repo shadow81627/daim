@@ -1,5 +1,6 @@
 {
   "color": "#f8f8f8",
+  "createdAt": 1651278086,
   "description": "Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.",
   "icon": "logos:pixijs",
   "image": "https://pixijs.com/images/logo.svg",

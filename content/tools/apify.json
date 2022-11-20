@@ -1,5 +1,6 @@
 {
   "color": "#f8f8f8",
+  "createdAt": 1668148098,
   "description": "Apify is your one-stop shop for web scraping, data extraction, and RPA. Automate anything you can do manually in a browser.",
   "icon": "@custom:custom:apify-icon",
   "image": "https://apify.com/img/og-image.png",

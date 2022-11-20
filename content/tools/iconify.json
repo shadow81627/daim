@@ -1,5 +1,6 @@
 {
   "color": "#f8f8f8",
+  "createdAt": 1650756312,
   "description": "There are many excellent icon sets available. Each icon set has its own custom syntax, some are available only as fonts. Unfortunately, almost all of them load an entire set, even if you are displaying just a few icons. This makes it hard to use different icon sets. Iconify tries to unify all icon sets. You can use the same code no matter what icon set you choose. You can mix icons from multiple icon sets on the same page.",
   "icon": "simple-icons:iconify",
   "iconColor": "#1769aa",

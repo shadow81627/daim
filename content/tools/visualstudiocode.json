@@ -1,5 +1,6 @@
 {
   "color": "#282838",
+  "createdAt": 1651821297,
   "description": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.  Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.",
   "icon": "logos:visual-studio-code",
   "image": "https://code.visualstudio.com/opengraphimg/opengraph-home.png",

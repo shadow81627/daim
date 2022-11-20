@@ -1,5 +1,6 @@
 {
   "color": "#181818",
+  "createdAt": 1668755104,
   "description": "Designed for the serverless with per-request pricing and Redis®/Kafka® API.",
   "icon": "logos:upstash-icon",
   "image": "https://upstash.com/static/logo/og-homepage.jpg",

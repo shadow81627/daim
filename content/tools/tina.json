@@ -1,5 +1,6 @@
 {
   "color": "#f8f8f8",
+  "createdAt": 1668390477,
   "description": "Tina is an open-source, headless CMS for Markdown, MDX, and JSON.",
   "icon": "@custom:custom:tina-icon",
   "iconColor": "#ec4815",
