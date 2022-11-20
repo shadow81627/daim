@@ -3594,7 +3594,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.189":
+"@types/lodash-es@npm:4.17.6":
+  version: 4.17.6
+  resolution: "@types/lodash-es@npm:4.17.6"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: 9bd239dd525086e278821949ce12fbdd4f100a060fed9323fc7ad5661113e1641f28a7ebab617230ed3474680d8f4de705c1928b48252bb684be6ec9eed715db
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:*, @types/lodash@npm:4.14.189":
   version: 4.14.189
   resolution: "@types/lodash@npm:4.14.189"
   checksum: 096d1e0954794fb76bd6a0ea443067f02004b53e3c59ac6e3fed88817a1468fc2e6614abdf44341f5e0fdff5f9a3c94a934cc9ff7126e07efbcd94355a21fe45
@@ -8123,6 +8132,7 @@ __metadata:
     "@semantic-release/git": 9.0.1
     "@types/csso": 5.0.0
     "@types/lodash": 4.14.189
+    "@types/lodash-es": 4.17.6
     "@types/sharp": 0.31.0
     "@vue/test-utils": 1.2.2
     babel-plugin-module-resolver: 4.1.0
@@ -8137,8 +8147,8 @@ __metadata:
     eslint-config-prettier: 8.3.0
     eslint-plugin-nuxt: 2.0.0
     eslint-plugin-prettier: 4.0.0
+    git-date-extractor: 4.0.1
     github-markdown-css: 4.0.0
-    gitlog: 4.0.4
     husky: 7.0.2
     i18n-iso-countries: 6.8.0
     koa: 2.13.3
@@ -10930,6 +10940,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"git-date-extractor@npm:4.0.1":
+  version: 4.0.1
+  resolution: "git-date-extractor@npm:4.0.1"
+  dependencies:
+    fs-extra: ^8.1.0
+    meow: ^7.0.1
+    walkdir: ^0.4.1
+  bin:
+    git-date-extractor: dist/cli.js
+    git-dates: dist/cli.js
+  checksum: 392041c142a9466bd331af605ebf07db361e7d738d7d7d46d5b14eab4aeec40cc259e8df84d282a318bd9b6a9fe066f84c0bf1de2fa316fb6710c4cfe26fb9aa
+  languageName: node
+  linkType: hard
+
 "git-log-parser@npm:^1.2.0":
   version: 1.2.0
   resolution: "git-log-parser@npm:1.2.0"
@@ -10983,16 +11007,6 @@ __metadata:
   dependencies:
     emoji-regex: ">=6.0.0 <=6.1.1"
   checksum: fe96b363df9363c78bd2f644697e2ce2a05b1b10391ac0ff918a433992b03d0dcb0b6903b1f44bee972616eb5d8799837f357cbe278fb35c5fef40b69316a8d8
-  languageName: node
-  linkType: hard
-
-"gitlog@npm:4.0.4":
-  version: 4.0.4
-  resolution: "gitlog@npm:4.0.4"
-  dependencies:
-    debug: ^4.1.1
-    tslib: ^1.14.1
-  checksum: 16c07800b8e04ab556651ec396d39e48fba7464d79c7c0a40f81661d7cfbc37babfde1a0ebad7d0eaa24834b85043e07b1cfb8b9a983a73279566732fdd4da90
   languageName: node
   linkType: hard
 
@@ -15269,6 +15283,25 @@ __metadata:
     errno: ^0.1.3
     readable-stream: ^2.0.1
   checksum: a9f25b0a8ecfb7324277393f19ef68e6ba53b9e6e4b526bbf2ba23055c5440fbf61acc7bf66bfd980e9eb4951a4790f6f777a9a3abd36603f22c87e8a64d3d6b
+  languageName: node
+  linkType: hard
+
+"meow@npm:^7.0.1":
+  version: 7.1.1
+  resolution: "meow@npm:7.1.1"
+  dependencies:
+    "@types/minimist": ^1.2.0
+    camelcase-keys: ^6.2.2
+    decamelize-keys: ^1.1.0
+    hard-rejection: ^2.1.0
+    minimist-options: 4.1.0
+    normalize-package-data: ^2.5.0
+    read-pkg-up: ^7.0.1
+    redent: ^3.0.0
+    trim-newlines: ^3.0.0
+    type-fest: ^0.13.1
+    yargs-parser: ^18.1.3
+  checksum: 87bba177ab858a9b606ee52220e6bf395277beebafefe8ab5dbdf178f5825274a24ca16dca7e0ddd41e5ac3533164ee52e3d0eec87b66d78aae796d24a817842
   languageName: node
   linkType: hard
 
@@ -23602,7 +23635,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^1.14.1, tslib@npm:^1.8.1, tslib@npm:^1.9.0":
+"tslib@npm:^1.8.1, tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
@@ -23679,6 +23712,13 @@ __metadata:
   dependencies:
     prelude-ls: ~1.1.2
   checksum: dd3b1495642731bc0e1fc40abe5e977e0263005551ac83342ecb6f4f89551d106b368ec32ad3fb2da19b3bd7b2d1f64330da2ea9176d8ddbfe389fb286eb5124
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^0.13.1":
+  version: 0.13.1
+  resolution: "type-fest@npm:0.13.1"
+  checksum: e6bf2e3c449f27d4ef5d56faf8b86feafbc3aec3025fc9a5fbe2db0a2587c44714521f9c30d8516a833c8c506d6263f5cc11267522b10c6ccdb6cc55b0a9d1c4
   languageName: node
   linkType: hard
 
@@ -24948,6 +24988,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"walkdir@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "walkdir@npm:0.4.1"
+  checksum: 71045c21dc19aae3321f897b6e9e507cf8039202665c35a0b908eecccaf25636aab769b31cbd61ef8267237fe22fc316923a691ecc2d9d38840a15c59c0f2594
+  languageName: node
+  linkType: hard
+
 "watchpack-chokidar2@npm:^2.0.1":
   version: 2.0.1
   resolution: "watchpack-chokidar2@npm:2.0.1"
@@ -25652,7 +25699,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs-parser@npm:^18.1.2":
+"yargs-parser@npm:^18.1.2, yargs-parser@npm:^18.1.3":
   version: 18.1.3
   resolution: "yargs-parser@npm:18.1.3"
   dependencies:
