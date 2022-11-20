@@ -1,8 +1,10 @@
 import fs from 'fs';
+import { readFile } from 'fs/promises';
 import path from 'path';
 import axios from 'axios';
 import sharp from 'sharp';
 import lodash from 'lodash';
+import { getStamps } from 'git-date-extractor';
 import getFiles from './utils/get-files';
 import normalizeData from './utils/normalize-data';
 
@@ -137,8 +139,15 @@ async function updateContent({
       }
     }
 
+    const timestamps = JSON.parse(
+      (await readFile('timestamps.json')).toString(),
+    );
+    const contentFilePath = `${folder}${slug}.json`;
+
     // Remove last full stop from subheading
     content.subheading = content.subheading?.replace(/\.$/, '');
+    content.createdAt = timestamps[contentFilePath].created;
+    content.updatedAt = timestamps[contentFilePath].modified;
 
     if (rename) {
       const renamed = renameKeys(content);
@@ -149,6 +158,7 @@ async function updateContent({
 }
 
 (async () => {
+  await getStamps({ onlyIn: 'content', outputToFile: true });
   const contents = [
     {
       slug: 'tools',
