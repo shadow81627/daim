@@ -23,7 +23,7 @@ exports.config = {
       show: true,
       fullPageScreenshots: true,
       waitForNavigation: 'networkidle0',
-      emulate: devices['iPhone 7'],
+      // emulate: devices['iPhone 7'],
       timeout: 10000,
     },
     ResembleHelper: {
