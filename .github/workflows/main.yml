@@ -4,36 +4,71 @@ on:
   pull_request:
     branches:
       - master
+  push:
+    branches:
+      - master
 
 jobs:
-  main:
-    runs-on: ubuntu-18.04
+  lint:
+    runs-on: ubuntu-20.04
     steps:
-      - name: Install fonts
-        run: sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
-
       - name: Checkout 🛎
-        uses: actions/checkout@master
-
+        uses: actions/checkout@v3.1.0
+        with:
+            fetch-depth: 0
+            persist-credentials: false
       - name: Setup node env 🏗
-        uses: actions/setup-node@v2.4.1
+        uses: actions/setup-node@v3.5.1
         with:
           node-version: 16
-          cache: yarn
-
       - name: Install dependencies 👨🏻‍💻
         run: yarn install
-
       - name: Lint ✨
         run: yarn run lint
 
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v3.1.0
+        with:
+            fetch-depth: 0
+            persist-credentials: false
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v3.5.1
+        with:
+          node-version: 16
+      - name: Install dependencies 👨🏻‍💻
+        run: yarn install
       - name: Build 🔨
         run: yarn run generate
-
       - name: Test 🧪
         run: yarn run test
-
       - name: Run Lighthouse 💡
         run: yarn run lhci:autorun
+
+  release:
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    needs: build
+    runs-on: ubuntu-20.04
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v3.1.0
+        with:
+            fetch-depth: 0
+            persist-credentials: false
+      - name: Setup Node.js 🏗
+        uses: actions/setup-node@v3.5.1
+        with:
+            node-version: 16
+      - name: Install dependencies 👨🏻‍💻
+        run: yarn install
+      - name: Release 🚀
         env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx -p @semantic-release/changelog@5 -p @semantic-release/git@9 -p semantic-release@17 semantic-release
