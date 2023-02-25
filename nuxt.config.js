@@ -1,3 +1,4 @@
+import { defineNuxtConfig } from '@nuxt/bridge';
 import pkg from './package';
 
 const HOST = process.env.HOST || '0.0.0.0';
@@ -41,14 +42,16 @@ const matomo = {
 
 const preconnectLinks = [];
 
-export default {
+export default defineNuxtConfig({
   target: 'static',
   modern: true,
 
-  publicRuntimeConfig: {
-    ...env,
-    googleAnalytics: {
-      id: process.env.GOOGLE_ANALYTICS_ID || 'UA-176793964-1',
+  runtimeConfig: {
+    public: {
+      ...env,
+      googleAnalytics: {
+        id: process.env.GOOGLE_ANALYTICS_ID || 'UA-176793964-1',
+      },
     },
   },
 
@@ -144,7 +147,6 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxt/image',
     '@nuxtjs/google-analytics',
-    '@nuxt/typescript-build',
   ],
 
   /*
@@ -235,7 +237,13 @@ export default {
    ** Build configuration
    */
   build: {
-    transpile: ['lodash-es', 'vuetify/lib', 'vee-validate/dist/rules'],
+    transpile: [
+      'lodash-es',
+      'vuetify/lib',
+      'vee-validate/dist/rules',
+      'iron-webcrypto',
+      'unhead',
+    ],
     extractCSS: true,
     filenames: {
       app: ({ isDev, isModern }) =>
@@ -262,4 +270,4 @@ export default {
       }
     },
   },
-};
+});
