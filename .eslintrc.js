@@ -9,6 +9,8 @@ module.exports = {
     sourceType: 'module',
   },
   extends: [
+    'plugin:vue/base',
+    'plugin:vuetify/base',
     '@nuxtjs',
     '@nuxtjs/eslint-config-typescript',
     'prettier',
