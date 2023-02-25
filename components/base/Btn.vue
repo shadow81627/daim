@@ -1,11 +1,11 @@
 <template>
   <v-btn
     :color="color"
-    :depressed="depressed"
+    :variant="depressed && 'flat'"
     :min-width="minWidth"
     :tile="tile"
     class="font-weight-bold"
-    x-large
+    size="x-large"
     v-bind="$attrs"
     v-on="$listeners"
   >

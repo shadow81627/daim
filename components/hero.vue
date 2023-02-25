@@ -2,7 +2,7 @@
   <v-container class="pa-0 hidden-print-only" fluid>
     <v-row no-gutters align="center" justify="center">
       <v-col cols="12" align-self="center">
-        <v-card :color="color" flat dark tile>
+        <v-card :color="color" flat dark rounded="0">
           <v-img
             :lazy-src="$img(src, { width: 10, quality: 70 })"
             :src="$img(src, { quality: 70, height: 500 })"

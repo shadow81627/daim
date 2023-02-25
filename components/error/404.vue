@@ -23,7 +23,12 @@
             >{{ $t('error.404.description') }}</v-card-text
           >
           <v-card-text>
-            <v-btn :to="localePath('index')" color="primary" block x-large>
+            <v-btn
+              :to="localePath('index')"
+              color="primary"
+              block
+              size="x-large"
+            >
               {{ $t('layout.navigation.home') }}
             </v-btn>
           </v-card-text>

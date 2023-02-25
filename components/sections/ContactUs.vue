@@ -1,6 +1,6 @@
 <template>
   <v-theme-provider dark>
-    <base-section id="contact-us" class="primary" space="20">
+    <base-section id="contact-us" class="bg-primary" space="20">
       <v-container>
         <v-row justify="center">
           <v-col cols="10" align-self="center">

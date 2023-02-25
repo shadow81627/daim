@@ -1,8 +1,8 @@
 <template>
   <v-btn
     target="_blank"
-    large
-    text
+    size="large"
+    variant="text"
     :href="url"
     rel="noopener"
     :data-address="address"

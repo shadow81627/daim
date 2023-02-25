@@ -3,10 +3,10 @@
     <v-container>
       <v-row class="py-0 py-md-7">
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
-          <v-card flat tile color="transparent">
-            <v-card-title class="headline">Contact</v-card-title>
+          <v-card flat rounded="0" color="transparent">
+            <v-card-title class="text-h5">Contact</v-card-title>
           </v-card>
-          <v-card flat tile color="transparent">
+          <v-card flat rounded="0" color="transparent">
             <BaseLinks :items="contact">
               <template #default="{ item }">
                 <v-list-item-subtitle v-if="item.subtitle">{{
@@ -21,7 +21,7 @@
           <v-card
             v-if="false"
             flat
-            tile
+            rounded="0"
             color="transparent"
             :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
               `${location.companyName} ${location.streetAddress || ''} ${
@@ -37,7 +37,7 @@
             itemtype="https://schema.org/PostalAddress"
           >
             <v-card-text class="py-2">
-              <span class="text--primary body-1 pt-0">
+              <span class="text--primary text-body-1 pt-0">
                 <font-awesome-icon
                   :icon="faMapMarker"
                   title="location"
@@ -79,8 +79,8 @@
           </v-card>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
-          <v-card flat tile color="transparent">
-            <v-card-title class="headline">Pages</v-card-title>
+          <v-card flat rounded="0" color="transparent">
+            <v-card-title class="text-h5">Pages</v-card-title>
           </v-card>
           <v-list dense flat tile color="transparent">
             <v-list-item
@@ -102,8 +102,8 @@
           </v-list>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
-          <v-card flat tile color="transparent">
-            <v-card-title class="headline">&nbsp;</v-card-title>
+          <v-card flat rounded="0" color="transparent">
+            <v-card-title class="text-h5">&nbsp;</v-card-title>
           </v-card>
           <v-list dense flat tile color="transparent">
             <v-list-item
@@ -125,8 +125,8 @@
           </v-list>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
-          <v-card flat tile color="transparent">
-            <v-card-title class="headline">Socials</v-card-title>
+          <v-card flat rounded="0" color="transparent">
+            <v-card-title class="text-h5">Socials</v-card-title>
           </v-card>
           <BaseLinks :items="socials"></BaseLinks>
         </v-col>

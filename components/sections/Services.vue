@@ -1,5 +1,5 @@
 <template>
-  <BaseSection id="services" class="secondary">
+  <BaseSection id="services" class="bg-secondary">
     <v-responsive class="mx-auto" max-width="1350">
       <v-container fluid>
         <v-row itemscope itemtype="https://schema.org/OfferCatalog">

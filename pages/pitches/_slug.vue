@@ -9,7 +9,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <div class="body-1" itemprop="articleBody">
+          <div class="text-body-1" itemprop="articleBody">
             <nuxt-content :document="item" />
           </div>
         </v-col>

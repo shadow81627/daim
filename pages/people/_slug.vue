@@ -14,11 +14,11 @@
         "
       >
         <h1>
-          <div class="text-uppercase display-1" itemprop="name">
+          <div class="text-uppercase text-h4" itemprop="name">
             <span itemprop="givenName">{{ firstname }}</span>
             <span itemprop="familyName">{{ lastname }}</span>
           </div>
-          <div class="text-uppercase display-2" itemprop="jobTitle">
+          <div class="text-uppercase text-h3" itemprop="jobTitle">
             {{ label }}
           </div>
         </h1>
@@ -60,7 +60,7 @@
                 > -->
               </v-card-subtitle>
 
-              <v-card-text class="body-1 text--primary">
+              <v-card-text class="text-body-1 text--primary">
                 {{ summary }}
               </v-card-text>
 
@@ -68,13 +68,13 @@
                 <v-tooltip
                   v-for="{ icon, network, url } in profiles"
                   :key="network"
-                  bottom
+                  location="bottom"
                 >
                   <template #activator="{ on, attrs }">
                     <v-btn
                       target="_blank"
                       v-bind="attrs"
-                      x-large
+                      size="x-large"
                       icon
                       :href="url"
                       rel="noopener"
@@ -97,7 +97,7 @@
                 <v-btn
                   style="visibility: hidden"
                   aria-hidden="true"
-                  x-large
+                  size="x-large"
                   icon
                 >
                   <font-awesome-icon
@@ -177,7 +177,7 @@
                     flex-column flex-md-row
                     justify-space-between
                     font-weight-medium
-                    body-1
+                    text-body-1
                   "
                   itemprop="hasCredential"
                   itemtype="https://schema.org/EducationalOccupationalCredential"
@@ -202,11 +202,11 @@
                     >
                   </span>
                 </v-card-subtitle>
-                <v-card-text class="body-1 text--primary">
+                <v-card-text class="text-body-1 text--primary">
                   Grade Point Average: <strong>{{ gpa }}</strong>
                 </v-card-text>
                 <v-card-title class="py-0">Key Courses</v-card-title>
-                <v-card-text class="body-1 text--primary">
+                <v-card-text class="text-body-1 text--primary">
                   <ul itemprop="abstract">
                     <li v-for="course in courses" :key="course">
                       {{ course }}
@@ -261,7 +261,7 @@
                       flex-column flex-md-row
                       justify-space-between
                       font-weight-medium
-                      body-1
+                      text-body-1
                     "
                   >
                     <span itemtype="https://schema.org/Organization" itemscope
@@ -284,7 +284,7 @@
                       <span v-else>Present</span>
                     </span>
                   </v-card-subtitle>
-                  <v-card-text class="body-1">
+                  <v-card-text class="text-body-1">
                     <p itemprop="description">{{ summary }}</p>
                     Tools used: <span>{{ tools }}</span>
                   </v-card-text>
@@ -301,7 +301,7 @@
         <v-card-title class="text-break pb-0">
           <h2>Projects</h2>
         </v-card-title>
-        <v-card-text class="body-1 text--primary">
+        <v-card-text class="text-body-1 text--primary">
           I enjoy making my own web applications in my free time to further my
           skills. I have built several websites, including my
           <nuxt-link to="/portfolio">personal portfolio</nuxt-link>, using a

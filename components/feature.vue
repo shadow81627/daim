@@ -20,7 +20,7 @@
           <font-awesome-icon
             v-if="typeof icon === 'object'"
             :icon="icon"
-            class="grey--text"
+            class="text-grey"
           />
           <BaseIcon
             v-else
@@ -43,15 +43,15 @@
     }}</v-card-subtitle>
 
     <div class="flex-grow-1">
-      <v-card-text v-if="description" class="text--primary body-1 pt-0">
+      <v-card-text v-if="description" class="text--primary text-body-1 pt-0">
         {{ description }}
       </v-card-text>
-      <v-card-text v-if="list" class="text--primary body-1 pt-0">
+      <v-card-text v-if="list" class="text--primary text-body-1 pt-0">
         <ul>
           <li v-for="item in list.slice(0, 4)" :key="item">{{ item }}</li>
         </ul>
       </v-card-text>
-      <v-card-text class="text--primary body-1 pt-0">
+      <v-card-text class="text--primary text-body-1 pt-0">
         <PriceRange :items="plans"></PriceRange>
         <time v-if="startDate" :datetime="new Date(startDate).toISOString()"
           >{{ formatDate(startDate) }}

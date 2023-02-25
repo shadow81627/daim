@@ -20,7 +20,7 @@
     <v-card-title class="text-break text-wrap">
       <h2 itemprop="name">{{ title }}</h2>
     </v-card-title>
-    <v-card-subtitle class="body-1">
+    <v-card-subtitle class="text-body-1">
       <time :datetime="date">{{ formatDate(date) }}</time>
       <span v-if="_readTime"> • </span>
       <time v-if="_readTime" :datetime="`${_readTime}m`"
@@ -28,7 +28,7 @@
       >
       <span style="display: none">{{ words(JSON.stringify(body)) }}</span>
     </v-card-subtitle>
-    <v-card-text class="body-1 text--primary" itemprop="description">
+    <v-card-text class="text-body-1 text--primary" itemprop="description">
       {{ description }}
     </v-card-text>
 

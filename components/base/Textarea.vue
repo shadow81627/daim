@@ -5,7 +5,7 @@
     :rules="rules"
   >
     <v-textarea
-      outlined
+      variant="outlined"
       dense
       single-line
       v-bind="{

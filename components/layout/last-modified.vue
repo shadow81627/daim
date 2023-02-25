@@ -2,7 +2,7 @@
   <client-only>
     <span v-if="lastModified">
       <span>Last modified</span>
-      <v-tooltip top>
+      <v-tooltip location="top">
         <time
           itemprop="dateModified"
           :content="lastModified.toISOString()"

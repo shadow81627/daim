@@ -1,22 +1,22 @@
 <template>
   <v-data-iterator
+    v-model:options="query"
     :items="items"
     :search="query.search"
     :footer-props="{ itemsPerPageOptions }"
-    :options.sync="query"
     :loading="loading"
   >
     <template #header>
       <v-toolbar class="mb-1" flat>
         <v-text-field
-          :value="query.search"
+          :model-value="query.search"
           clearable
           flat
           solo-inverted
           hide-details
           prepend-inner-icon="mdi-magnify"
           label="Search"
-          @input="search"
+          @update:model-value="search"
         ></v-text-field>
       </v-toolbar>
     </template>

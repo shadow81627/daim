@@ -1,8 +1,8 @@
 <template>
   <v-btn
     target="_blank"
-    large
-    text
+    size="large"
+    variant="text"
     :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
       `${streetAddress || ''} ${city || ''} ${region || ''} ${postcode || ''} ${
         country || ''

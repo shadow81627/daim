@@ -26,7 +26,7 @@
             :href="credit.by.href"
             rel="noopener"
             target="_blank"
-            class="white--text"
+            class="text-white"
             >{{ credit.by.text }}</a
           >
           on
@@ -34,7 +34,7 @@
             :href="credit.on.href"
             rel="noopener"
             target="_blank"
-            class="white--text"
+            class="text-white"
             >{{ credit.on.text }}</a
           >
         </span>

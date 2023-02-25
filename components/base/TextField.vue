@@ -5,7 +5,7 @@
     :rules="rules"
   >
     <v-text-field
-      outlined
+      variant="outlined"
       dense
       single-line
       v-bind="{ ...$attrs, rules: undefined }"

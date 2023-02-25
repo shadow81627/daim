@@ -41,7 +41,7 @@
                     href="javascript:location.reload();"
                     color="primary"
                     block
-                    x-large
+                    size="x-large"
                     >Try again</v-btn
                   >
                 </v-col>
@@ -52,7 +52,7 @@
                     :to="localePath('index')"
                     color="primary"
                     block
-                    x-large
+                    size="x-large"
                   >
                     {{ $t('layout.navigation.home') }}
                   </v-btn>

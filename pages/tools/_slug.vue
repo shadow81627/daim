@@ -14,7 +14,7 @@
             <v-card-title>
               <h2 class="h2 text-break">Summary</h2>
             </v-card-title>
-            <v-card-text class="text--primary body-1 pt-0">
+            <v-card-text class="text--primary text-body-1 pt-0">
               {{ item.description }}
             </v-card-text>
           </v-card>

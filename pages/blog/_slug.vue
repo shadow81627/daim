@@ -9,7 +9,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <div class="body-1" itemprop="articleBody">
+          <div class="text-body-1" itemprop="articleBody">
             <nuxt-content :document="item" />
           </div>
         </v-col>
@@ -32,7 +32,7 @@
           <v-tooltip
             v-for="{ icon, network, url } in networks"
             :key="network"
-            bottom
+            location="bottom"
           >
             <template #activator="{ on, attrs }">
               <v-btn
