@@ -30,7 +30,7 @@
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
       fixed
-      color="#343a40"
+      color="#253045"
       dark
       class="hidden-print-only"
       height="64"
