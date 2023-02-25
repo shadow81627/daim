@@ -14,16 +14,14 @@
       <v-list-item-action style="font-size: 2em; width: 32px; height: 32px">
         <BaseIcon :icon="item.icon"></BaseIcon>
       </v-list-item-action>
-      <v-list-item-content>
-        <slot :item="item">
-          <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
-            item.title
-          }}</v-list-item-title>
-          <v-list-item-subtitle v-if="item.subtitle">{{
-            item.subtitle
-          }}</v-list-item-subtitle>
-        </slot>
-      </v-list-item-content>
+      <slot :item="item">
+        <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
+          item.title
+        }}</v-list-item-title>
+        <v-list-item-subtitle v-if="item.subtitle">{{
+          item.subtitle
+        }}</v-list-item-subtitle>
+      </slot>
     </v-list-item>
   </v-list>
 </template>

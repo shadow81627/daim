@@ -22,7 +22,7 @@ export default {
 
   mixins: [Heading],
 
-  inject: ['theme'],
+  // inject: ['theme'],
 
   props: {
     maxWidth: {
@@ -44,7 +44,7 @@ export default {
     classes() {
       return [
         'grey--text',
-        this.theme.isDark ? 'text--lighten-1' : 'text--darken-1',
+        'text--darken-1',
         `text-${this.heading.align}`,
         `mb-${this.space}`,
       ];

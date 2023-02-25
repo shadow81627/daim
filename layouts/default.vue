@@ -17,11 +17,9 @@
           <v-list-item-action>
             <BaseIcon :icon="item.icon"></BaseIcon>
           </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
-              item.name
-            }}</v-list-item-title>
-          </v-list-item-content>
+          <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
+            item.name
+          }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -70,7 +68,7 @@
       itemscope
       itemtype="https://schema.org/WebPageElement"
     >
-      <nuxt style="min-height: 100vh" keep-alive></nuxt>
+      <slot style="min-height: 100vh" keep-alive></slot>
       <the-footer></the-footer>
     </v-main>
   </v-app>

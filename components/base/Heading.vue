@@ -33,14 +33,11 @@ export default {
     align: {
       type: String,
       default() {
-        return this.heading.align;
+        return null;
       },
     },
     dense: {
       type: Boolean,
-      default() {
-        return this.isDense;
-      },
     },
     size: {
       type: String,
