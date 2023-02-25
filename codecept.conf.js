@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const http = require('http');
 const { setHeadlessWhen } = require('@codeceptjs/configure');
-const { devices } = require('playwright');
+// const { devices } = require('playwright');
 const handler = require('serve-handler');
 
 const server = http.createServer((request, response) => {
