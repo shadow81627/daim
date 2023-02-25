@@ -1,4 +1,3 @@
-import { defineNuxtConfig } from '@nuxt/bridge';
 import pkg from './package';
 
 const HOST = process.env.HOST || '0.0.0.0';
@@ -34,21 +33,11 @@ const env = {
   MATOMO_DEBUG: process.env.MATOMO_DEBUG ?? false,
 };
 
-const matomo = {
-  matomoUrl: env.MATOMO_URL,
-  siteId: env.MATOMO_SITE_ID,
-  debug: env.MATOMO_DEBUG,
-};
-
 const preconnectLinks = [];
 
 export default defineNuxtConfig({
   target: 'static',
   modern: true,
-
-  bridge: {
-    vite: true,
-  },
 
   runtimeConfig: {
     public: {
@@ -135,36 +124,19 @@ export default defineNuxtConfig({
   /*
    ** Global CSS
    */
-  css: [],
-
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: [{ src: 'plugins/icons' }],
-
-  /*
-   ** Nuxt.js dev-modules
-   */
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    // '@nuxtjs/stylelint-module',
-    '@nuxtjs/vuetify',
-    '@nuxt/image',
-    '@nuxtjs/google-analytics',
-  ],
+  css: ['vuetify/lib/styles/main.sass'],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
     '@nuxt/content',
-    '@nuxtjs/axios',
     // '@nuxtjs/pwa',
-    '@nuxtjs/markdownit',
-    'nuxt-fontawesome',
-    'nuxt-i18n',
+    // '@nuxtjs/i18n',
+    '@nuxt/image-edge',
+    'nuxt-icon',
     // 'nuxt-webfontloader',
-    ['nuxt-matomo', matomo],
+    // ['nuxt-matomo', matomo],
 
     // always declare the sitemap module at end of array
     // '@nuxtjs/sitemap',
@@ -175,12 +147,6 @@ export default defineNuxtConfig({
     '~/components/sections',
     { path: '~/components/base/', prefix: 'base' },
   ],
-
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
-  axios: {},
 
   content: {
     markdown: {
