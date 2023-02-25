@@ -3,7 +3,7 @@
     <Hero subheading="Digital Consultant">
       <template #heading>
         <img
-          :src="require('~/assets/img/logo.svg?inline')"
+          :src="'~/assets/img/logo.svg?inline'"
           :height="192"
           :width="480"
           alt="Daim"

@@ -4,10 +4,7 @@
       <v-container>
         <v-row justify="center">
           <v-col cols="10" align-self="center">
-            <base-title
-              :space="$vuetify.breakpoint.mdAndUp ? 0 : 4"
-              title="HAVE QUESTIONS? LET US KNOW!"
-            />
+            <base-title :space="0" title="HAVE QUESTIONS? LET US KNOW!" />
 
             <!-- <base-body space="0">
               <span class="white--text">
@@ -18,13 +15,7 @@
           </v-col>
 
           <v-col cols="12" md="2">
-            <base-btn
-              :block="$vuetify.breakpoint.smAndDown"
-              color="white"
-              to="/contact"
-              large
-              outlined
-            >
+            <base-btn block color="white" to="/contact" large outlined>
               Contact Us
             </base-btn>
           </v-col>

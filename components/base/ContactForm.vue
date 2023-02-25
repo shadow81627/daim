@@ -71,16 +71,16 @@
 </template>
 
 <script>
-import { ValidationObserver, extend } from 'vee-validate';
-import { messages } from 'vee-validate/dist/locale/en.json';
-import { required, email, max } from 'vee-validate/dist/rules';
-const rules = { required, email, max };
-for (const [rule, validation] of Object.entries(rules)) {
-  extend(rule, {
-    ...validation,
-    message: messages[rule],
-  });
-}
+// import { ValidationObserver, extend } from 'vee-validate';
+// import { messages } from 'vee-validate/dist/locale/en.json';
+// import { required, email, max } from 'vee-validate/dist/rules';
+// const rules = { required, email, max };
+// for (const [rule, validation] of Object.entries(rules)) {
+//   extend(rule, {
+//     ...validation,
+//     message: messages[rule],
+//   });
+// }
 
 export default {
   name: 'BaseContactForm',
@@ -89,7 +89,7 @@ export default {
   },
 
   // Injected from the Vuetify Themeable mixin
-  inject: ['theme'],
+  // inject: ['theme'],
 
   props: {
     subtitle: { type: String, default: null },
@@ -114,7 +114,7 @@ export default {
     async submit() {
       this.submitting = true;
       try {
-        await this.$axios.$post(this.action, this.form);
+        await this.$fetch.$post(this.action, this.form);
         this.error = false;
         this.success = true;
         this.form = {};

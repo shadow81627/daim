@@ -2,7 +2,6 @@
   <v-app clipped-left>
     <v-navigation-drawer
       v-model="drawer"
-      :clipped="$vuetify.breakpoint.lgAndUp"
       app
       class="hidden-print-only"
       disable-resize-watcher
@@ -27,7 +26,6 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
-      :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
       fixed
       color="#343a40"
@@ -43,7 +41,7 @@
       <v-toolbar-title class="ml-0 px-3 d-flex align-center">
         <a href="/" title="Home" aria-label="Home">
           <img
-            :src="require('~/assets/img/logo.svg?inline')"
+            :src="'~/assets/img/logo.svg?inline'"
             class="navbar-brand"
             height="24"
             width="60"
@@ -100,29 +98,6 @@ export default {
     this.items = sortBy(items, ['show_tab', 'pos']);
   },
   fetchKey: 'layout/default',
-  head() {
-    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
-    const { href: canonical } = i18nHead.link.find(
-      ({ hid }) => hid === 'i18n-can',
-    );
-    return {
-      htmlAttrs: {
-        itemscope: '',
-        itemtype: 'https://schema.org/WebPage',
-        ...i18nHead.htmlAttrs,
-      },
-      meta: [
-        ...i18nHead.meta,
-        {
-          hid: 'og:url',
-          name: 'og:url',
-          property: 'og:url',
-          content: canonical,
-        },
-      ],
-      link: [...i18nHead.link],
-    };
-  },
   mounted() {
     const beforePrint = function () {
       console.log('Functionality to run before printing.');

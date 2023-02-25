@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import { ValidationProvider } from 'vee-validate';
+// import { ValidationProvider } from 'vee-validate';
 export default {
   name: 'BaseTextField',
-  components: { ValidationProvider },
+  // components: { ValidationProvider },
   props: {
     rules: {
       type: [Object, String],
