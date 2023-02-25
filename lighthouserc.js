@@ -7,7 +7,6 @@ module.exports = {
         '/',
         '/404.html',
         '/people/',
-        '/releases/',
         '/tools/',
         '/portfolio/',
         '/blog/',

@@ -150,9 +150,12 @@
                 <span v-if="$config.COMMIT">{{
                   shortHash($config.COMMIT)
                 }}</span>
-                <nuxt-link :to="localePath('releases')" class="link px-4">
+                <a
+                  href="https://github.com/shadow81627/daim/releases"
+                  class="link px-4"
+                >
                   <span>Changelog</span>
-                </nuxt-link>
+                </a>
                 <a
                   href="https://stats.uptimerobot.com/X7JPPc4pLz"
                   target="_blank"
