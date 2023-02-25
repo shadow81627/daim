@@ -8141,7 +8141,6 @@ __metadata:
     eslint-plugin-unicorn: 45.0.2
     git-date-extractor: 4.0.1
     github-markdown-css: 4.0.0
-    husky: 7.0.2
     i18n-iso-countries: 6.8.0
     koa: 2.13.3
     lint-staged: 11.1.2
@@ -12112,15 +12111,6 @@ __metadata:
   bin:
     hunspell-tojson: ./bin/hunspell-tojson.js
   checksum: 098e00a705b1b8975924ccef1b23e1d63acc139a493a392bb55f887926c518b2edae01f9a697cffa73346160c562f89610f80d354360a2cb637a67f7c54f8227
-  languageName: node
-  linkType: hard
-
-"husky@npm:7.0.2":
-  version: 7.0.2
-  resolution: "husky@npm:7.0.2"
-  bin:
-    husky: lib/bin.js
-  checksum: 2ccfe6ddc51dc05ae8ea1e2fbb893344e93a813e00c595d6b5f5e704b7b998d6b0e2adda7c57f99b5e46a60dc07c7d860269a2ea91661c6bacef0eca8e0b8e96
   languageName: node
   linkType: hard
 
