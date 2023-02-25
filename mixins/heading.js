@@ -19,7 +19,7 @@ export default {
     align: {
       type: String,
       default() {
-        return this.heading.align;
+        return null;
       },
     },
   },
