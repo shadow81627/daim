@@ -23,8 +23,8 @@ export default {
   components: {
     BlogCard,
   },
-  async asyncData({ $content }) {
-    const items = await $content('blog').sortBy('date', 'desc').fetch();
+  async asyncData() {
+    const items = await queryContent('blog').sort('date', 'desc').find();
     return {
       items,
     };

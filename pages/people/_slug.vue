@@ -440,7 +440,7 @@ export default {
     Hero,
   },
   mixins: [ImageSources],
-  async asyncData({ $content, route }) {
+  async asyncData({ route }) {
     const slug = route.params.slug;
     const {
       basics: {
@@ -463,7 +463,7 @@ export default {
       education,
       skills,
       attributes,
-    } = await $content('team', slug).fetch();
+    } = await queryContent('team/' + slug).findOne();
 
     const locale = 'en';
     const country = countries.getName(countryCode, locale);

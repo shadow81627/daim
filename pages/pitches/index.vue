@@ -27,8 +27,8 @@ export default {
   components: {
     BlogCard,
   },
-  async asyncData({ $content }) {
-    const items = await $content('pitches').fetch();
+  async asyncData() {
+    const items = await queryContent('pitches').find();
     return {
       items,
     };

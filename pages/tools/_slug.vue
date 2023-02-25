@@ -79,9 +79,9 @@ import BlogHero from '~/components/sections/BlogHero';
 import Feature from '~/components/feature';
 export default {
   components: { BlogHero, Feature },
-  async asyncData({ $content, route, error }) {
+  async asyncData({ route, error }) {
     try {
-      const data = await $content('tools', route.params.slug).fetch();
+      const data = await queryContent('tools/' + route.params.slug).find();
       // price phycology: largest first, end in 99 rather than 00
       data.plans = sortBy(data.plans, 'price').reverse();
       const item = {

@@ -90,7 +90,7 @@ export default {
         },
         summary,
       },
-    } = await this.$content('team', 'damien-robinson').fetch();
+    } = await queryContent('team/damien-robinson').findOne();
 
     const locale = 'en';
     const country = countries.getName(countryCode, locale);

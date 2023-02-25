@@ -186,10 +186,10 @@ export default {
     nav2: [],
   }),
   async fetch() {
-    const socials = await this.$content('socials').fetch();
-    const contact = await this.$content('contact').fetch();
+    const socials = await queryContent('socials').find();
+    const contact = await queryContent('contact').find();
     const navData = (
-      await this.$content('pages').where({ show_footer: true }).fetch()
+      await queryContent('pages').where({ show_footer: true }).find()
     ).map((item) => ({
       ...item,
       pos: fractionToDecimal(item.pos),

@@ -32,10 +32,10 @@ export default {
     };
   },
   async fetch() {
-    const { description } = await this.$content('pages', 'about').fetch();
+    const { description } = await queryContent('pages/about').find();
     this.description = description;
     const data = sortBy(
-      (await this.$content('alternatives').fetch()).filter(
+      (await queryContent('alternatives').find()).filter(
         (item) => !item.deleted_at,
       ),
       [

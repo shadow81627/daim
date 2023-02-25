@@ -69,9 +69,9 @@ export default {
     Feature,
     PriceRange,
   },
-  async asyncData({ $content }) {
+  async asyncData() {
     const items = sortBy(
-      (await $content('services').fetch())
+      (await queryContent('services').find())
         .filter((item) => !item.deleted_at)
         .map((item) => ({
           ...item,

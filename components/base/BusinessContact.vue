@@ -36,10 +36,10 @@ export default {
   async fetch() {
     const {
       basics: { phone },
-    } = await this.$content('team', 'damien-robinson').fetch();
+    } = await queryContent('team', 'damien-robinson').find();
 
-    const socials = await this.$content('socials').fetch();
-    const contact = await this.$content('contact').fetch();
+    const socials = await queryContent('socials').find();
+    const contact = await queryContent('contact').find();
 
     const data = {
       items: [...contact, ...socials],

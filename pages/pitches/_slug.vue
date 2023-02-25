@@ -20,9 +20,9 @@
 <script>
 import * as dayjs from 'dayjs';
 export default {
-  async asyncData({ $content, route, error }) {
+  async asyncData({ route, error }) {
     try {
-      const item = await $content('pitches', route.params.slug).fetch();
+      const item = await queryContent('pitches/' + route.params.slug).findOne();
       return { item };
     } catch {
       error({ statusCode: 404 });

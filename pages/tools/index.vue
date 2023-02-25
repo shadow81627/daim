@@ -41,7 +41,7 @@ export default {
       sorts.unshift(this.$route.query.sort);
     }
     const data = sortBy(
-      (await this.$content('tools').fetch()).filter((item) => !item.deleted_at),
+      (await queryContent('tools').find()).filter((item) => !item.deleted_at),
       sorts,
     ).reverse();
     const items = data.map((item) => ({

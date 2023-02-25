@@ -18,7 +18,7 @@ export default {
     description: null,
   }),
   async fetch() {
-    const { description } = await this.$content('pages', 'about').fetch();
+    const { description } = await queryContent('pages', 'about').find();
     this.description = description;
   },
   fetchKey: 'page/about',

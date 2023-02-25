@@ -38,7 +38,7 @@ export default {
     cards: [],
   }),
   async fetch() {
-    const data = await this.$content('services').fetch();
+    const data = await queryContent('services').find();
     const items = sortBy(
       data.map((item) => ({
         ...item,

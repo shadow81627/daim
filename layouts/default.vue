@@ -93,7 +93,7 @@ export default {
     };
   },
   async fetch() {
-    const items = (await this.$content('pages').fetch()).map((item) => ({
+    const items = (await queryContent('pages').find()).map((item) => ({
       ...item,
       pos: fractionToDecimal(item.pos),
     }));

@@ -29,7 +29,7 @@ export default {
   async fetch() {
     const draft = this.$route?.query?.draft;
     const data = (
-      await this.$content('projects').sortBy('startDate', 'desc').fetch()
+      await queryContent('projects').sort('startDate', 'desc').find()
     ).filter((item) => {
       return !item.deletedAt && (item.startDate || draft);
     });

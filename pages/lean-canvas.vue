@@ -28,10 +28,9 @@ export default {
     };
   },
   async fetch() {
-    const { description, name } = await this.$content(
-      'pages',
-      this.slug,
-    ).fetch();
+    const { description, name } = await queryContent(
+      'pages/' + this.slug,
+    ).find();
     this.heading = name;
     this.description = description;
   },

@@ -31,8 +31,8 @@ export default {
   components: {
     Feature,
   },
-  async asyncData({ $content }) {
-    const data = await $content('team').fetch();
+  async asyncData() {
+    const data = await queryContent('team').find();
     const items = data.map((item) => {
       const firstname = item.basics.firstname;
       const lastname = item.basics.lastname;

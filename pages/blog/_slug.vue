@@ -60,9 +60,9 @@ import { mdiFacebook, mdiTwitter, mdiLinkedin } from '@mdi/js';
 import BlogHero from '~/components/sections/BlogHero';
 export default {
   components: { BlogHero },
-  async asyncData({ $content, route, error }) {
+  async asyncData({ route, error }) {
     try {
-      const item = await $content('blog', route.params.slug).fetch();
+      const item = await queryContent('blog/' + route.params.slug).find();
       return { item };
     } catch {
       error({ statusCode: 404 });
