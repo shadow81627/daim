@@ -155,7 +155,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     '@nuxtjs/markdownit',
     'nuxt-fontawesome',
     'nuxt-i18n',
@@ -163,7 +163,7 @@ export default defineNuxtConfig({
     ['nuxt-matomo', matomo],
 
     // always declare the sitemap module at end of array
-    '@nuxtjs/sitemap',
+    // '@nuxtjs/sitemap',
   ],
 
   components: [
