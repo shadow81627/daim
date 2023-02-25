@@ -7820,7 +7820,7 @@ __metadata:
     cross-env: 7.0.3
     cross-fetch: 3.1.5
     cspell: 5.9.0
-    dayjs: 1.10.7
+    dayjs: 1.11.7
     eslint: 8.34.0
     eslint-config-prettier: 8.3.0
     eslint-plugin-nuxt: 2.0.0
@@ -7880,10 +7880,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:1.10.7":
-  version: 1.10.7
-  resolution: "dayjs@npm:1.10.7"
-  checksum: a0a4ca95abaa03d0702161dc2c35d16121188e342f5052b9c61cdf784dab68af766f477c04f87f71c6af666fd4d13db9b9853b87265850d6093b7b04e1bb1cd7
+"dayjs@npm:1.11.7":
+  version: 1.11.7
+  resolution: "dayjs@npm:1.11.7"
+  checksum: 5003a7c1dd9ed51385beb658231c3548700b82d3548c0cfbe549d85f2d08e90e972510282b7506941452c58d32136d6362f009c77ca55381a09c704e9f177ebb
   languageName: node
   linkType: hard
 
