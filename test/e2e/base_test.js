@@ -27,7 +27,7 @@ for (const { slug, heading, route } of pages) {
     }
 
     I.wait(5);
-    I.saveScreenshot(`${slug}.png`);
+    // I.saveScreenshot(`${slug}.png`);
     await I.seeVisualDiff(`${slug}.png`);
   });
 }

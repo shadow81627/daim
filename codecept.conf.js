@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const http = require('http');
 const { setHeadlessWhen } = require('@codeceptjs/configure');
+const { devices } = require('playwright');
 const handler = require('serve-handler');
 
 const server = http.createServer((request, response) => {
@@ -17,10 +18,13 @@ exports.config = {
   tests: './test/e2e/*_test.js',
   output: './test/e2e/output',
   helpers: {
-    Puppeteer: {
+    Playwright: {
       url: 'http://localhost:3001',
       show: true,
+      fullPageScreenshots: true,
       waitForNavigation: 'networkidle0',
+      // emulate: devices['iPhone 7'],
+      timeout: 10000,
     },
     ResembleHelper: {
       require: 'codeceptjs-resemblehelper',
