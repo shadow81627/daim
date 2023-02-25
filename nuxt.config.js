@@ -46,6 +46,10 @@ export default defineNuxtConfig({
   target: 'static',
   modern: true,
 
+  bridge: {
+    vite: true,
+  },
+
   runtimeConfig: {
     public: {
       ...env,
