@@ -10,7 +10,7 @@
         <v-list-item
           v-for="item in items"
           :key="item.name"
-          :to="localePath(item.route ? item.route : {})"
+          :to="item.route"
           nuxt
           class="text-decoration-none"
         >
@@ -51,15 +51,16 @@
       <v-tabs class="hidden-sm-and-down" optional right>
         <v-tabs-slider></v-tabs-slider>
         <v-tab
-          v-for="{ name, route } in items.filter((item) => item.show_tab)"
-          :key="route"
-          :to="localePath(route ? route : {})"
+          v-for="item in (items || []).filter((item) => item.show_tab)"
+          :key="item.route"
+          tag="nuxt-link"
+          :xto="item.route"
           text
+          :title="item.title"
           itemscope
+          class="text-grey-lighten-5"
           itemtype="https://schema.org/SiteNavigationElement"
-        >
-          {{ name }}
-        </v-tab>
+        ></v-tab>
       </v-tabs>
     </v-app-bar>
     <v-main
@@ -82,20 +83,24 @@ export default {
   components: {
     TheFooter,
   },
-  data() {
-    return {
-      drawer: false,
-      items: [],
-    };
+  async setup() {
+    const { data: items } = await useAsyncData(
+      'layout-pages',
+      () => queryContent('pages').find(),
+      {
+        // server: false,
+        transform(data) {
+          const items = data.map((item) => ({
+            ...item,
+            pos: fractionToDecimal(item.pos),
+          }));
+          return sortBy(items, ['show_tab', 'pos']);
+        },
+      },
+    );
+    const drawer = false;
+    return { items, drawer };
   },
-  async fetch() {
-    const items = (await queryContent('pages').find()).map((item) => ({
-      ...item,
-      pos: fractionToDecimal(item.pos),
-    }));
-    this.items = sortBy(items, ['show_tab', 'pos']);
-  },
-  fetchKey: 'layout/default',
   mounted() {
     const beforePrint = function () {
       console.log('Functionality to run before printing.');
