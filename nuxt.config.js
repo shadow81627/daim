@@ -149,11 +149,11 @@ export default defineNuxtConfig({
   ],
 
   content: {
-    markdown: {
-      prism: {
-        theme: 'prism-themes/themes/prism-vsc-dark-plus.css',
-      },
-    },
+    // markdown: {
+    //   prism: {
+    //     theme: 'prism-themes/themes/prism-vsc-dark-plus.css',
+    //   },
+    // },
   },
 
   i18n: {
