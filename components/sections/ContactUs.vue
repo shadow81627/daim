@@ -4,14 +4,7 @@
       <v-container>
         <v-row justify="center">
           <v-col cols="10" align-self="center">
-            <base-title :space="0" title="HAVE QUESTIONS? LET US KNOW!" />
-
-            <!-- <base-body space="0">
-              <span class="white--text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-                itaque modi ab accusantium architecto voluptates ipsa molestiae.
-              </span>
-            </base-body> -->
+            <h3 class="text-white">HAVE QUESTIONS? LET US KNOW!</h3>
           </v-col>
 
           <v-col cols="12" md="2">
