@@ -155,7 +155,12 @@
                   class="link px-4"
                   >Status</a
                 >
-                <!-- <last-modified v-bind="{ utc }" class="link px-4" /> -->
+                <ClientOnly>
+                  <LastModified
+                    v-bind="{ utc }"
+                    class="link px-4"
+                  ></LastModified>
+                </ClientOnly>
               </v-card-text>
             </v-card>
           </div>
@@ -167,11 +172,11 @@
 
 <script>
 import { sortBy } from 'lodash-es';
-// import lastModified from './last-modified';
+import LastModified from './last-modified';
 import fractionToDecimal from '~/utils/fraction-to-decimal';
 export default {
   components: {
-    // lastModified,
+    LastModified,
   },
   async setup() {
     const config = useRuntimeConfig();
