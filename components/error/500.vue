@@ -48,12 +48,7 @@
               </v-row>
               <v-row>
                 <v-col>
-                  <v-btn
-                    :to="localePath('index')"
-                    color="primary"
-                    block
-                    size="x-large"
-                  >
+                  <v-btn :to="'index'" color="primary" block size="x-large">
                     {{ $t('layout.navigation.home') }}
                   </v-btn>
                 </v-col>

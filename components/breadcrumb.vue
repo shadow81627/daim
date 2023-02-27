@@ -32,9 +32,7 @@ export default {
 
       segments.forEach((segment, index) => {
         const text = titleCase(startCase(segment));
-        const to = this.localePath(
-          '/' + segments.slice(0, index + 1).join('/'),
-        );
+        const to = '/' + segments.slice(0, index + 1).join('/');
         breadcrumbs.push({
           text,
           to,

@@ -82,10 +82,10 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `${this.$config.BASE_URL}${this.$img(this.src, {
-            width: 1280,
-            height: 630,
-          })}`,
+          // content: `${this.$config.BASE_URL}${this.$img(this.src, {
+          //   width: 1280,
+          //   height: 630,
+          // })}`,
         },
         {
           hid: 'og:image:width',
@@ -102,10 +102,10 @@ export default {
         {
           rel: 'preload',
           as: 'image',
-          href: `${this.$config.BASE_URL}${this.$img(this.src, {
-            width: 1280,
-            height: 630,
-          })}`,
+          // href: `${this.$config.BASE_URL}${this.$img(this.src, {
+          //   width: 1280,
+          //   height: 630,
+          // })}`,
           imagesrcset: this._srcset.srcset,
           imagesizes: this._srcset.size,
         },
