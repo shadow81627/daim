@@ -34,19 +34,21 @@
 import { sortBy } from 'lodash-es';
 import fractionToDecimal from '~/utils/fraction-to-decimal';
 export default {
-  data: () => ({
-    cards: [],
-  }),
-  async fetch() {
-    const data = await queryContent('services').find();
-    const items = sortBy(
-      data.map((item) => ({
-        ...item,
-        pos: fractionToDecimal(item.pos),
-      })),
-      ['pos'],
-    ).reverse();
-    this.cards = items.slice(0, 4);
+  async setup() {
+    const { data: cards } = await useAsyncData(
+      'services-section',
+      () => queryContent('services').find(),
+      {
+        transform(data) {
+          const items = data.map((item) => ({
+            ...item,
+            pos: fractionToDecimal(item.pos),
+          }));
+          return sortBy(items, ['pos']).reverse().slice(0, 4);
+        },
+      },
+    );
+    return { cards };
   },
 };
 </script>
