@@ -86,16 +86,15 @@
             <v-list-item
               v-for="item in nav1"
               :key="item.name"
-              :to="localePath(item.route ? item.route : {})"
-              nuxt
+              :to="item.route"
               class="text-decoration-none"
             >
               <v-list-item-action>
                 <BaseIcon :icon="item.icon"></BaseIcon>
               </v-list-item-action>
-                <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
-                  item.name
-                }}</v-list-item-title>
+              <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
+                item.name
+              }}</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-col>
@@ -107,16 +106,15 @@
             <v-list-item
               v-for="item in nav2"
               :key="item.name"
-              :to="localePath(item.route ? item.route : {})"
-              nuxt
+              :to="item.route"
               class="text-decoration-none"
             >
               <v-list-item-action>
                 <BaseIcon :icon="item.icon"></BaseIcon>
               </v-list-item-action>
-                <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
-                  item.name
-                }}</v-list-item-title>
+              <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
+                item.name
+              }}</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-col>
@@ -142,10 +140,8 @@
           <div class="ml-auto">
             <v-card flat color="transparent">
               <v-card-text>
-                <span>{{ $config.VERSION }}</span>
-                <span v-if="$config.COMMIT">{{
-                  shortHash($config.COMMIT)
-                }}</span>
+                <span>{{ version }}</span>
+                <span v-if="commit">{{ shortHash(commit) }}</span>
                 <a
                   href="https://github.com/shadow81627/daim/releases"
                   class="link px-4"
@@ -159,7 +155,7 @@
                   class="link px-4"
                   >Status</a
                 >
-                <last-modified v-bind="{ utc }" class="link px-4" />
+                <!-- <last-modified v-bind="{ utc }" class="link px-4" /> -->
               </v-card-text>
             </v-card>
           </div>
@@ -171,42 +167,53 @@
 
 <script>
 import { sortBy } from 'lodash-es';
-import lastModified from './last-modified';
+// import lastModified from './last-modified';
 import fractionToDecimal from '~/utils/fraction-to-decimal';
 export default {
   components: {
-    lastModified,
+    // lastModified,
   },
-  data: () => ({
-    utc: false,
-    socials: [],
-    contact: [],
-    nav1: [],
-    nav2: [],
-  }),
-  async fetch() {
-    const socials = await queryContent('socials').find();
-    const contact = await queryContent('contact').find();
-    const navData = (
-      await queryContent('pages').where({ show_footer: true }).find()
-    ).map((item) => ({
-      ...item,
-      pos: fractionToDecimal(item.pos),
-    }));
-    const nav = sortBy(navData, ['show_tab', 'pos']);
-    const navHalf = Math.ceil(nav.length / 2);
-    const nav1 = nav.slice(0, navHalf);
-    const nav2 = nav.slice(-navHalf);
+  async setup() {
+    const config = useRuntimeConfig();
+    const [{ data: socials }, { data: contact }, { data: nav }] =
+      await Promise.all([
+        useAsyncData('footer-socials', () => queryContent('socials').find()),
+        useAsyncData('footer-contact', () => queryContent('contact').find()),
+        useAsyncData(
+          'footer-pages',
+          () => queryContent('pages').where({ show_footer: true }).find(),
+          {
+            transform(data) {
+              const navData = data.map((item) => ({
+                ...item,
+                pos: fractionToDecimal(item.pos),
+              }));
+              const nav = sortBy(navData, ['show_tab', 'pos']);
+              const navHalf = Math.ceil(nav.length / 2);
+              const nav1 = nav.slice(0, navHalf);
+              const nav2 = nav.slice(-navHalf);
+              return { nav1, nav2 };
+            },
+          },
+        ),
+      ]);
 
-    const data = {
+    const nav1 = nav?.value?.nav1 ?? [];
+    const nav2 = nav?.value?.nav1 ?? [];
+
+    const version = config.version;
+    const commit = config.commit;
+
+    return {
+      utc: false,
       contact,
       socials,
       nav1,
       nav2,
+      version,
+      commit,
     };
-    Object.assign(this.$data, data);
   },
-  fetchKey: 'layout/footer',
   methods: {
     shortHash: (value) => (value ? value.substring(0, 7) : null),
   },
