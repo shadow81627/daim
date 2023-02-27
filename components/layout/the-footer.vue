@@ -155,12 +155,7 @@
                   class="link px-4"
                   >Status</a
                 >
-                <ClientOnly>
-                  <LastModified
-                    v-bind="{ utc }"
-                    class="link px-4"
-                  ></LastModified>
-                </ClientOnly>
+                <LastModified v-bind="{ utc }" class="link px-4"></LastModified>
               </v-card-text>
             </v-card>
           </div>

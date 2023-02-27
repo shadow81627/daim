@@ -1,6 +1,6 @@
 <template>
   <span v-if="lastModified">
-    <span>Last modified</span>
+    <span>Last modified </span>
     <v-tooltip location="top">
       <time
         itemprop="dateModified"
@@ -8,17 +8,20 @@
         :datetime="lastModified.toISOString()"
         >{{ lastModified.fromNow() }}</time
       >
-      <template #activator="{ on, attrs }">
-        <span v-bind="attrs" v-on="on">{{ lastModified.format(format) }}</span>
+      <template #activator="{ props }">
+        <span v-bind="props" class="text-grey-darken-1" style="cursor: pointer">{{
+          lastModified.format(format)
+        }}</span>
       </template>
     </v-tooltip>
   </span>
 </template>
 
 <script>
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime.js';
 
+// eslint-disable-next-line import/no-named-as-default-member
 dayjs.extend(relativeTime);
 
 export default {
