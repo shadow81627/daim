@@ -1782,14 +1782,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/vue2@npm:2.0.0":
-  version: 2.0.0
-  resolution: "@iconify/vue2@npm:2.0.0"
+"@iconify/vue2@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@iconify/vue2@npm:2.1.0"
   dependencies:
     "@iconify/types": ^2.0.0
   peerDependencies:
     vue: 2.x
-  checksum: 414012c1e2886ae4fa31da293d84462f715ba0088313c00b2f2d32e436042a75c3132e6633ee1013397957ef0f883fb4851a841f7ad01cdd720c7f710080f9f5
+  checksum: e2984b3d4ef5d5ffeba84ef064edce1905eb7813a4efd826c0a63338e165971c22e068d6a62ac44ed7e2585f5f25c4435d1aeef6a3b9b50793291a7d82ffe224
   languageName: node
   linkType: hard
 
@@ -7846,7 +7846,7 @@ __metadata:
     "@fortawesome/free-solid-svg-icons": 5.15.4
     "@fortawesome/vue-fontawesome": 2.0.10
     "@iconify/tools": 2.2.6
-    "@iconify/vue2": 2.0.0
+    "@iconify/vue2": 2.1.0
     "@lhci/cli": 0.7.2
     "@mdi/js": 5.9.55
     "@nuxt/content": 1.14.0
