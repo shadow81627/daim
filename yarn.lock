@@ -7909,7 +7909,7 @@ __metadata:
     prettier: 2.3.2
     prism-themes: 1.8.0
     query-string: 7.1.1
-    remark-cli: 10.0.0
+    remark-cli: 10.0.1
     remark-lint: 9.0.1
     remark-preset-lint-consistent: 5.0.1
     remark-preset-lint-recommended: 6.0.1
@@ -19430,15 +19430,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-cli@npm:10.0.0":
-  version: 10.0.0
-  resolution: "remark-cli@npm:10.0.0"
+"remark-cli@npm:10.0.1":
+  version: 10.0.1
+  resolution: "remark-cli@npm:10.0.1"
   dependencies:
     remark: ^14.0.0
     unified-args: ^9.0.0
   bin:
     remark: cli.js
-  checksum: 96ace49cfb67fad85ef9a12d8ab7d7a54eed6897d901c6fcd389e9c89a028567b916c6699374b49dbe114f9804718f31e250052c5c7c86da48d65b771183f61f
+  checksum: a1409b696d5e0a1eb17168089b4ecdfd0d2c637a5f275cf54685cea0d134f0d962420483d414a9cbdc426413238ea9deeb0b3e4da633e7254fff6e86c523f094
   languageName: node
   linkType: hard
 
