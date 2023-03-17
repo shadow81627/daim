@@ -7900,7 +7900,7 @@ __metadata:
     query-string: 7.1.3
     remark-cli: 10.0.1
     remark-lint: 9.0.1
-    remark-preset-lint-consistent: 5.0.1
+    remark-preset-lint-consistent: 5.1.1
     remark-preset-lint-recommended: 6.1.2
     require-extension-hooks: 0.3.3
     require-extension-hooks-babel: 1.0.0
@@ -19891,9 +19891,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-preset-lint-consistent@npm:5.0.1":
-  version: 5.0.1
-  resolution: "remark-preset-lint-consistent@npm:5.0.1"
+"remark-preset-lint-consistent@npm:5.1.1":
+  version: 5.1.1
+  resolution: "remark-preset-lint-consistent@npm:5.1.1"
   dependencies:
     "@types/mdast": ^3.0.0
     remark-lint: ^9.0.0
@@ -19910,7 +19910,7 @@ __metadata:
     remark-lint-strong-marker: ^3.0.0
     remark-lint-table-cell-padding: ^4.0.0
     unified: ^10.0.0
-  checksum: 2d77c0e667fd34df0ed21364463c1beba43e4c0bc205c8f5fb904654a3d7c7629b177935d8007d87f8fc00751ad1ae43f9c94a2b1804e8472ee7d46e5bfc0486
+  checksum: ee4b70662e7b6686a18940df6f3886bac58a94e80a048df2b9e79d4e155460556a5be16a6f211c72fd241fb8d081f17a0c04ab6628f1058166a62eb89a4ed3b4
   languageName: node
   linkType: hard
 
