@@ -6585,9 +6585,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"codeceptjs-resemblehelper@npm:1.9.6":
-  version: 1.9.6
-  resolution: "codeceptjs-resemblehelper@npm:1.9.6"
+"codeceptjs-resemblehelper@npm:1.9.7":
+  version: 1.9.7
+  resolution: "codeceptjs-resemblehelper@npm:1.9.7"
   dependencies:
     assert: ^1.5.0
     aws-sdk: 2.1027.0
@@ -6597,7 +6597,7 @@ __metadata:
     mz: 2.7.0
     path: ^0.12.7
     resemblejs: 4.0.0
-  checksum: 4f33042263c748e7e396b8129707faadb6fc858c767d288e4d17ec032b33f1bc7e6865b9793099a69a7861b4b1bb8bb38461efb20b4b142cff20824ef4aad67e
+  checksum: 94b405bb02197a8f7173bd7ad9265f875d0f5d3949608fe4c4b96329ff27b2a19bc5861fdf7cb3b04f9d1314de9a52baa5239e4645a1da9daed5216cdbacd4b4
   languageName: node
   linkType: hard
 
@@ -7871,7 +7871,7 @@ __metadata:
     "@vue/test-utils": 1.2.2
     babel-plugin-module-resolver: 4.1.0
     codeceptjs: 3.1.2
-    codeceptjs-resemblehelper: 1.9.6
+    codeceptjs-resemblehelper: 1.9.7
     cross-env: 7.0.3
     cross-fetch: 3.1.5
     cspell: 5.9.0
