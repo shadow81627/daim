@@ -83,7 +83,7 @@
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.1",
     "@types/csso": "5.0.0",
-    "@types/lodash": "4.14.189",
+    "@types/lodash": "4.14.191",
     "@types/lodash-es": "4.17.6",
     "@types/sharp": "0.31.0",
     "@vue/test-utils": "1.2.2",
