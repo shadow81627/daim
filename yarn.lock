@@ -7910,7 +7910,7 @@ __metadata:
     serve-handler: 6.1.5
     sharp: 0.30.5
     stylelint: 13.13.1
-    svgo: 3.0.1
+    svgo: 3.0.2
     ts-node: 10.9.1
     typescript: 4.8.4
     vee-validate: 3.4.13
@@ -22091,9 +22091,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svgo@npm:3.0.1":
-  version: 3.0.1
-  resolution: "svgo@npm:3.0.1"
+"svgo@npm:3.0.2, svgo@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "svgo@npm:3.0.2"
   dependencies:
     "@trysound/sax": 0.2.0
     commander: ^7.2.0
@@ -22102,8 +22102,8 @@ __metadata:
     csso: ^5.0.5
     picocolors: ^1.0.0
   bin:
-    svgo: ./bin/svgo
-  checksum: cccc99c3fcc56ba21808ae9427a2905f182cdde0b59d417489c50377e1e3eb3aa1328d080e077e9d831e4122a886a71b8cf547e65817cbb115619af76d23d565
+    svgo: bin/svgo
+  checksum: 381ba14aa782e71ab7033227634a3041c11fa3e2769aeaf0df43a08a615de61925108e34f55af6e7c5146f4a3109e78deabb4fa9d687e36d45d1f848b4e23d17
   languageName: node
   linkType: hard
 
@@ -22127,22 +22127,6 @@ __metadata:
   bin:
     svgo: ./bin/svgo
   checksum: 28a5680a61245eb4a1603bc03459095bb01ad5ebd23e95882d886c3c81752313c0a9a9fe48dd0bcbb9a27c52e11c603640df952971573b2b550d9e15a9ee6116
-  languageName: node
-  linkType: hard
-
-"svgo@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "svgo@npm:3.0.2"
-  dependencies:
-    "@trysound/sax": 0.2.0
-    commander: ^7.2.0
-    css-select: ^5.1.0
-    css-tree: ^2.2.1
-    csso: ^5.0.5
-    picocolors: ^1.0.0
-  bin:
-    svgo: bin/svgo
-  checksum: 381ba14aa782e71ab7033227634a3041c11fa3e2769aeaf0df43a08a615de61925108e34f55af6e7c5146f4a3109e78deabb4fa9d687e36d45d1f848b4e23d17
   languageName: node
   linkType: hard
 
