@@ -2801,15 +2801,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/stylelint-module@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@nuxtjs/stylelint-module@npm:4.0.0"
+"@nuxtjs/stylelint-module@npm:4.2.1":
+  version: 4.2.1
+  resolution: "@nuxtjs/stylelint-module@npm:4.2.1"
   dependencies:
-    consola: ^2.12.1
-    stylelint-webpack-plugin: ^2.0.0
+    consola: ^2.15.3
+    stylelint-webpack-plugin: ^2.5.0
   peerDependencies:
-    stylelint: ^13.0.0
-  checksum: 38cb30b04bd6cf60490c9ca84ea70f2b78eb3fc1504b4c0b695550184e876a17ba8c19c52f74253de74d5c92ca4b2320e1efc0724804b18b2255a707446eb234
+    stylelint: ">=13"
+    webpack: ^4.0.0 || ^5.0.0
+  checksum: d4841e35e7c7ff7ac9515bfd08495658625d2a3c27fafc9ecfbb85e948df6935c3d4035da93929792d8f11a08f8a7f094951b81e9700ce6c1f63bb0d89a88ef3
   languageName: node
   linkType: hard
 
@@ -3785,16 +3786,6 @@ __metadata:
   version: 0.1.2
   resolution: "@types/source-list-map@npm:0.1.2"
   checksum: fda8f37537aca9d3ed860d559289ab1dddb6897e642e6f53e909bbd18a7ac3129a8faa2a7d093847c91346cf09c86ef36e350c715406fba1f2271759b449adf6
-  languageName: node
-  linkType: hard
-
-"@types/stylelint@npm:^13.13.0":
-  version: 13.13.1
-  resolution: "@types/stylelint@npm:13.13.1"
-  dependencies:
-    globby: 11.x.x
-    postcss: 7.x.x
-  checksum: 86add6ce35e1a53e7332074bc92672ca85b65374ad2c6745918a30c47697eefec700ebb8c0c3c66e38adf8f0b69cf216ef846e14138f52c77e6428b645c9ef1b
   languageName: node
   linkType: hard
 
@@ -7000,7 +6991,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"consola@npm:^2.10.0, consola@npm:^2.12.1, consola@npm:^2.13.0, consola@npm:^2.15.0, consola@npm:^2.15.3, consola@npm:^2.6.0, consola@npm:^2.9.0":
+"consola@npm:^2.10.0, consola@npm:^2.13.0, consola@npm:^2.15.0, consola@npm:^2.15.3, consola@npm:^2.6.0, consola@npm:^2.9.0":
   version: 2.15.3
   resolution: "consola@npm:2.15.3"
   checksum: 8ef7a09b703ec67ac5c389a372a33b6dc97eda6c9876443a60d76a3076eea0259e7f67a4e54fd5a52f97df73690822d090cf8b7e102b5761348afef7c6d03e28
@@ -7880,7 +7871,7 @@ __metadata:
     "@nuxtjs/markdownit": 2.0.0
     "@nuxtjs/pwa": 3.3.5
     "@nuxtjs/sitemap": 2.4.0
-    "@nuxtjs/stylelint-module": 4.0.0
+    "@nuxtjs/stylelint-module": 4.2.1
     "@nuxtjs/vuetify": 1.12.3
     "@semantic-release/changelog": 5.0.1
     "@semantic-release/git": 9.0.1
@@ -10811,7 +10802,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:11.x.x, globby@npm:^11.0.0, globby@npm:^11.0.1, globby@npm:^11.0.3, globby@npm:^11.0.4, globby@npm:^11.1.0":
+"globby@npm:^11.0.0, globby@npm:^11.0.1, globby@npm:^11.0.3, globby@npm:^11.1.0":
   version: 11.1.0
   resolution: "globby@npm:11.1.0"
   dependencies:
@@ -13068,17 +13059,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-worker@npm:^27.0.2":
-  version: 27.0.6
-  resolution: "jest-worker@npm:27.0.6"
-  dependencies:
-    "@types/node": "*"
-    merge-stream: ^2.0.0
-    supports-color: ^8.0.0
-  checksum: cef42e551033839940ed26c121b7d19ff85316fb5e4b815e1fca28744c884173bb3a6be64729bc95c281902db5142685700fc0922628b646151b0f5dcabbeb37
-  languageName: node
-  linkType: hard
-
 "jest-worker@npm:^27.5.1":
   version: 27.5.1
   resolution: "jest-worker@npm:27.5.1"
@@ -13087,6 +13067,17 @@ __metadata:
     merge-stream: ^2.0.0
     supports-color: ^8.0.0
   checksum: 98cd68b696781caed61c983a3ee30bf880b5bd021c01d98f47b143d4362b85d0737f8523761e2713d45e18b4f9a2b98af1eaee77afade4111bb65c77d6f7c980
+  languageName: node
+  linkType: hard
+
+"jest-worker@npm:^28.1.3":
+  version: 28.1.3
+  resolution: "jest-worker@npm:28.1.3"
+  dependencies:
+    "@types/node": "*"
+    merge-stream: ^2.0.0
+    supports-color: ^8.0.0
+  checksum: e921c9a1b8f0909da9ea07dbf3592f95b653aef3a8bb0cbcd20fc7f9a795a1304adecac31eecb308992c167e8d7e75c522061fec38a5928ace0f9571c90169ca
   languageName: node
   linkType: hard
 
@@ -21905,21 +21896,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-webpack-plugin@npm:^2.0.0":
-  version: 2.2.2
-  resolution: "stylelint-webpack-plugin@npm:2.2.2"
+"stylelint-webpack-plugin@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "stylelint-webpack-plugin@npm:2.5.0"
   dependencies:
-    "@types/stylelint": ^13.13.0
     arrify: ^2.0.1
-    globby: ^11.0.4
-    jest-worker: ^27.0.2
-    micromatch: ^4.0.4
+    globby: ^11.1.0
+    jest-worker: ^28.1.3
+    micromatch: ^4.0.5
     normalize-path: ^3.0.0
-    schema-utils: ^3.0.0
+    schema-utils: ^3.1.1
   peerDependencies:
-    stylelint: ^13.0.0
+    stylelint: ^13.0.0 || ^14.0.0 || ^15.0.0
     webpack: ^4.0.0 || ^5.0.0
-  checksum: 7da7cd4dae7ac41f03c9fde85677e5ce7905bf6aa17c9e76823894f75cb106765ce9441bfdd3f2bfe594ba4a26576a0f6882b4113e60bccf41a40822b21ea2a2
+  checksum: ad485da209387a717916bb862ba7e119ed1d776da6010435a7747634906c66f4d27eedaa8baa0895164549bb62892ea402adc430fe6c64c5565d13a2485f02a7
   languageName: node
   linkType: hard
 
