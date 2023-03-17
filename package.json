@@ -68,7 +68,7 @@
     "vee-validate": "3.4.13"
   },
   "devDependencies": {
-    "@iconify/tools": "2.1.1",
+    "@iconify/tools": "2.2.6",
     "@iconify/vue2": "2.0.0",
     "@lhci/cli": "0.7.2",
     "@mdi/js": "5.9.55",
