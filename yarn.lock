@@ -1679,13 +1679,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/vue-fontawesome@npm:2.0.2":
-  version: 2.0.2
-  resolution: "@fortawesome/vue-fontawesome@npm:2.0.2"
+"@fortawesome/vue-fontawesome@npm:2.0.10":
+  version: 2.0.10
+  resolution: "@fortawesome/vue-fontawesome@npm:2.0.10"
   peerDependencies:
-    "@fortawesome/fontawesome-svg-core": ">= 1.2.0 < 1.3"
+    "@fortawesome/fontawesome-svg-core": ~1 || ~6
     vue: ~2
-  checksum: 343143cd9b719272c4935e66130554a881323260cd96a00fee1f922a3d9d84f7f37d88ca8dfbc0f4595cb634ea687c10c69fe9a6a6e2249da369b76631c27f92
+  checksum: 9099bce6cfb228f6fe418645ba9369eb9c476fdf3b4d8374b62b590bce6c08d04ea72f3632c5b2411801ce1fe2b9b2bd4bcca83d330c509a440551df1a1dd84a
   languageName: node
   linkType: hard
 
@@ -7863,7 +7863,7 @@ __metadata:
     "@fortawesome/free-brands-svg-icons": 5.15.4
     "@fortawesome/free-regular-svg-icons": 5.15.4
     "@fortawesome/free-solid-svg-icons": 5.15.4
-    "@fortawesome/vue-fontawesome": 2.0.2
+    "@fortawesome/vue-fontawesome": 2.0.10
     "@iconify/tools": 2.1.1
     "@iconify/vue2": 2.0.0
     "@lhci/cli": 0.7.2
