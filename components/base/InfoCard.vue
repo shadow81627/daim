@@ -7,33 +7,37 @@
         </v-col>
 
         <v-col v-if="title || subtitle" :cols="callout ? 9 : 12">
-          <BaseSubtitle v-if="subtitle" :title="subtitle" space="1" />
-
-          <BaseTitle
-            :title="title"
-            class="text-uppercase"
+          <BaseSubtitle
+            v-if="subtitle"
+            :title="subtitle"
             space="1"
-            :tag="`h${level}`"
-            :itemprop="titleItemprop"
-          />
+          ></BaseSubtitle>
 
-          <BaseDivider :color="color" />
+          <h3
+            class="text-uppercase text-center text-h5 font-weight-medium"
+            space="1"
+            :itemprop="titleItemprop"
+          >
+            {{ title }}
+          </h3>
+
+          <BaseDivider :color="color"></BaseDivider>
 
           <BaseBody
             v-if="text || $slots.default"
-            :text="text"
             space="6"
             :itemprop="bodyItemprop"
           >
-            <slot />
+            <slot>
+              {{ text }}
+            </slot>
           </BaseBody>
         </v-col>
 
         <v-col v-if="callout" cols="2">
-          <div
-            class="text-h2 text-grey-lighten-4 font-weight-bold pr-8"
-            v-text="callout"
-          />
+          <div class="text-h2 text-grey-lighten-4 font-weight-bold pr-8">
+            {{ callout }}
+          </div>
         </v-col>
       </v-row>
     </v-container>
