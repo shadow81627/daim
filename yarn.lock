@@ -7913,7 +7913,7 @@ __metadata:
     svgo: 3.0.2
     ts-node: 10.9.1
     typescript: 4.8.4
-    vee-validate: 3.4.13
+    vee-validate: 3.4.15
     vuetify: 2.6.10
     write-good: 1.0.8
   languageName: unknown
@@ -23673,12 +23673,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vee-validate@npm:3.4.13":
-  version: 3.4.13
-  resolution: "vee-validate@npm:3.4.13"
+"vee-validate@npm:3.4.15":
+  version: 3.4.15
+  resolution: "vee-validate@npm:3.4.15"
   peerDependencies:
     vue: ^2.5.18
-  checksum: e06b874f5dc5527f859e33923a67ab6b920384e163d81a8db4f4daf5b9fa0098c48422da3babac8064ae81d68860403034d476c0713e0f634ffcb50d4dd4b61b
+  checksum: 50f0b6cb531dd3c49873516785ba3c4a0d663413f707b4106d14de06ada26eefc2009c996aa411e4a3b16ec4eb3f50dafadf1e67438142de44a6551b4ce723c9
   languageName: node
   linkType: hard
 
