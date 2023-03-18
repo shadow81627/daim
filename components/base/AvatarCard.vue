@@ -1,6 +1,6 @@
 <template>
   <div :class="classes" class="pt-2">
-    <base-avatar
+    <BaseAvatar
       v-if="icon"
       :color="color"
       :dark="dark"
@@ -8,17 +8,19 @@
       :outlined="outlined"
       :size="size"
       class="mb-3"
-    />
+    ></BaseAvatar>
 
     <div :class="horizontal && title && 'ml-6'">
-      <base-title
+      <h3
         v-if="title"
-        :title="title"
-        class="text-uppercase text-break"
-        space="3"
-      />
+        class="text-uppercase text-break text-h5 font-weight-medium"
+        space="1"
+        :itemprop="titleItemprop"
+      >
+        {{ title }}
+      </h3>
 
-      <base-body
+      <BaseBody
         v-if="text || $slots.default"
         :space="horizontal || dense ? 0 : undefined"
         class="mx-auto"
@@ -27,7 +29,7 @@
         <slot>
           {{ text }}
         </slot>
-      </base-body>
+      </BaseBody>
     </div>
   </div>
 </template>
@@ -38,12 +40,11 @@ import Heading from '@/mixins/heading';
 
 import BaseAvatar from '~/components/base/Avatar';
 import BaseBody from '~/components/base/Body';
-import BaseTitle from '~/components/base/Title';
 
 export default {
   name: 'BaseAvatarCard',
 
-  components: { BaseBody, BaseAvatar, BaseTitle },
+  components: { BaseBody, BaseAvatar },
 
   mixins: [Heading],
 
