@@ -23,6 +23,7 @@
     </v-navigation-drawer>
     <v-app-bar color="#343a40" class="hidden-print-only" height="64">
       <v-app-bar-nav-icon
+        class="text-white"
         aria-label="menu"
         dark
         @click.stop="drawer = !drawer"
