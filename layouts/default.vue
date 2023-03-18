@@ -2,7 +2,6 @@
   <v-app clipped-left>
     <v-navigation-drawer
       v-model="drawer"
-      app
       class="hidden-print-only"
       disable-resize-watcher
     >
@@ -11,7 +10,6 @@
           v-for="item in items"
           :key="item.name"
           :to="item.route"
-          nuxt
           class="text-decoration-none"
         >
           <v-list-item-action>
@@ -23,19 +21,12 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar
-      app
-      fixed
-      color="#343a40"
-      dark
-      class="hidden-print-only"
-      height="64"
-    >
+    <v-app-bar color="#343a40" class="hidden-print-only" height="64">
       <v-app-bar-nav-icon
         aria-label="menu"
         dark
         @click.stop="drawer = !drawer"
-      />
+      ></v-app-bar-nav-icon>
       <v-toolbar-title class="ml-0 px-3 d-flex align-center">
         <a href="/" title="Home" aria-label="Home">
           <img
