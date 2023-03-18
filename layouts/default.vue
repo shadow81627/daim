@@ -12,9 +12,11 @@
           :to="item.route"
           class="text-decoration-none"
         >
-          <v-list-item-action>
-            <BaseIcon :icon="item.icon"></BaseIcon>
-          </v-list-item-action>
+          <template #prepend>
+            <v-list-item-action>
+              <BaseIcon :icon="item.icon"></BaseIcon>
+            </v-list-item-action>
+          </template>
           <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
             item.name
           }}</v-list-item-title>
