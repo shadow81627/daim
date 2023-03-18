@@ -90,7 +90,7 @@ export default {
         },
       },
     );
-    const drawer = false;
+    const drawer = ref(false);
     return { items, drawer, logo };
   },
   mounted() {
