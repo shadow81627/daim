@@ -199,7 +199,7 @@ export default {
       ]);
 
     const nav1 = nav?.value?.nav1 ?? [];
-    const nav2 = nav?.value?.nav1 ?? [];
+    const nav2 = nav?.value?.nav2 ?? [];
 
     const version = config.version;
     const commit = config.commit;
