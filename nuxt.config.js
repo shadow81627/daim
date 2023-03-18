@@ -1,3 +1,4 @@
+import svgLoader from 'vite-svg-loader';
 import pkg from './package';
 
 const HOST = process.env.HOST || '0.0.0.0';
@@ -238,5 +239,8 @@ export default defineNuxtConfig({
         config.devtool = 'source-map';
       }
     },
+  },
+  vite: {
+    plugins: [svgLoader()]
   },
 });

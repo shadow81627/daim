@@ -39,7 +39,7 @@
       <v-toolbar-title class="ml-0 px-3 d-flex align-center">
         <a href="/" title="Home" aria-label="Home">
           <img
-            :src="'~/assets/img/logo.svg?inline'"
+            :src="logo"
             class="navbar-brand"
             height="24"
             width="60"
@@ -79,6 +79,7 @@
 import { sortBy } from 'lodash-es';
 import TheFooter from '@/components/layout/the-footer.vue';
 import fractionToDecimal from '~/utils/fraction-to-decimal';
+import logo from '~/assets/img/logo.svg?url';
 export default {
   components: {
     TheFooter,
@@ -99,7 +100,7 @@ export default {
       },
     );
     const drawer = false;
-    return { items, drawer };
+    return { items, drawer, logo };
   },
   mounted() {
     const beforePrint = function () {
