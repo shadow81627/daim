@@ -7902,7 +7902,7 @@ __metadata:
     cspell: 5.9.0
     dayjs: 1.11.7
     eslint: 8.36.0
-    eslint-config-prettier: 8.3.0
+    eslint-config-prettier: 8.7.0
     eslint-plugin-nuxt: 4.0.0
     eslint-plugin-prettier: 4.0.0
     eslint-plugin-unicorn: 45.0.2
@@ -8962,14 +8962,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:8.3.0":
-  version: 8.3.0
-  resolution: "eslint-config-prettier@npm:8.3.0"
+"eslint-config-prettier@npm:8.7.0":
+  version: 8.7.0
+  resolution: "eslint-config-prettier@npm:8.7.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: df4cea3032671995bb5ab07e016169072f7fa59f44a53251664d9ca60951b66cdc872683b5c6a3729c91497c11490ca44a79654b395dd6756beb0c3903a37196
+  checksum: b05bc7f2296ce3e0925c14147849706544870e0382d38af2352d709a6cf8521bdaff2bd8e5021f1780e570775a8ffa1d2bac28b8065d90d43a3f1f98fd26ce52
   languageName: node
   linkType: hard
 
