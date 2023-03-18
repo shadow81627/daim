@@ -2,7 +2,6 @@
   <Icon
     style="font-size: 2em; width: 32px; height: 32px"
     :style="{ color: color }"
-    v-bind="{ icon, inline }"
     :name="icon"
   ></Icon>
 </template>
