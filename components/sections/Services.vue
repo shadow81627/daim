@@ -4,8 +4,8 @@
       <v-container fluid>
         <v-row itemscope itemtype="https://schema.org/OfferCatalog">
           <v-col
-            v-for="card in cards"
-            :key="card.title"
+            v-for="card of cards"
+            :key="card.name"
             cols="12"
             sm="6"
             md="3"
@@ -22,7 +22,7 @@
               itemtype="https://schema.org/Service"
               title-itemprop="name"
               body-itemprop="description"
-            />
+            ></BaseInfoCard>
           </v-col>
         </v-row>
       </v-container>
