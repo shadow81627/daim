@@ -1,5 +1,5 @@
 <template>
-  <v-list dense flat tile color="transparent">
+  <v-list dense flat tile color="transparent" item-props>
     <v-list-item
       v-for="item in items"
       :key="item.title"
@@ -11,9 +11,12 @@
       :data-tel="tel(item.href)"
       class="text-decoration-none"
     >
-      <v-list-item-action style="font-size: 2em; width: 32px; height: 32px">
-        <BaseIcon :icon="item.icon"></BaseIcon>
-      </v-list-item-action>
+      <template #prepend>
+        <v-list-item-action style="font-size: 2em; width: 32px; height: 32px">
+          <BaseIcon :icon="item.icon"></BaseIcon>
+        </v-list-item-action>
+      </template>
+
       <slot :item="item">
         <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
           item.title
