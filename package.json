@@ -109,7 +109,7 @@
     "require-extension-hooks": "0.3.3",
     "require-extension-hooks-babel": "1.0.0",
     "require-extension-hooks-vue": "3.0.0",
-    "sass": "1.38.2",
+    "sass": "1.59.3",
     "semantic-release": "19.0.3",
     "serve-handler": "6.1.5",
     "stylelint": "13.13.1",
