@@ -1,7 +1,10 @@
 <template>
-  <v-app clipped-left>
+  <v-app clipped-left overlaps>
     <v-navigation-drawer
       v-model="drawer"
+      sticky
+      temporary
+      :scrim="false"
       class="hidden-print-only"
       disable-resize-watcher
     >
@@ -28,7 +31,7 @@
         class="text-white"
         aria-label="menu"
         dark
-        @click.stop="drawer = !drawer"
+        @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <v-toolbar-title class="ml-0 px-3 d-flex align-center">
         <a href="/" title="Home" aria-label="Home">
@@ -119,3 +122,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.v-navigation-drawer {
+  margin-top: 64px;
+}
+</style>
