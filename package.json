@@ -103,7 +103,7 @@
     "playwright": "1.30.0",
     "prettier": "2.3.2",
     "remark-cli": "10.0.1",
-    "remark-lint": "9.0.1",
+    "remark-lint": "9.1.1",
     "remark-preset-lint-consistent": "5.1.1",
     "remark-preset-lint-recommended": "6.1.2",
     "require-extension-hooks": "0.3.3",
