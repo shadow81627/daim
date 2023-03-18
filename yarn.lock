@@ -5389,7 +5389,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-sfc@npm:3.2.47, @vue/compiler-sfc@npm:^3.2.45, @vue/compiler-sfc@npm:^3.2.47":
+"@vue/compiler-sfc@npm:3.2.47, @vue/compiler-sfc@npm:^3.2.20, @vue/compiler-sfc@npm:^3.2.45, @vue/compiler-sfc@npm:^3.2.47":
   version: 3.2.47
   resolution: "@vue/compiler-sfc@npm:3.2.47"
   dependencies:
@@ -9198,6 +9198,7 @@ __metadata:
     typescript: 4.8.4
     vee-validate: 3.4.15
     vite-plugin-vuetify: 1.0.2
+    vite-svg-loader: 4.0.0
     vuetify: 3.1.6
     write-good: 1.0.8
   languageName: unknown
@@ -23760,6 +23761,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"svgo@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "svgo@npm:3.0.2"
+  dependencies:
+    "@trysound/sax": 0.2.0
+    commander: ^7.2.0
+    css-select: ^5.1.0
+    css-tree: ^2.2.1
+    csso: ^5.0.5
+    picocolors: ^1.0.0
+  bin:
+    svgo: bin/svgo
+  checksum: 381ba14aa782e71ab7033227634a3041c11fa3e2769aeaf0df43a08a615de61925108e34f55af6e7c5146f4a3109e78deabb4fa9d687e36d45d1f848b4e23d17
+  languageName: node
+  linkType: hard
+
 "synckit@npm:^0.8.4":
   version: 0.8.5
   resolution: "synckit@npm:0.8.5"
@@ -25563,6 +25580,16 @@ __metadata:
     vite: ^2.7.0 || ^3.0.0 || ^4.0.0
     vuetify: ^3.0.0-beta.4
   checksum: 262759ee5bb364fac453c71a2523bf4476421d50c4c80e0a54569e7a7c0dc12fe70ccd890ebfed19adb3d37e9f2b82b7691e99bfea0e01b32f1493a9d76d942f
+  languageName: node
+  linkType: hard
+
+"vite-svg-loader@npm:4.0.0":
+  version: 4.0.0
+  resolution: "vite-svg-loader@npm:4.0.0"
+  dependencies:
+    "@vue/compiler-sfc": ^3.2.20
+    svgo: ^3.0.2
+  checksum: 2363054b33ee26baf440a43bc9f301dec4c7a89b37f00539546b2cb75ef883ec311cdf990d9d3010870d776974f8c52961ca459cd90fdf3969501840ca631feb
   languageName: node
   linkType: hard
 
