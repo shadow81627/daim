@@ -1,5 +1,5 @@
 <template>
-  <v-app clipped-left overlaps>
+  <v-app clipped-left>
     <v-navigation-drawer
       v-model="drawer"
       sticky
