@@ -1,6 +1,6 @@
 <template>
   <v-theme-provider :dark="dark">
-    <v-container class="pa-0">
+    <v-container class="pa-0" v-bind="$attrs">
       <v-row :justify="justify" no-gutters>
         <v-col v-if="icon" :class="`text-${align}`" cols="12" class="mb-4">
           <BaseIcon :color="color" :icon="icon"></BaseIcon>
@@ -52,6 +52,7 @@ export default {
   name: 'BaseInfoCard',
 
   mixins: [Heading],
+  inheritAttrs: false,
 
   props: {
     dark: Boolean,
