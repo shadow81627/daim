@@ -30,7 +30,11 @@ export default {
     if (route.query.sort) {
       sorts.unshift(route.query.sort);
     }
-    const { data: items, pending } = await useAsyncData(
+    const {
+      data: items,
+      pending,
+      refresh,
+    } = await useAsyncData(
       'tools',
       () =>
         queryContent('tools')
@@ -55,7 +59,7 @@ export default {
         },
       },
     );
-    return { items, pending };
+    return { items, pending, refresh };
   },
   data() {
     return {
@@ -78,7 +82,9 @@ export default {
     };
   },
   watch: {
-    '$route.query': '$fetch',
+    '$route.query': function () {
+      this.refresh();
+    },
   },
 };
 </script>
