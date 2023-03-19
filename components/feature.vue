@@ -137,12 +137,12 @@ export default {
       return this.imageBackgroundColor ?? this.imageColor;
     },
     lazy() {
-      const svg = Buffer.from(
+      const svg = universalBtoa(
         `<svg xmlns='http://www.w3.org/2000/svg'
       viewBox='00512512'>
       <rect width="100%" height="100%" fill="${this._imageBackgroundColor}"/>
       </svg>`,
-      ).toString('base64');
+      );
       return `data:image/svg+xml;base64,${svg}`;
     },
     img() {
