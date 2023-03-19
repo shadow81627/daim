@@ -2,25 +2,52 @@
   <v-container class="pa-0 hidden-print-only" fluid>
     <v-row no-gutters align="center" justify="center">
       <v-col cols="12" align-self="center">
-        <v-card :color="color" flat dark rounded="0">
-          <v-img
-            :lazy-src="$img(src, { width: 10, quality: 70 })"
-            :src="$img(src, { quality: 70, height: 500 })"
-            :srcset="_srcset.srcset"
+        <v-card
+          :color="color"
+          flat
+          dark
+          rounded="0"
+          :style="{ backgroundColor: color, color: 'white' }"
+        >
+          <v-responsive
             :height="height"
-            :sizes="_srcset.size"
             :gradient="gradient"
+            :aspect-ratio="width / height"
+            :srcset="_srcset.srcset"
+            :sizes="_srcset.sizes"
+            :eager="true"
           >
-            <img
-              style="display: none"
-              :src="$img(src, { quality: 70, height: 500 })"
-              :srcset="_srcset.srcset"
-              :height="height"
-              :sizes="_srcset.size"
-              alt=""
-              loading="lazy"
-              itemprop="image"
-            />
+            <template #additional>
+              <img
+                :src="$img(src, { quality: 70, height })"
+                :srcset="_srcset.srcset"
+                :height="height"
+                :sizes="_srcset.size"
+                alt=""
+                loading="lazy"
+                itemprop="image"
+                style="
+                  z-index: -1;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+              />
+              <div
+                style="
+                  background-repeat: no-repeat;
+                  z-index: -1;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+                :style="{ backgroundImage: `linear-gradient(${gradient})` }"
+              ></div>
+            </template>
             <slot>
               <v-container
                 class="fill-height align-items-end justify-start"
@@ -31,7 +58,7 @@
                     <slot name="heading">
                       <h1
                         v-if="heading"
-                        class="mb-4 text-shadow"
+                        class="mb-4 text-shadow text-h3 font-weight-medium"
                         itemprop="name"
                       >
                         {{ heading }}
@@ -39,7 +66,7 @@
                     </slot>
                     <h2
                       v-if="subheading"
-                      class="subheading text-shadow"
+                      class="subheading text-shadow text-h4 text-uppercase"
                       itemprop="description"
                     >
                       {{ subheading }}
@@ -48,7 +75,7 @@
                 </v-row>
               </v-container>
             </slot>
-          </v-img>
+          </v-responsive>
         </v-card>
       </v-col>
     </v-row>
@@ -69,7 +96,7 @@ export default {
     height: { type: [Number, String], default: 500 },
     color: {
       type: String,
-      default: null,
+      default: '#eeeeee',
     },
     src: {
       type: String,
