@@ -9,7 +9,7 @@
       >
         <v-card color="transparent" flat>
           <v-card-title class="text-break">
-            <h1 class="mb-0" itemprop="name">{{ title }}</h1>
+            <h1 class="mb-0 text-uppercase" itemprop="name">{{ title }}</h1>
           </v-card-title>
           <v-card-subtitle v-if="summary" itemprop="description">{{
             summary
