@@ -53,26 +53,10 @@ import countries from 'i18n-iso-countries';
 import englishCountries from 'i18n-iso-countries/langs/en.json';
 countries.registerLocale(englishCountries);
 export default {
-  data() {
-    return {
-      name: 'Damien',
-      typeDisplay: 'Digital Consultant',
-      experience: '5+',
-      description:
-        'He specialises in handcrafted, bespoke websites, with an interest in open source, marketing and ecommerce. Reach out about your fresh new digital presence today.',
-      // priceRange: '$$',
-      priceRange: undefined,
-      url: 'https://daim.dev/',
-      email: 'contact@daim.dev',
-      phone: undefined,
-      city: undefined,
-      streetAddress: undefined,
-      region: undefined,
-      postcode: undefined,
-      country: undefined,
-    };
-  },
-  async fetch() {
+  async setup() {
+    const key = 'team/damien-robinson';
+    const { data } = await useAsyncData(key, () => queryContent(key).findOne());
+
     const {
       basics: {
         profiles,
@@ -90,11 +74,10 @@ export default {
         },
         summary,
       },
-    } = await queryContent('team/damien-robinson').findOne();
-
+    } = data.value;
     const locale = 'en';
     const country = countries.getName(countryCode, locale);
-    const data = {
+    return {
       profiles,
       firstname,
       lastname,
@@ -108,7 +91,21 @@ export default {
       postcode,
       summary,
     };
-    Object.assign(this.$data, data);
+
+    return data;
+  },
+  data() {
+    return {
+      name: 'Damien',
+      typeDisplay: 'Digital Consultant',
+      experience: '5+',
+      description:
+        'He specialises in handcrafted, bespoke websites, with an interest in open source, marketing and ecommerce. Reach out about your fresh new digital presence today.',
+      // priceRange: '$$',
+      priceRange: undefined,
+      url: 'https://daim.dev/',
+      email: 'contact@daim.dev',
+    };
   },
 };
 </script>
