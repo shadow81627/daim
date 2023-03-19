@@ -72,6 +72,7 @@ export default {
     },
     text: { type: String, default: null },
     title: { type: String, default: null },
+    titleItemprop: { type: String, default: undefined },
   },
 
   computed: {
