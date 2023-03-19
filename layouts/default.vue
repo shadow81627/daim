@@ -53,11 +53,12 @@
           :key="item.route"
           :to="item.route"
           text
-          :title="item.title"
           itemscope
           class="text-grey-lighten-5"
           itemtype="https://schema.org/SiteNavigationElement"
-        ></v-tab>
+        >
+          {{ item.title }}
+        </v-tab>
       </v-tabs>
     </v-app-bar>
     <v-main
