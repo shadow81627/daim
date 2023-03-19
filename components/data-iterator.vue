@@ -1,12 +1,11 @@
 <template>
-  <v-data-iterator
-    v-model:options="query"
+  <div
     :items="items"
     :search="query.search"
     :footer-props="{ itemsPerPageOptions }"
     :loading="loading"
   >
-    <template #header>
+    <!-- <template #header>
       <v-toolbar class="mb-1" flat>
         <v-text-field
           :model-value="query.search"
@@ -19,29 +18,27 @@
           @update:model-value="search"
         ></v-text-field>
       </v-toolbar>
-    </template>
-    <template #default="props">
-      <v-container fluid>
-        <v-row>
-          <v-col
-            v-for="item in props.items"
-            :key="item.slug"
-            cols="12"
-            sm="6"
-            md="6"
-            lg="4"
-            xl="3"
-            class="d-flex flex-column"
-          >
-            <Feature v-bind="item"></Feature>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-card v-intersect="infiniteScrolling"></v-card>
-        </v-row>
-      </v-container>
-    </template>
-  </v-data-iterator>
+    </template> -->
+    <v-container fluid>
+      <v-row>
+        <v-col
+          v-for="item in items"
+          :key="item.slug"
+          cols="12"
+          sm="6"
+          md="6"
+          lg="4"
+          xl="3"
+          class="d-flex flex-column"
+        >
+          <Feature v-bind="item"></Feature>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-card v-intersect="infiniteScrolling"></v-card>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 <script>
 import { debounce, omitBy } from 'lodash-es';
