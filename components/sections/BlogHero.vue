@@ -1,6 +1,6 @@
 <template>
   <Hero :src="src">
-    <Breadcrumb absolute dark></Breadcrumb>
+    <Breadcrumb absolute dark class="pa-4"></Breadcrumb>
     <v-row class="fill-height mx-0 pa-4" no-gutters>
       <v-col
         class="d-flex text-left align-end justify-start"
