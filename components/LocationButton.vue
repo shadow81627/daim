@@ -13,12 +13,7 @@
     itemscope
     itemtype="https://schema.org/PostalAddress"
   >
-    <font-awesome-icon
-      :icon="faMapMarker"
-      title="location"
-      fixed-width
-      pull="left"
-    />
+    <BaseIcon icon="fa:map-marker"></BaseIcon>
     <span v-if="streetAddress" v-show="false" itemprop="streetAddress">{{
       streetAddress
     }}</span>
@@ -37,7 +32,6 @@
 </template>
 
 <script>
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 export default {
   props: {
     streetAddress: { type: String, default: null },
@@ -47,8 +41,5 @@ export default {
     country: { type: String, default: null },
     countryCode: { type: String, default: null },
   },
-  data: () => ({
-    faMapMarker,
-  }),
 };
 </script>
