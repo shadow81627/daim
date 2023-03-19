@@ -1,5 +1,5 @@
 <template>
-  <section v-bind="$attrs" :style="styles" v-on="$listeners">
+  <section v-bind="$attrs" :style="styles">
     <slot />
   </section>
 </template>

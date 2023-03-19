@@ -5,7 +5,6 @@
       :size="size"
       class="base-avatar__avatar"
       v-bind="$attrs"
-      v-on="$listeners"
     >
       <base-icon v-if="icon" :dark="dark" :size="size / 2" :icon="icon">
       </base-icon>

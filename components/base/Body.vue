@@ -5,7 +5,6 @@
     :style="styles"
     class="base-body text-body-1"
     v-bind="$attrs"
-    v-on="$listeners"
   >
     <slot>
       {{ text }}
