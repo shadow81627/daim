@@ -1,5 +1,5 @@
 <template>
-  <v-theme-provider dark>
+  <v-theme-provider>
     <base-section id="contact-us" class="bg-primary" space="20">
       <v-container>
         <v-row justify="center">
