@@ -17,7 +17,7 @@
           class="text-decoration-none"
         >
           <template #prepend>
-            <v-list-item-action>
+            <v-list-item-action style="margin-right: 32px">
               <BaseIcon :icon="item.icon"></BaseIcon>
             </v-list-item-action>
           </template>
