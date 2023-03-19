@@ -3821,16 +3821,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/vuetify@npm:1.12.1":
-  version: 1.12.1
-  resolution: "@nuxtjs/vuetify@npm:1.12.1"
+"@nuxtjs/vuetify@npm:1.12.3":
+  version: 1.12.3
+  resolution: "@nuxtjs/vuetify@npm:1.12.3"
   dependencies:
     deepmerge: ^4.2.2
     sass: ~1.32.13
     sass-loader: ^10.2.0
-    vuetify: ^2.5.3
-    vuetify-loader: ^1.7.2
-  checksum: e7f3df4aeb34b8fcfb3f99cacf5fd3de7e5e429f8b8b9ac5eda6a64a863ef0c9803f37b24b0fef262bab671f5e911df25848a976109e67142157a13cf501875d
+    vuetify: ^2.6
+    vuetify-loader: ^1.7.3
+  checksum: bfadb3641330e29c76bc278768cf6dbe371360508cc94801c209c5d37dc360ed29bc2265da3db14f3d2940a9171db09f488edd1413c9a41c05f13bc2ecb8a651
   languageName: node
   linkType: hard
 
@@ -9143,7 +9143,7 @@ __metadata:
     "@nuxtjs/pwa": 3.3.5
     "@nuxtjs/sitemap": 2.4.0
     "@nuxtjs/stylelint-module": 4.0.0
-    "@nuxtjs/vuetify": 1.12.1
+    "@nuxtjs/vuetify": 1.12.3
     "@semantic-release/changelog": 5.0.1
     "@semantic-release/git": 9.0.1
     "@types/csso": 5.0.0
@@ -9199,7 +9199,7 @@ __metadata:
     vee-validate: 3.4.15
     vite-plugin-vuetify: 1.0.2
     vite-svg-loader: 4.0.0
-    vuetify: 3.1.6
+    vuetify: 3.1.10
     write-good: 1.0.8
   languageName: unknown
   linkType: soft
@@ -25867,7 +25867,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify-loader@npm:^1.7.2":
+"vuetify-loader@npm:^1.7.3":
   version: 1.9.2
   resolution: "vuetify-loader@npm:1.9.2"
   dependencies:
@@ -25894,9 +25894,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:3.1.6":
-  version: 3.1.6
-  resolution: "vuetify@npm:3.1.6"
+"vuetify@npm:3.1.10":
+  version: 3.1.10
+  resolution: "vuetify@npm:3.1.10"
   peerDependencies:
     vite-plugin-vuetify: ^1.0.0-alpha.12
     vue: ^3.2.0
@@ -25909,11 +25909,11 @@ __metadata:
       optional: true
     webpack-plugin-vuetify:
       optional: true
-  checksum: 0f1feba2024921bdded7db33d4ca83457dcdeeb78f5ba2290ac5b9c045d48bc60065838302b5e3c7be865cfe3608c85724b760530993f2a218bed7a078f32155
+  checksum: 5ce05c5ef86024d637a10814e7883b4dcdfbfe6d649bcec88889b907add9f1a2b66b0f4247fd8f7c368240331f62d96f5d45f8652f573e5454c48e5896a2f955
   languageName: node
   linkType: hard
 
-"vuetify@npm:^2.5.3":
+"vuetify@npm:^2.6":
   version: 2.6.14
   resolution: "vuetify@npm:2.6.14"
   peerDependencies:
