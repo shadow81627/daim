@@ -12,7 +12,9 @@
       class="text-decoration-none"
     >
       <template #prepend>
-        <v-list-item-action style="font-size: 2em; width: 32px; height: 32px">
+        <v-list-item-action
+          style="font-size: 2em; width: 32px; height: 32px; margin-right: 32px"
+        >
           <BaseIcon :icon="item.icon"></BaseIcon>
         </v-list-item-action>
       </template>
