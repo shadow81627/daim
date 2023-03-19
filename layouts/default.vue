@@ -46,7 +46,6 @@
       </v-toolbar-title>
       <v-spacer />
       <v-tabs class="hidden-sm-and-down" optional right>
-        <v-tabs-slider></v-tabs-slider>
         <v-tab
           v-for="item in (items || []).filter((item) => item.show_tab)"
           :key="item.route"
