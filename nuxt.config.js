@@ -131,6 +131,7 @@ export default defineNuxtConfig({
    ** Nuxt.js modules
    */
   modules: [
+    '@formkit/nuxt',
     '@nuxt/content',
     // '@nuxtjs/pwa',
     // '@nuxtjs/i18n',
@@ -241,6 +242,6 @@ export default defineNuxtConfig({
     },
   },
   vite: {
-    plugins: [svgLoader()]
+    plugins: [svgLoader()],
   },
 });

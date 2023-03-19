@@ -2588,6 +2588,131 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@formkit/core@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/core@npm:0.16.2"
+  dependencies:
+    "@formkit/utils": 0.16.2
+  checksum: b739fd5f7cfdae2f4700f6db0f909c2d5947ac2499a161f47bcf5e14f503ad0afee15eaf8e7ce6475a17ff3605ec33ebfa10be8f7dade7dff44f95a741213232
+  languageName: node
+  linkType: hard
+
+"@formkit/dev@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/dev@npm:0.16.2"
+  dependencies:
+    "@formkit/core": 0.16.2
+    "@formkit/utils": 0.16.2
+  checksum: c65e9534394e9b52be3216ffbe7941ccc8d877fc490413ac4a51ba36fc402192a534a7ede37f4b82eb2cb645e6ad91790e497af1cee64ec1991c8810b9d2e7ff
+  languageName: node
+  linkType: hard
+
+"@formkit/i18n@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/i18n@npm:0.16.2"
+  dependencies:
+    "@formkit/core": 0.16.2
+    "@formkit/utils": 0.16.2
+    "@formkit/validation": 0.16.2
+  checksum: 56da5d2974a4c1bc33bf787270caf2e1f5e98393332d296e3667f0e53256db354ac3d252bceef460dc845c824b070572b3e4c93c59b1aa772d242263407b568e
+  languageName: node
+  linkType: hard
+
+"@formkit/inputs@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/inputs@npm:0.16.2"
+  dependencies:
+    "@formkit/core": 0.16.2
+  checksum: bcd2a6c70047638d3ae600005b21b628d6b547ce687bd7d22cec79e60b5659937cbdf3df9ede5f95bbb10dd2deafa3691b8140007ca93fc271a778ae51995feb
+  languageName: node
+  linkType: hard
+
+"@formkit/nuxt@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/nuxt@npm:0.16.2"
+  dependencies:
+    "@formkit/vue": 0.16.2
+  checksum: 9b4cf1a4a8c14a60cf1ee9f0c1aa8619c321102480ea35f2537ae8c516650ebac3b1b37a1dd4c43a41fd97ffbdad5c5358df6e013a9c98cc554066db60da96cc
+  languageName: node
+  linkType: hard
+
+"@formkit/observer@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/observer@npm:0.16.2"
+  dependencies:
+    "@formkit/core": 0.16.2
+    "@formkit/utils": 0.16.2
+  checksum: 74f5d414fae72610ebdcc61e2382634e4cfd0eb66ef429b674529d9d9237842f1734ea241927b05e113e1d0b294edc50bd7e6b11682e88ace4767a442209f9ba
+  languageName: node
+  linkType: hard
+
+"@formkit/rules@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/rules@npm:0.16.2"
+  dependencies:
+    "@formkit/core": 0.16.2
+    "@formkit/utils": 0.16.2
+    "@formkit/validation": 0.16.2
+  checksum: f4afd51828746203797bccae2267ad39771d2532ef54867e14ed4c8c7c020bd379bbc6cb40a9e156608d35ab101a01995478669c2a301e1af7d89dc6ebd77ed8
+  languageName: node
+  linkType: hard
+
+"@formkit/themes@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/themes@npm:0.16.2"
+  dependencies:
+    "@formkit/core": 0.16.2
+  peerDependencies:
+    tailwindcss: ^3.2.0
+    unocss: ^0.31.0
+    windicss: ^3.0.0
+  peerDependenciesMeta:
+    tailwindcss:
+      optional: true
+    unocss:
+      optional: true
+    windicss:
+      optional: true
+  checksum: aded48f54575e814563c3d494b4a27c743d68b6abda4448711384f13ed2b22facca8597d1509ffb473b8d6d48884dc70a6fe734b61d51b94deef5d463e3537d4
+  languageName: node
+  linkType: hard
+
+"@formkit/utils@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/utils@npm:0.16.2"
+  checksum: d618cd75b43010138c91624018c4f4784173eb6cc5c4dd577a35297a486f8016ce094d063cf1883851b1a5619d2e20d6e81f65f65459ab9ebd1a002d560f4f20
+  languageName: node
+  linkType: hard
+
+"@formkit/validation@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/validation@npm:0.16.2"
+  dependencies:
+    "@formkit/core": 0.16.2
+    "@formkit/observer": 0.16.2
+  checksum: 0de03c85fdedead1ca856cb5a9b72b953aabc95d9cdb08ef654b790fc1df781563bcb6ffd88541602e2cd4bcbcf619b63010937d3cee1323bffa1a33033e36d7
+  languageName: node
+  linkType: hard
+
+"@formkit/vue@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@formkit/vue@npm:0.16.2"
+  dependencies:
+    "@formkit/core": 0.16.2
+    "@formkit/dev": 0.16.2
+    "@formkit/i18n": 0.16.2
+    "@formkit/inputs": 0.16.2
+    "@formkit/observer": 0.16.2
+    "@formkit/rules": 0.16.2
+    "@formkit/themes": 0.16.2
+    "@formkit/utils": 0.16.2
+    "@formkit/validation": 0.16.2
+  peerDependencies:
+    vue: ^3.2.1
+  checksum: 632260ca46ac583a12aeeb2ef8d619023b840015f762db569e84fd7cee26d4fef3d9608fba773c6d2e6ad77e2c9f56cdf3012333bbfebed67d672d110b6f922e
+  languageName: node
+  linkType: hard
+
 "@fortawesome/fontawesome-common-types@npm:^0.2.36":
   version: 0.2.36
   resolution: "@fortawesome/fontawesome-common-types@npm:0.2.36"
@@ -9336,6 +9461,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "daim@workspace:."
   dependencies:
+    "@formkit/nuxt": 0.16.2
     "@fortawesome/fontawesome-svg-core": 1.2.36
     "@fortawesome/free-brands-svg-icons": 5.15.4
     "@fortawesome/free-regular-svg-icons": 5.15.4
