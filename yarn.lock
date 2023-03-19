@@ -2432,9 +2432,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/content@npm:1.14.0":
-  version: 1.14.0
-  resolution: "@nuxt/content@npm:1.14.0"
+"@nuxt/content@npm:1.15.1":
+  version: 1.15.1
+  resolution: "@nuxt/content@npm:1.15.1"
   dependencies:
     "@lokidb/full-text-search": ^2.1.0
     "@lokidb/loki": ^2.1.0
@@ -2454,6 +2454,7 @@ __metadata:
     hookable: ^4.4.1
     html-tags: ^3.1.0
     js-yaml: 4.0.0
+    json5: ^2.2.0
     mdast-util-to-hast: ^10.2.0
     mkdirp: ^1.0.4
     node-req: ^2.1.2
@@ -2476,7 +2477,7 @@ __metadata:
     unist-builder: ^2.0.3
     ws: ^7.4.3
     xml2js: ^0.4.23
-  checksum: c76ae929479f71b4d36e6b91726779f9fe129142d0fdc8b165838372063d4a64aa21bf35b33e50bdb1c94addbfb5bcc009f335bea704f241dddbfc54b31b650a
+  checksum: 3d7e1af85dce5af0e5e041634029b20c1fc0223cdecdf6029322d6da2f81118539fe57802e721ba4e414e13788777e895a83329795acf6fd0352e19addc33dff
   languageName: node
   linkType: hard
 
@@ -8085,7 +8086,7 @@ __metadata:
     "@iconify/vue2": 2.1.0
     "@lhci/cli": 0.7.2
     "@mdi/js": 5.9.55
-    "@nuxt/content": 1.14.0
+    "@nuxt/content": 1.15.1
     "@nuxt/image": 0.6.0
     "@nuxt/types": 2.15.8
     "@nuxt/typescript-build": 2.1.0
@@ -13517,6 +13518,15 @@ __metadata:
   bin:
     json5: lib/cli.js
   checksum: e88fc5274bb58fc99547baa777886b069d2dd96d9cfc4490b305fd16d711dabd5979e35a4f90873cefbeb552e216b041a304fe56702bedba76e19bc7845f208d
+  languageName: node
+  linkType: hard
+
+"json5@npm:^2.2.0":
+  version: 2.2.3
+  resolution: "json5@npm:2.2.3"
+  bin:
+    json5: lib/cli.js
+  checksum: 2a7436a93393830bce797d4626275152e37e877b265e94ca69c99e3d20c2b9dab021279146a39cdb700e71b2dd32a4cebd1514cd57cee102b1af906ce5040349
   languageName: node
   linkType: hard
 
