@@ -32,7 +32,9 @@
         aria-label="menu"
         dark
         @click="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+      >
+        <v-icon icon="$menu"></v-icon>
+      </v-app-bar-nav-icon>
       <v-toolbar-title class="ml-0 px-3 d-flex align-center">
         <a href="/" title="Home" aria-label="Home">
           <img
