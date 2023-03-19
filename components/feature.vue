@@ -1,5 +1,8 @@
 <template>
-  <v-card class="flex d-flex flex-column justify-between" min-width="240">
+  <v-card
+    class="flex d-flex flex-column justify-between flex-grow-1"
+    min-width="240"
+  >
     <v-img
       v-if="image"
       class="flex-grow-0"
