@@ -2,9 +2,6 @@
   <v-app clipped-left>
     <v-navigation-drawer
       v-model="drawer"
-      sticky
-      temporary
-      :scrim="false"
       class="hidden-print-only"
       disable-resize-watcher
     >
@@ -32,6 +29,7 @@
       class="hidden-print-only"
       height="64"
       theme="dark"
+      :order="-1"
     >
       <v-app-bar-nav-icon aria-label="menu" dark @click="drawer = !drawer">
         <v-icon icon="$menu"></v-icon>
@@ -127,9 +125,6 @@ export default {
 </script>
 
 <style>
-.v-navigation-drawer {
-  margin-top: 64px;
-}
 .v-tab:not(.v-tab--selected) .v-btn__content {
   color: hsla(0, 0%, 100%, 0.6) !important;
 }
