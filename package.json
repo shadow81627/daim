@@ -62,7 +62,7 @@
     "nuxt-i18n": "6.28.1",
     "nuxt-matomo": "1.2.4",
     "nuxt-webfontloader": "1.1.0",
-    "prism-themes": "1.8.0",
+    "prism-themes": "1.9.0",
     "query-string": "7.1.3",
     "sharp": "0.30.5",
     "vee-validate": "3.4.15"
