@@ -17,13 +17,7 @@
     <v-card-title>
       <span class="h3 text-break">
         <template v-if="icon">
-          <font-awesome-icon
-            v-if="typeof icon === 'object'"
-            :icon="icon"
-            class="text-grey"
-          />
           <BaseIcon
-            v-else
             :color="iconColor"
             :icon="icon"
             style="font-size: 1em"
