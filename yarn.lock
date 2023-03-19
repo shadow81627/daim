@@ -2054,10 +2054,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdi/js@npm:5.9.55":
-  version: 5.9.55
-  resolution: "@mdi/js@npm:5.9.55"
-  checksum: 5980a4226974853b7d603eeba9621a2f2dd29839b9138cce52d43b023a4a2646bbbda371ef4ceff18d7ed2d2ba33c493dc6a7d480c1e3a5ea1ed6a2215e7f779
+"@mdi/js@npm:7.1.96":
+  version: 7.1.96
+  resolution: "@mdi/js@npm:7.1.96"
+  checksum: cd3102a0120c06b4af7a153e30ee964807746ce55f84a35479d382841d0ab1a10f986059e0c6af0c240444393679b7330d306d0688e1193a23fc03bb8cee0b82
   languageName: node
   linkType: hard
 
@@ -8085,7 +8085,7 @@ __metadata:
     "@iconify/tools": 2.2.6
     "@iconify/vue2": 2.1.0
     "@lhci/cli": 0.7.2
-    "@mdi/js": 5.9.55
+    "@mdi/js": 7.1.96
     "@nuxt/content": 1.15.1
     "@nuxt/image": 0.6.0
     "@nuxt/types": 2.15.8
