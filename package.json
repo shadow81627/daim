@@ -64,7 +64,7 @@
     "nuxt-webfontloader": "1.1.0",
     "prism-themes": "1.9.0",
     "query-string": "7.1.3",
-    "sharp": "0.30.5",
+    "sharp": "0.31.3",
     "vee-validate": "3.4.15"
   },
   "devDependencies": {
@@ -85,7 +85,7 @@
     "@types/csso": "5.0.0",
     "@types/lodash": "4.14.191",
     "@types/lodash-es": "4.17.6",
-    "@types/sharp": "0.31.0",
+    "@types/sharp": "0.31.1",
     "@vue/test-utils": "2.3.1",
     "babel-plugin-module-resolver": "4.1.0",
     "codeceptjs": "3.4.1",
