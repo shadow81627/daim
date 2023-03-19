@@ -61,6 +61,7 @@
       </v-tabs>
     </v-app-bar>
     <v-main
+      style="padding-top: 64px"
       role="main"
       itemprop="mainContentOfPage"
       itemscope
