@@ -57,7 +57,6 @@
     </validation-observer>
     <v-snackbar
       v-model="error"
-      location="top"
       location="right"
       fixed
       :timeout="-1"
@@ -70,13 +69,7 @@
         </v-btn>
       </template>
     </v-snackbar>
-    <v-snackbar
-      v-model="success"
-      location="bottom"
-      location="right"
-      fixed
-      color="green"
-    >
+    <v-snackbar v-model="success" location="right" fixed color="green">
       Thanks for getting in contact. We will contact you soon!
       <template #action="{ attrs }">
         <v-btn variant="text" v-bind="attrs" @click="success = false">
