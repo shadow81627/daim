@@ -13,6 +13,7 @@
           v-for="item in items"
           :key="item.name"
           :to="item.route"
+          exact
           class="text-decoration-none"
         >
           <template #prepend>
@@ -26,13 +27,13 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar color="#343a40" class="hidden-print-only" height="64">
-      <v-app-bar-nav-icon
-        class="text-white"
-        aria-label="menu"
-        dark
-        @click="drawer = !drawer"
-      >
+    <v-app-bar
+      color="#343a40"
+      class="hidden-print-only"
+      height="64"
+      theme="dark"
+    >
+      <v-app-bar-nav-icon aria-label="menu" dark @click="drawer = !drawer">
         <v-icon icon="$menu"></v-icon>
       </v-app-bar-nav-icon>
       <v-toolbar-title class="ml-0 px-3 d-flex align-center">
@@ -52,9 +53,9 @@
           v-for="item in (items || []).filter((item) => item.show_tab)"
           :key="item.route"
           :to="item.route"
+          exact
           text
           itemscope
-          class="text-grey-lighten-5"
           itemtype="https://schema.org/SiteNavigationElement"
         >
           {{ item.title }}
@@ -128,5 +129,8 @@ export default {
 <style>
 .v-navigation-drawer {
   margin-top: 64px;
+}
+.v-tab:not(.v-tab--selected) .v-btn__content {
+  color: hsla(0, 0%, 100%, 0.6) !important;
 }
 </style>
