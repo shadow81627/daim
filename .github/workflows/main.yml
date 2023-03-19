@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout 🛎
-        uses: actions/checkout@v3.1.0
+        uses: actions/checkout@v3.4.0
         with:
             fetch-depth: 0
             persist-credentials: false
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout 🛎
-        uses: actions/checkout@v3.1.0
+        uses: actions/checkout@v3.4.0
         with:
             fetch-depth: 0
             persist-credentials: false
@@ -55,7 +55,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout 🛎
-        uses: actions/checkout@v3.1.0
+        uses: actions/checkout@v3.4.0
         with:
             fetch-depth: 0
             persist-credentials: false
