@@ -50,8 +50,7 @@
         <v-tab
           v-for="item in (items || []).filter((item) => item.show_tab)"
           :key="item.route"
-          tag="nuxt-link"
-          :xto="item.route"
+          :to="item.route"
           text
           :title="item.title"
           itemscope
