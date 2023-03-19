@@ -102,6 +102,7 @@
 import * as dayjs from 'dayjs';
 import titleCase from '@/utils/title-case';
 export default {
+  inheritAttrs: false,
   props: {
     location: { type: Object, default: null },
     dark: { type: Boolean, default: false },
