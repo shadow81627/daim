@@ -18,65 +18,6 @@
               </template>
             </BaseLinks>
           </v-card>
-          <v-card
-            v-if="false"
-            flat
-            rounded="0"
-            color="transparent"
-            :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
-              `${location.companyName} ${location.streetAddress || ''} ${
-                location.city || ''
-              } ${location.region || ''} ${location.postcode || ''} ${
-                location.country || ''
-              }`,
-            )}`"
-            target="_blank"
-            rel="noreferrer"
-            itemprop="address"
-            itemscope
-            itemtype="https://schema.org/PostalAddress"
-          >
-            <v-card-text class="py-2">
-              <span class="text--primary text-body-1 pt-0">
-                <font-awesome-icon
-                  :icon="faMapMarker"
-                  title="location"
-                  fixed-width
-                />
-                Address
-              </span>
-              <div>
-                <span v-if="location.companyName">
-                  {{ location.companyName }},
-                </span>
-                <span v-if="location.placeName">
-                  {{ location.placeName }}
-                </span>
-              </div>
-              <div v-if="location.streetAddress" itemprop="streetAddress">
-                {{ location.streetAddress }}
-              </div>
-              <span v-if="location.city" itemprop="addressLocality">{{
-                location.city
-              }}</span>
-              <span v-show="!location.city" itemprop="addressRegion">{{
-                location.region
-              }}</span>
-              <span v-if="location.postcode" itemprop="postalCode">{{
-                location.postcode
-              }}</span
-              ><span
-                v-if="
-                  (location.country || location.countryCode) &&
-                  (location.postcode || location.city || location.region)
-                "
-                >,</span
-              >
-              <span itemprop="addressCountry">{{
-                location.country || location.countryCode
-              }}</span>
-            </v-card-text>
-          </v-card>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
           <v-card flat rounded="0" color="transparent">
