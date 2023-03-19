@@ -13,7 +13,11 @@
     itemscope
     itemtype="https://schema.org/PostalAddress"
   >
-    <BaseIcon icon="fa:map-marker"></BaseIcon>
+    <BaseIcon
+      icon="fa-solid:map-marker-alt"
+      style="width: 14px; height: 14px; margin-right: 0.3em"
+      color="black"
+    ></BaseIcon>
     <span v-if="streetAddress" v-show="false" itemprop="streetAddress">{{
       streetAddress
     }}</span>
