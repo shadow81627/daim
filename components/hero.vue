@@ -5,9 +5,9 @@
         <v-card
           :color="color"
           flat
-          dark
+          theme="dark"
           rounded="0"
-          :style="{ backgroundColor: color, color: 'white' }"
+          :style="{ backgroundColor: color }"
         >
           <v-responsive
             :height="height"
