@@ -16,58 +16,39 @@
   </div>
 </template>
 
-<script>
-export default {
-  async setup() {
-    const route = useRoute();
-    const draft = route?.query?.draft;
-    const { data: items, pending } = await useAsyncData(
-      'projects',
-      () => queryContent('projects').sort({ startDate: -1 }).find(),
-      {
-        transform(data) {
-          const filtered = data.filter((item) => {
-            return !item.deletedAt && (item.startDate || draft);
-          });
-          const pageSlug = 'portfolio';
-          const items = filtered.map((item) => {
-            const slug = item._path.replace('/projects/', '');
-            return {
-              ...item,
-              id: item.slug,
-              url: item.offers ? `/${pageSlug}/${slug}` : item.url,
-              image: `/img/${pageSlug}/${slug}.png`,
-              imageColor: item.color,
-              links: item.links.reverse(),
-            };
-          });
-          // Move placeholder to start
-          const last = 'placeholder';
-          items.sort(function (x, y) {
-            return x.slug === last ? 1 : y.slug === last ? -1 : 0;
-          });
-          return items;
-        },
-      },
-    );
-
-    return { items, pending };
+<script setup lang="ts">
+const heading = 'Portfolio';
+const description = 'Explore demos and code for my projects.';
+const route = useRoute();
+const draft = route?.query?.draft;
+const { data: items, pending } = await useAsyncData(
+  'projects',
+  () => queryContent('projects').sort({ startDate: -1 }).find(),
+  {
+    transform(data) {
+      const filtered = data.filter((item) => {
+        return !item.deletedAt && (item.startDate || draft);
+      });
+      const pageSlug = 'portfolio';
+      const items = filtered.map((item) => {
+        const slug = item._path?.replace('/projects/', '');
+        return {
+          ...item,
+          id: item.slug,
+          slug,
+          url: item.offers ? `/${pageSlug}/${slug}` : item.url,
+          image: `/img/${pageSlug}/${slug}.png`,
+          imageColor: item.color,
+          links: item.links.reverse(),
+        };
+      });
+      // Move placeholder to start
+      const last = 'placeholder';
+      items.sort(function (x, y) {
+        return x.slug === last ? 1 : y.slug === last ? -1 : 0;
+      });
+      return items;
+    },
   },
-  data: () => ({
-    heading: 'Portfolio',
-    description: 'Explore demos and code for my projects.',
-  }),
-  head() {
-    return {
-      title: this.heading,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
-        },
-      ],
-    };
-  },
-};
+);
 </script>
