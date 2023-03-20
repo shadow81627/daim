@@ -23,11 +23,11 @@
           <v-card flat rounded="0" color="transparent">
             <v-card-title class="text-h5">Pages</v-card-title>
           </v-card>
-          <v-list dense flat tile color="transparent">
+          <v-list dense variant="plain">
             <v-list-item
               v-for="item in nav1"
               :key="item.name"
-              :to="item.route"
+              :to="localePath(item.route)"
               class="text-decoration-none"
             >
               <template #prepend>
@@ -45,11 +45,11 @@
           <v-card flat rounded="0" color="transparent">
             <v-card-title class="text-h5">&nbsp;</v-card-title>
           </v-card>
-          <v-list dense flat tile color="transparent">
+          <v-list dense variant="plain">
             <v-list-item
               v-for="item in nav2"
               :key="item.name"
-              :to="item.route"
+              :to="localePath(item.route)"
               class="text-decoration-none"
             >
               <template #prepend>
@@ -119,6 +119,7 @@ export default {
     LastModified,
   },
   async setup() {
+    const localePath = useLocalePath();
     const config = useRuntimeConfig();
     const [{ data: socials }, { data: contact }, { data: nav }] =
       await Promise.all([
@@ -146,8 +147,8 @@ export default {
     const nav1 = nav?.value?.nav1 ?? [];
     const nav2 = nav?.value?.nav2 ?? [];
 
-    const version = config.version;
-    const commit = config.commit;
+    const version = config.VERSION;
+    const commit = config.COMMIT;
 
     return {
       utc: false,
@@ -157,6 +158,7 @@ export default {
       nav2,
       version,
       commit,
+      localePath,
     };
   },
   methods: {

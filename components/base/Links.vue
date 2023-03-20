@@ -9,6 +9,7 @@
       :data-address="address(item.href)"
       :data-domain="domain(item.href)"
       :data-tel="tel(item.href)"
+      variant="plain"
       class="text-decoration-none"
     >
       <template #prepend>
