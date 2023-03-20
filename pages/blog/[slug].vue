@@ -10,7 +10,7 @@
       <v-row>
         <v-col>
           <ContentDoc
-            :path="key"
+            :path="path"
             class="prose mx-auto text-base prose-truegray xl:text-xl"
             itemprop="articleBody"
           />
@@ -64,12 +64,12 @@ export default {
   components: { BlogHero },
   async setup() {
     const route = useRoute();
-    const key = 'blog/' + route.params.slug;
+    const path = 'blog/' + route.params.slug;
     try {
-      const { data: item } = await useAsyncData(key, () =>
-        queryContent(key).find(),
+      const { data: item } = await useAsyncData(path, () =>
+        queryContent('blog', route.params.slug).findOne(),
       );
-      return { item, key };
+      return { item, path };
     } catch {
       createError({ statusCode: 404 });
     }
