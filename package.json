@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "build:analyze": "nuxi build --analyze",
+    "analyze": "nuxi analyze",
     "now-build": "npm run generate",
     "start": "cross-env NODE_ENV=production nuxi preview",
     "start:test": "cross-env NODE_ENV=production PORT=3001 nuxi preview",
