@@ -103,45 +103,24 @@ export default {
       default: '/img/header-bg.jpg',
     },
   },
-  head() {
-    return {
-      meta: [
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          // content: `${this.$config.BASE_URL}${this.$img(this.src, {
-          //   width: 1280,
-          //   height: 630,
-          // })}`,
-        },
-        {
-          hid: 'og:image:width',
-          property: 'og:image:width',
-          content: 1280,
-        },
-        {
-          hid: 'og:image:height',
-          property: 'og:image:height',
-          content: 630,
-        },
-      ],
-      link: [
-        {
-          rel: 'preload',
-          as: 'image',
-          // href: `${this.$config.BASE_URL}${this.$img(this.src, {
-          //   width: 1280,
-          //   height: 630,
-          // })}`,
-          imagesrcset: this._srcset.srcset,
-          imagesizes: this._srcset.size,
-        },
-      ],
-    };
-  },
-  computed: {
-    _srcset() {
-      return this.$img.getSizes(this.src, {
+  setup(props) {
+    const config = useRuntimeConfig();
+    const $img = useImage();
+    const ogImage = `${config.BASE_URL}${$img(props.src, {
+      width: 1280,
+      height: 630,
+    })}`;
+    useServerSeoMeta({
+      title: props.heading,
+      ogTitle: props.heading,
+      description: props.subheading,
+      ogDescription: props.subheading,
+      ogImage,
+      ogImageHeight: props.height,
+      ogImageWidth: props.width,
+    });
+    const _srcset = computed(() => {
+      return $img.getSizes(props.src, {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
           format: 'webp',
@@ -149,7 +128,19 @@ export default {
           height: 500,
         },
       });
-    },
+    });
+    useHead({
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: ogImage,
+          imagesrcset: _srcset.value.srcset,
+          imagesizes: _srcset.value.size,
+        },
+      ],
+    });
+    return { _srcset };
   },
 };
 </script>
