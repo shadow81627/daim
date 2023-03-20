@@ -13,18 +13,14 @@
             :height="height"
             :gradient="gradient"
             :aspect-ratio="width / height"
-            :srcset="srcset.srcset"
-            :sizes="srcset.sizes"
-            :eager="true"
           >
             <template #additional>
-              <img
-                :src="$img(src, { quality: 70, height })"
-                :srcset="srcset.srcset"
+              <NuxtPicture
+                :src="src"
+                :modifiers="{ resizing_type: 'fill' }"
                 :height="height"
                 :sizes="srcset.size"
                 alt=""
-                loading="lazy"
                 itemprop="image"
                 style="
                   z-index: -1;
@@ -34,7 +30,7 @@
                   width: 100%;
                   height: 100%;
                 "
-              />
+              ></NuxtPicture>
               <div
                 style="
                   background-repeat: no-repeat;
@@ -105,12 +101,11 @@ export default {
     },
   },
   setup(props) {
-    const config = useRuntimeConfig();
     const $img = useImage();
-    const ogImage = `${config.BASE_URL}${$img(props.src, {
+    const ogImage = $img(props.src, {
       width: 1280,
       height: 630,
-    })}`;
+    });
     useServerSeoMeta({
       title: props.heading,
       ogTitle: props.heading,
