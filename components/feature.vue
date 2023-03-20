@@ -53,7 +53,7 @@
         <time v-if="startDate" :datetime="new Date(startDate).toISOString()"
           >{{ formatDate(startDate) }}
         </time>
-        <span v-if="startDate && endDate">to</span>
+        <span v-if="startDate && endDate"> to </span>
         <time v-if="endDate" :datetime="new Date(endDate).toISOString()">{{
           formatDate(endDate)
         }}</time>
@@ -99,7 +99,7 @@
 </template>
 
 <script>
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import titleCase from '@/utils/title-case';
 export default {
   inheritAttrs: false,
