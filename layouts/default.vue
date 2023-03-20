@@ -9,7 +9,7 @@
         <v-list-item
           v-for="item in items"
           :key="item.name"
-          :to="item.route"
+          :to="localePath(item.route)"
           exact
           class="text-decoration-none"
         >
@@ -50,7 +50,7 @@
         <v-tab
           v-for="item in (items || []).filter((item) => item.show_tab)"
           :key="item.route"
-          :to="item.route"
+          :to="localePath(item.route)"
           exact
           text
           itemscope
@@ -83,6 +83,7 @@ export default {
     TheFooter,
   },
   async setup() {
+    const localePath = useLocalePath();
     const { data: items } = await useAsyncData(
       'layout-pages',
       () => queryContent('pages').find(),
@@ -98,7 +99,7 @@ export default {
       },
     );
     const drawer = ref(false);
-    return { items, drawer, logo };
+    return { items, drawer, logo, localePath };
   },
   mounted() {
     const beforePrint = function () {

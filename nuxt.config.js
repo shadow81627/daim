@@ -135,7 +135,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/content',
     // '@nuxtjs/pwa',
-    // '@nuxtjs/i18n',
+    '@nuxtjs/i18n',
     '@nuxt/image-edge',
     'nuxt-icon',
     // 'nuxt-webfontloader',
