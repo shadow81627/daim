@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero subheading="Digital Consultant">
+    <Hero subheading="Digital Consultant" :description="description">
       <template #heading>
         <img
           :src="logo"

@@ -87,6 +87,7 @@ export default {
   props: {
     heading: { type: String, default: null },
     subheading: { type: String, default: null },
+    description: { type: String, default: null },
     alt: { type: String, default: '' },
     gradient: {
       type: String,
@@ -113,8 +114,8 @@ export default {
     useServerSeoMeta({
       title: props.heading,
       ogTitle: props.heading,
-      description: props.subheading,
-      ogDescription: props.subheading,
+      description: props.description ?? props.subheading,
+      ogDescription: props.description ?? props.subheading,
       ogImage,
       ogImageHeight: props.height,
       ogImageWidth: props.width,
