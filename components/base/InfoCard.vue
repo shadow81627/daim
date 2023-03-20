@@ -13,15 +13,19 @@
             space="1"
           ></BaseSubtitle>
 
-          <h3
-            class="text-uppercase text-center text-h5 font-weight-medium"
+          <component
+            :is="level ? `h${level}` : 'h3'"
+            :class="`text-${align ?? 'center'} text-${
+              level ? `h${level + 2}` : 'h5'
+            }`"
+            class="text-uppercase font-weight-medium"
             space="1"
             :itemprop="titleItemprop"
           >
             {{ title }}
-          </h3>
+          </component>
 
-          <BaseDivider :color="color"></BaseDivider>
+          <BaseDivider :color="color" :align="align"></BaseDivider>
 
           <BaseBody
             v-if="text || $slots.default"
