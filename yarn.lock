@@ -8673,7 +8673,7 @@ __metadata:
     eslint-plugin-prettier: 4.2.1
     eslint-plugin-unicorn: 45.0.2
     git-date-extractor: 4.0.1
-    github-markdown-css: 4.0.0
+    github-markdown-css: 5.2.0
     i18n-iso-countries: 6.8.0
     lint-staged: 13.2.0
     lodash-es: 4.17.21
@@ -11455,10 +11455,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"github-markdown-css@npm:4.0.0":
-  version: 4.0.0
-  resolution: "github-markdown-css@npm:4.0.0"
-  checksum: fddb320b218d1b24d49d9a0887fbbfb6adb410774ebe9d6c17a4a899640d5e228447183b41a9360d3a3043f6400681eba3a3389cbd77ef878c0c4df79d95c277
+"github-markdown-css@npm:5.2.0":
+  version: 5.2.0
+  resolution: "github-markdown-css@npm:5.2.0"
+  checksum: e80264cd9a6d9c646b140cb6a70d2eb2fa28b58820eb03d118184811a4e3b4727a3aef4070f1b6db9f3bc507dc80d69c697a5f73bbc494384c8168fa02bdbbfd
   languageName: node
   linkType: hard
 
