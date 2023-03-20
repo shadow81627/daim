@@ -13,16 +13,16 @@
             :height="height"
             :gradient="gradient"
             :aspect-ratio="width / height"
-            :srcset="_srcset.srcset"
-            :sizes="_srcset.sizes"
+            :srcset="srcset.srcset"
+            :sizes="srcset.sizes"
             :eager="true"
           >
             <template #additional>
               <img
                 :src="$img(src, { quality: 70, height })"
-                :srcset="_srcset.srcset"
+                :srcset="srcset.srcset"
                 :height="height"
-                :sizes="_srcset.size"
+                :sizes="srcset.size"
                 alt=""
                 loading="lazy"
                 itemprop="image"
@@ -120,7 +120,7 @@ export default {
       ogImageHeight: props.height,
       ogImageWidth: props.width,
     });
-    const _srcset = computed(() => {
+    const srcset = computed(() => {
       return $img.getSizes(props.src, {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
@@ -136,12 +136,12 @@ export default {
           rel: 'preload',
           as: 'image',
           href: ogImage,
-          imagesrcset: _srcset.value.srcset,
-          imagesizes: _srcset.value.size,
+          imagesrcset: srcset.value.srcset,
+          imagesizes: srcset.value.size,
         },
       ],
     });
-    return { _srcset };
+    return { srcset };
   },
 };
 </script>
