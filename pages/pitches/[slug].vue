@@ -10,7 +10,11 @@
       <v-row>
         <v-col>
           <div class="text-body-1" itemprop="articleBody">
-            <nuxt-content :document="item" />
+            <ContentDoc
+              :path="path"
+              class="prose mx-auto text-base prose-truegray xl:text-xl"
+              itemprop="articleBody"
+            />
           </div>
         </v-col>
       </v-row>
@@ -18,14 +22,16 @@
   </div>
 </template>
 <script>
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 export default {
-  async asyncData({ route, error }) {
+  async setup() {
+    const route = useRoute();
+    const path = 'pitches/' + route.params.slug;
     try {
-      const item = await queryContent('pitches/' + route.params.slug).findOne();
-      return { item };
+      const item = await queryContent(path).findOne();
+      return { item, path };
     } catch {
-      error({ statusCode: 404 });
+      createError({ statusCode: 404 });
     }
   },
   data: () => ({

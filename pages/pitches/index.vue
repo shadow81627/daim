@@ -27,8 +27,22 @@ export default {
   components: {
     BlogCard,
   },
-  async asyncData() {
-    const items = await queryContent('pitches').find();
+  async setup() {
+    const { data: items } = await useAsyncData(
+      'pitches',
+      () => queryContent('pitches').find(),
+      {
+        transform(data) {
+          return data.map((item) => {
+            const slug = item._path.replace('/pitches/', '');
+            return {
+              ...item,
+              slug,
+            };
+          });
+        },
+      },
+    );
     return {
       items,
     };
@@ -38,7 +52,6 @@ export default {
       heading: 'Pitches',
       description: "Damien Robinson's pitches",
       total: 0,
-      items: [],
     };
   },
   head() {
