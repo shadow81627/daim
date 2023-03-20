@@ -9,9 +9,11 @@
     <v-container>
       <v-row>
         <v-col>
-          <div class="text-body-1" itemprop="articleBody">
-            <ContentDoc :path="key" class="prose" />
-          </div>
+          <ContentDoc
+            :path="key"
+            class="prose mx-auto text-base prose-truegray xl:text-xl"
+            itemprop="articleBody"
+          />
         </v-col>
       </v-row>
       <v-row>

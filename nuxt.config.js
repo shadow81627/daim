@@ -132,6 +132,7 @@ export default defineNuxtConfig({
    */
   modules: [
     '@formkit/nuxt',
+    '@unocss/nuxt',
     '@nuxt/content',
     // '@nuxtjs/pwa',
     // '@nuxtjs/i18n',
@@ -149,6 +150,10 @@ export default defineNuxtConfig({
     '~/components/sections',
     { path: '~/components/base/', prefix: 'base' },
   ],
+
+  unocss: {
+    typography: true,
+  },
 
   content: {
     // markdown: {
