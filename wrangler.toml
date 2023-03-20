@@ -1,0 +1,11 @@
+name = "daim"
+main = "./.output/server/index.mjs"
+workers_dev = true
+compatibility_date = "2022-09-10"
+
+[site]
+bucket = ".output/public"
+
+[build]
+command = "NITRO_PRESET=cloudflare yarn build"
+upload.format = "service-worker"
