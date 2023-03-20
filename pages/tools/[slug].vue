@@ -1,7 +1,7 @@
 <template>
   <div>
     <BlogHero
-      :title="item.heading"
+      :title="item.name"
       :summary="item.subheading"
       :description="item.description"
       :src="item.image"
@@ -12,7 +12,7 @@
         <v-col cols="12">
           <v-card flat>
             <v-card-title>
-              <h2 class="h2 text-break">Summary</h2>
+              <h2 class="text-h4 text-break">Summary</h2>
             </v-card-title>
             <v-card-text class="text--primary text-body-1 pt-0">
               {{ item.description }}
@@ -79,18 +79,30 @@ import BlogHero from '~/components/sections/BlogHero';
 import Feature from '~/components/feature';
 export default {
   components: { BlogHero, Feature },
-  async asyncData({ route, error }) {
+  async setup() {
+    const route = useRoute();
+    const slug = route.params.slug;
     try {
-      const data = await queryContent('tools/' + route.params.slug).find();
-      // price phycology: largest first, end in 99 rather than 00
-      data.plans = sortBy(data.plans, 'price').reverse();
-      const item = {
-        ...data,
-        image: `/img/tools/${data.banner ? 'banners/' : ''}${data.slug}.png`,
-      };
+      const { data: item } = await useAsyncData(
+        'tools-' + slug,
+        () => queryContent('tools', slug).findOne(),
+        {
+          transform(data) {
+            console.log('data', data.heading);
+            // price phycology: largest first, end in 99 rather than 00
+            data.plans = sortBy(data.plans, 'price').reverse();
+            const item = {
+              ...data,
+              slug,
+              image: `/img/tools/${data.banner ? 'banners/' : ''}${slug}.png`,
+            };
+            return item;
+          },
+        },
+      );
       return { item };
     } catch {
-      error({ statusCode: 404 });
+      createError({ statusCode: 404 });
     }
   },
   data: () => ({
