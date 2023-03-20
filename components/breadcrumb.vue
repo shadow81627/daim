@@ -7,8 +7,8 @@
       itemtype="https://schema.org/BreadcrumbList"
       itemscope
     >
-      <template #item="{ item }">
-        <v-breadcrumbs-item v-bind="item" itemprop="itemListElement">
+      <template #title="{ item }">
+        <v-breadcrumbs-item v-bind="item" itemprop="itemListElement" exact>
           {{ item.text }}
         </v-breadcrumbs-item>
       </template>
