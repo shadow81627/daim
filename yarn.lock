@@ -9462,6 +9462,7 @@ __metadata:
   resolution: "daim@workspace:."
   dependencies:
     "@formkit/nuxt": 0.16.2
+    "@formkit/themes": 0.16.2
     "@fortawesome/fontawesome-svg-core": 1.2.36
     "@fortawesome/free-brands-svg-icons": 5.15.4
     "@fortawesome/free-regular-svg-icons": 5.15.4
