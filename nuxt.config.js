@@ -215,7 +215,7 @@ export default defineNuxtConfig({
   build: {
     transpile: [
       'lodash-es',
-      'vuetify/lib',
+      'vuetify',
       'vee-validate/dist/rules',
       'iron-webcrypto',
       'unhead',
