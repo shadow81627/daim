@@ -96,7 +96,11 @@ export const getImage: ProviderGetImage = (
   { modifiers = {}, baseURL = 'https://imgproxy.daim.dev', key, salt } = {},
 ) => {
   const encodedUrl = encodeURI(src);
-  const path = joinURL('/', operationsGenerator(modifiers), encodedUrl);
+  const config = useRuntimeConfig();
+  const path = withBase(
+    joinURL('/', operationsGenerator(modifiers), encodedUrl),
+    config.BASE_URL,
+  );
   const signature = sign(salt, path, key);
 
   return {
