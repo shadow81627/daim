@@ -7,5 +7,5 @@ compatibility_date = "2022-09-10"
 bucket = ".output/public"
 
 [build]
-command = "NITRO_PRESET=cloudflare yarn build"
+command = "true"
 upload.format = "service-worker"

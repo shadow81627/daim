@@ -46,6 +46,8 @@ export default defineNuxtConfig({
       googleAnalytics: {
         id: process.env.GOOGLE_ANALYTICS_ID || 'UA-176793964-1',
       },
+      IMGPROXY_KEY: process.env.IMGPROXY_KEY,
+      IMGPROXY_SALT: process.env.IMGPROXY_SALT,
     },
   },
 
@@ -198,6 +200,7 @@ export default defineNuxtConfig({
   },
 
   image: {
+    provider: 'imgproxy',
     screens: {
       placeholder: 10,
       xs: 320,
@@ -206,7 +209,16 @@ export default defineNuxtConfig({
       lg: 1280,
       xl: 1920,
     },
-    domains: [env.HOST],
+    domains: [env.HOST, 'imgproxy.daim.dev'],
+    providers: {
+      imgproxy: {
+        provider: '~/imgproxy',
+        options: {
+          key: process.env.IMGPROXY_KEY,
+          salt: process.env.IMGPROXY_SALT,
+        },
+      },
+    },
   },
 
   /*
