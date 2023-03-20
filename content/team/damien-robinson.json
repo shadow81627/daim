@@ -17,19 +17,19 @@
     "picture": "https://daim.dev/img/team/damien-robinson.png",
     "profiles": [
       {
-        "icon": "faGithub",
+        "icon": "fa:github",
         "network": "Github",
         "url": "https://github.com/shadow81627",
         "username": "shadow81627"
       },
       {
-        "icon": "faLinkedin",
+        "icon": "fa:linkedin",
         "network": "LinkedIn",
         "url": "https://www.linkedin.com/in/damien-robinson-788925101",
         "username": "damien-robinson-788925101"
       },
       {
-        "icon": "faTwitter",
+        "icon": "fa:twitter",
         "network": "Twitter",
         "url": "https://twitter.com/Shadow81627",
         "username": "Shadow81627"
@@ -41,37 +41,37 @@
         "username": "damienrobinson"
       },
       {
-        "icon": "faYoutube",
+        "icon": "fa:youtube",
         "network": "Youtube",
         "url": "https://www.youtube.com/user/shadow81627",
         "username": "shadow81627"
       },
       {
-        "icon": "faFacebook",
+        "icon": "fa:facebook",
         "network": "Facebook",
         "url": "https://www.facebook.com/damien.robinson.5036",
         "username": "damien.robinson.5036"
       },
       {
-        "icon": "faSteam",
+        "icon": "fa:steam",
         "network": "Steam",
         "url": "https://steamcommunity.com/profiles/76561198043532598/",
         "username": "Shadow81627"
       },
       {
-        "icon": "faSkype",
+        "icon": "fa:skype",
         "network": "Skype",
         "url": "https://join.skype.com/invite/v5JDwAaVCBZg",
         "username": "shadow81627"
       },
       {
-        "icon": "faLastfm",
+        "icon": "fa:lastfm",
         "network": "last.fm",
         "url": "https://www.last.fm/user/shadow81627",
         "username": "shadow81627"
       },
       {
-        "icon": "faTumblr",
+        "icon": "fa:tumblr",
         "network": "Tumblr",
         "url": "https://pocketpastaplanner-blog.tumblr.com/",
         "username": "pocketpastaplanner-blog"
@@ -110,12 +110,12 @@
       "image": "./pocketpasta.com_recipes.png",
       "links": [
         {
-          "icon": "mdiWeb",
+          "icon": "mdi:web",
           "link": "https://pocketpasta.com",
           "tooltip": "Website"
         },
         {
-          "icon": "mdiGithub",
+          "icon": "mdi:github",
           "link": "https://github.com/shadow81627/pocketpasta",
           "tooltip": "Github"
         }
@@ -169,108 +169,108 @@
   ],
   "skills": [
     {
-      "icon": "faLaravel",
+      "icon": "fa-brands:laravel",
       "title": "PHP APIs (Laravel)"
     },
     {
-      "icon": "faHtml5",
+      "icon": "fa:html5",
       "title": "Semantic HTML"
     },
     {
-      "icon": "faBootstrap",
+      "icon": "fa-brands:bootstrap",
       "title": "Bootstrap CSS"
     },
     {
-      "icon": "faJsSquare",
+      "icon": "fa-brands:js-square",
       "title": "JavaScript"
     },
     {
-      "icon": "faVuejs",
+      "icon": "fa-brands:vuejs",
       "title": "Vue"
     },
     {
-      "icon": "faAngular",
+      "icon": "fa-brands:angular",
       "title": "Angular"
     },
     {
-      "icon": "faDatabase",
+      "icon": "fa:database",
       "title": "Structured Query Language (MySQL, PostgreSQL)"
     },
     {
-      "icon": "faDocker",
+      "icon": "fa-brands:docker",
       "title": "Docker"
     },
     {
-      "icon": "faSearch",
+      "icon": "fa:search",
       "title": "Search Engine Optimization (SEO)"
     },
     {
-      "icon": "faJira",
+      "icon": "fa-brands:jira",
       "title": "JIRA"
     },
     {
-      "icon": "faNodeJs",
+      "icon": "fa-brands:node-js",
       "title": "Node"
     },
     {
-      "icon": "faNpm",
+      "icon": "fa-brands:npm",
       "title": "Node Package Manager"
     },
     {
-      "icon": "faPython",
+      "icon": "fa-brands:python",
       "title": "Python (Flask)"
     },
     {
-      "icon": "faGitAlt",
+      "icon": "fa-brands:git-alt",
       "title": "Git (Bitbucket & Github)"
     },
     {
-      "icon": "faSass",
+      "icon": "fa-brands:sass",
       "title": "Sass"
     },
     {
-      "icon": "faJenkins",
+      "icon": "fa-brands:jenkins",
       "title": "Continuous Integration (Jenkins & Travis)"
     },
     {
-      "icon": "faMobileAlt",
+      "icon": "fa-solid:mobile-alt",
       "title": "Mobile-First, Responsive Design"
     },
     {
-      "icon": "faBug",
+      "icon": "fa:bug",
       "title": "Cross Browser Testing & Debugging"
     },
     {
-      "icon": "faUsers",
+      "icon": "fa-solid:users",
       "title": "Cross Functional Teams"
     },
     {
-      "icon": "faSync",
+      "icon": "fa-solid:sync",
       "title": "Agile Development & Scrum"
     },
     {
       "description": "I stay on top of tasks given to me and I never go past client deadlines. I use project management tools such as JIRA to triage issues and forecast effort estimates for projects using story points.",
-      "icon": "faClock",
+      "icon": "fa-solid:clock",
       "title": "Time Management"
     },
     {
       "description": "I work through complex problems on my own, but I’m not afraid to ask for help in areas I’m not familiar with. I enjoy using creative thinking to present effective solutions through the use of rapid prototyping at hackathons/startup weekends.",
-      "icon": "faPuzzlePiece",
+      "icon": "fa:puzzle-piece",
       "title": "Problem Solving"
     },
     {
       "description": "I work well in a team and can fill both leader and supporting positions with confidence. I enjoy working in a collaborative team structure but I have worked independently on projects as well.",
-      "icon": "faUsers",
+      "icon": "fa-solid:users",
       "title": "Team Player"
     },
     {
       "description": "I practice test driven development by creating automated unit tests using Jest, to ensure that all functions of a system operate as expected.",
-      "icon": "faTasks",
+      "icon": "fa:tasks",
       "title": "Quality Management"
     },
     {
       "description": "I take pride in producing clear and concise reports, programs and documentation for all code as demonstrated by liaising with clients and project teams.",
-      "icon": "faPaperPlane",
+      "icon": "fa:paper-plane",
       "title": "Written Communication"
     }
   ],

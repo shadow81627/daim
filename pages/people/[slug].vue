@@ -28,16 +28,15 @@
     <v-container>
       <v-row>
         <v-col cols="auto">
-          <v-avatar height="300" width="300">
-            <v-img
-              :lazy-src="$img(image, { width: 10, quality: 70 })"
-              :src="$img(image, { quality: 70, width: 300 })"
-              :srcset="_srcset(image).srcset"
-              :sizes="_srcset.size"
-              width="300"
-              itemprop="image"
-            ></v-img>
-          </v-avatar>
+          <v-img
+            :lazy-src="$img(image, { quality: 1, width: 300, height: 300 })"
+            :src="$img(image, { quality: 70, width: 300, height: 300 })"
+            :srcset="_srcset(image, { width: 300, height: 300 }).srcset"
+            :sizes="_srcset.size"
+            :width="300"
+            :height="300"
+            itemprop="image"
+          ></v-img>
         </v-col>
         <v-col>
           <section>
@@ -82,7 +81,7 @@
                       v-on="on"
                     >
                       <BaseIcon
-                        :icon="icons[icon] || icon"
+                        :icon="icon"
                         :title="network"
                         size="2x"
                         fixed-width
@@ -100,11 +99,11 @@
                   size="x-large"
                   icon
                 >
-                  <font-awesome-icon
-                    :icon="faMapMarker"
-                    size="2x"
-                    fixed-width
-                  />
+                  <BaseIcon
+                    icon="fa-solid:map-marker-alt"
+                    style="width: 14px; height: 14px; margin-right: 0.3em"
+                    color="black"
+                  ></BaseIcon>
                   &nbsp;
                 </v-btn>
               </v-card-actions>
@@ -131,7 +130,11 @@
                     sm="6"
                   >
                     <div v-for="{ icon, title } in column" :key="title">
-                      <font-awesome-icon :icon="icons[icon]" fixed-width />
+                      <BaseIcon
+                        :icon="icon"
+                        style="width: 14px; height: 14px; margin-right: 0.3em"
+                        color="black"
+                      ></BaseIcon>
                       <span itemprop="knowsAbout">{{ title }}</span>
                     </div>
                   </v-col>
@@ -274,7 +277,7 @@
                         :datetime="formatDate(startDate)"
                         >{{ formatDate(startDate) }}</time
                       >
-                      <span>-</span>
+                      <span> - </span>
                       <time
                         v-if="endDate"
                         :datetime="formatDate(endDate)"
@@ -385,47 +388,7 @@
 </template>
 
 <script>
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import {
-  faMapMarker,
-  faDatabase,
-  faSearch,
-  faMobileAlt,
-  faBug,
-  faUsers,
-  faSync,
-  faClock,
-  faPuzzlePiece,
-  faTasks,
-  faPaperPlane,
-  faPhone,
-} from '@fortawesome/free-solid-svg-icons';
-import {
-  faGithub,
-  faLinkedin,
-  faTwitter,
-  faYoutube,
-  faFacebook,
-  faLaravel,
-  faHtml5,
-  faBootstrap,
-  faJsSquare,
-  faVuejs,
-  faAngular,
-  faDocker,
-  faJira,
-  faNodeJs,
-  faNpm,
-  faPython,
-  faGitAlt,
-  faSass,
-  faJenkins,
-  faSteam,
-  faSkype,
-  faLastfm,
-  faTumblr,
-} from '@fortawesome/free-brands-svg-icons';
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import countries from 'i18n-iso-countries';
 import englishCountries from 'i18n-iso-countries/langs/en.json';
 import Mailgo from '@/components/mailgo.vue';
@@ -440,7 +403,8 @@ export default {
     Hero,
   },
   mixins: [ImageSources],
-  async asyncData({ route }) {
+  async setup() {
+    const route = useRoute();
     const slug = route.params.slug;
     const {
       basics: {
@@ -463,7 +427,7 @@ export default {
       education,
       skills,
       attributes,
-    } = await queryContent('team/' + slug).findOne();
+    } = await queryContent('team', slug).findOne();
 
     const locale = 'en';
     const country = countries.getName(countryCode, locale);
@@ -487,46 +451,6 @@ export default {
       attributes,
     };
   },
-  data: () => ({
-    icons: {
-      faGithub,
-      faLinkedin,
-      faTwitter,
-      faYoutube,
-      faFacebook,
-      faLaravel,
-      faHtml5,
-      faBootstrap,
-      faJsSquare,
-      faVuejs,
-      faAngular,
-      faDocker,
-      faJira,
-      faNodeJs,
-      faNpm,
-      faPython,
-      faGitAlt,
-      faSass,
-      faJenkins,
-      faDatabase,
-      faSearch,
-      faMobileAlt,
-      faBug,
-      faUsers,
-      faSync,
-      faClock,
-      faPuzzlePiece,
-      faTasks,
-      faPaperPlane,
-      faSteam,
-      faSkype,
-      faLastfm,
-      faTumblr,
-    },
-    faEnvelope,
-    faPhone,
-    faMapMarker,
-  }),
   head() {
     return {
       title: 'Resume',
