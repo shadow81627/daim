@@ -10,7 +10,7 @@
       <v-row>
         <v-col>
           <div class="text-body-1" itemprop="articleBody">
-            <nuxt-content :document="item" />
+            <ContentDoc :path="key" class="prose" />
           </div>
         </v-col>
       </v-row>
@@ -55,22 +55,23 @@
   </div>
 </template>
 <script>
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import { mdiFacebook, mdiTwitter, mdiLinkedin } from '@mdi/js';
 import BlogHero from '~/components/sections/BlogHero';
 export default {
   components: { BlogHero },
-  async asyncData({ route, error }) {
+  async setup() {
+    const route = useRoute();
+    const key = 'blog/' + route.params.slug;
     try {
-      const item = await queryContent('blog/' + route.params.slug).find();
-      return { item };
+      const { data: item } = await useAsyncData(key, () =>
+        queryContent(key).find(),
+      );
+      return { item, key };
     } catch {
-      error({ statusCode: 404 });
+      createError({ statusCode: 404 });
     }
   },
-  data: () => ({
-    item: {},
-  }),
   head() {
     const image = `${this.$config.BASE_URL}${this.$img(
       this.item.image || '/img/blog.jpg',
