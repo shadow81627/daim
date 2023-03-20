@@ -84,7 +84,9 @@ export default {
   },
   watch: {
     '$route.query': function () {
-      this.refresh();
+      if (this.refresh) {
+        this.refresh();
+      }
     },
   },
 };

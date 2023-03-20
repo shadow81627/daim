@@ -34,17 +34,17 @@ export default {
       data: items,
       pending,
       refresh,
-    } = await useAsyncData(
+    } = await useLazyAsyncData(
       'tools',
       () =>
         queryContent('tools')
-          // .where({ deleted_at: { $eq: [null, undefined] } })
+          .where({ deleted_at: { $exists: false } })
+          // .limit(24)
           .find(),
       {
         transform(data) {
-          const sorted = sortBy(data, sorts)
-            .reverse()
-            .filter((item) => !item.deleted_at);
+          // const filtered = data.filter((item) => !item.deleted_at);
+          const sorted = sortBy(data, sorts).reverse();
           const items = sorted.map((item) => {
             const slug = item._path.replace('/tools/', '');
             return {
@@ -83,7 +83,9 @@ export default {
   },
   watch: {
     '$route.query': function () {
-      this.refresh();
+      if (this.refresh) {
+        this.refresh();
+      }
     },
   },
 };
