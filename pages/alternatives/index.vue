@@ -21,9 +21,10 @@ import { sortBy, maxBy } from 'lodash-es';
 import textLength from '~/utils/feature-text-length';
 export default {
   async setup() {
-    // const { description } = await queryContent('pages/about').find();
-    const description = 'Compare digital agencies';
-    const { data: items, pending } = await useAsyncData(
+    const pageQuery = useAsyncData('pages/alternatives', () =>
+      queryContent('pages/alternatives').findOne(),
+    );
+    const alternatives = useAsyncData(
       'alternatives',
       () => queryContent('alternatives').find(),
       {
@@ -56,6 +57,11 @@ export default {
         },
       },
     );
+    const [{ data: items, pending }, { data: page }] = await Promise.all([
+      alternatives,
+      pageQuery,
+    ]);
+    const description = page.value.description;
     return { items, pending, description };
   },
   data() {
