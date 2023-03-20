@@ -9,10 +9,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <DataIterator
-            :items="items"
-            :loading="$fetchState.pending"
-          ></DataIterator>
+          <DataIterator :items="items" :loading="pending"></DataIterator>
         </v-col>
       </v-row>
     </v-container>
@@ -23,45 +20,50 @@
 import { sortBy, maxBy } from 'lodash-es';
 import textLength from '~/utils/feature-text-length';
 export default {
+  async setup() {
+    // const { description } = await queryContent('pages/about').find();
+    const description = 'Compare digital agencies';
+    const { data: items, pending } = await useAsyncData(
+      'alternatives',
+      () => queryContent('alternatives').find(),
+      {
+        transform(data) {
+          const sorted = sortBy(data, [
+            /**
+             * Sort by largest price
+             * @param {*} o item to sort
+             */
+            function (o) {
+              const plans = sortBy(o?.plans ?? { free: { price: 0 } }, 'price');
+              const max = maxBy(plans, 'price');
+              return max.price;
+            },
+            textLength,
+            'slug',
+          ]).reverse();
+          const filtered = sorted.filter((item) => !item.deleted_at);
+          const items = filtered.map((item) => {
+            const slug = item._path.replace('/alternatives/', '');
+            return {
+              ...item,
+              id: slug,
+              url: item.offers ? `/alternatives/${slug}` : item.url,
+              image: `/img/alternatives/${slug}.png`,
+              imageColor: item.color,
+            };
+          });
+          return items;
+        },
+      },
+    );
+    return { items, pending, description };
+  },
   data() {
     return {
       heading: 'Alternatives',
-      description: null,
-      items: [],
       defaultPlan: { unset: { price: 0 } },
     };
   },
-  async fetch() {
-    const { description } = await queryContent('pages/about').find();
-    this.description = description;
-    const data = sortBy(
-      (await queryContent('alternatives').find()).filter(
-        (item) => !item.deleted_at,
-      ),
-      [
-        /**
-         * Sort by largest price
-         * @param {*} o item to sort
-         */
-        function (o) {
-          const plans = sortBy(o?.plans ?? { free: { price: 0 } }, 'price');
-          const max = maxBy(plans, 'price');
-          return max.price;
-        },
-        textLength,
-        'slug',
-      ],
-    ).reverse();
-    const items = data.map((item) => ({
-      ...item,
-      id: item.slug,
-      url: item.offers ? `/alternatives/${item.slug}` : item.url,
-      image: `/img/alternatives/${item.slug}.png`,
-      imageColor: item.color,
-    }));
-    this.items = items;
-  },
-  fetchKey: 'alternatives',
   head() {
     return {
       title: this.heading,
@@ -75,7 +77,9 @@ export default {
     };
   },
   watch: {
-    '$route.query': '$fetch',
+    '$route.query': function () {
+      this.refresh();
+    },
   },
 };
 </script>
