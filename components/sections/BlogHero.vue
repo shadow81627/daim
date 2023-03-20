@@ -1,5 +1,5 @@
 <template>
-  <Hero :src="src">
+  <Hero :src="src" v-bind="{ subheading: summary, heading: title }">
     <Breadcrumb absolute dark class="pa-4"></Breadcrumb>
     <v-row class="fill-height mx-0 pa-4" no-gutters>
       <v-col
