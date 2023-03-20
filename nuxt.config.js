@@ -8,6 +8,7 @@ const BASE_URL = (
   process.env.DEPLOY_URL ||
   process.env.URL ||
   process.env.VERCEL_URL ||
+  process.env.CF_PAGES_URL ||
   `http${PORT === 433 ? 's' : ''}://${HOST}${
     [433, 80].includes(PORT) ? '' : `:${PORT}`
   }`
