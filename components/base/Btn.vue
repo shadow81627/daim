@@ -3,12 +3,11 @@
     :color="color"
     :variant="depressed && 'flat'"
     :min-width="minWidth"
-    :tile="tile"
     class="font-weight-bold"
     size="x-large"
     v-bind="$attrs"
   >
-    <slot />
+    <slot>{{ tile }}</slot>
   </v-btn>
 </template>
 
