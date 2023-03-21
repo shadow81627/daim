@@ -88,6 +88,24 @@ const operationsGenerator = createOperationsGenerator({
     filename: 'fn',
     format: 'f',
   },
+  valueMap: {
+    // fit resizes the image while keeping aspect ratio to fit a given size.
+    // fill: resizes the image while keeping aspect ratio to fill a given size and crops projecting parts.
+    // fill-down: the same as fill, but if the resized image is smaller than the requested size, imgproxy will crop the result to keep the requested aspect ratio.
+    // force: resizes the image without keeping the aspect ratio.
+    fit: {
+      // (default) Preserving aspect ratio, ensure the image covers both provided dimensions by cropping/clipping to fit
+      cover: 'fit',
+      // Preserving aspect ratio, contain within both provided dimensions using "letterboxing" where necessary.
+      contain: 'fill',
+      // Ignore the aspect ratio of the input and stretch to both provided dimensions.
+      fill: 'force',
+      // Preserving aspect ratio, resize the image to be as large as possible while ensuring its dimensions are less than or equal to both those specified.
+      inside: 'fill-down',
+      // Preserving aspect ratio, resize the image to be as small as possible while ensuring its dimensions are greater than or equal to both those specified.
+      outside: 'fill-down',
+    },
+  },
   formatter: (key, value) => `${key}:${value}`,
 });
 
