@@ -203,7 +203,7 @@ export default defineNuxtConfig({
   image: {
     // provider: 'imgproxy',
     screens: {
-      placeholder: 10,
+      // placeholder: 10,
       xs: 320,
       sm: 600,
       md: 960,
