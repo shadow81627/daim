@@ -28,7 +28,7 @@
         id="name"
         type="text"
         name="name"
-        validation="required|max:255"
+        validation="required|length:1,255"
         label="Name"
       />
 
@@ -44,7 +44,7 @@
         id="subject"
         type="text"
         name="_subject"
-        validation="required|max:255"
+        validation="required|length:1,255"
         label="Subject"
       />
 
@@ -53,7 +53,7 @@
         type="textarea"
         name="message"
         class="mb-6"
-        validation="required|max:255"
+        validation="required|length:1,255"
         label="Message"
       ></FormKit>
     </FormKit>
