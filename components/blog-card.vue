@@ -102,7 +102,7 @@ export default {
         enlarge: undefined,
         fit: 'cover',
         trim: undefined,
-        position: 'center',
+        // position: 'center',
       });
     },
     _srcset() {
@@ -116,7 +116,7 @@ export default {
           enlarge: undefined,
           fit: 'cover',
           trim: undefined,
-          position: 'center',
+          // position: 'center',
         },
       });
     },
