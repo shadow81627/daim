@@ -4,7 +4,11 @@ import { joinURL, withBase } from 'ufo';
 import hmacSHA256 from 'crypto-js/hmac-sha256.js';
 import Base64url from 'crypto-js/enc-base64url.js';
 import hex from 'crypto-js/enc-hex.js';
-import { OperationGeneratorConfig, OperationMapper } from '~/types/image';
+import {
+  OperationGeneratorConfig,
+  OperationMapper,
+  ProviderGetImage,
+} from '@nuxt/image-edge';
 
 const hexDecode = (hex: string) => Buffer.from(hex, 'hex');
 
