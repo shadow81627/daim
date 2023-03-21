@@ -91,8 +91,6 @@ export default {
       postcode,
       summary,
     };
-
-    return data;
   },
   data() {
     return {
