@@ -80,7 +80,7 @@
     "@nuxt/image-edge": "1.0.0-27968280.9739e4d",
     "@nuxt/types": "2.15.8",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
-    "@nuxtjs/eslint-module": "3.1.0",
+    "@nuxtjs/eslint-module": "4.0.2",
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/i18n": "next",
     "@nuxtjs/stylelint-module": "4.0.0",
