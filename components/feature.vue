@@ -153,7 +153,7 @@ export default {
         enlarge: undefined,
         fit: this.imageFit,
         trim: undefined,
-        position: 'center',
+        // position: 'center',
         format: 'png',
         background: this.imageColor,
       });
@@ -169,7 +169,7 @@ export default {
           enlarge: undefined,
           fit: this.imageFit,
           trim: undefined,
-          position: 'center',
+          // position: 'center',
         },
       });
     },
