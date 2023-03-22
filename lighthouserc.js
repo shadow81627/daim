@@ -4,7 +4,7 @@ module.exports = {
   ci: {
     collect: {
       url: [
-        '/',
+        '/200.html',
         '/404.html',
         '/people/',
         '/tools/',
