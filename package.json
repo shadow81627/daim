@@ -33,7 +33,8 @@
     "icons": "ts-node generate-iconify.ts",
     "test": "codeceptjs run --steps",
     "test:e2e": "codeceptjs run --steps",
-    "update:snapshots": "rsync -a ./test/e2e/output/ ./test/e2e/screenshots/base"
+    "update:snapshots": "rsync -a ./test/e2e/output/ ./test/e2e/screenshots/base",
+    "postinstall": "nuxi prepare"
   },
   "engines": {
     "node": "18.x"
