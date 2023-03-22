@@ -4,15 +4,7 @@
     <hero src="/img/resume-hero.png" gradient="">
       <Breadcrumb absolute dark></Breadcrumb>
       <div
-        class="
-          row
-          fill-height
-          text-right
-          pa-md-5 pa-3
-          mx-0
-          align-end
-          justify-end
-        "
+        class="row fill-height text-right pa-md-5 pa-3 mx-0 align-end justify-end"
       >
         <h1>
           <div class="text-uppercase text-h4" itemprop="name">
@@ -178,13 +170,7 @@
                   </h3>
                 </v-card-title>
                 <v-card-subtitle
-                  class="
-                    d-flex
-                    flex-column flex-md-row
-                    justify-space-between
-                    font-weight-medium
-                    text-body-1
-                  "
+                  class="d-flex flex-column flex-md-row justify-space-between font-weight-medium text-body-1"
                   itemprop="hasCredential"
                   itemtype="https://schema.org/EducationalOccupationalCredential"
                 >
@@ -245,12 +231,7 @@
                   tools,
                 } in work"
                 :key="(position, company, startDate, endDate)"
-                class="
-                  resume-item
-                  d-flex
-                  flex-column flex-md-row
-                  justify-space-between
-                "
+                class="resume-item d-flex flex-column flex-md-row justify-space-between"
                 itemprop="hasOccupation"
                 itemtype="https://schema.org/EmployeeRole"
                 itemscope
@@ -262,13 +243,7 @@
                     </h3>
                   </v-card-title>
                   <v-card-subtitle
-                    class="
-                      d-flex
-                      flex-column flex-md-row
-                      justify-space-between
-                      font-weight-medium
-                      text-body-1
-                    "
+                    class="d-flex flex-column flex-md-row justify-space-between font-weight-medium text-body-1"
                   >
                     <span itemtype="https://schema.org/Organization" itemscope
                       ><span itemprop="name">{{ company }}</span></span
