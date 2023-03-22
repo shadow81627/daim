@@ -36,8 +36,10 @@ const env = {
 };
 
 export default defineNuxtConfig({
-  target: 'static',
-  modern: true,
+  experimental: {
+    // https://github.com/nuxt/nuxt/issues/19850
+    inlineSSRStyles: false,
+  },
 
   runtimeConfig: {
     public: {
