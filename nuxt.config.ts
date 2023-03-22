@@ -127,7 +127,6 @@ export default defineNuxtConfig({
 
   i18n: {
     baseUrl: env.BASE_URL,
-    seo: false,
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
