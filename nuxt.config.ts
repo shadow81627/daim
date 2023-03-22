@@ -52,59 +52,17 @@ export default defineNuxtConfig({
     },
   },
 
-  generate: {
-    // use '404.html' instead default '200.html'
-    fallback: true,
-  },
-
   /*
    ** Headers of the page
    */
-  head: {
-    title: 'Damien Robinson',
-    titleTemplate: `%s | ${env.APP_NAME}`,
-    meta: [
-      {
-        once: true,
-        name: 'charset',
-        hid: 'charset',
-        content: 'utf-8',
-      },
-      {
-        once: true,
-        hid: 'viewport',
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1',
-      },
-      {
-        once: true,
-        name: 'version',
-        hid: 'version',
-        content: env.VERSION,
-      },
-      {
-        once: true,
-        property: 'og:title',
-        content: 'Damien Robinson',
-        template: `%s | ${env.APP_NAME}`,
-        hid: 'og:title',
-      },
-      {
-        name: 'version',
-        content: pkg.version,
-      },
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      ...preconnectLinks.map((href) => ({
-        rel: 'preconnect',
-        href,
-        hid: `preconnect-${href}`,
-        crossorigin: 'anonymous',
-        once: true,
-      })),
-    ],
-    noscript: [{ innerHTML: 'This website requires JavaScript.' }],
+  app: {
+    head: {
+      title: 'Damien Robinson',
+      titleTemplate: `%s | ${env.APP_NAME}`,
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
   },
 
   pwa: {
