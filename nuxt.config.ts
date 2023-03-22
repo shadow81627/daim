@@ -9,8 +9,8 @@ const BASE_URL = (
   process.env.URL ||
   process.env.VERCEL_URL ||
   process.env.CF_PAGES_URL ||
-  `http${PORT === 433 ? 's' : ''}://${HOST}${
-    [433, 80].includes(PORT) ? '' : `:${PORT}`
+  `http${PORT === '433' ? 's' : ''}://${HOST}${
+    ['433', '80'].includes(PORT) ? '' : `:${PORT}`
   }`
 ).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (_, protocol, domain) {
   return `${protocol || 'http'}://${domain}`;
