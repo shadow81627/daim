@@ -35,8 +35,6 @@ const env = {
   MATOMO_DEBUG: process.env.MATOMO_DEBUG ?? false,
 };
 
-const preconnectLinks = [];
-
 export default defineNuxtConfig({
   target: 'static',
   modern: true,
