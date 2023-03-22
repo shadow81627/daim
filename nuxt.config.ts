@@ -65,19 +65,6 @@ export default defineNuxtConfig({
     },
   },
 
-  pwa: {
-    meta: {
-      ogHost: env.BASE_URL,
-      theme_color: '#343a40',
-      ogImage: {
-        path: '/cover.jpg',
-        width: 1200,
-        height: 600,
-        type: 'image/jpg',
-      },
-    },
-  },
-
   /*
    ** Customize the progress-bar color
    */
@@ -92,6 +79,7 @@ export default defineNuxtConfig({
    ** Nuxt.js modules
    */
   modules: [
+    '@vite-pwa/nuxt',
     '@nuxtjs/eslint-module',
     '@formkit/nuxt',
     '@unocss/nuxt',
@@ -117,13 +105,7 @@ export default defineNuxtConfig({
     typography: true,
   },
 
-  content: {
-    // markdown: {
-    //   prism: {
-    //     theme: 'prism-themes/themes/prism-vsc-dark-plus.css',
-    //   },
-    // },
-  },
+  content: {},
 
   i18n: {
     baseUrl: env.BASE_URL,
