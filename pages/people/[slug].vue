@@ -26,7 +26,7 @@
       </div>
     </hero>
 
-    <v-container>
+    <v-container style="max-width: 800px">
       <v-row>
         <v-col cols="auto">
           <v-img
