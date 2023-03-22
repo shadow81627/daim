@@ -17,6 +17,7 @@
 </template>
 
 <script setup lang="ts">
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const heading = 'Portfolio';
 const description = 'Explore demos and code for my projects.';
 const route = useRoute();

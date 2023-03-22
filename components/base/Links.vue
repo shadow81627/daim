@@ -1,5 +1,5 @@
 <template>
-  <v-list dense flat tile color="transparent" item-props>
+  <v-list dense color="transparent" item-props>
     <v-list-item
       v-for="item in items"
       :key="item.title"

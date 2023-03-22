@@ -1,5 +1,6 @@
 <template>
   <div itemscope itemtype="https://schema.org/Person">
+    <!-- eslint-disable vuetify/no-deprecated-props -->
     <hero src="/img/resume-hero.png" gradient="">
       <Breadcrumb absolute dark></Breadcrumb>
       <div
@@ -41,7 +42,9 @@
         <v-col>
           <section>
             <v-card id="about" flat>
-              <v-card-subtitle class="text-subtitle-1 text-break pb-0">
+              <v-card-subtitle
+                class="text-subtitle-1 text-break pb-0 d-flex flex-wrap"
+              >
                 <mailgo v-if="email" :href="`mailto:${email}`"></mailgo>
                 <mailgo v-if="phone" :href="`tel:${phone}`"></mailgo>
                 <LocationButton
@@ -238,7 +241,7 @@
                   company,
                   startDate,
                   endDate,
-                  summary,
+                  summary: workSummary,
                   tools,
                 } in work"
                 :key="(position, company, startDate, endDate)"
@@ -288,7 +291,7 @@
                     </span>
                   </v-card-subtitle>
                   <v-card-text class="text-body-1">
-                    <p itemprop="description">{{ summary }}</p>
+                    <p itemprop="description">{{ workSummary }}</p>
                     Tools used: <span>{{ tools }}</span>
                   </v-card-text>
                 </div>
@@ -389,13 +392,13 @@
 
 <script>
 import dayjs from 'dayjs';
-import countries from 'i18n-iso-countries';
+import { registerLocale, getName } from 'i18n-iso-countries';
 import englishCountries from 'i18n-iso-countries/langs/en.json';
 import Mailgo from '@/components/mailgo.vue';
 import ImageSources from '@/mixins/srcset';
 import Hero from '~/components/hero';
 
-countries.registerLocale(englishCountries);
+registerLocale(englishCountries);
 
 export default {
   components: {
@@ -430,7 +433,7 @@ export default {
     } = await queryContent('team', slug).findOne();
 
     const locale = 'en';
-    const country = countries.getName(countryCode, locale);
+    const country = getName(countryCode, locale);
     return {
       image: `/img/team/${slug}.png`,
       profiles,

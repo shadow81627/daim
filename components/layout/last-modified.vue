@@ -9,9 +9,12 @@
         >{{ lastModified.fromNow() }}</time
       >
       <template #activator="{ props }">
-        <span v-bind="props" class="text-grey-darken-1" style="cursor: pointer">{{
-          lastModified.format(format)
-        }}</span>
+        <span
+          v-bind="props"
+          class="text-grey-darken-1"
+          style="cursor: pointer"
+          >{{ lastModified.format(format) }}</span
+        >
       </template>
     </v-tooltip>
   </span>

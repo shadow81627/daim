@@ -96,6 +96,7 @@ export default {
 </script> -->
 
 <script setup>
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const props = defineProps({
   error: {
     type: Object,

@@ -49,9 +49,9 @@
 </template>
 
 <script>
-import countries from 'i18n-iso-countries';
+import { registerLocale, getName } from 'i18n-iso-countries';
 import englishCountries from 'i18n-iso-countries/langs/en.json';
-countries.registerLocale(englishCountries);
+registerLocale(englishCountries);
 export default {
   async setup() {
     const key = 'team/damien-robinson';
@@ -76,7 +76,7 @@ export default {
       },
     } = data.value;
     const locale = 'en';
-    const country = countries.getName(countryCode, locale);
+    const country = getName(countryCode, locale);
     return {
       profiles,
       firstname,

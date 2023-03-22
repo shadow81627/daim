@@ -134,6 +134,7 @@ export default defineNuxtConfig({
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/eslint-module',
     '@formkit/nuxt',
     '@unocss/nuxt',
     '@nuxt/content',

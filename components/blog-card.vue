@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable vuetify/no-deprecated-props -->
   <v-card
     :to="to"
     class="flex d-flex flex-column justify-between flex-grow-1"
@@ -15,7 +16,7 @@
       :sizes="_srcset.size"
       :height="imageHeight"
       itemprop="image"
-      contain
+      cover
     ></v-img>
     <v-card-title class="text-break text-wrap">
       <h2 itemprop="name">{{ title }}</h2>
