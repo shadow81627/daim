@@ -73,7 +73,7 @@
   </v-app>
 </template>
 
-<script>
+<script lang="ts">
 import { sortBy } from 'lodash-es';
 import TheFooter from '@/components/layout/the-footer.vue';
 import fractionToDecimal from '~/utils/fraction-to-decimal';
@@ -84,6 +84,18 @@ export default {
   },
   async setup() {
     const localePath = useLocalePath();
+    const i18nHead = useLocaleHead({
+      addDirAttribute: true,
+      identifierAttribute: 'id',
+      addSeoAttributes: true,
+    });
+    useHead({
+      htmlAttrs: {
+        lang: i18nHead.value.htmlAttrs!.lang,
+      },
+      link: [...(i18nHead.value.link || [])],
+      meta: [...(i18nHead.value.meta || [])],
+    });
     const { data: items } = await useAsyncData(
       'layout-pages',
       () => queryContent('pages').find(),
