@@ -1,5 +1,5 @@
 import svgLoader from 'vite-svg-loader';
-import pkg from './package';
+import pkg from './package.json';
 
 const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || '3000';
