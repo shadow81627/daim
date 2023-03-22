@@ -21,7 +21,6 @@
 
 <script>
 import { mdiOpenInNew } from '@mdi/js';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 export default {
   props: {
     dark: Boolean,
@@ -50,7 +49,6 @@ export default {
     return { items, phone };
   },
   data: () => ({
-    faArrowRight,
     mdiOpenInNew,
   }),
   fetchKey: 'business-contact',
