@@ -107,6 +107,23 @@ export default defineNuxtConfig({
 
   content: {},
 
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: env.APP_NAME,
+      short_name: env.APP_NAME,
+      theme_color: '#343a40',
+      icons: [
+        {
+          src: 'icon.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+      ],
+    },
+  },
+
   i18n: {
     baseUrl: env.BASE_URL,
     defaultLocale: 'en',
