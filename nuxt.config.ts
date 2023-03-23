@@ -238,7 +238,6 @@ export default defineNuxtConfig({
       'vee-validate/dist/rules',
       'iron-webcrypto',
       'unhead',
-      'i18n-iso-countries',
     ],
   },
   vite: {
