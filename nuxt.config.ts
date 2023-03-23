@@ -18,6 +18,7 @@ const BASE_URL = (
 
 const DESCRIPTION =
   'Get a high quality custom landing page or microsite built by professionals.';
+const THEME_COLOR = '#343a40';
 
 const env = {
   HOST,
@@ -90,6 +91,7 @@ export default defineNuxtConfig({
         { property: 'og:site_name', content: env.APP_NAME },
         // { property: 'twitter:site', content: '@elk_zone' },
         // { property: 'twitter:card', content: 'summary_large_image' },
+        { property: 'theme_color', content: THEME_COLOR },
       ],
     },
   },
@@ -136,7 +138,7 @@ export default defineNuxtConfig({
     manifest: {
       name: env.APP_NAME,
       short_name: env.APP_NAME,
-      theme_color: '#343a40',
+      theme_color: THEME_COLOR,
       icons: [
         {
           src: 'icon.png',
