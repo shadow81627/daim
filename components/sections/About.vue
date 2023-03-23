@@ -48,14 +48,22 @@
   </BaseSection>
 </template>
 
-<script>
-import { registerLocale, getName } from 'i18n-iso-countries';
+<script lang="ts">
+import countries from 'i18n-iso-countries';
 import englishCountries from 'i18n-iso-countries/langs/en.json';
-registerLocale(englishCountries);
+// eslint-disable-next-line import/no-named-as-default-member
+countries.registerLocale(englishCountries);
 export default {
   async setup() {
-    const key = 'team/damien-robinson';
-    const { data } = await useAsyncData(key, () => queryContent(key).findOne());
+    const { data } = await useAsyncData(
+      'team/damien-robinson',
+      () => queryContent('team', 'damien-robinson').findOne(),
+      {
+        default() {
+          return { basics: { location: {} } };
+        },
+      },
+    );
 
     const {
       basics: {
@@ -76,7 +84,8 @@ export default {
       },
     } = data.value;
     const locale = 'en';
-    const country = getName(countryCode, locale);
+    // eslint-disable-next-line import/no-named-as-default-member
+    const country = countries.getName(countryCode, locale);
     return {
       profiles,
       firstname,
