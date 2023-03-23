@@ -102,3 +102,5 @@ sitemap.xml
 
 # yarn
 package-lock.json
+
+.unlighthouse
