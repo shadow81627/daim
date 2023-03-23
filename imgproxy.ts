@@ -115,14 +115,13 @@ const operationsGenerator = createOperationsGenerator({
 
 export const getImage: ProviderGetImage = (
   src,
-  { modifiers = {}, baseURL = 'https://imgproxy.daim.dev', key, salt } = {},
+  { modifiers = {}, baseURL, key, salt, cdnURL } = {},
 ) => {
-  const config = useRuntimeConfig();
-  const encodedUrl = encodeURI(withBase(src, config.BASE_URL));
+  const encodedUrl = encodeURI(withBase(src, baseURL));
   const path = joinURL('/', operationsGenerator(modifiers), encodedUrl);
   const signature = sign(salt, path, key);
 
   return {
-    url: withBase(joinURL(signature, path), baseURL),
+    url: withBase(joinURL(signature, path), cdnURL),
   };
 };
