@@ -21,6 +21,7 @@
                 :sizes="srcset.size"
                 alt=""
                 itemprop="image"
+                cover
                 style="
                   z-index: -1;
                   position: absolute;
