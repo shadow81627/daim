@@ -67,6 +67,9 @@ export default defineNuxtConfig({
       titleTemplate: `%s | ${env.APP_NAME}`,
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
+      htmlAttrs: {
+        lang: 'en',
+      },
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', href: '/icon.png' },
