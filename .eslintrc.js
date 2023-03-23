@@ -9,9 +9,9 @@ module.exports = {
     sourceType: 'module',
   },
   extends: [
-    'plugin:vue/base',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:vue/vue3-recommended',
     'plugin:vuetify/base',
-    '@nuxtjs',
     '@nuxtjs/eslint-config-typescript',
     'prettier',
     'plugin:prettier/recommended',
@@ -32,5 +32,6 @@ module.exports = {
     'content/**',
     'test/**',
     '.nuxt/**',
+    '**/sw.js',
   ],
 };
