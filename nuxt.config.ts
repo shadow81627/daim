@@ -91,7 +91,7 @@ export default defineNuxtConfig({
         { property: 'og:site_name', content: env.APP_NAME },
         // { property: 'twitter:site', content: '@elk_zone' },
         // { property: 'twitter:card', content: 'summary_large_image' },
-        { property: 'theme_color', content: THEME_COLOR },
+        { property: 'theme-color', content: THEME_COLOR },
       ],
     },
   },
