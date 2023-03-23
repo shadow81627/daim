@@ -21,15 +21,9 @@
                 :sizes="srcset.size"
                 alt=""
                 itemprop="image"
-                cover
-                style="
-                  z-index: -1;
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                "
+                fit="cover"
+                :img-attrs="{ style: imageStyle }"
+                :style="imageStyle"
               ></NuxtPicture>
               <div
                 style="
@@ -101,6 +95,12 @@ export default {
     },
   },
   setup(props) {
+    const imageStyle = `z-index: -1;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;`;
     const $img = useImage();
     const ogImage = $img(props.src, {
       width: 1280,
@@ -136,7 +136,7 @@ export default {
         },
       ],
     });
-    return { srcset };
+    return { srcset, imageStyle };
   },
 };
 </script>
