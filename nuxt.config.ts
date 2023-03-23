@@ -16,6 +16,9 @@ const BASE_URL = (
   return `${protocol || 'http'}://${domain}`;
 });
 
+const DESCRIPTION =
+  'Get a high quality custom landing page or microsite built by professionals.';
+
 const env = {
   HOST,
   PORT,
@@ -61,14 +64,29 @@ export default defineNuxtConfig({
       titleTemplate: `%s | ${env.APP_NAME}`,
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', href: '/icon.png' },
+      ],
+      meta: [
+        {
+          name: 'apple-mobile-web-app-status-bar-style',
+          content: 'black-translucent',
+        },
+        { property: 'description', content: DESCRIPTION },
+        // open graph social image
+        { property: 'og:title', content: env.APP_NAME },
+        { property: 'og:description', content: DESCRIPTION },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: '/cover.png' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '600' },
+        { property: 'og:site_name', content: env.APP_NAME },
+        // { property: 'twitter:site', content: '@elk_zone' },
+        // { property: 'twitter:card', content: 'summary_large_image' },
+      ],
     },
   },
-
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#fff' },
 
   /*
    ** Global CSS
