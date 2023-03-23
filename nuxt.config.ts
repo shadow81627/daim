@@ -153,7 +153,7 @@ export default defineNuxtConfig({
         code: 'en',
         name: 'English',
         iso: 'en',
-        file: 'en.js',
+        file: 'en.json',
       },
     ],
     lazy: true,
