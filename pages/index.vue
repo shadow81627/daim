@@ -27,16 +27,5 @@ export default {
     description:
       'Get a high quality custom landing page or microsite built by professionals.',
   }),
-  head() {
-    return {
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
-        },
-      ],
-    };
-  },
 };
 </script>
