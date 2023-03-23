@@ -22,3 +22,11 @@ services:
       - ./nginx:/etc/nginx/conf.d
     depends_on:
       - nuxt
+
+  imgproxy:
+    image: darthsim/imgproxy:latest
+    restart: unless-stopped
+    ports: 
+      - 8080:8080
+    environment:
+      - IMGPROXY_MAX_SRC_RESOLUTION=50
