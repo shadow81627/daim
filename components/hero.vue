@@ -17,7 +17,6 @@
             <template #additional>
               <NuxtPicture
                 :src="src"
-                :modifiers="{ resizing_type: 'fill' }"
                 :height="height"
                 :sizes="srcset.size"
                 alt=""
