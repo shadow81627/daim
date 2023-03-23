@@ -205,6 +205,29 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    // Static generation
+    '/': { prerender: true },
+    // CDN cache rules
+    '/manifest.webmanifest': {
+      headers: {
+        'Content-Type': 'application/manifest+json',
+        'Cache-Control': 'public, max-age=0, must-revalidate',
+      },
+    },
+  },
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
+    prerender: {
+      crawlLinks: true,
+    },
+  },
+  sourcemap: true,
+
   /*
    ** Build configuration
    */
