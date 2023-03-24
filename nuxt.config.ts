@@ -107,6 +107,7 @@ export default defineNuxtConfig({
    ** Nuxt.js modules
    */
   modules: [
+    '@unlighthouse/nuxt',
     '@vite-pwa/nuxt',
     '@nuxtjs/eslint-module',
     '@formkit/nuxt',
