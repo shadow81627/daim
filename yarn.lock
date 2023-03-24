@@ -5064,6 +5064,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@unlighthouse/cli@npm:0.4.9":
+  version: 0.4.9
+  resolution: "@unlighthouse/cli@npm:0.4.9"
+  dependencies:
+    "@unlighthouse/core": 0.4.9
+    "@unlighthouse/server": 0.4.9
+    better-opn: ^3.0.2
+    cac: ^6.7.14
+    consola: ^2.15.3
+    defu: ^6.1.2
+    fs-extra: ^11.1.0
+    globby: ^13.1.3
+    lodash-es: ^4.17.21
+  bin:
+    unlighthouse-ci: bin/unlighthouse-ci.cjs
+  checksum: 363da0f3f90a986cb20f59637bb0979de4931e4eb574178da886c80d9d97ecb00e9ce6ae2d00a5cdd24f360647adbab302090fada7dc99c02a6e550d57bc001a
+  languageName: node
+  linkType: hard
+
 "@unlighthouse/client@npm:0.4.9":
   version: 0.4.9
   resolution: "@unlighthouse/client@npm:0.4.9"
@@ -6907,6 +6926,15 @@ __metadata:
   version: 2.2.3
   resolution: "before-after-hook@npm:2.2.3"
   checksum: a1a2430976d9bdab4cd89cb50d27fa86b19e2b41812bf1315923b0cba03371ebca99449809226425dd3bcef20e010db61abdaff549278e111d6480034bebae87
+  languageName: node
+  linkType: hard
+
+"better-opn@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "better-opn@npm:3.0.2"
+  dependencies:
+    open: ^8.0.4
+  checksum: 1471552fa7f733561e7f49e812be074b421153006ca744de985fb6d38939807959fc5fe9cb819cf09f864782e294704fd3b31711ea14c115baf3330a2f1135de
   languageName: node
   linkType: hard
 
@@ -8762,6 +8790,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cosmiconfig@npm:8.1.0":
+  version: 8.1.0
+  resolution: "cosmiconfig@npm:8.1.0"
+  dependencies:
+    import-fresh: ^3.2.1
+    js-yaml: ^4.1.0
+    parse-json: ^5.0.0
+    path-type: ^4.0.0
+  checksum: 78a1846acc4935ab4d928e3f768ee2ad2fddbec96377935462749206568423ff4757140ac7f2ccd1f547f86309b8448c04b26588848b5a1520f2e9741cdeecf0
+  languageName: node
+  linkType: hard
+
 "cosmiconfig@npm:^7.0.0, cosmiconfig@npm:^7.0.1":
   version: 7.1.0
   resolution: "cosmiconfig@npm:7.1.0"
@@ -9298,6 +9338,7 @@ __metadata:
     "@types/sharp": 0.31.0
     "@typescript-eslint/eslint-plugin": 5.47.0
     "@typescript-eslint/parser": 5.56.0
+    "@unlighthouse/cli": 0.4.9
     "@unlighthouse/nuxt": 0.4.9
     "@unocss/nuxt": 0.50.6
     "@vite-pwa/nuxt": 0.0.7
@@ -9326,6 +9367,7 @@ __metadata:
     nuxt-purgecss: 1.0.0
     playwright: 1.30.0
     prettier: 2.8.6
+    puppeteer: 19.7.5
     query-string: 7.1.3
     remark-cli: 11.0.0
     remark-lint: 9.1.1
@@ -18381,7 +18423,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"open@npm:^8.4.0":
+"open@npm:^8.0.4, open@npm:^8.4.0":
   version: 8.4.2
   resolution: "open@npm:8.4.2"
   dependencies:
@@ -20045,27 +20087,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"puppeteer-core@npm:^13.7.0":
-  version: 13.7.0
-  resolution: "puppeteer-core@npm:13.7.0"
-  dependencies:
-    cross-fetch: 3.1.5
-    debug: 4.3.4
-    devtools-protocol: 0.0.981744
-    extract-zip: 2.0.1
-    https-proxy-agent: 5.0.1
-    pkg-dir: 4.2.0
-    progress: 2.0.3
-    proxy-from-env: 1.1.0
-    rimraf: 3.0.2
-    tar-fs: 2.1.1
-    unbzip2-stream: 1.4.3
-    ws: 8.5.0
-  checksum: 652c4cfc9d228a8c5162227368a78a3a28ea6f287b4bfb359fa84cb83109e8203b4251103f8b0f7eca173a2a3f5d8cb8a7b664cc958a13d536ec91b5e729e731
-  languageName: node
-  linkType: hard
-
-"puppeteer-core@npm:^19.6.0":
+"puppeteer-core@npm:19.7.5, puppeteer-core@npm:^19.6.0":
   version: 19.7.5
   resolution: "puppeteer-core@npm:19.7.5"
   dependencies:
@@ -20086,6 +20108,39 @@ __metadata:
     typescript:
       optional: true
   checksum: 5861fbc264a16369689a647ca2e70f6afb7e25913c2e242272f660e0f6cb690b0c1dc123f869a0cb5206460236f794b1a0ed53aea843c65121ef1d02f0dad4ce
+  languageName: node
+  linkType: hard
+
+"puppeteer-core@npm:^13.7.0":
+  version: 13.7.0
+  resolution: "puppeteer-core@npm:13.7.0"
+  dependencies:
+    cross-fetch: 3.1.5
+    debug: 4.3.4
+    devtools-protocol: 0.0.981744
+    extract-zip: 2.0.1
+    https-proxy-agent: 5.0.1
+    pkg-dir: 4.2.0
+    progress: 2.0.3
+    proxy-from-env: 1.1.0
+    rimraf: 3.0.2
+    tar-fs: 2.1.1
+    unbzip2-stream: 1.4.3
+    ws: 8.5.0
+  checksum: 652c4cfc9d228a8c5162227368a78a3a28ea6f287b4bfb359fa84cb83109e8203b4251103f8b0f7eca173a2a3f5d8cb8a7b664cc958a13d536ec91b5e729e731
+  languageName: node
+  linkType: hard
+
+"puppeteer@npm:19.7.5":
+  version: 19.7.5
+  resolution: "puppeteer@npm:19.7.5"
+  dependencies:
+    cosmiconfig: 8.1.0
+    https-proxy-agent: 5.0.1
+    progress: 2.0.3
+    proxy-from-env: 1.1.0
+    puppeteer-core: 19.7.5
+  checksum: 9ee6ad7ff99eb10c4615f9de7660ae1561f7ac447ac1ba134ff258255e7e0c022956a1725d3adb3006e85b1641c1c8e8ea4d00197c7b9673a70e864c224c4f0c
   languageName: node
   linkType: hard
 
