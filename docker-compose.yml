@@ -8,25 +8,36 @@ services:
     ports:
       - "3000:3000"
     command:
-      "npm run dev"
+      "yarn dev"
     volumes:
       - ./:/src:cached
+    networks:
+      - proxy
 
-  nginx:
-    image: nginx:latest
-    container_name: daim-nginx
+  tunnel:
+    container_name: cloudflared-tunnel
+    image: cloudflare/cloudflared:2023.3.1
     restart: unless-stopped
-    ports:
-      - "443:443"
-    volumes:
-      - ./nginx:/etc/nginx/conf.d
+    command: tunnel
+    networks:
+      - proxy
     depends_on:
-      - nuxt
+      - daim-website
+    environment:
+      TUNNEL_URL: http://daim-website:3000
 
   imgproxy:
     image: darthsim/imgproxy:latest
     restart: unless-stopped
-    ports: 
+    ports:
       - 8080:8080
     environment:
       - IMGPROXY_MAX_SRC_RESOLUTION=50
+      - IMGPROXY_KEY=${IMGPROXY_KEY}
+      - IMGPROXY_SALT=${IMGPROXY_SALT}
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    driver: bridge
