@@ -4,31 +4,32 @@ services:
   nuxt:
     build: .
     container_name: daim-website
-    restart: unless-stopped
+    # restart: unless-stopped
     ports:
       - "3000:3000"
-    command:
-      "yarn dev"
+      - "5678:5678"
+    command: yarn dev
     volumes:
-      - ./:/src:cached
+      - ./:/src
     networks:
-      - proxy
+      - daim
 
   tunnel:
     container_name: cloudflared-tunnel
     image: cloudflare/cloudflared:2023.3.1
-    restart: unless-stopped
+    # restart: unless-stopped
     command: tunnel
     networks:
-      - proxy
+      - daim
     depends_on:
-      - daim-website
+      - nuxt
     environment:
-      TUNNEL_URL: http://daim-website:3000
+      TUNNEL_URL: http://nuxt:3000
+
 
   imgproxy:
     image: darthsim/imgproxy:latest
-    restart: unless-stopped
+    # restart: unless-stopped
     ports:
       - 8080:8080
     environment:
@@ -36,8 +37,8 @@ services:
       - IMGPROXY_KEY=${IMGPROXY_KEY}
       - IMGPROXY_SALT=${IMGPROXY_SALT}
     networks:
-      - proxy
+      - daim
 
 networks:
-  proxy:
+  daim:
     driver: bridge

@@ -1,10 +1,4 @@
-FROM node:16 as builder
-WORKDIR /app
-COPY . .
-RUN yarn install --immutable --immutable-cache
-RUN yarn build
-
-FROM node:16
+FROM node:18
 # Install Chrome and its dependencies
 RUN apt-get update && apt-get install -y wget gnupg2 \
   && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
@@ -15,8 +9,10 @@ RUN apt-get update && apt-get install -y wget gnupg2 \
 ENV CHROME_BIN=/usr/bin/google-chrome \
     CHROME_PATH=/usr/lib/google-chrome-unstable
 # USER node
-WORKDIR /app
-COPY --from=builder /app  .
+WORKDIR /src
+COPY . .
+RUN yarn install --immutable --immutable-cache
+RUN yarn build
 COPY --chown=node . .
 ENV HOST 0.0.0.0
 EXPOSE 3000
