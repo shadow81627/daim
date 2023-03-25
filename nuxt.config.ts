@@ -20,7 +20,7 @@ const DESCRIPTION =
   'Get a high quality custom landing page or microsite built by professionals.';
 const THEME_COLOR = '#343a40';
 
-const IMGPROXY_URL = process.env.IMGPROXY_URL ?? 'imgproxy.daim.dev';
+const IMGPROXY_URL = process.env.IMGPROXY_URL ?? 'https://imgproxy.daim.dev';
 
 const env = {
   HOST,
@@ -196,7 +196,7 @@ export default defineNuxtConfig({
       lg: 1280,
       xl: 1920,
     },
-    domains: [env.HOST, IMGPROXY_URL],
+    domains: [env.HOST],
     providers: {
       imgproxy: {
         provider: '~/imgproxy',
