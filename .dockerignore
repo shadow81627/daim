@@ -4,5 +4,8 @@
 npm-debug.log
 dist/
 
+.nuxt
+.output
+
 docker-compose.yml
 Dockerfile
