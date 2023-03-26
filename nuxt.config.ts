@@ -123,6 +123,7 @@ export default defineNuxtConfig({
     // 'nuxt-webfontloader',
     // ['nuxt-matomo', matomo],
 
+    '@nuxtjs/robots',
     // always declare the sitemap module at end of array
     // '@nuxtjs/sitemap',
   ],

@@ -44,6 +44,7 @@
     "@formkit/nuxt": "0.16.2",
     "@formkit/themes": "0.16.2",
     "@nuxt/content": "2.4.3",
+    "@nuxtjs/robots": "3.0.0",
     "buffer": "6.0.3",
     "cross-env": "7.0.3",
     "crypto-js": "4.1.1",

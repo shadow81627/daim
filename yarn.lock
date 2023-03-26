@@ -3328,6 +3328,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxtjs/robots@npm:3.0.0":
+  version: 3.0.0
+  resolution: "@nuxtjs/robots@npm:3.0.0"
+  dependencies:
+    "@nuxt/kit": ^3.0.0
+    h3: ^1.0.1
+  checksum: eb6b81b786059136030c2e06f3ed5494f60bbcfe7930774d4a2304bd3f343a7dd2c37d3f4d6edbd276f74ea3bed8b4df2303ecf6abcf3991aed619b7aaf5b189
+  languageName: node
+  linkType: hard
+
 "@nuxtjs/vuetify@npm:1.12.3":
   version: 1.12.3
   resolution: "@nuxtjs/vuetify@npm:1.12.3"
@@ -9329,6 +9339,7 @@ __metadata:
     "@nuxtjs/eslint-config-typescript": 12.0.0
     "@nuxtjs/eslint-module": 4.0.2
     "@nuxtjs/i18n": next
+    "@nuxtjs/robots": 3.0.0
     "@nuxtjs/vuetify": 1.12.3
     "@semantic-release/changelog": 5.0.1
     "@semantic-release/git": 9.0.1
