@@ -1,8 +1,11 @@
 import svgLoader from 'vite-svg-loader';
 import pkg from './package.json';
+import getLocalIpAddress from './utils/getLocalIpAddress';
 
-const HOST = process.env.HOST || '0.0.0.0';
+const localIpAddress = getLocalIpAddress();
+const HOST = process.env.HOST || localIpAddress || '0.0.0.0';
 const PORT = process.env.PORT || '3000';
+
 const BASE_URL = (
   process.env.BASE_URL ||
   process.env.DEPLOY_URL ||
@@ -107,7 +110,7 @@ export default defineNuxtConfig({
    ** Nuxt.js modules
    */
   modules: [
-    '@unlighthouse/nuxt',
+    // '@unlighthouse/nuxt',
     '@vite-pwa/nuxt',
     '@nuxtjs/eslint-module',
     '@formkit/nuxt',
