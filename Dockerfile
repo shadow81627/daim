@@ -1,9 +1,6 @@
 FROM node:18
 # Install Chrome and its dependencies
-RUN apt-get update && apt-get install --no-install-recommends -y wget=1.10 gnupg2=2.2.41 \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* \
-  && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
   && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list \
   && apt-get update \
   && apt-get install -y google-chrome-stable
