@@ -48,7 +48,7 @@ jobs:
         run: yarn run lhci:autorun
 
   release:
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
     needs: build
     runs-on: ubuntu-20.04
     env:
