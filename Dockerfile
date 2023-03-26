@@ -10,7 +10,9 @@ ENV CHROME_BIN=/usr/bin/google-chrome \
 # USER node
 WORKDIR /src
 COPY . .
+# COPY package.json yarn.lock .yarn .yarnrc.yml ./
 RUN yarn install --immutable --immutable-cache
+# COPY . .
 RUN yarn build
 COPY --chown=node . .
 ENV HOST 0.0.0.0
