@@ -69,29 +69,42 @@ export default {
     Feature,
     PriceRange,
   },
-  async asyncData() {
-    const items = sortBy(
-      (await queryContent('services').find())
-        .filter((item) => !item.deleted_at)
-        .map((item) => ({
-          ...item,
-          pos: fractionToDecimal(item.pos),
-        })),
-      [
-        'pos',
-        /**
-         * Sort by largest price
-         * @param {*} o item to sort
-         */
-        function (o) {
-          const plans = sortBy(o?.plans ?? { free: { price: 0 } }, 'price');
-          const max = maxBy(plans, 'price');
-          return max.price;
+  async setup() {
+    const { data: items } = await useAsyncData(
+      'services',
+      () => queryContent('services').find(),
+      {
+        transform(data) {
+          const items = sortBy(
+            data
+              .filter((item) => !item.deleted_at)
+              .map((item) => ({
+                ...item,
+                pos: fractionToDecimal(item.pos),
+              })),
+            [
+              'pos',
+              /**
+               * Sort by largest price
+               * @param {*} o item to sort
+               */
+              function (o) {
+                const plans = sortBy(
+                  o?.plans ?? { free: { price: 0 } },
+                  'price',
+                );
+                const max = maxBy(plans, 'price');
+                return max.price;
+              },
+              textLength,
+              'slug',
+            ],
+          ).reverse();
+          return items;
         },
-        textLength,
-        'slug',
-      ],
-    ).reverse();
+      },
+    );
+
     return { items };
   },
   data() {
@@ -99,20 +112,7 @@ export default {
       heading: 'Services',
       description:
         'We offer a range of services to help you get the most out of your website.',
-      items: [],
       defaultPlan: { unset: { price: 0 } },
-    };
-  },
-  head() {
-    return {
-      title: this.heading,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
-        },
-      ],
     };
   },
 };
