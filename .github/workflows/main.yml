@@ -12,12 +12,12 @@ jobs:
   lint:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout 🛎
+      - name: Checkout 🧬
         uses: actions/checkout@v3.4.0
         with:
             fetch-depth: 0
             persist-credentials: false
-      - name: Setup node env 🏗
+      - name: Setup node env 🟨
         uses: actions/setup-node@v3.6.0
         with:
           node-version: 16
@@ -29,15 +29,17 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout 🛎
+      - name: Checkout 🧬
         uses: actions/checkout@v3.4.0
         with:
             fetch-depth: 0
             persist-credentials: false
-      - name: Setup node env 🏗
+      - name: Setup node env 🟨
         uses: actions/setup-node@v3.6.0
         with:
           node-version: 16
+      - name: Copy .env 📋
+        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Install dependencies 👨🏻‍💻
         run: yarn install
       - name: Build 🔨
@@ -54,12 +56,12 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout 🛎
+      - name: Checkout 🧬
         uses: actions/checkout@v3.4.0
         with:
             fetch-depth: 0
             persist-credentials: false
-      - name: Setup Node.js 🏗
+      - name: Setup Node.js 🟨
         uses: actions/setup-node@v3.6.0
         with:
             node-version: 16
