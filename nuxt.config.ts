@@ -87,6 +87,7 @@ export default defineNuxtConfig({
           name: 'apple-mobile-web-app-status-bar-style',
           content: 'black-translucent',
         },
+        { name: 'theme-color', content: THEME_COLOR },
         { property: 'description', content: DESCRIPTION },
         // open graph social image
         { property: 'og:title', content: env.APP_NAME },
@@ -98,7 +99,6 @@ export default defineNuxtConfig({
         { property: 'og:site_name', content: env.APP_NAME },
         // { property: 'twitter:site', content: '@elk_zone' },
         // { property: 'twitter:card', content: 'summary_large_image' },
-        { property: 'theme-color', content: THEME_COLOR },
       ],
     },
   },
@@ -153,6 +153,7 @@ export default defineNuxtConfig({
       name: env.APP_NAME,
       short_name: env.APP_NAME,
       theme_color: THEME_COLOR,
+      start_url: '/',
       icons: [
         {
           src: 'icon.png',
