@@ -1,3 +1,5 @@
+import vuetify from 'vite-plugin-vuetify';
+import { splitVendorChunkPlugin } from 'vite';
 import svgLoader from 'vite-svg-loader';
 import pkg from './package.json';
 import getLocalIpAddress from './utils/getLocalIpAddress';
@@ -122,6 +124,11 @@ export default defineNuxtConfig({
     'nuxt-icon',
     // 'nuxt-webfontloader',
     // ['nuxt-matomo', matomo],
+    (_, nuxt) => {
+      nuxt.hooks.hook('vite:extendConfig', (config) => {
+        config.plugins?.push(vuetify());
+      });
+    },
 
     '@nuxtjs/robots',
     // always declare the sitemap module at end of array
@@ -252,6 +259,6 @@ export default defineNuxtConfig({
     ],
   },
   vite: {
-    plugins: [svgLoader()],
+    plugins: [svgLoader(), splitVendorChunkPlugin()],
   },
 });
