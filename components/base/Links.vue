@@ -1,5 +1,5 @@
 <template>
-  <v-list dense color="transparent" item-props>
+  <v-list dense item-props variant="flat" :role="undefined">
     <v-list-item
       v-for="item in items"
       :key="item.title"
@@ -9,7 +9,7 @@
       :data-address="address(item.href)"
       :data-domain="domain(item.href)"
       :data-tel="tel(item.href)"
-      variant="plain"
+      :active="false"
       class="text-decoration-none"
     >
       <template #prepend>

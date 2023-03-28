@@ -5,7 +5,7 @@
       class="hidden-print-only"
       disable-resize-watcher
     >
-      <v-list dense>
+      <v-list dense :role="undefined">
         <v-list-item
           v-for="item in items"
           :key="item.name"

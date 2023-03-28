@@ -9,9 +9,11 @@
           <v-card flat rounded="0" color="transparent">
             <BaseLinks :items="contact">
               <template #default="{ item }">
-                <v-list-item-subtitle v-if="item.subtitle">{{
-                  item.subtitle
-                }}</v-list-item-subtitle>
+                <v-list-item-subtitle
+                  v-if="item.subtitle"
+                  class="!opacity-90"
+                  >{{ item.subtitle }}</v-list-item-subtitle
+                >
                 <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
                   item.title
                 }}</v-list-item-title>
@@ -23,11 +25,12 @@
           <v-card flat rounded="0" color="transparent">
             <v-card-title class="text-h5">Pages</v-card-title>
           </v-card>
-          <v-list dense variant="plain">
+          <v-list dense variant="flat" :role="undefined">
             <v-list-item
               v-for="item in nav1"
               :key="item.name"
               :to="localePath(item.route)"
+              :active="false"
               class="text-decoration-none"
             >
               <template #prepend>
@@ -45,11 +48,12 @@
           <v-card flat rounded="0" color="transparent">
             <v-card-title class="text-h5">&nbsp;</v-card-title>
           </v-card>
-          <v-list dense variant="plain">
+          <v-list dense variant="flat" :role="undefined">
             <v-list-item
               v-for="item in nav2"
               :key="item.name"
               :to="localePath(item.route)"
+              :active="false"
               class="text-decoration-none"
             >
               <template #prepend>
