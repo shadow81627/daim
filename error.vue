@@ -1,5 +1,7 @@
 <template>
   <div class="flex items-center justify-center h-screen">
+    <VitePwaManifest />
+    <NuxtLoadingIndicator />
     <v-card id="message" max-width="360" class="text-left">
       <v-card-subtitle class="text--primary pb-0">
         <h2
