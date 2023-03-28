@@ -1,7 +1,7 @@
 <template>
   <span v-if="lastModified">
     <span>Last modified </span>
-    <v-tooltip location="top">
+    <v-tooltip location="top" aria-label="Last modified">
       <time
         itemprop="dateModified"
         :content="lastModified.toISOString()"
