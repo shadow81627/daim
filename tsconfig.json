@@ -16,6 +16,7 @@
       ]
     },
     "types": [
+      "@types/crypto-js",
       "@unlighthouse/nuxt",
       "@types/node",
       "@nuxt/types",
