@@ -4,56 +4,10 @@ import { joinURL, withBase } from 'ufo';
 import hmacSHA256 from 'crypto-js/hmac-sha256.js';
 import Base64url from 'crypto-js/enc-base64url.js';
 import hex from 'crypto-js/enc-hex.js';
-import {
-  OperationGeneratorConfig,
-  OperationMapper,
-  ProviderGetImage,
-} from '@nuxt/image-edge';
+import { ProviderGetImage } from '@nuxt/image-edge';
+import { createOperationsGenerator } from '@nuxt/image-edge/dist/runtime/utils';
 
 const hexDecode = (hex: string) => Buffer.from(hex, 'hex');
-
-function createMapper(map: Record<string, string>): OperationMapper {
-  return (key?: string) => {
-    return key ? map[key] ?? key : map.missingValue;
-  };
-}
-
-function createOperationsGenerator({
-  formatter,
-  keyMap,
-  joinWith = '/',
-  valueMap,
-}: OperationGeneratorConfig = {}) {
-  if (!formatter) {
-    formatter = (key, value: string) => `${key}=${value}`;
-  }
-  if (keyMap && typeof keyMap !== 'function') {
-    keyMap = createMapper(keyMap);
-  }
-  const map = valueMap ?? {};
-  Object.keys(map).forEach((valueKey) => {
-    if (typeof map[valueKey] !== 'function') {
-      map[valueKey] = createMapper(map[valueKey]);
-    }
-  });
-
-  return (modifiers: { [key: string]: string } = {}) => {
-    const operations = Object.entries(modifiers)
-      .filter(([_, value]) => typeof value !== 'undefined')
-      .map(([key, value]) => {
-        const mapper = map[key];
-        if (typeof mapper === 'function') {
-          value = mapper(modifiers[key]);
-        }
-
-        key = typeof keyMap === 'function' ? keyMap(key) : key;
-
-        return formatter?.(key, value);
-      });
-
-    return operations.join(joinWith);
-  };
-}
 
 const sign = (salt: string, target: string, secret: string) => {
   const msg = hexDecode(salt + Buffer.from(target).toString('hex')); // Uint8Array of arbitrary length
@@ -110,7 +64,7 @@ const operationsGenerator = createOperationsGenerator({
       outside: 'fill-down',
     },
   },
-  formatter: (key, value) => `${key}:${value}`,
+  formatter: (key: string, value: string) => `${key}:${value}`,
 });
 
 export const getImage: ProviderGetImage = (
