@@ -250,13 +250,7 @@ export default defineNuxtConfig({
    ** Build configuration
    */
   build: {
-    transpile: [
-      'lodash-es',
-      'vuetify',
-      'vee-validate/dist/rules',
-      'iron-webcrypto',
-      'unhead',
-    ],
+    transpile: ['lodash-es', 'vuetify', 'iron-webcrypto', 'unhead'],
   },
   vite: {
     plugins: [svgLoader(), splitVendorChunkPlugin()],
