@@ -40,6 +40,7 @@
               <v-btn
                 v-bind="attrs"
                 icon
+                variant="text"
                 color="#757575"
                 target="_blank"
                 rel="noopener"
