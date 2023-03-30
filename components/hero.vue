@@ -21,7 +21,7 @@
                 :sizes="srcset.size"
                 alt=""
                 itemprop="image"
-                fit="contain"
+                fit="cover"
                 :img-attrs="{ style: imageStyle }"
                 :style="imageStyle"
               ></NuxtPicture>
