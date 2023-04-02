@@ -29,6 +29,7 @@
     "write-good": "write-good content",
     "cspell": "cspell content/**",
     "lhci:autorun": "lhci autorun",
+    "serve:lhci": "cross-env PORT=3001 nuxi preview",
     "images": "ts-node fetch-external-images.ts",
     "icons": "ts-node generate-iconify.ts",
     "test": "codeceptjs run --steps",
