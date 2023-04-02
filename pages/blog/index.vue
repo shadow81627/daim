@@ -24,12 +24,21 @@ export default {
     BlogCard,
   },
   async setup() {
+    const route = useRoute();
+    const draft = Boolean(route?.query?.draft);
     const { data: items } = await useAsyncData(
       'blog',
-      () => queryContent('blog').sort({ date: -1 }).find(),
+      () =>
+        queryContent('blog')
+          .where({ deleted_at: { $exists: false } })
+          .sort({ date: -1 })
+          .find(),
       {
         transform(data) {
-          return data.map((item) => {
+          const filtered = data.filter((item) => {
+            return draft || !item.draft;
+          });
+          return filtered.map((item) => {
             const slug = item._path.replace('/blog/', '');
             return {
               ...item,
