@@ -228,6 +228,7 @@ export default defineNuxtConfig({
   routeRules: {
     // Static generation
     '/': { prerender: true },
+    '/404.html': { prerender: true },
     // CDN cache rules
     '/manifest.webmanifest': {
       headers: {
