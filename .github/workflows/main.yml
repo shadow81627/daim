@@ -43,7 +43,7 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn install
       - name: Build 🔨
-        run: yarn run generate
+        run: yarn run build
       - name: Test 🧪
         run: yarn run test
       - name: Run Lighthouse 💡
