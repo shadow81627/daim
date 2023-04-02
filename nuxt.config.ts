@@ -1,6 +1,7 @@
 import vuetify from 'vite-plugin-vuetify';
 import { splitVendorChunkPlugin } from 'vite';
 import svgLoader from 'vite-svg-loader';
+import { defineNuxtConfig } from 'nuxt/config';
 import pkg from './package.json';
 import getLocalIpAddress from './utils/getLocalIpAddress';
 
