@@ -11,9 +11,9 @@ module.exports = {
         '/portfolio/',
         '/blog/',
         '/contact/',
-      ].map((path) => `http://localhost:5000${path}`),
+      ].map((path) => `http://localhost:3001${path}`),
       // staticDistDir: './dist',
-      startServerCommand: 'npm run start',
+      startServerCommand: 'npm run serve:lhci',
     },
     assert: {
       preset: 'lighthouse:recommended',
