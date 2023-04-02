@@ -11,8 +11,9 @@ module.exports = {
         '/portfolio/',
         '/blog/',
         '/contact/',
-      ],
-      staticDistDir: './dist',
+      ].map((path) => `http://localhost:5000${path}`),
+      // staticDistDir: './dist',
+      startServerCommand: 'npm run start',
     },
     assert: {
       preset: 'lighthouse:recommended',
