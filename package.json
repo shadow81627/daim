@@ -115,6 +115,7 @@
     "vite-plugin-vuetify": "1.0.2",
     "vite-svg-loader": "4.0.0",
     "vuetify": "3.1.10",
+    "wrangler": "2.13.0",
     "write-good": "1.0.8"
   }
 }
