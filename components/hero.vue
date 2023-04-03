@@ -16,6 +16,7 @@
           >
             <template #additional>
               <NuxtPicture
+                preload
                 :src="src"
                 :height="height"
                 :sizes="srcset.size"
