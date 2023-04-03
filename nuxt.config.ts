@@ -114,7 +114,8 @@ export default defineNuxtConfig({
    */
   modules: [
     // '@unlighthouse/nuxt',
-    '@vite-pwa/nuxt',
+    // '@vite-pwa/nuxt',
+    '@kevinmarrec/nuxt-pwa',
     '@nuxtjs/eslint-module',
     '@formkit/nuxt',
     '@unocss/nuxt',
@@ -149,7 +150,7 @@ export default defineNuxtConfig({
   content: {},
 
   pwa: {
-    registerType: 'autoUpdate',
+    // registerType: 'autoUpdate',
     manifest: {
       name: env.APP_NAME,
       short_name: env.APP_NAME,
@@ -160,7 +161,7 @@ export default defineNuxtConfig({
           src: 'icon.png',
           sizes: '512x512',
           type: 'image/png',
-          purpose: 'any maskable',
+          purpose: 'any',
         },
       ],
     },
@@ -230,12 +231,12 @@ export default defineNuxtConfig({
     '/': { prerender: true },
     '/404.html': { prerender: true },
     // CDN cache rules
-    '/manifest.webmanifest': {
-      headers: {
-        'Content-Type': 'application/manifest+json',
-        'Cache-Control': 'public, max-age=0, must-revalidate',
-      },
-    },
+    // '/manifest.webmanifest': {
+    //   headers: {
+    //     'Content-Type': 'application/manifest+json',
+    //     'Cache-Control': 'public, max-age=0, must-revalidate',
+    //   },
+    // },
   },
   nitro: {
     esbuild: {
