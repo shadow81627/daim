@@ -105,6 +105,7 @@ export default {
     const ogImage = $img(props.src, {
       width: 1280,
       height: 630,
+      fit: 'cover',
     });
     useServerSeoMeta({
       title: props.heading,
