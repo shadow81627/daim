@@ -61,7 +61,7 @@
   "devDependencies": {
     "@iconify/tools": "2.2.6",
     "@iconify/vue2": "2.1.0",
-    "@lhci/cli": "0.7.2",
+    "@lhci/cli": "0.11.0",
     "@mdi/js": "5.9.55",
     "@nuxt/image-edge": "1.0.0-27968280.9739e4d",
     "@nuxt/types": "2.15.8",
