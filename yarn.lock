@@ -2781,6 +2781,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kevinmarrec/nuxt-pwa@npm:0.17.0":
+  version: 0.17.0
+  resolution: "@kevinmarrec/nuxt-pwa@npm:0.17.0"
+  dependencies:
+    hasha: ^5.2.2
+    sharp: ^0.31.3
+    std-env: ^3.3.2
+  checksum: 3d0693538c273a723abb91bb6d8ddcaa877654ec276f4dd32fdc3195bb6fca7c363e97f24942e86962524125ca0adc2ec625e71073f37a33cd44dbb1908aad79
+  languageName: node
+  linkType: hard
+
 "@lhci/cli@npm:0.11.0":
   version: 0.11.0
   resolution: "@lhci/cli@npm:0.11.0"
@@ -9573,6 +9584,7 @@ __metadata:
     "@formkit/themes": 0.16.2
     "@iconify/tools": 2.2.6
     "@iconify/vue2": 2.1.0
+    "@kevinmarrec/nuxt-pwa": 0.17.0
     "@lhci/cli": 0.11.0
     "@mdi/js": 5.9.55
     "@nuxt/content": 2.4.3
@@ -13066,6 +13078,16 @@ __metadata:
     inherits: ^2.0.3
     minimalistic-assert: ^1.0.1
   checksum: e350096e659c62422b85fa508e4b3669017311aa4c49b74f19f8e1bc7f3a54a584fdfd45326d4964d6011f2b2d882e38bea775a96046f2a61b7779a979629d8f
+  languageName: node
+  linkType: hard
+
+"hasha@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "hasha@npm:5.2.2"
+  dependencies:
+    is-stream: ^2.0.0
+    type-fest: ^0.8.0
+  checksum: 06cc474bed246761ff61c19d629977eb5f53fa817be4313a255a64ae0f433e831a29e83acb6555e3f4592b348497596f1d1653751008dda4f21c9c21ca60ac5a
   languageName: node
   linkType: hard
 
@@ -22046,7 +22068,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:0.31.3, sharp@npm:^0.31.2":
+"sharp@npm:0.31.3, sharp@npm:^0.31.2, sharp@npm:^0.31.3":
   version: 0.31.3
   resolution: "sharp@npm:0.31.3"
   dependencies:
@@ -23751,7 +23773,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^0.8.1":
+"type-fest@npm:^0.8.0, type-fest@npm:^0.8.1":
   version: 0.8.1
   resolution: "type-fest@npm:0.8.1"
   checksum: d61c4b2eba24009033ae4500d7d818a94fd6d1b481a8111612ee141400d5f1db46f199c014766b9fa9b31a6a7374d96fc748c6d688a78a3ce5a33123839becb7
