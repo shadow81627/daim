@@ -1,11 +1,11 @@
 <template>
-  <BaseSection id="services" class="secondary">
+  <BaseSection id="services" class="bg-secondary">
     <v-responsive class="mx-auto" max-width="1350">
       <v-container fluid>
         <v-row itemscope itemtype="https://schema.org/OfferCatalog">
           <v-col
-            v-for="card in cards"
-            :key="card.title"
+            v-for="card of cards"
+            :key="card.name"
             cols="12"
             sm="6"
             md="3"
@@ -22,7 +22,7 @@
               itemtype="https://schema.org/Service"
               title-itemprop="name"
               body-itemprop="description"
-            />
+            ></BaseInfoCard>
           </v-col>
         </v-row>
       </v-container>
@@ -34,19 +34,21 @@
 import { sortBy } from 'lodash-es';
 import fractionToDecimal from '~/utils/fraction-to-decimal';
 export default {
-  data: () => ({
-    cards: [],
-  }),
-  async fetch() {
-    const data = await this.$content('services').fetch();
-    const items = sortBy(
-      data.map((item) => ({
-        ...item,
-        pos: fractionToDecimal(item.pos),
-      })),
-      ['pos'],
-    ).reverse();
-    this.cards = items.slice(0, 4);
+  async setup() {
+    const { data: cards } = await useAsyncData(
+      'services-section',
+      () => queryContent('services').find(),
+      {
+        transform(data) {
+          const items = data.map((item) => ({
+            ...item,
+            pos: fractionToDecimal(item.pos),
+          }));
+          return sortBy(items, ['pos']).reverse().slice(0, 4);
+        },
+      },
+    );
+    return { cards };
   },
 };
 </script>

@@ -1,8 +1,8 @@
 <template>
   <v-btn
     target="_blank"
-    large
-    text
+    size="large"
+    variant="text"
     :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
       `${streetAddress || ''} ${city || ''} ${region || ''} ${postcode || ''} ${
         country || ''
@@ -13,12 +13,11 @@
     itemscope
     itemtype="https://schema.org/PostalAddress"
   >
-    <font-awesome-icon
-      :icon="faMapMarker"
-      title="location"
-      fixed-width
-      pull="left"
-    />
+    <BaseIcon
+      icon="fa-solid:map-marker-alt"
+      style="width: 14px; height: 14px; margin-right: 0.3em"
+      color="black"
+    ></BaseIcon>
     <span v-if="streetAddress" v-show="false" itemprop="streetAddress">{{
       streetAddress
     }}</span>
@@ -37,7 +36,6 @@
 </template>
 
 <script>
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 export default {
   props: {
     streetAddress: { type: String, default: null },
@@ -47,8 +45,5 @@ export default {
     country: { type: String, default: null },
     countryCode: { type: String, default: null },
   },
-  data: () => ({
-    faMapMarker,
-  }),
 };
 </script>

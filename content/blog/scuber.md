@@ -19,7 +19,7 @@ The scUber promotion aimed to reset the story on the reef and grow positive awar
 
 The campaign was delivered in key western markets including Australia, New Zealand, the United Kingdom, the USA, Canada and France. Partnering with Uber gave TEQ unprecedented access to millions of loyal Uber customers to help tell the story of the Great Barrier Reef to global audiences. Great Barrier Reef holiday packages were also marketed through key distribution partners in these markets to support the campaign and drive visitation to Queensland. The campaign also included a consumer competition allowing one winner from each key western source market plus a friend to win a trip of a lifetime to the Great Barrier Reef and ride in the scUber.
 
-<iframe width="1170" height="658" src="https://www.youtube.com/embed/grLSpuNx4UM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="585" height="329" src="https://www.youtube.com/embed/grLSpuNx4UM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mx-auto d-block"></iframe>
 
 ## SUMMARY
 

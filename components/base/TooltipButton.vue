@@ -1,11 +1,10 @@
 <template>
-  <v-tooltip top>
-    <template #activator="{ on, attrs }">
+  <v-tooltip location="top">
+    <template #activator="{ props }">
       <v-btn
         icon
-        v-bind="{ ...$attrs, ...attrs, ...btnAttrs }"
+        v-bind="{ ...$attrs, ...props, ...btnAttrs }"
         :class="buttonClass"
-        v-on="on"
       >
         <BaseIcon color="grey" :icon="_icon"></BaseIcon>
         <span class="d-sr-only-focusable">{{ tooltip }}</span>

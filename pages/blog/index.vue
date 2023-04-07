@@ -23,8 +23,31 @@ export default {
   components: {
     BlogCard,
   },
-  async asyncData({ $content }) {
-    const items = await $content('blog').sortBy('date', 'desc').fetch();
+  async setup() {
+    const route = useRoute();
+    const draft = Boolean(route?.query?.draft);
+    const { data: items } = await useAsyncData(
+      'blog',
+      () =>
+        queryContent('blog')
+          .where({ deleted_at: { $exists: false } })
+          .sort({ date: -1 })
+          .find(),
+      {
+        transform(data) {
+          const filtered = data.filter((item) => {
+            return draft || !item.draft;
+          });
+          return filtered.map((item) => {
+            const slug = item._path.replace('/blog/', '');
+            return {
+              ...item,
+              slug,
+            };
+          });
+        },
+      },
+    );
     return {
       items,
     };
@@ -34,7 +57,6 @@ export default {
       heading: 'Blog',
       description: "Damien Robinson's personal blog",
       total: 0,
-      items: [],
     };
   },
   head() {

@@ -1,17 +1,17 @@
 <template>
-  <section v-bind="$attrs" :style="styles" v-on="$listeners">
+  <section v-bind="$attrs" :style="styles">
     <slot />
   </section>
 </template>
 
 <script>
 // Components
-import Measurable from 'vuetify/lib/mixins/measurable';
+// import Measurable from 'vuetify/lib/mixins/measurable';
 
 export default {
   name: 'BaseSection',
 
-  mixins: [Measurable],
+  // mixins: [Measurable],
 
   props: {
     space: {
@@ -23,7 +23,7 @@ export default {
   computed: {
     styles() {
       return {
-        ...this.measurableStyles,
+        // ...this.measurableStyles,
         padding: `${this.space}px 0`,
       };
     },

@@ -5,7 +5,6 @@
     max-width="28"
     min-height="3"
     v-bind="$attrs"
-    v-on="$listeners"
   ></v-responsive>
 </template>
 
@@ -29,7 +28,7 @@ export default {
 
   computed: {
     classes() {
-      return [this.color, this.margin, `mb-${this.space}`];
+      return [`bg-${this.color}`, this.margin, `mb-${this.space}`];
     },
     margin() {
       switch (this.align) {

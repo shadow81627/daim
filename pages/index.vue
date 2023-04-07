@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Hero subheading="Digital Consultant">
+    <Hero subheading="Digital Consultant" :description="description">
       <template #heading>
         <img
-          :src="require('~/assets/img/logo.svg?inline')"
+          :src="logo"
           :height="192"
           :width="480"
           alt="Daim"
@@ -19,22 +19,13 @@
 </template>
 
 <script>
+import logo from '~/assets/img/logo.svg?url';
 export default {
   name: 'HomePage',
   data: () => ({
+    logo,
     description:
       'Get a high quality custom landing page or microsite built by professionals.',
   }),
-  head() {
-    return {
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
-        },
-      ],
-    };
-  },
 };
 </script>

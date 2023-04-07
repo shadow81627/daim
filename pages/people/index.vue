@@ -31,19 +31,33 @@ export default {
   components: {
     Feature,
   },
-  async asyncData({ $content }) {
-    const data = await $content('team').fetch();
-    const items = data.map((item) => {
-      const firstname = item.basics.firstname;
-      const lastname = item.basics.lastname;
-
-      const name = `${firstname} ${lastname}`;
-      const description = item.basics.summary;
-      const image = `/img/team/${item.slug}.png`;
-      const url = `/people/${item.slug}`;
-      const subheading = item.basics.label;
-      return { name, description, image, url, subheading, imageWidth: 360 };
-    });
+  async setup() {
+    const { data: items } = await useAsyncData(
+      'team',
+      () => queryContent('team').find(),
+      {
+        transform(data) {
+          return data.map((item) => {
+            const slug = item._path.replace('/team/', '');
+            const firstname = item.basics.firstname;
+            const lastname = item.basics.lastname;
+            const name = `${firstname} ${lastname}`;
+            const description = item.basics.summary;
+            const image = `/img/team/${slug}.png`;
+            const url = `/people/${slug}`;
+            const subheading = item.basics.label;
+            return {
+              name,
+              description,
+              image,
+              url,
+              subheading,
+              imageWidth: 360,
+            };
+          });
+        },
+      },
+    );
     return { items };
   },
   data() {
@@ -51,7 +65,6 @@ export default {
       heading: 'Team',
       description:
         'Meet the awesome team working building better software for the world.',
-      items: [],
     };
   },
   head() {

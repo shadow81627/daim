@@ -2,25 +2,38 @@
   <v-container class="pa-0 hidden-print-only" fluid>
     <v-row no-gutters align="center" justify="center">
       <v-col cols="12" align-self="center">
-        <v-card :color="color" flat dark tile>
-          <v-img
-            :lazy-src="$img(src, { width: 10, quality: 70 })"
-            :src="$img(src, { quality: 70, height: 500 })"
-            :srcset="_srcset.srcset"
-            :height="height"
-            :sizes="_srcset.size"
-            :gradient="gradient"
-          >
-            <img
-              style="display: none"
-              :src="$img(src, { quality: 70, height: 500 })"
-              :srcset="_srcset.srcset"
-              :height="height"
-              :sizes="_srcset.size"
-              alt=""
-              loading="lazy"
-              itemprop="image"
-            />
+        <v-card
+          :color="color"
+          flat
+          theme="dark"
+          rounded="0"
+          :style="{ backgroundColor: color }"
+        >
+          <v-responsive :height="height" :gradient="gradient">
+            <template #additional>
+              <NuxtPicture
+                preload
+                :src="src"
+                :height="height"
+                alt=""
+                itemprop="image"
+                fit="cover"
+                :img-attrs="{ style: imageStyle }"
+                :style="imageStyle"
+              ></NuxtPicture>
+              <div
+                style="
+                  background-repeat: no-repeat;
+                  z-index: -1;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+                :style="{ backgroundImage: `linear-gradient(${gradient})` }"
+              ></div>
+            </template>
             <slot>
               <v-container
                 class="fill-height align-items-end justify-start"
@@ -31,7 +44,7 @@
                     <slot name="heading">
                       <h1
                         v-if="heading"
-                        class="mb-4 text-shadow"
+                        class="mb-4 text-shadow text-h3 font-weight-medium"
                         itemprop="name"
                       >
                         {{ heading }}
@@ -39,7 +52,7 @@
                     </slot>
                     <h2
                       v-if="subheading"
-                      class="subheading text-shadow"
+                      class="subheading text-shadow text-h4 text-uppercase"
                       itemprop="description"
                     >
                       {{ subheading }}
@@ -48,7 +61,7 @@
                 </v-row>
               </v-container>
             </slot>
-          </v-img>
+          </v-responsive>
         </v-card>
       </v-col>
     </v-row>
@@ -60,6 +73,7 @@ export default {
   props: {
     heading: { type: String, default: null },
     subheading: { type: String, default: null },
+    description: { type: String, default: null },
     alt: { type: String, default: '' },
     gradient: {
       type: String,
@@ -69,60 +83,37 @@ export default {
     height: { type: [Number, String], default: 500 },
     color: {
       type: String,
-      default: null,
+      default: '#eeeeee',
     },
     src: {
       type: String,
       default: '/img/header-bg.jpg',
     },
   },
-  head() {
-    return {
-      meta: [
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: `${this.$config.BASE_URL}${this.$img(this.src, {
-            width: 1280,
-            height: 630,
-          })}`,
-        },
-        {
-          hid: 'og:image:width',
-          property: 'og:image:width',
-          content: 1280,
-        },
-        {
-          hid: 'og:image:height',
-          property: 'og:image:height',
-          content: 630,
-        },
-      ],
-      link: [
-        {
-          rel: 'preload',
-          as: 'image',
-          href: `${this.$config.BASE_URL}${this.$img(this.src, {
-            width: 1280,
-            height: 630,
-          })}`,
-          imagesrcset: this._srcset.srcset,
-          imagesizes: this._srcset.size,
-        },
-      ],
-    };
-  },
-  computed: {
-    _srcset() {
-      return this.$img.getSizes(this.src, {
-        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
-        modifiers: {
-          format: 'webp',
-          quality: 70,
-          height: 500,
-        },
-      });
-    },
+  setup(props) {
+    const imageStyle = `z-index: -1;
+    object-fit: cover;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;`;
+    const $img = useImage();
+    const ogImage = $img(props.src, {
+      width: 1280,
+      height: 630,
+      fit: 'cover',
+    });
+    useServerSeoMeta({
+      title: props.heading,
+      ogTitle: props.heading,
+      description: props.description ?? props.subheading,
+      ogDescription: props.description ?? props.subheading,
+      ogImage,
+      ogImageHeight: props.height,
+      ogImageWidth: props.width,
+    });
+    return { imageStyle };
   },
 };
 </script>

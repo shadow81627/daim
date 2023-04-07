@@ -1,13 +1,6 @@
 {
+  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM"
-    ],
     "esModuleInterop": true,
     "allowJs": true,
     "sourceMap": true,
@@ -23,6 +16,8 @@
       ]
     },
     "types": [
+      "@types/crypto-js",
+      "@unlighthouse/nuxt",
       "@types/node",
       "@nuxt/types",
       "@types/sharp",

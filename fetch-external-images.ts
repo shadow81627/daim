@@ -104,7 +104,7 @@ async function updateContent({
             if (imageUrl.startsWith('http')) {
               await downloadImage(imageUrl, imagePath);
             } else {
-              await resize({ input: `static/${imageUrl}`, output: imagePath });
+              await resize({ input: `public/${imageUrl}`, output: imagePath });
             }
             const { dominant } = await sharp(imagePath).stats();
             offer.color = rgbToHex(dominant);
@@ -129,7 +129,7 @@ async function updateContent({
           await downloadImage(image.imageUrl, image.imagePath);
           await resize({ input: image.imagePath, output: image.imagePath });
         } else {
-          const input = `static/${image.imageUrl}`.replace('//', '/');
+          const input = `public/${image.imageUrl}`.replace('//', '/');
           await resize({ input, output: image.imagePath });
         }
         if (image.type === 'main' && !content.color) {
@@ -164,29 +164,29 @@ async function updateContent({
     {
       slug: 'tools',
       folder: 'content/tools/',
-      imageFolder: 'static/img/tools/',
+      imageFolder: 'public/img/tools/',
     },
     {
       slug: 'alternatives',
       folder: 'content/alternatives/',
-      imageFolder: 'static/img/alternatives/',
+      imageFolder: 'public/img/alternatives/',
     },
     {
       slug: 'team',
       folder: 'content/team/',
-      imageFolder: 'static/img/team/',
+      imageFolder: 'public/img/team/',
       imageKey: 'basics.picture',
       rename: false,
     },
     {
       slug: 'services',
       folder: 'content/services/',
-      imageFolder: 'static/img/services/',
+      imageFolder: 'public/img/services/',
     },
     {
       slug: 'portfolio',
       folder: 'content/projects/',
-      imageFolder: 'static/img/portfolio/',
+      imageFolder: 'public/img/portfolio/',
     },
   ];
   for (const content of contents) {
@@ -205,19 +205,20 @@ async function updateContent({
     'img/portfolio/scuber.jpg',
     'https://begriffs.com/images/reorder-list.png',
     'https://wearepixel.com.au/static/93dc2daa73fab468fc19e7d053047220/47498/selecting_a_digital_agency.jpg',
+    'https://tailwind.build/tailwind/static/img/components.png?v=1',
   ];
   // get list of urls to crawl from content files
   for await (const image of images) {
     const slug = path.parse(image).name;
     console.log(slug);
-    const imagePath = `static/img/blog/${slug}.png`;
+    const imagePath = `public/img/blog/${slug}.png`;
     const fileExists = await checkFileExists(imagePath);
     if (!fileExists) {
       if (image.startsWith('http')) {
         await downloadImage(image, imagePath);
         await resize({ input: imagePath, output: imagePath });
       } else {
-        await resize({ input: `static/${image}`, output: imagePath });
+        await resize({ input: `public/${image}`, output: imagePath });
       }
     }
     // const { dominant } = await sharp(imagePath).stats();

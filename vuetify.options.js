@@ -17,9 +17,11 @@ export default {
     dark: false,
     themes: {
       light: {
+        dark: false,
         primary: '#1a1a1a',
       },
       dark: {
+        dark: true,
         primary: '#1a1a1a',
       },
     },

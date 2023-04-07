@@ -2,48 +2,42 @@
   <v-app clipped-left>
     <v-navigation-drawer
       v-model="drawer"
-      :clipped="$vuetify.breakpoint.lgAndUp"
-      app
       class="hidden-print-only"
       disable-resize-watcher
     >
-      <v-list dense>
+      <v-list dense :role="undefined">
         <v-list-item
           v-for="item in items"
           :key="item.name"
-          :to="localePath(item.route ? item.route : {})"
-          nuxt
+          :to="localePath(item.route)"
+          exact
           class="text-decoration-none"
         >
-          <v-list-item-action>
-            <BaseIcon :icon="item.icon"></BaseIcon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
-              item.name
-            }}</v-list-item-title>
-          </v-list-item-content>
+          <template #prepend>
+            <v-list-item-action style="margin-right: 32px">
+              <BaseIcon :icon="item.icon"></BaseIcon>
+            </v-list-item-action>
+          </template>
+          <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
+            item.name
+          }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
-      :clipped-left="$vuetify.breakpoint.lgAndUp"
-      app
-      fixed
       color="#343a40"
-      dark
       class="hidden-print-only"
       height="64"
+      theme="dark"
+      :order="-1"
     >
-      <v-app-bar-nav-icon
-        aria-label="menu"
-        dark
-        @click.stop="drawer = !drawer"
-      />
+      <v-app-bar-nav-icon aria-label="menu" dark @click="drawer = !drawer">
+        <v-icon icon="$menu"></v-icon>
+      </v-app-bar-nav-icon>
       <v-toolbar-title class="ml-0 px-3 d-flex align-center">
         <a href="/" title="Home" aria-label="Home">
           <img
-            :src="require('~/assets/img/logo.svg?inline')"
+            :src="logo"
             class="navbar-brand"
             height="24"
             width="60"
@@ -53,75 +47,59 @@
       </v-toolbar-title>
       <v-spacer />
       <v-tabs class="hidden-sm-and-down" optional right>
-        <v-tabs-slider></v-tabs-slider>
         <v-tab
-          v-for="{ name, route } in items.filter((item) => item.show_tab)"
-          :key="route"
-          :to="localePath(route ? route : {})"
+          v-for="item in (items || []).filter((item) => item.show_tab)"
+          :key="item.route"
+          :to="localePath(item.route)"
+          exact
           text
           itemscope
           itemtype="https://schema.org/SiteNavigationElement"
         >
-          {{ name }}
+          {{ item.title }}
         </v-tab>
       </v-tabs>
     </v-app-bar>
     <v-main
+      style="padding-top: 64px"
       role="main"
       itemprop="mainContentOfPage"
       itemscope
       itemtype="https://schema.org/WebPageElement"
     >
-      <nuxt style="min-height: 100vh" keep-alive></nuxt>
+      <slot style="min-height: 100vh" keep-alive></slot>
       <the-footer></the-footer>
     </v-main>
   </v-app>
 </template>
 
-<script>
+<script lang="ts">
 import { sortBy } from 'lodash-es';
 import TheFooter from '@/components/layout/the-footer.vue';
 import fractionToDecimal from '~/utils/fraction-to-decimal';
+import logo from '~/assets/img/logo.svg?url';
 export default {
   components: {
     TheFooter,
   },
-  data() {
-    return {
-      drawer: false,
-      items: [],
-    };
-  },
-  async fetch() {
-    const items = (await this.$content('pages').fetch()).map((item) => ({
-      ...item,
-      pos: fractionToDecimal(item.pos),
-    }));
-    this.items = sortBy(items, ['show_tab', 'pos']);
-  },
-  fetchKey: 'layout/default',
-  head() {
-    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
-    const { href: canonical } = i18nHead.link.find(
-      ({ hid }) => hid === 'i18n-can',
-    );
-    return {
-      htmlAttrs: {
-        itemscope: '',
-        itemtype: 'https://schema.org/WebPage',
-        ...i18nHead.htmlAttrs,
-      },
-      meta: [
-        ...i18nHead.meta,
-        {
-          hid: 'og:url',
-          name: 'og:url',
-          property: 'og:url',
-          content: canonical,
+  async setup() {
+    const localePath = useLocalePath();
+    const { data: items } = await useAsyncData(
+      'layout-pages',
+      () => queryContent('pages').find(),
+      {
+        // server: false,
+        transform(data) {
+          const items = data.map((item) => ({
+            ...item,
+            pos: fractionToDecimal(item.pos),
+          }));
+          return sortBy(items, ['show_tab', 'pos']);
         },
-      ],
-      link: [...i18nHead.link],
-    };
+      },
+    );
+    const drawer = ref(false);
+    return { items, drawer, logo, localePath };
   },
   mounted() {
     const beforePrint = function () {
@@ -146,3 +124,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.v-tab:not(.v-tab--selected) .v-btn__content {
+  color: hsla(0, 0%, 100%, 0.6) !important;
+}
+</style>

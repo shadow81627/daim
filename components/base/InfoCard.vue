@@ -1,39 +1,47 @@
 <template>
   <v-theme-provider :dark="dark">
-    <v-container class="pa-0">
+    <v-container class="pa-0" v-bind="$attrs">
       <v-row :justify="justify" no-gutters>
         <v-col v-if="icon" :class="`text-${align}`" cols="12" class="mb-4">
           <BaseIcon :color="color" :icon="icon"></BaseIcon>
         </v-col>
 
         <v-col v-if="title || subtitle" :cols="callout ? 9 : 12">
-          <BaseSubtitle v-if="subtitle" :title="subtitle" space="1" />
-
-          <BaseTitle
-            :title="title"
-            class="text-uppercase"
+          <BaseSubtitle
+            v-if="subtitle"
+            :title="subtitle"
             space="1"
-            :tag="`h${level}`"
-            :itemprop="titleItemprop"
-          />
+          ></BaseSubtitle>
 
-          <BaseDivider :color="color" />
+          <component
+            :is="level ? `h${level}` : 'h3'"
+            :class="`text-${align ?? 'center'} text-${
+              level ? `h${level + 2}` : 'h5'
+            }`"
+            class="text-uppercase font-weight-medium"
+            space="1"
+            :itemprop="titleItemprop"
+          >
+            {{ title }}
+          </component>
+
+          <BaseDivider :color="color" :align="align"></BaseDivider>
 
           <BaseBody
             v-if="text || $slots.default"
-            :text="text"
             space="6"
             :itemprop="bodyItemprop"
           >
-            <slot />
+            <slot>
+              {{ text }}
+            </slot>
           </BaseBody>
         </v-col>
 
         <v-col v-if="callout" cols="2">
-          <div
-            class="display-3 grey--text text--lighten-4 font-weight-bold pr-8"
-            v-text="callout"
-          />
+          <div class="text-h2 text-grey-lighten-4 font-weight-bold pr-8">
+            {{ callout }}
+          </div>
         </v-col>
       </v-row>
     </v-container>
@@ -48,6 +56,7 @@ export default {
   name: 'BaseInfoCard',
 
   mixins: [Heading],
+  inheritAttrs: false,
 
   props: {
     dark: Boolean,

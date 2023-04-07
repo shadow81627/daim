@@ -1,6 +1,9 @@
 <template>
-  <Hero :src="src">
-    <Breadcrumb absolute dark></Breadcrumb>
+  <Hero
+    :src="src"
+    v-bind="{ subheading: summary, heading: title, description }"
+  >
+    <Breadcrumb absolute dark class="pa-4"></Breadcrumb>
     <v-row class="fill-height mx-0 pa-4" no-gutters>
       <v-col
         class="d-flex text-left align-end justify-start"
@@ -9,7 +12,7 @@
       >
         <v-card color="transparent" flat>
           <v-card-title class="text-break">
-            <h1 class="mb-0" itemprop="name">{{ title }}</h1>
+            <h1 class="mb-0 text-uppercase" itemprop="name">{{ title }}</h1>
           </v-card-title>
           <v-card-subtitle v-if="summary" itemprop="description">{{
             summary
@@ -26,7 +29,7 @@
             :href="credit.by.href"
             rel="noopener"
             target="_blank"
-            class="white--text"
+            class="text-white"
             >{{ credit.by.text }}</a
           >
           on
@@ -34,7 +37,7 @@
             :href="credit.on.href"
             rel="noopener"
             target="_blank"
-            class="white--text"
+            class="text-white"
             >{{ credit.on.text }}</a
           >
         </span>

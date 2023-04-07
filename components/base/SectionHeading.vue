@@ -7,30 +7,24 @@
       class="mb-4"
       color="primary"
       dark
-    />
+    ></BaseAvatar>
 
-    <BaseSubtitle v-if="subtitle" :title="subtitle" space="1" tag="h3" />
+    <h3 v-if="subtitle" space="1">{{ subtitle }}</h3>
 
-    <BaseSubheading
-      v-if="title"
-      :align="align"
-      :title="title"
-      class="text-uppercase"
-      space="2"
-    />
+    <h2 v-if="title" :align="align" class="text-uppercase text-h4" space="2">
+      {{ title }}
+    </h2>
 
-    <BaseDivider :color="color" />
+    <BaseDivider :color="color"></BaseDivider>
 
     <BaseBody
       v-if="$slots.default || text"
       class="mx-auto px-2"
       max-width="700"
     >
-      <slot v-if="$slots.default" />
-
-      <template v-else>
+      <slot>
         {{ text }}
-      </template>
+      </slot>
     </BaseBody>
   </div>
 </template>

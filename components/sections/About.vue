@@ -48,31 +48,23 @@
   </BaseSection>
 </template>
 
-<script>
+<script lang="ts">
 import countries from 'i18n-iso-countries';
 import englishCountries from 'i18n-iso-countries/langs/en.json';
+// eslint-disable-next-line import/no-named-as-default-member
 countries.registerLocale(englishCountries);
 export default {
-  data() {
-    return {
-      name: 'Damien',
-      typeDisplay: 'Digital Consultant',
-      experience: '5+',
-      description:
-        'He specialises in handcrafted, bespoke websites, with an interest in open source, marketing and ecommerce. Reach out about your fresh new digital presence today.',
-      // priceRange: '$$',
-      priceRange: undefined,
-      url: 'https://daim.dev/',
-      email: 'contact@daim.dev',
-      phone: undefined,
-      city: undefined,
-      streetAddress: undefined,
-      region: undefined,
-      postcode: undefined,
-      country: undefined,
-    };
-  },
-  async fetch() {
+  async setup() {
+    const { data } = await useAsyncData(
+      'team/damien-robinson',
+      () => queryContent('team', 'damien-robinson').findOne(),
+      {
+        default() {
+          return { basics: { location: {} } };
+        },
+      },
+    );
+
     const {
       basics: {
         profiles,
@@ -90,11 +82,11 @@ export default {
         },
         summary,
       },
-    } = await this.$content('team', 'damien-robinson').fetch();
-
+    } = data.value;
     const locale = 'en';
+    // eslint-disable-next-line import/no-named-as-default-member
     const country = countries.getName(countryCode, locale);
-    const data = {
+    return {
       profiles,
       firstname,
       lastname,
@@ -108,7 +100,19 @@ export default {
       postcode,
       summary,
     };
-    Object.assign(this.$data, data);
+  },
+  data() {
+    return {
+      name: 'Damien',
+      typeDisplay: 'Digital Consultant',
+      experience: '5+',
+      description:
+        'He specialises in handcrafted, bespoke websites, with an interest in open source, marketing and ecommerce. Reach out about your fresh new digital presence today.',
+      // priceRange: '$$',
+      priceRange: undefined,
+      url: 'https://daim.dev/',
+      email: 'contact@daim.dev',
+    };
   },
 };
 </script>

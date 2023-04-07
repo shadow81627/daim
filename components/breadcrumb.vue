@@ -7,8 +7,8 @@
       itemtype="https://schema.org/BreadcrumbList"
       itemscope
     >
-      <template #item="{ item }">
-        <v-breadcrumbs-item v-bind="item" itemprop="itemListElement">
+      <template #title="{ item }">
+        <v-breadcrumbs-item v-bind="item" itemprop="itemListElement" exact>
           {{ item.text }}
         </v-breadcrumbs-item>
       </template>
@@ -21,29 +21,25 @@ import { startCase } from 'lodash-es';
 import titleCase from '@/utils/title-case';
 export default {
   props: {
-    dark: { type: Boolean, default: false },
     absolute: { type: Boolean, default: false },
   },
-  computed: {
-    breadcrumbs() {
-      // trim leading and trailing slash from pathname and split into segments array
-      const segments = this.$route.path.replace(/^\/+|\/+$/g, '').split('/');
-      const breadcrumbs = [{ text: 'Home', to: '/' }];
+  setup() {
+    const route = useRoute();
+    // trim leading and trailing slash from pathname and split into segments array
+    const segments = route.path.replace(/^\/+|\/+$/g, '').split('/');
+    const breadcrumbs = [{ text: 'Home', to: '/' }];
 
-      segments.forEach((segment, index) => {
-        const text = titleCase(startCase(segment));
-        const to = this.localePath(
-          '/' + segments.slice(0, index + 1).join('/'),
-        );
-        breadcrumbs.push({
-          text,
-          to,
-          exact: true,
-        });
+    segments.forEach((segment, index) => {
+      const text = titleCase(startCase(segment));
+      const to = '/' + segments.slice(0, index + 1).join('/');
+      breadcrumbs.push({
+        text,
+        to,
+        exact: true,
       });
+    });
 
-      return breadcrumbs;
-    },
+    return { breadcrumbs };
   },
 };
 </script>

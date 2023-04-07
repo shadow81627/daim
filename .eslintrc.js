@@ -9,7 +9,9 @@ module.exports = {
     sourceType: 'module',
   },
   extends: [
-    '@nuxtjs',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:vuetify/base',
     '@nuxtjs/eslint-config-typescript',
     'prettier',
     'plugin:prettier/recommended',
@@ -22,4 +24,14 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/multi-word-component-names': 'off',
   },
+  ignorePatterns: [
+    'public/**',
+    'release.config.js',
+    'yarn.lock',
+    '.yarn/**',
+    'content/**',
+    'test/**',
+    '.nuxt/**',
+    '**/sw.js',
+  ],
 };

@@ -1,7 +1,7 @@
 <template>
   <v-theme-provider :dark="dark">
     <div>
-      <BaseInfoCard :title="title" color="primary" :level="2">
+      <BaseInfoCard :title="title" align="left" color="primary" :level="2">
         <slot></slot>
       </BaseInfoCard>
 
@@ -21,32 +21,36 @@
 
 <script>
 import { mdiOpenInNew } from '@mdi/js';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 export default {
   props: {
     dark: Boolean,
     dense: { type: Boolean, default: true },
     title: { type: String, default: null },
   },
-  data: () => ({
-    faArrowRight,
-    mdiOpenInNew,
-    items: [],
-  }),
-  async fetch() {
-    const {
-      basics: { phone },
-    } = await this.$content('team', 'damien-robinson').fetch();
-
-    const socials = await this.$content('socials').fetch();
-    const contact = await this.$content('contact').fetch();
-
-    const data = {
-      items: [...contact, ...socials],
-      phone,
-    };
-    Object.assign(this.$data, data);
+  async setup() {
+    const [{ data: phone }, { data: socials }, { data: contact }] =
+      await Promise.all([
+        useAsyncData(
+          'team-damien-robinson',
+          () => queryContent('team', 'damien-robinson').find(),
+          {
+            transform(data) {
+              const {
+                basics: { phone },
+              } = data;
+              return phone;
+            },
+          },
+        ),
+        useAsyncData('socials', () => queryContent('socials').find()),
+        useAsyncData('contact', () => queryContent('contact').find()),
+      ]);
+    const items = [...contact.value, ...socials.value];
+    return { items, phone };
   },
+  data: () => ({
+    mdiOpenInNew,
+  }),
   fetchKey: 'business-contact',
 };
 </script>

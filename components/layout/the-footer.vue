@@ -3,130 +3,73 @@
     <v-container>
       <v-row class="py-0 py-md-7">
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
-          <v-card flat tile color="transparent">
-            <v-card-title class="headline">Contact</v-card-title>
+          <v-card flat rounded="0" color="transparent">
+            <v-card-title class="text-h5">Contact</v-card-title>
           </v-card>
-          <v-card flat tile color="transparent">
+          <v-card flat rounded="0" color="transparent">
             <BaseLinks :items="contact">
               <template #default="{ item }">
-                <v-list-item-subtitle v-if="item.subtitle">{{
-                  item.subtitle
-                }}</v-list-item-subtitle>
+                <v-list-item-subtitle
+                  v-if="item.subtitle"
+                  class="!opacity-90"
+                  >{{ item.subtitle }}</v-list-item-subtitle
+                >
                 <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
                   item.title
                 }}</v-list-item-title>
               </template>
             </BaseLinks>
           </v-card>
-          <v-card
-            v-if="false"
-            flat
-            tile
-            color="transparent"
-            :href="`https://www.google.com.au/maps/search/?api=1&query=${encodeURIComponent(
-              `${location.companyName} ${location.streetAddress || ''} ${
-                location.city || ''
-              } ${location.region || ''} ${location.postcode || ''} ${
-                location.country || ''
-              }`,
-            )}`"
-            target="_blank"
-            rel="noreferrer"
-            itemprop="address"
-            itemscope
-            itemtype="https://schema.org/PostalAddress"
-          >
-            <v-card-text class="py-2">
-              <span class="text--primary body-1 pt-0">
-                <font-awesome-icon
-                  :icon="faMapMarker"
-                  title="location"
-                  fixed-width
-                />
-                Address
-              </span>
-              <div>
-                <span v-if="location.companyName">
-                  {{ location.companyName }},
-                </span>
-                <span v-if="location.placeName">
-                  {{ location.placeName }}
-                </span>
-              </div>
-              <div v-if="location.streetAddress" itemprop="streetAddress">
-                {{ location.streetAddress }}
-              </div>
-              <span v-if="location.city" itemprop="addressLocality">{{
-                location.city
-              }}</span>
-              <span v-show="!location.city" itemprop="addressRegion">{{
-                location.region
-              }}</span>
-              <span v-if="location.postcode" itemprop="postalCode">{{
-                location.postcode
-              }}</span
-              ><span
-                v-if="
-                  (location.country || location.countryCode) &&
-                  (location.postcode || location.city || location.region)
-                "
-                >,</span
-              >
-              <span itemprop="addressCountry">{{
-                location.country || location.countryCode
-              }}</span>
-            </v-card-text>
-          </v-card>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
-          <v-card flat tile color="transparent">
-            <v-card-title class="headline">Pages</v-card-title>
+          <v-card flat rounded="0" color="transparent">
+            <v-card-title class="text-h5">Pages</v-card-title>
           </v-card>
-          <v-list dense flat tile color="transparent">
+          <v-list dense variant="flat" :role="undefined">
             <v-list-item
               v-for="item in nav1"
               :key="item.name"
-              :to="localePath(item.route ? item.route : {})"
-              nuxt
+              :to="localePath(item.route)"
+              :active="false"
               class="text-decoration-none"
             >
-              <v-list-item-action>
-                <BaseIcon :icon="item.icon"></BaseIcon>
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
-                  item.name
-                }}</v-list-item-title>
-              </v-list-item-content>
+              <template #prepend>
+                <v-list-item-action style="margin-right: 32px">
+                  <BaseIcon :icon="item.icon"></BaseIcon>
+                </v-list-item-action>
+              </template>
+              <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
+                item.name
+              }}</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
-          <v-card flat tile color="transparent">
-            <v-card-title class="headline">&nbsp;</v-card-title>
+          <v-card flat rounded="0" color="transparent">
+            <v-card-title class="text-h5">&nbsp;</v-card-title>
           </v-card>
-          <v-list dense flat tile color="transparent">
+          <v-list dense variant="flat" :role="undefined">
             <v-list-item
               v-for="item in nav2"
               :key="item.name"
-              :to="localePath(item.route ? item.route : {})"
-              nuxt
+              :to="localePath(item.route)"
+              :active="false"
               class="text-decoration-none"
             >
-              <v-list-item-action>
-                <BaseIcon :icon="item.icon"></BaseIcon>
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
-                  item.name
-                }}</v-list-item-title>
-              </v-list-item-content>
+              <template #prepend>
+                <v-list-item-action style="margin-right: 32px">
+                  <BaseIcon :icon="item.icon"></BaseIcon>
+                </v-list-item-action>
+              </template>
+              <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
+                item.name
+              }}</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="3" class="px-xs-0">
-          <v-card flat tile color="transparent">
-            <v-card-title class="headline">Socials</v-card-title>
+          <v-card flat rounded="0" color="transparent">
+            <v-card-title class="text-h5">Socials</v-card-title>
           </v-card>
           <BaseLinks :items="socials"></BaseLinks>
         </v-col>
@@ -146,13 +89,14 @@
           <div class="ml-auto">
             <v-card flat color="transparent">
               <v-card-text>
-                <span>{{ $config.VERSION }}</span>
-                <span v-if="$config.COMMIT">{{
-                  shortHash($config.COMMIT)
-                }}</span>
-                <nuxt-link :to="localePath('releases')" class="link px-4">
+                <span>{{ version }}</span>
+                <span v-if="commit">{{ shortHash(commit) }}</span>
+                <a
+                  href="https://github.com/shadow81627/daim/releases"
+                  class="link px-4"
+                >
                   <span>Changelog</span>
-                </nuxt-link>
+                </a>
                 <a
                   href="https://stats.uptimerobot.com/X7JPPc4pLz"
                   target="_blank"
@@ -160,7 +104,7 @@
                   class="link px-4"
                   >Status</a
                 >
-                <last-modified v-bind="{ utc }" class="link px-4" />
+                <LastModified v-bind="{ utc }" class="link px-4"></LastModified>
               </v-card-text>
             </v-card>
           </div>
@@ -172,42 +116,55 @@
 
 <script>
 import { sortBy } from 'lodash-es';
-import lastModified from './last-modified';
+import LastModified from './last-modified';
 import fractionToDecimal from '~/utils/fraction-to-decimal';
 export default {
   components: {
-    lastModified,
+    LastModified,
   },
-  data: () => ({
-    utc: false,
-    socials: [],
-    contact: [],
-    nav1: [],
-    nav2: [],
-  }),
-  async fetch() {
-    const socials = await this.$content('socials').fetch();
-    const contact = await this.$content('contact').fetch();
-    const navData = (
-      await this.$content('pages').where({ show_footer: true }).fetch()
-    ).map((item) => ({
-      ...item,
-      pos: fractionToDecimal(item.pos),
-    }));
-    const nav = sortBy(navData, ['show_tab', 'pos']);
-    const navHalf = Math.ceil(nav.length / 2);
-    const nav1 = nav.slice(0, navHalf);
-    const nav2 = nav.slice(-navHalf);
+  async setup() {
+    const localePath = useLocalePath();
+    const config = useRuntimeConfig();
+    const [{ data: socials }, { data: contact }, { data: nav }] =
+      await Promise.all([
+        useAsyncData('footer-socials', () => queryContent('socials').find()),
+        useAsyncData('footer-contact', () => queryContent('contact').find()),
+        useAsyncData(
+          'footer-pages',
+          () => queryContent('pages').where({ show_footer: true }).find(),
+          {
+            transform(data) {
+              const navData = data.map((item) => ({
+                ...item,
+                pos: fractionToDecimal(item.pos),
+              }));
+              const nav = sortBy(navData, ['show_tab', 'pos']);
+              const navHalf = Math.ceil(nav.length / 2);
+              const nav1 = nav.slice(0, navHalf);
+              const nav2 = nav.slice(-navHalf);
+              return { nav1, nav2 };
+            },
+          },
+        ),
+      ]);
 
-    const data = {
+    const nav1 = nav?.value?.nav1 ?? [];
+    const nav2 = nav?.value?.nav2 ?? [];
+
+    const version = config.VERSION;
+    const commit = config.COMMIT;
+
+    return {
+      utc: false,
       contact,
       socials,
       nav1,
       nav2,
+      version,
+      commit,
+      localePath,
     };
-    Object.assign(this.$data, data);
   },
-  fetchKey: 'layout/footer',
   methods: {
     shortHash: (value) => (value ? value.substring(0, 7) : null),
   },

@@ -1,4 +1,11 @@
 .git
 .gitignore
-node_modules/
+# node_modules/
 npm-debug.log
+dist/
+
+.nuxt
+.output
+
+docker-compose.yml
+Dockerfile

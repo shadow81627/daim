@@ -1,5 +1,8 @@
 <template>
-  <v-card class="flex d-flex flex-column justify-between" min-width="240">
+  <v-card
+    class="flex d-flex flex-column justify-between flex-grow-1"
+    min-width="240"
+  >
     <v-img
       v-if="image"
       class="flex-grow-0"
@@ -17,13 +20,7 @@
     <v-card-title>
       <span class="h3 text-break">
         <template v-if="icon">
-          <font-awesome-icon
-            v-if="typeof icon === 'object'"
-            :icon="icon"
-            class="grey--text"
-          />
           <BaseIcon
-            v-else
             :color="iconColor"
             :icon="icon"
             style="font-size: 1em"
@@ -43,20 +40,20 @@
     }}</v-card-subtitle>
 
     <div class="flex-grow-1">
-      <v-card-text v-if="description" class="text--primary body-1 pt-0">
+      <v-card-text v-if="description" class="text--primary text-body-1 pt-0">
         {{ description }}
       </v-card-text>
-      <v-card-text v-if="list" class="text--primary body-1 pt-0">
+      <v-card-text v-if="list" class="text--primary text-body-1 pt-0">
         <ul>
           <li v-for="item in list.slice(0, 4)" :key="item">{{ item }}</li>
         </ul>
       </v-card-text>
-      <v-card-text class="text--primary body-1 pt-0">
+      <v-card-text class="text--primary text-body-1 pt-0">
         <PriceRange :items="plans"></PriceRange>
         <time v-if="startDate" :datetime="new Date(startDate).toISOString()"
           >{{ formatDate(startDate) }}
         </time>
-        <span v-if="startDate && endDate">to</span>
+        <span v-if="startDate && endDate"> to </span>
         <time v-if="endDate" :datetime="new Date(endDate).toISOString()">{{
           formatDate(endDate)
         }}</time>
@@ -102,9 +99,10 @@
 </template>
 
 <script>
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import titleCase from '@/utils/title-case';
 export default {
+  inheritAttrs: false,
   props: {
     location: { type: Object, default: null },
     dark: { type: Boolean, default: false },
@@ -139,12 +137,12 @@ export default {
       return this.imageBackgroundColor ?? this.imageColor;
     },
     lazy() {
-      const svg = Buffer.from(
+      const svg = universalBtoa(
         `<svg xmlns='http://www.w3.org/2000/svg'
       viewBox='00512512'>
       <rect width="100%" height="100%" fill="${this._imageBackgroundColor}"/>
       </svg>`,
-      ).toString('base64');
+      );
       return `data:image/svg+xml;base64,${svg}`;
     },
     img() {
@@ -155,7 +153,7 @@ export default {
         enlarge: undefined,
         fit: this.imageFit,
         trim: undefined,
-        position: 'center',
+        // position: 'center',
         format: 'png',
         background: this.imageColor,
       });
@@ -171,7 +169,7 @@ export default {
           enlarge: undefined,
           fit: this.imageFit,
           trim: undefined,
-          position: 'center',
+          // position: 'center',
         },
       });
     },

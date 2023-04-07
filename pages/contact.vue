@@ -9,7 +9,7 @@
         >
           <v-card color="transparent" flat>
             <v-card-title class="text-break">
-              <h1 class="mb-0">{{ heading }}</h1>
+              <h1 class="mb-0 text-uppercase">{{ heading }}</h1>
             </v-card-title>
             <v-card-subtitle>{{ description }}</v-card-subtitle>
           </v-card>

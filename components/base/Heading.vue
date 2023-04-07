@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" :class="classes" v-bind="$attrs" v-on="$listeners">
+  <component :is="tag" :class="classes" v-bind="$attrs">
     <template v-if="title">
       {{ title }}
     </template>
@@ -33,14 +33,11 @@ export default {
     align: {
       type: String,
       default() {
-        return this.heading.align;
+        return null;
       },
     },
     dense: {
       type: Boolean,
-      default() {
-        return this.isDense;
-      },
     },
     size: {
       type: String,
@@ -82,9 +79,7 @@ export default {
       return classes;
     },
     fontSize() {
-      return this.$vuetify.breakpoint.width >= this.mobileBreakPoint
-        ? this.size
-        : this.mobileSize;
+      return this.mobileSize;
     },
   },
 };

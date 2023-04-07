@@ -5,7 +5,7 @@
       <v-row>
         <v-col
           v-for="feature in features"
-          :key="feature.title"
+          :key="feature.name"
           cols="12"
           :md="features.length % 2 === 0 ? 6 : 4"
         >

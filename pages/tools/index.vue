@@ -10,10 +10,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <DataIterator
-            :items="items"
-            :loading="$fetchState.pending"
-          ></DataIterator>
+          <DataIterator :items="items" :loading="pending"></DataIterator>
         </v-col>
       </v-row>
     </v-container>
@@ -27,31 +24,49 @@ import priceSort from '~/utils/price-sort';
 import DataIterator from '~/components/data-iterator.vue';
 export default {
   components: { DataIterator },
+  async setup() {
+    const sorts = [priceSort, textLength, 'slug'];
+    const route = useRoute();
+    if (route.query.sort) {
+      sorts.unshift(route.query.sort);
+    }
+    const {
+      data: items,
+      pending,
+      refresh,
+    } = await useLazyAsyncData(
+      'tools',
+      () =>
+        queryContent('tools')
+          .where({ deleted_at: { $exists: false } })
+          // .limit(24)
+          .find(),
+      {
+        transform(data) {
+          // const filtered = data.filter((item) => !item.deleted_at);
+          const sorted = sortBy(data, sorts).reverse();
+          const items = sorted.map((item) => {
+            const slug = item._path.replace('/tools/', '');
+            return {
+              ...item,
+              id: slug,
+              url: item.offers ? `/tools/${slug}` : item.url,
+              image: `/img/tools/${slug}.png`,
+              imageColor: item.color,
+            };
+          });
+          return items;
+        },
+      },
+    );
+    return { items, pending, refresh };
+  },
   data() {
     return {
       heading: 'Tools',
       description: 'Check out what we use to create awesome web apps.',
-      items: [],
       defaultPlan: { unset: { price: 0 } },
     };
-  },
-  async fetch() {
-    const sorts = [priceSort, textLength, 'slug'];
-    if (this.$route.query.sort) {
-      sorts.unshift(this.$route.query.sort);
-    }
-    const data = sortBy(
-      (await this.$content('tools').fetch()).filter((item) => !item.deleted_at),
-      sorts,
-    ).reverse();
-    const items = data.map((item) => ({
-      ...item,
-      id: item.slug,
-      url: item.offers ? `/tools/${item.slug}` : item.url,
-      image: `/img/tools/${item.slug}.png`,
-      imageColor: item.color,
-    }));
-    this.items = items;
   },
   fetchKey: 'tools',
   head() {
@@ -67,7 +82,11 @@ export default {
     };
   },
   watch: {
-    '$route.query': '$fetch',
+    '$route.query': function () {
+      if (this.refresh) {
+        this.refresh();
+      }
+    },
   },
 };
 </script>

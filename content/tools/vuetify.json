@@ -2,9 +2,30 @@
   "color": "#080808",
   "createdAt": 1618314116,
   "description": "UI Library with beautifully handcrafted Material Design Components.",
+  "list": [
+    "Tree shaking",
+    "66+ components",
+    "Nuxt 3 Module",
+    "Accessibility (a11y)",
+    "Internationalization (i18n)"
+  ],
   "icon": "logos:vuetifyjs",
   "image": "https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png",
   "name": "Vuetify",
+  "offers": {
+    "Features": {
+      "Nuxt 3 Module": {
+        "name": "Nuxt 3 Module",
+        "url": "https://codybontecou.com/how-to-use-vuetify-with-nuxt-3.html"
+      },
+      "Tree shaking": {
+        "color": "#282828",
+        "image": "https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1614961729/patterns.dev/treeshaking.jpg",
+        "name": "Tree shaking",
+        "url": "https://vuetifyjs.com/en/features/treeshaking/"
+      }
+    }
+  },
   "subheading": "Material Design Component Framework",
   "url": "https://vuetifyjs.com/"
 }

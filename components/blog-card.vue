@@ -1,7 +1,8 @@
 <template>
+  <!-- eslint-disable vuetify/no-deprecated-props -->
   <v-card
     :to="to"
-    class="flex d-flex flex-column justify-between"
+    class="flex d-flex flex-column justify-between flex-grow-1"
     itemprop="blogPost"
     itemscope
     itemtype="https://schema.org/BlogPosting"
@@ -15,12 +16,12 @@
       :sizes="_srcset.size"
       :height="imageHeight"
       itemprop="image"
-      contain
+      cover
     ></v-img>
     <v-card-title class="text-break text-wrap">
       <h2 itemprop="name">{{ title }}</h2>
     </v-card-title>
-    <v-card-subtitle class="body-1">
+    <v-card-subtitle class="text-body-1">
       <time :datetime="date">{{ formatDate(date) }}</time>
       <span v-if="_readTime"> • </span>
       <time v-if="_readTime" :datetime="`${_readTime}m`"
@@ -28,7 +29,7 @@
       >
       <span style="display: none">{{ words(JSON.stringify(body)) }}</span>
     </v-card-subtitle>
-    <v-card-text class="body-1 text--primary" itemprop="description">
+    <v-card-text class="text-body-1 text--primary" itemprop="description">
       {{ description }}
     </v-card-text>
 
@@ -54,8 +55,9 @@
 </template>
 
 <script>
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 export default {
+  inheritAttrs: false,
   props: {
     url: { type: String, default: null },
     slug: { type: String, default: null },
@@ -85,12 +87,12 @@ export default {
       return this.formatDate(this.modified ?? this.date);
     },
     lazy() {
-      const svg = Buffer.from(
+      const svg = universalBtoa(
         `<svg xmlns='http://www.w3.org/2000/svg'
       viewBox='00512512'>
       <rect width="100%" height="100%" fill="${this.imageColor}"/>
       </svg>`,
-      ).toString('base64');
+      );
       return `data:image/svg+xml;base64,${svg}`;
     },
     img() {
@@ -101,7 +103,7 @@ export default {
         enlarge: undefined,
         fit: 'cover',
         trim: undefined,
-        position: 'center',
+        // position: 'center',
       });
     },
     _srcset() {
@@ -115,7 +117,7 @@ export default {
           enlarge: undefined,
           fit: 'cover',
           trim: undefined,
-          position: 'center',
+          // position: 'center',
         },
       });
     },
