@@ -9,17 +9,12 @@
           rounded="0"
           :style="{ backgroundColor: color }"
         >
-          <v-responsive
-            :height="height"
-            :gradient="gradient"
-            :aspect-ratio="width / height"
-          >
+          <v-responsive :height="height" :gradient="gradient">
             <template #additional>
               <NuxtPicture
                 preload
                 :src="src"
                 :height="height"
-                :sizes="srcset.size"
                 alt=""
                 itemprop="image"
                 fit="cover"
@@ -97,6 +92,7 @@ export default {
   },
   setup(props) {
     const imageStyle = `z-index: -1;
+    object-fit: cover;
                   position: absolute;
                   top: 0;
                   left: 0;
@@ -117,28 +113,7 @@ export default {
       ogImageHeight: props.height,
       ogImageWidth: props.width,
     });
-    const srcset = computed(() => {
-      return $img.getSizes(props.src, {
-        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
-        modifiers: {
-          format: 'webp',
-          quality: 70,
-          height: 500,
-        },
-      });
-    });
-    useHead({
-      link: [
-        {
-          rel: 'preload',
-          as: 'image',
-          href: ogImage,
-          imagesrcset: srcset.value.srcset,
-          imagesizes: srcset.value.size,
-        },
-      ],
-    });
-    return { srcset, imageStyle };
+    return { imageStyle };
   },
 };
 </script>
