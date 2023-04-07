@@ -10,6 +10,7 @@ const HOST = process.env.HOST || localIpAddress || '0.0.0.0';
 const PORT = process.env.PORT || '3000';
 
 const BASE_URL = (
+  process.env.NUXT_PUBLIC_SITE_URL ||
   process.env.BASE_URL ||
   process.env.DEPLOY_URL ||
   process.env.URL ||
@@ -28,6 +29,10 @@ const THEME_COLOR = '#343a40';
 
 const IMGPROXY_URL = process.env.IMGPROXY_URL ?? 'https://imgproxy.daim.dev';
 
+const APP_NAME =
+  process.env.APP_NAME ||
+  `${pkg.name.charAt(0).toUpperCase()}${pkg.name.slice(1)}`;
+
 const env = {
   HOST,
   PORT,
@@ -38,9 +43,7 @@ const env = {
     process.env.TRAVIS_COMMIT ||
     process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
-  APP_NAME:
-    process.env.APP_NAME ||
-    `${pkg.name.charAt(0).toUpperCase()}${pkg.name.slice(1)}`,
+  APP_NAME,
 
   // MATOMO_URL: process.env.MATOMO_URL ?? 'https://matomo.daim.dev/',
   // MATOMO_SITE_ID: process.env.MATOMO_SITE_ID ?? 2,
@@ -64,6 +67,13 @@ export default defineNuxtConfig({
       },
       IMGPROXY_KEY: process.env.IMGPROXY_KEY,
       IMGPROXY_SALT: process.env.IMGPROXY_SALT,
+
+      titleSeparator: '|',
+      siteUrl: BASE_URL,
+      siteName: APP_NAME,
+      siteTitle: 'Damien Robinson',
+      siteDescription: DESCRIPTION,
+      language: 'en-AU', // prefer more explicit language codes like `en-AU` over `en`
     },
   },
 
@@ -109,6 +119,8 @@ export default defineNuxtConfig({
    */
   css: ['vuetify/lib/styles/main.sass'],
 
+  extends: ['nuxt-seo-kit'],
+
   /*
    ** Nuxt.js modules
    */
@@ -121,7 +133,6 @@ export default defineNuxtConfig({
     '@formkit/nuxt',
     '@unocss/nuxt',
     '@nuxt/content',
-    // '@nuxtjs/pwa',
     '@nuxtjs/i18n',
     '@nuxt/image-edge',
     'nuxt-icon',

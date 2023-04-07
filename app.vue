@@ -1,6 +1,8 @@
 <template>
   <NuxtLayout>
     <!-- <VitePwaManifest /> -->
+    <SeoKit />
+    <OgImageStatic />
     <NuxtLoadingIndicator />
     <NuxtPage />
   </NuxtLayout>
