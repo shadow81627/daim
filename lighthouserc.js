@@ -12,8 +12,7 @@ module.exports = {
         '/blog/',
         '/contact/',
       ].map((path) => `http://localhost:3001${path}`),
-      // staticDistDir: './dist',
-      startServerCommand: 'npm run serve:lhci',
+      staticDistDir: './.output/public',
     },
     assert: {
       preset: 'lighthouse:recommended',
