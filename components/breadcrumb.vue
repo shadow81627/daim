@@ -38,15 +38,15 @@ export default {
   },
   setup() {
     const breadcrumbs = useBreadcrumbs();
-    const schemaBreadcrumbs = computed(() =>
-      breadcrumbs.value.map((breadcrumb) => breadcrumb.schema),
-    );
+    // const schemaBreadcrumbs = computed(() =>
+    //   breadcrumbs.value.map((breadcrumb) => breadcrumb.schema),
+    // );
 
-    useSchemaOrg([
-      defineBreadcrumb({
-        itemListElement: schemaBreadcrumbs,
-      }),
-    ]);
+    // useSchemaOrg([
+    //   defineBreadcrumb({
+    //     itemListElement: schemaBreadcrumbs,
+    //   }),
+    // ]);
     return { breadcrumbs };
   },
 };

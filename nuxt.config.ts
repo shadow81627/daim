@@ -119,14 +119,13 @@ export default defineNuxtConfig({
    */
   css: ['vuetify/lib/styles/main.sass'],
 
-  extends: ['nuxt-seo-kit'],
-
   /*
    ** Nuxt.js modules
    */
   modules: [
     // '@unlighthouse/nuxt',
     // '@vite-pwa/nuxt',
+    'nuxt-unhead',
     'nuxt-security',
     '@kevinmarrec/nuxt-pwa',
     '@nuxtjs/eslint-module',
