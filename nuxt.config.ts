@@ -162,6 +162,11 @@ export default defineNuxtConfig({
 
   security: {
     rateLimiter: false,
+    headers: {
+      contentSecurityPolicy: {
+        'img-src': ["'self'", 'data:', 'https://imgproxy.daim.dev'],
+      },
+    },
   },
 
   pwa: {
