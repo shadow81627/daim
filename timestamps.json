@@ -669,7 +669,7 @@
   },
   "content/tools/vuetify.json": {
     "created": 1618314116,
-    "modified": 1668925038
+    "modified": 1680417812
   },
   "content/tools/wasabi.json": {
     "created": 1650751612,
@@ -693,7 +693,7 @@
   },
   "content/blog/comparing-vue-component-libraries.md": {
     "created": 1680076118,
-    "modified": 1680152608
+    "modified": 1680417833
   },
   "content/blog/docker.md": {
     "created": 1679376369,
@@ -702,5 +702,9 @@
   "content/socials/twitter.json": {
     "created": 1679876342,
     "modified": 1679876342
+  },
+  "content/blog/nuxt-3-migration.md": {
+    "created": 1680493698,
+    "modified": 1680493698
   }
 }
