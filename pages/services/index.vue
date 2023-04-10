@@ -78,10 +78,14 @@ export default {
           const items = sortBy(
             data
               .filter((item) => !item.deleted_at)
-              .map((item) => ({
-                ...item,
-                pos: fractionToDecimal(item.pos),
-              })),
+              .map((item) => {
+                const slug = item._path.replace('/services/', '');
+                return {
+                  ...item,
+                  slug,
+                  pos: fractionToDecimal(item.pos),
+                };
+              }),
             [
               'pos',
               /**
