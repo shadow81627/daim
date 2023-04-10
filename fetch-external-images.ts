@@ -206,6 +206,7 @@ async function updateContent({
     'https://begriffs.com/images/reorder-list.png',
     'https://wearepixel.com.au/static/93dc2daa73fab468fc19e7d053047220/47498/selecting_a_digital_agency.jpg',
     'https://tailwind.build/tailwind/static/img/components.png?v=1',
+    'https://harlanzw.com/__og_image__/og.png',
   ];
   // get list of urls to crawl from content files
   for await (const image of images) {
