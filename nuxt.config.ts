@@ -126,7 +126,7 @@ export default defineNuxtConfig({
     // '@unlighthouse/nuxt',
     // '@vite-pwa/nuxt',
     'nuxt-unhead',
-    'nuxt-security',
+    // 'nuxt-security',
     '@kevinmarrec/nuxt-pwa',
     '@nuxtjs/eslint-module',
     '@formkit/nuxt',
