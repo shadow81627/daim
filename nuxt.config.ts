@@ -224,14 +224,6 @@ export default defineNuxtConfig({
 
   image: {
     provider: 'imgproxy',
-    screens: {
-      // placeholder: 10,
-      xs: 320,
-      sm: 600,
-      md: 960,
-      lg: 1280,
-      xl: 1920,
-    },
     domains: [env.HOST],
     providers: {
       imgproxy: {
