@@ -161,7 +161,7 @@ export default defineNuxtConfig({
   content: {},
 
   security: {
-    rateLimiter: false,
+    rateLimiter: false, // https://github.com/Baroshem/nuxt-security/issues/137
     headers: {
       contentSecurityPolicy: {
         'img-src': ["'self'", 'data:', 'https://imgproxy.daim.dev'],
