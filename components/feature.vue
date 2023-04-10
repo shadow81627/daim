@@ -11,6 +11,7 @@
       :srcset="_srcset.srcset"
       :sizes="_srcset.size"
       cover
+      crossorigin="anonymous"
       :aspect-ratio="imageWidth / imageHeight"
       :style="{
         backgroundColor: _imageBackgroundColor,

@@ -20,6 +20,7 @@
                 fit="cover"
                 :img-attrs="{ style: imageStyle }"
                 :style="imageStyle"
+                crossorigin="anonymous"
               ></NuxtPicture>
               <div
                 style="
