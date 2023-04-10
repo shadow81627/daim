@@ -1,5 +1,11 @@
 <template>
-  <v-toolbar flat height="32" color="transparent" :absolute="absolute">
+  <v-toolbar
+    flat
+    height="32"
+    color="transparent"
+    :absolute="absolute"
+    class="pa-3"
+  >
     <ul
       v-if="breadcrumbs.length > 1"
       class="list-none flex"
