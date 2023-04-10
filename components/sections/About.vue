@@ -49,10 +49,7 @@
 </template>
 
 <script lang="ts">
-import countries from 'i18n-iso-countries';
-import englishCountries from 'i18n-iso-countries/langs/en.json';
-// eslint-disable-next-line import/no-named-as-default-member
-countries.registerLocale(englishCountries);
+const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
 export default {
   async setup() {
     const { data } = await useAsyncData(
@@ -83,9 +80,7 @@ export default {
         summary,
       },
     } = data.value;
-    const locale = 'en';
-    // eslint-disable-next-line import/no-named-as-default-member
-    const country = countries.getName(countryCode, locale);
+    const country = regionNames.of(countryCode);
     return {
       profiles,
       firstname,

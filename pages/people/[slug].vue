@@ -367,13 +367,11 @@
 
 <script>
 import dayjs from 'dayjs';
-import { registerLocale, getName } from 'i18n-iso-countries';
-import englishCountries from 'i18n-iso-countries/langs/en.json';
 import Mailgo from '@/components/mailgo.vue';
 import ImageSources from '@/mixins/srcset';
 import Hero from '~/components/hero';
 
-registerLocale(englishCountries);
+const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
 
 export default {
   components: {
@@ -407,8 +405,7 @@ export default {
       attributes,
     } = await queryContent('team', slug).findOne();
 
-    const locale = 'en';
-    const country = getName(countryCode, locale);
+    const country = regionNames.of(countryCode);
     return {
       image: `/img/team/${slug}.png`,
       profiles,

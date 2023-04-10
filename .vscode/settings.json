@@ -5,7 +5,7 @@
     "**/.lighthouseci/**": true,
     "**/.nyc_output/**": true,
     "**/node_modules/**": true,
-    "**/dist/**": true,
+    "**/xdist/**": true,
     "**/coverage/**": true,
     "**/.nuxt/**": true,
     "**/sw.js": true,

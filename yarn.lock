@@ -10060,7 +10060,6 @@ __metadata:
     eslint-plugin-vuetify: 2.0.0-beta.2
     git-date-extractor: 4.0.1
     github-markdown-css: 4.0.0
-    i18n-iso-countries: 6.8.0
     js-base64: 3.7.5
     lodash-es: 4.17.21
     mailgo: 0.12.2
@@ -10430,13 +10429,6 @@ __metadata:
     asap: ^2.0.0
     wrappy: 1
   checksum: 895389c6aead740d2ab5da4d3466d20fa30f738010a4d3f4dcccc9fc645ca31c9d10b7e1804ae489b1eb02c7986f9f1f34ba132d409b043082a86d9a4e745624
-  languageName: node
-  linkType: hard
-
-"diacritics@npm:1.3.0":
-  version: 1.3.0
-  resolution: "diacritics@npm:1.3.0"
-  checksum: ef7552c36e221879be22bc977281d1ae644f0eb94a24b380d654bf3aeae76c8096e533059732980bb3b5cb77ce7de4178f038f79415ee715f6d3eea7025cadea
   languageName: node
   linkType: hard
 
@@ -13890,15 +13882,6 @@ __metadata:
   bin:
     hunspell-tojson: ./bin/hunspell-tojson.js
   checksum: 098e00a705b1b8975924ccef1b23e1d63acc139a493a392bb55f887926c518b2edae01f9a697cffa73346160c562f89610f80d354360a2cb637a67f7c54f8227
-  languageName: node
-  linkType: hard
-
-"i18n-iso-countries@npm:6.8.0":
-  version: 6.8.0
-  resolution: "i18n-iso-countries@npm:6.8.0"
-  dependencies:
-    diacritics: 1.3.0
-  checksum: 265c095cca261cb24568e821064f404f80a912b7097cc4c734866532ca0acd6b348672eb377244d33740810a90a12fc4f6dc29de18f7ee6097824ac108c3526b
   languageName: node
   linkType: hard
 
