@@ -3,21 +3,26 @@
     class="flex d-flex flex-column justify-between flex-grow-1"
     min-width="240"
   >
-    <v-img
+    <LazyNuxtPicture
       v-if="image"
-      class="flex-grow-0"
-      :lazy-src="lazy"
-      :src="img"
-      :srcset="_srcset.srcset"
-      :sizes="_srcset.size"
-      cover
+      :src="image"
+      :width="imageWidth"
+      :height="imageHeight"
+      class="flex-grow-0 max-w-full h-auto"
       crossorigin="anonymous"
-      :aspect-ratio="imageWidth / imageHeight"
-      :style="{
-        backgroundColor: _imageBackgroundColor,
-        backgroundImage,
+      :fit="imageFit"
+      loading="lazy"
+      sizes="xs:100vw sm:50vw md:33vw lg:33vw xl:33vw"
+      :img-attrs="{
+        style: {
+          'object-fit': 'cover',
+          'max-width': '100%',
+          height: 'auto',
+          backgroundColor: _imageBackgroundColor,
+          backgroundImage,
+        },
       }"
-    ></v-img>
+    ></LazyNuxtPicture>
     <v-card-title>
       <span class="h3 text-break">
         <template v-if="icon">
@@ -136,43 +141,6 @@ export default {
   computed: {
     _imageBackgroundColor() {
       return this.imageBackgroundColor ?? this.imageColor;
-    },
-    lazy() {
-      const svg = universalBtoa(
-        `<svg xmlns='http://www.w3.org/2000/svg'
-      viewBox='00512512'>
-      <rect width="100%" height="100%" fill="${this._imageBackgroundColor}"/>
-      </svg>`,
-      );
-      return `data:image/svg+xml;base64,${svg}`;
-    },
-    img() {
-      return this.$img(this.image, {
-        quality: this.imageQuality,
-        width: this.imageWidth,
-        height: this.imageHeight,
-        enlarge: undefined,
-        fit: this.imageFit,
-        trim: undefined,
-        // position: 'center',
-        format: 'png',
-        background: this.imageColor,
-      });
-    },
-    _srcset() {
-      return this.$img.getSizes(this.image, {
-        sizes: 'xs:100vw sm:50vw md:33vw lg:33vw xl:33vw',
-        modifiers: {
-          format: 'webp',
-          quality: this.imageQuality,
-          width: this.imageWidth,
-          height: this.imageHeight,
-          enlarge: undefined,
-          fit: this.imageFit,
-          trim: undefined,
-          // position: 'center',
-        },
-      });
     },
   },
   methods: {
