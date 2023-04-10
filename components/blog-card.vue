@@ -8,16 +8,27 @@
     itemtype="https://schema.org/BlogPosting"
     min-width="240"
   >
-    <v-img
-      :lazy-src="lazy"
-      :src="img"
-      class="flex-grow-0"
-      :srcset="_srcset.srcset"
-      :sizes="_srcset.size"
+    <LazyNuxtPicture
+      v-if="image"
+      :src="image"
+      :width="imageWidth"
       :height="imageHeight"
+      :quality="imageQuality"
+      class="flex-grow-0 max-w-full h-auto"
+      crossorigin="anonymous"
       itemprop="image"
-      cover
-    ></v-img>
+      fit="cover"
+      loading="lazy"
+      sizes="xs:100vw sm:50vw md:33vw lg:33vw xl:33vw"
+      :img-attrs="{
+        style: {
+          'object-fit': 'cover',
+          'max-width': '100%',
+          height: 'auto',
+          backgroundColor: imageColor,
+        },
+      }"
+    ></LazyNuxtPicture>
     <v-card-title class="text-break text-wrap">
       <h2 itemprop="name">{{ title }}</h2>
     </v-card-title>
@@ -85,41 +96,6 @@ export default {
     },
     _date() {
       return this.formatDate(this.modified ?? this.date);
-    },
-    lazy() {
-      const svg = universalBtoa(
-        `<svg xmlns='http://www.w3.org/2000/svg'
-      viewBox='00512512'>
-      <rect width="100%" height="100%" fill="${this.imageColor}"/>
-      </svg>`,
-      );
-      return `data:image/svg+xml;base64,${svg}`;
-    },
-    img() {
-      return this.$img(this.image, {
-        quality: this.imageQuality,
-        width: this.imageWidth,
-        height: this.imageHeight,
-        enlarge: undefined,
-        fit: 'cover',
-        trim: undefined,
-        // position: 'center',
-      });
-    },
-    _srcset() {
-      return this.$img.getSizes(this.image, {
-        sizes: 'xs:100vw sm:50vw md:33vw lg:33vw xl:33vw',
-        modifiers: {
-          format: 'webp',
-          quality: this.imageQuality,
-          width: this.imageWidth,
-          height: this.imageHeight,
-          enlarge: undefined,
-          fit: 'cover',
-          trim: undefined,
-          // position: 'center',
-        },
-      });
     },
   },
   methods: {

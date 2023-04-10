@@ -10,6 +10,7 @@
       :height="imageHeight"
       class="flex-grow-0 max-w-full h-auto"
       crossorigin="anonymous"
+      itemprop="image"
       :fit="imageFit"
       loading="lazy"
       sizes="xs:100vw sm:50vw md:33vw lg:33vw xl:33vw"
