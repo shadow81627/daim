@@ -125,6 +125,7 @@ export default defineNuxtConfig({
   modules: [
     // '@unlighthouse/nuxt',
     // '@vite-pwa/nuxt',
+    'nuxt-og-image',
     'nuxt-unhead',
     'nuxt-security',
     '@kevinmarrec/nuxt-pwa',
@@ -225,6 +226,9 @@ export default defineNuxtConfig({
   image: {
     provider: 'imgproxy',
     domains: [env.HOST],
+    ipx: {
+      baseURL: BASE_URL + '/_ipx',
+    },
     providers: {
       imgproxy: {
         provider: '~/imgproxy',

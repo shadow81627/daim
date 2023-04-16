@@ -35,7 +35,7 @@ export default {
   },
   setup() {
     const config = useRuntimeConfig();
-    const lastModified = dayjs(config.DATE_GENERATED);
+    const lastModified = dayjs(config.public.DATE_GENERATED);
     return { lastModified };
   },
 };
