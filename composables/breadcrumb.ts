@@ -15,7 +15,7 @@ function resolveTrailingSlash(path: string) {
 }
 function resolveAbsoluteInternalLink(path: string) {
   const config = useRuntimeConfig();
-  return withBase(resolveTrailingSlash(path), config.siteUrl);
+  return withBase(resolveTrailingSlash(path), config.public.siteUrl);
 }
 
 const getBreadcrumbs = (input: string) => {
