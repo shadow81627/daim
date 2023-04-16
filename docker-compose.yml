@@ -33,6 +33,8 @@ services:
     ports:
       - 8080:8080
     environment:
+      - IMGPROXY_ENABLE_CLIENT_HINTS=true
+      - IMGPROXY_ALLOW_ORIGIN=*
       - IMGPROXY_MAX_SRC_RESOLUTION=50
       - IMGPROXY_KEY=${IMGPROXY_KEY}
       - IMGPROXY_SALT=${IMGPROXY_SALT}

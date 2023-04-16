@@ -125,6 +125,7 @@ export default defineNuxtConfig({
   modules: [
     // '@unlighthouse/nuxt',
     // '@vite-pwa/nuxt',
+    'nuxt-og-image',
     'nuxt-unhead',
     'nuxt-security',
     '@kevinmarrec/nuxt-pwa',
@@ -164,7 +165,7 @@ export default defineNuxtConfig({
     rateLimiter: false, // https://github.com/Baroshem/nuxt-security/issues/137
     headers: {
       contentSecurityPolicy: {
-        'img-src': ["'self'", 'data:', 'https://imgproxy.daim.dev'],
+        'img-src': ["'self'", 'data:', IMGPROXY_URL],
       },
     },
   },
@@ -225,11 +226,14 @@ export default defineNuxtConfig({
   image: {
     provider: 'imgproxy',
     domains: [env.HOST],
+    // ipx: {
+    //   baseURL: BASE_URL + '/_ipx',
+    // },
     providers: {
       imgproxy: {
         provider: '~/imgproxy',
         options: {
-          baseURL: BASE_URL,
+          baseURL: 'https://s3.ap-southeast-2.wasabisys.com/daim.dev',
           cdnURL: IMGPROXY_URL,
           key: process.env.IMGPROXY_KEY,
           salt: process.env.IMGPROXY_SALT,

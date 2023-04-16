@@ -151,8 +151,8 @@ export default {
     const nav1 = nav?.value?.nav1 ?? [];
     const nav2 = nav?.value?.nav2 ?? [];
 
-    const version = config.VERSION;
-    const commit = config.COMMIT;
+    const version = config.public.VERSION;
+    const commit = config.public.COMMIT;
 
     return {
       utc: false,
