@@ -3506,24 +3506,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/image-edge@npm:1.0.0-27968280.9739e4d":
-  version: 1.0.0-27968280.9739e4d
-  resolution: "@nuxt/image-edge@npm:1.0.0-27968280.9739e4d"
+"@nuxt/image-edge@npm:1.0.0-28020728.5df24eb":
+  version: 1.0.0-28020728.5df24eb
+  resolution: "@nuxt/image-edge@npm:1.0.0-28020728.5df24eb"
   dependencies:
-    "@nuxt/kit": ^3.1.1
-    consola: ^2.15.3
+    "@nuxt/kit": ^3.4.0
+    consola: ^3.0.1
     defu: ^6.1.2
-    h3: ^1.1.0
+    h3: ^1.6.4
     image-meta: ^0.1.1
-    ipx: 1.0.0-2
-    node-fetch-native: ^1.0.1
+    ipx: 1.0.0
+    node-fetch-native: ^1.1.0
     ohash: ^1.0.0
     pathe: ^1.1.0
-    ufo: ^1.0.1
+    ufo: ^1.1.1
   dependenciesMeta:
     ipx:
       optional: true
-  checksum: 02fab4176ef66e5f0a162ed53c836c7ad3c79d4a11b7093c036fb47e3ec21d8cf9a2dd4317a6b88c438f954eb0a249d44d4548c71b3fb689db83698da79afc85
+  checksum: 4a7c4bbd6177f705b028234b78167ae4ebc3177d856d212a40abf78a50baabaeb30948722734e606d78d3fb57d9b47eea21b4ffb38f2f538e4089232ceb853b1
   languageName: node
   linkType: hard
 
@@ -3605,7 +3605,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.4.1, @nuxt/kit@npm:^3.3.3":
+"@nuxt/kit@npm:3.4.1, @nuxt/kit@npm:^3.3.3, @nuxt/kit@npm:^3.4.0":
   version: 3.4.1
   resolution: "@nuxt/kit@npm:3.4.1"
   dependencies:
@@ -3657,7 +3657,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^3.0.0, @nuxt/kit@npm:^3.1.1, @nuxt/kit@npm:^3.1.2, @nuxt/kit@npm:^3.2.0, @nuxt/kit@npm:^3.2.3":
+"@nuxt/kit@npm:^3.0.0, @nuxt/kit@npm:^3.1.2, @nuxt/kit@npm:^3.2.0, @nuxt/kit@npm:^3.2.3":
   version: 3.3.1
   resolution: "@nuxt/kit@npm:3.3.1"
   dependencies:
@@ -9879,7 +9879,7 @@ __metadata:
     "@lhci/cli": 0.11.0
     "@mdi/js": 5.9.55
     "@nuxt/content": 2.4.3
-    "@nuxt/image-edge": 1.0.0-27968280.9739e4d
+    "@nuxt/image-edge": 1.0.0-28020728.5df24eb
     "@nuxt/types": 2.15.8
     "@nuxtjs/eslint-config-typescript": 12.0.0
     "@nuxtjs/eslint-module": 4.0.2
@@ -9938,7 +9938,7 @@ __metadata:
     sass: 1.59.3
     semantic-release: 20.1.3
     serve-handler: 6.1.5
-    sharp: 0.31.3
+    sharp: 0.32.0
     svgo: 3.0.2
     ts-node: 10.9.1
     typescript: 5.0.2
@@ -10234,7 +10234,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"destr@npm:^1.2.0, destr@npm:^1.2.1, destr@npm:^1.2.2":
+"destr@npm:^1.2.0, destr@npm:^1.2.2":
   version: 1.2.2
   resolution: "destr@npm:1.2.2"
   checksum: 3906b49513a64d8442dacb8b798c59d66257ded4ccd2ef1d99b58644d4aa6b30ca61f9a9823d3dcbc78b4db812596e53e85e499f39a498b3b165a045b5228b2b
@@ -13051,7 +13051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"h3@npm:^1.0.1, h3@npm:^1.0.2, h3@npm:^1.1.0, h3@npm:^1.5.0":
+"h3@npm:^1.0.1, h3@npm:^1.0.2, h3@npm:^1.5.0":
   version: 1.6.2
   resolution: "h3@npm:1.6.2"
   dependencies:
@@ -13985,24 +13985,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ipx@npm:1.0.0-2":
-  version: 1.0.0-2
-  resolution: "ipx@npm:1.0.0-2"
+"ipx@npm:1.0.0":
+  version: 1.0.0
+  resolution: "ipx@npm:1.0.0"
   dependencies:
     consola: ^2.15.3
-    defu: ^6.1.1
-    destr: ^1.2.1
+    defu: ^6.1.2
+    destr: ^1.2.2
     etag: ^1.8.1
     image-meta: ^0.1.1
-    listhen: ^1.0.0
-    node-fetch-native: ^1.0.1
-    pathe: ^1.0.0
-    sharp: ^0.31.2
-    ufo: ^1.0.0
+    listhen: ^1.0.4
+    node-fetch-native: ^1.0.2
+    pathe: ^1.1.0
+    sharp: ^0.32.0
+    ufo: ^1.1.1
     xss: ^1.0.14
   bin:
     ipx: bin/ipx.mjs
-  checksum: 6dede917ef3c5df90c8225e7bc516f45fc525ffd3695196ad0e6f48a61a190f6550252c8204714664b3e827b4efd96e3ac07e137023bbc2aec8264875e9539ff
+  checksum: 2d0ba145d484b3a69013dd055d0ba4fd49461be3eb71f675e8f80bf14395dc01181bbfeb765b877dc70a98dfa8619e61b008942952061b3310bf529148bd0d47
   languageName: node
   linkType: hard
 
@@ -15483,7 +15483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"listhen@npm:^1.0.0, listhen@npm:^1.0.2, listhen@npm:^1.0.3, listhen@npm:^1.0.4":
+"listhen@npm:^1.0.2, listhen@npm:^1.0.3, listhen@npm:^1.0.4":
   version: 1.0.4
   resolution: "listhen@npm:1.0.4"
   dependencies:
@@ -17561,6 +17561,15 @@ __metadata:
   dependencies:
     node-gyp: latest
   checksum: 2508bd2d2981945406243a7bd31362fc7af8b70b8b4d65f869c61731800058fb818cc2fd36c8eac714ddd0e568cc85becf5e165cebbdf7b5024d5151bbc75ea1
+  languageName: node
+  linkType: hard
+
+"node-addon-api@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "node-addon-api@npm:6.0.0"
+  dependencies:
+    node-gyp: latest
+  checksum: a34a901b9f0d6d201a173e12ed378033e4e0f27f77fd27c225dc7e6f96e88a88e94bd78b2b0404fc95deee20a137f1cbfc92738cbfba38862ed9b6c2e61c1ab2
   languageName: node
   linkType: hard
 
@@ -22167,7 +22176,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:0.31.3, sharp@npm:^0.31.2, sharp@npm:^0.31.3":
+"sharp@npm:0.32.0, sharp@npm:^0.32.0":
+  version: 0.32.0
+  resolution: "sharp@npm:0.32.0"
+  dependencies:
+    color: ^4.2.3
+    detect-libc: ^2.0.1
+    node-addon-api: ^6.0.0
+    node-gyp: latest
+    prebuild-install: ^7.1.1
+    semver: ^7.3.8
+    simple-get: ^4.0.1
+    tar-fs: ^2.1.1
+    tunnel-agent: ^0.6.0
+  checksum: 82c6046038f45f1fdeb732cff8be6a8a3fb5eb25f46f4c3ecb4b71363c2c387b52de8c0c5c4674f2400663e467b8a7b93dbc5d70b3f0e145cb45fc27d39c5709
+  languageName: node
+  linkType: hard
+
+"sharp@npm:^0.31.3":
   version: 0.31.3
   resolution: "sharp@npm:0.31.3"
   dependencies:
