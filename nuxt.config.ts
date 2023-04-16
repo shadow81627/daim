@@ -233,7 +233,7 @@ export default defineNuxtConfig({
       imgproxy: {
         provider: '~/imgproxy',
         options: {
-          baseURL: BASE_URL,
+          baseURL: 'https://s3.ap-southeast-2.wasabisys.com/daim.dev',
           cdnURL: IMGPROXY_URL,
           key: process.env.IMGPROXY_KEY,
           salt: process.env.IMGPROXY_SALT,
