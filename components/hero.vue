@@ -101,9 +101,10 @@ export default {
                   height: 100%;`;
     const $img = useImage();
     const ogImage = $img(props.src, {
-      width: 1280,
+      width: 1200,
       height: 630,
       fit: 'cover',
+      format: 'png',
     });
     useServerSeoMeta({
       title: props.heading,
