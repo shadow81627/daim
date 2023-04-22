@@ -66,85 +66,43 @@ export default {
   async setup() {
     const route = useRoute();
     const path = 'blog/' + route.params.slug;
+    const config = useRuntimeConfig();
     try {
       const { data: item } = await useAsyncData(path, () =>
         queryContent('blog', route.params.slug).findOne(),
       );
-      return { item, path };
-    } catch {
-      createError({ statusCode: 404 });
-    }
-  },
-  head() {
-    const image = `${this.$config.public.BASE_URL}${this.$img(
-      this.item.image || '/img/blog.jpg',
-      {
-        width: 1280,
-        height: 630,
-      },
-    )}`;
-    return {
-      title: this.item.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.item.description,
-        },
-        // Open Graph
-        { hid: 'og:title', property: 'og:title', content: this.item.title },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.item.description,
-        },
-        { hid: 'og:type', property: 'og:type', content: 'article' },
-      ],
-      script: [
-        {
-          json: {
-            '@context': 'https://schema.org',
-            '@type': 'Article',
-            headline: this.item.title,
-            description: this.item.description,
-            image: {
-              '@type': 'ImageObject',
-              url: `${this.$config.public.BASE_URL}${image.image}`,
-              width: image.width,
-              height: image.height,
-            },
-            datePublished: this.item.date,
-            dateModified: this.item.date,
-          },
-          type: 'application/ld+json',
-        },
-      ],
-    };
-  },
-  computed: {
-    networks() {
-      return [
+      useSchemaOrg([
+        defineArticle({
+          image: `${config.public.BASE_URL}/${path}/__og_image__/og.png`,
+          datePublished: item.date,
+          dateModified: item.date,
+        }),
+      ]);
+      const networks = [
         {
           icon: mdiTwitter,
           network: 'Twitter',
           url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-            this.item.title,
-          )}%0A%0A${encodeURIComponent(this.item.description)}&url=${
-            this.$config.public.BASE_URL
-          }${this.$route.path}`,
+            item.title,
+          )}%0A%0A${encodeURIComponent(item.description)}&url=${
+            config.public.BASE_URL
+          }${route.path}`,
         },
         {
           icon: mdiLinkedin,
           network: 'Linkedin',
-          url: `https://www.linkedin.com/sharing/share-offsite/?url=${this.$config.public.BASE_URL}${this.$route.path}`,
+          url: `https://www.linkedin.com/sharing/share-offsite/?url=${config.public.BASE_URL}${route.path}`,
         },
         {
           icon: mdiFacebook,
           network: 'Facebook',
-          url: `https://www.facebook.com/sharer/sharer.php?u=${this.$config.public.BASE_URL}${this.$route.path}&display=page`,
+          url: `https://www.facebook.com/sharer/sharer.php?u=${config.public.BASE_URL}${route.path}&display=page`,
         },
       ];
-    },
+      return { item, path, networks };
+    } catch {
+      createError({ statusCode: 404 });
+    }
   },
   methods: {
     formatDate(date) {
