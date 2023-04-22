@@ -7,6 +7,7 @@ import {
   withBase,
   withoutTrailingSlash,
 } from 'ufo';
+import { startCase } from 'lodash-es';
 import titleCase from '~/utils/title-case';
 
 function resolveTrailingSlash(path: string) {
@@ -63,7 +64,7 @@ export function useBreadcrumbs() {
         if (!title) {
           if (path === '/') title = 'Home';
           // pop last url segment and title case it
-          else title = titleCase(path.split('/').pop() || '');
+          else title = titleCase(startCase(path.split('/').pop() || ''));
         }
         return {
           schema: {
