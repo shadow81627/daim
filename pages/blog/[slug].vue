@@ -74,8 +74,8 @@ export default {
       useSchemaOrg([
         defineArticle({
           image: `${config.public.BASE_URL}/${path}/__og_image__/og.png`,
-          datePublished: item.date,
-          dateModified: item.date,
+          datePublished: item.value.date,
+          dateModified: item.value.date,
         }),
       ]);
       const networks = [
@@ -83,8 +83,8 @@ export default {
           icon: mdiTwitter,
           network: 'Twitter',
           url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-            item.title,
-          )}%0A%0A${encodeURIComponent(item.description)}&url=${
+            item.value.title,
+          )}%0A%0A${encodeURIComponent(item.value.description)}&url=${
             config.public.BASE_URL
           }${route.path}`,
         },
