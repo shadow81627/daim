@@ -59,23 +59,5 @@ export default {
       total: 0,
     };
   },
-  head() {
-    return {
-      title: this.heading,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
-        },
-        { hid: 'og:title', property: 'og:title', content: this.heading },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.description,
-        },
-      ],
-    };
-  },
 };
 </script>
