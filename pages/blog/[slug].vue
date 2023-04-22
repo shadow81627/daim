@@ -76,7 +76,7 @@ export default {
     }
   },
   head() {
-    const image = `${this.$config.BASE_URL}${this.$img(
+    const image = `${this.$config.public.BASE_URL}${this.$img(
       this.item.image || '/img/blog.jpg',
       {
         width: 1280,
@@ -109,7 +109,7 @@ export default {
             description: this.item.description,
             image: {
               '@type': 'ImageObject',
-              url: `${this.$config.BASE_URL}${image.image}`,
+              url: `${this.$config.public.BASE_URL}${image.image}`,
               width: image.width,
               height: image.height,
             },
@@ -130,18 +130,18 @@ export default {
           url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
             this.item.title,
           )}%0A%0A${encodeURIComponent(this.item.description)}&url=${
-            this.$config.BASE_URL
+            this.$config.public.BASE_URL
           }${this.$route.path}`,
         },
         {
           icon: mdiLinkedin,
           network: 'Linkedin',
-          url: `https://www.linkedin.com/sharing/share-offsite/?url=${this.$config.BASE_URL}${this.$route.path}`,
+          url: `https://www.linkedin.com/sharing/share-offsite/?url=${this.$config.public.BASE_URL}${this.$route.path}`,
         },
         {
           icon: mdiFacebook,
           network: 'Facebook',
-          url: `https://www.facebook.com/sharer/sharer.php?u=${this.$config.BASE_URL}${this.$route.path}&display=page`,
+          url: `https://www.facebook.com/sharer/sharer.php?u=${this.$config.public.BASE_URL}${this.$route.path}&display=page`,
         },
       ];
     },

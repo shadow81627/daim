@@ -109,7 +109,7 @@ export default {
     item: {},
   }),
   head() {
-    const image = `${this.$config.BASE_URL}${this.$img(
+    const image = `${this.$config.public.BASE_URL}${this.$img(
       this.item.image || '/img/blog.jpg',
       {
         width: 1280,
@@ -142,7 +142,7 @@ export default {
             description: this.item.description,
             image: {
               '@type': 'ImageObject',
-              url: `${this.$config.BASE_URL}${image.image}`,
+              url: `${this.$config.public.BASE_URL}${image.image}`,
               width: image.width,
               height: image.height,
             },
