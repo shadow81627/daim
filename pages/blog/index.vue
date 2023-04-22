@@ -24,8 +24,8 @@ export default {
     BlogCard,
   },
   async setup() {
-    const route = useRoute();
-    const draft = Boolean(route?.query?.draft);
+    // const route = useRoute();
+    // const draft = Boolean(route?.query?.draft);
     const { data: items } = await useAsyncData(
       'blog',
       () =>
@@ -35,10 +35,10 @@ export default {
           .find(),
       {
         transform(data) {
-          const filtered = data.filter((item) => {
-            return draft || !item.draft;
-          });
-          return filtered.map((item) => {
+          // const filtered = data.filter((item) => {
+          //   return draft || !item.draft;
+          // });
+          return data.map((item) => {
             const slug = item._path.replace('/blog/', '');
             return {
               ...item,
