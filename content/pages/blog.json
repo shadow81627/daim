@@ -1,6 +1,6 @@
 {
   "icon": "carbon:blog",
-  "name": "Blog",
+  "name": "Articles",
   "route": "blog",
   "show_tab": true,
   "show_footer": true,

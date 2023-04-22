@@ -54,8 +54,8 @@ export default {
   },
   data() {
     return {
-      heading: 'Blog',
-      description: "Damien Robinson's personal blog",
+      heading: 'Articles',
+      description: 'Repository of interesting articles',
       total: 0,
     };
   },
