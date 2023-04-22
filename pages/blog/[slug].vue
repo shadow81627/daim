@@ -60,6 +60,7 @@
 <script>
 import dayjs from 'dayjs';
 import { mdiFacebook, mdiTwitter, mdiLinkedin } from '@mdi/js';
+import { withoutTrailingSlash } from 'ufo';
 import BlogHero from '~/components/sections/BlogHero';
 export default {
   components: { BlogHero },
@@ -73,7 +74,9 @@ export default {
       );
       useSchemaOrg([
         defineArticle({
-          image: `${config.public.BASE_URL}/${path}/__og_image__/og.png`,
+          image: `${config.public.BASE_URL}/${withoutTrailingSlash(
+            path,
+          )}/__og_image__/og.png`,
           datePublished: item.value.date,
           dateModified: item.value.date,
         }),
