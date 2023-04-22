@@ -1,9 +1,9 @@
 ---
 date: 2023-04-22T11:19:00Z
-# description: Securely build, share and run any application, anywhere
+description: Reasons why companies spend more money hiring than retaining people
 # image: /img/blog/employee-retention.jpg
 image: https://images.unsplash.com/photo-1584134239909-eb4800257d6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
-title: Reasons why companies spend more money hiring than retaining people
+title: The gamble that HR plays
 ---
 
 This topic is one of the biggest pet peeves for someone who manages people, evaluates, hires, and retains employees.
@@ -56,7 +56,7 @@ Someone out there is willing to pay you 20%, 30%, 40% more than what you're maki
 
 ## One last note on HR, and this is the super extra cynic in me:
 
-What other effect does attrition have? A higher need for recruiters. In enabling higher attrition for the company for cost savings, HR justifies it's worth through the cost savings, but then can double down on the back-end and justify its need to grow due to all the open positions they need to fill with recruiters.
+What other effect does attrition have? A higher need for recruiters. In enabling higher attrition for the company for cost savings, HR justifies its worth through the cost savings, but then can double down on the back-end and justify its need to grow due to all the open positions they need to fill with recruiters.
 
 ## Sources
 
