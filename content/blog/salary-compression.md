@@ -1,9 +1,10 @@
 ---
 date: 2023-04-21T17:34:00Z
-description: Securely build, share and run any application, anywhere
-image: /img/blog/employee-retention.jpg
+description: Why are companies willing to spend so much on hiring new employees but on retaining them?
+image: https://s3.ap-southeast-2.wasabisys.com/daim.dev/img/blog/employee-retention/clamp-squeezing-a-stack-of-coins.jpeg
+# image: /img/blog/employee-retention.jpg
 # image: https://images.unsplash.com/photo-1662146494044-c3ecd3f7a3e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80
-title: Why are companies willing to spend so much on hiring new employees but on retaining them?
+title: Salary compression
 ---
 
 In April 2021, I got a 40% raise. That’s a pretty big raise.
