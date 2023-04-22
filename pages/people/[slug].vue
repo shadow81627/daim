@@ -371,8 +371,6 @@ import Mailgo from '@/components/mailgo.vue';
 import ImageSources from '@/mixins/srcset';
 import Hero from '~/components/hero';
 
-const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
-
 export default {
   components: {
     Mailgo,
@@ -380,6 +378,7 @@ export default {
   },
   mixins: [ImageSources],
   async setup() {
+    const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
     const route = useRoute();
     const slug = route.params.slug;
     const {

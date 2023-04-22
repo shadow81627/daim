@@ -49,9 +49,9 @@
 </template>
 
 <script lang="ts">
-const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
 export default {
   async setup() {
+    const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
     const { data } = await useAsyncData(
       'team/damien-robinson',
       () => queryContent('team', 'damien-robinson').findOne(),
