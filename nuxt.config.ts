@@ -125,6 +125,7 @@ export default defineNuxtConfig({
   modules: [
     // '@unlighthouse/nuxt',
     // '@vite-pwa/nuxt',
+    'nuxt-schema-org',
     'nuxt-og-image',
     'nuxt-unhead',
     'nuxt-security',

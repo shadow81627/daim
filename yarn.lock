@@ -3553,6 +3553,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxt/kit@npm:3.2.2":
+  version: 3.2.2
+  resolution: "@nuxt/kit@npm:3.2.2"
+  dependencies:
+    "@nuxt/schema": 3.2.2
+    c12: ^1.1.2
+    consola: ^2.15.3
+    defu: ^6.1.2
+    globby: ^13.1.3
+    hash-sum: ^2.0.0
+    ignore: ^5.2.4
+    jiti: ^1.17.1
+    knitwork: ^1.0.0
+    lodash.template: ^4.5.0
+    mlly: ^1.1.1
+    pathe: ^1.1.0
+    pkg-types: ^1.0.2
+    scule: ^1.0.0
+    semver: ^7.3.8
+    unctx: ^2.1.2
+    unimport: ^2.2.4
+    untyped: ^1.2.2
+  checksum: 6cf1c12e301d2e564066154fd1e0ceb0b94b3844da3e1215f82df055b49f9cc54e36be0b9aef0677f2d3fc0663d65313f8a008f49202a775471e66d83c89885d
+  languageName: node
+  linkType: hard
+
 "@nuxt/kit@npm:3.2.3":
   version: 3.2.3
   resolution: "@nuxt/kit@npm:3.2.3"
@@ -3701,6 +3727,27 @@ __metadata:
     unimport: ^2.0.1
     untyped: ^1.2.2
   checksum: 9f01a64a86fe14f3da911b1ace77be04dc12a52df007dd1d154daba4913df045df9814c27cad6172fc5985785d35616d11253b30d4aa6af3b22fecaad846edf4
+  languageName: node
+  linkType: hard
+
+"@nuxt/schema@npm:3.2.2":
+  version: 3.2.2
+  resolution: "@nuxt/schema@npm:3.2.2"
+  dependencies:
+    c12: ^1.1.2
+    create-require: ^1.1.1
+    defu: ^6.1.2
+    hookable: ^5.4.2
+    jiti: ^1.17.1
+    pathe: ^1.1.0
+    pkg-types: ^1.0.2
+    postcss-import-resolver: ^2.0.0
+    scule: ^1.0.0
+    std-env: ^3.3.2
+    ufo: ^1.1.0
+    unimport: ^2.2.4
+    untyped: ^1.2.2
+  checksum: 92be8e1b40097b1fab1044add5e006c0b7d699d71a63f53a706b77895f11b09968a301d82b6b5e61b8afe8234981251b4532b3ae37c9f679c80b342383e895e2
   languageName: node
   linkType: hard
 
@@ -5732,6 +5779,15 @@ __metadata:
     "@unhead/schema": 1.1.25
     "@unhead/shared": 1.1.25
   checksum: 809051cc9524090bf6bb979f4bef1ceac8392de00affdbb920d9fc1d8c183fc9f454f916b286ea6b69612cfccc3e31ce9b8a6a0716625ab8a42d8a9cc695864d
+  languageName: node
+  linkType: hard
+
+"@unhead/schema-org-vue@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@unhead/schema-org-vue@npm:0.5.0"
+  peerDependencies:
+    "@unhead/vue": ">=1.1.9"
+  checksum: ee3a725ffcae97e1f25eafac17f312ac8cfbe12c6b3e17cb95a83e972dc1ade3704eaec33943e908fdfa6f9bc462fb9ae4e916c4aaab56fd1c71873a7359436a
   languageName: node
   linkType: hard
 
@@ -9922,6 +9978,7 @@ __metadata:
     nuxt-icon: 0.3.2
     nuxt-og-image: v2.0.0-beta.15
     nuxt-purgecss: 1.0.0
+    nuxt-schema-org: 2.1.2
     nuxt-security: 0.13.0
     nuxt-unhead: 1.4.15
     playwright: 1.30.0
@@ -18198,6 +18255,17 @@ __metadata:
     purgecss: ^2.0.5
     purgecss-webpack-plugin: ^2.0.5
   checksum: e4ce299f1691b2134c093e068a01cfd2b37e48fd586dd1027f9fbec1ece2491541a5b99b4505c0d48340ec056695e9a7ad8f4aa388bd296f9aaadf3ef9597846
+  languageName: node
+  linkType: hard
+
+"nuxt-schema-org@npm:2.1.2":
+  version: 2.1.2
+  resolution: "nuxt-schema-org@npm:2.1.2"
+  dependencies:
+    "@nuxt/kit": 3.2.2
+    "@unhead/schema-org-vue": ^0.5.0
+    pathe: ^1.1.0
+  checksum: a55a6664059d950d68d3819b6eed83af0d2192e5c7f26132ad2ad10d6c3dd26ebb37e3e6b2702fcf81fa95c4b16b9d116fbc988bde70002990de6cc314f7ce8a
   languageName: node
   linkType: hard
 
