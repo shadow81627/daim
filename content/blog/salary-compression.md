@@ -7,9 +7,7 @@ image: https://s3.ap-southeast-2.wasabisys.com/daim.dev/img/blog/employee-retent
 title: Salary compression
 ---
 
-In April 2021, I got a 40% raise. That’s a pretty big raise.
-
-But it didn’t make me feel good. In fact, it made me realise that I had been leaving money on the table for almost two years.
+I got a big pay raise, but it didn’t make me feel good. In fact, it made me realise that I had been leaving money on the table for a while.
 
 I would never have got that raise unless I fought for it. Unless I typed the email and stuck my neck out, demanding what I was worth.
 
