@@ -48,7 +48,7 @@
       <v-spacer />
       <v-tabs class="hidden-sm-and-down" optional right>
         <v-tab
-          v-for="item in (items || []).filter((item) => item.show_tab)"
+          v-for="item in (items ?? []).filter((item) => item.show_tab)"
           :key="item.route"
           :to="localePath(item.route)"
           exact
@@ -56,7 +56,7 @@
           itemscope
           itemtype="https://schema.org/SiteNavigationElement"
         >
-          {{ item.title }}
+          {{ item.name }}
         </v-tab>
       </v-tabs>
     </v-app-bar>
