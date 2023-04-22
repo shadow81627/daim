@@ -1,6 +1,6 @@
 import type { ParsedURL } from 'ufo';
 import {
-  hasTrailingSlash,
+  // hasTrailingSlash,
   parseURL,
   stringifyParsedURL,
   withTrailingSlash,
@@ -21,7 +21,7 @@ function resolveAbsoluteInternalLink(path: string) {
 
 const getBreadcrumbs = (input: string) => {
   const startNode = parseURL(input);
-  const appendsTrailingSlash = hasTrailingSlash(startNode.pathname);
+  // const appendsTrailingSlash = hasTrailingSlash(startNode.pathname);
 
   const stepNode = (node: ParsedURL, nodes: string[] = []) => {
     const fullPath = stringifyParsedURL(node);
@@ -35,10 +35,10 @@ const getBreadcrumbs = (input: string) => {
       currentPathName.lastIndexOf('/'),
     );
     // if the input was provided with a trailing slash we need to honour that
-    if (appendsTrailingSlash)
-      node.pathname = withTrailingSlash(
-        node.pathname.substring(0, node.pathname.lastIndexOf('/')),
-      );
+    // if (appendsTrailingSlash)
+    //   node.pathname = withTrailingSlash(
+    //     node.pathname.substring(0, node.pathname.lastIndexOf('/')),
+    //   );
 
     // if we still have a pathname, and it's different, traverse
     if (node.pathname !== currentPathName) stepNode(node, nodes);
@@ -74,6 +74,7 @@ export function useBreadcrumbs() {
           to: resolveTrailingSlash(path),
           title,
         };
-      });
+      })
+      .filter((item) => item?.title);
   });
 }

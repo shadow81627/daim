@@ -13,7 +13,7 @@
       itemtype="https://schema.org/BreadcrumbList"
       itemscope="itemscope"
     >
-      <template v-for="(item, key) of breadcrumbs" :key="key">
+      <template v-for="(item, key) of breadcrumbs" :key="item.to">
         <li itemprop="itemListElement">
           <NuxtLink
             :to="item.to"
