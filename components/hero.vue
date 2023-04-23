@@ -111,7 +111,7 @@ export default {
       ogTitle: props.heading,
       description: props.description ?? props.subheading,
       ogDescription: props.description ?? props.subheading,
-      ogImage,
+      // ogImage,
       ogImageHeight: props.height,
       ogImageWidth: props.width,
     });
