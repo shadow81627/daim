@@ -73,7 +73,7 @@ export default {
         queryContent('blog', route.params.slug).findOne(),
       );
       const $img = useImage();
-      const ogImage = $img(item.image, {
+      const ogImage = $img(item.value.image, {
         width: 1200,
         height: 630,
         fit: 'cover',
@@ -117,6 +117,7 @@ export default {
     } catch {
       createError({ statusCode: 404 });
     }
+    return { item: {}, path, networks: [] };
   },
   methods: {
     formatDate(date) {
