@@ -1,5 +1,5 @@
 ---
-title: Whats the best Git workflow?
+name: Whats the best Git workflow?
 date: 2021-06-11T07:36:04Z
 modified: 2022-04-22T04:57:13.272Z
 description: I want to detail a terse but complete description of a simple workflow for continuous delivery.

@@ -1,5 +1,5 @@
 ---
-title: What is Nuxt?
+name: What is Nuxt?
 date: 2020-09-28T01:40:37.548Z
 modified: 2022-05-01T05:09:19.195Z
 description: The open source framework making web development simple and powerful. Build your next Vue.js application with confidence using NuxtJS.

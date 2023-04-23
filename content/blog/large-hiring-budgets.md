@@ -3,7 +3,8 @@ date: 2023-04-22T11:19:00Z
 description: Reasons why companies spend more money hiring than retaining people
 # image: /img/blog/employee-retention.jpg
 image: https://images.unsplash.com/photo-1584134239909-eb4800257d6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
-title: The gamble that HR plays
+name: The gamble that HR plays
+# credits
 ---
 
 This topic is one of the biggest pet peeves for someone who manages people, evaluates, hires, and retains employees.

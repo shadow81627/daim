@@ -1,5 +1,5 @@
 ---
-title: Queensland Small Business Basics Grants Program
+name: Queensland Small Business Basics Grants Program
 date: 2022-05-01T03:34:58.372Z
 description: The Queensland Government provides specific support for the small business sector through the Big Plans for Small Business Strategy. The Business Basics grants program (Program) provides support to businesses to increase core skills and adopt best practice.
 image: /img/blog/business-basics-grants.jpg

@@ -1,5 +1,5 @@
 ---
-title: Selecting Your Next Digital Partner
+name: Selecting Your Next Digital Partner
 date: 2022-04-30T00:01:30.983Z
 description: Selecting a digital agency to do work for your business can be a real tough decision, so we're here to help.
 image: /img/blog/selecting_a_digital_agency.png

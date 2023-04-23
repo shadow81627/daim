@@ -1,5 +1,5 @@
 ---
-title: Setup Windows Subsystem for Linux (WSL)
+name: Setup Windows Subsystem for Linux (WSL)
 date: 2021-04-26T04:30:28Z
 modified: 2022-04-22T05:25:55.075Z
 description: Need an easy way to develop php applications on Windows? Learn how to setup WSL for PHP development.

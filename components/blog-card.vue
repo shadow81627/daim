@@ -30,7 +30,7 @@
       }"
     ></LazyNuxtPicture>
     <v-card-title class="text-break text-wrap">
-      <h2 itemprop="name">{{ title }}</h2>
+      <h2 itemprop="name">{{ name }}</h2>
     </v-card-title>
     <v-card-subtitle class="text-body-1">
       <time :datetime="date">{{ formatDate(date) }}</time>
@@ -53,11 +53,20 @@
 
       <v-spacer></v-spacer>
       <BaseTooltipButton
-        v-if="url"
+        v-if="url && !_readTime"
         itemprop="url"
         v-bind="{
           link: url,
-          tooltip: `Learn more about ${title}`,
+          tooltip: `Learn more about ${name}`,
+          size: 'small',
+        }"
+      ></BaseTooltipButton>
+      <BaseTooltipButton
+        v-if="_readTime"
+        itemprop="url"
+        v-bind="{
+          link: to,
+          tooltip: `Learn more about ${name}`,
           size: 'small',
         }"
       ></BaseTooltipButton>
@@ -72,7 +81,7 @@ export default {
   props: {
     url: { type: String, default: null },
     slug: { type: String, default: null },
-    title: { type: String, default: null },
+    name: { type: String, default: undefined },
     description: { type: String, default: null },
     body: { type: Object, default: () => {} },
     image: { type: String, default: '/img/blog.jpg' },
@@ -92,7 +101,9 @@ export default {
       return this.readTime(JSON.stringify(this.body));
     },
     to() {
-      return !this.url ? `/blog/${encodeURIComponent(this.slug)}` : undefined;
+      return !this.url || this._readTime
+        ? `/blog/${encodeURIComponent(this.slug)}`
+        : undefined;
     },
     _date() {
       return this.formatDate(this.modified ?? this.date);

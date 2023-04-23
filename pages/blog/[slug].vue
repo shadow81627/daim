@@ -1,7 +1,7 @@
 <template>
   <div itemscope itemtype="https://schema.org/BlogPosting">
     <BlogHero
-      :title="item.title"
+      :title="item.name"
       :summary="item.description"
       :src="item.image"
       :credit="item.image && item.credit ? item.credit : {}"
@@ -97,7 +97,7 @@ export default {
           icon: mdiTwitter,
           network: 'Twitter',
           url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-            item.value.title,
+            item.value.name,
           )}%0A%0A${encodeURIComponent(item.value.description)}&url=${
             config.public.BASE_URL
           }${route.path}`,

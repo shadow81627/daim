@@ -1,5 +1,5 @@
 ---
-title: Scuber
+name: Scuber
 date: 2021-07-25T07:35:22.268Z
 modified: 2022-04-22T05:24:32.498Z
 description: Uber and Queensland, Australia, gave riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.

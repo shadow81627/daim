@@ -1,5 +1,5 @@
 ---
-title: How to build an email contact form?
+name: How to build an email contact form?
 date: 2020-10-18T04:18:29.026Z
 description: Need a simple way to allow your website visitors to get in contact with you?
 image: /img/blog/paperplane.jpg
