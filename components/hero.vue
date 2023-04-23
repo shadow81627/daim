@@ -72,9 +72,9 @@
 <script>
 export default {
   props: {
-    heading: { type: String, default: null },
-    subheading: { type: String, default: null },
-    description: { type: String, default: null },
+    heading: { type: String, default: undefined },
+    subheading: { type: String, default: undefined },
+    description: { type: String, default: undefined },
     alt: { type: String, default: '' },
     gradient: {
       type: String,
