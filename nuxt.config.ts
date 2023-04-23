@@ -56,7 +56,7 @@ export default defineNuxtConfig({
     // https://github.com/nuxt/nuxt/issues/19850
     inlineSSRStyles: false,
 
-    // payloadExtraction: false,
+    payloadExtraction: false,
   },
 
   runtimeConfig: {
