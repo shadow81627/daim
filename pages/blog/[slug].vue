@@ -72,6 +72,17 @@ export default {
       const { data: item } = await useAsyncData(path, () =>
         queryContent('blog', route.params.slug).findOne(),
       );
+      const $img = useImage();
+      const ogImage = $img(item.image, {
+        width: 1200,
+        height: 630,
+        fit: 'cover',
+        format: 'png',
+      });
+      defineOgImageStatic({
+        component: 'CustomBanner',
+        backgroundImage: ogImage,
+      });
       useSchemaOrg([
         defineArticle({
           image: `${config.public.BASE_URL}/${withoutTrailingSlash(
