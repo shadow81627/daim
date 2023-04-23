@@ -60,7 +60,7 @@
 <script>
 import dayjs from 'dayjs';
 import { mdiFacebook, mdiTwitter, mdiLinkedin } from '@mdi/js';
-import { withoutTrailingSlash } from 'ufo';
+// import { withoutTrailingSlash } from 'ufo';
 import BlogHero from '~/components/sections/BlogHero';
 export default {
   components: { BlogHero },
@@ -72,26 +72,15 @@ export default {
       const { data: item } = await useAsyncData(path, () =>
         queryContent('blog', route.params.slug).findOne(),
       );
-      const $img = useImage();
-      const ogImage = $img(item.value.image, {
-        width: 1200,
-        height: 630,
-        fit: 'cover',
-        format: 'png',
-      });
-      defineOgImageStatic({
-        component: 'CustomBanner',
-        backgroundImage: ogImage,
-      });
-      useSchemaOrg([
-        defineArticle({
-          image: `${config.public.BASE_URL}/${withoutTrailingSlash(
-            path,
-          )}/__og_image__/og.png`,
-          datePublished: item.value.date,
-          dateModified: item.value.date,
-        }),
-      ]);
+      // useSchemaOrg([
+      //   defineArticle({
+      //     image: `${config.public.BASE_URL}/${withoutTrailingSlash(
+      //       path,
+      //     )}/__og_image__/og.png`,
+      //     datePublished: item.value.date,
+      //     dateModified: item.value.date,
+      //   }),
+      // ]);
       const networks = [
         {
           icon: mdiTwitter,
@@ -114,7 +103,8 @@ export default {
         },
       ];
       return { item, path, networks };
-    } catch {
+    } catch (error) {
+      console.error('failed to fetch blog content: ', error);
       createError({ statusCode: 404 });
     }
     return { item: {}, path, networks: [] };
