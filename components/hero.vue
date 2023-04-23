@@ -84,7 +84,7 @@ export default {
     height: { type: [Number, String], default: 500 },
     color: {
       type: String,
-      default: '#eeeeee',
+      default: '#575757',
     },
     src: {
       type: String,
