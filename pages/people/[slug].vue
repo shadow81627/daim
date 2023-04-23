@@ -404,7 +404,7 @@ export default {
       attributes,
     } = await queryContent('team', slug).findOne();
 
-    const country = regionNames.of(countryCode);
+    const country = countryCode ? regionNames.of(countryCode) : undefined;
     return {
       image: `/img/team/${slug}.png`,
       profiles,

@@ -80,7 +80,7 @@ export default {
         summary,
       },
     } = data.value;
-    const country = regionNames.of(countryCode);
+    const country = countryCode ? regionNames.of(countryCode) : undefined;
     return {
       profiles,
       firstname,
