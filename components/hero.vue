@@ -4,7 +4,7 @@
       <v-col cols="12" align-self="center">
         <v-card
           :color="color"
-          flat
+          variant="flat"
           theme="dark"
           rounded="0"
           :style="{ backgroundColor: color }"
