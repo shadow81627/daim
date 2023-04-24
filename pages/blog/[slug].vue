@@ -1,10 +1,10 @@
 <template>
   <div itemscope itemtype="https://schema.org/BlogPosting">
     <BlogHero
-      :title="item.name"
-      :summary="item.description"
-      :src="item.image"
-      :credit="item.image && item.credit ? item.credit : {}"
+      :title="name"
+      :summary="description"
+      :src="image"
+      :credit="image && credit ? credit : {}"
     ></BlogHero>
     <v-container>
       <v-row>
@@ -20,13 +20,13 @@
         <v-col class="d-flex flex-column justify-center">
           <span class="font-italic"
             >Published
-            <time :datetime="item.date" itemprop="datePublished">{{
-              formatDate(item.date)
+            <time :datetime="date" itemprop="datePublished">{{
+              formatDate(date)
             }}</time></span
-          ><span v-if="item.modified"
+          ><span v-if="modified"
             >Modified
-            <time :datetime="item.modified" itemprop="dateModified">{{
-              formatDate(item.modified)
+            <time :datetime="modified" itemprop="dateModified">{{
+              formatDate(modified)
             }}</time></span
           >
         </v-col>
@@ -57,62 +57,51 @@
     </v-container>
   </div>
 </template>
-<script>
+<script setup>
 import dayjs from 'dayjs';
 import { mdiFacebook, mdiTwitter, mdiLinkedin } from '@mdi/js';
 // import { withoutTrailingSlash } from 'ufo';
-import BlogHero from '~/components/sections/BlogHero';
-export default {
-  components: { BlogHero },
-  async setup() {
-    const route = useRoute();
-    const path = 'blog/' + route.params.slug;
-    const config = useRuntimeConfig();
-    try {
-      const { data: item } = await useAsyncData(path, () =>
-        queryContent('blog', route.params.slug).findOne(),
-      );
-      // useSchemaOrg([
-      //   defineArticle({
-      //     image: `${config.public.BASE_URL}/${withoutTrailingSlash(
-      //       path,
-      //     )}/__og_image__/og.png`,
-      //     datePublished: item.value.date,
-      //     dateModified: item.value.date,
-      //   }),
-      // ]);
-      const networks = [
-        {
-          icon: mdiTwitter,
-          network: 'Twitter',
-          url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-            item.value.name,
-          )}%0A%0A${encodeURIComponent(item.value.description)}&url=${
-            config.public.BASE_URL
-          }${route.path}`,
-        },
-        {
-          icon: mdiLinkedin,
-          network: 'Linkedin',
-          url: `https://www.linkedin.com/sharing/share-offsite/?url=${config.public.BASE_URL}${route.path}`,
-        },
-        {
-          icon: mdiFacebook,
-          network: 'Facebook',
-          url: `https://www.facebook.com/sharer/sharer.php?u=${config.public.BASE_URL}${route.path}&display=page`,
-        },
-      ];
-      return { item, path, networks };
-    } catch (error) {
-      console.error('failed to fetch blog content: ', error);
-      createError({ statusCode: 404 });
-    }
-    return { item: {}, path, networks: [] };
+
+function formatDate(date) {
+  return dayjs(date).format('MMMM D, YYYY');
+}
+const route = useRoute();
+const path = 'blog/' + route.params.slug;
+const config = useRuntimeConfig();
+const { data } = await useAsyncData(path, () =>
+  queryContent('blog', route.params.slug)
+    .only(['name', 'description', 'image', 'credit', 'date', 'modified'])
+    .findOne(),
+);
+const { name, description, image, credit, date, modified } = data.value;
+// useSchemaOrg([
+//   defineArticle({
+//     image: `${config.public.BASE_URL}/${withoutTrailingSlash(
+//       path,
+//     )}/__og_image__/og.png`,
+//     datePublished: item.value.date,
+//     dateModified: item.value.date,
+//   }),
+// ]);
+const networks = [
+  {
+    icon: mdiTwitter,
+    network: 'Twitter',
+    url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      name,
+    )}%0A%0A${encodeURIComponent(description)}&url=${config.public.BASE_URL}${
+      route.path
+    }`,
   },
-  methods: {
-    formatDate(date) {
-      return dayjs(date).format('MMMM D, YYYY');
-    },
+  {
+    icon: mdiLinkedin,
+    network: 'Linkedin',
+    url: `https://www.linkedin.com/sharing/share-offsite/?url=${config.public.BASE_URL}${route.path}`,
   },
-};
+  {
+    icon: mdiFacebook,
+    network: 'Facebook',
+    url: `https://www.facebook.com/sharer/sharer.php?u=${config.public.BASE_URL}${route.path}&display=page`,
+  },
+];
 </script>
