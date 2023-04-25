@@ -89,10 +89,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'apple-touch-icon', href: '/icon.png' },
-      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       meta: [
         {
           name: 'apple-mobile-web-app-status-bar-style',
