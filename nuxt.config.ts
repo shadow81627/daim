@@ -128,7 +128,7 @@ export default defineNuxtConfig({
     'nuxt-schema-org',
     'nuxt-og-image',
     'nuxt-unhead',
-    'nuxt-security',
+    // 'nuxt-security',
     '@kevinmarrec/nuxt-pwa',
     '@nuxtjs/eslint-module',
     '@formkit/nuxt',
