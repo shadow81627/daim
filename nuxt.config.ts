@@ -222,6 +222,7 @@ export default defineNuxtConfig({
 
   eslint: {
     cache: true,
+    lintOnStart: false,
   },
 
   image: {
