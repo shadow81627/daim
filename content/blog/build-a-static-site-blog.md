@@ -4,11 +4,23 @@ date: 2020-09-22T08:09:37.548Z
 description: Have you ever tried to set up a personal blog?
 image: '/img/blog.jpg'
 color: '#181818'
+attributions:
+  - type: inspiration
+    by: 
+      text: Pramod Devireddy
+      url: https://domarpdev.github.io/blog/create-medium-style-blog-theme/
+  - type: photo
+    by:
+      text: Patrick Fore
+      url: https://unsplash.com/@patrickian4?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText
+    on:
+      text: Unsplash
+      url: https://unsplash.com/s/photos/blog?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText
 ---
 
 ## Introduction
 
-Have you ever tried to set up a personal blog? If so, you'll know that it's difficult because there are hundreds of blogging platforms and tools to choose from. What do you do? People have found success by using Wordpress. Here is what you need to know before you buy and setup a your personal blog to ensure good SEO and an easy content management experience. This post will tell you what you need to know to make sure you build the best personal blog that will let you share your great ideas with the internet.
+Have you ever tried to set up a personal blog? If so, you'll know that it's difficult because there are hundreds of blogging platforms and tools to choose from. What do you do? People have found success by using WordPress. Here is what you need to know before you buy and set up your personal blog to ensure good SEO and an easy content management experience. This post will tell you what you need to know to make sure you build the best personal blog that will let you share your great ideas with the internet.
 
 ## Features
 
@@ -16,11 +28,11 @@ If you're looking to build a static site blog, the best method to ensure you end
 
 Make sure your blogging platform has the flexibility to style content your way. If it doesn't, you'll have trouble making content look the way you like. [Nuxt Content Module](https://content.nuxtjs.org/) allows the use of Vue components inside of markdown files. This is a super powerful feature for injecting rich content like maps and other fancy visuals.
 
-Ensure your blog has an image manager so you can upload hero images to use as the og:image. I use [Cloudinary](https://cloudinary.com/) to dynamically resize and optimize images so they load super fast. Serving optimized images in formats like webp makes web pages load a lot faster. A good hero image is critical for making blog posts look interesting when shared on social media.
+Ensure your blog has an image manager, so you can upload hero images to use as the og:image. I use [Cloudinary](https://cloudinary.com/) to dynamically resize and optimize images, so they load superfast. Serving optimized images in formats like webp makes web pages load a lot faster. A good hero image is critical for making blog posts look interesting when shared on social media.
 
-Any good content manager should let you use markdown. This is important because you need to be able to insert links and other rich content styling like bold and italic text without having to use a wysiwyg editor. I use [Netlify CMS](https://www.netlifycms.org/) to edit my blog posts since it's free, open source, and self hosted.
+Any good content manager should let you use Markdown. This is important because you need to be able to insert links and other rich content styling like bold and italic text without having to use a WYSIWYG editor. I use [Netlify CMS](https://www.netlifycms.org/) to edit my blog posts since it's free, open source, and self-hosted.
 
-While not necessary, some great bonus features of a great static site blog are free hosting, open source, and performance. I host my personal site on [Vercel](https://vercel.com/) since the free tier is super generous compared to [Netlify](https://www.netlify.com/). I am able to run all the builds I need for rapid prototyping, unlimited bandwidth, the builds are fast with caching, and the CDN is super fast serving content in under 50ms.
+While not necessary, some great bonus features of a great static site blog are free hosting, open source, and performance. I host my personal site on [Vercel](https://vercel.com/) since the free tier is super generous compared to [Netlify](https://www.netlify.com/). I am able to run all the builds I need for rapid prototyping, unlimited bandwidth, the builds are fast with caching, and the CDN is superfast serving content in under 50ms.
 
 ## Getting Started
 
@@ -28,7 +40,7 @@ While not necessary, some great bonus features of a great static site blog are f
 
 If you haven't used Nuxt before you can go read my [Nuxt](/blog/nuxt#getting-started) Post about how to get started.
 
-Install npm packages:
+Install NPM packages:
 
 ```bash
 npm i @nuxt/content prism-themes dayjs @mdi/js
@@ -157,7 +169,7 @@ export default {
 </script>
 ```
 
-The average reader can read 200 words per minute, for technical material the average reading rate is approx 50 to 75 words a minute. Since this is a tech blog we will go with 50 words per minute, using this number we can create compute the number of minutes it takes to read an article.[^1][] You can find the `BlogHero` component on [Github](https://github.com/shadow81627/daim/blob/master/components/sections/BlogHero.vue), it uses `@aceforth/nuxt-optimized-images` package to create source set and low quality placeholders.
+The average reader can read 200 words per minute, for technical material the average reading rate is 50 to 75 words a minute. Since this is a tech blog we will go with 50 words per minute, using this number we can create compute the number of minutes it takes to read an article.[^1][] You can find the `BlogHero` component on [GitHub](https://github.com/shadow81627/daim/blob/master/components/sections/BlogHero.vue), it uses `@aceforth/nuxt-optimized-images` package to create source set and low quality placeholders.
 
 ## Blog Post Page
 
@@ -274,11 +286,11 @@ export default {
 
 ## Writing Blog Posts
 
-Write the blog details in front-matter and everything else in markdown. You can even mix html along with markdown. Follow the [rules](https://content.nuxtjs.org/writing#html) and you wont have any trouble. If are want to have the option of using a rich text editor then adding [Netlify CMS](https://www.netlifycms.org/) is a good place to start.
+Write the blog details in front-matter and everything else in Markdown. You can even mix HTML along with Markdown. Follow the [rules](https://content.nuxtjs.org/writing#html), and you won't have any trouble. If are want to have the option of using a rich text editor then adding [Netlify CMS](https://www.netlifycms.org/) is a good place to start.
 
 ## Conclusion
 
-Now that you know how to build a static site blog with Nuxt, you're ready to share your awesome content with the internet without worrying about hosting and maintaining a Wordpress server. I built this website with Nuxt JS, the blog pages use nuxt content and Vuetify components for styling. You can find the full source code on [Github](https://github.com/shadow81627/daim).
+Now that you know how to build a static site blog with Nuxt, you're ready to share your awesome content with the internet without worrying about hosting and maintaining a WordPress server. I built this website with Nuxt JS, the blog pages use Nuxt content and Vuetify components for styling. You can find the full source code on [GitHub](https://github.com/shadow81627/daim).
 
 Thanks to [Pramod Devireddy](https://domarpdev.github.io/blog/create-medium-style-blog-theme/) for inspiring this blog post.
 

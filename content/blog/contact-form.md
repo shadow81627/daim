@@ -5,6 +5,14 @@ description: Need a simple way to allow your website visitors to get in contact 
 image: /img/blog/paperplane.jpg
 color: '#083858'
 # image credit: <span>Photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/s/photos/message?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+attributions:
+  - type: photo
+    by:
+      text: Matt Ridley
+      url: https://unsplash.com/@mattwridley?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText
+    on:
+      text: Unsplash
+      url: https://unsplash.com/photos/Lyl8RL7imrw?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText
 ---
 ## Introduction
 

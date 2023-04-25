@@ -1,9 +1,17 @@
 ---
 name: Choosing a frontend framework
 date: 2020-09-25T02:07:05.543Z
-description: Are you overwhelmed by the choice of Javascript frameworks?
+description: Are you overwhelmed by the choice of JavaScript frameworks?
 image: '/img/blog/best-front-end-framework.jpg'
 color: '#081828'
+attributions:
+  - type: photo
+    by:
+      text: stfalcon.com
+      url: https://stfalconcom.medium.com/
+    on:
+      text: Medium
+      url: https://stfalconcom.medium.com/most-used-javascript-frameworks-for-quick-software-development-which-to-choose-590275226003
 ---
 ## Introduction
 

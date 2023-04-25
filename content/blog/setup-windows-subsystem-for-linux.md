@@ -6,6 +6,14 @@ description: Need an easy way to develop php applications on Windows? Learn how 
 image: /img/blog/windows.jpg
 color: '#080808'
 # image credit: Photo by <a href="https://unsplash.com/@stadsa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tadas Sar</a> on <a href="https://unsplash.com/s/photos/windows?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+attributions:
+  - type: photo
+    by:
+      text: Tadas Sar
+      url: https://unsplash.com/@stadsa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+    on:
+      text: Unsplash
+      url: https://unsplash.com/photos/T01GZhBSyMQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 ---
 
 ## Setup

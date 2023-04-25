@@ -5,6 +5,18 @@ modified: 2022-04-22T04:57:13.272Z
 description: I want to detail a terse but complete description of a simple workflow for continuous delivery.
 image: /img/blog/git-workflow.png
 color: '#f8f8f8'
+attributions:
+  - type: photo
+    on:
+      text: Atlassian
+      url: https://atlassianblog.wpengine.com/wp-content/uploads/git-default.png
+  - type: inspiration
+    by:
+      text: Nicola Paolucci
+      url: https://www.atlassian.com/blog/author/npaolucci
+    on:
+      text: Atlassian
+      url: https://www.atlassian.com/blog/git/simple-git-workflow-is-simple
 ---
 
 ## Workflow
@@ -16,9 +28,9 @@ The simple workflow I want to describe has two guiding principles:
 \
 Pulling change-sets using rebase rewrites the history of the branch you’re working on and keeps your changes on top.
 
-### 1. **Create a Github issue**
+### 1. **Create a GitHub issue**
 
-Use a Issue template to provide a skeleton of all the details needed for a good issue.
+Use an issue template to provide a skeleton of all the details needed for a good issue.
 
 ### 2. **Pull** latest changes from Main default branch
 
@@ -84,9 +96,9 @@ In the (somewhat less common) case where other people are also working on the sa
 At this point solve any conflicts that come out of the rebase.
 Resolving conflicts during the rebase allows you to have always clean merges at the end of the feature development. It also keeps your feature branch history clean and focused without spurious noise.
 
-### 8. Perform a final **rebase** cleanup after the pull request gets approved
+### 8. Perform a final **rebase** clean-up after the pull request gets approved
 
-Before the review, it's good to perform a final cleanup and scrub of the feature branch commit history to remove spurious commits that are not providing relevant information. An experienced team can handle it – you can rebase also during development, but I don't recommend it.
+Before the review, it's good to perform a final clean-up and scrub of the feature branch commit history to remove spurious commits that are not providing relevant information. An experienced team can handle it – you can rebase also during development, but I don't recommend it.
 
 `git rebase -i origin/main`
 (At this point if you have rewritten the history of a published branch and if no one else will commit to it or use it, you might need to push your changes using the –force flag).
@@ -102,18 +114,18 @@ git pull origin master
 git merge --no-ff ISSUE-123-awesome-feature
 ```
 
-If you followed the advice above and you have used rebase to keep your feature branch up to date, the actual merge commit will not include any changes; this is cool! The merge commit becomes a marker that stores the context about the feature branch.
+If you followed the advice above, and you have used rebase to keep your feature branch up to date, the merge commit will not include any changes; this is cool! The merge commit becomes a marker that stores the context about the feature branch.
 
-## Useful .gitconfig option to toggle
+## Useful `.gitconfig` option to toggle
 
-Instruct git that every pull uses rebase instead than merge and it preserves while doing so:
+Instruct git that every pull uses rebase instead than merge, and it preserves while doing so:
 
 ```bash
 git config --global branch.autosetuprebase always
 git config --global pull.rebase preserve
 ```
 
-Not everyone likes to change the default behavior of core commands so you should incorporate the above if you understand its implications. See Stack Overflow for details on preserve merges.
+Not everyone likes to change the default behaviour of core commands, you should incorporate the above if you understand its implications. See [Stack Overflow for details on preserve merges](https://stackoverflow.com/questions/15915430/what-exactly-does-gits-rebase-preserve-merges-do-and-why).
 
 ## References
 

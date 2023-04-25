@@ -14,7 +14,7 @@
           <v-card-subtitle
             v-if="summary"
             itemprop="description"
-            class="break-words whitespace-normal text-slate-200 opacity-100"
+            class="break-words whitespace-normal text-slate-200 opacity-100 max-w-[65ch]"
             >{{ summary }}</v-card-subtitle
           >
         </v-card>
@@ -72,7 +72,11 @@
 </template>
 
 <script>
-const attributionTypes = { writing: 'Written by', photo: 'Photo by' };
+const attributionTypes = {
+  writing: 'Written by',
+  photo: 'Photo by',
+  inspiration: 'Inspired by',
+};
 export default {
   props: {
     src: { type: String, default: '/img/blog.jpg' },

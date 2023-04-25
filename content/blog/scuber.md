@@ -8,8 +8,17 @@ color: '#083858'
 
 client: Tourism and Events Queensland
 campaign: scUber
----
 
+attributions:
+  - type: photo
+    on:
+      text: Tourism Queensland
+      url: https://teq.queensland.com/au/en/industry/what-we-do/marketing/scuber
+  - type: writing
+    on:
+      text: XCOM
+      url: https://www.xcommedia.com.au/case-study-scUber.php
+---
 
 ## About the campaign
 
@@ -19,7 +28,27 @@ The scUber promotion aimed to reset the story on the reef and grow positive awar
 
 The campaign was delivered in key western markets including Australia, New Zealand, the United Kingdom, the USA, Canada and France. Partnering with Uber gave TEQ unprecedented access to millions of loyal Uber customers to help tell the story of the Great Barrier Reef to global audiences. Great Barrier Reef holiday packages were also marketed through key distribution partners in these markets to support the campaign and drive visitation to Queensland. The campaign also included a consumer competition allowing one winner from each key western source market plus a friend to win a trip of a lifetime to the Great Barrier Reef and ride in the scUber.
 
-<iframe width="585" height="329" src="https://www.youtube.com/embed/grLSpuNx4UM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mx-auto d-block"></iframe>
+<div
+  style="padding-top: 56.25%; position: relative; overflow: hidden; width: 100%"
+>
+  <iframe
+    src="https://www.youtube.com/embed/grLSpuNx4UM"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    "
+  ></iframe>
+</div>
+
 
 ## SUMMARY
 
@@ -62,5 +91,6 @@ It's anticipated the campaign will help support an added 1.4 million visitors sp
 - **500** entries per second and **1.8 million** entries per hour
 
 ## Sources
-- <https://teq.queensland.com/au/en/industry/what-we-do/marketing/scuber>
-- <https://www.xcommedia.com.au/case-study-scUber.php>
+
+- [Tourism Queensland scUber](https://teq.queensland.com/au/en/industry/what-we-do/marketing/scuber)
+- [XCOM Media scUber case study](https://www.xcommedia.com.au/case-study-scUber.php)

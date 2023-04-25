@@ -72,7 +72,7 @@ In these cases, it’s not even the case that the company doesn’t want to give
 
 ## What this means for you
 
-There are many factors you can negotiate with that are outside your base compensation, such as:
+There are factors you can negotiate with that are outside your base compensation, such as:
 
 - Remote work
 - Number of holidays
@@ -101,7 +101,7 @@ Identify your top two accomplishments over the last 6–8 months. Pick ones that
 
 Present this info how you want, but make it as easy as possible for your boss to vouch for you. Don’t make him do any unnecessary work - ideally, it should be them forwarding the evidence you’ve presented (via a deck or a document) to his higher ups, and then they discuss it.
 
-Also, have a clear salary number in mind. There are plenty of ways to come up with a number - do research on sites like Levels. FYI, Glassdoor, H1BData, or even reach out to others in the industry.
+Have a clear salary number in mind. Do research on sites like Levels FYI, Glassdoor, H1BData, or even reach out to others in the industry.
 
 Once you have a clear number, bump it up by 15-20%.
 
