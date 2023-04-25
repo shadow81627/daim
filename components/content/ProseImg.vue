@@ -6,6 +6,7 @@
     :alt="alt"
     crossorigin="anonymous"
     loading="lazy"
+    :img-attrs="{ class: 'h-auto max-w-full bg-grey-500' }"
   ></LazyNuxtPicture>
 </template>
 
