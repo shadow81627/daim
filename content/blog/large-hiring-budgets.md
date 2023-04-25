@@ -4,7 +4,21 @@ description: Reasons why companies spend more money hiring than retaining people
 # image: /img/blog/employee-retention.jpg
 image: https://images.unsplash.com/photo-1584134239909-eb4800257d6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
 name: The gamble that HR plays
-# credits
+attributions:
+  - type: photo
+    by:
+      text: Shane
+      url: https://unsplash.com/@theyshane?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+    on:
+      text: Unsplash
+      url: https://unsplash.com/photos/U_ekGjoIm_E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+  - type: writing
+    by:
+      text: dfphd
+      url: https://www.reddit.com/user/ibsurvivors
+    on:
+      text: Reddit
+      url: https://www.reddit.com/r/datascience/comments/uo589a/why_are_companies_willing_to_spend_so_much_on/
 ---
 
 This topic is one of the biggest pet peeves for someone who manages people, evaluates, hires, and retains employees.

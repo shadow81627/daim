@@ -5,6 +5,7 @@
       :summary="description"
       :src="image"
       :credit="image && credit ? credit : {}"
+      :attributions="attributions"
     ></BlogHero>
     <v-container>
       <v-row>
@@ -70,10 +71,19 @@ const path = 'blog/' + route.params.slug;
 const config = useRuntimeConfig();
 const { data } = await useAsyncData(path, () =>
   queryContent('blog', route.params.slug)
-    .only(['name', 'description', 'image', 'credit', 'date', 'modified'])
+    .only([
+      'name',
+      'description',
+      'image',
+      'credit',
+      'date',
+      'modified',
+      'attributions',
+    ])
     .findOne(),
 );
-const { name, description, image, credit, date, modified } = data.value;
+const { name, description, image, credit, date, modified, attributions } =
+  data.value;
 // useSchemaOrg([
 //   defineArticle({
 //     image: `${config.public.BASE_URL}/${withoutTrailingSlash(

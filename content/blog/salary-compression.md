@@ -6,6 +6,18 @@ image: https://s3.ap-southeast-2.wasabisys.com/daim.dev/img/blog/employee-retent
 # image: https://images.unsplash.com/photo-1662146494044-c3ecd3f7a3e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80
 name: Salary compression
 # url: https://www.reddit.com/r/datascience/comments/uo589a/why_are_companies_willing_to_spend_so_much_on/
+attributions:
+  - type: photo
+    on:
+      text: Bing Image Creator
+      url: https://www.bing.com/create
+  - type: writing
+    by:
+      text: Shikhar
+      url: https://www.reddit.com/user/dfphd
+    on:
+      text: Reddit
+      url: https://www.reddit.com/r/datascience/comments/uo589a/why_are_companies_willing_to_spend_so_much_on/i8cut6w/
 ---
 
 I got a big pay raise, but it didn’t make me feel good. In fact, it made me realise that I had been leaving money on the table for a while.

@@ -5,6 +5,13 @@ modified: 2022-05-01T05:09:19.195Z
 description: The open source framework making web development simple and powerful. Build your next Vue.js application with confidence using NuxtJS.
 image: '/img/blog/nuxt.png'
 color: '#f8f8f8'
+attributions:
+  - type: writing
+    by:
+      text: Dave Green
+    on:
+      text: Bejamas
+      url: https://www.reddit.com/r/datascience/comments/uo589a/why_are_companies_willing_to_spend_so_much_on/i8cut6w/
 ---
 
 <div style="position: relative;padding-bottom: 56.25%;height: 0;overflow: hidden;max-width: 100%;">
