@@ -254,11 +254,6 @@ export default defineNuxtConfig({
     // },
   },
   nitro: {
-    esbuild: {
-      options: {
-        target: 'esnext',
-      },
-    },
     prerender: {
       crawlLinks: true,
     },
