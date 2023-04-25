@@ -46,6 +46,7 @@
                 target="_blank"
                 rel="noopener"
                 :href="url"
+                :aria-label="`Share on ${network}`"
                 v-on="on"
               >
                 <v-icon>{{ icon }}</v-icon>
