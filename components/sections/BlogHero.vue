@@ -11,12 +11,15 @@
         sm="auto"
       >
         <v-card color="transparent" flat>
-          <v-card-title class="text-break">
+          <v-card-title class="break-words whitespace-normal">
             <h1 class="mb-0 text-uppercase" itemprop="name">{{ title }}</h1>
           </v-card-title>
-          <v-card-subtitle v-if="summary" itemprop="description">{{
-            summary
-          }}</v-card-subtitle>
+          <v-card-subtitle
+            v-if="summary"
+            itemprop="description"
+            class="break-words whitespace-normal text-slate-400 opacity-100"
+            >{{ summary }}</v-card-subtitle
+          >
         </v-card>
       </v-col>
       <v-col
