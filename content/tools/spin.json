@@ -1,0 +1,26 @@
+{
+  "description": "Spin is a bash utility that improves the user-experience for teams using Docker.",
+  "icon": "@custom:custom:spin-icon",
+  "image": "https://serversideup.net/open-source/spin/preview.png",
+  "list": [
+    "Run production locally",
+    "Automated docker image updates",
+    "Follows Docker standards",
+    "Language independent",
+    "Works on Windows, MacOS, and Linux"
+  ],
+  "name": "Spin",
+  "plans": {
+    "free": {
+      "name": "Free",
+      "price": 0
+    },
+    "professional": {
+      "name": "Professional",
+      "price": 250,
+      "interval": "hour"
+    }
+  },
+  "subheading": "Replicate production in a single command",
+  "url": "https://serversideup.net/open-source/spin/"
+}
