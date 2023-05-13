@@ -31,14 +31,17 @@ TL;DR: There are two reasons why companies spend more money hiring than retainin
 ## The gamble that HR plays
 
 ### The HR department is a cost centre
+
 They don't generate any revenue. As a result of that, the main way to justify their existence (other than to keep up with regulatory requirements), is to save the company money.
 
 ### How do you save the company money?
+
 By keeping its biggest operating cost in check - payroll. At most companies, payroll is the biggest slice of the cost pie that isn't cost of goods. And because of that, HR ends up being pretty important: if HR can cut costs by 5%, that could be up to 1% of the entire company's budget for the year.
 
 Now, something to know about HR: they're not generally well versed in maths, modelling, numbers, etc. They know enough to calculate the directly calculable, but when it comes to the harder to quantify... they're not going to try.
 
 ### What is easy to quantify?
+
 That if decreasing the budget for raises by $1M increases attrition by 20 people in a year, and it costs $30K to fill each role, then I saved the company $400K. 
 
 The way this plays out mechanically is that if there are 100 employees who deserve a raise, and you give 5 of them a decent raise, this is what will happen, out of the remaining 95:
@@ -51,12 +54,15 @@ The way this plays out mechanically is that if there are 100 employees who deser
 ## Three fundamental problems with that gamble
 
 ### It does not account for the asymmetry of who you lose
+
 The 7–8 people you will lose are almost surely your absolute best people. When you perpetuate this cycle, you are continuously skimming off the top of your talent pool - which is not who you want to lose. Because the people that you hire to replace them are unlikely to be as good.
 
 ### It does not account for everything else you lose when someone leaves
+
 Other employees have to pick up the slack, which leads to burnout. That person that left has a lot of knowledge, and probably connected different people/departments/concepts/systems, and you have now lost that. Relationships are now damaged. The amount of time it takes you to replace them is all lost productivity. HR, doesn't even pretend to care about any of this. Why? Because it's not their problem. They're not going to deal with the extra workload - you, the manager and co-workers of the person who left, are. They're not going to get dinged for the fact that your team wasn't able to hit a release date, or a project deadline. You are.
 
 ### The terms of that equation are changing
+
 It used to be that most people were willing to suck it up, work harder, grumble, but stay. And that is changing. This is what the great resignation is - a realisation that there are other jobs out there right now that will pay you more today. Not in 6 months after you do a bunch more. Also, not a 3% raise. A 25% raise today to go do almost the same job. The great resignation isn't a new process, it's changing probabilities on a calculated gamble by HR departments that is exposing their scam.
 
 ## What can you do about it?

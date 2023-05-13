@@ -25,7 +25,7 @@ Innovate marketing websites built with bleeding-edge technology. Beautifully des
 
 I'm automating the process of making personalised marketing websites. Automation reduces the time taken to deliver projects and makes the project cheaper to produce.
 
-Nuxt is an innovating static site generation framework we use to build websites. 
+Nuxt is an innovating static site generation framework we use to build websites.
 
 ## 4. Team
 
@@ -59,7 +59,6 @@ I'm working on freelancing with an hourly rate of $98 working on service package
 - Domain name $20 - $400 per year
 - Server Hosting $20 - $4000 per month
 
-
 Total: $3,240 - $14,400 per project
 
 Transparency in costs to provide a premium experience.
@@ -69,6 +68,7 @@ Cost Driven (cost structure, low price prop, automation, extensive outsourcing).
 Value driven (focused on value creation, premium value prop).
 
 ## 7. Forecasts/Success metrics
+
 Measuring how engaging a web page, and how the page is creating revenue generating leads and conversions.
 
 - Impressions

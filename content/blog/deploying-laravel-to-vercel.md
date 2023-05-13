@@ -60,7 +60,6 @@ This will make sure we don’t upload the entirety of our vendor directory to Ve
 }
 ```
 
-
 ## Sources
 
 - [Caleb Porzio | Easy, Free, Serverless Laravel With Vercel](https://calebporzio.com/easy-free-serverless-laravel-with-vercel)

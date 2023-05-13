@@ -13,6 +13,7 @@ attributions:
       text: Medium
       url: https://stfalconcom.medium.com/most-used-javascript-frameworks-for-quick-software-development-which-to-choose-590275226003
 ---
+
 ## Introduction
 
 Building a complex front end application is hard, and it can be even harder when you are using the wrong front end framework? As a developer, you know that it's difficult to keep up with the JavaScript ecosystem. What do you do? Most people started out using [jQuery](https://jquery.com/) to make website more reactive. Here is what you need to know before you choosing a framework to ensure an enjoyable developer experience. This post will tell you what you need to know to make sure you choose the right framework that will let you build and maintain web applications with ease.

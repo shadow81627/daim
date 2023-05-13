@@ -48,7 +48,9 @@ Where possible, quotations must be a formal quote on business letterhead.
 A shopping cart print-out (including supplier's name) for online purchases is acceptable where a formal quote is not possible.
 
 ## Who can apply, and what are the eligibility criteria?
+
 To be eligible to apply for this grant, the business must: 
+
 - **Fewer than 20 employees** (by headcount)
 - Operating and have an **active Australian Business Number (ABN)**
 - **Registered for GST**
@@ -71,6 +73,7 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
+
 <table>
   <tbody>
     <tr>
@@ -117,6 +120,7 @@ table, th, td {
 ## What can’t I spend the grant funding on?
 
 DESBT **will not fund** activities with:
+
 - a total cost of less than **$5,000** (excluding GST),
 - payments made on any activity undertaken before Grant approval
 
@@ -125,7 +129,7 @@ DESBT **will not fund** the following activities
 - activities bought using cryptocurrencies, barter, or services in-kind
 - general business operating costs (e.g., bookkeeping/accounting, tax returns)
 - real estate/property, hire, lease, or rental fees
-- goods, services, or fees from related parties*
+- goods, services, or fees from related parties\*
 - travel
 - franchise fees
 - purchase of stock
@@ -142,13 +146,16 @@ DESBT **will not fund** the following activities
 - implementation of marketing tactics such as advertising, direct marketing or campaign delivery (e.g. Google Ads, Facebook advertising or similar expenses)
 
 ## Supporting evidence
+
 The application **must** include the following documents:
+
 - A **signed and appropriately witnessed statutory declaration** from the business’ owner or director stating the business meets all grant eligibility criteria; and
 - Independent supplier **quotes** (no more than two), dated after the round launch, detailing description and costs of services, who will undertake the activity, and an outline of key activities. You will be able to upload **one quote per supplier**.
 
 The two quotes should be for separate goods/services (from your preferred suppliers), not comparative quotes.
 
 Applicants must:
+
 - Fully complete their application and provide all supporting evidence. Applicants will not have an opportunity to submit information or evidence (including correcting submitted documents).
 - **Original answers** in their application.
 - Their own applications - DESBT considers **submissions or answers from third parties ineligible**.
@@ -162,4 +169,4 @@ DESBT will consider one application for a business or financial beneficiary unde
   - [Program](https://www.business.qld.gov.au/starting-business/advice-support/grants/business-basics-grant)
   - [Application Guidelines](https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/96105177-f346-43e3-af04-f5297b3fc89f/business-basics-round-3-guidelines.pdf?ETag=0145473ef6116fc21a65700e6ef0e36e)
   - [Frequently Asked Questions](https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/6d7b2c24-2bee-4760-8432-2d6f799d620b/business-basics-round-3-frequently-asked-questions-v2.pdf?ETag=54be9daea5b94f04ddff1097962c0775)
-  - [Sample of application form](https://www.publications.qld.gov.au/dataset/business-basics-round-3/resource/fb1a8991-02d6-484b-8e2d-e57967e4659f?truncate=30&inner_span=True)
+  - [Sample of application form](https://www.publications.qld.gov.au/dataset/business-basics-round-3/resource/fb1a8991-02d6-484b-8e2d-e57967e4659f?truncate=30\&inner_span=True)

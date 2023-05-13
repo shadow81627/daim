@@ -27,7 +27,6 @@ Innovate marketing websites built with bleeding-edge technology. Beautifully des
 
 I'm automating the process of making personalised marketing websites. Automation reduces the time taken to deliver projects and makes the project cheaper to produce.
 
-
 ## Product Risk (underlying technology behind your solution)
 
 I use open source self-hosted software. If the maintainer abandons the project, I can find another, or I can fork the project and maintain it myself.
@@ -77,12 +76,13 @@ I plan to work face to face with startups in River City Labs to build and mainta
 Help startups do cool digital marketing and show results against an industry benchmark.
 
 Use of funds:
+
 - Design $2,000 - $5,000 per project
 - Developer $1,000 - $5,000 per project (10 - 50 hours)
 - Project Manager $200 per project
 - Domain name $20 - $400 per year
 - Server Hosting $20 - $4000 per month
-Total: $3,240 - $14,400 per project
+  Total: $3,240 - $14,400 per project
 
 Success when I have enough value-based revenue to work full time for myself.
 
@@ -90,7 +90,7 @@ Success when I have enough value-based revenue to work full time for myself.
 
 Based on the hours I spent writing code in it, which is in the hundreds of hours.
 
-200 * 98 = 19,600
+200 \* 98 = 19,600
 
 Also, a couple of thousand dollars of capitalisation for assets and other costs.
 
@@ -108,14 +108,14 @@ I'm looking forward to working with the startup community to deliver high qualit
 ## Common Errors in Presentation Materials
 
 1. Grammatical and spelling errors
-1. Writing in narrative rather than outline format
-1. Misunderstanding the difference between total market and addressable market
-1. Approaching the financial model from the top down
-1. Leaps of faith (unsupported assumptions)
-1. Focusing on the technology and not the business
-1. Ignoring or dismissing the competition
-1. Projections that are too aggressive or too conservative
-1. Failing to provide your basic contact information
+2. Writing in narrative rather than outline format
+3. Misunderstanding the difference between total market and addressable market
+4. Approaching the financial model from the top down
+5. Leaps of faith (unsupported assumptions)
+6. Focusing on the technology and not the business
+7. Ignoring or dismissing the competition
+8. Projections that are too aggressive or too conservative
+9. Failing to provide your basic contact information
 
 ## Sources
 

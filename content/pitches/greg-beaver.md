@@ -74,7 +74,7 @@ Total: $3,240 - $14,400 per project
 
 Based on the hours I spent writing code in it, which is in the hundreds of hours.
 
-200 * 98 = 19,600
+200 \* 98 = 19,600
 
 Also, a couple of thousand dollars of capitalisation for assets and other costs.
 

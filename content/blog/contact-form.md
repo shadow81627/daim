@@ -14,6 +14,7 @@ attributions:
       text: Unsplash
       url: https://unsplash.com/photos/Lyl8RL7imrw?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText
 ---
+
 ## Introduction
 
 I needed to set up a simple form to allow users to send messages to me via email. One of the most important reasons to have a contact form on your website is to reduce spam and keep your site secure. When you display your email address on your site, you will get unwanted emails.
@@ -79,7 +80,7 @@ I used [VeeValidate](https://logaretm.github.io/vee-validate/) to handle the inp
 
 I followed the [VeeValidate Codepen](https://codesandbox.io/s/pij6w?file=/src/components/inputs/VTextFieldWithValidation.vue:437-500) for refactoring Vuetify inputs. Here is the input component I created:
 
-```vue\[components/base/TextField.vue]
+```vue[components/base/TextField.vue]
 <template>
   <ValidationProvider
     v-slot="{ errors, valid }"
@@ -117,7 +118,7 @@ export default {
 
 Here is the final code for my email contact form:
 
-```vue\[components/base/ContactForm.vue]
+```vue[components/base/ContactForm.vue]
 <template>
   <div>
     <validation-observer ref="obs" v-slot="{ handleSubmit }">

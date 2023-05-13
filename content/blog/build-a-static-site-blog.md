@@ -36,7 +36,7 @@ While not necessary, some great bonus features of a great static site blog are f
 
 ## Getting Started
 
----
+***
 
 If you haven't used Nuxt before you can go read my [Nuxt](/blog/nuxt#getting-started) Post about how to get started.
 
@@ -49,7 +49,7 @@ npm i @nuxtjs/vuetify @aceforth/nuxt-optimized-images --save-dev
 
 Add `@nuxt/content` to the `modules` and `@nuxtjs/vuetify` to `buildModules` list in `nuxt.config.js`:
 
-```js\[nuxt.config.js]
+```js[nuxt.config.js]
   modules: [
     "@nuxt/content",
   ],
@@ -70,7 +70,7 @@ Add `@nuxt/content` to the `modules` and `@nuxtjs/vuetify` to `buildModules` lis
 
 ## Project Structure
 
----
+***
 
 Create a folder with name `content` inside the project folder if not created by `@nuxt/content`. Then create a sub-folder with name `blog` inside the folder `content`. `content/blog` is the folder where we write all our blog posts in markdown files.
 
@@ -99,7 +99,7 @@ Here, we will list down all the blog posts we create under `content/blog` folder
 - Blog Post created time formatted with [dayjs](https://day.js.org/)
 - Time for reading blog post
 
-```vue\[pages/blog/index.vue]
+```vue[pages/blog/index.vue]
 <template>
   <div>
     <BlogHero :title="heading"></BlogHero>
@@ -175,7 +175,7 @@ The average reader can read 200 words per minute, for technical material the ave
 
 The following code dynamically renders each blog post markdown file. We will fetch the content and format the front-matter of the blog post using the blog post slug from the route.
 
-```vue\[pages/blog/\_slug.vue]
+```vue[pages/blog/_slug.vue]
 <template>
   <div>
     <BlogHero

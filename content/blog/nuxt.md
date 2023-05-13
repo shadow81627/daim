@@ -49,7 +49,7 @@ We love Nuxt.js and continuously improve the framework so you love it too! Appea
 
 ## Getting Started
 
----
+***
 
 Following the Nuxt [installation guide](https://nuxtjs.org/guide/installation):
 

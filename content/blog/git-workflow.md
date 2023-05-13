@@ -25,8 +25,8 @@ The simple workflow I want to describe has two guiding principles:
 
 1. Main default branch is always production-like and deployable.
 2. Rebase during feature development, explicit (non fast-forward) merge when done.
-\
-Pulling change-sets using rebase rewrites the history of the branch you’re working on and keeps your changes on top.
+   \
+   Pulling change-sets using rebase rewrites the history of the branch you’re working on and keeps your changes on top.
 
 ### 1. **Create a GitHub issue**
 
@@ -131,7 +131,7 @@ Not everyone likes to change the default behaviour of core commands, you should 
 
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [Commitizen conventional-commit-types](https://github.com/commitizen/conventional-commit-types/blob/v3.0.0/index.json)
-- [🔨 [git]: Write better commits with Gitmoji](https://dev.to/javidjms/git-write-better-commits-with-gitmoji-3193)
+- [🔨 \[git\]: Write better commits with Gitmoji](https://dev.to/javidjms/git-write-better-commits-with-gitmoji-3193)
 - [Gitmoji - Yay or Nay?](https://opensource.christmas/2019/11)
 - [Atlassian simple git workflow](https://www.atlassian.com/blog/git/simple-git-workflow-is-simple)
 - [Simple git branching model](https://gist.github.com/jbenet/ee6c9ac48068889b0912)

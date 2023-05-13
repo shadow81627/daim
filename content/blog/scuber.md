@@ -49,7 +49,6 @@ The campaign was delivered in key western markets including Australia, New Zeala
   ></iframe>
 </div>
 
-
 ## SUMMARY
 
 XCOM are proud to have designed and delivered this global campaign for Tourism and Events Queensland, and Uber. With a challenging timeline and evolving requirements from stakeholders, this campaign has been a fantastic success! Going out to an estimated global audience of **3.3 billion people** and generating over **3,900 positive news stories** about the reef's resilience and world-leading management.

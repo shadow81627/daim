@@ -19,14 +19,22 @@ attributions:
 ## Setup
 
 1. Make sure you are using Windows Pro since Docker needs hyper-v which is in the pro version
+
 2. [Install Ubuntu from the Microsoft store](https://www.microsoft.com/p/ubuntu-2004-lts/9n6svws3rx71)
+
 3. Open the Ubuntu CLI app
+
 4. I recommend installing [Visual Studio Code](https://code.visualstudio.com/) with [WSL extensions](https://code.visualstudio.com/docs/remote/wsl) from Microsoft
+
 5. Then you can use the code command to open VS Code from Ubuntu WSL eg. `code .`
+
 6. For the best file system performance and proper inotify events clone the git repo code in side of Ubuntu
+
 7. Install git in Ubuntu WSL
    `sudo apt-get install git`
+
 8. [Install docker](https://docs.docker.com/engine/install/ubuntu/)
+
 9. [Install docker compose](https://docs.docker.com/compose/install/)
 
 10. [Install PHP](https://www.tecmint.com/install-different-php-versions-in-ubuntu/)
@@ -40,6 +48,7 @@ attributions:
 
 11. [Switch PHP version](https://stackoverflow.com/questions/42619312/switch-php-versions-on-commandline-ubuntu-16-04/48336881#48336881)
     `sudo update-alternatives --config php`
+
 12. [Install composer](https://getcomposer.org/download/)
 
     ```bash
@@ -51,6 +60,7 @@ attributions:
 
 13. [Install PHP extension for PHP version](https://magento.stackexchange.com/questions/123246/magento-2-php-extensions-missing/134259#134259)
     `sudo apt-get install php8.0-gd php8.0-mcrypt php8.0-curl php8.0-intl php8.0-xsl php8.0-mbstring openssl php8.0-zip php8.0-soap`
+
 14. Optionally [Install Composer Satis](https://alanstorm.com/magento_2_composer_marketplace_and_local_satis_mirrors/) for faster composer installs and easier auth with private packages
 
     ```bash

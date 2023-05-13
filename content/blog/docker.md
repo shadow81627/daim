@@ -7,6 +7,7 @@ name: Docker, Debug your app, not your environment
 ---
 
 ## What are Docker Containers
+
 Docker is a simple standard to define the environment your code requires to run.
 
 Unlike a virtual machine (VM), containers do not have high overhead and hence enable more efficient usage of the underlying system and resources. Containers use low-level mechanics of the host operating system, containers provide most of the isolation of a VM at a fraction of the computing power.
@@ -67,9 +68,11 @@ View the running containers with [VSCode docker extension](https://code.visualst
 ![VSCode Docker Extension](https://code.visualstudio.com/assets/docs/containers/overview/compose-group.png)
 
 ## Benefits
+
 The environment you deploy code to in production is the same you test and run it on your machine. Every developer can share the same environment definition.
 
 ### Run more than one version of PHP at the same time
+
 Let’s say you have three different PHP applications that you plan to host on a single server (which could either be a physical or a virtual machine). Each of these applications makes use of a different version of PHP, as well as the associated libraries and dependencies, differ from one application to another. Since we cannot have different versions of PHP installed on the same machine, this prevents us from hosting all three applications on the same computer.
 
 Using Docker we can have 3 versions of PHP running at the same time on one computer.
@@ -84,19 +87,22 @@ MacOS can have issues with file system speed, most visible when running NPM or C
 Some solutions offered in this article [Docker on MacOS is slow and how to fix it](https://www.cncf.io/blog/2023/02/02/docker-on-macos-is-slow-and-how-to-fix-it/).
 
 Solutions
+
 - [Mutagen](https://mutagen.io/) Moves code in real-time with fast two-way file synchronization. I've used it for Magento 2 Development. I've had issues getting Mutagen to run and with slow builds taking 30 minutes to copy files. But once copied the container file system did run faster.
 - [VSCode Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) are a promising standard for running dev environments that might be worth exploring.
 - [New Docker for Mac VirtioFS file sync is 4x faster](https://www.jeffgeerling.com/blog/2022/new-docker-mac-virtiofs-file-sync-4x-faster)
 
 ### Root user
+
 Docker runs as a root user which gives it privileged accessed to your computer which can be exploited by malicious docker containers.
 
 Solutions
+
 1. 🤷 Does it matter? This hasn't been an issue for me. It means sometimes I need to [change ownership of files from root to user](https://askubuntu.com/questions/623864/change-ownership-of-all-files-from-root-to-user).
-1. [Run docker in rootless mode](https://docs.docker.com/engine/security/rootless/)
-1. [Dev container define non root user](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user)
-1. [Define a non root user in Dockerfile](https://stackoverflow.com/a/67262075)
-1. Use [Podman](https://podman.io/) rather than Docker.
+2. [Run docker in rootless mode](https://docs.docker.com/engine/security/rootless/)
+3. [Dev container define non root user](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user)
+4. [Define a non root user in Dockerfile](https://stackoverflow.com/a/67262075)
+5. Use [Podman](https://podman.io/) rather than Docker.
 
 ## Alternatives
 
@@ -112,7 +118,6 @@ Solutions
 | Dependency Isolation              |   ✔️   |     ✔️    |   ❌   |   ❌   |
 | Share Dependency Definition       |   ✔️   |     🤷    |   ❌   |   ❌   |
 | Runs Anywhere (Production)        |   ✔️   |     ❌    |   ❌   |   ❌   |
-
 
 ## Sources
 
