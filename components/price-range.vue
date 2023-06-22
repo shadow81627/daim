@@ -9,6 +9,8 @@
     <template
       v-if="(priceSame || priceMin.price === 0) && priceMax.price !== 0"
     >
+      <!-- eslint-disable-next-line vue/no-lone-template -->
+      <template>&nbsp;</template>
       {{ priceMax.currency || 'USD' }}
 
       <template v-if="priceMax.interval">/ {{ priceMax.interval }}</template>
