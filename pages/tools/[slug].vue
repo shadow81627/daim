@@ -59,7 +59,9 @@
                     v-bind="{
                       ...offer,
                       url: offer.url,
-                      image: `/img/tools/offers/${item.slug}/${offerKey}.png`,
+                      image: offer.image
+                        ? `/img/tools/offers/${item.slug}/${offerKey}.png`
+                        : undefined,
                     }"
                     class="mb-3"
                   >
