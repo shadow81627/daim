@@ -3674,27 +3674,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/image-edge@npm:1.0.0-28020728.5df24eb":
-  version: 1.0.0-28020728.5df24eb
-  resolution: "@nuxt/image-edge@npm:1.0.0-28020728.5df24eb"
-  dependencies:
-    "@nuxt/kit": ^3.4.0
-    consola: ^3.0.1
-    defu: ^6.1.2
-    h3: ^1.6.4
-    image-meta: ^0.1.1
-    ipx: 1.0.0
-    node-fetch-native: ^1.1.0
-    ohash: ^1.0.0
-    pathe: ^1.1.0
-    ufo: ^1.1.1
-  dependenciesMeta:
-    ipx:
-      optional: true
-  checksum: 4a7c4bbd6177f705b028234b78167ae4ebc3177d856d212a40abf78a50baabaeb30948722734e606d78d3fb57d9b47eea21b4ffb38f2f538e4089232ceb853b1
-  languageName: node
-  linkType: hard
-
 "@nuxt/image@npm:latest":
   version: 1.1.0
   resolution: "@nuxt/image@npm:1.1.0"
@@ -3821,7 +3800,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.8.2, @nuxt/kit@npm:^3.0.0, @nuxt/kit@npm:^3.2.0, @nuxt/kit@npm:^3.2.2, @nuxt/kit@npm:^3.3.3, @nuxt/kit@npm:^3.4.0, @nuxt/kit@npm:^3.4.2, @nuxt/kit@npm:^3.5.0, @nuxt/kit@npm:^3.6.2, @nuxt/kit@npm:^3.7.4, @nuxt/kit@npm:^3.8.0, @nuxt/kit@npm:^3.8.2":
+"@nuxt/kit@npm:3.8.2, @nuxt/kit@npm:^3.0.0, @nuxt/kit@npm:^3.2.0, @nuxt/kit@npm:^3.2.2, @nuxt/kit@npm:^3.3.3, @nuxt/kit@npm:^3.4.2, @nuxt/kit@npm:^3.5.0, @nuxt/kit@npm:^3.6.2, @nuxt/kit@npm:^3.7.4, @nuxt/kit@npm:^3.8.0, @nuxt/kit@npm:^3.8.2":
   version: 3.8.2
   resolution: "@nuxt/kit@npm:3.8.2"
   dependencies:
@@ -9998,7 +9977,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"consola@npm:^3.0.0, consola@npm:^3.0.1, consola@npm:^3.2.3":
+"consola@npm:^3.0.0, consola@npm:^3.2.3":
   version: 3.2.3
   resolution: "consola@npm:3.2.3"
   checksum: 32ec70e177dd2385c42e38078958cc7397be91db21af90c6f9faa0b16168b49b1c61d689338604bbb2d64370b9347a35f42a9197663a913d3a405bb0ce728499
@@ -10725,7 +10704,6 @@ __metadata:
     "@mdi/js": 5.9.55
     "@nuxt/content": 2.9.0
     "@nuxt/image": latest
-    "@nuxt/image-edge": 1.0.0-28020728.5df24eb
     "@nuxt/types": 2.15.8
     "@nuxtjs/eslint-config-typescript": 12.0.0
     "@nuxtjs/eslint-module": 4.1.0
@@ -11120,7 +11098,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"destr@npm:^1.2.0, destr@npm:^1.2.2":
+"destr@npm:^1.2.0":
   version: 1.2.2
   resolution: "destr@npm:1.2.2"
   checksum: 3906b49513a64d8442dacb8b798c59d66257ded4ccd2ef1d99b58644d4aa6b30ca61f9a9823d3dcbc78b4db812596e53e85e499f39a498b3b165a045b5228b2b
@@ -14019,7 +13997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"h3@npm:^1.0.1, h3@npm:^1.0.2, h3@npm:^1.6.4, h3@npm:^1.8.1, h3@npm:^1.8.2, h3@npm:^1.9.0":
+"h3@npm:^1.0.1, h3@npm:^1.0.2, h3@npm:^1.8.1, h3@npm:^1.8.2, h3@npm:^1.9.0":
   version: 1.9.0
   resolution: "h3@npm:1.9.0"
   dependencies:
@@ -14776,13 +14754,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"image-meta@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "image-meta@npm:0.1.1"
-  checksum: fe38611c2b7f2b327e4bf66bd73a24d5b2fa6aecbe0bc69565dd882c930e9d123e181ccadcdf8f66055d21405eeefaa69863f8ed5e0edcb08a6ee3956560d385
-  languageName: node
-  linkType: hard
-
 "image-meta@npm:^0.2.0":
   version: 0.2.0
   resolution: "image-meta@npm:0.2.0"
@@ -15056,27 +15027,6 @@ __metadata:
   version: 1.9.1
   resolution: "ipaddr.js@npm:1.9.1"
   checksum: f88d3825981486f5a1942414c8d77dd6674dd71c065adcfa46f578d677edcb99fda25af42675cb59db492fdf427b34a5abfcde3982da11a8fd83a500b41cfe77
-  languageName: node
-  linkType: hard
-
-"ipx@npm:1.0.0":
-  version: 1.0.0
-  resolution: "ipx@npm:1.0.0"
-  dependencies:
-    consola: ^2.15.3
-    defu: ^6.1.2
-    destr: ^1.2.2
-    etag: ^1.8.1
-    image-meta: ^0.1.1
-    listhen: ^1.0.4
-    node-fetch-native: ^1.0.2
-    pathe: ^1.1.0
-    sharp: ^0.32.0
-    ufo: ^1.1.1
-    xss: ^1.0.14
-  bin:
-    ipx: bin/ipx.mjs
-  checksum: 2d0ba145d484b3a69013dd055d0ba4fd49461be3eb71f675e8f80bf14395dc01181bbfeb765b877dc70a98dfa8619e61b008942952061b3310bf529148bd0d47
   languageName: node
   linkType: hard
 
@@ -16578,7 +16528,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"listhen@npm:^1.0.4, listhen@npm:^1.5.5":
+"listhen@npm:^1.5.5":
   version: 1.5.5
   resolution: "listhen@npm:1.5.5"
   dependencies:
@@ -19132,7 +19082,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch-native@npm:^1.0.2, node-fetch-native@npm:^1.1.0, node-fetch-native@npm:^1.4.0, node-fetch-native@npm:^1.4.1":
+"node-fetch-native@npm:^1.4.0, node-fetch-native@npm:^1.4.1":
   version: 1.4.1
   resolution: "node-fetch-native@npm:1.4.1"
   checksum: 339001ad3235a09b195198df8be71b591eec4064a2fcfb7f54b9f0716f6ccb3bda5828e1746f809a6d2edb062a0330e5798f408396c33b3b88339c73d6e9575d
@@ -24018,7 +23968,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.32.0, sharp@npm:^0.32.6":
+"sharp@npm:^0.32.6":
   version: 0.32.6
   resolution: "sharp@npm:0.32.6"
   dependencies:
