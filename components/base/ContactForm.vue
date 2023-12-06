@@ -18,7 +18,7 @@
       :submit-attrs="{
         'input-class': 'bg-primary font-weight-bold',
       }"
-      @submit.prevent="submit"
+      @submit="submit"
     >
       <div class="hpot d-none" style="display: none">
         <label>Leave this field empty: <input name="_gotcha" /></label>
