@@ -17,6 +17,7 @@
           lg="4"
           xl="3"
           class="d-flex flex-column"
+          style="max-width: 360px"
         >
           <Feature v-bind="item"> </Feature>
         </v-col>
