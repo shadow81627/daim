@@ -115,7 +115,9 @@ export default {
         this.form = {};
       } catch (error) {
         this.error = true;
-        this.$sentry.captureException(error);
+        console.error(error);
+        // const { $sentryCaptureException } = useNuxtApp();
+        // $sentryCaptureException(error);
       } finally {
         this.submitting = false;
       }
