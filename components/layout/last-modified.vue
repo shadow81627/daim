@@ -24,7 +24,6 @@
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime.js';
 
-// eslint-disable-next-line import/no-named-as-default-member
 dayjs.extend(relativeTime);
 
 export default {

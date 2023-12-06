@@ -109,7 +109,8 @@ export default {
     item: {},
   }),
   head() {
-    const image = `${this.$config.public.BASE_URL}${this.$img(
+    const img = useImage();
+    const image = `${this.$config.public.BASE_URL}${this.img(
       this.item.image || '/img/blog.jpg',
       {
         width: 1280,

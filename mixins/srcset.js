@@ -1,7 +1,8 @@
 export default {
   methods: {
     _srcset(src, options = {}) {
-      return this.$img.getSizes(src, {
+      const img = useImage();
+      return img.getSizes(src, {
         sizes: 'xs:100vw sm:100vw',
         modifiers: {
           format: 'webp',

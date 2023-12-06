@@ -1,7 +1,5 @@
 <template>
-  <!-- eslint-disable vuetify/no-deprecated-props -->
   <v-card
-    :to="to"
     class="flex d-flex flex-column justify-between flex-grow-1"
     itemprop="blogPost"
     itemscope

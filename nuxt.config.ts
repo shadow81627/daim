@@ -132,7 +132,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/content',
     '@nuxtjs/i18n',
-    '@nuxt/image-edge',
+    '@nuxt/image',
     'nuxt-icon',
     // 'nuxt-webfontloader',
     // ['nuxt-matomo', matomo],
@@ -200,11 +200,6 @@ export default defineNuxtConfig({
   i18n: {
     baseUrl: env.BASE_URL,
     defaultLocale: 'en',
-    vueI18n: {
-      legacy: false,
-      locale: 'en',
-      fallbackLocale: 'en',
-    },
     locales: [
       {
         code: 'en',

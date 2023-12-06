@@ -1,6 +1,6 @@
 const pages = [
   { slug: 'home', route: '/' },
-  { slug: 'blog', heading: 'BLOG' },
+  { slug: 'blog', heading: 'ARTICLES' },
   { slug: 'contact', heading: 'CONTACT' },
   { slug: 'tools', heading: 'TOOLS' },
   { slug: 'portfolio', heading: 'PORTFOLIO' },
