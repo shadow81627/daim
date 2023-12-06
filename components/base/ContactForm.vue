@@ -106,16 +106,13 @@ export default {
     success: null,
   }),
   methods: {
-    async submit() {
+    async submit(data) {
       this.submitting = true;
       try {
-        await this.$fetch.$post(this.action, this.form);
+        await $fetch(this.action, { method: 'POST', body: data });
         this.error = false;
         this.success = true;
         this.form = {};
-        requestAnimationFrame(() => {
-          this.$refs.obs.reset();
-        });
       } catch (error) {
         this.error = true;
         this.$sentry.captureException(error);
