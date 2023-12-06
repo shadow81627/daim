@@ -11,11 +11,7 @@
           md="6"
           lg="4"
         >
-          <BlogCard
-            v-bind="item"
-            :image-color="item.color"
-            :url="`/pitches/${encodeURIComponent(item.slug)}`"
-          ></BlogCard>
+          <BlogCard v-bind="item"></BlogCard>
         </v-col>
       </v-row>
     </v-container>
@@ -37,6 +33,9 @@ export default {
             const slug = item._path.replace('/pitches/', '');
             return {
               ...item,
+              name: item.title,
+              imageColor: item.color,
+              path: '/pitches/',
               slug,
             };
           });

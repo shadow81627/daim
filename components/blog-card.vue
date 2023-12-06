@@ -78,6 +78,7 @@ export default {
   inheritAttrs: false,
   props: {
     url: { type: String, default: null },
+    path: { type: String, default: '/blog/' },
     slug: { type: String, default: null },
     name: { type: String, default: undefined },
     description: { type: String, default: null },
@@ -100,7 +101,7 @@ export default {
     },
     to() {
       return !this.url || this._readTime
-        ? `/blog/${encodeURIComponent(this.slug)}`
+        ? `${this.path}${encodeURIComponent(this.slug)}`
         : undefined;
     },
     _date() {
