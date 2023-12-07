@@ -1,4 +1,4 @@
-import vuetify from 'vite-plugin-vuetify';
+import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import { splitVendorChunkPlugin } from 'vite';
 import svgLoader from 'vite-svg-loader';
 import { defineNuxtConfig } from 'nuxt/config';
@@ -138,7 +138,7 @@ export default defineNuxtConfig({
     // ['nuxt-matomo', matomo],
     (_, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
-        config.plugins?.push(vuetify());
+        config.plugins?.push(vuetify({ autoImport: true }));
       });
     },
 
@@ -273,6 +273,11 @@ export default defineNuxtConfig({
     transpile: ['lodash-es', 'vuetify', 'iron-webcrypto', 'unhead'],
   },
   vite: {
+    vue: {
+      template: {
+        transformAssetUrls,
+      },
+    },
     plugins: [svgLoader(), splitVendorChunkPlugin()],
   },
 });

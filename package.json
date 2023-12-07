@@ -61,7 +61,6 @@
   "devDependencies": {
     "@iconify/tools": "2.2.6",
     "@iconify/vue2": "2.1.0",
-    "@invictus.codes/nuxt-vuetify": "0.3.0",
     "@kevinmarrec/nuxt-pwa": "0.17.0",
     "@lhci/cli": "0.11.0",
     "@mdi/js": "5.9.55",
@@ -70,7 +69,6 @@
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@nuxtjs/eslint-module": "4.1.0",
     "@nuxtjs/i18n": "8.0.0-rc.6",
-    "@nuxtjs/vuetify": "1.12.3",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.1",
     "@types/crypto-js": "4.1.1",
@@ -125,7 +123,7 @@
     "typescript": "5.0.2",
     "vite-plugin-vuetify": "1.0.2",
     "vite-svg-loader": "4.0.0",
-    "vuetify": "3.1.10",
+    "vuetify": "3.4.6",
     "wrangler": "2.13.0",
     "write-good": "1.0.8"
   }
