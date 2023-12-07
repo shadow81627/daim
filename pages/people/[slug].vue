@@ -22,8 +22,8 @@
       <v-row>
         <v-col cols="auto">
           <v-img
-            :lazy-src="$img(image, { quality: 1, width: 300, height: 300 })"
-            :src="$img(image, { quality: 70, width: 300, height: 300 })"
+            :lazy-src="img(image, { quality: 1, width: 300, height: 300 })"
+            :src="img(image, { quality: 70, width: 300, height: 300 })"
             :srcset="_srcset(image, { width: 300, height: 300 }).srcset"
             :sizes="_srcset.size"
             :width="300"
@@ -380,6 +380,7 @@ export default {
   async setup() {
     const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
     const route = useRoute();
+    const img = useImage();
     const slug = route.params.slug;
     const {
       basics: {
@@ -406,6 +407,7 @@ export default {
 
     const country = countryCode ? regionNames.of(countryCode) : undefined;
     return {
+      img,
       image: `/img/team/${slug}.png`,
       profiles,
       firstname,

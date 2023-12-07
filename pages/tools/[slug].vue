@@ -59,7 +59,9 @@
                     v-bind="{
                       ...offer,
                       url: offer.url,
-                      image: `/img/tools/offers/${item.slug}/${offerKey}.png`,
+                      image: offer.image
+                        ? `/img/tools/offers/${item.slug}/${offerKey}.png`
+                        : undefined,
                     }"
                     class="mb-3"
                   >
@@ -109,7 +111,8 @@ export default {
     item: {},
   }),
   head() {
-    const image = `${this.$config.public.BASE_URL}${this.$img(
+    const img = useImage();
+    const image = `${this.$config.public.BASE_URL}${img(
       this.item.image || '/img/blog.jpg',
       {
         width: 1280,

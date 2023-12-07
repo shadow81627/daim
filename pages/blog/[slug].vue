@@ -83,6 +83,12 @@ const { data } = await useAsyncData(path, () =>
     ])
     .findOne(),
 );
+if (!data.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page Not Found',
+  });
+}
 const { name, description, image, credit, date, modified, attributions } =
   data.value;
 // useSchemaOrg([

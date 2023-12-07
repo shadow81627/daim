@@ -1,7 +1,5 @@
 <template>
-  <!-- eslint-disable vuetify/no-deprecated-props -->
   <v-card
-    :to="to"
     class="flex d-flex flex-column justify-between flex-grow-1"
     itemprop="blogPost"
     itemscope
@@ -80,6 +78,7 @@ export default {
   inheritAttrs: false,
   props: {
     url: { type: String, default: null },
+    path: { type: String, default: '/blog/' },
     slug: { type: String, default: null },
     name: { type: String, default: undefined },
     description: { type: String, default: null },
@@ -102,7 +101,7 @@ export default {
     },
     to() {
       return !this.url || this._readTime
-        ? `/blog/${encodeURIComponent(this.slug)}`
+        ? `${this.path}${encodeURIComponent(this.slug)}`
         : undefined;
     },
     _date() {

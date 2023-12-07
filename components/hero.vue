@@ -99,8 +99,8 @@ export default {
                   left: 0;
                   width: 100%;
                   height: 100%;`;
-    const $img = useImage();
-    const ogImage = $img(props.src, {
+    const img = useImage();
+    const ogImage = img(props.src, {
       width: 1200,
       height: 630,
       fit: 'cover',
