@@ -231,6 +231,7 @@ export default defineNuxtConfig({
   image: {
     provider: 'imgproxy',
     domains: [env.HOST],
+    format: ['avif', 'webp'],
     // ipx: {
     //   baseURL: BASE_URL + '/_ipx',
     // },
