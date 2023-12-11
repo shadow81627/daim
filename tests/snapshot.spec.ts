@@ -10,12 +10,12 @@ const pages = [
   { slug: 'alternatives', heading: 'Alternatives' },
   { slug: 'services', heading: 'Services' },
   // { slug: 'about', heading: 'ABOUT' },
-  // { slug: '404', heading: '404' },
+  { slug: '404', heading: '404' },
   // { slug: 'search', heading: 'SEARCH' },
   // { slug: 'privacy', heading: 'PRIVACY' },
   // { slug: 'terms', heading: 'TERMS' },
-  { slug: 'sitemap', route: '/sitemap.xml' },
-  { slug: 'robots', route: '/robots.txt' },
+  // { slug: 'sitemap', route: '/sitemap.xml' },
+  // { slug: 'robots', route: '/robots.txt' },
 ];
 
 for (const { slug, heading, route } of pages) {
@@ -28,6 +28,7 @@ for (const { slug, heading, route } of pages) {
       ).toBeVisible();
     }
 
+    await page.waitForLoadState('networkidle');
     await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
   });
 }
