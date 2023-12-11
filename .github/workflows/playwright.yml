@@ -4,6 +4,9 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+env:
+  IMGPROXY_KEY: ${{ secrets.IMGPROXY_KEY }}
+  IMGPROXY_SALT: ${{ secrets.IMGPROXY_SALT }}
 jobs:
   test:
     timeout-minutes: 60
