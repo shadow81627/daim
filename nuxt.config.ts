@@ -114,7 +114,9 @@ export default defineNuxtConfig({
   /*
    ** Global CSS
    */
-  css: ['vuetify/lib/styles/main.sass'],
+  css: [
+    // 'vuetify/lib/styles/main.sass'
+  ],
 
   /*
    ** Nuxt.js modules
@@ -155,6 +157,11 @@ export default defineNuxtConfig({
 
   unocss: {
     typography: true,
+    webFonts: {
+      fonts: {
+        sans: 'Roboto',
+      },
+    },
   },
 
   content: {
@@ -216,12 +223,12 @@ export default defineNuxtConfig({
     hostname: env.BASE_URL,
   },
 
-  vuetify: {
-    optionsPath: './vuetify.options.js',
-    customVariables: ['~/assets/scss/vuetify.scss'],
-    treeShake: true,
-    defaultAssets: false,
-  },
+  // vuetify: {
+  //   optionsPath: './vuetify.options.js',
+  //   customVariables: ['~/assets/scss/vuetify.scss'],
+  //   treeShake: true,
+  //   defaultAssets: false,
+  // },
 
   eslint: {
     cache: true,

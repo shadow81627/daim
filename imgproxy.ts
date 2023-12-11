@@ -11,6 +11,7 @@ const hexDecode = (hex: string) => Buffer.from(hex, 'hex');
 
 const sign = (salt: string, target: string, secret: string) => {
   const msg = hexDecode(salt + Buffer.from(target).toString('hex')); // Uint8Array of arbitrary length
+  if (!msg.toString('hex')) return;
   const hmac = hmacSHA256(hex.parse(msg.toString('hex')), hex.parse(secret));
   const digest = hmac.toString(Base64url);
   return digest;
