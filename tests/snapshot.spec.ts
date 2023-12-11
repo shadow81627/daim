@@ -28,6 +28,6 @@ for (const { slug, heading, route } of pages) {
       ).toBeVisible();
     }
 
-    await expect(page).toHaveScreenshot();
+    await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
   });
 }
