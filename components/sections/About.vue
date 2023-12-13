@@ -99,7 +99,7 @@ export default {
   data() {
     return {
       name: 'Damien',
-      typeDisplay: 'Digital Consultant',
+      typeDisplay: 'Web Developer',
       experience: '5+',
       description:
         'He specialises in handcrafted, bespoke websites, with an interest in open source, marketing and ecommerce. Reach out about your fresh new digital presence today.',
