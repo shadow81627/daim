@@ -51,7 +51,7 @@
         {{ description }}
       </v-card-text>
       <v-card-text v-if="list" class="text--primary text-body-1 pt-0">
-        <ul>
+        <ul class="list-inside">
           <li v-for="item in list.slice(0, 4)" :key="item">{{ item }}</li>
         </ul>
       </v-card-text>

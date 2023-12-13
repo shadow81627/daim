@@ -199,7 +199,7 @@
                 </v-card-text>
                 <v-card-title class="py-0">Key Courses</v-card-title>
                 <v-card-text class="text-body-1 text--primary">
-                  <ul itemprop="abstract">
+                  <ul itemprop="abstract" class="list-inside">
                     <li v-for="course in courses" :key="course">
                       {{ course }}
                     </li>
