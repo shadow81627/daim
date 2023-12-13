@@ -1,6 +1,15 @@
 version: "3"
 
 services:
+  playwright:
+    image: mcr.microsoft.com/playwright:v1.40.0-jammy
+    command: /bin/bash
+    network_mode: host
+    volumes:
+      - ${PWD}:/work/
+    working_dir: /work/
+    container_name: playwright
+
   nuxt:
     build: .
     container_name: daim-website
