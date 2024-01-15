@@ -65,6 +65,10 @@ export default defineNuxtConfig({
       googleAnalytics: {
         id: process.env.GOOGLE_ANALYTICS_ID || 'UA-176793964-1',
       },
+
+      posthogPublicKey: 'phc_Q5iQfAViL56VWI2PKSMeTAZjiYrrMiyc6d73vXXwOdK',
+      posthogHost: 'https://app.posthog.com',
+
       IMGPROXY_KEY: process.env.IMGPROXY_KEY,
       IMGPROXY_SALT: process.env.IMGPROXY_SALT,
 
