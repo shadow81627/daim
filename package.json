@@ -55,6 +55,7 @@
     "js-base64": "3.7.5",
     "lodash-es": "4.17.21",
     "mailgo": "0.12.2",
+    "nuxt-umami": "2.5.7",
     "query-string": "7.1.3"
   },
   "devDependencies": {
