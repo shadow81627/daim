@@ -59,6 +59,15 @@ export default defineNuxtConfig({
     payloadExtraction: false,
   },
 
+  extends: ['nuxt-umami'],
+
+  appConfig: {
+    umami: {
+      host: 'https://umami.daim.dev/script.js',
+      id: '13308db1-6db8-467c-8323-36e28c20bd3f',
+    },
+  },
+
   runtimeConfig: {
     public: {
       ...env,
