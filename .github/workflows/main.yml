@@ -19,8 +19,8 @@ jobs:
             persist-credentials: false
       - name: Setup node env 🟨
         uses: actions/setup-node@v3.6.0
-        with:
-          node-version: 16
+        # with:
+        #   node-version: 16
       - name: Install dependencies 👨🏻‍💻
         run: yarn install
       - name: Lint ✨
@@ -36,10 +36,10 @@ jobs:
             persist-credentials: false
       - name: Setup node env 🟨
         uses: actions/setup-node@v3.6.0
-        with:
-          node-version: 16
-      - name: Copy .env 📋
-        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+        # with:
+        #   node-version: 16
+      # - name: Copy .env 📋
+      #   run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Install dependencies 👨🏻‍💻
         run: yarn install
       - name: Build 🔨
@@ -63,8 +63,8 @@ jobs:
             persist-credentials: false
       - name: Setup Node.js 🟨
         uses: actions/setup-node@v3.6.0
-        with:
-            node-version: 16
+        # with:
+        #     node-version: 16
       - name: Install dependencies 👨🏻‍💻
         run: yarn install
       - name: Release 🚀
