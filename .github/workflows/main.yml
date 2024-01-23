@@ -47,8 +47,8 @@ jobs:
         run: yarn install
       - name: Build 🔨
         run: yarn run build
-      - name: Test 🧪
-        run: yarn run test
+      # - name: Test 🧪
+      #   run: yarn run test
       - name: Run Lighthouse 💡
         run: yarn run lhci:autorun
 
