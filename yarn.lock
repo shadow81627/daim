@@ -10960,6 +10960,7 @@ __metadata:
     svgo: "npm:3.0.2"
     ts-node: "npm:10.9.1"
     typescript: "npm:5.0.2"
+    valibot: "npm:0.26.0"
     vite-plugin-vuetify: "npm:1.0.2"
     vite-svg-loader: "npm:4.0.0"
     vuetify: "npm:3.4.6"
@@ -26373,6 +26374,13 @@ __metadata:
   version: 3.0.1
   resolution: "v8-compile-cache-lib@npm:3.0.1"
   checksum: bdc36fb8095d3b41df197f5fb6f11e3a26adf4059df3213e3baa93810d8f0cc76f9a74aaefc18b73e91fe7e19154ed6f134eda6fded2e0f1c8d2272ed2d2d391
+  languageName: node
+  linkType: hard
+
+"valibot@npm:0.26.0":
+  version: 0.26.0
+  resolution: "valibot@npm:0.26.0"
+  checksum: d4854c7ccaa6194c5172e001a98c0116b7cf3f58607d83472b38431e0203e80dd960cfc36e3a0650eeb7aec6036b4c27ad4d363f24a0541495e71b35c331b3e3
   languageName: node
   linkType: hard
 
