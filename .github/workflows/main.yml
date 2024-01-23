@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - master
+env:
+  IMGPROXY_KEY: ${{ secrets.IMGPROXY_KEY }}
+  IMGPROXY_SALT: ${{ secrets.IMGPROXY_SALT }}
 
 jobs:
   lint:
