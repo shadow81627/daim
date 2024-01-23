@@ -27,7 +27,7 @@ const DESCRIPTION =
   'Get a high quality custom landing page or microsite built by professionals.';
 const THEME_COLOR = '#343a40';
 
-const IMGPROXY_URL = process.env.IMGPROXY_URL ?? 'https://imgproxy.daim.dev';
+const IMGPROXY_URL = process.env.IMGPROXY_URL ?? 'https://imgproxy2.daim.dev';
 
 const APP_NAME =
   process.env.APP_NAME ||

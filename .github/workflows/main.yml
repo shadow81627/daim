@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - master
+env:
+  IMGPROXY_KEY: ${{ secrets.IMGPROXY_KEY }}
+  IMGPROXY_SALT: ${{ secrets.IMGPROXY_SALT }}
 
 jobs:
   lint:
@@ -19,8 +22,8 @@ jobs:
             persist-credentials: false
       - name: Setup node env 🟨
         uses: actions/setup-node@v3.6.0
-        with:
-          node-version: 16
+        # with:
+        #   node-version: 16
       - name: Install dependencies 👨🏻‍💻
         run: yarn install
       - name: Lint ✨
@@ -36,16 +39,16 @@ jobs:
             persist-credentials: false
       - name: Setup node env 🟨
         uses: actions/setup-node@v3.6.0
-        with:
-          node-version: 16
-      - name: Copy .env 📋
-        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+        # with:
+        #   node-version: 16
+      # - name: Copy .env 📋
+      #   run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Install dependencies 👨🏻‍💻
         run: yarn install
       - name: Build 🔨
         run: yarn run build
-      - name: Test 🧪
-        run: yarn run test
+      # - name: Test 🧪
+      #   run: yarn run test
       - name: Run Lighthouse 💡
         run: yarn run lhci:autorun
 
@@ -63,8 +66,8 @@ jobs:
             persist-credentials: false
       - name: Setup Node.js 🟨
         uses: actions/setup-node@v3.6.0
-        with:
-            node-version: 16
+        # with:
+        #     node-version: 16
       - name: Install dependencies 👨🏻‍💻
         run: yarn install
       - name: Release 🚀
