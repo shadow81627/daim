@@ -36,6 +36,9 @@
     "icons": "ts-node generate-iconify.ts",
     "test": "playwright test",
     "test:e2e": "yarn run test",
+    "drizzle:generate": "drizzle-kit generate:sqlite",
+    "drizzle:push": "drizzle-kit push:sqlite",
+    "drizzle:studio": "drizzle-kit studio",
     "postinstall": "nuxi prepare"
   },
   "engines": {
@@ -44,6 +47,7 @@
   "dependencies": {
     "@formkit/nuxt": "0.16.2",
     "@formkit/themes": "0.16.2",
+    "@libsql/client": "0.4.0-pre.7",
     "@nuxt/content": "2.9.0",
     "@nuxtjs/robots": "3.0.0",
     "@vercel/analytics": "1.0.1",
@@ -51,10 +55,12 @@
     "cross-env": "7.0.3",
     "crypto-js": "4.1.1",
     "dayjs": "1.10.7",
+    "drizzle-orm": "0.29.3",
     "github-markdown-css": "4.0.0",
     "js-base64": "3.7.5",
     "lodash-es": "4.17.21",
     "mailgo": "0.12.2",
+    "qs": "6.11.2",
     "query-string": "7.1.3",
     "valibot": "0.26.0"
   },
@@ -77,6 +83,7 @@
     "@types/lodash": "4.14.191",
     "@types/lodash-es": "4.17.6",
     "@types/node": "20.10.4",
+    "@types/qs": "^6",
     "@types/sharp": "0.31.0",
     "@typescript-eslint/eslint-plugin": "5.47.0",
     "@typescript-eslint/parser": "5.56.0",
@@ -85,6 +92,7 @@
     "@unocss/nuxt": "0.51.4",
     "@vite-pwa/nuxt": "0.0.7",
     "cspell": "5.9.0",
+    "drizzle-kit": "0.20.13",
     "eslint": "8.55.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-import-resolver-typescript": "3.6.1",
