@@ -3271,6 +3271,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lucia-auth/adapter-sqlite@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@lucia-auth/adapter-sqlite@npm:2.0.1"
+  peerDependencies:
+    "@libsql/client": ^0.3.0
+    better-sqlite3: 8.x - 9.x
+    lucia: ^2.0.0
+  peerDependenciesMeta:
+    "@libsql/client":
+      optional: true
+    better-sqlite3:
+      optional: true
+  checksum: 7ea2b481acb2bd9cb7357d2b7ffcc980b27711aa596e77732335c5928a290537c8f1bc17c50ca02b74b7dde4769b1e2a987e4bb4e0ba90ac14a461d6bb11c910
+  languageName: node
+  linkType: hard
+
 "@mapbox/node-pre-gyp@npm:^1.0.5":
   version: 1.0.11
   resolution: "@mapbox/node-pre-gyp@npm:1.0.11"
@@ -11383,6 +11399,7 @@ __metadata:
     "@kevinmarrec/nuxt-pwa": "npm:0.17.0"
     "@lhci/cli": "npm:0.11.0"
     "@libsql/client": "npm:0.4.0-pre.7"
+    "@lucia-auth/adapter-sqlite": "npm:2.0.1"
     "@mdi/js": "npm:5.9.55"
     "@nuxt/content": "npm:2.9.0"
     "@nuxt/image": "npm:1.1.0"
@@ -11426,6 +11443,7 @@ __metadata:
     github-markdown-css: "npm:4.0.0"
     js-base64: "npm:3.7.5"
     lodash-es: "npm:4.17.21"
+    lucia: "npm:2.7.6"
     mailgo: "npm:0.12.2"
     markdown-spellcheck: "npm:1.3.1"
     nuxt: "npm:3.9.3"
@@ -17639,6 +17657,13 @@ __metadata:
   version: 0.3.3
   resolution: "lru_map@npm:0.3.3"
   checksum: d861f14a142a4a74ebf8d3ad57f2e768a5b820db4100ae53eed1a64eb6350912332e6ebc87cb7415ad6d0cd8f3ce6d20beab9a5e6042ccb5996ea0067a220448
+  languageName: node
+  linkType: hard
+
+"lucia@npm:2.7.6":
+  version: 2.7.6
+  resolution: "lucia@npm:2.7.6"
+  checksum: 90cbd406c9b43400453342b8db43171d3132cadfc62c417729be583dd2ba8c713723f2677f0068af8f6f0f5d3dd787d753c60eed89a714b4a94d75c72c83c3be
   languageName: node
   linkType: hard
 
