@@ -51,6 +51,15 @@ services:
     networks:
       - daim
 
+  sqld:
+    image: ghcr.io/tursodatabase/libsql-server:latest
+    ports:
+      - 127.0.0.1:8080:8080
+    volumes:
+      - sqld-data:/var/lib/sqld
+    networks:
+      - daim
+
 networks:
   daim:
     driver: bridge
