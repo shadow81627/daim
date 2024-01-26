@@ -3,7 +3,7 @@
 
 export default defineNitroPlugin(() => {
   if (process.dev) {
-    // migrate(useDB(), {
+    // migrate(db, {
     //   migrationsFolder: 'server/database/migrations',
     // });
   }
