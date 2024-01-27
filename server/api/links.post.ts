@@ -1,4 +1,4 @@
-import { users } from '~/server/database/schema/users';
+import { links } from '~/server/database/schema/links';
 
 export default defineEventHandler(async (event) => {
   const authRequest = auth.handleRequest(event);
@@ -9,6 +9,7 @@ export default defineEventHandler(async (event) => {
       statusCode: 401,
     });
   }
-  const data = await db.select().from(users).all();
-  return { data };
+  const body = await readBody(event);
+  const result = await db.insert(links).values(body).returning().run();
+  return { data: result };
 });
