@@ -293,7 +293,7 @@
   },
   "content/projects/gondwanarama.json": {
     "created": 1627108189,
-    "modified": 1668925038
+    "modified": 1709773419
   },
   "content/projects/hackernews.json": {
     "created": 1615029413,
@@ -709,7 +709,7 @@
   },
   "content/alternatives/webflow.json": {
     "created": 1687428371,
-    "modified": 1687429909
+    "modified": 1709773391
   },
   "content/blog/deploying-laravel-to-vercel.md": {
     "created": 1683932712,
