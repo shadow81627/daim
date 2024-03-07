@@ -3,26 +3,6 @@
   "createdAt": 1687428371,
   "description": "Create professional, custom websites in a completely visual canvas with no code. Learn how to create a website by trying Webflow for free!",
   "image": "https://assets-global.website-files.com/5d3e265ac89f6a3e64292efc/619553e0e507dd1017564b68_Opengraph.jpg",
-  "name": "Webflow",
-  "subheading": "Build with the power of code — without writing any",
-  "plans": {
-    "free": {
-      "name": "Free",
-      "price": 0
-    },
-    "basic": {
-      "interval": "month",
-      "price": 14
-    },
-    "cms": {
-      "interval": "month",
-      "price": 23
-    },
-    "business": {
-      "interval": "month",
-      "price": 39
-    }
-  },
   "list": [
     "Fully customize the structure of every page",
     "Style your site exactly the way you want",
@@ -30,5 +10,25 @@
     "Create content-rich pages with Webflow’s CMS",
     "Choose how you publish your site"
   ],
+  "name": "Webflow",
+  "plans": {
+    "basic": {
+      "interval": "month",
+      "price": 14
+    },
+    "business": {
+      "interval": "month",
+      "price": 39
+    },
+    "cms": {
+      "interval": "month",
+      "price": 23
+    },
+    "free": {
+      "name": "Free",
+      "price": 0
+    }
+  },
+  "subheading": "Build with the power of code — without writing any",
   "url": "https://webflow.com/"
 }
