@@ -19,7 +19,11 @@
         ></v-text-field>
       </v-toolbar>
     </template> -->
-    <v-container fluid>
+    <Spinner
+      v-if="loading && !items?.length"
+      class="mx-auto h-64px w-64px block"
+    ></Spinner>
+    <v-container v-else fluid>
       <v-row>
         <v-col
           v-for="item in items"
