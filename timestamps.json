@@ -746,5 +746,9 @@
   "content/notes/graphql-vs-rest-api-why-you-shouldnt-use-graphql.md": {
     "created": 1706142609,
     "modified": 1706142609
+  },
+  "content/projects/battle-calculator.json": {
+    "created": 1709782436,
+    "modified": 1709784786
   }
 }
