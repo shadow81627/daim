@@ -122,7 +122,7 @@
     "vite-plugin-vuetify": "1.0.2",
     "vite-svg-loader": "4.0.0",
     "vuetify": "3.4.6",
-    "wrangler": "2.13.0",
+    "wrangler": "2.20.2",
     "write-good": "1.0.8"
   }
 }
