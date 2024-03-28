@@ -271,6 +271,7 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
     },
+    moduleSideEffects: ['lucia/polyfill/node'],
   },
   sourcemap: true,
 

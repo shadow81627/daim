@@ -27,7 +27,7 @@
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS",
-      "verbatimModuleSyntax": false
+      "verbatimModuleSyntax": false,
     }
   },
   "exclude": [
