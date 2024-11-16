@@ -209,7 +209,7 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: undefined,
-    }
+    },
   },
 
   i18n: {
