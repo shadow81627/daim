@@ -2891,17 +2891,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/vue2@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@iconify/vue2@npm:2.1.0"
-  dependencies:
-    "@iconify/types": "npm:^2.0.0"
-  peerDependencies:
-    vue: 2.x
-  checksum: 10c0/eab6583e8d04698cf7fb235d11f97aaba8877e8d41df60ec34aacb095cc307fdf93072856895b2439016fcabad3116457f44b7f1e07942ee97ef774eab9117a0
-  languageName: node
-  linkType: hard
-
 "@iconify/vue@npm:^4.1.0":
   version: 4.1.1
   resolution: "@iconify/vue@npm:4.1.1"
@@ -11507,7 +11496,6 @@ __metadata:
     "@formkit/nuxt": "npm:0.16.2"
     "@formkit/themes": "npm:0.16.2"
     "@iconify/tools": "npm:2.2.6"
-    "@iconify/vue2": "npm:2.1.0"
     "@kevinmarrec/nuxt-pwa": "npm:0.17.0"
     "@lhci/cli": "npm:0.11.0"
     "@mdi/js": "npm:5.9.55"
