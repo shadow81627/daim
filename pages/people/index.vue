@@ -19,7 +19,7 @@
           class="d-flex flex-column"
           style="max-width: 360px"
         >
-          <Feature v-bind="item"> </Feature>
+          <Feature v-bind="item"></Feature>
         </v-col>
       </v-row>
     </v-container>
