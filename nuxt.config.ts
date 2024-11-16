@@ -157,10 +157,8 @@ export default defineNuxtConfig({
       processors: createLocalFontProcessor({
         // Directory to cache the fonts
         cacheDir: 'node_modules/.cache/unocss/fonts',
-
         // Directory to save the fonts assets
         fontAssetsDir: 'public/assets/fonts',
-
         // Base URL to serve the fonts from the client
         fontServeBaseUrl: '/assets/fonts',
       }),
@@ -188,12 +186,6 @@ export default defineNuxtConfig({
   //     },
   //   },
   // },
-
-  vuetify: {
-    moduleOptions: {
-      /* module specific options */
-    },
-  },
 
   pwa: {
     // registerType: 'autoUpdate',
@@ -232,13 +224,6 @@ export default defineNuxtConfig({
 
   // sitemap: {
   //   hostname: env.BASE_URL,
-  // },
-
-  // vuetify: {
-  //   optionsPath: './vuetify.options.js',
-  //   customVariables: ['~/assets/scss/vuetify.scss'],
-  //   treeShake: true,
-  //   defaultAssets: false,
   // },
 
   eslint: {
