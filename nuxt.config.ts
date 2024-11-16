@@ -121,6 +121,7 @@ export default defineNuxtConfig({
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxt/devtools',
     // '@unlighthouse/nuxt',
     '@vite-pwa/nuxt',
     'nuxt-schema-org',
@@ -276,9 +277,12 @@ export default defineNuxtConfig({
 
   sourcemap: true,
 
+  compatibilityDate: '2024-11-16',
   vite: {
     plugins: [svgLoader(), splitVendorChunkPlugin()],
   },
 
-  // compatibilityDate: '2024-04-03',
+  devtools: {
+    enabled: true,
+  },
 });
