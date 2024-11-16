@@ -129,6 +129,7 @@ export default defineNuxtConfig({
     // 'nuxt-security',
     '@nuxtjs/eslint-module',
     '@formkit/nuxt',
+    '@nuxt/fonts',
     '@unocss/nuxt',
     '@nuxt/content',
     '@nuxtjs/i18n',
@@ -165,6 +166,12 @@ export default defineNuxtConfig({
         fontServeBaseUrl: '/assets/fonts',
       }),
     },
+  },
+
+  fonts: {
+    families: [
+      { name: 'Roboto', provider: 'google' },
+    ],
   },
 
   content: {
