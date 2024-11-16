@@ -52,10 +52,8 @@ const env = {
 
 export default defineNuxtConfig({
   ssr: true,
-  experimental: {
-    // https://github.com/nuxt/nuxt/issues/19850
-    inlineSSRStyles: false,
 
+  experimental: {
     payloadExtraction: false,
   },
 
