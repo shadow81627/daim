@@ -1,4 +1,4 @@
-import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
+import { transformAssetUrls } from 'vite-plugin-vuetify';
 import { splitVendorChunkPlugin } from 'vite';
 import svgLoader from 'vite-svg-loader';
 import { defineNuxtConfig } from 'nuxt/config';
@@ -219,9 +219,9 @@ export default defineNuxtConfig({
     langDir: 'lang/',
   },
 
-  sitemap: {
-    hostname: env.BASE_URL,
-  },
+  // sitemap: {
+  //   hostname: env.BASE_URL,
+  // },
 
   // vuetify: {
   //   optionsPath: './vuetify.options.js',
@@ -292,5 +292,5 @@ export default defineNuxtConfig({
     plugins: [svgLoader(), splitVendorChunkPlugin()],
   },
 
-  compatibilityDate: '2024-04-03',
+  // compatibilityDate: '2024-04-03',
 });
