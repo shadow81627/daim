@@ -43,8 +43,8 @@
     "node": "18.x"
   },
   "dependencies": {
-    "@formkit/nuxt": "1.0.0",
-    "@formkit/themes": "1.0.0",
+    "@formkit/nuxt": "1.6.9",
+    "@formkit/themes": "1.6.9",
     "@nuxt/content": "2.9.0",
     "@nuxtjs/robots": "3.0.0",
     "@vercel/analytics": "1.0.1",

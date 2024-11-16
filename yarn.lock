@@ -2765,89 +2765,91 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formkit/core@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/core@npm:1.0.0"
+"@formkit/core@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/core@npm:1.6.9"
   dependencies:
-    "@formkit/utils": "npm:1.0.0"
-  checksum: 10c0/a7fd54260dfeb8477a9fd1095204d57a69345af6aa6b3ba81c57bc1e706650e27397262fdecad92deec5bab487995f1dea5ec9c1038cad6b044de575efe99c8f
+    "@formkit/utils": "npm:1.6.9"
+  checksum: 10c0/e00d252aec0676322f8c48103376628a79c82b1051a2eec6cb2cf0bcde73ebeab15b9cc4b205c2c4d0c6c731f71f43641c1619992acd35e9de13c05d41e286e9
   languageName: node
   linkType: hard
 
-"@formkit/dev@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/dev@npm:1.0.0"
+"@formkit/dev@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/dev@npm:1.6.9"
   dependencies:
-    "@formkit/core": "npm:1.0.0"
-    "@formkit/utils": "npm:1.0.0"
-  checksum: 10c0/5f753c2a9efaf2701e870f76aac1f84278b129996cea1e1e91ddc86da17cbc5fa599df30a6fa7c40f658494ae2dd888b433d809677eca350949df824f16bc529
+    "@formkit/core": "npm:1.6.9"
+    "@formkit/utils": "npm:1.6.9"
+  checksum: 10c0/593d437635b83763c2ac4c2a3195257b33ee96014fa5cceabfb1088492cccad9f6cdfb4eb84579a7586889d5ae8d1b80e53b1f648dc4301e402fc1cb1cd55922
   languageName: node
   linkType: hard
 
-"@formkit/i18n@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/i18n@npm:1.0.0"
+"@formkit/i18n@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/i18n@npm:1.6.9"
   dependencies:
-    "@formkit/core": "npm:1.0.0"
-    "@formkit/utils": "npm:1.0.0"
-    "@formkit/validation": "npm:1.0.0"
-  checksum: 10c0/8cb9b6a5de0066967f15f4b2026ccd0865b2ce7d35d9d5ff97ab8265b6a50ae22493a3a8473e0bc2164ca67908b24aac0dbbf06abccf671f69898c88e8f2a50f
+    "@formkit/core": "npm:1.6.9"
+    "@formkit/utils": "npm:1.6.9"
+    "@formkit/validation": "npm:1.6.9"
+  checksum: 10c0/e409ad1c3d24c33511741a4d5ba4b5fa8a8eaf61bf9832a7c6fa3e5a8f1e204400856e52def6657695d1dddcd7d33a27f67065ce3a85e145ec85bee7d6c94989
   languageName: node
   linkType: hard
 
-"@formkit/inputs@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/inputs@npm:1.0.0"
+"@formkit/inputs@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/inputs@npm:1.6.9"
   dependencies:
-    "@formkit/core": "npm:1.0.0"
-    "@formkit/utils": "npm:1.0.0"
-  checksum: 10c0/fb92b374e3d4caece2c4c1e104b5fc41ee84495f432bf3cb3a8ff7482f2ec5bead96d4f78b6ed78e9d1458a09031bbe9998be07a9c0bbb53eb3a35bd123a103d
+    "@formkit/core": "npm:1.6.9"
+    "@formkit/utils": "npm:1.6.9"
+  checksum: 10c0/6a03bc23a9e1cbc6dfd23efaee2e70e906e9b8db7217b354abbb393b0c3e33b2eb82688e591e1daaf087763e3d206b951986cddb23ada76daea76daa0715ce83
   languageName: node
   linkType: hard
 
-"@formkit/nuxt@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/nuxt@npm:1.0.0"
+"@formkit/nuxt@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/nuxt@npm:1.6.9"
   dependencies:
-    "@formkit/core": "npm:1.0.0"
-    "@formkit/i18n": "npm:1.0.0"
-    "@formkit/vue": "npm:1.0.0"
-    "@nuxt/kit": "npm:^3.5.3"
-    chokidar: "npm:^3.5.3"
-    pathe: "npm:^1.1.1"
-  checksum: 10c0/cf0cf33988792b29d739de765f415721b58a3e41f1437e2b48d94ff9e6142db7ef68ccbefd4bd82f3c9a0597bcad8c91a304115414157d992d24cd0a33312b7b
+    "@formkit/core": "npm:1.6.9"
+    "@formkit/i18n": "npm:1.6.9"
+    "@formkit/vue": "npm:1.6.9"
+    "@nuxt/kit": "npm:^3.10.3"
+    chokidar: "npm:^3.6.0"
+    pathe: "npm:^1.1.2"
+    unplugin: "npm:^1.9.0"
+    unplugin-formkit: "npm:^0.2.13"
+  checksum: 10c0/6f93f5478c8e8983688f5642f6cdfa403fb6974bc044bffaed9c9c8dcdf22ebd060bdefae7937952557199e45d712e6ce0a5f897a284f9cf7a3864eab0d50cea
   languageName: node
   linkType: hard
 
-"@formkit/observer@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/observer@npm:1.0.0"
+"@formkit/observer@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/observer@npm:1.6.9"
   dependencies:
-    "@formkit/core": "npm:1.0.0"
-    "@formkit/utils": "npm:1.0.0"
-  checksum: 10c0/8db531ed8dfecf0a960647d5f8f51f561f8490609fc0b5c66003404cabd257b0a8e5addbbf3b14a35cec79eb6b7822e2c584b8502b1c5fd2e7a691a9a71fe258
+    "@formkit/core": "npm:1.6.9"
+    "@formkit/utils": "npm:1.6.9"
+  checksum: 10c0/64561a6c55944bb5c1d093b9fc8e4397d2e8b7b295d6e9c5074c5d0b62972add4156f64b3b63a82139c4ed864c8d65f97737c0c29f733e3d6a7504d858cce381
   languageName: node
   linkType: hard
 
-"@formkit/rules@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/rules@npm:1.0.0"
+"@formkit/rules@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/rules@npm:1.6.9"
   dependencies:
-    "@formkit/core": "npm:1.0.0"
-    "@formkit/utils": "npm:1.0.0"
-    "@formkit/validation": "npm:1.0.0"
-  checksum: 10c0/1f39a10242962c928cba146fc153de42b9c762555cd1d89c56b57c2189ad68cc838ffe16c8a5831ff7a3e01dfe1e5f77a5e65796dbeaef3a1ea72da12135b55f
+    "@formkit/core": "npm:1.6.9"
+    "@formkit/utils": "npm:1.6.9"
+    "@formkit/validation": "npm:1.6.9"
+  checksum: 10c0/f5bda67cd275a9ed83d2c08e8664283f0089982f674482b6bc9392440b29c017f42686760eb5460fb3c304230493b32c3fee11581dbe4af90bc73001c1abea5e
   languageName: node
   linkType: hard
 
-"@formkit/themes@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/themes@npm:1.0.0"
+"@formkit/themes@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/themes@npm:1.6.9"
   dependencies:
-    "@formkit/core": "npm:1.0.0"
+    "@formkit/core": "npm:1.6.9"
   peerDependencies:
     tailwindcss: ^3.2.0
-    unocss: ^0.31.0
+    unocss: 0.x.x
     windicss: ^3.0.0
   peerDependenciesMeta:
     tailwindcss:
@@ -2856,43 +2858,44 @@ __metadata:
       optional: true
     windicss:
       optional: true
-  checksum: 10c0/95bf7ceb3ba58e8b2355fecd66f0ede4cbbb96b0d0bd029293de7776aa5da6f9499c62418c0928b81066cd963f3cd8bd294d31cbcaab874405d37ba253a47749
+  checksum: 10c0/d9b9151d88940fa87dde6707532e61be47442aace78e9644b0981861092cda3fa15be4318fdaef63e0801e19c37170f71f9db04b8744ba3c99ddfc20d71a0031
   languageName: node
   linkType: hard
 
-"@formkit/utils@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/utils@npm:1.0.0"
-  checksum: 10c0/cf8781206e27a5168c52f6a3b4a91a6dd02a7bfba9d70066ad58a6709546d0640679d57377cd05c47c4a3663e9841f9de171852ca51edc767b8570025719bbfb
+"@formkit/utils@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/utils@npm:1.6.9"
+  checksum: 10c0/abc4938b4113cb27a71d8c2dfc34f286ce4781e24bc7e32ccae8c61a1ae1416119bba3947060abc071e0c483702c25dacefe428e046e6e7fa4d7f3948ad3337b
   languageName: node
   linkType: hard
 
-"@formkit/validation@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/validation@npm:1.0.0"
+"@formkit/validation@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/validation@npm:1.6.9"
   dependencies:
-    "@formkit/core": "npm:1.0.0"
-    "@formkit/observer": "npm:1.0.0"
-    "@formkit/utils": "npm:1.0.0"
-  checksum: 10c0/16c4fee6fcf9bc897a305b9b1b0fbd5b815cd78d2ede4253a6795964b706fdfe169d5f0b48b9641936efda731ec5d4ac59e96e12ff97f1618741fb8864659e3d
+    "@formkit/core": "npm:1.6.9"
+    "@formkit/observer": "npm:1.6.9"
+    "@formkit/utils": "npm:1.6.9"
+  checksum: 10c0/36d3d3975afb0f6a67c5ffb51343e7c9606cebaa142a36b5c92c7ac5ddd1cbac00d220d9c332e14c8873be4fdb96f845a9d01f7b61978f44c455c0fd17c6d01a
   languageName: node
   linkType: hard
 
-"@formkit/vue@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@formkit/vue@npm:1.0.0"
+"@formkit/vue@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@formkit/vue@npm:1.6.9"
   dependencies:
-    "@formkit/core": "npm:1.0.0"
-    "@formkit/dev": "npm:1.0.0"
-    "@formkit/i18n": "npm:1.0.0"
-    "@formkit/inputs": "npm:1.0.0"
-    "@formkit/observer": "npm:1.0.0"
-    "@formkit/rules": "npm:1.0.0"
-    "@formkit/themes": "npm:1.0.0"
-    "@formkit/utils": "npm:1.0.0"
-    "@formkit/validation": "npm:1.0.0"
-    vue: "npm:^3.3.4"
-  checksum: 10c0/a74b43ae81d0f2be75cf0a4675f92eb4862f9957e15849a2ebb58732a505a282ee6cbfb8807d2be1c632f196e3a832580bc3496295f4cf89d0650f0817f9f045
+    "@formkit/core": "npm:1.6.9"
+    "@formkit/dev": "npm:1.6.9"
+    "@formkit/i18n": "npm:1.6.9"
+    "@formkit/inputs": "npm:1.6.9"
+    "@formkit/observer": "npm:1.6.9"
+    "@formkit/rules": "npm:1.6.9"
+    "@formkit/themes": "npm:1.6.9"
+    "@formkit/utils": "npm:1.6.9"
+    "@formkit/validation": "npm:1.6.9"
+  peerDependencies:
+    vue: ^3.4.0
+  checksum: 10c0/74ea9a83d52f46c8af6ef37b44915cd5fcbe2a2849b30e536eb6c2d16824ef9f4318f0db56986a1547a6a699cc0cedfd500fcbbbcee6727ec41102a115a8f02d
   languageName: node
   linkType: hard
 
@@ -4356,7 +4359,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^3.12.4, @nuxt/kit@npm:^3.13.1, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.14.159, @nuxt/kit@npm:^3.5.3":
+"@nuxt/kit@npm:^3.10.3, @nuxt/kit@npm:^3.12.4, @nuxt/kit@npm:^3.13.1, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.14.159":
   version: 3.14.159
   resolution: "@nuxt/kit@npm:3.14.159"
   dependencies:
@@ -11059,8 +11062,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "daim@workspace:."
   dependencies:
-    "@formkit/nuxt": "npm:1.0.0"
-    "@formkit/themes": "npm:1.0.0"
+    "@formkit/nuxt": "npm:1.6.9"
+    "@formkit/themes": "npm:1.6.9"
     "@iconify/tools": "npm:2.2.6"
     "@lhci/cli": "npm:0.11.0"
     "@mdi/js": "npm:5.9.55"
@@ -25175,6 +25178,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unplugin-formkit@npm:^0.2.13":
+  version: 0.2.13
+  resolution: "unplugin-formkit@npm:0.2.13"
+  dependencies:
+    pathe: "npm:^1.1.1"
+    unplugin: "npm:^1.4.0"
+  peerDependenciesMeta:
+    esbuild:
+      optional: true
+    rollup:
+      optional: true
+    vite:
+      optional: true
+    webpack:
+      optional: true
+  checksum: 10c0/be5c7612c068bcffdddfcb735ea330e8fb49197d63d77b87cf0d8c73ad2a3b1025beb4c232c681ba2c3a3137044f41533725adde5e754cbf017ed9f06c8eb26c
+  languageName: node
+  linkType: hard
+
 "unplugin-vue-router@npm:^0.7.0":
   version: 0.7.0
   resolution: "unplugin-vue-router@npm:0.7.0"
@@ -25213,7 +25235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin@npm:^1.10.1, unplugin@npm:^1.15.0, unplugin@npm:^1.7.1":
+"unplugin@npm:^1.10.1, unplugin@npm:^1.15.0, unplugin@npm:^1.4.0, unplugin@npm:^1.7.1, unplugin@npm:^1.9.0":
   version: 1.16.0
   resolution: "unplugin@npm:1.16.0"
   dependencies:
@@ -26034,7 +26056,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue@npm:^3.3.4, vue@npm:^3.4.19":
+"vue@npm:^3.4.19":
   version: 3.5.13
   resolution: "vue@npm:3.5.13"
   dependencies:
