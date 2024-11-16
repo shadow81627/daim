@@ -4,6 +4,7 @@ import svgLoader from 'vite-svg-loader';
 import { defineNuxtConfig } from 'nuxt/config';
 import pkg from './package.json';
 import getLocalIpAddress from './utils/getLocalIpAddress';
+import { createLocalFontProcessor } from '@unocss/preset-web-fonts/local'
 
 const localIpAddress = getLocalIpAddress();
 const HOST = process.env.HOST || localIpAddress || '0.0.0.0';
@@ -152,9 +153,20 @@ export default defineNuxtConfig({
   unocss: {
     typography: true,
     webFonts: {
+      provider: 'none',
       fonts: {
         sans: 'Roboto',
       },
+      processors: createLocalFontProcessor({
+        // Directory to cache the fonts
+        cacheDir: 'node_modules/.cache/unocss/fonts',
+
+        // Directory to save the fonts assets
+        fontAssetsDir: 'public/assets/fonts',
+
+        // Base URL to serve the fonts from the client
+        fontServeBaseUrl: '/assets/fonts',
+      }),
     },
   },
 
