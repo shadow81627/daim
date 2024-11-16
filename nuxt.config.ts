@@ -114,7 +114,7 @@ export default defineNuxtConfig({
    ** Global CSS
    */
   css: [
-    // 'vuetify/lib/styles/main.sass'
+    'assets/css/main.css'
   ],
 
   /*
