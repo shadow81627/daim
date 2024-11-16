@@ -35,7 +35,7 @@
         <v-icon icon="$menu"></v-icon>
       </v-app-bar-nav-icon>
       <v-toolbar-title class="ml-0 px-3 d-flex align-center">
-        <a href="/" title="Home" aria-label="Home">
+        <NuxtLink href="/" title="Home" aria-label="Home">
           <img
             :src="logo"
             class="navbar-brand"
@@ -43,7 +43,7 @@
             width="60"
             alt="Daim"
           />
-        </a>
+        </NuxtLink>
       </v-toolbar-title>
       <v-spacer />
       <v-tabs class="hidden-sm-and-down" optional right>
