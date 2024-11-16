@@ -267,11 +267,13 @@ export default defineNuxtConfig({
     //   },
     // },
   },
+
   nitro: {
     prerender: {
       crawlLinks: true,
     },
   },
+
   sourcemap: true,
 
   /*
@@ -280,6 +282,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ['lodash-es', 'vuetify', 'iron-webcrypto', 'unhead'],
   },
+
   vite: {
     vue: {
       template: {
@@ -288,4 +291,6 @@ export default defineNuxtConfig({
     },
     plugins: [svgLoader(), splitVendorChunkPlugin()],
   },
+
+  compatibilityDate: '2024-04-03',
 });
