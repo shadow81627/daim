@@ -98,7 +98,6 @@
     "nuxt-og-image": "2.2.4",
     "nuxt-purgecss": "1.0.0",
     "nuxt-schema-org": "2.1.2",
-    "nuxt-unhead": "1.4.15",
     "playwright": "1.40.1",
     "prettier": "2.8.6",
     "puppeteer": "19.7.5",

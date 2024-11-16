@@ -125,7 +125,6 @@ export default defineNuxtConfig({
     // '@vite-pwa/nuxt',
     'nuxt-schema-org',
     'nuxt-og-image',
-    'nuxt-unhead',
     // 'nuxt-security',
     '@kevinmarrec/nuxt-pwa',
     '@nuxtjs/eslint-module',
@@ -287,13 +286,6 @@ export default defineNuxtConfig({
   },
 
   sourcemap: true,
-
-  /*
-   ** Build configuration
-   */
-  build: {
-    transpile: ['lodash-es', 'vuetify', 'iron-webcrypto', 'unhead'],
-  },
 
   vite: {
     vue: {
