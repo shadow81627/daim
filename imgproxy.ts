@@ -4,8 +4,7 @@ import { joinURL, withBase } from 'ufo';
 import hmacSHA256 from 'crypto-js/hmac-sha256.js';
 import Base64url from 'crypto-js/enc-base64url.js';
 import hex from 'crypto-js/enc-hex.js';
-import { ProviderGetImage } from '@nuxt/image';
-import { createOperationsGenerator } from '@nuxt/image/dist/runtime/utils';
+import type { OperationGeneratorConfig, ProviderGetImage } from '@nuxt/image';
 
 const hexDecode = (hex: string) => Buffer.from(hex, 'hex');
 
@@ -78,6 +77,49 @@ export const getImage: ProviderGetImage = (
   const signature = sign(salt, path, key);
 
   return {
-    url: withBase(joinURL(signature, path), cdnURL),
+    url: withBase(joinURL(signature ?? '', path), cdnURL),
   };
 };
+
+function createMapper(map: any) {
+  return (key?: string) => {
+    return key ? map[key] || key : map.missingValue;
+  };
+}
+
+function createOperationsGenerator({
+  formatter,
+  keyMap,
+  joinWith = '/',
+  valueMap,
+}: OperationGeneratorConfig = {}) {
+  if (!formatter) {
+    formatter = (key, value) => `${key}=${value}`;
+  }
+  if (keyMap && typeof keyMap !== 'function') {
+    keyMap = createMapper(keyMap);
+  }
+  const map = valueMap || {};
+  Object.keys(map).forEach((valueKey) => {
+    if (typeof map[valueKey] !== 'function') {
+      map[valueKey] = createMapper(map[valueKey]);
+    }
+  });
+
+  return (modifiers: { [key: string]: string } = {}) => {
+    const operations = Object.entries(modifiers)
+      .filter(([_, value]) => typeof value !== 'undefined')
+      .map(([key, value]) => {
+        const mapper = map[key];
+        if (typeof mapper === 'function') {
+          value = mapper(modifiers[key]!);
+        }
+
+        key = typeof keyMap === 'function' ? keyMap(key) : key;
+
+        return formatter!(key, value);
+      });
+
+    return operations.join(joinWith);
+  };
+}

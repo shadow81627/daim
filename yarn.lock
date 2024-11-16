@@ -4001,25 +4001,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/image@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@nuxt/image@npm:1.1.0"
+"@nuxt/image@npm:1.8.1":
+  version: 1.8.1
+  resolution: "@nuxt/image@npm:1.8.1"
   dependencies:
-    "@nuxt/kit": "npm:^3.8.2"
+    "@nuxt/kit": "npm:^3.13.2"
     consola: "npm:^3.2.3"
-    defu: "npm:^6.1.3"
-    h3: "npm:^1.9.0"
-    image-meta: "npm:^0.2.0"
-    ipx: "npm:^2.0.2"
-    node-fetch-native: "npm:^1.4.1"
-    ohash: "npm:^1.1.3"
-    pathe: "npm:^1.1.1"
-    std-env: "npm:^3.5.0"
-    ufo: "npm:^1.3.2"
+    defu: "npm:^6.1.4"
+    h3: "npm:^1.12.0"
+    image-meta: "npm:^0.2.1"
+    ipx: "npm:^2.1.0"
+    node-fetch-native: "npm:^1.6.4"
+    ohash: "npm:^1.1.4"
+    pathe: "npm:^1.1.2"
+    std-env: "npm:^3.7.0"
+    ufo: "npm:^1.5.4"
   dependenciesMeta:
     ipx:
       optional: true
-  checksum: 10c0/218272acd0408f0113a5addd350187edc9729cca225a3637291f35b117f862b50162463b0bf84b09781f1102cee983143d353c13828d0bb26b67ef0081b1e525
+  checksum: 10c0/46293b912d90ff8249f5f9fb34f3ff13f6a26bef5e2d3a2e20aac99538e11a0c1b5702c30c29cf6068e7c62d5c02bd2f351f59d6c369a35735d2a16c7e225b30
   languageName: node
   linkType: hard
 
@@ -10833,6 +10833,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cookie-es@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "cookie-es@npm:1.2.2"
+  checksum: 10c0/210eb67cd40a53986fda99d6f47118cfc45a69c4abc03490d15ab1b83ac978d5518356aecdd7a7a4969292445e3063c2302deda4c73706a67edc008127608638
+  languageName: node
+  linkType: hard
+
 "cookie-signature@npm:1.0.6":
   version: 1.0.6
   resolution: "cookie-signature@npm:1.0.6"
@@ -11052,6 +11059,15 @@ __metadata:
     shebang-command: "npm:^2.0.0"
     which: "npm:^2.0.1"
   checksum: 10c0/5738c312387081c98d69c98e105b6327b069197f864a60593245d64c8089c8a0a744e16349281210d56835bb9274130d825a78b2ad6853ca13cfbeffc0c31750
+  languageName: node
+  linkType: hard
+
+"crossws@npm:>=0.2.0 <0.4.0":
+  version: 0.3.1
+  resolution: "crossws@npm:0.3.1"
+  dependencies:
+    uncrypto: "npm:^0.1.3"
+  checksum: 10c0/37dc72074ee61ee999ec79e061a0ddab870e061a88cd9b83f479c5c4130c6742ce6b308c38968ee4be9073246c32b0cb0adaed50f1e448b988c3b3172c4ce2e0
   languageName: node
   linkType: hard
 
@@ -11412,7 +11428,7 @@ __metadata:
     "@lhci/cli": "npm:0.11.0"
     "@mdi/js": "npm:5.9.55"
     "@nuxt/content": "npm:2.9.0"
-    "@nuxt/image": "npm:1.1.0"
+    "@nuxt/image": "npm:1.8.1"
     "@nuxt/types": "npm:2.15.8"
     "@nuxtjs/eslint-config-typescript": "npm:12.0.0"
     "@nuxtjs/eslint-module": "npm:4.1.0"
@@ -14642,6 +14658,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"h3@npm:^1.12.0":
+  version: 1.13.0
+  resolution: "h3@npm:1.13.0"
+  dependencies:
+    cookie-es: "npm:^1.2.2"
+    crossws: "npm:>=0.2.0 <0.4.0"
+    defu: "npm:^6.1.4"
+    destr: "npm:^2.0.3"
+    iron-webcrypto: "npm:^1.2.1"
+    ohash: "npm:^1.1.4"
+    radix3: "npm:^1.1.2"
+    ufo: "npm:^1.5.4"
+    uncrypto: "npm:^0.1.3"
+    unenv: "npm:^1.10.0"
+  checksum: 10c0/d2e91d44c7133c31c62e39288961be28fb9f2c75f91d83a4a0416e29ff408b3207b79e46ba25a2652e13aea78a3e6f10d12c53d746feb00e91b864e1f4b21302
+  languageName: node
+  linkType: hard
+
 "handlebars@npm:^4.7.7":
   version: 4.7.8
   resolution: "handlebars@npm:4.7.8"
@@ -15278,6 +15312,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"image-meta@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "image-meta@npm:0.2.1"
+  checksum: 10c0/c8a100b666663ad53ffe95c22647e79802d6eac6dfa3e1a00e4cf034129b4a13e7861b5c5a7cee46604a45a9e0c8ed91e73233c7bf9f48fbece5f0300ef6912c
+  languageName: node
+  linkType: hard
+
 "image-size@npm:^1.0.2":
   version: 1.1.1
   resolution: "image-size@npm:1.1.1"
@@ -15562,7 +15603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ipx@npm:^2.0.2":
+"ipx@npm:^2.1.0":
   version: 2.1.0
   resolution: "ipx@npm:2.1.0"
   dependencies:
@@ -15592,6 +15633,13 @@ __metadata:
   version: 1.0.0
   resolution: "iron-webcrypto@npm:1.0.0"
   checksum: 10c0/7e9305a7d792c275cba33c770695327c8ad3f7c8021e03f7148a8b92b559ad09468f337433090eb48e195d5fda0fd2e0611afcad843eb917cffcc1c6392e8037
+  languageName: node
+  linkType: hard
+
+"iron-webcrypto@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "iron-webcrypto@npm:1.2.1"
+  checksum: 10c0/5cf27c6e2bd3ef3b4970e486235fd82491ab8229e2ed0ac23307c28d6c80d721772a86ed4e9fe2a5cabadd710c2f024b706843b40561fb83f15afee58f809f66
   languageName: node
   linkType: hard
 
@@ -22341,6 +22389,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"radix3@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "radix3@npm:1.1.2"
+  checksum: 10c0/d4a295547f71af079868d2c2ed3814a9296ee026c5488212d58c106e6b4797c6eaec1259b46c9728913622f2240c9a944bfc8e2b3b5f6e4a5045338b1609f1e4
+  languageName: node
+  linkType: hard
+
 "randombytes@npm:^2.0.0, randombytes@npm:^2.0.1, randombytes@npm:^2.0.5, randombytes@npm:^2.1.0":
   version: 2.1.0
   resolution: "randombytes@npm:2.1.0"
@@ -26375,6 +26430,19 @@ __metadata:
   dependencies:
     "@fastify/busboy": "npm:^2.0.0"
   checksum: 10c0/34385ad9b3ba85309972ee3c1b426dcd19b94a5a6aa9c54499b5f48436c0ecc13a9b1e756a7c6a953eaefa9f4263890625ece5f2719fd774b0852204f5e4d5f9
+  languageName: node
+  linkType: hard
+
+"unenv@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "unenv@npm:1.10.0"
+  dependencies:
+    consola: "npm:^3.2.3"
+    defu: "npm:^6.1.4"
+    mime: "npm:^3.0.0"
+    node-fetch-native: "npm:^1.6.4"
+    pathe: "npm:^1.1.2"
+  checksum: 10c0/354180647e21204b6c303339e7364b920baadb2672b540a88af267bc827636593e0bf79f59753dcc6b7ab5d4c83e71d69a9171a3596befb8bf77e0bb3c7612b9
   languageName: node
   linkType: hard
 
