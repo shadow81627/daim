@@ -195,8 +195,8 @@
                 <tbody>
                   <tr>
                     <td>
+                      <h5>Reselling</h5>
                       <ol>
-                        <lh><h5>Reselling</h5></lh>
                         <li>Domain names</li>
                         <li>Server Hosting</li>
                         <li>SaaS Setup</li>
@@ -204,8 +204,8 @@
                       <br />
                     </td>
                     <td>
+                      <h5>Services</h5>
                       <ol>
-                        <lh><h5>Services</h5></lh>
                         <li>Design</li>
                         <li>Development</li>
                         <li>Marketing</li>
