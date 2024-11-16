@@ -1,5 +1,5 @@
 <template>
-  <v-theme-provider :dark="dark">
+  <v-theme-provider>
     <div>
       <BaseInfoCard :title="title" align="left" color="primary" :level="2">
         <slot></slot>
