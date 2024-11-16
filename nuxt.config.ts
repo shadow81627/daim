@@ -136,11 +136,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     // 'nuxt-webfontloader',
     // ['nuxt-matomo', matomo],
-    (_, nuxt) => {
-      nuxt.hooks.hook('vite:extendConfig', (config) => {
-        config.plugins?.push(vuetify({ autoImport: true }));
-      });
-    },
+    'vuetify-nuxt-module',
 
     '@nuxtjs/robots',
     // always declare the sitemap module at end of array
@@ -183,6 +179,12 @@ export default defineNuxtConfig({
   //     },
   //   },
   // },
+
+  vuetify: {
+    moduleOptions: {
+      /* module specific options */
+    },
+  },
 
   pwa: {
     // registerType: 'autoUpdate',
