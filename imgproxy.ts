@@ -1,4 +1,4 @@
-import { Buffer } from 'buffer';
+import { Buffer } from 'node:buffer';
 import { encodeURI } from 'js-base64';
 import { joinURL, withBase } from 'ufo';
 import hmacSHA256 from 'crypto-js/hmac-sha256.js';
