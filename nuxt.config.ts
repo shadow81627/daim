@@ -2,9 +2,9 @@ import { transformAssetUrls } from 'vite-plugin-vuetify';
 import { splitVendorChunkPlugin } from 'vite';
 import svgLoader from 'vite-svg-loader';
 import { defineNuxtConfig } from 'nuxt/config';
+import { createLocalFontProcessor } from '@unocss/preset-web-fonts/local';
 import pkg from './package.json';
 import getLocalIpAddress from './utils/getLocalIpAddress';
-import { createLocalFontProcessor } from '@unocss/preset-web-fonts/local'
 
 const localIpAddress = getLocalIpAddress();
 const HOST = process.env.HOST || localIpAddress || '0.0.0.0';
