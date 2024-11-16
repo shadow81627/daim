@@ -1,4 +1,3 @@
-import { transformAssetUrls } from 'vite-plugin-vuetify';
 import { splitVendorChunkPlugin } from 'vite';
 import svgLoader from 'vite-svg-loader';
 import { defineNuxtConfig } from 'nuxt/config';
@@ -287,11 +286,6 @@ export default defineNuxtConfig({
   sourcemap: true,
 
   vite: {
-    vue: {
-      template: {
-        transformAssetUrls,
-      },
-    },
     plugins: [svgLoader(), splitVendorChunkPlugin()],
   },
 
