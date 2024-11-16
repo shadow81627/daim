@@ -95,7 +95,6 @@
     "nuxt": "3.9.3",
     "nuxt-icon": "0.3.2",
     "nuxt-og-image": "2.2.4",
-    "nuxt-purgecss": "1.0.0",
     "nuxt-schema-org": "2.1.2",
     "playwright": "1.40.1",
     "prettier": "2.8.6",
