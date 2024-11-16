@@ -175,14 +175,14 @@ export default defineNuxtConfig({
     },
   },
 
-  security: {
-    rateLimiter: false, // https://github.com/Baroshem/nuxt-security/issues/137
-    headers: {
-      contentSecurityPolicy: {
-        'img-src': ["'self'", 'data:', IMGPROXY_URL],
-      },
-    },
-  },
+  // security: {
+  //   rateLimiter: false, // https://github.com/Baroshem/nuxt-security/issues/137
+  //   headers: {
+  //     contentSecurityPolicy: {
+  //       'img-src': ["'self'", 'data:', IMGPROXY_URL],
+  //     },
+  //   },
+  // },
 
   pwa: {
     // registerType: 'autoUpdate',

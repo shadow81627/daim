@@ -3692,7 +3692,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.9.3, @nuxt/kit@npm:^3.0.0, @nuxt/kit@npm:^3.2.0, @nuxt/kit@npm:^3.2.2, @nuxt/kit@npm:^3.3.3, @nuxt/kit@npm:^3.4.2, @nuxt/kit@npm:^3.5.0, @nuxt/kit@npm:^3.7.4, @nuxt/kit@npm:^3.8.0, @nuxt/kit@npm:^3.8.1, @nuxt/kit@npm:^3.8.2, @nuxt/kit@npm:^3.9.0, @nuxt/kit@npm:^3.9.1":
+"@nuxt/kit@npm:3.9.3, @nuxt/kit@npm:^3.0.0, @nuxt/kit@npm:^3.2.0, @nuxt/kit@npm:^3.3.3, @nuxt/kit@npm:^3.4.2, @nuxt/kit@npm:^3.5.0, @nuxt/kit@npm:^3.7.4, @nuxt/kit@npm:^3.8.0, @nuxt/kit@npm:^3.8.1, @nuxt/kit@npm:^3.8.2, @nuxt/kit@npm:^3.9.0, @nuxt/kit@npm:^3.9.1":
   version: 3.9.3
   resolution: "@nuxt/kit@npm:3.9.3"
   dependencies:
@@ -8743,15 +8743,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"basic-auth@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "basic-auth@npm:2.0.1"
-  dependencies:
-    safe-buffer: "npm:5.1.2"
-  checksum: 10c0/05f56db3a0fc31c89c86b605231e32ee143fb6ae38dc60616bc0970ae6a0f034172def99e69d3aed0e2c9e7cac84e2d63bc51a0b5ff6ab5fc8808cc8b29923c1
-  languageName: node
-  linkType: hard
-
 "before-after-hook@npm:^2.2.0":
   version: 2.2.3
   resolution: "before-after-hook@npm:2.2.3"
@@ -10938,7 +10929,6 @@ __metadata:
     nuxt-og-image: "npm:2.2.4"
     nuxt-purgecss: "npm:1.0.0"
     nuxt-schema-org: "npm:2.1.2"
-    nuxt-security: "npm:0.13.0"
     nuxt-unhead: "npm:1.4.15"
     playwright: "npm:1.40.1"
     prettier: "npm:2.8.6"
@@ -15915,13 +15905,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"just-performance@npm:4.3.0":
-  version: 4.3.0
-  resolution: "just-performance@npm:4.3.0"
-  checksum: 10c0/869bf2090332ca475859ca0566fc23e81be4d258cb882533876d6dfb3f912effcf5452d605dcfe6b63cfde083f45107a3fc7b166e1c82a09424abfca35c79dc0
-  languageName: node
-  linkType: hard
-
 "keyv@npm:^4.0.0, keyv@npm:^4.5.3":
   version: 4.5.4
   resolution: "keyv@npm:4.5.4"
@@ -16242,15 +16225,6 @@ __metadata:
   version: 3.0.0
   resolution: "lilconfig@npm:3.0.0"
   checksum: 10c0/7f5ee7a658dc016cacf146815e8d88b06f06f4402823b8b0934e305a57a197f55ccc9c5cd4fb5ea1b2b821c8ccaf2d54abd59602a4931af06eabda332388d3e6
-  languageName: node
-  linkType: hard
-
-"limiter@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "limiter@npm:2.1.0"
-  dependencies:
-    just-performance: "npm:4.3.0"
-  checksum: 10c0/048ae59ddf9dce99ca8443ec6cd80d0f2149c1ff8b0e03fad7f7a00479813a452114834e3d7e15dc1073889d0ac27f755fa535f14d72551ec0a850402ba5ba34
   languageName: node
   linkType: hard
 
@@ -17227,13 +17201,6 @@ __metadata:
   version: 0.3.0
   resolution: "media-typer@npm:0.3.0"
   checksum: 10c0/d160f31246907e79fed398470285f21bafb45a62869dc469b1c8877f3f064f5eabc4bcc122f9479b8b605bc5c76187d7871cf84c4ee3ecd3e487da1993279928
-  languageName: node
-  linkType: hard
-
-"memory-cache@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "memory-cache@npm:0.2.0"
-  checksum: 10c0/d4fe58865dfdc252db18ae152ab6c9d62868cfc42d5e7f6cf30732fcf27f5f1f8d7b179c3b6f26f31a28ab1cc5c3937215c60aa9e8ad7ea8ff35e79f69ef14da
   languageName: node
   linkType: hard
 
@@ -19341,17 +19308,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-csurf@npm:^1.1.0":
-  version: 1.4.0
-  resolution: "nuxt-csurf@npm:1.4.0"
-  dependencies:
-    "@nuxt/kit": "npm:^3.8.2"
-    defu: "npm:^6.1.3"
-    uncsrf: "npm:^1.1.1"
-  checksum: 10c0/82c72b3bf1237b15911e23fe374324ed9b9fb24c4ab3e664eb2b933f615f9eeec0b18efd02671fe2f68b6c6fee529b3404dad7d719bd66c07438aff229acf68a
-  languageName: node
-  linkType: hard
-
 "nuxt-icon@npm:0.3.2":
   version: 0.3.2
   resolution: "nuxt-icon@npm:0.3.2"
@@ -19428,22 +19384,6 @@ __metadata:
     "@unhead/schema-org-vue": "npm:^0.5.0"
     pathe: "npm:^1.1.0"
   checksum: 10c0/c2295556e17b65b48edd3a963e736673fb6c07cd8b0e67e29d50111d022d5c106c0554b76acb6cec5182b280d4e20f3d49c4c306575ce8589dfbc230c5c7440a
-  languageName: node
-  linkType: hard
-
-"nuxt-security@npm:0.13.0":
-  version: 0.13.0
-  resolution: "nuxt-security@npm:0.13.0"
-  dependencies:
-    "@nuxt/kit": "npm:^3.2.2"
-    basic-auth: "npm:^2.0.1"
-    defu: "npm:^6.1.1"
-    limiter: "npm:^2.1.0"
-    memory-cache: "npm:^0.2.0"
-    nuxt-csurf: "npm:^1.1.0"
-    pathe: "npm:^1.0.0"
-    xss: "npm:^1.0.14"
-  checksum: 10c0/4dd7b5c1d455c6be32fa248e9eff62aa8e12679079e3537f2dfcb6288ca524b7cdd8a2b47e5cb582b7d88533a36e60ab51145e34b545c2122a24394b9f68bbc6
   languageName: node
   linkType: hard
 
@@ -25435,13 +25375,6 @@ __metadata:
   version: 0.1.3
   resolution: "uncrypto@npm:0.1.3"
   checksum: 10c0/74a29afefd76d5b77bedc983559ceb33f5bbc8dada84ff33755d1e3355da55a4e03a10e7ce717918c436b4dfafde1782e799ebaf2aadd775612b49f7b5b2998e
-  languageName: node
-  linkType: hard
-
-"uncsrf@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "uncsrf@npm:1.1.1"
-  checksum: 10c0/714be22ac5fe5255a3c3e1f6c5cb377813f54b9eaa70fb2169a5fc091b73d1dd0c91f14372864a5c4bd386dc8828c84a54575d186d630535c276e66a0fdba612
   languageName: node
   linkType: hard
 
