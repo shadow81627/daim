@@ -131,7 +131,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/i18n',
     '@nuxt/image',
-    'nuxt-icon',
+    '@nuxt/icon',
     // 'nuxt-webfontloader',
     // ['nuxt-matomo', matomo],
     'vuetify-nuxt-module',
