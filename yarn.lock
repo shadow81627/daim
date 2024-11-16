@@ -11180,7 +11180,7 @@ __metadata:
     ts-node: "npm:10.9.1"
     typescript: "npm:5.0.2"
     vite-svg-loader: "npm:5.1.0"
-    vuetify: "npm:3.4.6"
+    vuetify: "npm:3.7.4"
     vuetify-nuxt-module: "npm:0.18.3"
     wrangler: "npm:2.13.0"
     write-good: "npm:1.0.8"
@@ -24919,29 +24919,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:3.4.6":
-  version: 3.4.6
-  resolution: "vuetify@npm:3.4.6"
-  peerDependencies:
-    typescript: ">=4.7"
-    vite-plugin-vuetify: ^1.0.0-alpha.12
-    vue: ^3.3.0
-    vue-i18n: ^9.0.0
-    webpack-plugin-vuetify: ^2.0.0-alpha.11
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-    vite-plugin-vuetify:
-      optional: true
-    vue-i18n:
-      optional: true
-    webpack-plugin-vuetify:
-      optional: true
-  checksum: 10c0/5cba79cb4eadf83ee61606865bd9a69fb24ffad44f39d627c8cd39b38bda3e58556485a89acc94a87ab4d512038b6e6d4061146b878a878ab609dd39315f67fd
-  languageName: node
-  linkType: hard
-
-"vuetify@npm:^3.7.0":
+"vuetify@npm:3.7.4, vuetify@npm:^3.7.0":
   version: 3.7.4
   resolution: "vuetify@npm:3.7.4"
   peerDependencies:

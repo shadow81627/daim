@@ -102,7 +102,7 @@
     "ts-node": "10.9.1",
     "typescript": "5.0.2",
     "vite-svg-loader": "5.1.0",
-    "vuetify": "3.4.6",
+    "vuetify": "3.7.4",
     "vuetify-nuxt-module": "0.18.3",
     "wrangler": "2.13.0",
     "write-good": "1.0.8"
