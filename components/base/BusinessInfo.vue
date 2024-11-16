@@ -1,6 +1,6 @@
 <template>
   <v-theme-provider>
-    <base-business-contact title="Get in Touch" space="6">
+    <base-business-contact title="Get in Touch">
       Please feel free to reach out to us with your questions and comments.
     </base-business-contact>
   </v-theme-provider>
