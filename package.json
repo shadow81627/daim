@@ -1,6 +1,7 @@
 {
   "name": "daim",
   "version": "1.52.1",
+  "type": "module",
   "description": "Damien Robinson Web Development",
   "packageManager": "yarn@4.5.1",
   "author": {
