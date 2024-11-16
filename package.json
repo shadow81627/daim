@@ -60,7 +60,6 @@
   },
   "devDependencies": {
     "@iconify/tools": "2.2.6",
-    "@kevinmarrec/nuxt-pwa": "0.17.0",
     "@lhci/cli": "0.11.0",
     "@mdi/js": "5.9.55",
     "@nuxt/image": "1.8.1",
@@ -82,7 +81,7 @@
     "@unlighthouse/cli": "0.4.9",
     "@unlighthouse/nuxt": "0.4.9",
     "@unocss/nuxt": "0.64.1",
-    "@vite-pwa/nuxt": "0.0.7",
+    "@vite-pwa/nuxt": "0.10.6",
     "cspell": "5.9.0",
     "eslint": "8.55.0",
     "eslint-config-prettier": "8.8.0",

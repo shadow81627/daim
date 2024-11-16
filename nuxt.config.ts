@@ -122,11 +122,10 @@ export default defineNuxtConfig({
    */
   modules: [
     // '@unlighthouse/nuxt',
-    // '@vite-pwa/nuxt',
+    '@vite-pwa/nuxt',
     'nuxt-schema-org',
     'nuxt-og-image',
     // 'nuxt-security',
-    '@kevinmarrec/nuxt-pwa',
     '@nuxtjs/eslint-module',
     '@formkit/nuxt',
     '@unocss/nuxt',
