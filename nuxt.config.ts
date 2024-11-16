@@ -197,6 +197,8 @@ export default defineNuxtConfig({
 
   pwa: {
     // registerType: 'autoUpdate',
+    // https://github.com/vite-pwa/nuxt/issues/53#issuecomment-1615266204
+    navigateFallback: undefined,
     manifest: {
       name: env.APP_NAME,
       short_name: env.APP_NAME,
