@@ -12,6 +12,7 @@
           :to="localePath(item.route)"
           exact
           class="text-decoration-none"
+          :aria-selected="undefined"
         >
           <template #prepend>
             <v-list-item-action style="margin-right: 32px">
