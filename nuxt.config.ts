@@ -263,6 +263,10 @@ export default defineNuxtConfig({
     },
   },
 
+  icon: {
+    serverBundle: 'remote',
+  },
+
   routeRules: {
     // Static generation
     '/': { prerender: true },
