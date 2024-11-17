@@ -1,7 +1,6 @@
+import { defineNuxtConfig } from 'nuxt/config';
 import { splitVendorChunkPlugin } from 'vite';
 import svgLoader from 'vite-svg-loader';
-import { defineNuxtConfig } from 'nuxt/config';
-import { createLocalFontProcessor } from '@unocss/preset-web-fonts/local';
 import pkg from './package.json';
 import getLocalIpAddress from './utils/getLocalIpAddress';
 
