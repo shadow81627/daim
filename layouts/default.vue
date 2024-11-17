@@ -47,13 +47,18 @@
         </NuxtLink>
       </v-toolbar-title>
       <v-spacer />
-      <v-tabs class="hidden-sm-and-down" optional right>
+      <v-tabs
+        class="hidden-sm-and-down"
+        optional
+        right
+        mandatory
+        :model-value="active"
+      >
         <v-tab
           v-for="item in (items ?? []).filter((item) => item.show_tab)"
           :key="item.route"
           :to="localePath(item.route)"
           exact
-          text
           itemscope
           itemtype="https://schema.org/SiteNavigationElement"
         >
@@ -84,6 +89,7 @@ export default {
     TheFooter,
   },
   async setup() {
+    const { path } = useRoute();
     const localePath = useLocalePath();
     const { data: items } = await useAsyncData(
       'layout-pages',
@@ -93,6 +99,9 @@ export default {
         transform(data) {
           const items = data.map((item) => ({
             ...item,
+            name: item.name,
+            show_tab: item.show_tab,
+            route: item.route,
             pos: fractionToDecimal(item.pos),
           }));
           return sortBy(items, ['show_tab', 'pos']);
@@ -100,7 +109,10 @@ export default {
       },
     );
     const drawer = ref(false);
-    return { items, drawer, logo, localePath };
+    const active =
+      items.value?.findIndex((item) => localePath(item.route) === path) ||
+      undefined;
+    return { items, drawer, logo, localePath, active };
   },
   mounted() {
     const beforePrint = function () {
