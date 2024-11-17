@@ -1,5 +1,5 @@
 <template>
-  <v-tooltip location="top">
+  <v-tooltip location="top" :aria-label="tooltip">
     <template #activator="{ props }">
       <v-btn
         icon
