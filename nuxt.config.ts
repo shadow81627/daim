@@ -113,9 +113,7 @@ export default defineNuxtConfig({
   /*
    ** Global CSS
    */
-  css: [
-    'assets/css/main.css'
-  ],
+  css: ['assets/css/main.css'],
 
   /*
    ** Nuxt.js modules
@@ -169,9 +167,7 @@ export default defineNuxtConfig({
   },
 
   fonts: {
-    families: [
-      { name: 'Roboto', provider: 'google' },
-    ],
+    families: [{ name: 'Roboto', provider: 'google' }],
   },
 
   content: {
