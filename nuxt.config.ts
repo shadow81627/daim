@@ -157,7 +157,7 @@ export default defineNuxtConfig({
   },
 
   fonts: {
-    families: [{ name: 'Roboto', provider: 'google' }],
+    families: [{ name: 'Roboto', provider: 'google', weights: [400, 500, 700] }],
   },
 
   content: {
