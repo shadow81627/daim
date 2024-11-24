@@ -31,7 +31,7 @@ h2 {
 
 .v-list-item-subtitle,
 .v-card-subtitle {
-  opacity: 90%;
+  opacity: 90% !important;
 }
 
 .nuxt-content-highlight {
