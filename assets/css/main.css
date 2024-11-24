@@ -29,6 +29,7 @@ h2 {
   all: unset;
 }
 
+.v-list-subtitle,
 .v-card-subtitle {
   opacity: 90%;
 }
