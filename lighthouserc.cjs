@@ -23,6 +23,7 @@ module.exports = {
         'errors-in-console': WARN,
         canonical: WARN,
         'valid-source-maps': WARN,
+        'csp-xss': WARN,
       },
     },
     upload: {
