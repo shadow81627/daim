@@ -185,6 +185,7 @@ export default defineNuxtConfig({
         'script-src': ["'unsafe-inline'"],
       },
     },
+    nonce: false,
     ssg: {
       meta: false,
       hashScripts: false,
