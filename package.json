@@ -37,6 +37,7 @@
     "icons": "ts-node generate-iconify.ts",
     "test": "playwright test",
     "test:e2e": "yarn run test",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/icon.png",
     "postinstall": "nuxi prepare"
   },
   "engines": {
@@ -81,6 +82,7 @@
     "@unlighthouse/cli": "0.4.9",
     "@unlighthouse/nuxt": "0.4.9",
     "@unocss/nuxt": "0.64.1",
+    "@vite-pwa/assets-generator": "0.2.6",
     "@vite-pwa/nuxt": "0.10.6",
     "cspell": "5.9.0",
     "eslint": "8.55.0",
