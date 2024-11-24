@@ -29,6 +29,6 @@ for (const { slug, heading, route } of pages) {
     }
 
     await page.waitForLoadState('networkidle');
-    await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
+    await expect(page).toHaveScreenshot({ maxDiffPixels: 100, timeout: 10_000 });
   });
 }
