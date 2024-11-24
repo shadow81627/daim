@@ -18,6 +18,7 @@
       fit="cover"
       loading="lazy"
       sizes="xs:100vw sm:50vw md:33vw lg:33vw xl:33vw"
+      :alt="name"
       :img-attrs="{
         style: {
           'object-fit': 'cover',
