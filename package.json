@@ -95,6 +95,7 @@
     "nuxt": "3.14.159",
     "nuxt-og-image": "3.0.8",
     "nuxt-schema-org": "2.1.2",
+    "nuxt-security": "2.1.4",
     "playwright": "1.40.1",
     "prettier": "2.8.6",
     "semantic-release": "20.1.3",

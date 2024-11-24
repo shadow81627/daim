@@ -123,7 +123,7 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     'nuxt-schema-org',
     'nuxt-og-image',
-    // 'nuxt-security',
+    'nuxt-security',
     '@nuxtjs/eslint-module',
     '@formkit/nuxt',
     '@nuxt/fonts',
@@ -132,7 +132,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxt/icon',
-    // 'nuxt-webfontloader',
     // ['nuxt-matomo', matomo],
     'vuetify-nuxt-module',
 
@@ -175,14 +174,14 @@ export default defineNuxtConfig({
     },
   },
 
-  // security: {
-  //   rateLimiter: false, // https://github.com/Baroshem/nuxt-security/issues/137
-  //   headers: {
-  //     contentSecurityPolicy: {
-  //       'img-src': ["'self'", 'data:', IMGPROXY_URL],
-  //     },
-  //   },
-  // },
+  security: {
+    rateLimiter: false, // https://github.com/Baroshem/nuxt-security/issues/137
+    headers: {
+      contentSecurityPolicy: {
+        'img-src': ["'self'", 'data:', IMGPROXY_URL],
+      },
+    },
+  },
 
   pwa: {
     // registerType: 'autoUpdate',
