@@ -29,6 +29,10 @@ h2 {
   all: unset;
 }
 
+.v-card-subtitle {
+  opacity: 90%;
+}
+
 .nuxt-content-highlight {
   font-size: 16px;
   position: relative;
