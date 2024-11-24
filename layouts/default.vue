@@ -47,15 +47,9 @@
         </NuxtLink>
       </v-toolbar-title>
       <v-spacer />
-      <v-tabs
-        class="hidden-sm-and-down"
-        optional
-        right
-        mandatory
-        :model-value="active"
-      >
+      <v-tabs class="hidden-sm-and-down" optional right :model-value="active">
         <v-tab
-          v-for="item in (items ?? []).filter((item) => item.show_tab)"
+          v-for="item in tops"
           :key="item.route"
           :to="localePath(item.route)"
           exact
@@ -109,10 +103,10 @@ export default {
       },
     );
     const drawer = ref(false);
+    const tops = (items.value ?? []).filter((item) => item.show_tab);
     const active =
-      items.value?.findIndex((item) => localePath(item.route) === path) ||
-      undefined;
-    return { items, drawer, logo, localePath, active };
+      tops?.findIndex((item) => localePath(item.route) === path) || undefined;
+    return { items, drawer, logo, localePath, active, tops };
   },
   mounted() {
     const beforePrint = function () {
