@@ -104,11 +104,14 @@ export default {
       },
     );
     const drawer = ref(false);
-    const tops = (items.value ?? []).filter((item) => item.show_tab);
+    const tops = computed(() =>
+      (items.value ?? []).filter((item) => item.show_tab),
+    );
     const active = computed(
       () =>
-        tops?.findIndex((item) => localePath(item.route, 'en') === path) ||
-        undefined,
+        tops.value?.findIndex(
+          (item) => localePath(item.route, 'en') === path,
+        ) || undefined,
     );
     return { items, drawer, logo, localePath, active, tops };
   },
