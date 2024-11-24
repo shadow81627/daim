@@ -28,6 +28,7 @@
             :sizes="_srcset.size"
             :width="300"
             :height="300"
+            :alt="`${firstname} ${lastname}`"
             itemprop="image"
           ></v-img>
         </v-col>
