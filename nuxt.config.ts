@@ -182,7 +182,12 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         'img-src': ["'self'", 'data:', IMGPROXY_URL],
+        'script-src': ["'unsafe-inline'"],
       },
+    },
+    ssg: {
+      meta: false,
+      hashScripts: false,
     },
   },
 
