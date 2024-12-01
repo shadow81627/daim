@@ -4,8 +4,9 @@
     className="flex justify-center gap-6 pb-16 items-center w-full"
   >
     <NuxtLink
+      :custom="page <= 1"
       :to="page > 1 ? { query: { page: page - 1 } } : undefined"
-      aria-label="Previous page"
+      :aria-label="page > 1 ? 'Previous page' : undefined"
       class="relative mr-2 no-underline w-12 h-12 flex items-center m-1 group justify-center text-black"
       :class="[page <= 1 ? 'opacity-30' : 'hover:-translate-x-1']"
     >
@@ -33,8 +34,9 @@
       />
     </NuxtLink>
     <NuxtLink
-      :to="{ query: { page: page <= pages ? page + 1 : undefined } }"
-      aria-label="Next page"
+      :custom="page >= pages"
+      :to="page <= pages ? { query: { page: page + 1 } } : undefined"
+      :aria-label="page <= pages ? 'Next page' : undefined"
       class="relative ml-2 no-underline w-12 h-12 flex items-center group m-1 justify-center text-black"
       :class="[page >= pages ? 'opacity-30' : 'hover:translate-x-1']"
     >
