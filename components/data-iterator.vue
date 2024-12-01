@@ -23,6 +23,12 @@
       v-if="loading && !items?.length"
       class="mx-auto h-64px w-64px block"
     ></Spinner>
+    <div
+      v-else-if="!loading && !items?.length"
+      class="flex items-center justify-center"
+    >
+      No items found
+    </div>
     <v-container v-else fluid>
       <v-row>
         <v-col
