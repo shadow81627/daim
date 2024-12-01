@@ -47,7 +47,12 @@
         </NuxtLink>
       </v-toolbar-title>
       <v-spacer />
-      <v-tabs class="hidden-sm-and-down" optional right :model-value="active">
+      <v-tabs
+        v-model:model-value="active"
+        class="hidden-sm-and-down"
+        optional
+        right
+      >
         <v-tab
           v-for="(item, index) in tops"
           :key="item.route"
@@ -97,6 +102,7 @@ export default {
             name: item.name,
             show_tab: item.show_tab,
             route: item.route,
+            icon: item.icon,
             pos: fractionToDecimal(item.pos),
           }));
           return sortBy(items, ['show_tab', 'pos']);
@@ -107,12 +113,20 @@ export default {
     const tops = computed(() =>
       (items.value ?? []).filter((item) => item.show_tab),
     );
-    const active = computed(
-      () =>
-        tops.value?.findIndex(
+    const _active = ref();
+    const active = computed({
+      get: () => {
+        if (_active.value) return _active.value;
+        const found = tops.value?.findIndex(
           (item) => localePath(item.route, 'en') === path,
-        ) || undefined,
-    );
+        );
+        if (found >= 0) return found;
+        return null;
+      },
+      set: (value) => {
+        _active.value = value;
+      },
+    });
     return { items, drawer, logo, localePath, active, tops };
   },
   mounted() {
