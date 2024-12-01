@@ -90,6 +90,7 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.ico' },
+        { rel: 'manifest', href: '/manifest.webmanifest' },
       ],
       meta: [
         {
