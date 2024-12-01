@@ -1,4 +1,3 @@
-import { sortBy } from 'lodash-es';
 import {
   optional,
   object,
@@ -15,9 +14,6 @@ import {
 import { parse } from 'qs';
 import { parseURL } from 'ufo';
 import { serverQueryContent } from '#content/server';
-import textLength from '~/utils/feature-text-length';
-import priceSort from '~/utils/price-sort';
-
 export default defineEventHandler(async (event) => {
   const type: string = getRouterParam(event, 'type') ?? '';
   const query = parse(parseURL(event.path).search, {
