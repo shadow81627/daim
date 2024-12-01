@@ -10302,6 +10302,7 @@ __metadata:
     svgo: "npm:3.0.2"
     ts-node: "npm:10.9.1"
     typescript: "npm:5.6.3"
+    valibot: "npm:1.0.0-beta.8"
     vite-svg-loader: "npm:5.1.0"
     vuetify: "npm:3.7.4"
     vuetify-nuxt-module: "npm:0.18.3"
@@ -23454,6 +23455,18 @@ __metadata:
   version: 3.0.1
   resolution: "v8-compile-cache-lib@npm:3.0.1"
   checksum: 10c0/bdc36fb8095d3b41df197f5fb6f11e3a26adf4059df3213e3baa93810d8f0cc76f9a74aaefc18b73e91fe7e19154ed6f134eda6fded2e0f1c8d2272ed2d2d391
+  languageName: node
+  linkType: hard
+
+"valibot@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "valibot@npm:1.0.0-beta.8"
+  peerDependencies:
+    typescript: ">=5"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/71aea3ce739e46bf60dc16a01c180fcd76be603a5dd76e43b57fe3a9595d01bb1787d0ffda390f00d755a249405d61b73c6e7f9575cb316dac6c60c40c8814ef
   languageName: node
   linkType: hard
 
