@@ -1,12 +1,14 @@
-import fs from 'fs';
-import { readFile } from 'fs/promises';
-import path from 'path';
+import fs from 'node:fs';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
 import axios from 'axios';
 import sharp from 'sharp';
 import lodash from 'lodash';
 import { getStamps } from 'git-date-extractor';
 import getFiles from './utils/get-files';
 import normalizeData from './utils/normalize-data';
+import textLength from './utils/feature-text-length';
+import priceSort from './utils/price-sort';
 
 function componentToHex(c: number) {
   const hex = c.toString(16);
@@ -80,6 +82,9 @@ async function updateContent({
     const data = fs.readFileSync(filename);
     const content = JSON.parse(data.toString());
     const slug = path.parse(filename).name;
+    content.chars = textLength(content);
+    const maxPrice = priceSort(content);
+    content.maxPrice = maxPrice || 0;
 
     console.log(slug);
     if (content.offers) {
@@ -193,6 +198,8 @@ async function updateContent({
     console.log(content.slug);
     await updateContent(content);
   }
+
+  return;
 
   const images = [
     'img/blog/best-front-end-framework.jpg',
