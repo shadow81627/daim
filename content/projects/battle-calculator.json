@@ -1,4 +1,5 @@
 {
+  "chars": 103,
   "color": "#f8f8f8",
   "createdAt": 1709782436,
   "description": "Determine the expected outcome of dice when units attack in games like Warhammer 40,000 (10th Edition).",

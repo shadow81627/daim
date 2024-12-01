@@ -1,4 +1,5 @@
 {
+  "chars": 278,
   "color": "#f8d8b8",
   "createdAt": 1618314116,
   "description": "Your code is telling you more than what your logs let on. Sentry’s full stack monitoring gives you full visibility into your code, so you can catch issues before they become downtime.",

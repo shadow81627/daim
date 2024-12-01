@@ -1,4 +1,5 @@
 {
+  "chars": 322,
   "color": "#f8f8f8",
   "createdAt": 1618314116,
   "description": "Automate the whole package release workflow including: determining the next version number, generating the release notes and publishing the package. This removes the immediate connection between human emotions and version numbers, strictly following the Semantic Versioning specification.",

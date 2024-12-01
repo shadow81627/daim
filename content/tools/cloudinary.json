@@ -1,4 +1,5 @@
 {
+  "chars": 187,
   "color": "#f8f8f8",
   "createdAt": 1618314116,
   "description": "Automate the entire image-processing pipeline: from uploads to on-the-fly manipulations to optimization to dynamic delivery with any CDN.",

@@ -1,4 +1,5 @@
 {
+  "chars": 364,
   "color": "#f8f8f8",
   "createdAt": 1668659380,
   "description": "A Vue form building framework that simplifies form structure, generation, validation, theming, submission, error handling, and more.",

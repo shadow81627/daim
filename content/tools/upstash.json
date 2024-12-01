@@ -1,4 +1,5 @@
 {
+  "chars": 193,
   "color": "#181818",
   "createdAt": 1668755104,
   "description": "Designed for the serverless with per-request pricing and Redis®/Kafka® API.",

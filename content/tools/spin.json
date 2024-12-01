@@ -1,4 +1,5 @@
 {
+  "chars": 254,
   "color": "#f8f8f8",
   "createdAt": 1683934120,
   "description": "Spin is a bash utility that improves the user-experience for teams using Docker.",

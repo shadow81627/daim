@@ -1,4 +1,5 @@
 {
+  "chars": 211,
   "color": "#080808",
   "createdAt": 1651961967,
   "description": "Feature management lets you turn new features on/off in production with no need for redeployment. A software development best practice for releasing and validating new features.",
