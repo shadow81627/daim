@@ -9,6 +9,8 @@ import {
   number,
   integer,
   minValue,
+  maxValue,
+  string,
 } from 'valibot';
 import { parse } from 'qs';
 import { parseURL } from 'ufo';
@@ -23,8 +25,25 @@ export default defineEventHandler(async (event) => {
     comma: true,
   });
   const contentQuerySchema = object({
-    limit: optional(pipe(number(), integer(), minValue(0))),
-    page: optional(pipe(number(), integer(), minValue(1))),
+    limit: optional(
+      pipe(
+        string(),
+        transform((input) => Number(input)),
+        number(),
+        integer(),
+        minValue(0),
+        maxValue(48),
+      ),
+    ),
+    page: optional(
+      pipe(
+        string(),
+        transform((input) => Number(input)),
+        number(),
+        integer(),
+        minValue(1),
+      ),
+    ),
     fields: optional(
       object({
         [type]: pipe(
