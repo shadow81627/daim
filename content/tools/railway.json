@@ -12,6 +12,7 @@
     "Usage-based Pricing",
     "Start or Extend your Infrastructure with One Click."
   ],
+  "maxPrice": 20,
   "name": "Railway",
   "plans": {
     "trail": {

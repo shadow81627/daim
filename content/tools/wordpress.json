@@ -16,6 +16,7 @@
     "Built‑in marketing",
     "Mobile apps"
   ],
+  "maxPrice": 20,
   "name": "Wordpress",
   "plans": {
     "free": {

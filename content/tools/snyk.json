@@ -11,6 +11,7 @@
     "Security policies",
     "Real-time semantic code analysis"
   ],
+  "maxPrice": 139,
   "name": "Snyk",
   "plans": {
     "business": {

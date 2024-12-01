@@ -13,6 +13,7 @@
     "Submissions Inbox",
     "3rd party integrations"
   ],
+  "maxPrice": 102,
   "name": "Formspree",
   "plans": {
     "business": {

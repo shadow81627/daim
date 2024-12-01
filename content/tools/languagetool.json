@@ -11,6 +11,7 @@
     "Multi Lingual",
     "Personal Dictionary"
   ],
+  "maxPrice": 78,
   "name": "Language Tool",
   "plans": {
     "api": {

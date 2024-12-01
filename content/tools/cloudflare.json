@@ -10,6 +10,7 @@
     "Distributed Denial of Service protection (DDoS)",
     "Secure Sockets Layer (SSL)"
   ],
+  "maxPrice": 200,
   "name": "Cloudflare",
   "offers": {
     "Application Performance": {

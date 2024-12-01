@@ -12,6 +12,7 @@
     "Manage everything",
     "Shopify support"
   ],
+  "maxPrice": 299,
   "name": "Shopify",
   "plans": {
     "advanced": {

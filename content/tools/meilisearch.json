@@ -12,6 +12,7 @@
     "Flexible",
     "Typo tolerant"
   ],
+  "maxPrice": 31,
   "name": "Meilisearch",
   "plans": {
     "basic": {

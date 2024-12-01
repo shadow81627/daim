@@ -13,6 +13,7 @@
     "Widgets + Embeds",
     "High Quality Images"
   ],
+  "maxPrice": 49,
   "name": "Carrd",
   "plans": {
     "free": {

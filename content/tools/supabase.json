@@ -12,6 +12,7 @@
     "Edge Functions",
     "Realtime"
   ],
+  "maxPrice": 25,
   "name": "Supabase",
   "plans": {
     "free": {

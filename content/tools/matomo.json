@@ -17,6 +17,7 @@
     "Enhanced insights",
     "Tracking personal data"
   ],
+  "maxPrice": 179,
   "name": "Matomo",
   "plans": {
     "50000": {

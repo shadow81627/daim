@@ -12,6 +12,7 @@
     "Batteries Included Networking",
     "SSL At Any Scale"
   ],
+  "maxPrice": 199,
   "name": "Fly.io",
   "plans": {
     "launch": {

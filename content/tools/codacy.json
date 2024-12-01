@@ -10,6 +10,7 @@
     "Static code analysis",
     "Code coverage tracking"
   ],
+  "maxPrice": 18,
   "name": "Codacy",
   "plans": {
     "open-source": {

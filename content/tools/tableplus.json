@@ -6,6 +6,7 @@
   "icon": "mdi:elephant",
   "iconColor": "#ff9600",
   "image": "https://tableplus.com/resources/images/fb-thumbnail@2x.jpg",
+  "maxPrice": 99,
   "name": "TablePlus",
   "plans": {
     "basic": {

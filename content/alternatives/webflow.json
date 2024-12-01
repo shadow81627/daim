@@ -11,6 +11,7 @@
     "Create content-rich pages with Webflow’s CMS",
     "Choose how you publish your site"
   ],
+  "maxPrice": 39,
   "name": "Webflow",
   "plans": {
     "basic": {

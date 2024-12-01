@@ -11,6 +11,7 @@
     "Constant context",
     "Maximum efficiency. Minimal effort"
   ],
+  "maxPrice": 80,
   "name": "Sentry",
   "plans": {
     "business": {

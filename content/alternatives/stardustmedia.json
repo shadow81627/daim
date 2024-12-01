@@ -28,6 +28,7 @@
     "region": "Queensland",
     "streetAddress": "899 Brunswick St"
   },
+  "maxPrice": 179,
   "name": "Stardust Media",
   "plans": {
     "mini": {

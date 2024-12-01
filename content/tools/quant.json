@@ -18,6 +18,7 @@
     "Integration",
     "QR Codes"
   ],
+  "maxPrice": 25,
   "name": "Quant UX",
   "plans": {
     "blaze": {

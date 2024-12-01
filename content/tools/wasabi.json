@@ -13,6 +13,7 @@
     "Faster than the competition",
     "Data center redundancy"
   ],
+  "maxPrice": 5.99,
   "name": "Wasabi",
   "plans": {
     "pay-as-you-go": {

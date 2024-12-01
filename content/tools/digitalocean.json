@@ -12,6 +12,7 @@
     "Load balancers",
     "Virtual Private Cloud"
   ],
+  "maxPrice": 30,
   "name": "Digital Ocean",
   "plans": {
     "database": {

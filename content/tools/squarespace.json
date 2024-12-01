@@ -10,6 +10,7 @@
     "Sell anything",
     "Market your business"
   ],
+  "maxPrice": 52,
   "name": "Squarespace",
   "plans": {
     "advanced-commerce": {

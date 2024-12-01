@@ -17,6 +17,7 @@
     "region": "Queensland",
     "streetAddress": "Suite 153, 42 Manilla St"
   },
+  "maxPrice": 20000,
   "name": "Pixel",
   "phone": "+61468575424",
   "plans": {

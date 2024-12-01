@@ -26,6 +26,7 @@
     "Accounting dashboard",
     "Manage fixed assets"
   ],
+  "maxPrice": 70,
   "name": "Xero",
   "plans": {
     "premium-5": {

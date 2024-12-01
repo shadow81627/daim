@@ -14,6 +14,7 @@
     "countryCode": "PL",
     "streetAddress": "MDBootstrap Kijowska 7, 03-738"
   },
+  "maxPrice": 500000,
   "name": "Material Design Bootstrap (MDB)",
   "plans": {
     "basic": {

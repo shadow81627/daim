@@ -18,6 +18,7 @@
     "Intuitive web interface and CLI",
     "Deploy globally in minutes"
   ],
+  "maxPrice": 79,
   "name": "Koyeb",
   "plans": {
     "side-projects": {

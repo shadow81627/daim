@@ -12,6 +12,7 @@
     "Language independent",
     "Works on Windows, MacOS, and Linux"
   ],
+  "maxPrice": 250,
   "name": "Spin",
   "plans": {
     "free": {

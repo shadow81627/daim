@@ -15,6 +15,7 @@
     "Invite team members and share your dashboard",
     "Transparent and fully open source software"
   ],
+  "maxPrice": 169,
   "name": "Plausible",
   "plans": {
     "advanced": {

@@ -11,6 +11,7 @@
     "Domain Names",
     "Email Hosting"
   ],
+  "maxPrice": 15,
   "name": "Synergy Wholesale",
   "plans": {
     "basic": {

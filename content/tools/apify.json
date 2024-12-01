@@ -12,6 +12,7 @@
     "Never get blocked",
     "Rich developer ecosystem"
   ],
+  "maxPrice": 499,
   "name": "Apify",
   "plans": {
     "enterprise": {

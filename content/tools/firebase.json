@@ -14,6 +14,7 @@
     "Hosting",
     "Analytics"
   ],
+  "maxPrice": 25,
   "name": "Firebase",
   "plans": {
     "blaze": {

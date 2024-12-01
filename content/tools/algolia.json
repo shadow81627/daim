@@ -19,6 +19,7 @@
     "Personalization",
     "Relevant Sort"
   ],
+  "maxPrice": 1,
   "name": "Algolia",
   "plans": {
     "standard": {

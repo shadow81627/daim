@@ -17,6 +17,7 @@
     "countryCode": "AU",
     "region": "Queensland"
   },
+  "maxPrice": 8000,
   "name": "Evely Studio",
   "plans": {
     "large": {
