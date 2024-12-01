@@ -74,14 +74,14 @@ export default defineEventHandler(async (event) => {
   const contentQuery = serverQueryContent(event, type)
     .only(fields)
     .where({ deleted_at: { $exists: false } })
+    .sort({ slug: 1 })
+    .sort({ chars: -1, $numeric: true })
+    .sort({ maxPrice: -1, $numeric: true })
     .skip((page - 1) * limit)
     .limit(limit);
 
   const data = await contentQuery.find();
-
-  const sorts = [priceSort, textLength, 'slug'];
-  const sorted = sortBy(data, sorts).reverse();
-  const items = sorted.map((item) => {
+  const items = data.map((item) => {
     const slug = item?._path?.replace(`/${type}/`, '');
     return {
       ...item,
