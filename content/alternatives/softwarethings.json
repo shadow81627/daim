@@ -15,6 +15,7 @@
     "postcode": "40-013",
     "streetAddress": "ul. Dyrekcyjna 10/3"
   },
+  "maxPrice": 0,
   "name": "Software Things",
   "subheading": "Passion Driven Development",
   "url": "https://softwarethings.pro/"

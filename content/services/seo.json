@@ -5,6 +5,7 @@
   "description": "Organically raise high quality content to the top of search results.",
   "icon": "fa:search",
   "image": "/img/services/seo.png",
+  "maxPrice": 0,
   "name": "SEO",
   "pos": "1/2"
 }

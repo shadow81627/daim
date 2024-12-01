@@ -14,6 +14,7 @@
     "Pagination",
     "Filtering"
   ],
+  "maxPrice": 0,
   "name": "JSON API",
   "subheading": "A specification for building APIs in JSON",
   "url": "https://jsonapi.org/"

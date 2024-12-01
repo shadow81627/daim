@@ -11,6 +11,7 @@
     "Simple analytics",
     "Open source"
   ],
+  "maxPrice": 0,
   "name": "Umami",
   "subheading": "Own your website analytics",
   "url": "https://umami.is/"

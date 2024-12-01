@@ -12,6 +12,7 @@
     "region": "Queensland",
     "streetAddress": "Split Spaces, Building 4, Level 2, 92 Sydney St"
   },
+  "maxPrice": 0,
   "name": "Digital Crayon",
   "phone": "1300 745 861",
   "subheading": "We work with agencies to build cool sh*t, well",

@@ -7,6 +7,7 @@
   "iconColor": "#c32361",
   "image": "/img/tools/dribble.svg",
   "imageBackgroundColor": "#FFFFFF",
+  "maxPrice": 0,
   "name": "Dribbble",
   "subheading": "Discover the World’s Top Designers & Creative Professionals",
   "url": "https://dribbble.com/"

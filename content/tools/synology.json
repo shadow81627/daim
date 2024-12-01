@@ -13,6 +13,7 @@
     "Data Management",
     "Backup"
   ],
+  "maxPrice": 0,
   "name": "Synology",
   "offers": {
     "Network Accessible Storage": {

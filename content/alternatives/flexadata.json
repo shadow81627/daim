@@ -18,6 +18,7 @@
     "postcode": "4000",
     "region": "QLD"
   },
+  "maxPrice": 0,
   "name": "flexa",
   "subheading": "Data Analytics Consultants",
   "url": "https://flexadata.com/"

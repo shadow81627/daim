@@ -28,6 +28,7 @@
     "region": "Queensland",
     "streetAddress": "105 Brunswick Street"
   },
+  "maxPrice": 0,
   "name": "Speedwell",
   "subheading": "Digital Engineers",
   "url": "https://speedwell.com.au/en"

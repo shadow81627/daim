@@ -10,6 +10,7 @@
     "Flexible",
     "Free"
   ],
+  "maxPrice": 0,
   "name": "PixiJS",
   "subheading": "HTML5 Creation Engine",
   "url": "https://pixijs.com/",

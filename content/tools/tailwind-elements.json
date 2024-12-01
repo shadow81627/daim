@@ -11,6 +11,7 @@
     "Free hosting",
     "MIT license - free for personal & commercial use"
   ],
+  "maxPrice": 0,
   "name": "Tailwind Elements",
   "url": "https://tailwind-elements.com/"
 }

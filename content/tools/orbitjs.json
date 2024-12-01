@@ -13,6 +13,7 @@
     "Optimistic / Pessimistic Requests",
     "Offline Support"
   ],
+  "maxPrice": 0,
   "name": "Orbitjs",
   "subheading": "The Universal Data Layer",
   "url": "https://orbitjs.com/"

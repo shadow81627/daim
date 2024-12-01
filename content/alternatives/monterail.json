@@ -15,6 +15,7 @@
     "countryCode": "PL",
     "streetAddress": "Monterail sp. z o.o. Oławska 27-29 50-123"
   },
+  "maxPrice": 0,
   "name": "Monterail",
   "subheading": "We develop and design Web & mobile apps",
   "url": "https://www.monterail.com/"

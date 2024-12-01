@@ -12,6 +12,7 @@
     "Flexible",
     "Trusted and open source"
   ],
+  "maxPrice": 0,
   "name": "RxDB",
   "plans": {
     "basic": {

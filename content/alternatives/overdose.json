@@ -19,6 +19,7 @@
     "region": "QLD",
     "streetAddress": "1024 Ann Street"
   },
+  "maxPrice": 0,
   "name": "Overdose Digital",
   "sameAs": [
     "https://www.facebook.com/www.overdose.digital/",

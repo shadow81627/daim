@@ -10,6 +10,7 @@
       "tooltip": "Website"
     }
   ],
+  "maxPrice": 0,
   "name": "SwapU",
   "subheading": "The Swapping Marketplace"
 }

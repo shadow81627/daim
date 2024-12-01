@@ -17,6 +17,7 @@
     "postcode": "4000",
     "region": "QLD"
   },
+  "maxPrice": 0,
   "name": "Stein Art",
   "subheading": "Graphic Design",
   "url": "https://steinart.com.au/"

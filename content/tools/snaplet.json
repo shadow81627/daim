@@ -13,6 +13,7 @@
     "Up to date",
     "Easy to restore"
   ],
+  "maxPrice": 0,
   "name": "Snaplet",
   "subheading": "Quit writing seed scripts, start shipping features",
   "url": "https://www.snaplet.dev/"

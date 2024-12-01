@@ -11,6 +11,7 @@
     "Smart Investment",
     "Supporting Hybrid work"
   ],
+  "maxPrice": 0,
   "name": "Chrome OS",
   "subheading": "A cloud-first operating system for your enterprise",
   "url": "https://chromeenterprise.google/intl/en_au/os/"

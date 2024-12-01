@@ -6,6 +6,7 @@
   "icon": "@custom:custom:clutch-icon",
   "image": "/img/tools/clutch.svg",
   "imageBackgroundColor": "#17313b",
+  "maxPrice": 0,
   "name": "Clutch",
   "subheading": "B2B Ratings & Reviews",
   "url": "https://clutch.co/"

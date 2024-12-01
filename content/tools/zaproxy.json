@@ -11,6 +11,7 @@
     "Runtime Testing",
     "Code Review"
   ],
+  "maxPrice": 0,
   "name": "OWASP Zed Attack Proxy (ZAP)",
   "subheading": "App Development Platform",
   "url": "https://www.zaproxy.org/"

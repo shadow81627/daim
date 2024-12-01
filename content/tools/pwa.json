@@ -15,6 +15,7 @@
     "Predictive prefetching",
     "Web Push Notifications"
   ],
+  "maxPrice": 0,
   "name": "Progressive Web Apps",
   "subheading": "Fast, reliable, engaging web apps",
   "url": "https://developers.google.com/web/progressive-web-apps"

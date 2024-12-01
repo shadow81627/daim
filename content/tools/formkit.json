@@ -16,6 +16,7 @@
     "Built-in Messaging",
     "Internationalization"
   ],
+  "maxPrice": 0,
   "name": "FormKit",
   "subheading": "Build Vue 3 forms 10x faster",
   "url": "https://formkit.com/"

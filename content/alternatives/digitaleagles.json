@@ -20,6 +20,7 @@
     "region": "VIC",
     "streetAddress": "Level 2, 161 Collins St"
   },
+  "maxPrice": 0,
   "name": "Digital Eagles",
   "phone": "1300 662 225",
   "subheading": "Digital Marketing Agency",

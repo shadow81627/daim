@@ -17,6 +17,7 @@
     "countryCode": "US",
     "region": "Virginia"
   },
+  "maxPrice": 0,
   "name": "Ship Shape",
   "subheading": "Our software consultants make waves",
   "url": "https://shipshape.io/"

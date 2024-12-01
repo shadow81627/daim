@@ -18,6 +18,7 @@
     "region": "PA",
     "streetAddress": "983 Old Eagle School Road Suite 616"
   },
+  "maxPrice": 0,
   "name": "Curotec",
   "subheading": "Vue.js & Nuxt.js experts",
   "url": "https://www.curotec.com/"

@@ -16,6 +16,7 @@
       "tooltip": "GitHub"
     }
   ],
+  "maxPrice": 0,
   "name": "Battle Calculator",
   "startDate": "2023-07-06T00:27:00.000Z",
   "xdeletedAt": "2023-07-06T00:27:00.000Z"

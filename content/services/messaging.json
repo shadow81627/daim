@@ -5,6 +5,7 @@
   "description": "Keep the conversation going with multi-channel messaging automation.",
   "icon": "fa:paper-plane",
   "image": "/img/services/messaging.png",
+  "maxPrice": 0,
   "name": "Messaging",
   "pos": "1/3"
 }

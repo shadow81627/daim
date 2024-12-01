@@ -12,6 +12,7 @@
     "Accessibility (a11y)",
     "Internationalization (i18n)"
   ],
+  "maxPrice": 0,
   "name": "Vuetify",
   "offers": {
     "Features": {

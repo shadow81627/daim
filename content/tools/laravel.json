@@ -14,6 +14,7 @@
     "Robust background job processing",
     "Real-time event broadcasting"
   ],
+  "maxPrice": 0,
   "name": "Laravel",
   "sort_order": 3,
   "subheading": "Web Application Framework",

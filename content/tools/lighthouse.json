@@ -11,6 +11,7 @@
     "Set and keep performance budgets on scripts and images.",
     "Compare two versions of your site to find improvements and regressions of individual resources."
   ],
+  "maxPrice": 0,
   "name": "Lighthouse",
   "sort_order": 4,
   "subheading": "SEO Audits",

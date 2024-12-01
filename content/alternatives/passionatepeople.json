@@ -15,6 +15,7 @@
     "countryCode": "NL",
     "streetAddress": "Condensatorweg 54 1014 AX"
   },
+  "maxPrice": 0,
   "name": "Passionate People",
   "subheading": "External Engineering Experts",
   "url": "https://passionatepeople.io/"

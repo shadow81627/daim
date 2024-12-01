@@ -11,6 +11,7 @@
     "region": "WA",
     "streetAddress": "PO Box 7132 Perth Cloisters Square"
   },
+  "maxPrice": 0,
   "name": "Doghouse Agency",
   "subheading": "Building digital experiences, used by millions",
   "url": "https://doghouse.agency/"

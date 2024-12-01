@@ -23,6 +23,7 @@
     "region": "VIC",
     "streetAddress": "Level 1 195 Little Collins St"
   },
+  "maxPrice": 0,
   "name": "Luminary",
   "phone": "1300 554 891",
   "sameAs": [

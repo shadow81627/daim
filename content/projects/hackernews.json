@@ -16,6 +16,7 @@
       "tooltip": "Github"
     }
   ],
+  "maxPrice": 0,
   "name": "Hackernews",
   "startDate": "2020-12-12T01:04:09Z"
 }

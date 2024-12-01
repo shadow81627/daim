@@ -22,6 +22,7 @@
     "region": "Queensland",
     "streetAddress": "47 Baxter Street"
   },
+  "maxPrice": 0,
   "name": "Greenhat",
   "subheading": "Web & graphic design",
   "url": "https://www.greenhat.net/"
