@@ -4,7 +4,7 @@
     className="flex justify-center gap-6 pb-16 items-center w-full"
   >
     <Component
-      :is="page <= 1 ? 'div' : 'nuxt-link'"
+      :is="page <= 1 ? 'div' : NuxtLink"
       :custom="page <= 1"
       :to="page > 1 ? { query: { page: page - 1 } } : undefined"
       :aria-label="page > 1 ? 'Previous page' : undefined"
@@ -35,7 +35,7 @@
       />
     </NuxtLink>
     <Component
-      :is="page >= pages ? 'div' : 'nuxt-link'"
+      :is="page >= pages ? 'div' : NuxtLink"
       :custom="page >= pages"
       :to="page <= pages ? { query: { page: page + 1 } } : undefined"
       :aria-label="page <= pages ? 'Next page' : undefined"
@@ -51,6 +51,7 @@
 </template>
 
 <script setup lang="ts">
+import { NuxtLink } from '#components';
 const { page, pages } = defineProps({
   pages: {
     type: Number,
