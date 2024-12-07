@@ -3,7 +3,8 @@
     v-if="pages > 1"
     className="flex justify-center gap-6 pb-16 items-center w-full"
   >
-    <NuxtLink
+    <Component
+      :is="page <= 1 ? 'div' : 'nuxt-link'"
       :custom="page <= 1"
       :to="page > 1 ? { query: { page: page - 1 } } : undefined"
       :aria-label="page > 1 ? 'Previous page' : undefined"
@@ -14,7 +15,7 @@
         class="absolute inset-0 opacity-0 !group-hover:opacity-5 bg-current pointer-events-none rounded"
       ></div>
       <Icon name="material-symbols:chevron-left" class="w-6 h-6" />
-    </NuxtLink>
+    </Component>
     <NuxtLink
       v-for="n in pages"
       :key="n"
@@ -33,7 +34,8 @@
         className="absolute bottom-3 left-1/2 w-6 -translate-x-1/2 transform"
       />
     </NuxtLink>
-    <NuxtLink
+    <Component
+      :is="page >= pages ? 'div' : 'nuxt-link'"
       :custom="page >= pages"
       :to="page <= pages ? { query: { page: page + 1 } } : undefined"
       :aria-label="page <= pages ? 'Next page' : undefined"
@@ -44,7 +46,7 @@
         class="absolute inset-0 opacity-0 !group-hover:opacity-5 bg-current pointer-events-none rounded"
       ></div>
       <Icon name="material-symbols:chevron-right" class="w-6 h-6" />
-    </NuxtLink>
+    </Component>
   </div>
 </template>
 
