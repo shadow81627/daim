@@ -15,6 +15,7 @@
       :fit="imageFit"
       loading="lazy"
       sizes="xs:100vw sm:50vw md:33vw lg:33vw xl:25vw"
+      :style="{ aspectRatio: `${imageWidth}/${imageHeight}` }"
       :img-attrs="{
         style: {
           'object-fit': 'cover',
