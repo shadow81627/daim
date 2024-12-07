@@ -1,30 +1,41 @@
 <template>
   <v-card
+    ref="target"
+    v-intersection-observer="onIntersectionObserver"
     class="flex d-flex flex-column justify-between flex-grow-1"
     min-width="240"
   >
-    <LazyNuxtPicture
+    <div
       v-if="image"
-      :src="image"
-      :width="imageWidth"
-      :height="imageHeight"
-      :alt="name"
-      class="flex-grow-0 max-w-full h-auto"
-      crossorigin="anonymous"
-      itemprop="image"
-      :fit="imageFit"
-      loading="lazy"
-      sizes="xs:100vw sm:50vw md:33vw lg:33vw xl:25vw"
-      :img-attrs="{
-        style: {
-          'object-fit': 'cover',
-          'max-width': '100%',
-          height: 'auto',
-          backgroundColor: _imageBackgroundColor,
-          backgroundImage,
-        },
+      class="flex-grow-0 max-w-full h-auto w-full"
+      :style="{
+        backgroundColor: _imageBackgroundColor,
+        aspectRatio: `${imageWidth}/${imageHeight}`,
       }"
-    ></LazyNuxtPicture>
+    >
+      <LazyNuxtPicture
+        v-show="imageInView"
+        :src="image"
+        :width="imageWidth"
+        :height="imageHeight"
+        :alt="name"
+        crossorigin="anonymous"
+        itemprop="image"
+        :fit="imageFit"
+        loading="lazy"
+        sizes="xs:100vw sm:50vw md:33vw lg:33vw xl:25vw"
+        :img-attrs="{
+          style: {
+            'object-fit': 'cover',
+            'max-width': '100%',
+            height: 'auto',
+            backgroundColor: _imageBackgroundColor,
+            backgroundImage,
+          },
+        }"
+      ></LazyNuxtPicture>
+    </div>
+
     <v-card-title>
       <span class="h3 text-break">
         <template v-if="icon">
@@ -108,8 +119,10 @@
 
 <script>
 import dayjs from 'dayjs';
+import { vIntersectionObserver } from '@vueuse/components';
 import titleCase from '@/utils/title-case';
 export default {
+  directives: { intersectionObserver: vIntersectionObserver },
   inheritAttrs: false,
   props: {
     location: { type: Object, default: null },
@@ -140,6 +153,7 @@ export default {
     },
     iconColor: { type: String, default: 'grey' },
   },
+  data: () => ({ imageInView: false }),
   computed: {
     _imageBackgroundColor() {
       return this.imageBackgroundColor ?? this.imageColor;
@@ -149,6 +163,11 @@ export default {
     titleCase,
     formatDate(date) {
       return dayjs(date).format('MMM D, YYYY');
+    },
+    onIntersectionObserver([entry]) {
+      if (entry?.isIntersecting) {
+        this.imageInView = true;
+      }
     },
   },
 };
