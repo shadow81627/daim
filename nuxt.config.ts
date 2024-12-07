@@ -136,7 +136,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxt/icon',
-    '@vueuse/nuxt',
     // ['nuxt-matomo', matomo],
     'vuetify-nuxt-module',
 
