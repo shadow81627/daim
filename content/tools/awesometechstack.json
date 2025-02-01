@@ -1,4 +1,5 @@
 {
+  "chars": 414,
   "color": "#080808",
   "createdAt": 1651105685,
   "description": "AwesomeTechStack provides insights into the security, modernity, and performance of any website's technology stack and guidance to improve core web vitals and technology stack awesomeness.",
@@ -11,6 +12,7 @@
     "Real-time analysis using cutting edge technology",
     "Suggestions to improve core web vitals, security, website performance and tech stack"
   ],
+  "maxPrice": 0,
   "name": "Awesome Tech Stack",
   "subheading": "Website Technology Stack Analysis",
   "url": "https://awesometechstack.com/"

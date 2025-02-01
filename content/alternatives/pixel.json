@@ -1,4 +1,5 @@
 {
+  "chars": 253,
   "color": "#f8f8f8",
   "createdAt": 1650782394,
   "description": "A full web design and development team based in Brisbane. We specialise in web design, eCommerce, custom web applications, and more.",
@@ -16,6 +17,7 @@
     "region": "Queensland",
     "streetAddress": "Suite 153, 42 Manilla St"
   },
+  "maxPrice": 20000,
   "name": "Pixel",
   "phone": "+61468575424",
   "plans": {

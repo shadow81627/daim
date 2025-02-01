@@ -1,4 +1,5 @@
 {
+  "chars": 335,
   "color": "#080808",
   "createdAt": 1651209361,
   "description": "Digital agency services include web development, UX & UI design, digital strategy, research, digital transformation and hosting for Australia and beyond.",
@@ -22,6 +23,7 @@
     "region": "VIC",
     "streetAddress": "Level 1 195 Little Collins St"
   },
+  "maxPrice": 0,
   "name": "Luminary",
   "phone": "1300 554 891",
   "sameAs": [

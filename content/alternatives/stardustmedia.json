@@ -1,4 +1,5 @@
 {
+  "chars": 542,
   "color": "#080808",
   "createdAt": 1650782394,
   "description": "All-Star Digital specialises in DIY websites, sales funnels, e-commerce website builder, automated lead generation, CRM, Coaching Websites, Membership Websites. All-in-one DIY website funnel builder to grow your business online. DIY (Do it Yourself) or DFY (Done for You) solutions.",
@@ -27,6 +28,7 @@
     "region": "Queensland",
     "streetAddress": "899 Brunswick St"
   },
+  "maxPrice": 179,
   "name": "Stardust Media",
   "plans": {
     "mini": {

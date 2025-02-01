@@ -3,6 +3,7 @@
     style="font-size: 2em; width: 32px; height: 32px"
     :style="{ color: color }"
     :name="icon"
+    mode="svg"
   ></Icon>
 </template>
 

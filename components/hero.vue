@@ -115,7 +115,7 @@ export default {
       ogImageHeight: props.height,
       ogImageWidth: props.width,
     });
-    defineOgImageStatic({
+    defineOgImage({
       component: 'CustomBanner',
       backgroundImage: ogImage,
     });

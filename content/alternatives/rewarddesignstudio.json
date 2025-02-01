@@ -1,4 +1,5 @@
 {
+  "chars": 249,
   "color": "#080808",
   "createdAt": 1651188713,
   "description": "Hi! My name is Rebecca and I am a graphic designer and visual communicator from Brisbane. I help people tell their stories and engage audiences with creative, thoughtful, and purposeful designs.",
@@ -15,6 +16,7 @@
     "countryCode": "AU",
     "region": "Queensland"
   },
+  "maxPrice": 0,
   "name": "Reward Design Studio",
   "url": "https://www.rewarddesignstudio.com.au/"
 }

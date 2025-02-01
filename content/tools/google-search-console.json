@@ -1,4 +1,5 @@
 {
+  "chars": 351,
   "color": "#f8f8f8",
   "createdAt": 1650587662,
   "description": "Search Console tools and reports help you measure your site's Search traffic and performance, fix issues, and make your site shine in Google Search results",
@@ -11,6 +12,7 @@
     "Get alerted on issues and fix your site",
     "Understand how Google Search sees your pages"
   ],
+  "maxPrice": 0,
   "name": "Google Search Console",
   "subheading": "Improve your performance on Google Search",
   "url": "https://search.google.com/search-console/about"

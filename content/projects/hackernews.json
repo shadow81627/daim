@@ -1,4 +1,5 @@
 {
+  "chars": 38,
   "color": "#181818",
   "createdAt": 1615029413,
   "deletedAt": "2022-04-29T22:06:13.618Z",
@@ -15,6 +16,7 @@
       "tooltip": "Github"
     }
   ],
+  "maxPrice": 0,
   "name": "Hackernews",
   "startDate": "2020-12-12T01:04:09Z"
 }

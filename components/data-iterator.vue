@@ -23,6 +23,12 @@
       v-if="loading && !items?.length"
       class="mx-auto h-64px w-64px block"
     ></Spinner>
+    <div
+      v-else-if="!loading && !items?.length"
+      class="flex items-center justify-center"
+    >
+      No items found
+    </div>
     <v-container v-else fluid>
       <v-row>
         <v-col
@@ -39,7 +45,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-card v-intersect="infiniteScrolling"></v-card>
+        <Pagination :page="page" :pages="numberOfPages"></Pagination>
       </v-row>
     </v-container>
   </div>
@@ -51,6 +57,7 @@ export default {
   props: {
     items: { type: Array, default: () => [] },
     loading: { type: Boolean, default: null },
+    total: { type: Number, default: 0 },
   },
   data() {
     return {
@@ -68,7 +75,17 @@ export default {
   },
   computed: {
     numberOfPages() {
-      return Math.ceil(this.items.length / this.query.itemsPerPage);
+      return Math.ceil(this.total / this.query.itemsPerPage);
+    },
+    page: {
+      get() {
+        return this.query.page ?? 1;
+      },
+      set(page) {
+        if (page <= this.numberOfPages && page >= 0) {
+          this.query = { ...this.query, page };
+        }
+      },
     },
     query: {
       get() {
@@ -105,7 +122,7 @@ export default {
         if (
           (_value.itemsPerPage && !Number.isInteger(_value.itemsPerPage)) ||
           (_value.itemsPerPage === -1 &&
-            this.items.length < this.defaultQuery.itemsPerPage)
+            this.total < this.defaultQuery.itemsPerPage)
         ) {
           _value.itemsPerPage = this.defaultQuery.itemsPerPage;
         }
@@ -148,7 +165,7 @@ export default {
           this.query.itemsPerPage !== -1
             ? this.query.itemsPerPage + 24
             : this.query.itemsPerPage;
-        const itemsPerPage = next >= this.items.length ? -1 : next;
+        const itemsPerPage = next >= this.total ? -1 : next;
         if (this.query.itemsPerPage !== itemsPerPage) {
           this.query = {
             ...this.query,

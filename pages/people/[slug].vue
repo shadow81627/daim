@@ -21,15 +21,27 @@
     <v-container style="max-width: 800px">
       <v-row>
         <v-col cols="auto">
-          <v-img
-            :lazy-src="img(image, { quality: 1, width: 300, height: 300 })"
-            :src="img(image, { quality: 70, width: 300, height: 300 })"
-            :srcset="_srcset(image, { width: 300, height: 300 }).srcset"
-            :sizes="_srcset.size"
+          <NuxtPicture
+            v-if="image"
+            :src="image"
             :width="300"
             :height="300"
+            :alt="`${firstname} ${lastname}`"
+            class=""
+            crossorigin="anonymous"
             itemprop="image"
-          ></v-img>
+            loading="lazy"
+            fit="outside"
+            sizes="300px"
+            :img-attrs="{
+              style: {
+                'object-fit': 'cover',
+                'max-width': '100%',
+                height: 'auto',
+                zzs,
+              },
+            }"
+          />
         </v-col>
         <v-col>
           <section>

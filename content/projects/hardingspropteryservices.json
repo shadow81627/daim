@@ -1,4 +1,5 @@
 {
+  "chars": 37,
   "color": "#d8c8b8",
   "createdAt": 1645574142,
   "description": "Handyman services for the local area.",
@@ -14,6 +15,7 @@
       "tooltip": "Github"
     }
   ],
+  "maxPrice": 0,
   "name": "Harding's Property Services",
   "startDate": "2022-02-12T00:10:25Z"
 }

@@ -1,9 +1,9 @@
 {
+  "chars": 103,
   "color": "#f8f8f8",
   "createdAt": 1709782436,
-  "draft": true,
-  "xdeletedAt": "2023-07-06T00:27:00.000Z",
   "description": "Determine the expected outcome of dice when units attack in games like Warhammer 40,000 (10th Edition).",
+  "draft": true,
   "image": "/img/portfolio/battle-calculator.vercel.app_mathhammer.png",
   "links": [
     {
@@ -16,6 +16,8 @@
       "tooltip": "GitHub"
     }
   ],
+  "maxPrice": 0,
   "name": "Battle Calculator",
-  "startDate": "2023-07-06T00:27:00.000Z"
+  "startDate": "2023-07-06T00:27:00.000Z",
+  "xdeletedAt": "2023-07-06T00:27:00.000Z"
 }

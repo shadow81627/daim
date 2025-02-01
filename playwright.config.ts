@@ -1,24 +1,21 @@
+import { fileURLToPath } from 'node:url';
 import { defineConfig, devices } from '@playwright/test';
+import type { ConfigOptions } from '@nuxt/test-utils/playwright';
+import { isCI, isWindows } from 'std-env';
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
-
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
-export default defineConfig({
+// https://nuxt.com/docs/getting-started/testing#testing-in-a-browser
+/* See https://playwright.dev/docs/test-configuration. */
+export default defineConfig<ConfigOptions>({
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!process.env.CI,
+  forbidOnly: !!isCI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: isCI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: isCI ? 1 : undefined,
+  timeout: isWindows ? 60000 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -28,6 +25,13 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    /* Nuxt configuration options */
+    nuxt: {
+      build: false,
+      rootDir: fileURLToPath(new URL('.', import.meta.url)),
+      host: 'http://127.0.0.1:3000',
+      setupTimeout: 120_000,
+    },
   },
 
   /* Configure projects for major browsers */
@@ -72,6 +76,6 @@ export default defineConfig({
   webServer: {
     command: 'npm run start',
     url: 'http://127.0.0.1:3000',
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: !isCI,
   },
 });

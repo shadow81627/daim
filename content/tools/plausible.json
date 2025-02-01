@@ -1,4 +1,5 @@
 {
+  "chars": 521,
   "color": "#f8f8f8",
   "createdAt": 1651099603,
   "description": "Plausible is lightweight and open source web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. Made and hosted in the EU, powered by European-owned cloud infrastructure.",
@@ -14,6 +15,7 @@
     "Invite team members and share your dashboard",
     "Transparent and fully open source software"
   ],
+  "maxPrice": 169,
   "name": "Plausible",
   "plans": {
     "advanced": {

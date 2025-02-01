@@ -1,9 +1,11 @@
 {
+  "chars": 91,
   "color": "#081828",
   "createdAt": 1618314116,
   "description": "Securely build, share and run any application, anywhere",
   "icon": "logos:docker-icon",
   "image": "https://www.cloudsavvyit.com/p/uploads/2021/01/6dc7b5a0.jpeg?height=200p&trim=2,2,2,2",
+  "maxPrice": 0,
   "name": "Docker",
   "subheading": "Debug your app, not your environment",
   "url": "https://www.docker.com/"

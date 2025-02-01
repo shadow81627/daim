@@ -10,6 +10,7 @@
       :data-domain="domain(item.href)"
       :data-tel="tel(item.href)"
       :active="false"
+      :aria-selected="undefined"
       class="text-decoration-none"
     >
       <template #prepend>

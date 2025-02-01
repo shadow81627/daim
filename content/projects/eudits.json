@@ -1,4 +1,5 @@
 {
+  "chars": 107,
   "createdAt": 1653551871,
   "description": "Eudits is an auditing platform that enables technical users to complete complex audits performed by people.",
   "image": "/img/portfolio/eudits.png",
@@ -8,6 +9,7 @@
       "tooltip": "Website"
     }
   ],
+  "maxPrice": 0,
   "name": "Eudits",
   "startDate": "2022-05-25T05:57:04Z"
 }

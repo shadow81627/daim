@@ -1,4 +1,5 @@
 {
+  "chars": 359,
   "color": "#f8f8f8",
   "createdAt": 1651179820,
   "description": "Get a complete understanding of your customers across devices and platforms. Google Analytics gives you the tools, free of charge, to understand the customer journey and improve marketing ROI.",
@@ -11,6 +12,7 @@
     "Connect your insights to results.",
     "Make your data work for you."
   ],
+  "maxPrice": 0,
   "name": "Google Marketing Platform",
   "subheading": "Get essential customer insights"
 }

@@ -1,4 +1,5 @@
 {
+  "chars": 215,
   "color": "#f8f8f8",
   "createdAt": 1654301984,
   "description": "Bootstrap components recreated with Tailwind CSS, but with better design and more functionalities. ",
@@ -10,6 +11,7 @@
     "Free hosting",
     "MIT license - free for personal & commercial use"
   ],
+  "maxPrice": 0,
   "name": "Tailwind Elements",
   "url": "https://tailwind-elements.com/"
 }

@@ -1,10 +1,12 @@
 {
+  "chars": 192,
   "color": "#f8c828",
   "createdAt": 1655254498,
   "description": "Scalable, secure, cross-device and enterprise-ready team collaboration whiteboard for distributed teams. Join 30M+ users from around the world.",
   "icon": "simple-icons:miro",
   "iconColor": "#000000",
   "image": "https://images.ctfassets.net/w6r2i5d8q73s/OxZ08hm5k2id0kjQXmc0L/05bcc2743945b82009e59aa5d9c77c7d/miro.png",
+  "maxPrice": 0,
   "name": "Miro",
   "subheading": "The Visual Collaboration Platform for Every Team ",
   "url": "https://miro.com/"

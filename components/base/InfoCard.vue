@@ -1,5 +1,5 @@
 <template>
-  <v-theme-provider :dark="dark">
+  <v-theme-provider>
     <v-container class="pa-0" v-bind="$attrs">
       <v-row :justify="justify" no-gutters>
         <v-col v-if="icon" :class="`text-${align}`" cols="12" class="mb-4">

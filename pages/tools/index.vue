@@ -10,7 +10,11 @@
     <v-container>
       <v-row>
         <v-col>
-          <DataIterator :items="items" :loading="pending"></DataIterator>
+          <DataIterator
+            :items="data?.data"
+            :loading="status === 'pending'"
+            :total="data?.meta?.pagination?.total"
+          ></DataIterator>
         </v-col>
       </v-row>
     </v-container>
@@ -18,7 +22,6 @@
 </template>
 
 <script>
-import { sortBy } from 'lodash-es';
 import textLength from '~/utils/feature-text-length';
 import priceSort from '~/utils/price-sort';
 import DataIterator from '~/components/data-iterator.vue';
@@ -30,36 +33,37 @@ export default {
     if (route.query.sort) {
       sorts.unshift(route.query.sort);
     }
-    const {
-      data: items,
-      pending,
-      refresh,
-    } = await useLazyAsyncData(
-      'tools',
-      () =>
-        queryContent('tools')
-          .where({ deleted_at: { $exists: false } })
-          // .limit(24)
-          .find(),
-      {
-        transform(data) {
-          // const filtered = data.filter((item) => !item.deleted_at);
-          const sorted = sortBy(data, sorts).reverse();
-          const items = sorted.map((item) => {
-            const slug = item._path.replace('/tools/', '');
-            return {
-              ...item,
-              id: slug,
-              url: item.offers ? `/tools/${slug}` : item.url,
-              image: `/img/tools/${slug}.png`,
-              imageColor: item.color,
-            };
-          });
-          return items;
-        },
-      },
-    );
-    return { items, pending, refresh };
+    const query = computed(() => ({ page: route.query.page ?? 1 }));
+    const { data, status } = await useFetch('/api/content/tools', {
+      lazy: true,
+      // server: false,
+      // pick: [
+      //   'location',
+      //   'dark',
+      //   'acronym',
+      //   'image',
+      //   'url',
+      //   'icon',
+      //   'name',
+      //   'subheading',
+      //   'description',
+      //   'list',
+      //   'links',
+      //   'plans',
+      //   'startDate',
+      //   'endDate',
+      //   'imageHeight',
+      //   'imageWidth',
+      //   'imageQuality',
+      //   'imageColor',
+      //   'imageBackgroundColor',
+      //   'backgroundImage',
+      //   'imageFit',
+      //   'iconColor',
+      // ],
+      query,
+    });
+    return { data, status };
   },
   data() {
     return {
@@ -80,13 +84,6 @@ export default {
         },
       ],
     };
-  },
-  watch: {
-    '$route.query': function () {
-      if (this.refresh) {
-        this.refresh();
-      }
-    },
   },
 };
 </script>

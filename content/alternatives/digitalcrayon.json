@@ -1,4 +1,5 @@
 {
+  "chars": 288,
   "color": "#080808",
   "createdAt": 1651490704,
   "description": "We partner with founders, business owners and organisation leaders who are results-driven, passionate and eager to explore all digital possibilities. We take a process-driven and results-focused approach to Website Design and Web Development.",
@@ -11,6 +12,7 @@
     "region": "Queensland",
     "streetAddress": "Split Spaces, Building 4, Level 2, 92 Sydney St"
   },
+  "maxPrice": 0,
   "name": "Digital Crayon",
   "phone": "1300 745 861",
   "subheading": "We work with agencies to build cool sh*t, well",

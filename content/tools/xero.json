@@ -1,4 +1,5 @@
 {
+  "chars": 445,
   "color": "#f8f8f8",
   "createdAt": 1651823032,
   "description": "Xero online accounting software for your business connects you to your bank, accountant, bookkeeper, and other business apps. Start a free trial today.",
@@ -25,6 +26,7 @@
     "Accounting dashboard",
     "Manage fixed assets"
   ],
+  "maxPrice": 70,
   "name": "Xero",
   "plans": {
     "premium-5": {

@@ -1,4 +1,5 @@
 {
+  "chars": 343,
   "color": "#080808",
   "createdAt": 1650775619,
   "description": "We design custom solutions to engage with your audience in revolutionary ways and provide you with vital data and statistical feedback designed for communication and stakeholder engagement.",
@@ -16,6 +17,7 @@
     "countryCode": "AU",
     "region": "Queensland"
   },
+  "maxPrice": 0,
   "name": "Spatial Media",
   "subheading": "Visual Engagement Solutions",
   "url": "https://www.spatialmedia.com.au/"

@@ -1,4 +1,5 @@
 {
+  "chars": 252,
   "color": "#f8f8f8",
   "createdAt": 1650782394,
   "description": "Lightning fast, secure, and SEO-friendly websites, web apps, and e-commerce. If that’s what you’re looking for - we’re the devs for you.",
@@ -18,6 +19,7 @@
     "postcode": "50-382",
     "streetAddress": "Bejamas Group Sp. z o.o. Business Link Green2Day Szczytnicka 11"
   },
+  "maxPrice": 0,
   "name": "Bejamas",
   "subheading": "Jamstack Developers For Hire",
   "url": "https://bejamas.io/"

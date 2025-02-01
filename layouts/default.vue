@@ -12,6 +12,7 @@
           :to="localePath(item.route)"
           exact
           class="text-decoration-none"
+          :aria-selected="undefined"
         >
           <template #prepend>
             <v-list-item-action style="margin-right: 32px">
@@ -35,7 +36,7 @@
         <v-icon icon="$menu"></v-icon>
       </v-app-bar-nav-icon>
       <v-toolbar-title class="ml-0 px-3 d-flex align-center">
-        <a href="/" title="Home" aria-label="Home">
+        <NuxtLink href="/" title="Home" aria-label="Home">
           <img
             :src="logo"
             class="navbar-brand"
@@ -43,17 +44,22 @@
             width="60"
             alt="Daim"
           />
-        </a>
+        </NuxtLink>
       </v-toolbar-title>
       <v-spacer />
-      <v-tabs class="hidden-sm-and-down" optional right>
+      <v-tabs
+        v-model:model-value="active"
+        class="hidden-sm-and-down"
+        optional
+        right
+      >
         <v-tab
-          v-for="item in (items ?? []).filter((item) => item.show_tab)"
+          v-for="(item, index) in tops"
           :key="item.route"
           :to="localePath(item.route)"
           exact
-          text
           itemscope
+          :class="{ 'v-tab--selected': active === index }"
           itemtype="https://schema.org/SiteNavigationElement"
         >
           {{ item.name }}
@@ -83,6 +89,7 @@ export default {
     TheFooter,
   },
   async setup() {
+    const { path } = useRoute();
     const localePath = useLocalePath();
     const { data: items } = await useAsyncData(
       'layout-pages',
@@ -92,6 +99,10 @@ export default {
         transform(data) {
           const items = data.map((item) => ({
             ...item,
+            name: item.name,
+            show_tab: item.show_tab,
+            route: item.route,
+            icon: item.icon,
             pos: fractionToDecimal(item.pos),
           }));
           return sortBy(items, ['show_tab', 'pos']);
@@ -99,7 +110,24 @@ export default {
       },
     );
     const drawer = ref(false);
-    return { items, drawer, logo, localePath };
+    const tops = computed(() =>
+      (items.value ?? []).filter((item) => item.show_tab),
+    );
+    const _active = ref();
+    const active = computed({
+      get: () => {
+        if (_active.value) return _active.value;
+        const found = tops.value?.findIndex(
+          (item) => localePath(item.route, 'en') === path,
+        );
+        if (found >= 0) return found;
+        return null;
+      },
+      set: (value) => {
+        _active.value = value;
+      },
+    });
+    return { items, drawer, logo, localePath, active, tops };
   },
   mounted() {
     const beforePrint = function () {

@@ -1,4 +1,5 @@
 {
+  "chars": 122,
   "color": "#f8f8f8",
   "createdAt": 1651278086,
   "description": "Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.",
@@ -9,6 +10,7 @@
     "Flexible",
     "Free"
   ],
+  "maxPrice": 0,
   "name": "PixiJS",
   "subheading": "HTML5 Creation Engine",
   "url": "https://pixijs.com/",

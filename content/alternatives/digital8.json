@@ -1,4 +1,5 @@
 {
+  "chars": 298,
   "color": "#f8f8f8",
   "createdAt": 1654300684,
   "description": "We are Brisbane's premier digital transformation experts delivering cutting edge digital solutions for businesses and organisations to get to the forefront of their industry.",
@@ -16,6 +17,7 @@
     "region": "Queensland",
     "streetAddress": "Level 1, 49 Melbourne Street"
   },
+  "maxPrice": 0,
   "name": "digital8",
   "subheading": "Brisbane's home of web design",
   "url": "https://digital8.com.au/"

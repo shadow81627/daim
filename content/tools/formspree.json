@@ -1,4 +1,5 @@
 {
+  "chars": 160,
   "color": "#c80828",
   "createdAt": 1618314116,
   "description": "Set up simple forms to send data to an email address",
@@ -12,6 +13,7 @@
     "Submissions Inbox",
     "3rd party integrations"
   ],
+  "maxPrice": 102,
   "name": "Formspree",
   "plans": {
     "business": {

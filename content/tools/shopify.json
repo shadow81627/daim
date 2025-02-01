@@ -1,4 +1,5 @@
 {
+  "chars": 220,
   "color": "#f8f8f8",
   "createdAt": 1650775885,
   "description": "Millions of the world's most successful brands trust Shopify to sell, ship and process payments anywhere.",
@@ -11,6 +12,7 @@
     "Manage everything",
     "Shopify support"
   ],
+  "maxPrice": 299,
   "name": "Shopify",
   "plans": {
     "advanced": {

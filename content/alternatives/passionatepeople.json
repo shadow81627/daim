@@ -1,4 +1,5 @@
 {
+  "chars": 380,
   "color": "#f8f8f8",
   "createdAt": 1650843263,
   "description": "We provide you with additional technical capacity to power-up your digital transformation journeys with our teams of first-class engineers and consultants. Full stack JavaScript Cloud experts ready to work with you and your team.",
@@ -14,6 +15,7 @@
     "countryCode": "NL",
     "streetAddress": "Condensatorweg 54 1014 AX"
   },
+  "maxPrice": 0,
   "name": "Passionate People",
   "subheading": "External Engineering Experts",
   "url": "https://passionatepeople.io/"

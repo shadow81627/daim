@@ -17,8 +17,8 @@ jobs:
     #   run:
     #     shell: bash
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
+    - uses: actions/checkout@v4.2.2
+    - uses: actions/setup-node@v4.1.0
     - name: Install dependencies
       run: yarn install
     - name: Build
@@ -27,7 +27,7 @@ jobs:
       run: yarn playwright install --with-deps
     - name: Run Playwright tests
       run: yarn playwright test
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4.4.3
       if: always()
       with:
         name: playwright-report

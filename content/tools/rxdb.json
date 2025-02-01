@@ -1,4 +1,5 @@
 {
+  "chars": 361,
   "color": "#f8f8f8",
   "createdAt": 1668751157,
   "description": "RxDB (short for Reactive Database) is a NoSQL-database for JavaScript Applications like Websites, hybrid Apps, Electron-Apps, Progressive Web Apps and Node.js.",
@@ -11,6 +12,7 @@
     "Flexible",
     "Trusted and open source"
   ],
+  "maxPrice": 0,
   "name": "RxDB",
   "plans": {
     "basic": {

@@ -1,4 +1,5 @@
 {
+  "chars": 281,
   "color": "#080818",
   "createdAt": 1651631735,
   "description": "White Peak Digital is an Award Winning Digital Design Agency. Get in front of your competition with a website and brand that delivers real results.",
@@ -18,6 +19,7 @@
     "postcode": "4000",
     "region": "QLD"
   },
+  "maxPrice": 0,
   "name": "White Peak Digital",
   "phone": "1300 489 144",
   "subheading": "Award-Winning Digital Design Agency",

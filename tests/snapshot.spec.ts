@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { expect, test } from '@nuxt/test-utils/playwright';
 
 const pages = [
   { slug: 'home', route: '/' },
@@ -29,6 +29,12 @@ for (const { slug, heading, route } of pages) {
     }
 
     await page.waitForLoadState('networkidle');
-    await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
+    await page.waitForFunction(
+      () => window.useNuxtApp?.().isHydrating === false,
+    );
+    await expect(page).toHaveScreenshot({
+      maxDiffPixels: 100,
+      timeout: 10_000,
+    });
   });
 }

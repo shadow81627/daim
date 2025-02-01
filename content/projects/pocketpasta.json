@@ -1,4 +1,5 @@
 {
+  "chars": 43,
   "color": "#f8f8f8",
   "createdAt": 1601534083,
   "description": "Household planner for recipes and shopping.",
@@ -14,6 +15,7 @@
       "tooltip": "Github"
     }
   ],
+  "maxPrice": 0,
   "name": "PocketPasta",
   "startDate": "2017-06-18T00:18:00Z"
 }

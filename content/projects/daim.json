@@ -1,4 +1,5 @@
 {
+  "chars": 34,
   "color": "#f8f8f8",
   "createdAt": 1615029413,
   "description": "Personal site, portfolio and blog.",
@@ -14,6 +15,7 @@
       "tooltip": "Github"
     }
   ],
+  "maxPrice": 0,
   "name": "Daim",
   "startDate": "2019-11-29T21:53:05Z"
 }

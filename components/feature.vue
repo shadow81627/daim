@@ -8,12 +8,14 @@
       :src="image"
       :width="imageWidth"
       :height="imageHeight"
+      :alt="name"
       class="flex-grow-0 max-w-full h-auto"
       crossorigin="anonymous"
       itemprop="image"
       :fit="imageFit"
       loading="lazy"
-      sizes="xs:100vw sm:50vw md:33vw lg:33vw xl:33vw"
+      sizes="xs:100vw sm:50vw md:33vw lg:33vw xl:25vw"
+      :style="{ aspectRatio: `${imageWidth}/${imageHeight}` }"
       :img-attrs="{
         style: {
           'object-fit': 'cover',

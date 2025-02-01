@@ -1,4 +1,5 @@
 {
+  "chars": 150,
   "color": "#f8f8f8",
   "createdAt": 1654302716,
   "description": "With the help of a global brand experienced in projects of any scale",
@@ -13,6 +14,7 @@
     "countryCode": "PL",
     "streetAddress": "MDBootstrap Kijowska 7, 03-738"
   },
+  "maxPrice": 500000,
   "name": "Material Design Bootstrap (MDB)",
   "plans": {
     "basic": {

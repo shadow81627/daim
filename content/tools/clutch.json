@@ -1,10 +1,12 @@
 {
+  "chars": 175,
   "color": "#f8f8f8",
   "createdAt": 1651276495,
   "description": "Ratings and reviews of leading IT, marketing, and business services companies. Clutch is your data-driven field guide for B2B buying and hiring decisions.",
   "icon": "@custom:custom:clutch-icon",
   "image": "/img/tools/clutch.svg",
   "imageBackgroundColor": "#17313b",
+  "maxPrice": 0,
   "name": "Clutch",
   "subheading": "B2B Ratings & Reviews",
   "url": "https://clutch.co/"

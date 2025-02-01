@@ -1,4 +1,5 @@
 {
+  "chars": 348,
   "color": "#080808",
   "createdAt": 1668405450,
   "description": "RebelMouse is a creative agency fueled by a publishing platform with deep technology. We blend product and strategy together to move the needle where it matters most — organic traffic and user growth, conversion to loyalty, and revenue success.",
@@ -9,6 +10,7 @@
     "Monetization",
     "Custom Web Design"
   ],
+  "maxPrice": 0,
   "name": "RebelMouse",
   "subheading": "The Fastest Sites in the World Run on RebelMouse",
   "url": "https://www.rebelmouse.com/"

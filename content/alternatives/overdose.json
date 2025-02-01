@@ -1,4 +1,5 @@
 {
+  "chars": 204,
   "color": "#080808",
   "createdAt": 1651009409,
   "description": "Award-winning global digital commerce agency, with enterprise capability across Strategy, UX, Tech, Marketing, Search & Data.",
@@ -18,6 +19,7 @@
     "region": "QLD",
     "streetAddress": "1024 Ann Street"
   },
+  "maxPrice": 0,
   "name": "Overdose Digital",
   "sameAs": [
     "https://www.facebook.com/www.overdose.digital/",

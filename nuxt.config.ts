@@ -1,7 +1,6 @@
-import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
+import { defineNuxtConfig } from 'nuxt/config';
 import { splitVendorChunkPlugin } from 'vite';
 import svgLoader from 'vite-svg-loader';
-import { defineNuxtConfig } from 'nuxt/config';
 import pkg from './package.json';
 import getLocalIpAddress from './utils/getLocalIpAddress';
 
@@ -52,11 +51,10 @@ const env = {
 
 export default defineNuxtConfig({
   ssr: true,
-  experimental: {
-    // https://github.com/nuxt/nuxt/issues/19850
-    inlineSSRStyles: false,
 
+  experimental: {
     payloadExtraction: false,
+    clientNodeCompat: true,
   },
 
   runtimeConfig: {
@@ -89,7 +87,11 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.ico' },
+        { rel: 'manifest', href: '/manifest.webmanifest' },
+      ],
       meta: [
         {
           name: 'apple-mobile-web-app-status-bar-style',
@@ -114,35 +116,28 @@ export default defineNuxtConfig({
   /*
    ** Global CSS
    */
-  css: [
-    // 'vuetify/lib/styles/main.sass'
-  ],
+  css: ['assets/css/main.css'],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxt/devtools',
     // '@unlighthouse/nuxt',
-    // '@vite-pwa/nuxt',
+    '@vite-pwa/nuxt',
     'nuxt-schema-org',
     'nuxt-og-image',
-    'nuxt-unhead',
     // 'nuxt-security',
-    '@kevinmarrec/nuxt-pwa',
     '@nuxtjs/eslint-module',
     '@formkit/nuxt',
+    '@nuxt/fonts',
     '@unocss/nuxt',
     '@nuxt/content',
     '@nuxtjs/i18n',
     '@nuxt/image',
-    'nuxt-icon',
-    // 'nuxt-webfontloader',
+    '@nuxt/icon',
     // ['nuxt-matomo', matomo],
-    (_, nuxt) => {
-      nuxt.hooks.hook('vite:extendConfig', (config) => {
-        config.plugins?.push(vuetify({ autoImport: true }));
-      });
-    },
+    'vuetify-nuxt-module',
 
     '@nuxtjs/robots',
     // always declare the sitemap module at end of array
@@ -157,11 +152,17 @@ export default defineNuxtConfig({
 
   unocss: {
     typography: true,
-    webFonts: {
-      fonts: {
+    theme: {
+      fontFamily: {
         sans: 'Roboto',
       },
     },
+  },
+
+  fonts: {
+    families: [
+      { name: 'Roboto', provider: 'google', weights: [400, 500, 700] },
+    ],
   },
 
   content: {
@@ -177,17 +178,25 @@ export default defineNuxtConfig({
     },
   },
 
-  security: {
-    rateLimiter: false, // https://github.com/Baroshem/nuxt-security/issues/137
-    headers: {
-      contentSecurityPolicy: {
-        'img-src': ["'self'", 'data:', IMGPROXY_URL],
-      },
-    },
-  },
+  // security: {
+  //   rateLimiter: false, // https://github.com/Baroshem/nuxt-security/issues/137
+  //   headers: {
+  //     contentSecurityPolicy: {
+  //       'img-src': ["'self'", 'data:', IMGPROXY_URL],
+  //       'script-src': ["'unsafe-inline'"],
+  //     },
+  //   },
+  //   nonce: false,
+  //   ssg: {
+  //     meta: false,
+  //     hashScripts: false,
+  //   },
+  // },
 
   pwa: {
     // registerType: 'autoUpdate',
+    // https://github.com/vite-pwa/nuxt/issues/53#issuecomment-1615266204
+
     manifest: {
       name: env.APP_NAME,
       short_name: env.APP_NAME,
@@ -195,12 +204,30 @@ export default defineNuxtConfig({
       start_url: '/',
       icons: [
         {
-          src: 'icon.png',
+          src: 'pwa-64x64.png',
+          sizes: '64x64',
+          type: 'image/png',
+        },
+        {
+          src: 'pwa-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: 'pwa-512x512.png',
           sizes: '512x512',
           type: 'image/png',
-          purpose: 'any',
+        },
+        {
+          src: 'maskable-icon-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'maskable',
         },
       ],
+    },
+    workbox: {
+      navigateFallback: undefined,
     },
   },
 
@@ -211,7 +238,7 @@ export default defineNuxtConfig({
       {
         code: 'en',
         name: 'English',
-        iso: 'en',
+        language: 'en',
         file: 'en.json',
       },
     ],
@@ -219,15 +246,8 @@ export default defineNuxtConfig({
     langDir: 'lang/',
   },
 
-  sitemap: {
-    hostname: env.BASE_URL,
-  },
-
-  // vuetify: {
-  //   optionsPath: './vuetify.options.js',
-  //   customVariables: ['~/assets/scss/vuetify.scss'],
-  //   treeShake: true,
-  //   defaultAssets: false,
+  // sitemap: {
+  //   hostname: env.BASE_URL,
   // },
 
   eslint: {
@@ -255,6 +275,10 @@ export default defineNuxtConfig({
     },
   },
 
+  icon: {
+    serverBundle: 'remote',
+  },
+
   routeRules: {
     // Static generation
     '/': { prerender: true },
@@ -267,25 +291,21 @@ export default defineNuxtConfig({
     //   },
     // },
   },
+
   nitro: {
     prerender: {
       crawlLinks: true,
     },
   },
+
   sourcemap: true,
 
-  /*
-   ** Build configuration
-   */
-  build: {
-    transpile: ['lodash-es', 'vuetify', 'iron-webcrypto', 'unhead'],
-  },
+  compatibilityDate: '2024-11-16',
   vite: {
-    vue: {
-      template: {
-        transformAssetUrls,
-      },
-    },
     plugins: [svgLoader(), splitVendorChunkPlugin()],
+  },
+
+  devtools: {
+    enabled: true,
   },
 });

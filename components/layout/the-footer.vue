@@ -31,6 +31,7 @@
               :key="item.name"
               :to="localePath(item.route)"
               :active="false"
+              :aria-selected="undefined"
               class="text-decoration-none"
             >
               <template #prepend>
@@ -54,6 +55,7 @@
               :key="item.name"
               :to="localePath(item.route)"
               :active="false"
+              :aria-selected="undefined"
               class="text-decoration-none"
             >
               <template #prepend>

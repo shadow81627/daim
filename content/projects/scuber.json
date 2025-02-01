@@ -1,4 +1,5 @@
 {
+  "chars": 260,
   "client": "Tourism and Events Queensland",
   "color": "#083858",
   "createdAt": 1601534083,
@@ -20,6 +21,7 @@
       "tooltip": "Github"
     }
   ],
+  "maxPrice": 0,
   "name": "scUber",
   "sources": [
     "https://www.xcommedia.com.au/case-study-scUber.php",

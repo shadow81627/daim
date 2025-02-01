@@ -1,4 +1,5 @@
 {
+  "chars": 217,
   "color": "#0898e8",
   "createdAt": 1668145701,
   "description": "Get production-accurate data and preview databases to code against, fast.",
@@ -12,6 +13,7 @@
     "Up to date",
     "Easy to restore"
   ],
+  "maxPrice": 0,
   "name": "Snaplet",
   "subheading": "Quit writing seed scripts, start shipping features",
   "url": "https://www.snaplet.dev/"

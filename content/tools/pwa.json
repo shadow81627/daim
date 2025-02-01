@@ -1,4 +1,5 @@
 {
+  "chars": 279,
   "color": "#080808",
   "createdAt": 1618314116,
   "description": "Progressive Web Apps (PWA) are reliable, fast, and engaging, although there are many things that can take a PWA from a baseline to exemplary experience.",
@@ -14,6 +15,7 @@
     "Predictive prefetching",
     "Web Push Notifications"
   ],
+  "maxPrice": 0,
   "name": "Progressive Web Apps",
   "subheading": "Fast, reliable, engaging web apps",
   "url": "https://developers.google.com/web/progressive-web-apps"

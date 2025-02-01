@@ -1,4 +1,5 @@
 {
+  "chars": 435,
   "color": "#083898",
   "createdAt": 1618314116,
   "description": "Lighthouse analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices.",
@@ -10,6 +11,7 @@
     "Set and keep performance budgets on scripts and images.",
     "Compare two versions of your site to find improvements and regressions of individual resources."
   ],
+  "maxPrice": 0,
   "name": "Lighthouse",
   "sort_order": 4,
   "subheading": "SEO Audits",

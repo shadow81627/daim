@@ -1,8 +1,10 @@
 {
+  "chars": 106,
   "createdAt": 1618314116,
   "deleted_at": "2022-04-15T09:29:51.165Z",
   "description": "Validate form input to ensure data is clean and usable.",
   "icon": "faCheckDouble",
+  "maxPrice": 0,
   "name": "VeeValidate",
   "subheading": "Template Based Form Validation Framework for Vue.js",
   "url": "https://logaretm.github.io/vee-validate/"

@@ -1,4 +1,5 @@
 {
+  "chars": 554,
   "color": "#e8e8f8",
   "createdAt": 1650516068,
   "description": "Rapidly build modern websites without ever leaving your HTML. A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.",
@@ -16,6 +17,7 @@
     "World-class IDE integration",
     "Move even faster with Tailwind UI"
   ],
+  "maxPrice": 0,
   "name": "Tailwind CSS",
   "subheading": "Utility-first CSS framework",
   "url": "https://tailwindcss.com/"
