@@ -33,6 +33,7 @@ export default {
     if (route.query.sort) {
       sorts.unshift(route.query.sort);
     }
+    const query = computed(() => ({ page: route.query.page ?? 1 }));
     const { data, status } = await useFetch('/api/content/tools', {
       lazy: true,
       // server: false,
@@ -60,8 +61,7 @@ export default {
       //   'imageFit',
       //   'iconColor',
       // ],
-      query: { page: route.query.page ?? 1 },
-      watch: [route.query.page],
+      query,
     });
     return { data, status };
   },
