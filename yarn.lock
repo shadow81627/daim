@@ -10940,7 +10940,7 @@ __metadata:
     nuxt-schema-org: "npm:2.1.2"
     nuxt-security: "npm:0.13.0"
     nuxt-unhead: "npm:1.4.15"
-    playwright: "npm:1.40.1"
+    playwright: "npm:1.55.1"
     prettier: "npm:2.8.6"
     puppeteer: "npm:19.7.5"
     query-string: "npm:7.1.3"
@@ -20570,6 +20570,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"playwright-core@npm:1.55.1":
+  version: 1.55.1
+  resolution: "playwright-core@npm:1.55.1"
+  bin:
+    playwright-core: cli.js
+  checksum: 39837a8c1232ec27486eac8c3fcacc0b090acc64310f7f9004b06715370fc426f944e3610fe8c29f17cd3d68280ed72c75f660c02aa5b5cf0eb34bab0031308f
+  languageName: node
+  linkType: hard
+
 "playwright-core@npm:^1.39.0":
   version: 1.41.1
   resolution: "playwright-core@npm:1.41.1"
@@ -20591,6 +20600,21 @@ __metadata:
   bin:
     playwright: cli.js
   checksum: 5dae164d1f69162da8d7eee52da651296fb885c76a8b36049f216975c751a0a826ff05795a1c0902dc0bd193fe606ae17d5def655f4cbcccb8d8b71afb74b950
+  languageName: node
+  linkType: hard
+
+"playwright@npm:1.55.1":
+  version: 1.55.1
+  resolution: "playwright@npm:1.55.1"
+  dependencies:
+    fsevents: "npm:2.3.2"
+    playwright-core: "npm:1.55.1"
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    playwright: cli.js
+  checksum: b84a97b0d764403df512f5bbb10c7343974e151a28202cc06f90883a13e8a45f4491a0597f0ae5fb03a026746cbc0d200f0f32195bfaa381aee5ca5770626771
   languageName: node
   linkType: hard
 
