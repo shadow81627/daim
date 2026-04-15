@@ -100,7 +100,7 @@
     "nuxt-schema-org": "2.1.2",
     "nuxt-security": "0.13.0",
     "nuxt-unhead": "1.4.15",
-    "playwright": "1.40.1",
+    "playwright": "1.55.1",
     "prettier": "2.8.6",
     "puppeteer": "19.7.5",
     "remark-cli": "11.0.0",
